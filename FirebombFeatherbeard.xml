@@ -24,11 +24,11 @@
 				<score type="number">14</score>
 			</dexterity>
 			<intelligence>
-				<bonus type="number">3</bonus>
-				<save type="number">3</save>
+				<bonus type="number">4</bonus>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">-1</bonus>
@@ -60,7 +60,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,11 +70,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">125</amount>
+				<amount type="number">145</amount>
 				<name type="string">SP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">125</amount>
+				<amount type="number">174</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
@@ -82,7 +82,7 @@
 				<name type="string">PP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">150</amount>
+				<amount type="number">170</amount>
 				<name type="string">CP</name>
 			</slot4>
 			<slot5>
@@ -106,11 +106,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">34.56</load>
+			<load type="number">49.56</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">375</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">425</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -243,6 +243,15 @@
 					<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip). To be eligible for Twinned Spell, a spell must be incapable of targeting more than one creature at the spell's current level.</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Sorcerer</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<gender type="string">M</gender>
 		<height type="string">6'6&#34;</height>
@@ -250,7 +259,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">14</total>
+			<total type="number">17</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -376,6 +385,8 @@
 				<weight type="number">0.01</weight>
 			</id-00008>
 			<id-00009>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 gp</cost>
 				<count type="number">3</count>
@@ -417,6 +428,23 @@
 				<name type="string">Black pirate flag - Dragon skull wreathed in fire over cross bones</name>
 				<weight type="number">1</weight>
 			</id-00012>
+			<id-00013>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>These berries deal (7) 1d12 poison damage. This is ongoing damge that lasts for 1 minute.</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">0</locked>
+				<name type="string">Backpack - filled with an unknown poisonous berries</name>
+				<nonid_name type="string">Backpack - filled with an unknown poisonous berries</nonid_name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">15</weight>
+			</id-00013>
 			<id-00014>
 				<carried type="number">2</carried>
 				<cost type="string">1 gp</cost>
@@ -468,6 +496,41 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">140 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00123@Incarnate-Engine">Spell: Fly</link>
+					</linklist>
+					<p>This <u>spell scroll </u>bears the words of a single spell, <i>Fly </i>, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust.</p>
+					<p>This spell scroll's saving throw DC 15 and attack bonus +7.</p>
+					<p>A wizard spell on a <i>spell scroll </i>can be copied just as spells in spellbooks can be copied. When a spell is copied from a <i>spell scroll </i>, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the <i>spell scroll </i>is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Fly</name>
+				<nonid_name type="string">Superior Scroll</nonid_name>
+				<nonidentified type="string">Only the best quality parchment has been used in this scroll and clearly the author was a master of calligraphy.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class>reference_spell</class>
+							<recordname>reference.spelldata.fly@*</recordname>
+						</link>
+						<name type="string">Fly</name>
+					</id-00001>
+				</spells>
+				<type type="string">Scroll</type>
+				<weight type="number">0</weight>
+			</id-00018>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -477,7 +540,7 @@
 				<name type="string">Infernal</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Firebomb Featherbeard</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -528,61 +591,78 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
-				<used type="number">1</used>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -620,6 +700,27 @@
 				<school type="string">Evocation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00001>
+			<id-00002>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of soot and salt)</components>
+				<description type="formattedtext">
+					<p>For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.</p>
+					<p>This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Comprehend Languages</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00002>
 			<id-00003>
 				<actions>
 					<id-00001>
@@ -696,7 +797,7 @@
 			<id-00006>
 				<actions>
 				</actions>
-				<cast type="number">3</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p></p>
 				</description>
@@ -937,7 +1038,7 @@
 			<id-00021>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p></p>
 				</description>
@@ -984,7 +1085,7 @@
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1005,7 +1106,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1040,7 +1141,7 @@
 				<name type="string">Religion</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1068,7 +1169,7 @@
 				<name type="string">Investigation</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1082,7 +1183,7 @@
 				<name type="string">History</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1101,7 +1202,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1165,6 +1266,7 @@
 				<type type="number">2</type>
 			</id-00002>
 			<id-00003>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1230,7 +1332,7 @@
 			<id-00006>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -1252,7 +1354,7 @@
 			<id-00007>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
