@@ -17,11 +17,11 @@
 				<score type="number">15</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">1</bonus>
-				<save type="number">1</save>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">12</score>
+				<score type="number">14</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">2</bonus>
@@ -78,7 +78,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">7</level>
+				<level type="number">8</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -88,15 +88,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">0</amount>
+				<amount type="number">107</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">123</amount>
+				<amount type="number">232</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">60</amount>
+				<amount type="number">137</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -111,13 +111,14 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">1</armor>
+				<armor type="number">7</armor>
+				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">12</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<deity type="string">Will of Man</deity>
@@ -125,10 +126,10 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">145.765</load>
+			<load type="number">527.265</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">759</exp>
+		<exp type="number">837</exp>
 		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
@@ -408,15 +409,6 @@
 					</table>
 				</text>
 			</id-00007>
-			<id-00008>
-				<level type="number">4</level>
-				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
-				<source type="string">Fighter</source>
-				<text type="formattedtext">
-					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
-				</text>
-			</id-00008>
 			<id-00009>
 				<level type="number">5</level>
 				<locked type="number">1</locked>
@@ -444,14 +436,14 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">60</total>
+			<total type="number">68</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Honor. If I dishonor myself, I dishonor my whole clan. (Lawful)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">1</total>
+			<total type="number">2</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -492,13 +484,14 @@
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<name type="string">Pouch - Belt</name>
+				<location type="string">Belt</location>
+				<name type="string">Pouch</name>
 				<rarity type="string">Common</rarity>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.5</weight>
@@ -553,10 +546,15 @@
 				<weight type="number">5</weight>
 			</id-00007>
 			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">15 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Longsword</name>
@@ -736,8 +734,13 @@
 				<weight type="number">5</weight>
 			</id-00021>
 			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Jar (1 Quart)</location>
 				<name type="string">Spoiled Milk</name>
@@ -780,6 +783,7 @@
 					<p>When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating. As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The <i>lesser restoration </i>spell can also end the effect on a creature.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Dust of Sneezing and Choking</name>
 				<nonid_name type="string">A packet of sand</nonid_name>
@@ -791,14 +795,14 @@
 			<id-00026>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">101 - 500 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Description</h>
 					<p>These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand.</p>
 				</description>
-				<isidentified type="number">0</isidentified>
+				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Gloves of Missile Snaring</name>
 				<nonid_name type="string">Leather Gloves</nonid_name>
@@ -818,7 +822,7 @@
 			<id-00028>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">501 - 5,000 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -826,6 +830,7 @@
 					<p>You have resistance to radiant damage type while wearing this ring</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Radiant Resistance</name>
 				<nonid_name type="string">Gold Ring</nonid_name>
@@ -837,12 +842,12 @@
 			<id-00029>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">50 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
 				<description type="formattedtext">
-					<p></p>
+					<p>The Bow of Grey Swiftwind, kept in memory of one of the fallen.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
@@ -864,6 +869,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Light Hammer</name>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -882,6 +888,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Cook's Utensils</name>
 				<subtype type="string">Artisan's Tools</subtype>
@@ -906,6 +913,7 @@
 					<p>A wizard spell on a <i>spell scroll </i>can be copied just as spells in spellbooks can be copied. When a spell is copied from a <i>spell scroll </i>, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the <i>spell scroll </i>is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Calm Emotions</name>
 				<nonid_name type="string">Elegant Scroll</nonid_name>
@@ -934,6 +942,7 @@
 					<p>You have resistance to thunder damage type while wearing this ring</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Thunder Resistance</name>
 				<nonid_name type="string">Gold Ring</nonid_name>
@@ -942,10 +951,17 @@
 				<type type="string">Ring</type>
 				<weight type="number">0.02</weight>
 			</id-00033>
+			<id-00034>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">* Party Weight</name>
+				<weight type="number">80</weight>
+			</id-00034>
 			<id-00036>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 slashing</damage>
@@ -961,6 +977,48 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00036>
+			<id-00037>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This adamantine anvil is coated with a thick layer of ice.</p>
+					<p>This anvil may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p>This anvil can be used to make iron based weapons without superheating the metal. Such weapons have regular effectiveness against demons and other fiends that normally resist all attacks. All such forged weapons are magical and automatically have a primary slot filled with the primary slot of this anvil. Upon forging they have an empty secondary slot until someone attunes to them.</p>
+					<p>Farwatching: the primary individual can see true vision through the anvil for 30 ft.</p>
+					<p>Farspeaking: the primary individual can speak through the anvil.</p>
+					<p>Magical anvils: a magical anvil makes it easier to forge magical items with additional traits and abilities.</p>
+					<p>Striking the Forge: Striking the anvil bestows a bonus of +4 to either strength or wisdom until the end of the day. This effect may only be applied once per day.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">0</locked>
+				<name type="string">Cold-forging anvil</name>
+				<nonid_name type="string">Anvil Coated in Ice</nonid_name>
+				<weight type="number">250</weight>
+			</id-00037>
+			<id-00038>
+				<ac type="number">0</ac>
+				<bonus type="number">16</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">100 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk.</p>
+					<p>Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.</p>
+					<h>Description</h>
+					<p>Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Mithral Chain Mail</name>
+				<nonid_name type="string">Graceful Armor</nonid_name>
+				<nonidentified type="string">This armor has been made with an extremely light and flexible metal.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Heavy</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">55</weight>
+			</id-00038>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -976,13 +1034,12 @@
 				<name type="string">Draconic</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Varric Adahlin</name>
 		<notes type="string">Coal: W,N,W; W,N,E,NW</notes>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -1066,6 +1123,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1351,7 +1409,6 @@
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 bonus action</castingtime>
 				<components type="string">S</components>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
@@ -1407,10 +1464,75 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<level type="number">0</level>
 				<name type="string">Ring of Radiance</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 			</id-00010>
+			<id-00011>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a forked twig)</components>
+				<description type="formattedtext">
+					<p>Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.</p>
+					<p>The spell can locate a specific object known to you, as long as you have seen it up close-within 30 feet-at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.</p>
+					<p>This spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Locate Object</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Cleric, Druid, Paladin, Ranger, Wizard</source>
+			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Dueling; DMG: 2, melee</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Dueling</name>
+				<prepared type="number">0</prepared>
+			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Cold Forged Anvil; STR: 4</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Cold Forged Anvil; WIS: 4</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Cold Forged Anvil</name>
+				<prepared type="number">0</prepared>
+			</id-00013>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1493,7 +1615,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -1507,7 +1629,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1542,7 +1664,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1568,7 +1690,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1618,7 +1740,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">2</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1682,7 +1804,7 @@
 				<type type="number">1</type>
 			</id-00003>
 			<id-00004>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d10</dice>
@@ -1741,19 +1863,9 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00006>
-			<id-00007>
-				<carried type="number">1</carried>
-				<maxammo type="number">0</maxammo>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00007>
 			<id-00008>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1774,7 +1886,7 @@
 			</id-00008>
 			<id-00009>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1795,6 +1907,7 @@
 			</id-00009>
 			<id-00010>
 				<attackbonus type="number">0</attackbonus>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1804,7 +1917,9 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Grey's Longbow</name>
+				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00029</recordname>
