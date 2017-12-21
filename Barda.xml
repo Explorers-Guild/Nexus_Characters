@@ -17,11 +17,11 @@
 				<score type="number">14</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">3</bonus>
-				<save type="number">3</save>
+				<bonus type="number">5</bonus>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">17</score>
+				<score type="number">20</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
@@ -59,8 +59,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<hdused type="number">1</hdused>
+				<level type="number">6</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -74,7 +74,7 @@
 				<name type="string">pp</name>
 			</slot1>
 			<slot2>
-				<amount type="number">70</amount>
+				<amount type="number">230</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
@@ -82,11 +82,11 @@
 				<name type="string">ep</name>
 			</slot3>
 			<slot4>
-				<amount type="number">26</amount>
+				<amount type="number">39</amount>
 				<name type="string">SP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">22</amount>
+				<amount type="number">36</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -95,14 +95,13 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">4</armor>
-				<dexbonus type="string">max2</dexbonus>
+				<armor type="number">2</armor>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
-				<shield type="number">2</shield>
+				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">18</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<deity type="string">A higher power... than myself?</deity>
@@ -110,10 +109,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">126.01</load>
+			<load type="number">96.001</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">565</exp>
+		<exp type="number">621</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
@@ -197,7 +196,7 @@
 				<specialization type="string">Samurai</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>Starting at 3rd level, the might of your willpower can shield you and help you strike true. As a bonus action on your turn, you can give yourself two benefits: advantage on all attack rolls and resistance to bludgeoning, piercing, and slashing damage. These benefits last until the end of your next turn.</p>
+					<p>Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.</p>
 					<p>You can use this feature three times. You regain all expended uses of it when you finish a short or long rest.</p>
 				</text>
 			</id-00005>
@@ -212,7 +211,7 @@
 			<id-00007>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement [Feat, +2 Dex]</name>
 				<source type="string">Fighter</source>
 				<text type="formattedtext">
 					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
@@ -235,67 +234,89 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
+			<hdmod type="number">0</hdmod>
 			<temporary type="number">0</temporary>
-			<total type="number">44</total>
+			<total type="number">52</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">5</total>
 		</initiative>
 		<inventorylist>
-			<id-00001>
-				<ac type="number">14</ac>
+			<id-00002>
+				<ac type="number">12</ac>
 				<carried type="number">2</carried>
-				<cost type="string">400 gp</cost>
+				<cost type="string">45 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class.</p>
-					<p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.</p>
+					<p>Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.</p>
+					<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>
 				</description>
-				<dexbonus type="string">Yes (max 2)</dexbonus>
+				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">1. Breastplate</name>
+				<name type="string">1. Studded Leather</name>
 				<stealth type="string">-</stealth>
 				<strength type="string">-</strength>
-				<subtype type="string">Medium Armor</subtype>
+				<subtype type="string">Light Armor</subtype>
 				<type type="string">Armor</type>
-				<weight type="number">20</weight>
-			</id-00001>
-			<id-00002>
-				<carried type="number">1</carried>
-				<cost type="string">50 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
-				<isidentified type="number">1</isidentified>
-				<location type="string">2. Quiver</location>
-				<locked type="number">1</locked>
-				<name type="string">Longbow</name>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
-				<subtype type="string">Martial Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
+				<weight type="number">13</weight>
 			</id-00002>
 			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
-				<cost type="string">25 gp</cost>
-				<count type="number">2</count>
-				<damage type="string">1d8 piercing</damage>
+				<cost type="string">1,000 GV</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 radiant, magic</damage>
+				<description type="formattedtext">
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement: </b>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p>Farwatching: the primary individual can see true vision through the ring for 30 ft.</p>
+					<p>Farspeaking: the primary individual can speak telepathically to the secondary binding.</p>
+					<p>Only a servant of Athena can touch the handle of this weapon (to all others it is a beam of light)</p>
+					<p>Level: 1</p>
+					<p><b>Prestige 0:</b></p>
+					<p>+0 magic weapon, radiant damage</p>
+					<p>If you throw the spear and it misses it flies back to your hand.</p>
+					<p>Range (30/90)</p>
+					<p><b>Prestige 1:</b></p>
+					<p>+1 magic weapon, radiant damage</p>
+					<p>If you throw the spear and it hits or misses it flies back to your hand.</p>
+					<p>Range (40/120)</p>
+					<p><b>Prestige 2:</b></p>
+					<p>+1 magic weapon, radiant damage</p>
+					<p>The spear will try to return itself to you if ever separated.</p>
+					<p>Range (50/150)</p>
+					<p><b>Prestige 3:</b></p>
+					<p>+2 magic weapon, radiant damage</p>
+					<p>The spear will try to return itself to you if ever separated.</p>
+					<p>It scores a critical hit on a roll of 19 or 20.</p>
+					<p>Range (60/180)</p>
+					<p><b>Prestige 4:</b></p>
+					<p>+3 magic weapon, radiant damage</p>
+					<p>The spear will try to return itself to you if ever separated.</p>
+					<p>It scores a critical hit on a roll of 19 or 20.</p>
+					<p>Radiant Immunity: you are immune to radiant damage. This allows you to enter into the presence of the Fair Maiden without taking damage.</p>
+					<p>Range (70/210)</p>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">1. Breastplate</location>
-				<locked type="number">1</locked>
-				<name type="string">Rapier</name>
-				<properties type="string">Finesse</properties>
-				<subtype type="string">Martial Weapons</subtype>
+				<location type="string">1. Studded Leather</location>
+				<locked type="number">0</locked>
+				<name type="string">Spear of Athena - Lv: 1</name>
+				<nonid_name type="string">Ring of the Fair Maiden</nonid_name>
+				<properties type="string">Thrown (range 30/90), versatile (1d8)</properties>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
 				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
+				<weight type="number">3</weight>
 			</id-00003>
 			<id-00004>
 				<ac type="number">2</ac>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -303,7 +324,7 @@
 				</description>
 				<dexbonus type="string">-</dexbonus>
 				<isidentified type="number">1</isidentified>
-				<location type="string">1. Breastplate</location>
+				<location type="string">1. Studded Leather</location>
 				<locked type="number">1</locked>
 				<name type="string">Shield</name>
 				<stealth type="string">-</stealth>
@@ -313,16 +334,34 @@
 				<weight type="number">6</weight>
 			</id-00004>
 			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
+				<cost type="string">1000 GP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement:</b></p>
+					<p>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
+					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
+					<p><b>Prestige 0:</b></p>
+					<p>Insight + 2</p>
+					<p><b>Prestige 1:</b></p>
+					<p>Persuasion Check: +2</p>
+					<p><b>Prestige 2:</b></p>
+					<p>Wisdom + 4 while wearing the ring.</p>
+					<p><b>Prestige 3:</b></p>
+					<p>Can see through a solid surface no thicker than 12 inches and with no lead within 20 feet of you.</p>
+					<p><b>Prestige 4:</b></p>
+					<p>Truesight 30 ft.</p>
+					<p></p>
+					<p>Add:</p>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">2. Quiver</location>
-				<locked type="number">1</locked>
-				<name type="string">Arrows (20)</name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
+				<locked type="number">0</locked>
+				<name type="string">Ring of Athena - Prestige 1</name>
+				<weight type="number">0.001</weight>
 			</id-00005>
 			<id-00006>
 				<carried type="number">1</carried>
@@ -363,39 +402,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00008>
-			<id-00009>
-				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>A quiver can hold up to 20 arrows.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">2. Quiver</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
-			</id-00009>
-			<id-00010>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1,000 GV</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Thisis a platinum ring is a mobias strip that has a pulse of light continuously running along its one edge.</p>
-					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
-					<p><b>Binding of Engagement: </b>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
-					<p>Farwatching: the primary individual can see true vision through the ring for 30 ft.</p>
-					<p>Farspeaking: the primary individual can speak telepathically to the secondary binding.</p>
-					<p>Radiant Immunity: you are immune to radiant damage. This allows you to enter into the presence of the Fair Maiden without taking damage.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<name type="string">Ring of the Fair Maiden</name>
-				<nonid_name type="string">Ring of the Fair Maiden</nonid_name>
-				<weight type="number">0.01</weight>
-			</id-00010>
 			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">25 gp</cost>
@@ -471,7 +477,7 @@
 				<count type="number">4</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
-				<location type="string">1. Breastplate</location>
+				<location type="string">1. Studded Leather</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -511,54 +517,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00018>
-			<id-00019>
-				<carried type="number">1</carried>
-				<cost type="string">2 gp</cost>
-				<count type="number">2</count>
-				<damage type="string">1d4 slashing</damage>
-				<isidentified type="number">1</isidentified>
-				<location type="string">1. Breastplate</location>
-				<locked type="number">1</locked>
-				<name type="string">Whip</name>
-				<properties type="string">Finesse, reach</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00019>
-			<id-00020>
-				<carried type="number">1</carried>
-				<cost type="string">25 gp</cost>
-				<count type="number">2</count>
-				<damage type="string">1d6 slashing</damage>
-				<isidentified type="number">1</isidentified>
-				<location type="string">1. Breastplate</location>
-				<locked type="number">1</locked>
-				<name type="string">Scimitar</name>
-				<properties type="string">Finesse, light</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00020>
-			<id-00021>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">2</count>
-				<damage type="string">-</damage>
-				<description type="formattedtext">
-					<p>A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<location type="string">1. Breastplate</location>
-				<locked type="number">1</locked>
-				<name type="string">Net</name>
-				<properties type="string">Special, thrown (range 5/15)</properties>
-				<subtype type="string">Martial Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -570,6 +528,7 @@
 					<p>These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">1. Studded Leather</location>
 				<locked type="number">1</locked>
 				<name type="string">Eyes of the Eagle</name>
 				<nonid_name type="string">Glasses</nonid_name>
@@ -590,6 +549,7 @@
 					<p>If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of your turns while you are poisoned in this way, you take 3d6 poison damage. At the end of each of your turns, you can repeat the saving throw. On a successful save, the poison damage you take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">3. Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of False Hope</name>
 				<nonid_name type="string">Potion</nonid_name>
@@ -607,18 +567,22 @@
 				<name type="string">Elvish</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Barda</name>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.\nDespite my noble birth, I do not place myself above other folk. We all have the same blood.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00002>
+				<name type="string">Magic Item</name>
+			</id-00002>
 			<id-00007>
 				<name type="string">Resourse</name>
 			</id-00007>
 			<id-00008>
+				<atkprof type="number">1</atkprof>
 				<name type="string">x_Passive</name>
+				<saveprof type="number">1</saveprof>
 			</id-00008>
 		</powergroup>
 		<powermeta>
@@ -695,7 +659,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -798,11 +762,22 @@
 				<actions>
 					<id-00001>
 						<durmod type="number">2</durmod>
-						<label type="string">Fighting Spirit; ADVATK:; RESIST: bludgeoning, piercing, slashing</label>
+						<label type="string">Fighting Spirit; ADVATK:</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -820,6 +795,22 @@
 				<specializationchoice type="number">0</specializationchoice>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<label type="string">Eyes of Eagle; ADVSKILL: perception</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Magic Item</group>
+				<level type="number">0</level>
+				<name type="string">Eyes of Eagle</name>
+				<prepared type="number">0</prepared>
+			</id-00007>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -895,7 +886,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -916,7 +907,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">5</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -951,7 +942,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -972,14 +963,14 @@
 				<name type="string">Jeweler's Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
 				<name type="string">Dice Set</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00020>
 		</skilllist>
 		<speed>
@@ -991,7 +982,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00007>
 				<locked type="number">1</locked>
@@ -1022,50 +1013,6 @@
 			</id-00010>
 		</traitlist>
 		<weaponlist>
-			<id-00001>
-				<ammo type="number">0</ammo>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Longbow</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00002</recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00001>
-			<id-00002>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">2</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">dexterity</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Rapier</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00003</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -1113,67 +1060,47 @@
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d8</dice>
 						<stat type="string">dexterity</stat>
-						<type type="string">slashing</type>
+						<type type="string">radiant,magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Whip</name>
+				<name type="string">Spear of Athena</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00019</recordname>
+					<recordname>....inventorylist.id-00003</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00005>
 			<id-00006>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
+						<dice type="dice">d8</dice>
 						<stat type="string">dexterity</stat>
-						<type type="string">slashing</type>
+						<type type="string">radiant,magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Scimitar</name>
+				<name type="string">Spear of Athena</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00020</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00006>
-			<id-00007>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice"></dice>
-						<stat type="string">base</stat>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Net</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00021</recordname>
+					<recordname>....inventorylist.id-00003</recordname>
 				</shortcut>
 				<type type="number">2</type>
-			</id-00007>
+			</id-00006>
 		</weaponlist>
 	</character>
 </root>

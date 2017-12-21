@@ -5,30 +5,42 @@
 			<charisma>
 				<bonus type="number">3</bonus>
 				<save type="number">5</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
 				<save type="number">3</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">16</score>
 			</constitution>
 			<dexterity>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">10</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
 				<save type="number">-1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">8</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">3</bonus>
 				<save type="number">3</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">16</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">-1</bonus>
 				<save type="number">1</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">8</score>
 			</wisdom>
@@ -45,6 +57,7 @@
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">3</level>
@@ -57,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">283</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -65,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">41</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -73,10 +86,11 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">40</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
+				<amount type="number">0</amount>
 			</slot6>
 		</coins>
 		<defenses>
@@ -84,8 +98,10 @@
 				<armor type="number">6</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
+				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">2</shield>
+				<temporary type="number">0</temporary>
 				<total type="number">18</total>
 			</ac>
 		</defenses>
@@ -93,9 +109,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">147.71</load>
+			<load type="number">127.21</load>
 			<max type="number">240</max>
 		</encumbrance>
+		<exp type="number">348</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -298,7 +316,7 @@
 				</text>
 			</id-00012>
 		</featurelist>
-		<flaws type="string">I realize that some claim that half-orcs may align with good. But I'm unconvinced. I'll definitely test every supposedly good one with Divine Sense.  If they're evil, it's time for battle.</flaws>
+		<flaws type="string">I realize that some claim that half-orcs may align with good. But I'm unconvinced. I'll definitely test every supposedly good one with Divine Sense. If they're evil, it's time for battle.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">6 ft 1 inch</height>
 		<hp>
@@ -310,6 +328,8 @@
 		</hp>
 		<ideals type="string">I fight for what's right and keep my oath of honesty, honor, and duty.</ideals>
 		<initiative>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
 			<total type="number">0</total>
 		</initiative>
 		<inventorylist>
@@ -650,6 +670,97 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">101 - 500 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00012@Incarnate-Engine">Spell: Animal Messenger</link>
+					</linklist>
+					<p>NPC: Raven</p>
+					<p>A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.</p>
+					<p>This silver statuette of a raven can become a raven for up to 12 hours. While in raven form, the figurine allows you to cast the <i>animal messenger </i>spell on it at will. Once it has been used, it can't be used again until 2 days have passed.</p>
+					<p>The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Figurine of Wondrous Power (Silver Raven)</name>
+				<nonid_name type="string">A Raven Figurine</nonid_name>
+				<nonidentified type="string">This figurine is cast in silver and depicts a raven in full flight. It has been so superbly carved that the creature looks incredibly life-like.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0</weight>
+			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">101 - 500 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Crossbow Bolts (20)</name>
+				<subtype type="string">Ammunition</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1.5</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<weight type="number">0</weight>
+			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">25 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Crossbow, Light</name>
+				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
+				<subtype type="string">Simple Ranged Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">5</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -665,6 +776,7 @@
 		<level type="number">3</level>
 		<name type="string">Eldor</name>
 		<perception type="number">11</perception>
+		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I live to vanquish evil. Unfortunately, my lord's realm has had an extended time of peace and prosperity where the need to battle comes very seldom. He knew of my discontent with a sedentary life and gave me leave to go battle in other regions where evil creatures oppress the populace.</personalitytraits>
 		<powergroup>
 			<id-00001>
@@ -676,41 +788,59 @@
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -1197,6 +1327,7 @@
 			<id-00020>
 				<actions>
 				</actions>
+				<cast type="number">0</cast>
 				<name type="string">Channel Divinity</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">enc</usesperiod>
@@ -1339,11 +1470,15 @@
 			</id-00018>
 		</skilllist>
 		<speed>
+			<armor type="number">0</armor>
 			<base type="number">30</base>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
 		<temp>
 		</temp>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1409,6 +1544,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">5</maxammo>
 				<name type="string">Javelin</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
@@ -1417,6 +1553,27 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">20</maxammo>
+				<name type="string">Crossbow, Light</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00027</recordname>
+				</shortcut>
+				<type type="number">1</type>
+			</id-00004>
 		</weaponlist>
 		<weight type="string">220</weight>
 	</character>
