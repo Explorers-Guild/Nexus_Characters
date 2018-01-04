@@ -38,11 +38,11 @@
 				<score type="number">10</score>
 			</strength>
 			<wisdom>
-				<bonus type="number">2</bonus>
-				<save type="number">2</save>
+				<bonus type="number">3</bonus>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">14</score>
+				<score type="number">16</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">7</level>
+				<level type="number">8</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">501</amount>
+				<amount type="number">575</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">327</amount>
+				<amount type="number">425</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">320</amount>
+				<amount type="number">401</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -103,7 +103,7 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<deity type="string">Poseidon</deity>
@@ -111,11 +111,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">46.61</load>
+			<load type="number">57.11</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">770</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">846</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -128,6 +128,16 @@
 					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
 				</text>
 			</id-00001>
+			<id-00002>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00002>
 			<id-00003>
 				<level type="number">5</level>
 				<locked type="number">1</locked>
@@ -281,8 +291,8 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<hdmod type="number">0</hdmod>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
-			<wounds type="number">0</wounds>
+			<total type="number">51</total>
+			<wounds type="number">14</wounds>
 		</hp>
 		<ideals type="string">Family. Blood runs thicker than water. (Any)</ideals>
 		<initiative>
@@ -538,11 +548,17 @@
 				<weight type="number">0.25</weight>
 			</id-00017>
 			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">2</count>
-				<isidentified type="number">1</isidentified>
-				<name type="string">Bunch of Apples</name>
-				<weight type="number">0</weight>
+				<description type="formattedtext">
+					<p>These are a delicacy for Aloii, a race of metal humanoids. They taste like machine oil, if anyone knows what that is. They have a thin translucent skin filled with an orange liquid.</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<name type="string">Bag of orange globes</name>
+				<nonid_name type="string">Bag of orange globes</nonid_name>
+				<weight type="number">5</weight>
 			</id-00018>
 			<id-00019>
 				<carried type="number">1</carried>
@@ -603,6 +619,64 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00022>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00391@Incarnate-Engine">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">-</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.</p>
+					<p>A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.</p>
+					<p><b>Insight (Very Rare) </b>. Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Magic Stone from a Forgotten Time (Insight)</name>
+				<nonid_name type="string">Stone</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Very Rare (requires attunement)</rarity>
+				<subtype type="string">-</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -618,10 +692,10 @@
 				<name type="string">Primordial</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Aethelmaer</name>
-		<notes type="string">I need to purchase another hammer</notes>
-		<perception type="number">12</perception>
+		<notes type="string">I need to purchase another hammer\nYou have the level 8 ablility score/perks to choose!!! remove from ablities when taking</notes>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">The common folk love me for my kindness and generosity.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -704,6 +778,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -786,13 +861,13 @@
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">5</cast>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<level type="number">0</level>
 				<name type="string">Ki</name>
-				<prepared type="number">5</prepared>
+				<prepared type="number">8</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
@@ -889,7 +964,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -917,14 +992,14 @@
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -966,7 +1041,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1008,7 +1083,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00018>
 		</skilllist>
 		<speed>
@@ -1020,7 +1095,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1186,7 +1261,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">0</ammo>
+				<ammo type="number">5</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">1</carried>
