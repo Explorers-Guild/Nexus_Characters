@@ -88,15 +88,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">107</amount>
+				<amount type="number">291</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">232</amount>
+				<amount type="number">265</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">137</amount>
+				<amount type="number">168</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -126,11 +126,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">527.265</load>
+			<load type="number">197.84</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">837</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">897</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -749,19 +749,16 @@
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">5 cp</cost>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Crossbow, Light</location>
 				<locked type="number">1</locked>
-				<name type="string">Crossbow Bolt</name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.025</weight>
+				<name type="string">Perfume (vial)</name>
+				<weight type="number">0.1</weight>
 			</id-00023>
 			<id-00024>
 				<carried type="number">1</carried>
@@ -952,7 +949,7 @@
 				<weight type="number">0.02</weight>
 			</id-00033>
 			<id-00034>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
 				<name type="string">* Party Weight</name>
@@ -980,7 +977,7 @@
 			<id-00037>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This adamantine anvil is coated with a thick layer of ice.</p>
@@ -1019,6 +1016,43 @@
 				<type type="string">Armor</type>
 				<weight type="number">55</weight>
 			</id-00038>
+			<id-00039>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00392@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00039>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1036,10 +1070,11 @@
 		</languagelist>
 		<level type="number">8</level>
 		<name type="string">Varric Adahlin</name>
-		<notes type="string">Coal: W,N,W; W,N,E,NW</notes>
+		<notes type="string">0605 Coal: W,N,W; W,N,E,NW</notes>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -1048,6 +1083,9 @@
 				<saveprof type="number">1</saveprof>
 				<stat type="string">intelligence</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Class</name>
+			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1123,7 +1161,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1415,6 +1453,7 @@
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
@@ -1445,6 +1484,7 @@
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.</p>
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</description>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Second Wind</name>
@@ -1494,21 +1534,6 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Cleric, Druid, Paladin, Ranger, Wizard</source>
 			</id-00011>
-			<id-00012>
-				<actions>
-					<id-00001>
-						<durmod type="number">0</durmod>
-						<label type="string">Dueling; DMG: 2, melee</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<level type="number">0</level>
-				<name type="string">Dueling</name>
-				<prepared type="number">0</prepared>
-			</id-00012>
 			<id-00013>
 				<actions>
 					<id-00001>
@@ -1533,6 +1558,79 @@
 				<name type="string">Cold Forged Anvil</name>
 				<prepared type="number">0</prepared>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a bit of tallow, a pinch of brimstone, and a dusting of powdered iron)</components>
+				<description type="formattedtext">
+					<p>A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+					<p>As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.</p>
+					<p>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Flaming Sphere</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Wizard</source>
+			</id-00014>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Dodge</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+			</id-00018>
+			<id-00019>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Greater Potion</name>
+				<prepared type="number">0</prepared>
+			</id-00019>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1690,7 +1788,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1766,7 +1864,7 @@
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
+						<bonus type="number">2</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
 						<type type="string">slashing</type>

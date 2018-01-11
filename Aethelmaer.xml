@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">575</amount>
+				<amount type="number">764</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">425</amount>
+				<amount type="number">458</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">401</amount>
+				<amount type="number">432</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -111,11 +111,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">57.11</load>
+			<load type="number">21.85</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">846</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">906</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -193,7 +193,7 @@
 			</id-00007>
 			<id-00008>
 				<level type="number">2</level>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Ki</name>
 				<source type="string">Monk</source>
 				<text type="formattedtext">
@@ -292,7 +292,7 @@
 			<hdmod type="number">0</hdmod>
 			<temporary type="number">0</temporary>
 			<total type="number">51</total>
-			<wounds type="number">14</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Family. Blood runs thicker than water. (Any)</ideals>
 		<initiative>
@@ -304,7 +304,7 @@
 			<id-00001>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">12 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -321,7 +321,7 @@
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 bludgeoning</damage>
@@ -338,7 +338,7 @@
 				<weight type="number">4</weight>
 			</id-00002>
 			<id-00003>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -350,7 +350,7 @@
 				<weight type="number">5</weight>
 			</id-00003>
 			<id-00004>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -368,23 +368,41 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">50 - 100 gp</cost>
-				<count type="number">1</count>
+				<cost type="string">100 GP</cost>
+				<count type="number">2</count>
 				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00392@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
 					<h>Description</h>
-					<p>You regain 2d4 + 2 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Potion</nonid_name>
-				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
-				<weight type="number">0</weight>
+				<weight type="number">0.5</weight>
 			</id-00005>
 			<id-00006>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -399,7 +417,7 @@
 				<weight type="number">5</weight>
 			</id-00006>
 			<id-00007>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -425,7 +443,7 @@
 				<weight type="number">5</weight>
 			</id-00008>
 			<id-00009>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -440,7 +458,7 @@
 				<weight type="number">2</weight>
 			</id-00009>
 			<id-00010>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -452,7 +470,7 @@
 				<weight type="number">10</weight>
 			</id-00010>
 			<id-00011>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 cp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -497,7 +515,7 @@
 				<weight type="number">6</weight>
 			</id-00013>
 			<id-00014>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -531,7 +549,7 @@
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
 				<count type="number">9</count>
 				<damage type="string">1d4 piercing</damage>
@@ -550,7 +568,7 @@
 			<id-00018>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">2</count>
 				<description type="formattedtext">
 					<p>These are a delicacy for Aloii, a race of metal humanoids. They taste like machine oil, if anyone knows what that is. They have a thin translucent skin filled with an orange liquid.</p>
@@ -561,7 +579,7 @@
 				<weight type="number">5</weight>
 			</id-00018>
 			<id-00019>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
 				<name type="string">Big Bag of Carrots</name>
@@ -587,39 +605,6 @@
 				<weight type="number">0</weight>
 			</id-00020>
 			<id-00021>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">101 - 500 gp</cost>
-				<count type="number">2</count>
-				<description type="formattedtext">
-					<h>Description</h>
-					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Greater Healing</name>
-				<nonid_name type="string">Potion</nonid_name>
-				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0</weight>
-			</id-00021>
-			<id-00022>
-				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Hammer</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">3</weight>
-			</id-00022>
-			<id-00025>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -655,7 +640,21 @@
 				<rarity type="string">Common</rarity>
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
-			</id-00025>
+			</id-00021>
+			<id-00022>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Hammer</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00022>
 			<id-00026>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -703,6 +702,26 @@
 			<id-00001>
 				<name type="string">Effect</name>
 			</id-00001>
+			<id-00002>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Item</name>
+			</id-00002>
+			<id-00003>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<uses type="number">0</uses>
+			</id-00003>
+			<id-00004>
+				<name type="string">Item</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Feature</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -861,10 +880,19 @@
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">5</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<p></p>
+					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
+					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
+					<p><b>Ki save DC</b> = 8 + your proficiency bonus + your Wisdom modifier</p>
+					<p><b>Flurry of Blows</b></p>
+					<p>Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</p>
+					<p><b>Patient Defense</b></p>
+					<p>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</p>
+					<p><b>Step of the Wind</b></p>
+					<p>You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
 				</description>
+				<group type="string">Feature</group>
 				<level type="number">0</level>
 				<name type="string">Ki</name>
 				<prepared type="number">8</prepared>
@@ -883,10 +911,35 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Feature</group>
 				<level type="number">0</level>
 				<name type="string">Eyes of Eagle</name>
 				<prepared type="number">0</prepared>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
@@ -909,6 +962,7 @@
 					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Feature</group>
 				<level type="number">0</level>
 				<name type="string">Stunning Strike</name>
 				<prepared type="number">0</prepared>
@@ -1095,7 +1149,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1220,7 +1274,7 @@
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1242,7 +1296,7 @@
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1261,10 +1315,10 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">5</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
