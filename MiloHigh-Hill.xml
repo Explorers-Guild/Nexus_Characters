@@ -77,6 +77,9 @@
 					<p>Potion of Greater Healing.</p>
 				</text>
 			</id-00003>
+			<id-00004>
+				<name type="string">2018_01_14 game - ProNobis GM</name>
+			</id-00004>
 		</adventurelist>
 		<age type="string">22</age>
 		<alignment type="string">Chaotic Neutral</alignment>
@@ -93,25 +96,25 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.bard@DD PHB Deluxe</recordname>
+					<recordname>reference.classdata.bard@DD Xanathar's Guide to Everything Players</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">454</amount>
+				<amount type="number">533</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">245</amount>
+				<amount type="number">363</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">274</amount>
+				<amount type="number">387</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -141,11 +144,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">53.03</load>
+			<load type="number">54.03</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">538</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">660</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -286,6 +289,26 @@
 					<p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Countercharm</name>
+				<source type="string">Bard</source>
+				<text type="formattedtext">
+					<p>At 6th level, you gain the ability to use musical notes or words of power to disrupt mind influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creature within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or you voluntarily end it (no action required).</p>
+				</text>
+			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Additional Magical Secrets (Counterspell, Haste)</name>
+				<source type="string">Bard</source>
+				<specialization type="string">College of Lore</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you and don't count against the number of bard spells you know.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I'll do anything to win fame and renown.</flaws>
 		<gender type="string">Male</gender>
@@ -294,8 +317,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
-			<wounds type="number">0</wounds>
+			<total type="number">45</total>
+			<wounds type="number">2</wounds>
 		</hp>
 		<ideals type="string">Creativity. The world is in need of new ideas and bold action. (Chaotic)</ideals>
 		<initiative>
@@ -303,6 +326,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">4</total>
 		</initiative>
+		<inspiration type="number">1</inspiration>
 		<inventorylist>
 			<id-00001>
 				<carried type="number">1</carried>
@@ -450,6 +474,29 @@
 				<type type="string">Armor</type>
 				<weight type="number">10</weight>
 			</id-00010>
+			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00444@Incarnate-Engine">Bracers of Archery</link>
+					</linklist>
+					<h>Description</h>
+					<p>While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bracers of Archery</name>
+				<nonid_name type="string">Bracers</nonid_name>
+				<nonidentified type="string">Thin leather bracers.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00011>
 			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">35 gp</cost>
@@ -611,12 +658,13 @@
 				<name type="string">Halfling</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Milo High-hill</name>
 		<notes type="string">Entertainer Routines: juggler, Instrumentalist, Storyteller\nSome history: Not the wisest one bard, trying to have a bold performance juggling daggers, in kind of ways to win fame in some city of the North (Faerun) did not percept a fight starting in the tavern, tables are turn, chairs flying, and got myself a pretty bad injury on the forehead, leaving a scar. Try to hide the scar with a mask to not intimidate people, so i can continue performance and earn a renown wherever i go, and follow a path toward greatness like my hero Regis.\n\nAdventuring everytime that a group would accept so can win famous too, creating or living some heroic stories to tell after.\n\nIn battle: prefers to dual weapon fighting style, dual daggers, can throw one of them to leave a hand free for somatic spells, or to play a pan flute. Try to focus in spells to control the battle, rather to just explore damage. As an extent of a juggler, intends to be an Dual-Throwing-dagger fight-style.</notes>
 		<perception type="number">9</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">Nobody stays angry at me or around me for long, since I can defuse any amount of tension. I love a good insult, even one directed at me.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkmod type="number">0</atkmod>
@@ -687,15 +735,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">2</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -806,24 +854,29 @@
 			</id-00002>
 			<id-00003>
 				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a bit of phosphorus or wychwood, or a glowworm)</components>
+				<components type="string">V, M (a firefly or phosphorescent moss)</components>
 				<description type="formattedtext">
-					<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p>
-					<p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p>
+					<p>You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.</p>
+					<p>If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.</p>
 				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
+				<duration type="string">1 hour</duration>
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Dancing Lights</name>
+				<name type="string">Light</name>
 				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<ritual type="number">0</ritual>
+				<range type="string">Touch</range>
 				<school type="string">Evocation</school>
-				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
+				<source type="string">Bard, Cleric, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00003>
 			<id-00004>
 				<actions>
@@ -1021,7 +1074,7 @@
 				<actions>
 					<id-00001>
 						<durmod type="number">0</durmod>
-						<label type="string">Lucky; (N) Reroll 1's on attack, check and saves</label>
+						<label type="string">Lucky; IF: (SKL, ATK, CHK); Reroll 1</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1042,7 +1095,7 @@
 				<actions>
 					<id-00001>
 						<durmod type="number">0</durmod>
-						<label type="string">Brave; ADVSAV: frightened</label>
+						<label type="string">Brave; ADVSAV: wisdom</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1100,7 +1153,7 @@
 						<type type="string">effect</type>
 					</id-00004>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">3</cast>
 				<description type="formattedtext">
 					<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
 					<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw that it just made. The creature can wait until after it rolls the die for the ability check, attack roll, or saving throw, but before the DM says whether or not it succeeds or fails before deciding to use the Bardic Inspiration die. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
@@ -1138,29 +1191,48 @@
 				<name type="string">Blade Ward</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00013>
 			<id-00014>
 				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<type type="string">psychic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 minute</castingtime>
-				<components type="string">V, S, M (a pearl worth at least 100 gp and an owl feather)</components>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
 				<description type="formattedtext">
-					<p>You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.</p>
-					<p>If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.</p>
+					<p>You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away. A deafened creature automatically succeeds on the save.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Identify</name>
+				<name type="string">Dissonant Whispers</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<ritual type="number">1</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Bard, Cleric Knowledge Domain, Eldritch Knight, Wizard, Arcane Trickster</source>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Warlock (Great Old One)</source>
 			</id-00014>
 			<id-00015>
 				<actions>
@@ -1332,6 +1404,83 @@
 				<name type="string">Potion of Greater Healing</name>
 				<prepared type="number">0</prepared>
 			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a rotten egg or several skunk cabbage leaves)</components>
+				<description type="formattedtext">
+					<p>You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration.</p>
+					<p>Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling.</p>
+					<p>Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw.</p>
+					<p>A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Stinking Cloud</name>
+				<prepared type="number">0</prepared>
+				<range type="string">90 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Druid Swamp Circle, Druid Underdark Circle, Eldritch Knight, Warlock (Fiend), Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00021>
+			<id-00022>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Counterspell</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">NOTE: Hasted; AC: 2; ADVSAV: dexterity; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a shaving of licorice root)</components>
+				<description type="formattedtext">
+					<p>Choose a willing creature that you can see within range.</p>
+					<p>Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+					<p>When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Haste</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid Grassland Circle, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00023>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1491,7 +1640,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1551,6 +1700,26 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
+			<id-00002>
+				<ammo type="number">0</ammo>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">6</maxammo>
+				<name type="string">Dagger (2nd hand throw)</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00002>
 			<id-00003>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
