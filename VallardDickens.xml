@@ -4,7 +4,7 @@
 		<abilities>
 			<charisma>
 				<bonus type="number">4</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">431</amount>
+				<amount type="number">448</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">78</amount>
+				<amount type="number">136</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">76</amount>
+				<amount type="number">136</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -109,11 +109,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">76.1</load>
+			<load type="number">76.4</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">451</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">550</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -301,6 +301,26 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Bardic Inspiration (now d8)</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>The Bardic Inspiration die increases to a d8.</p>
+				</text>
+			</id-00013>
+			<id-00014>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Font of Inspiration</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">An innocent person is in prison for a crime that I committed. I'm okay with that.</flaws>
 		<gender type="string">Male</gender>
@@ -309,8 +329,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
-			<wounds type="number">7</wounds>
+			<total type="number">38</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</ideals>
 		<initiative>
@@ -577,24 +597,6 @@
 				<name type="string">Backpack</name>
 				<weight type="number">5</weight>
 			</id-00017>
-			<id-00018>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">300 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Dust of Disappearance</name>
-				<nonid_name type="string">Bag of Dust</nonid_name>
-				<nonidentified type="string">-</nonidentified>
-				<rarity type="string">uncommon</rarity>
-				<type type="string">Wondrous Item</type>
-				<weight type="number">1</weight>
-			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -777,6 +779,101 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00025>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00253@Incarnate-Engine">Shatter</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>Uncommon</td>
+							<td>13</td>
+							<td>+5</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Shatter</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Simple Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00046@Incarnate-Engine">Clairvoyance</link>
+					</linklist>
+					<p>When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Clairvoyance</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.</p>
+					<p>This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.</p>
+					<table>
+						<tr>
+							<td>Type of Giant</td>
+							<td>Strength</td>
+							<td>Rarity</td>
+						</tr>
+						<tr>
+							<td>Frost giant</td>
+							<td>23</td>
+							<td>Rare</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Frost Giant Strength</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">This potion's transparent liquid has floating in it a sliver of fingernail from a giant.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -789,7 +886,7 @@
 				<name type="string">Draconic</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Vallard Dickens</name>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -849,14 +946,14 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -952,7 +1049,7 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d4</dice>
+								<dice type="dice">d4,d4</dice>
 								<type type="string">psychic</type>
 							</id-00001>
 						</damagelist>
@@ -981,10 +1078,9 @@
 				<actions>
 					<id-00001>
 						<heallist>
-							<id-00001>
-								<bonus type="number">0</bonus>
+							<id-00002>
 								<dice type="dice">d6</dice>
-							</id-00001>
+							</id-00002>
 						</heallist>
 						<order type="number">1</order>
 						<type type="string">heal</type>
@@ -1076,52 +1172,18 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
 			</id-00005>
-			<id-00006>
-				<actions>
-					<id-00001>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">wisdom</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">24</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Charmed</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a morsel of food)</components>
-				<description type="formattedtext">
-					<p>This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spells ends.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.</p>
-				</description>
-				<duration type="string">24 hours</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Animal Friendship</name>
-				<prepared type="number">0</prepared>
-				<range type="string">30 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Enchantment</school>
-				<source type="string">Bard, Cleric Nature Domain, Druid, Ranger</source>
-			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">10</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Bardic Inspiration; ATK: 1d6; SAVE: 1d6; CHECK: 1d6</label>
+						<label type="string">Bardic Inspiration; ATK: 1d8; SAVE: 1d8; CHECK: 1d8</label>
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">2</cast>
 				<description type="formattedtext">
 					<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
 					<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw that it just made. The creature can wait until after it rolls the d20, before deciding to use the Bardic Inspiration die but must must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
@@ -1132,7 +1194,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Bardic Inspiration</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 			</id-00007>
 			<id-00008>
@@ -1208,10 +1270,14 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6</dice>
-								<stat type="string">prf</stat>
+								<dice type="dice">d8</dice>
+								<stat type="string">charisma</stat>
 							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">prf</stat>
+							</id-00002>
 						</heallist>
 						<order type="number">1</order>
 						<type type="string">heal</type>
@@ -1219,10 +1285,14 @@
 					<id-00002>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6</dice>
-								<stat type="string">prf</stat>
+								<dice type="dice">d8,d8</dice>
+								<stat type="string">charisma</stat>
 							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">prf</stat>
+							</id-00002>
 						</heallist>
 						<order type="number">2</order>
 						<type type="string">heal</type>
@@ -1230,14 +1300,33 @@
 					<id-00003>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6,d6</dice>
-								<stat type="string">prf</stat>
+								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">charisma</stat>
 							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">prf</stat>
+							</id-00002>
 						</heallist>
 						<order type="number">3</order>
 						<type type="string">heal</type>
 					</id-00003>
+					<id-00004>
+						<heallist>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">prf</stat>
+							</id-00002>
+							<id-00003>
+								<dice type="dice">d8,d8,d8,d8</dice>
+								<stat type="string">charisma</stat>
+							</id-00003>
+						</heallist>
+						<order type="number">4</order>
+						<type type="string">heal</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1299,8 +1388,69 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00013>
+			<id-00016>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, M (a small clay model of a ziggurat)</components>
+				<description type="formattedtext">
+					<p>This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Tongues</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Cleric, Sorcerer, Warlock, Wizard</source>
+			</id-00016>
+			<id-00017>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a small crystal bead)</components>
+				<description type="formattedtext">
+					<p>A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.</p>
+					<p>Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.</p>
+					<p>Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.</p>
+				</description>
+				<duration type="string">8 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Tiny Hut</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (10-foot-radius hemisphere)</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Wizard</source>
+			</id-00017>
+			<id-00018>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Lesser Restoration</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
+			</id-00018>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00004>
 				<name type="string">Tool: One type of gaming set, thieves' tools</name>
@@ -1356,28 +1506,28 @@
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Performance</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1398,7 +1548,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1419,7 +1569,7 @@
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1433,7 +1583,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1447,14 +1597,14 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
 				<name type="string">Theives' Tools</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
@@ -1473,7 +1623,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1496,7 +1646,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
