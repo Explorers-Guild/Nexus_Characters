@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -316,6 +316,22 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Aura of Protection</name>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00432">Aura of Protection</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</p>
+					<p>At 18th level, the range of this aura increases to 30 feet.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I judge myself too harshly and fall into states of despair.</flaws>
 		<gender type="string">Male</gender>
@@ -324,7 +340,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">39</total>
+			<total type="number">46</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Revenge - I will make amends for what has been done to me, however I can. (Chaotic)</ideals>
@@ -837,12 +853,13 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Christian</name>
-		<notes type="string">need to add ability 2x</notes>
+		<notes type="string">need to add ability 2x or feat\nneed to add fighting style</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I give everybody the respect they deserve, even if they threaten my life.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -1264,7 +1281,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1393,7 +1410,7 @@
 			</id-00004>
 			<id-00005>
 				<attackbonus type="number">3</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">3</bonus>
