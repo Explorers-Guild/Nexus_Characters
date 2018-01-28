@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root version="3.3" release="8|CoreRPG:3">
+	<character>
+		<abilities>
+			<charisma>
+				<bonus type="number">2</bonus>
+				<save type="number">4</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">1</saveprof>
+				<score type="number">15</score>
+			</charisma>
+			<constitution>
+				<bonus type="number">3</bonus>
+				<save type="number">3</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">16</score>
+			</constitution>
+			<dexterity>
+				<bonus type="number">0</bonus>
+				<save type="number">2</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">1</saveprof>
+				<score type="number">10</score>
+			</dexterity>
+			<intelligence>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">11</score>
+			</intelligence>
+			<strength>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">10</score>
+			</strength>
+			<wisdom>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">12</score>
+			</wisdom>
+		</abilities>
+		<adventurelist>
+		</adventurelist>
+		<age type="string">15 (teenager)</age>
+		<alignment type="string">Neutral Good</alignment>
+		<background type="string">Librarian</background>
+		<backgroundlink type="windowreference">
+			<class>reference_background</class>
+			<recordname>background.id-00014@Incarnate-Engine</recordname>
+		</backgroundlink>
+		<bonds type="string">The first book I ever read is in my head memorized.</bonds>
+		<classes>
+			<id-00001>
+				<casterlevelinvmult type="number">1</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
+				<hddie type="dice">d8</hddie>
+				<hdused type="number">0</hdused>
+				<level type="number">1</level>
+				<name type="string">Bard</name>
+				<shortcut type="windowreference">
+					<class>reference_class</class>
+					<recordname>class.probard@Incarnate-Engine</recordname>
+				</shortcut>
+			</id-00001>
+		</classes>
+		<coins>
+			<slot1>
+				<amount type="number">15</amount>
+				<name type="string">GP</name>
+			</slot1>
+			<slot2>
+				<amount type="number">0</amount>
+				<name type="string">PP</name>
+			</slot2>
+			<slot3>
+				<amount type="number">0</amount>
+				<name type="string">CP</name>
+			</slot3>
+			<slot4>
+				<amount type="number">0</amount>
+				<name type="string">EP</name>
+			</slot4>
+			<slot5>
+				<amount type="number">0</amount>
+				<name type="string">SP</name>
+			</slot5>
+			<slot6>
+				<amount type="number">0</amount>
+			</slot6>
+		</coins>
+		<defenses>
+			<ac>
+				<armor type="number">1</armor>
+				<disstealth type="number">0</disstealth>
+				<misc type="number">0</misc>
+				<prof type="number">1</prof>
+				<shield type="number">0</shield>
+				<temporary type="number">0</temporary>
+				<total type="number">11</total>
+			</ac>
+		</defenses>
+		<encumbrance>
+			<encumbered type="number">100</encumbered>
+			<encumberedheavy type="number">200</encumberedheavy>
+			<liftpushdrag type="number">600</liftpushdrag>
+			<load type="number">61.46</load>
+			<max type="number">300</max>
+		</encumbrance>
+		<exp type="number">0</exp>
+		<expneeded type="number">0</expneeded>
+		<featlist>
+		</featlist>
+		<featurelist>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Knowledge</name>
+				<source type="string">Librarian</source>
+				<text type="formattedtext">
+					<p>You know how to search even disordered libraries. You can find useful information others would pass over. You have advantage when making perception and history checks as they regard books and libraries.</p>
+				</text>
+			</id-00002>
+			<id-00003>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Bardic Inspiration</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<p>Almost everyone will just play this one by hand with the bardic inspiration die rolled and then added manually, but you may use this varient if you want coding that rolls the inspiration die on the next check, attack roll, or saving throw.</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00405@Incarnate-Engine">Bardic Inspiration</link>
+					</linklist>
+					<h>Description</h>
+					<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
+					<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use th Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
+					<p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
+					<p>Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</p>
+				</text>
+			</id-00003>
+			<id-00004>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Spellcasting</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations.</p>
+					<linklist>
+						<link class="reference_colindex" recordname="lists.spells.bard@Incarnate-Engine">Bard Spells</link>
+					</linklist>
+					<p><b>Cantrips</b></p>
+					<p>You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00035@Incarnate-Engine">The Bard</link>
+					</linklist>
+					<p><b>Spell Slots</b></p>
+					<p>The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. you regain all expended spell slots when you finish a long rest.</p>
+					<p>For example, if you know the 1st-level spell <i>cure wounds </i>and have a 1st-level and a 2nd-level spell slot available, you can cast <i>cure wounds </i>using either slot.</p>
+					<p><b>Spells Known of 1st Level and Higher</b></p>
+					<p>You know four 1st-level spells of your choice from the bard spell list.</p>
+					<p>The Spells Known column of the Bard table shows when you learn more bard spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.</p>
+					<p>Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots.</p>
+					<p><b>Spellcasting Ability</b></p>
+					<p>Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
+					<list>
+						<li><b>Spell save DC </b>= 8 + your proficiency bonus + your Charisma modifier</li>
+						<li><b>Spell attack modifier </b>= your proficiency bonus + your Charisma modifier</li>
+					</list>
+					<p><b>Ritual Casting</b></p>
+					<p>You can cast any bard spell you know as a ritual if that spell has the ritual tag.</p>
+					<p><b>Spellcasting Focus</b></p>
+					<p>You can use a musical instrument (see &#34;Equipment&#34;) as a spellcasting focus for your bard spells.</p>
+				</text>
+			</id-00004>
+		</featurelist>
+		<flaws type="string">When I must find a place to sleep I lodge at the nearest library.</flaws>
+		<height type="string">6' 8&#34;</height>
+		<hp>
+			<temporary type="number">0</temporary>
+			<total type="number">11</total>
+			<wounds type="number">0</wounds>
+		</hp>
+		<ideals type="string">Discovery - Every single piece of information is waiting to be discovered. (Good)</ideals>
+		<initiative>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
+			<total type="number">0</total>
+		</initiative>
+		<inventorylist>
+			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>This is a story about some adventure. Is it fiction or did this legend actually happen?</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Book, Novel</name>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00001>
+			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Coin Pouch - Small</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This book covers something significant from history, this may range from a war, plague, or even the chronicles of a king.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Book, Historical</name>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A quill pen is great for writing, and if you ever use it you can easily replace it. Just pluck another from any bird.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Quill Pen</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Common</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00005>
+			<id-00006>
+				<carried type="number">1</carried>
+				<cost type="string">1 sp</cost>
+				<count type="number">5</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Parchment (One Sheet)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00006>
+			<id-00007>
+				<carried type="number">1</carried>
+				<cost type="string">10 gp</cost>
+				<count type="number">2</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink (1-ounce Bottle)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.06</weight>
+			</id-00007>
+			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">15 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Longsword</name>
+				<nonid_name type="string">Longsword</nonid_name>
+				<nonidentified type="string">A sharp longsword.</nonidentified>
+				<properties type="string">Versatile (1d10)</properties>
+				<rarity type="string">common</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00008>
+			<id-00009>
+				<carried type="number">1</carried>
+				<cost type="string">2 sp</cost>
+				<count type="number">5</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Paper (One Sheet)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00009>
+			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">50 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A vial of sweat smelling liquid.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Perfume (Vial)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00010>
+			<id-00011>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Lamp</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00011>
+			<id-00012>
+				<carried type="number">1</carried>
+				<cost type="string">15 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Fine</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">6</weight>
+			</id-00012>
+			<id-00013>
+				<carried type="number">1</carried>
+				<cost type="string">2 cp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Soap</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00013>
+			<id-00014>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Case, Map Or Scroll</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00014>
+			<id-00015>
+				<carried type="number">1</carried>
+				<cost type="string">2 cp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink Pen</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00015>
+			<id-00016>
+				<carried type="number">1</carried>
+				<cost type="string">5 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Chest</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">25</weight>
+			</id-00016>
+			<id-00017>
+				<carried type="number">1</carried>
+				<cost type="string">1 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Oil (Flask)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00017>
+			<id-00018>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Sealing Wax</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.03</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">30 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00267@Incarnate-Engine">Bagpipes</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Bagpipes</name>
+				<subtype type="string">Musical Instrument</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">6</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Dagger</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger.</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">11</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
+				</description>
+				<dexbonus type="string">Yes</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Leather</name>
+				<nonid_name type="string">Leather Armor</nonid_name>
+				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
+				<rarity type="string">common</rarity>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Light Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">10</weight>
+			</id-00021>
+		</inventorylist>
+		<languagelist>
+			<id-00001>
+				<name type="string">Undercommon</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Common </name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Elvish</name>
+			</id-00003>
+			<id-00004>
+				<name type="string">Celestial</name>
+			</id-00004>
+		</languagelist>
+		<level type="number">1</level>
+		<name type="string">Bard - Brobdingnagian Elf - Librarian</name>
+		<perception type="number">13</perception>
+		<perceptionmodifier type="number">0</perceptionmodifier>
+		<personalitytraits type="string">Life is nothing without books.</personalitytraits>
+		<powergroup>
+			<id-00001>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+				<stat type="string">charisma</stat>
+			</id-00001>
+			<id-00002>
+				<name type="string">Effect</name>
+			</id-00002>
+		</powergroup>
+		<powermeta>
+			<pactmagicslots1>
+				<max type="number">0</max>
+			</pactmagicslots1>
+			<pactmagicslots2>
+				<max type="number">0</max>
+			</pactmagicslots2>
+			<pactmagicslots3>
+				<max type="number">0</max>
+			</pactmagicslots3>
+			<pactmagicslots4>
+				<max type="number">0</max>
+			</pactmagicslots4>
+			<pactmagicslots5>
+				<max type="number">0</max>
+			</pactmagicslots5>
+			<pactmagicslots6>
+				<max type="number">0</max>
+			</pactmagicslots6>
+			<pactmagicslots7>
+				<max type="number">0</max>
+			</pactmagicslots7>
+			<pactmagicslots8>
+				<max type="number">0</max>
+			</pactmagicslots8>
+			<pactmagicslots9>
+				<max type="number">0</max>
+			</pactmagicslots9>
+			<spellslots1>
+				<max type="number">2</max>
+			</spellslots1>
+			<spellslots2>
+				<max type="number">0</max>
+			</spellslots2>
+			<spellslots3>
+				<max type="number">0</max>
+			</spellslots3>
+			<spellslots4>
+				<max type="number">0</max>
+			</spellslots4>
+			<spellslots5>
+				<max type="number">0</max>
+			</spellslots5>
+			<spellslots6>
+				<max type="number">0</max>
+			</spellslots6>
+			<spellslots7>
+				<max type="number">0</max>
+			</spellslots7>
+			<spellslots8>
+				<max type="number">0</max>
+			</spellslots8>
+			<spellslots9>
+				<max type="number">0</max>
+			</spellslots9>
+		</powermeta>
+		<powermode type="string">standard</powermode>
+		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bardic Inspiration; ATK: 1d6; SAVE: 1d6; CHECK: 1d6</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00013@Incarnate-Engine">Bardic Inspiration</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bardic Inspiration</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00001>
+			<id-00002>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:</p>
+					<list>
+						<li>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</li>
+						<li>You instantaneously light or snuff out a candle, a torch, or a small campfire.</li>
+						<li>You instantaneously clean or soil an object no larger than 1 cubic foot.</li>
+						<li>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</li>
+						<li>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</li>
+						<li>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</li>
+					</list>
+					<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+				</description>
+				<duration type="string">Up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Prestidigitation</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Mage Hand</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Charmed</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Charm Person</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<stat type="string">base</stat>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Cure Wounds</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Thunderwave</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (15-foot cube)</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">charisma</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">ATK: -1d4; SAVE: -1d4; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a drop of blood)</components>
+				<description type="formattedtext">
+					<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Bane</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Cleric</source>
+			</id-00007>
+		</powers>
+		<profbonus type="number">2</profbonus>
+		<proficiencylist>
+			<id-00001>
+				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Tool: Three musical instruments of your choice - drum, lute, bagpipes</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Armor: Light armor</name>
+			</id-00003>
+		</proficiencylist>
+		<race type="string">Brobdingnagian Elf</race>
+		<racelink type="windowreference">
+			<class>reference_race</class>
+			<recordname>race.id-00005@Incarnate-Engine</recordname>
+		</racelink>
+		<senses type="string">Darkvision 60</senses>
+		<size type="string">Medium</size>
+		<skilllist>
+			<id-00001>
+				<misc type="number">0</misc>
+				<name type="string">Perception</name>
+				<prof type="number">1</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">3</total>
+			</id-00001>
+			<id-00002>
+				<misc type="number">0</misc>
+				<name type="string">Arcana</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">2</total>
+			</id-00002>
+			<id-00003>
+				<misc type="number">0</misc>
+				<name type="string">History</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">2</total>
+			</id-00003>
+			<id-00004>
+				<misc type="number">0</misc>
+				<name type="string">Persuasion</name>
+				<prof type="number">1</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">4</total>
+			</id-00004>
+			<id-00005>
+				<misc type="number">0</misc>
+				<name type="string">Nature</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00005>
+			<id-00006>
+				<misc type="number">0</misc>
+				<name type="string">Medicine</name>
+				<prof type="number">0</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
+			</id-00006>
+			<id-00007>
+				<misc type="number">0</misc>
+				<name type="string">Survival</name>
+				<prof type="number">0</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
+			</id-00007>
+			<id-00008>
+				<misc type="number">0</misc>
+				<name type="string">Performance</name>
+				<prof type="number">1</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">4</total>
+			</id-00008>
+			<id-00009>
+				<misc type="number">0</misc>
+				<name type="string">Acrobatics</name>
+				<prof type="number">0</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">0</total>
+			</id-00009>
+			<id-00010>
+				<misc type="number">0</misc>
+				<name type="string">Religion</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00010>
+			<id-00011>
+				<misc type="number">0</misc>
+				<name type="string">Athletics</name>
+				<prof type="number">0</prof>
+				<stat type="string">strength</stat>
+				<total type="number">0</total>
+			</id-00011>
+			<id-00012>
+				<misc type="number">0</misc>
+				<name type="string">Sleight of Hand</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">2</total>
+			</id-00012>
+			<id-00013>
+				<misc type="number">0</misc>
+				<name type="string">Insight</name>
+				<prof type="number">0</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
+			</id-00013>
+			<id-00014>
+				<misc type="number">0</misc>
+				<name type="string">Intimidation</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">2</total>
+			</id-00014>
+			<id-00015>
+				<misc type="number">0</misc>
+				<name type="string">Deception</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">2</total>
+			</id-00015>
+			<id-00016>
+				<misc type="number">0</misc>
+				<name type="string">Investigation</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00016>
+			<id-00017>
+				<misc type="number">0</misc>
+				<name type="string">Stealth</name>
+				<prof type="number">0</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">0</total>
+			</id-00017>
+			<id-00018>
+				<misc type="number">0</misc>
+				<name type="string">Animal Handling</name>
+				<prof type="number">0</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
+			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string">Bagpipes</name>
+				<prof type="number">1</prof>
+				<stat type="string">charisma</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00267@Incarnate-Engine">Bagpipes</link>
+					</linklist>
+				</text>
+				<total type="number">4</total>
+			</id-00019>
+		</skilllist>
+		<speed>
+			<armor type="number">0</armor>
+			<base type="number">30</base>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
+			<total type="number">30</total>
+		</speed>
+		<temp>
+		</temp>
+		<token type="token"></token>
+		<traitlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Fey Ancestry</name>
+				<source type="string">Elf</source>
+				<text type="formattedtext">
+					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Keen Senses</name>
+				<source type="string">Elf</source>
+				<text type="formattedtext">
+					<p>You have proficiency in the Perception skill.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00002>
+			<id-00003>
+				<locked type="number">1</locked>
+				<name type="string">Trance</name>
+				<source type="string">Elf</source>
+				<text type="formattedtext">
+					<p>Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is &#34;trance.&#34;) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00003>
+			<id-00004>
+				<locked type="number">1</locked>
+				<name type="string">Elven Weapoon Training</name>
+				<source type="string">Brobdingnagian Elf</source>
+				<text type="formattedtext">
+					<p>You are proficient with your unarmed strikes, which deal 1d4 bludgeoning damage.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00004>
+			<id-00005>
+				<locked type="number">1</locked>
+				<name type="string">Brobdingnagian Size</name>
+				<source type="string">Brobdingnagian Elf</source>
+				<text type="formattedtext">
+					<p>Your base height is 5'10&#34; with a 2d10 mod and your base weight is 175 lb. with a 2d6 mod.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00005>
+			<id-00006>
+				<locked type="number">1</locked>
+				<name type="string">Powerful Build</name>
+				<source type="string">Brobdingnagian Elf</source>
+				<text type="formattedtext">
+					<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00006>
+		</traitlist>
+		<weaponlist>
+			<id-00001>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Longsword</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00008</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00001>
+			<id-00002>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00003>
+		</weaponlist>
+		<weight type="string">183 lb</weight>
+	</character>
+</root>
