@@ -49,6 +49,7 @@
 		</adventurelist>
 		<age type="string">25</age>
 		<alignment type="string">Chaotic Neutral</alignment>
+		<appearance type="string">A young, athletically built man in his prime; clad from neck to toe in a mix of battle-worn dark leather-armor and brown silk. His black hair is short and well taken care of; as is both his clothes and the rest of him. A contradiction perhaps, as his hardened skin and stern, dark eyes told the story of a man leading anything but a quiet law-abiding life. Even so, he seemed perpetually amused - always adorning a faint smile.</appearance>
 		<background type="string">Mercenary</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -65,13 +66,13 @@
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.prorogue@Incarnate-Engine</recordname>
+					<recordname>reference.classdata.rogue@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">74</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">82</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">73</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -102,7 +103,7 @@
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">13</total>
 			</ac>
 		</defenses>
 		<deity type="string">Hades</deity>
@@ -110,14 +111,23 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">69.21</load>
+			<load type="number">58.92</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">389</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
+			<id-00001>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Cunning Action</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+				</text>
+			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
 				<name type="string">Hired Blade</name>
@@ -169,55 +179,44 @@
 				</text>
 			</id-00005>
 			<id-00006>
-				<level type="number">2</level>
+				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Cunning Action</name>
+				<name type="string">Assassin</name>
 				<source type="string">Rogue</source>
-				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+					<p>You focus your training on the grim art of death. Those who adhere to this archetype are diverse: hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Stealth, poison, and disguise help you eliminate your foes with deadly efficiency.</p>
+					<h>Features</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.bonusproficiencies3@DD PHB Deluxe">Bonus Proficiencies</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.assassinate3@DD PHB Deluxe">Assassinate</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.infiltrationexpertise9@DD PHB Deluxe">Infiltration Expertise</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.impostor13@DD PHB Deluxe">Impostor</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.deathstrike17@DD PHB Deluxe">Death Strike</link>
+					</linklist>
 				</text>
 			</id-00006>
 			<id-00007>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Thief</name>
+				<name type="string">Bonus Proficiencies</name>
 				<source type="string">Rogue</source>
+				<specialization type="string">Assassin</specialization>
+				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.</p>
-					<h>Features</h>
-					<linklist>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00013@Incarnate-Engine">Fast Hands</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00016@Incarnate-Engine">Second-Story Work</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00020@Incarnate-Engine">Supreme Sneak</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00024@Incarnate-Engine">Use Magic Device</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00021@Incarnate-Engine">Thief's Reflexes</link>
-					</linklist>
+					<p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.</p>
 				</text>
 			</id-00007>
 			<id-00008>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Fast Hands</name>
+				<name type="string">Assassinate</name>
 				<source type="string">Rogue</source>
-				<specialization type="string">Thief</specialization>
+				<specialization type="string">Assassin</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open lock, or take the Use an Object action.</p>
+					<p>Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</p>
 				</text>
 			</id-00008>
-			<id-00009>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Second-Story Work</name>
-				<source type="string">Rogue</source>
-				<specialization type="string">Thief</specialization>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.</p>
-					<p>In addition when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</p>
-				</text>
-			</id-00009>
 		</featurelist>
 		<flaws type="string">The only thing I trust is gold.\nIf there's a bet, than I'm in. All in. Double or nothing. Don't tell me the odds just roll the dice.</flaws>
 		<gender type="string">Male</gender>
@@ -225,9 +224,10 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
+			<hdmod type="number">0</hdmod>
 			<temporary type="number">0</temporary>
 			<total type="number">21</total>
-			<wounds type="number">19</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Change - Change makes the world go round. It's everywhere and needs to be embraced. (Chaotic)</ideals>
 		<initiative>
@@ -623,10 +623,33 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00025>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Dwarvish</name>
@@ -634,6 +657,7 @@
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">Cade</name>
+		<notes type="string">With roots in the underworld and lesser-known mercenary companies, Cade's past is riddled with experiences that either make or break a person. And while his daggers have seen their fair share of use, killing was not something that came natural to him - it was something he learned, and employ as a necessary tool of his trade. A trade where gold and fame were the only two forms of payment.</notes>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">To me, the whisper of steel and the clash of weapons is just as pleasing as any amount of gold.</personalitytraits>
@@ -647,63 +671,87 @@
 				<name type="string">Spells</name>
 			</id-00002>
 			<id-00003>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Effect</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<uses type="number">0</uses>
 			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -740,6 +788,7 @@
 					<p>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieve's tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
 					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Expertise</name>
 				<prepared type="number">0</prepared>
@@ -757,7 +806,6 @@
 				<locked type="number">1</locked>
 				<name type="string">Hired Blade</name>
 				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
 				<source type="string">Mercenary</source>
 			</id-00003>
 			<id-00004>
@@ -772,7 +820,6 @@
 				<locked type="number">1</locked>
 				<name type="string">Thieves' Cant</name>
 				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
 				<source type="string">Rogue</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00004>
@@ -783,24 +830,25 @@
 				<description type="formattedtext">
 					<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Cunning Action</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Rogue</source>
-				<specializationchoice type="number">0</specializationchoice>
 			</id-00005>
 			<id-00006>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<p>Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open lock, or take the Use an Object action.</p>
+					<p>Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Fast Hands</name>
+				<name type="string">Assassinate</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Rogue</source>
-				<specialization type="string">Thief</specialization>
+				<specialization type="string">Assassin</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00006>
 			<id-00007>
@@ -808,36 +856,28 @@
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<p>When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.</p>
-					<p>In addition when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</p>
+					<p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Second-Story Work</name>
+				<name type="string">Bonus Proficiencies</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Rogue</source>
-				<specialization type="string">Thief</specialization>
+				<specialization type="string">Assassin</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00007>
 			<id-00008>
 				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<label type="string">DODGE</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<p></p>
+					<p>You are a soldier of fortune, a fighter who sells his services to the highest bidder. You roam towns and cities in search of a place where your unique set of talents are useful; whether for a lord hunting a group of bandits, or a local barkeep tired of the goblin infestation in his cellar, you can always find some work if you look hard enough. The job itself should not matter much for a person like you, at least that is what others believe. Therefore, other less admirable and shunned upon jobs sometimes arrives at your lap, giving you the choice and the problem of figuring a way to compromise between your ethics and your job.</p>
 				</description>
-				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Dodge</name>
+				<name type="string">Hired Blade</name>
 				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
+				<source type="string">Mercenary</source>
 			</id-00008>
 		</powers>
 		<profbonus type="number">2</profbonus>
@@ -872,9 +912,9 @@
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">1</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -893,16 +933,16 @@
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
-				<prof type="number">2</prof>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">3</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
-				<prof type="number">2</prof>
+				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">5</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -914,9 +954,9 @@
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">3</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -942,9 +982,9 @@
 			<id-00012>
 				<misc type="number">0</misc>
 				<name type="string">Performance</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">3</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -998,7 +1038,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 		</traitlist>
 		<weaponlist>
@@ -1023,7 +1063,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1064,7 +1104,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">11</ammo>
+				<ammo type="number">1</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>

@@ -3,11 +3,11 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
@@ -60,7 +60,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">283</amount>
+				<amount type="number">342</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">41</amount>
+				<amount type="number">123</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">40</amount>
+				<amount type="number">113</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,10 +109,10 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">127.21</load>
+			<load type="number">129.21</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">348</exp>
+		<exp type="number">437</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -147,6 +147,16 @@
 					<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
 				</text>
 			</id-00002>
+			<id-00003>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00003>
 			<id-00004>
 				<locked type="number">1</locked>
 				<name type="string">Champion</name>
@@ -157,7 +167,7 @@
 			</id-00004>
 			<id-00005>
 				<level type="number">2</level>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Divine Smite</name>
 				<source type="string">Paladin</source>
 				<specializationchoice type="number">0</specializationchoice>
@@ -323,7 +333,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
+			<total type="number">40</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">I fight for what's right and keep my oath of honesty, honor, and duty.</ideals>
@@ -717,7 +727,7 @@
 			<id-00025>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -745,7 +755,7 @@
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
@@ -761,6 +771,50 @@
 				<type type="string">Weapon</type>
 				<weight type="number">5</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00371@Incarnate-Engine">Type Resistance (Force)</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Brooch of Shielding</name>
+				<nonid_name type="string">Broach</nonid_name>
+				<nonidentified type="string">An emerald broach.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00029>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -773,7 +827,7 @@
 				<name type="string">Dwarvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Eldor</name>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -785,33 +839,45 @@
 				<prepared type="number">4</prepared>
 				<stat type="string">charisma</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Effect</name>
+			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
@@ -819,27 +885,35 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
@@ -963,9 +1037,9 @@
 			<id-00005>
 				<actions>
 					<id-00001>
-						<apply type="string">single</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">ATK: 1; DMGTYPE: magic</label>
+						<durunit type="string">minute</durunit>
+						<label type="string">Sacred Weapon; ATK: [CHA], melee; DMGTYPE: magic</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -982,6 +1056,30 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Divine Health; IMMUNE: disease</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.propaladin.features.id-00014@Incarnate-Engine">Divine Health</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Divine Health</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
@@ -1041,6 +1139,8 @@
 					<p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p>
 					<p>This feature has no effect on undead and constructs.</p>
 				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Lay on Hands</name>
 				<prepared type="number">15</prepared>
@@ -1056,6 +1156,8 @@
 					<p>Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.</p>
 					<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
 				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Divine Sense</name>
 				<prepared type="number">4</prepared>
@@ -1328,6 +1430,8 @@
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
 				<name type="string">Channel Divinity</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">enc</usesperiod>
@@ -1347,6 +1451,7 @@
 				<description type="formattedtext">
 					<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>
 				</description>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Divine Smite</name>
@@ -1375,96 +1480,128 @@
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
+				<misc type="number">0</misc>
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">1</total>
 			</id-00001>
 			<id-00002>
+				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">1</total>
 			</id-00002>
 			<id-00003>
+				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
+				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">2</total>
 			</id-00004>
 			<id-00005>
+				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
 				<total type="number">5</total>
 			</id-00005>
 			<id-00006>
+				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00006>
 			<id-00007>
+				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00007>
 			<id-00008>
+				<misc type="number">0</misc>
 				<name type="string">Nature</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00008>
 			<id-00009>
+				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">-1</total>
 			</id-00009>
 			<id-00010>
+				<misc type="number">0</misc>
 				<name type="string">Survival</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">-1</total>
 			</id-00010>
 			<id-00011>
+				<misc type="number">0</misc>
 				<name type="string">Performance</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00011>
 			<id-00012>
+				<misc type="number">0</misc>
 				<name type="string">Religion</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00012>
 			<id-00013>
+				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
+				<total type="number">0</total>
 			</id-00013>
 			<id-00014>
+				<misc type="number">0</misc>
 				<name type="string">Deception</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00014>
 			<id-00015>
+				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00015>
 			<id-00016>
+				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
+				<total type="number">0</total>
 			</id-00016>
 			<id-00017>
+				<misc type="number">0</misc>
 				<name type="string">History</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00017>
 			<id-00018>
+				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">-1</total>
 			</id-00018>
@@ -1478,7 +1615,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1510,12 +1647,14 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Longsword</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00010</recordname>
 				</shortcut>
+				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
 				<carried type="number">2</carried>
@@ -1527,12 +1666,14 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Javelin</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00012</recordname>
 				</shortcut>
+				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
 				<carried type="number">2</carried>

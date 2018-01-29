@@ -75,7 +75,7 @@
 				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">15</amount>
+				<amount type="number">26</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
@@ -83,11 +83,11 @@
 				<name type="string">EP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">0</amount>
+				<amount type="number">17</amount>
 				<name type="string">SP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">19</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">43.08</load>
+			<load type="number">44.08</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">357</exp>
 		<expneeded type="number">400</expneeded>
 		<faction type="string">Zhentarim (Rank 1 : Fang)</faction>
 		<featlist>
@@ -429,6 +429,8 @@
 		<gender type="string">Male</gender>
 		<height type="string">6'8</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">24</total>
 			<wounds type="number">0</wounds>
@@ -687,6 +689,29 @@
 				<name type="string">A single caltrop made from bone (Trinket)</name>
 				<weight type="number">0</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -732,51 +757,67 @@
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -872,6 +913,7 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d10</dice>
+								<stat type="string">charisma</stat>
 								<type type="string">force</type>
 							</id-00001>
 						</damagelist>
@@ -1055,7 +1097,8 @@
 			<id-00008>
 				<actions>
 					<id-00001>
-						<durmod type="number">1</durmod>
+						<durmod type="number">8</durmod>
+						<durunit type="string">hour</durunit>
 						<label type="string">Base AC to 13; AC: [DEX]</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
