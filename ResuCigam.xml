@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">2</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">3</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">24</amount>
+				<amount type="number">79</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">15</amount>
+				<amount type="number">83</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">14</amount>
+				<amount type="number">83</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -112,10 +112,10 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">89.406</load>
+			<load type="number">89.606</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">342</exp>
+		<exp type="number">394</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -208,7 +208,7 @@
 			<maxtemporary type="number">0</maxtemporary>
 			<temporary type="number">0</temporary>
 			<total type="number">20</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">8</wounds>
 		</hp>
 		<ideals type="string">Independence. I am a free spirit- no one tells me what to do. (Chaotic)</ideals>
 		<initiative>
@@ -216,6 +216,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
+		<inspiration type="number">1</inspiration>
 		<inventorylist>
 			<id-00001>
 				<carried type="number">1</carried>
@@ -264,7 +265,7 @@
 				<cost type="string">15 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">worn</location>
 				<locked type="number">1</locked>
 				<name type="string">Clothes, Fine</name>
 				<subtype type="string">Standard</subtype>
@@ -302,30 +303,22 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">1 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
-					<p><b>Binding of Engagement: </b>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
-					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
-					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
-					<p><b>Prestige 0: at the volcano</b></p>
-					<p>Intimidation + 2</p>
-					<p><b>Prestige 1: redirected a river to the volcano</b></p>
-					<p>Deception + 2</p>
-					<p><b>Prestige 2:</b></p>
-					<p>Strength + 4</p>
-					<p><b>Prestige 3:</b></p>
-					<p>Once per day you may scan a 1,000 ft. radius for gold in value of more than 1,000 GP. If there is a source of that degree it points you in the right direction. If there are multiple sources of that strength then it points you towards the closest source.</p>
-					<p><b>Prestige 4:</b></p>
-					<p>Once per short rest you may cast a lvl 7 darkness from the ring. </p>
-					<p>This ring allows you to see normally in dim light, darkness, and magical darkness.</p>
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00263@Incarnate-Engine">Dice Set</link>
+					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<location type="string">belt Pouch</location>
 				<locked type="number">1</locked>
-				<name type="string">Ring of Hades - Prestige 1</name>
-				<nonid_name type="string">Ring of Hades</nonid_name>
-				<nonidentified type="string">Has a cornucopia and a three headed dog on the ring.</nonidentified>
-				<weight type="number">0.001</weight>
+				<name type="string">Dice Set</name>
+				<subtype type="string">Gaming Set</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">0.2</weight>
 			</id-00007>
 			<id-00008>
 				<carried type="number">1</carried>
@@ -342,6 +335,35 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00008>
+			<id-00009>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You have resistance to one damage type while wearing this ring.</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00376@Incarnate-Engine">Type Resistance (Radiant)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>9</td>
+							<td>Radiant</td>
+							<td>Topaz</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">worn</location>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Radiant Resistance</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A topaz ring.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00009>
 			<id-00010>
 				<carried type="number">1</carried>
 				<cost type="string">2 cp</cost>
@@ -402,6 +424,36 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement: </b>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
+					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
+					<p><b>Prestige 0: at the volcano</b></p>
+					<p>Intimidation + 2</p>
+					<p><b>Prestige 1: redirected a river to the volcano</b></p>
+					<p>Deception + 2</p>
+					<p><b>Prestige 2:</b></p>
+					<p>Strength + 4</p>
+					<p><b>Prestige 3:</b></p>
+					<p>Once per day you may scan a 1,000 ft. radius for gold in value of more than 1,000 GP. If there is a source of that degree it points you in the right direction. If there are multiple sources of that strength then it points you towards the closest source.</p>
+					<p><b>Prestige 4:</b></p>
+					<p>Once per short rest you may cast a lvl 7 darkness from the ring.</p>
+					<p>This ring allows you to see normally in dim light, darkness, and magical darkness.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">worn</location>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Hades - Prestige 1</name>
+				<nonid_name type="string">Ring of Hades</nonid_name>
+				<nonidentified type="string">Has a cornucopia and a three headed dog on the ring.</nonidentified>
+				<weight type="number">0.001</weight>
+			</id-00015>
 			<id-00016>
 				<carried type="number">2</carried>
 				<cost type="string">2 sp</cost>
@@ -446,7 +498,7 @@
 			<id-00019>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">10</count>
+				<count type="number">9</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
@@ -501,6 +553,8 @@
 				<weight type="number">10</weight>
 			</id-00023>
 			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 gp</cost>
 				<count type="number">1</count>
@@ -550,7 +604,7 @@
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">body</location>
+				<location type="string">worn</location>
 				<locked type="number">1</locked>
 				<name type="string">Robes</name>
 				<subtype type="string">Standard</subtype>
@@ -647,7 +701,7 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -678,13 +732,15 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -797,6 +853,17 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -812,7 +879,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Burning Hands (S-15)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self (15-foot cone)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -846,7 +913,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Charm Person (30)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -876,7 +943,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Disguise Self (S)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Illusion</school>
@@ -950,7 +1017,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Sleep (90)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -987,7 +1054,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Invisibility (T) (C)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Illusion</school>
@@ -1053,7 +1120,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Suggestion (30) (C)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
