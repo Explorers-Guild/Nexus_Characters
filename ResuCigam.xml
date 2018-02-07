@@ -62,25 +62,25 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.wizard@DD PHB Deluxe</recordname>
+					<recordname>class.prowizard@Incarnate-Engine</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">79</amount>
+				<amount type="number">153</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">83</amount>
+				<amount type="number">138</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">83</amount>
+				<amount type="number">131</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -96,13 +96,13 @@
 		<dci type="string">9318734835</dci>
 		<defenses>
 			<ac>
-				<armor type="number">0</armor>
+				<armor type="number">2</armor>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">12</total>
+				<total type="number">14</total>
 			</ac>
 		</defenses>
 		<deity type="string">Hades</deity>
@@ -115,14 +115,28 @@
 			<load type="number">89.606</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">394</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">477</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Spell Sniper (PHB: Warlock Cantrip: Eldritch Blast)</name>
+				<prerequisite type="string">The ability to cast at least one spell</prerequisite>
+				<text type="formattedtext">
+					<p><i>Prerequisite: The ability to cast at least one spell</i></p>
+					<p>You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits:</p>
+					<list>
+						<li>When you cast a spell that requires you to make an attack roll, the spell's range is doubled.</li>
+						<li>Your ranged spell attacks ignore half cover and three-quarters cover.</li>
+						<li>You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">False Identity</name>
+				<name type="string">False Identity (second identity: Book Author writting 'Cat in a Hat')</name>
 				<source type="string">Charlatan</source>
 				<text type="formattedtext">
 					<p>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.</p>
@@ -172,7 +186,7 @@
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Arcane Recovery</name>
+				<name type="string">Arcane Recovery (recover spell slots of combined lvl is =&#62; 1/2 wiz lvl, rnd up)</name>
 				<source type="string">Wizard</source>
 				<text type="formattedtext">
 					<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
@@ -196,6 +210,78 @@
 					</linklist>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (L4 feat)</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Evocation Savant (gp &#38; time = 1/2 for evo spell copying)</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Evocation</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Sculpt Spells</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Evocation</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Arcane Tradition (school of evocation)</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">1</specializationchoice>
+				<text type="formattedtext">
+					<p>The study of wizardry is ancient, stretching back to the earliest mortal discoveries of magic. It is firmly established in fantasy gaming worlds, with various traditions dedicated to its complex study.</p>
+					<p>The most common arcane traditions in the multiverse revolve around the schools of magic. Wizards through the ages have cataloged thousands of spells, grouping them into either categories called schools. In some places, these traditions are literally schools. In other institutions, schools are more like academic departments, with rival faculties competing for students and funding. even wizards who train apprentices in the solitude of their own towers use the division of magic into schools as a learning device, since the spells of each school require mastery of different techniques.</p>
+					<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of many schools, such as Evocation.</p>
+					<p>Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>
+					<linklist>
+						<link class="reference_classability" recordname="class.prowizard.abilities.id-00002@Incarnate-Engine">School of Big Sticks</link>
+						<link class="reference_classability" recordname="class.prowizard.abilities.id-00001@Incarnate-Engine">School of Evocation</link>
+					</linklist>
+				</text>
+			</id-00008>
+			<id-00009>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Arcane Deflection (hit by attack, reaction +2 AC; +4 to that saving throw)</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">War Magic</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 2nd level, you have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a saving throw, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.</p>
+					<p>When you use this feature, you can't cast spells other than cantrips until the end of your next turn.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Tactical Wit (bonus to INIT+3)</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">War Magic</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, your keen ability to assess tactical situations allows you to act quickly in battle. You can give yourself a bonus to your initiative rolls equal to your Intelligence modifier.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I'm convinced that no one could ever fool me the way I fool others.</flaws>
 		<gender type="string">Male</gender>
@@ -207,14 +293,14 @@
 			<max type="number">20</max>
 			<maxtemporary type="number">0</maxtemporary>
 			<temporary type="number">0</temporary>
-			<total type="number">20</total>
-			<wounds type="number">8</wounds>
+			<total type="number">26</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. I am a free spirit- no one tells me what to do. (Chaotic)</ideals>
 		<initiative>
-			<misc type="number">0</misc>
+			<misc type="number">3</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">2</total>
+			<total type="number">5</total>
 		</initiative>
 		<inspiration type="number">1</inspiration>
 		<inventorylist>
@@ -632,9 +718,9 @@
 				<name type="string">Dwarvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Resu Cigam</name>
-		<notes type="string">talks to his hat, charlatan scam: I put on new identities like clothes.</notes>
+		<notes type="string">He likes to talk to his hat.\nCharlatan Scam: I put on new identities like clothes.\nSPELLBOOK: A tome full of black pages whose writing is visible only in dim light or darkness\nECCENTRICITIES: When you want people to leave you alone, you start talking to yourself. That usually does the trick.\nAMBITIONS: You will become the greatest wizard the world has seen in generations.</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -657,6 +743,9 @@
 			<id-00003>
 				<name type="string">Actions</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Class Feature</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -700,8 +789,8 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
-				<used type="number">1</used>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -766,13 +855,90 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Fire Bolt (120)</name>
+				<name type="string">Fire Bolt (120x2)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Booming Blade; If target moves takes 1d8 thunder</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, M (a weapon)</components>
+				<description type="formattedtext">
+					<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 thunder damage, and the spell ends.</p>
+					<p>This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Booming Blade (5)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">5 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10</dice>
+								<type type="string">force</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.</p>
+					<p>The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Eldritch Blast (120x2)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Warlock</source>
+			</id-00003>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -803,6 +969,52 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Tactical Wit; INIT: [INT]</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 2nd level, your keen ability to assess tactical situations allows you to act quickly in battle. You can give yourself a bonus to your initiative rolls equal to your Intelligence modifier.</p>
+				</description>
+				<group type="string">Class Feature</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Wizard: Tactical Wit</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<specialization type="string">War Magic</specialization>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<apply type="string">action</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Arcane Deflection; AC: 2; SAVE: 4</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>At 2nd level, you have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a saving throw, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.</p>
+					<p>When you use this feature, you can't cast spells other than cantrips until the end of your next turn.</p>
+				</description>
+				<group type="string">Class Feature</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Wizard: Arcane Deflection (R)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<specialization type="string">War Magic</specialization>
+			</id-00006>
 			<id-00008>
 				<actions>
 					<id-00001>
