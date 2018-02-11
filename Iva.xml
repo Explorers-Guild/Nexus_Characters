@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">17</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">5</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">5</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,11 +108,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">58.65</load>
+			<load type="number">61.651</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">331</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -276,9 +276,11 @@
 		<gender type="string">Male</gender>
 		<height type="string">5' 5&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">24</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">21</wounds>
 		</hp>
 		<ideals type="string">I am sworn to exact revenge for my family and neighbors. After much searching, I have found Mannkorda, who now calls himself Eldor and fancies himself to be a Paladin. I will bide my time looking for the right opportunity to not just kill him, but to punish him appropriately for the suffering he caused. As they say, keep your friends close and your enemies closer. Note to GMs: I am actually Ivon, a Suva. Athena has sent me undercover to foil Hades attempt to raise an evil army. Eldor is aware of my true identity and purpose, as is his young truly Teifling protege Nergal. I must lie low until my level has increased enough to gain the Thaumaturgy spells that all true Tieflings possess (Bard Level 6 Additional Magic Secrets).</ideals>
 		<initiative>
@@ -513,6 +515,83 @@
 				<type type="string">Armor</type>
 				<weight type="number">10</weight>
 			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00015>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1000 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement:</b></p>
+					<p>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
+					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
+					<p><b>Prestige 0:</b></p>
+					<p>Insight + 2</p>
+					<p><b>Prestige 1:</b></p>
+					<p>Persuasion Check: +2</p>
+					<p><b>Prestige 2:</b></p>
+					<p>Wisdom + 4 while wearing the ring.</p>
+					<p><b>Prestige 3:</b></p>
+					<p>Can see through a solid surface no thicker than 12 inches and with no lead within 20 feet of you.</p>
+					<p><b>Prestige 4:</b></p>
+					<p>Truesight 30 ft.</p>
+					<p>Radiant Immunity: you are immune to radiant damage. This allows you to enter into the presence of the Fair Maiden without taking damage.</p>
+					<p>Add:</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">0</locked>
+				<name type="string">Ring of Athena - Prestige 0</name>
+				<nonid_name type="string">Ring of the Maiden</nonid_name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.001</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Javelin</name>
+				<nonid_name type="string">Javelin</nonid_name>
+				<nonidentified type="string">A strong javelin.</nonidentified>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -546,57 +625,75 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -614,6 +711,7 @@
 					<p>Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.</p>
 					<p>The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level to 1d10 at 13th level, and to 1d12 at 17th level.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Song of Rest</name>
 				<prepared type="number">0</prepared>
@@ -635,6 +733,7 @@
 					<p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
 					<p>Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Bardic Inspiration</name>
 				<prepared type="number">0</prepared>
@@ -738,8 +837,10 @@
 			<id-00007>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
@@ -963,9 +1064,9 @@
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
-				<prof type="number">3</prof>
+				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1152,6 +1253,50 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Javelin</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Javelin</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">130 lbs</weight>
 	</character>

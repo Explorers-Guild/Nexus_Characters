@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">88</amount>
+				<amount type="number">91</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">62</amount>
+				<amount type="number">67</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">70</amount>
+				<amount type="number">78</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">120</encumbered>
 			<encumberedheavy type="number">240</encumberedheavy>
 			<liftpushdrag type="number">720</liftpushdrag>
-			<load type="number">44.2</load>
+			<load type="number">45.201</load>
 			<max type="number">360</max>
 		</encumbrance>
-		<exp type="number">425</exp>
+		<exp type="number">465</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -316,7 +316,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">27</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">12</wounds>
 		</hp>
 		<ideals type="string">Efficency - I am not emotionally invested in those I aid; to act otherwise would compromise my work. (Neutral)</ideals>
 		<initiative>
@@ -452,6 +452,29 @@
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
 			</id-00007>
+			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00008>
 			<id-00009>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -512,6 +535,39 @@
 				<type type="string">Armor</type>
 				<weight type="number">12</weight>
 			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1000 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement:</b></p>
+					<p>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
+					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
+					<p><b>Prestige 0:</b></p>
+					<p>Insight + 2</p>
+					<p><b>Prestige 1:</b></p>
+					<p>Persuasion Check: +2</p>
+					<p><b>Prestige 2:</b></p>
+					<p>Wisdom + 4 while wearing the ring.</p>
+					<p><b>Prestige 3:</b></p>
+					<p>Can see through a solid surface no thicker than 12 inches and with no lead within 20 feet of you.</p>
+					<p><b>Prestige 4:</b></p>
+					<p>Truesight 30 ft.</p>
+					<p></p>
+					<p>Add:</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Athena - Prestige 1</name>
+				<nonid_name type="string">Ring of the Maiden</nonid_name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.001</weight>
+			</id-00012>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -594,7 +650,7 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -751,6 +807,14 @@
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Healing Spirit; (C)</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 bonus action</castingtime>
@@ -1142,11 +1206,11 @@
 				<total type="number">0</total>
 			</id-00002>
 			<id-00003>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1205,17 +1269,16 @@
 				<total type="number">2</total>
 			</id-00011>
 			<id-00012>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">6</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">0</prof>
-				<stat type="string">charisma</stat>
 				<total type="number">0</total>
 			</id-00013>
 			<id-00014>
@@ -1270,7 +1333,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1306,8 +1369,8 @@
 				<text type="formattedtext">
 					<p>You can cast detect magic and disguise self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.</p>
 					<linklist>
-						<link class="power" recordname="spell.id-00081@Incarnate-Engine"><b>Spell</b></link>: Detect Magic</linklist>
-						<link class="power" recordname="spell.id-00085@Incarnate-Engine"><b>Spell</b></link>: Disguise Self
+						<link class="power" recordname="spell.id-00081@Incarnate-Engine"><b>Spell </b></link>: Detect Magic</linklist>
+						<link class="power" recordname="spell.id-00085@Incarnate-Engine"><b>Spell </b></link>: Disguise Self
 				</text>
 				<type type="string">racial</type>
 			</id-00004>
