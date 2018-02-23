@@ -61,36 +61,38 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<hdused type="number">1</hdused>
+				<level type="number">6</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.wizard@DD PHB Deluxe</recordname>
+					<recordname>class.prowizard@Incarnate-Engine</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">218</amount>
-				<name type="string">GP</name>
+				<amount type="number">0</amount>
 			</slot1>
 			<slot2>
-				<amount type="number">229</amount>
-				<name type="string">SP</name>
+				<amount type="number">0</amount>
+				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">221</amount>
-				<name type="string">CP</name>
+				<amount type="number">946</amount>
+				<name type="string">GP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
+				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">341</amount>
+				<name type="string">SP</name>
 			</slot5>
 			<slot6>
-				<amount type="number">0</amount>
+				<amount type="number">334</amount>
+				<name type="string">CP</name>
 			</slot6>
 		</coins>
 		<dci type="string">9318734835</dci>
@@ -112,11 +114,11 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">91.206</load>
+			<load type="number">93.306</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">568</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">674</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -303,6 +305,20 @@
 					</linklist>
 				</text>
 			</id-00011>
+			<id-00012>
+				<name type="string">Item: Ring of Radiant Resistance</name>
+			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">L6 Potent Cantrip</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Evocation</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effects from the cantrip.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I'm convinced that no one could ever fool me the way I fool others.</flaws>
 		<gender type="string">Male</gender>
@@ -311,10 +327,11 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
+			<hdmod type="number">0</hdmod>
 			<max type="number">20</max>
 			<maxtemporary type="number">0</maxtemporary>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. I am a free spirit- no one tells me what to do. (Chaotic)</ideals>
@@ -788,6 +805,48 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00019@Incarnate-Engine">Arcane Eye</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>Rare</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Arcane Eye</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Fine Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00027>
 			<id-00028>
 				<carried type="number">2</carried>
 				<cost type="string">20 gp</cost>
@@ -818,6 +877,48 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.025</weight>
 			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">150 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00271@Incarnate-Engine">Stinking Cloud</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>Uncommon</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Stinking Cloud</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00030>
 			<id-00031>
 				<carried type="number">2</carried>
 				<cost type="string">1 gp</cost>
@@ -830,6 +931,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">4</weight>
 			</id-00031>
+			<id-00032>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00392@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00032>
 			<id-00033>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -842,6 +980,28 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.25</weight>
 			</id-00033>
+			<id-00034>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00083@Incarnate-Engine">Detect Thoughts</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Medallion of Thoughts</name>
+				<nonid_name type="string">Medallion</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<subtype type="string">-</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00034>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -851,7 +1011,7 @@
 				<name type="string">Dwarvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Resu Cigam</name>
 		<notes type="string">He likes to talk to his hat.\nCharlatan Scam: I put on new identities like clothes.\nSPELLBOOK: A tome full of black pages whose writing is visible only in dim light or darkness\nECCENTRICITIES: When you want people to leave you alone, you start talking to yourself. That usually does the trick.\nAMBITIONS: You will become the greatest wizard the world has seen in generations.</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
@@ -879,6 +1039,9 @@
 			<id-00004>
 				<name type="string">Class Feature</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Items</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -919,15 +1082,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">3</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1002,6 +1165,7 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -1025,7 +1189,7 @@
 				<duration type="string">1 round</duration>
 				<group type="string">Spells</group>
 				<level type="number">0</level>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Booming Blade (5)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">5 feet</range>
@@ -1733,6 +1897,140 @@
 				<school type="string">Evocation</school>
 				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Monk, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Ring of Radiant Resistance; RESIST: radiant</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<bonus type="number">0</bonus>
+				<cast type="number">0</cast>
+				<cost type="string">501 - 5,000 gp</cost>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You have resistance to radiant damage type while wearing this ring</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Radiant Resistance</name>
+				<nonid_name type="string">Gold Ring</nonid_name>
+				<nonidentified type="string">A delicately made gold ring with a topaz setting.</nonidentified>
+				<prepared type="number">0</prepared>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Rare (Requires Attunement)</rarity>
+				<ritual type="number">0</ritual>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Ring of Radiant Resistance</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Signet Ring</name>
+					</id-00002>
+				</spells>
+				<type type="string">Ring</type>
+				<weight type="number">0.01</weight>
+			</id-00027>
+			<id-00028>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Hypnotic Pattern (C); Incapacitated</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Hypnotic Pattern (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S, M (a glowing stick of incense or a crystal vial filled with phosphorescent material)</components>
+				<description type="formattedtext">
+					<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
+					<p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Hypnotic Pattern (120) (C)</name>
+				<prepared type="number">1</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00028>
+			<id-00029>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Counterspell (R) (60)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00029>
+			<id-00032>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-Engine">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00032>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>

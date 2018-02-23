@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<hdused type="number">1</hdused>
+				<level type="number">7</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">641</amount>
+				<amount type="number">1358</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">230</amount>
+				<amount type="number">342</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">240</amount>
+				<amount type="number">350</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -109,11 +109,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">74.895</load>
+			<load type="number">75.095</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">667</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">773</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -122,28 +122,34 @@
 				<locked type="number">1</locked>
 				<name type="string">Spellcasting</name>
 				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations. See chapter 10 for the general rules of spellcasting and chapter 11 for the bard spell list.</p>
+					<p>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations.</p>
 					<linklist>
-						<link class="reference_colindex" recordname="reference.spelllists.bard@DD PHB Deluxe">Bard Spells</link>
+						<link class="reference_colindex" recordname="lists.spells.bard@Incarnate-Engine">Bard Spells</link>
 					</linklist>
 					<p><b>Cantrips</b></p>
 					<p>You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00035@Incarnate-Engine">The Bard</link>
+					</linklist>
 					<p><b>Spell Slots</b></p>
-					<p>The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You must finish a long rest to regain any expended spell slots.</p>
-					<p>For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot.</p>
+					<p>The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. you regain all expended spell slots when you finish a long rest.</p>
+					<p>For example, if you know the 1st-level spell <i>cure wounds </i>and have a 1st-level and a 2nd-level spell slot available, you can cast <i>cure wounds </i>using either slot.</p>
 					<p><b>Spells Known of 1st Level and Higher</b></p>
 					<p>You know four 1st-level spells of your choice from the bard spell list.</p>
 					<p>The Spells Known column of the Bard table shows when you learn more bard spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.</p>
-					<p>Additionally, when you gain a level in this class, you can choose one of the spells you know and replace it with another spell from the bard spell list, which must be of a level for which you have spell slots, as shown on the table.</p>
+					<p>Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots.</p>
 					<p><b>Spellcasting Ability</b></p>
-					<p>Charisma is your spellcasting ability for your bard spells, since the power of your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
-					<p><b>Spell Save DC </b>= 8 + your proficiency bonus + your Charisma modifier</p>
-					<p><b>Spell Attack modifier </b>= your proficiency bonus + your Charisma modifier</p>
+					<p>Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
+					<list>
+						<li><b>Spell save DC </b>= 8 + your proficiency bonus + your Charisma modifier</li>
+						<li><b>Spell attack modifier </b>= your proficiency bonus + your Charisma modifier</li>
+					</list>
 					<p><b>Ritual Casting</b></p>
-					<p>You can cast any bard spell you know as a ritual if that spell has the ritual tag. To cast a spell as a ritual, you must add 10 minutes to the spell's casting time, as normal.</p>
+					<p>You can cast any bard spell you know as a ritual if that spell has the ritual tag.</p>
 					<p><b>Spellcasting Focus</b></p>
-					<p>You can use a musical instrument as the material component for a bard spell, as described in chapter 10.</p>
+					<p>You can use a musical instrument (see &#34;Equipment&#34;) as a spellcasting focus for your bard spells.</p>
 				</text>
 			</id-00001>
 			<id-00002>
@@ -247,39 +253,6 @@
 					<p>At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
 				</text>
 			</id-00009>
-			<id-00010>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Spellcasting (Bard)</name>
-				<source type="string">Bard</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations.</p>
-					<linklist>
-						<link class="reference_colindex" recordname="lists.spells.bard@Incarnate-Engine">Bard Spells</link>
-					</linklist>
-					<p><b>Cantrips</b></p>
-					<p><b>Cantrips</b></p>
-					<p>You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.</p>
-					<p><b>Spell Slots</b></p>
-					<p>The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. you regain all expended spell slots when you finish a long rest.</p>
-					<p>For example, if you know the 1st-level spell <i>cure wounds </i>and have a 1st-level and a 2nd-level spell slot available, you can cast <i>cure wounds </i>using either slot.</p>
-					<p><b>Spells Known of 1st Level and Higher</b></p>
-					<p>You know four 1st-level spells of your choice from the bard spell list.</p>
-					<p>The Spells Known column of the Bard table shows when you learn more bard spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.</p>
-					<p>Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots.</p>
-					<p><b>Spellcasting Ability</b></p>
-					<p>Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
-					<list>
-						<li><b>Spell save DC </b>= 8 + your proficiency bonus + your Charisma modifier</li>
-						<li><b>Spell attack modifier </b>= your proficiency bonus + your Charisma modifier</li>
-					</list>
-					<p><b>Ritual Casting</b></p>
-					<p>You can cast any bard spell you know as a ritual if that spell has the ritual tag.</p>
-					<p><b>Spellcasting Focus</b></p>
-					<p>You can use a musical instrument (see &#34;Equipment&#34;) as a spellcasting focus for your bard spells.</p>
-				</text>
-			</id-00010>
 			<id-00011>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
@@ -361,8 +334,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
-			<wounds type="number">0</wounds>
+			<total type="number">52</total>
+			<wounds type="number">3</wounds>
 		</hp>
 		<ideals type="string">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</ideals>
 		<initiative>
@@ -580,7 +553,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
-				<count type="number">18</count>
+				<count type="number">20</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
@@ -694,6 +667,24 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Has a bookcase with a manual on orc procedures. (in orcish) It talks about different signals to be used between towers:</p>
+					<p>1. adding calcium chloride (orange) means being invaded by overwhelming numbers</p>
+					<p>2. adding sodium nitrate (yellow) means launching an invasion</p>
+					<p>3. adding barium chloride (green) means a small scirmish that is not a worry</p>
+					<p>4. adding copper chloride (blue) means a celebration</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Book Written in Orcish</name>
+				<nonid_name type="string">Book Written in Orcish</nonid_name>
+				<weight type="number">0</weight>
+			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -816,6 +807,22 @@
 				<type type="string">Tools</type>
 				<weight type="number">8</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink (1-ounce Bottle)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00025>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -828,7 +835,7 @@
 				<name type="string">Draconic</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Vallard Dickens</name>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -888,19 +895,19 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">3</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
-				<used type="number">0</used>
+				<max type="number">1</max>
+				<used type="number">1</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
@@ -1153,7 +1160,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">3</cast>
 				<description type="formattedtext">
 					<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
 					<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw that it just made. The creature can wait until after it rolls the d20, before deciding to use the Bardic Inspiration die but must must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
@@ -1390,26 +1397,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Wizard</source>
 			</id-00017>
-			<id-00018>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Lesser Restoration</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Abjuration</school>
-				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
-			</id-00018>
 			<id-00019>
 				<actions>
 				</actions>
@@ -1488,6 +1475,112 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Invisible; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Invisibility</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: constitution; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+							</id-00001>
+						</heallist>
+						<healtype type="string">temp</healtype>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: strength; (C)</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: dexterity; (C)</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: charisma; (C)</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: intelligence; (C)</label>
+						<order type="number">6</order>
+						<type type="string">effect</type>
+					</id-00006>
+					<id-00007>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: wisdom; (C)</label>
+						<order type="number">7</order>
+						<type type="string">effect</type>
+					</id-00007>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (fur or a feather from a beast)</components>
+				<description type="formattedtext">
+					<p>You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.</p>
+					<p>Bear's Endurance. The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</p>
+					<p>Bull's Strength. The target has advantage on Strength checks, and his or her carrying capacity doubles.</p>
+					<p>Cat's Grace. The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.</p>
+					<p>Eagle's Splendor. The target has advantage on Charisma checks.</p>
+					<p>Fox's Cunning. The target has advantage on Intelligence checks.</p>
+					<p>Owl's Wisdom. The target has advantage on Wisdom checks.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour.</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Enhance Ability</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Cleric, Druid, Sorcerer</source>
+			</id-00022>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1557,9 +1650,9 @@
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Performance</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">7</total>
+				<total type="number">10</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1620,9 +1713,9 @@
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
-				<prof type="number">2</prof>
+				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">9</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1662,7 +1755,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1697,7 +1790,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">18</maxammo>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Shortbow</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
