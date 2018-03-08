@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">146</amount>
+				<amount type="number">163</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">6</amount>
+				<amount type="number">10</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">8</amount>
+				<amount type="number">17</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,11 +110,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">48.78</load>
+			<load type="number">75.281</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">570</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">623</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -270,6 +270,16 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Bend Luck</name>
+				<source type="string">Sorcerer</source>
+				<specialization type="string">Wild Magic</specialization>
+				<text type="formattedtext">
+					<p>Starting at 6th level, you have the ability to twist fate using your wild magic. When another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll. You can do so after the creature rolls but before any effects of the roll occur.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I'm willing to try anything I think will be a good time.</flaws>
 		<gender type="string">Female</gender>
@@ -278,8 +288,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
-			<wounds type="number">15</wounds>
+			<total type="number">32</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Fickle - My time is worth whoever is paying me. (Chaotic)</ideals>
 		<initiative>
@@ -538,6 +548,8 @@
 				<weight type="number">3</weight>
 			</id-00019>
 			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -550,8 +562,13 @@
 				<weight type="number">0.02</weight>
 			</id-00020>
 			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">0</carried>
 				<count type="number">3</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Component Pouch</location>
 				<name type="string">Healthy-looking berries</name>
@@ -567,7 +584,7 @@
 			</id-00022>
 			<id-00023>
 				<carried type="number">0</carried>
-				<count type="number">3</count>
+				<count type="number">2</count>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Component Pouch</location>
 				<name type="string">Sleepy berries</name>
@@ -638,27 +655,52 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">902 GP</cost>
+				<cost type="string">1000 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d4 piercing</damage>
 				<description type="formattedtext">
-					<p>-</p>
-					<p>Adamantine weapons were designed to be unbreakable. This strange allow puts up with so much abuse, that their wielders can let loose. They can swing harder at inanimate objects without fearing destroying their blades, and so they do. You get an automatic critical against any inanimate object when using an adamantine weapon.</p>
-					<p>Was stolen from the dwarves, they are looking for it.</p>
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement:</b></p>
+					<p>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
+					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
+					<p><b>Prestige 0:</b></p>
+					<p>Insight + 2</p>
+					<p><b>Prestige 1:</b></p>
+					<p>Persuasion Check: +2</p>
+					<p><b>Prestige 2:</b></p>
+					<p>Wisdom + 4 while wearing the ring.</p>
+					<p><b>Prestige 3:</b></p>
+					<p>Can see through a solid surface no thicker than 12 inches and with no lead within 20 feet of you.</p>
+					<p><b>Prestige 4:</b></p>
+					<p>Truesight 30 ft.</p>
+					<p></p>
+					<p>Add:</p>
 				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
+				<isidentified type="number">0</isidentified>
 				<location type="string">Lead Box</location>
 				<locked type="number">1</locked>
-				<name type="string">Adamantine Dagger</name>
-				<nonid_name type="string">Dagger</nonid_name>
-				<nonidentified type="string">A finely crafted dagger.</nonidentified>
-				<properties type="string">Finesse light thrown (range 20/60)</properties>
-				<rarity type="string">Common</rarity>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">1</weight>
+				<name type="string">Ring of Athena - Prestige 0</name>
+				<nonid_name type="string">Ring of the Maiden</nonid_name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.001</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">FruitBag</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.5</weight>
+			</id-00028>
 			<id-00029>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -666,6 +708,50 @@
 				<name type="string">Lead Box</name>
 				<weight type="number">0</weight>
 			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00055">Uopvig - Plant</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">FruitBag</location>
+				<name type="string">Uopvig</name>
+				<weight type="number">10</weight>
+			</id-00030>
+			<id-00031>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">FruitBag</location>
+				<name type="string">Euha</name>
+				<weight type="number">10</weight>
+			</id-00031>
+			<id-00032>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00052">Ebbalup - Plant</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">FruitBag</location>
+				<name type="string">Ebbalup</name>
+				<weight type="number">2</weight>
+			</id-00032>
+			<id-00033>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">FruitBag</location>
+				<name type="string">Etagra</name>
+				<weight type="number">5</weight>
+			</id-00033>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -675,7 +761,7 @@
 				<name type="string">Plainstongue</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Feldis Harlequin</name>
 		<notes type="string">Check mystery berries\n__- Poison = NW 5-5\n__- Regular = NW 5-51\n__- Sleep = C 5-6\n__- Ache = C 5-6</notes>
 		<perception type="number">10</perception>
@@ -694,9 +780,9 @@
 				<stat type="string">charisma</stat>
 				<uses type="number">0</uses>
 			</id-00001>
-			<id-00002>
-				<name type="string">Effect</name>
-			</id-00002>
+			<id-00003>
+				<name type="string">Class</name>
+			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -741,11 +827,11 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">1</used>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -772,7 +858,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -805,7 +891,6 @@
 				<description type="formattedtext">
 					<p>You can use your action to headbutt a creature within 10 feet of you. Your target makes a Dexterity saving throw. The dc for this saving throw equals 8 + your strength modifier + your proficiency bonus. On a failure, the target takes bludgeoning damage equal to 1d6 + your Constitution modifier and is knocked five feet away from you. You automatically move to their previous position. On a success, they take no damage and can make an opportunity attack.</p>
 				</description>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Horns (Antilonoid)</name>
@@ -849,7 +934,8 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">lightning</type>
 							</id-00001>
 						</damagelist>
@@ -915,7 +1001,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d12</dice>
+								<dice type="dice">d12,d12</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">poison</type>
 							</id-00001>
 						</damagelist>
@@ -1004,11 +1091,19 @@
 			</id-00007>
 			<id-00009>
 				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">DISSAV</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
 				</description>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Heightened Spell (3SP)</name>
@@ -1030,6 +1125,7 @@
 				<description type="formattedtext">
 					<p>Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature.</p>
 				</description>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Tides of Chaos</name>
@@ -1045,6 +1141,7 @@
 				<description type="formattedtext">
 					<p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</p>
 				</description>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Subtle Spell (1SP)</name>
@@ -1218,9 +1315,13 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<level type="number">0</level>
 				<name type="string">*Musk</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 			</id-00018>
 			<id-00019>
 				<actions>
@@ -1266,6 +1367,35 @@
 				<school type="string">Necromancy</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00019>
+			<id-00020>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<name type="string">*SorcererPoints</name>
+				<prepared type="number">6</prepared>
+			</id-00020>
+			<id-00021>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, M (a small clay model of a ziggurat)</components>
+				<description type="formattedtext">
+					<p>This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Tongues</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Cleric, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00021>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1424,6 +1554,12 @@
 				<name type="string">Brewer's Supplies</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00241@Incarnate-Engine">Brewer's Supplies</link>
+					</linklist>
+				</text>
 				<total type="number">3</total>
 			</id-00020>
 			<id-00022>
@@ -1443,7 +1579,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1576,27 +1712,6 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00003>
-			<id-00004>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Adamantine Dagger</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00027</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00004>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
