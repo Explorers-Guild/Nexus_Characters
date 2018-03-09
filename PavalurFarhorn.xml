@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">153</amount>
+				<amount type="number">201</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">152</amount>
+				<amount type="number">206</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">161</amount>
+				<amount type="number">218</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,8 +113,8 @@
 			<load type="number">46.201</load>
 			<max type="number">360</max>
 		</encumbrance>
-		<exp type="number">546</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">631</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -238,7 +238,7 @@
 			</id-00006>
 			<id-00007>
 				<level type="number">2</level>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Wild Shape</name>
 				<source type="string">Druid</source>
 				<specializationchoice type="number">0</specializationchoice>
@@ -248,6 +248,8 @@
 						<link class="npc" recordname="reference.npcdata.giantwolfspider@DD MM Monster Manual">Giant Wolf Spider</link>
 						<link class="npc" recordname="npc.id-00090@Incarnate-Battles">Warhorse</link>
 						<link class="npc" recordname="npc.id-00011@Incarnate-Battles">Black Bear</link>
+						<link class="npc" recordname="npc.id-00014@Incarnate-Battles">Brown Bear</link>
+						<link class="npc" recordname="npc.id-00042@Incarnate-Battles">Giant Hyena</link>
 					</linklist>
 					<p>Starting at 2nd Level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
 					<p>Your druid level determines the beasts you can transform into as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.</p>
@@ -307,6 +309,171 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Partial Transformation</name>
+				<source type="string">Druid</source>
+				<specialization type="string">Circle of Transformation</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Through intense training you have become able to transform part of your body independently of the rest. Of the six zones of your body (head, two arms, two legs, and torso) you may transform up to 1 + Wisdom Modifier zones. This counts as a wild shape transformation. You may only transform zones into animals that you are allowed to transform into for wild shape.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prodruid.features.id-00040@Incarnate-Engine">Wild Shape</link>
+					</linklist>
+					<p>Benefits of transformation:</p>
+					<table>
+						<tr>
+							<td>Creature</td>
+							<td>CR</td>
+							<td>Head</td>
+							<td>Arm</td>
+							<td>Leg</td>
+							<td>Torso</td>
+						</tr>
+						<tr>
+							<td>Ape</td>
+							<td>1/2</td>
+							<td>WIS: 12</td>
+							<td>Climb Speed of 30ft. (requires both arms)</td>
+							<td>Walking speed of 30 ft. (requires both legs)</td>
+							<td>5 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Black Bear</td>
+							<td>1/2</td>
+							<td>Bite; Melee Weapon Attack: reach 5 ft., one target. Hit: 1d6 + STR piercing damage.</td>
+							<td>Claws; Melee Weapon Attack: reach 5 ft. Hit: 2d4 + STR.</td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>5 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Crocodile</td>
+							<td>1/2</td>
+							<td>Hold Breath: You can hold your breath for 15 minutes.</td>
+							<td></td>
+							<td></td>
+							<td>swim speed of 30 ft. (requires torso and head)</td>
+						</tr>
+						<tr>
+							<td>Giant Goat</td>
+							<td>1/2</td>
+							<td>Ram; reach 5 ft. 2d4 + STR bludgeoning damage</td>
+							<td>Nimble: GRANTDISATK (requires both legs and both arms)</td>
+							<td>Sure-Footed: You have advantage on Strength and Dexterity saving throws made against effects that would knock it prone. (requires both legs)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Giant Mosquito</td>
+							<td>1/2</td>
+							<td>Mosquito Bite; range 5 ft. 1d10 piercing damage</td>
+							<td>20 ft. flying (requires both arms)</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Warhorse</td>
+							<td>1/2</td>
+							<td></td>
+							<td></td>
+							<td>Walking speed 60 ft. (requires both legs and both arms and torso)</td>
+						</tr>
+						<tr>
+							<td>Brown Bear</td>
+							<td>1</td>
+							<td>Keen Smell: You have advantage on Wisdom (Perception) checks that rely on smell.</td>
+							<td>Claws; Melee Weapon Attack: reach 5 ft. Hit: 2d6 + STR.</td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>10 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Dire Wolf</td>
+							<td>1</td>
+							<td>Pack tactics: You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</td>
+							<td>Walking speed of 50 ft. (requires both legs and both arms and torso)</td>
+							<td>Walking speed of 35 ft. (requires both legs)</td>
+							<td>8 temporary hit points.</td>
+						</tr>
+						<tr>
+							<td>Giant Eagle</td>
+							<td>1</td>
+							<td>Keen Sight: The eagle has advantage on Wisdom (Perception) checks that rely on sight.</td>
+							<td>Fly speed 80 ft. Requires both arms.</td>
+							<td>Claws; Melee Weapon Attack: reach 5ft., 2d6 + STR</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Giant Octopus</td>
+							<td>1</td>
+							<td>Water Breathing: You may breath underwater</td>
+							<td>Tentacles: Melee Weapon Attack: reach 15ft., one target. 2d6 + STR. If target is a creature then it is grappled (escape DC 16). (requires both arms)</td>
+							<td>Swim speed 60. (requires both arms, both legs, and torso).</td>
+							<td>Inc Cloud: a 20 foot radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink the octopus can use the Dash action as a bonus action. (recharges after a short or long rest)</td>
+						</tr>
+						<tr>
+							<td>Giant Toad</td>
+							<td>1</td>
+							<td>Amphibious: You may breath both air and water.</td>
+							<td></td>
+							<td>Standing Leap: Your long jump is up to 20 feet and your high jump is up to 10 feet. (requires both legs)</td>
+							<td>Wet skin; RESIST: Fire</td>
+						</tr>
+						<tr>
+							<td>Tiger</td>
+							<td>1</td>
+							<td>Darkvision 60 ft.</td>
+							<td></td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>8 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Cave Bear</td>
+							<td>2</td>
+							<td>Keen Smell: You have advantage on Wisdom (Perception) checks that rely on smell.</td>
+							<td>Claws; Melee Weapon Attack: reach 5 ft. Hit: 2d6 + STR.</td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>Sets your temporary hit points to 10 at each initiative roll.</td>
+						</tr>
+						<tr>
+							<td>Giant Constrictor Snake</td>
+							<td>2</td>
+							<td>blindsight 10 ft.</td>
+							<td></td>
+							<td></td>
+							<td>Constrict: Melee Weapon attack: reach 5 ft., one creature (2d8 + STR) bludgeoning damage, and the target is grappled (escape DC 13 + STR). Until the grapple ends, the creature is restrained, and the snake can't constrict another target.</td>
+						</tr>
+						<tr>
+							<td>Rhinoceros</td>
+							<td>2</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Leathery skin: RESIST: slashing; RESIST: bludgeoning; VULN: piercing</td>
+						</tr>
+					</table>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Larger Transformation (CR 1)</name>
+				<source type="string">Druid</source>
+				<specialization type="string">Circle of Transformation</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Those in the circle of transformation can transform into large and more powerful beasts according to the following table:</p>
+					<table>
+						<tr>
+							<td>Level</td>
+							<td>Max CR</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>1</td>
+						</tr>
+					</table>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I am only interested in the ailments my patients suffer from, not the people themselves.</flaws>
 		<gender type="string">Male</gender>
@@ -315,7 +482,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">33</total>
+			<total type="number">39</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Efficency - I am not emotionally invested in those I aid; to act otherwise would compromise my work. (Neutral)</ideals>
@@ -604,7 +771,7 @@
 				<name type="string">Druidic</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Pavalur Farhorn</name>
 		<notes type="string">Resu has hysteria amd Belen has Schitzoaffectism. Resu has headaches, random mumbling, and random actions. Belen used to be talkitive now completly silent, Resu has ring brings water. Belen has boomerang turns to shadow, wraps around wrist and i think she is charged to kill someone.</notes>
 		<perception type="number">14</perception>
@@ -674,7 +841,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -702,7 +869,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">preparation</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -789,7 +956,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Faerie Fire</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -836,6 +1003,16 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00002>
+					<id-00003>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">3</order>
+						<type type="string">heal</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 bonus action</castingtime>
@@ -1059,7 +1236,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Darkvision</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1222,6 +1399,18 @@
 			</id-00018>
 			<id-00019>
 				<actions>
+					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">wisdom</atkstat>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1392,7 +1581,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Detect Magic</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
@@ -1989,7 +2178,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Locate Animals or Plants</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
@@ -2759,8 +2948,8 @@
 				<misc type="number">0</misc>
 				<name type="string">Herbalism Kit</name>
 				<prof type="number">1</prof>
-				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<stat type="string">charisma</stat>
+				<total type="number">3</total>
 			</id-00019>
 		</skilllist>
 		<speed>

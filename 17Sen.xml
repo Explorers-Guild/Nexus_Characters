@@ -38,11 +38,11 @@
 				<score type="number">11</score>
 			</strength>
 			<wisdom>
-				<bonus type="number">3</bonus>
-				<save type="number">3</save>
+				<bonus type="number">4</bonus>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -62,25 +62,25 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.id-00005@Incarnate-Engine</recordname>
+					<recordname>class.promonk@Incarnate-Engine</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">65</amount>
+				<amount type="number">63</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">84</amount>
+				<amount type="number">141</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">80</amount>
+				<amount type="number">134</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -102,7 +102,7 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<deity type="string">Hecatonchieres (Cottus)</deity>
@@ -110,11 +110,11 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">74.16</load>
+			<load type="number">75.46</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">380</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">465</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -183,24 +183,6 @@
 					<p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
 				</text>
 			</id-00005>
-			<id-00006>
-				<locked type="number">1</locked>
-				<name type="string">Fire Elemental</name>
-				<source type="string">Monk</source>
-				<text type="formattedtext">
-					<p>This is an archetype belonging to the Monk class ( it is based off of the Way of the Sun Soul in the SCAG, but with some minor changes to add some utility and versatility and a more appropriate capstone ability).</p>
-					<p>A bare-chested dwarf exhales white hot flame as he breathes over a damaged sword, duplicating the heat of a forge so that he can repair it on the road.</p>
-					<p>A red-skinned tiefling extends her leg with a high kick as a mote of flame ingulfs her opponent 30 feet away.</p>
-					<p>A human extends two fingers as lightning extends through his body, and outward, demolishing an outer wall as the seige gets underway.</p>
-					<p>A Fire Elementalist is a Monk who (through study, fortune or fate) have unlocked their inner flame. Using their breath to generate energy, these monks extend their Ki outward from their body, creating and manipulating flame.</p>
-					<linklist>
-						<link class="reference_classfeature" recordname="class.id-00005.features.id-00010@Incarnate-Engine">Inner Flame</link>
-						<link class="reference_classfeature" recordname="class.id-00005.features.id-00011@Incarnate-Engine">Forges Fire</link>
-						<link class="reference_classfeature" recordname="class.id-00005.features.id-00012@Incarnate-Engine">Fire Aura</link>
-						<link class="reference_classfeature" recordname="class.id-00005.features.id-00013@Incarnate-Engine">Trial of the White Flame</link>
-					</linklist>
-				</text>
-			</id-00006>
 			<id-00007>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
@@ -228,6 +210,32 @@
 					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long tange of 60 feet.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<p>(uses heal to compensate for damage dealt)</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00419@Incarnate-Engine">Slow Fall</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">My way of peace and meditation is the only way. Those who travel with me must meditate with me at least once a day or I will refuse to help.</flaws>
 		<gender type="string">Male</gender>
@@ -236,8 +244,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
-			<wounds type="number">16</wounds>
+			<total type="number">27</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Pacifist - My skills are only to be used for defense. I will not kill my opponent unless it is unavoidable. (Good)</ideals>
 		<initiative>
@@ -251,7 +259,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
-				<count type="number">17</count>
+				<count type="number">16</count>
 				<damage type="string">1d4 piercing</damage>
 				<description type="formattedtext">
 					<p></p>
@@ -444,7 +452,7 @@
 					<h>Description</h>
 					<p>You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed you while you wear the pendant.</p>
 				</description>
-				<isidentified type="number">0</isidentified>
+				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Periapt of Health</name>
@@ -495,6 +503,50 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.1</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Written in Fey:</p>
+					<p>Offers a pardon for all but Galadhon, he will have to be banished.</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<name type="string">Tiny Scroll</name>
+				<nonid_name type="string">Tiny Scroll</nonid_name>
+				<weight type="number">0.05</weight>
+			</id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Ash Branch</name>
+				<weight type="number">0.5</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -507,24 +559,19 @@
 				<name type="string">Military Handsign</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">17 &#34;Sen&#34;</name>
-		<perception type="number">15</perception>
+		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am shattered. Something has happened that has shaken my beliefs and I will not find peace until I can face what has happened.\nI am like a leaf in the wind. I go where ever the road takes me. Life just &#34;happens&#34;, and I am content to let it.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
-			<id-00004>
-				<atkmod type="number">0</atkmod>
-				<atkprof type="number">1</atkprof>
-				<atkstat type="string">dexterity</atkstat>
-				<name type="string">Ki Abilities</name>
-				<prepared type="number">0</prepared>
-				<savemod type="number">0</savemod>
-				<saveprof type="number">1</saveprof>
-				<savestat type="string">dexterity</savestat>
-				<uses type="number">0</uses>
-			</id-00004>
+			<id-00001>
+				<name type="string">Ki</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Class</name>
+			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -614,21 +661,24 @@
 				</actions>
 				<cast type="number">0</cast>
 				<level type="number">0</level>
-				<name type="string">Dodge Action</name>
+				<name type="string">*Dodge</name>
 				<prepared type="number">0</prepared>
 			</id-00001>
 			<id-00002>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<name type="string">Spiritual Flame</name>
 				<prepared type="number">0</prepared>
+				<shortdescription type="string">light</shortdescription>
 			</id-00002>
 			<id-00003>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<name type="string">Control Flames</name>
 				<prepared type="number">0</prepared>
@@ -636,10 +686,11 @@
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">0</cast>
+				<group type="string">Ki</group>
 				<level type="number">0</level>
-				<name type="string">Ki</name>
-				<prepared type="number">3</prepared>
+				<name type="string">*Ki</name>
+				<prepared type="number">4</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
 			<id-00005>
@@ -656,10 +707,10 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Ki Abilities</group>
+				<group type="string">Ki</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Step of the Wind</name>
+				<name type="string">Step of the Wind(1K)</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<shortdescription type="string">dash, disengage as bonus; jump x2</shortdescription>
@@ -678,10 +729,10 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Ki Abilities</group>
+				<group type="string">Ki</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Patient Defence</name>
+				<name type="string">Patient Defence(1K)</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<shortdescription type="string">dodge as bonus</shortdescription>
@@ -693,10 +744,10 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Ki Abilities</group>
+				<group type="string">Ki</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Flurry of Blows</name>
+				<name type="string">Flurry of Blows(1K)</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<shortdescription type="string">2 unarmed as bonus</shortdescription>
@@ -713,10 +764,59 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Class</group>
 				<level type="number">0</level>
-				<name type="string">Flaming Fists</name>
+				<name type="string">Flaming Fists(1K)</name>
 				<prepared type="number">0</prepared>
+				<shortdescription type="string">1d4 fire damage</shortdescription>
 			</id-00008>
+			<id-00010>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Absorb Flames(1K)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00005>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+								<statmult type="number">5</statmult>
+							</id-00005>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<shortdescription type="string">fall DMG -5 x MNK</shortdescription>
+			</id-00011>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -742,7 +842,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -777,14 +877,14 @@
 				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -819,7 +919,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -861,7 +961,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
@@ -887,7 +987,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00052_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 		</traitlist>
 		<weapon>
@@ -915,7 +1015,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">17</maxammo>
+				<maxammo type="number">16</maxammo>
 				<name type="string">Dart</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
