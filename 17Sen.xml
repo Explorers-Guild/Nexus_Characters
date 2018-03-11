@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">0</bonus>
-				<save type="number">2</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">11</score>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">63</amount>
+				<amount type="number">91</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">141</amount>
+				<amount type="number">189</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">134</amount>
+				<amount type="number">177</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,11 +110,11 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">75.46</load>
+			<load type="number">73.41</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">465</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">569</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -183,6 +183,21 @@
 					<p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
 				</text>
 			</id-00005>
+			<id-00006>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00525@Incarnate-Engine">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</text>
+			</id-00006>
 			<id-00007>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
@@ -210,16 +225,6 @@
 					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long tange of 60 feet.</p>
 				</text>
 			</id-00008>
-			<id-00009>
-				<level type="number">4</level>
-				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
-				<source type="string">Monk</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
-				</text>
-			</id-00009>
 			<id-00010>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
@@ -236,6 +241,16 @@
 					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">My way of peace and meditation is the only way. Those who travel with me must meditate with me at least once a day or I will refuse to help.</flaws>
 		<gender type="string">Male</gender>
@@ -244,8 +259,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
-			<wounds type="number">0</wounds>
+			<total type="number">33</total>
+			<wounds type="number">16</wounds>
 		</hp>
 		<ideals type="string">Pacifist - My skills are only to be used for defense. I will not kill my opponent unless it is unavoidable. (Good)</ideals>
 		<initiative>
@@ -288,7 +303,7 @@
 			<id-00003>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">10</count>
+				<count type="number">9</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -526,20 +541,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00017>
-			<id-00018>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Written in Fey:</p>
-					<p>Offers a pardon for all but Galadhon, he will have to be banished.</p>
-				</description>
-				<isidentified type="number">0</isidentified>
-				<name type="string">Tiny Scroll</name>
-				<nonid_name type="string">Tiny Scroll</nonid_name>
-				<weight type="number">0.05</weight>
-			</id-00018>
 			<id-00019>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -559,9 +560,9 @@
 				<name type="string">Military Handsign</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">17 &#34;Sen&#34;</name>
-		<perception type="number">16</perception>
+		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am shattered. Something has happened that has shaken my beliefs and I will not find peace until I can face what has happened.\nI am like a leaf in the wind. I go where ever the road takes me. Life just &#34;happens&#34;, and I am content to let it.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -570,7 +571,9 @@
 				<name type="string">Ki</name>
 			</id-00001>
 			<id-00002>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Class</name>
+				<saveprof type="number">1</saveprof>
 			</id-00002>
 		</powergroup>
 		<powermeta>
@@ -666,13 +669,22 @@
 			</id-00001>
 			<id-00002>
 				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Spiritual Flame; Light 20ft</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Class</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Spiritual Flame</name>
 				<prepared type="number">0</prepared>
-				<shortdescription type="string">light</shortdescription>
+				<shortdescription type="string">conjure flame</shortdescription>
 			</id-00002>
 			<id-00003>
 				<actions>
@@ -680,17 +692,19 @@
 				<cast type="number">0</cast>
 				<group type="string">Class</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Control Flames</name>
 				<prepared type="number">0</prepared>
 			</id-00003>
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">3</cast>
 				<group type="string">Ki</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">*Ki</name>
-				<prepared type="number">4</prepared>
+				<prepared type="number">5</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
 			<id-00005>
@@ -764,10 +778,15 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<group type="string">Class</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Flaming Fists(1K)</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 				<shortdescription type="string">1d4 fire damage</shortdescription>
 			</id-00008>
 			<id-00010>
@@ -818,7 +837,7 @@
 				<shortdescription type="string">fall DMG -5 x MNK</shortdescription>
 			</id-00011>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Woodcarver's Tools</name>
@@ -842,14 +861,14 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -919,7 +938,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -947,7 +966,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -968,14 +987,14 @@
 				<name type="string">Woodcarver's Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
 				<name type="string">Instrument: Flute</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00020>
 		</skilllist>
 		<speed>
@@ -987,7 +1006,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00013_token</token>
 		<traitlist>
 		</traitlist>
 		<weapon>
