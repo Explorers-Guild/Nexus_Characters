@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">91</amount>
+				<amount type="number">127</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">189</amount>
+				<amount type="number">244</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">177</amount>
+				<amount type="number">227</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,11 +110,11 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">73.41</load>
+			<load type="number">74.91</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">569</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">640</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -225,6 +225,16 @@
 					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long tange of 60 feet.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki-Empowered Strikes</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+				</text>
+			</id-00009>
 			<id-00010>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
@@ -251,6 +261,48 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Forges Fire</name>
+				<source type="string">Monk</source>
+				<specialization type="string">Fire Elemental</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 6th level, you gain the ability to spend ki points to cast Fire Bolt and Heat Metal as follows:</p>
+					<table>
+						<tr>
+							<td>Ability</td>
+							<td>Ki for 1st cast</td>
+							<td>Ki for 2nd cast</td>
+							<td>Ki for 3rd cast</td>
+							<td>Ki for 4th cast</td>
+							<td>Ki for 5th or more cast</td>
+						</tr>
+						<tr>
+							<td>Fire Bolt</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>Heat Metal</td>
+							<td>2</td>
+							<td>4</td>
+							<td>6</td>
+							<td>8</td>
+							<td>10</td>
+						</tr>
+					</table>
+					<p>You go down 1 casting count for a short rest and fully reset on a long rest.</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00316@Incarnate-Engine">Fire Bolt</link>
+						<link class="power" recordname="spell.id-00151@Incarnate-Engine">Heat Metal</link>
+					</linklist>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">My way of peace and meditation is the only way. Those who travel with me must meditate with me at least once a day or I will refuse to help.</flaws>
 		<gender type="string">Male</gender>
@@ -259,8 +311,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">33</total>
-			<wounds type="number">16</wounds>
+			<total type="number">39</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Pacifist - My skills are only to be used for defense. I will not kill my opponent unless it is unavoidable. (Good)</ideals>
 		<initiative>
@@ -274,7 +326,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
-				<count type="number">16</count>
+				<count type="number">20</count>
 				<damage type="string">1d4 piercing</damage>
 				<description type="formattedtext">
 					<p></p>
@@ -470,7 +522,7 @@
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Periapt of Health</name>
+				<name type="string">Periapt of Health(ATT)</name>
 				<nonid_name type="string">Pendent</nonid_name>
 				<nonidentified type="string">A bright strangely shaped red gem held by a shard of bone shaped like a hand and arm hang from a fine gold chain.</nonidentified>
 				<rarity type="string">Uncommon</rarity>
@@ -491,7 +543,7 @@
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Boots of Striding and Springing</name>
+				<name type="string">Boots of Striding and Springing(ATT)</name>
 				<nonid_name type="string">Boots</nonid_name>
 				<nonidentified type="string">Care and attention to detail has gone into the making of these fine boots. Some stylized runes, depicting various creatures in motion, decorate the upper leathers.</nonidentified>
 				<rarity type="string">Uncommon (Requires Attunement)</rarity>
@@ -541,13 +593,28 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00017>
-			<id-00019>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00270@Incarnate-Engine">Flute</link>
+					</linklist>
+					<h>Description</h>
+					<p>A hollow piece of wood that has a noch to blow over on one end and several holes that can be covered by the player's fingers to change the sound of the flute.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<name type="string">Ash Branch</name>
-				<weight type="number">0.5</weight>
-			</id-00019>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Carved Ashen Flute</name>
+				<subtype type="string">Musical Instrument</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">1</weight>
+			</id-00018>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -560,7 +627,7 @@
 				<name type="string">Military Handsign</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">17 &#34;Sen&#34;</name>
 		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -575,6 +642,12 @@
 				<name type="string">Class</name>
 				<saveprof type="number">1</saveprof>
 			</id-00002>
+			<id-00004>
+				<name type="string">Fire</name>
+			</id-00004>
+			<id-00006>
+				<name type="string">Fire</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -677,9 +750,20 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Class</group>
+				<group type="string">Fire</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Spiritual Flame</name>
@@ -690,21 +774,36 @@
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Class</group>
+				<castingtime type="string">1 Action</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:</p>
+					<list>
+						<li>You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.</li>
+						<li>You instantaneously extinguish the flames within the cube.</li>
+						<li>You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.</li>
+						<li>You cause simple shapes&#151;such as the vague form of a creature, an inanimate object, or a location&#151;to appear within the flames and animate as you like. The shapes last for 1 hour.</li>
+					</list>
+					<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Fire</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Control Flames</name>
 				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Transmutaion</school>
 			</id-00003>
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">3</cast>
+				<cast type="number">0</cast>
 				<group type="string">Ki</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Ki</name>
-				<prepared type="number">5</prepared>
+				<prepared type="number">6</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
 			<id-00005>
@@ -771,7 +870,7 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Flaming Fists; DMG: 1d4 fire</label>
+						<label type="string">Flaming Fists; DMG: 1d4 fire; Light 10ft</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -781,7 +880,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Class</group>
+				<group type="string">Fire</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Flaming Fists(1K)</name>
@@ -789,6 +888,40 @@
 				<ritual type="number">0</ritual>
 				<shortdescription type="string">1d4 fire damage</shortdescription>
 			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Stunning Strike; stunned</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00034@Incarnate-Engine">Stunning Strike</link>
+					</linklist>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike(1K)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00009>
 			<id-00010>
 				<actions>
 				</actions>
@@ -800,7 +933,7 @@
 					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.</p>
 				</description>
 				<duration type="string">1 round</duration>
-				<group type="string">Class</group>
+				<group type="string">Fire</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Absorb Flames(1K)</name>
@@ -836,6 +969,147 @@
 				<ritual type="number">0</ritual>
 				<shortdescription type="string">fall DMG -5 x MNK</shortdescription>
 			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d10</dice>
+								<stat type="string">dexterity</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+							<id-00002>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+								<statmult type="number">1</statmult>
+							</id-00002>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack (20/60 ft.). When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p>
+					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long tange of 60 feet.</p>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Deflect Missiles</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Monk</source>
+			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<apply type="string">action</apply>
+						<label type="string">Offhand; DMG: [-DEX]</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">*Offhand</name>
+				<prepared type="number">0</prepared>
+			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Fire</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fire Bolt(LVLx1K)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<order type="number">2</order>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a piece of iron and a flame)</components>
+				<description type="formattedtext">
+					<p>Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again. If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Fire</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Heat Metal(LVLx2K)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Druid</source>
+			</id-00016>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1006,7 +1280,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00013_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 		</traitlist>
 		<weapon>
@@ -1028,13 +1302,14 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">16</maxammo>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Dart</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
@@ -1050,8 +1325,9 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
@@ -1064,27 +1340,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00002>
-			<id-00003>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">base</stat>
-						<type type="string">bludgeoning</type>
-					</id-00001>
-				</damagelist>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Offhand Strike</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00003>
 		</weaponlist>
 		<weight type="string">160 lb</weight>
 	</character>

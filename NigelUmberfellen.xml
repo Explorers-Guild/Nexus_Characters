@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">39</amount>
+				<amount type="number">75</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">48</amount>
+				<amount type="number">103</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">43</amount>
+				<amount type="number">93</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -111,7 +111,7 @@
 			<load type="number">88.501</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">404</exp>
+		<exp type="number">475</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -167,8 +167,6 @@
 					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
 				</text>
 			</id-00004>
-			<id-00005>
-			</id-00005>
 			<id-00006>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -329,7 +327,7 @@
 			<id-00007>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">10</count>
+				<count type="number">9</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
@@ -609,6 +607,24 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">600 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Stone of Good Luck (Luckstone)</name>
+				<nonid_name type="string">an old stone with strange writing in a forgotten language</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -628,8 +644,10 @@
 		<personalitytraits type="string">I bluntly say what other people are hinting at or hiding.</personalitytraits>
 		<powergroup>
 			<id-00001>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
+				<saveprof type="number">1</saveprof>
 			</id-00001>
 			<id-00002>
 				<castertype type="string">memorization</castertype>
@@ -638,9 +656,12 @@
 			<id-00003>
 				<name type="string">Effect</name>
 			</id-00003>
-			<id-00004>
-				<name type="string">Effect; AC: 1;</name>
-			</id-00004>
+			<id-00005>
+				<name type="string">Class Abilities</name>
+			</id-00005>
+			<id-00006>
+				<name type="string">Feat Abilities</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -742,6 +763,53 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Dual Wielder; AC:1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Feat Abilities</group>
+				<level type="number">0</level>
+				<name type="string">Dual Wielder</name>
+				<prepared type="number">0</prepared>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00004>
+			<id-00005>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<name type="string">Stone of Good Luck</name>
+				<prepared type="number">0</prepared>
+			</id-00005>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -902,7 +970,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -948,6 +1016,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -978,6 +1047,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d4</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
