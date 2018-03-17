@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">127</amount>
+				<amount type="number">629</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">244</amount>
+				<amount type="number">315</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">227</amount>
+				<amount type="number">319</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,10 +110,10 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">74.91</load>
+			<load type="number">110.41</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">640</exp>
+		<exp type="number">678</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -303,8 +303,36 @@
 					</linklist>
 				</text>
 			</id-00012>
+			<id-00013>
+				<locked type="number">1</locked>
+				<name type="string">Fire Elemental</name>
+				<source type="string">Monk</source>
+				<text type="formattedtext">
+					<p>This is an archetype belonging to the Monk class ( it is based off of the Way of the Sun Soul in the SCAG, but with some minor changes to add some utility and versatility and a more appropriate capstone ability).</p>
+					<p>A bare-chested dwarf exhales white hot flame as he breathes over a damaged sword, duplicating the heat of a forge so that he can repair it on the road.</p>
+					<p>A red-skinned tiefling extends her leg with a high kick as a mote of flame engulfs her opponent 30 feet away.</p>
+					<p>A human extends two fingers as lightning extends through his body, and outward, demolishing an outer wall as the siege gets underway.</p>
+					<p>A Fire Elementalist is a Monk who (through study, fortune or fate) have unlocked their inner flame. Using their breath to generate energy, these monks extend their Ki outward from their body, creating and manipulating flame.</p>
+					<p>3</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00010@Incarnate-Engine">Inner Flame</link>
+					</linklist>
+					<p>6</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00011@Incarnate-Engine">Forges Fire</link>
+					</linklist>
+					<p>11</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00012@Incarnate-Engine">Fire Aura</link>
+					</linklist>
+					<p>17</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00013@Incarnate-Engine">Trial of the White Flame</link>
+					</linklist>
+				</text>
+			</id-00013>
 		</featurelist>
-		<flaws type="string">My way of peace and meditation is the only way. Those who travel with me must meditate with me at least once a day or I will refuse to help.</flaws>
+		<flaws type="string">My way of peace and meditation is the only way. Those who travel with me must meditate with me at least once a day or I will refuse to help.\nI don't talk to people.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'11&#34;</height>
 		<hp>
@@ -320,6 +348,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">3</total>
 		</initiative>
+		<inspiration type="number">1</inspiration>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
@@ -333,6 +362,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Coin pouch - Small</location>
 				<locked type="number">1</locked>
 				<name type="string">Dart</name>
 				<properties type="string">Finesse, thrown (range 20/60)</properties>
@@ -459,24 +489,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00010>
-			<id-00011>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Woodcarver's Tools</name>
-				<subtype type="string">Artisan's Tools</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">5</weight>
-			</id-00011>
 			<id-00012>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -609,12 +621,74 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Carved Ashen Flute</name>
 				<subtype type="string">Musical Instrument</subtype>
 				<type type="string">Tools</type>
 				<weight type="number">1</weight>
 			</id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Coin pouch - Small</name>
+				<weight type="number">0.5</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00242@Incarnate-Engine">Calligrapher's Supplies</link>
+					</linklist>
+					<h>Description</h>
+					<p>4 quils with different sized nibs, 5 bottles of inks of different colors, 3 types of different colored wax, and one wax seal.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Calligrapher's Supplies</name>
+				<rarity type="string">-</rarity>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">5</weight>
+			</id-00020>
+			<id-00021>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<name type="string">hunk of oak</name>
+				<weight type="number">30</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00256@Incarnate-Engine">Woodcarver's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>Leather apron, carving chisel, wooden hammer, metal hammer, and a small saw.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Woodcarver's Tools</name>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">5</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -629,10 +703,10 @@
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">17 &#34;Sen&#34;</name>
+		<notes type="string">S30 - Bitten by Were-tiger</notes>
 		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am shattered. Something has happened that has shaken my beliefs and I will not find peace until I can face what has happened.\nI am like a leaf in the wind. I go where ever the road takes me. Life just &#34;happens&#34;, and I am content to let it.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<name type="string">Ki</name>
@@ -643,7 +717,10 @@
 				<saveprof type="number">1</saveprof>
 			</id-00002>
 			<id-00004>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Fire</name>
+				<saveprof type="number">1</saveprof>
+				<stat type="string">wisdom</stat>
 			</id-00004>
 			<id-00006>
 				<name type="string">Fire</name>
@@ -723,7 +800,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -903,7 +980,7 @@
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
-						<durmod type="number">1</durmod>
+						<durmod type="number">2</durmod>
 						<label type="string">Stunning Strike; stunned</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
@@ -1002,21 +1079,6 @@
 				<prepared type="number">0</prepared>
 				<source type="string">Monk</source>
 			</id-00012>
-			<id-00013>
-				<actions>
-					<id-00001>
-						<apply type="string">action</apply>
-						<label type="string">Offhand; DMG: [-DEX]</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<level type="number">0</level>
-				<name type="string">*Offhand</name>
-				<prepared type="number">0</prepared>
-			</id-00013>
 			<id-00014>
 				<actions>
 					<id-00001>
@@ -1068,18 +1130,19 @@
 				<group type="string">Fire</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Fire Bolt(LVLx1K)</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Fire Bolt(1-5K)</name>
+				<prepared type="number">6</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00015>
-			<id-00016>
+			<id-00017>
 				<actions>
 					<id-00001>
 						<damagelist>
 							<id-00001>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d8,d8</dice>
 								<type type="string">fire</type>
 							</id-00001>
@@ -1089,9 +1152,18 @@
 					</id-00001>
 					<id-00002>
 						<order type="number">2</order>
+						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heat Metal; (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1103,13 +1175,13 @@
 				<group type="string">Fire</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Heat Metal(LVLx2K)</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Heat Metal(2-10K)</name>
+				<prepared type="number">6</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Druid</source>
-			</id-00016>
+			</id-00017>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1280,7 +1352,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 		</traitlist>
 		<weapon>
@@ -1295,7 +1367,7 @@
 		</weapon>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -1328,7 +1400,7 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">bludgeoning</type>
+						<type type="string">bludgeoning, magic</type>
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
