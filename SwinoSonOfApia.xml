@@ -25,7 +25,7 @@
 			</dexterity>
 			<intelligence>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">12</score>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -98,11 +98,11 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">13</total>
+				<total type="number">15</total>
 			</ac>
 		</defenses>
 		<deity type="string">Eternal</deity>
@@ -110,11 +110,11 @@
 			<encumbered type="number">20</encumbered>
 			<encumberedheavy type="number">40</encumberedheavy>
 			<liftpushdrag type="number">120</liftpushdrag>
-			<load type="number">4.58</load>
+			<load type="number">5.58</load>
 			<max type="number">60</max>
 		</encumbrance>
-		<exp type="number">438</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">502</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -336,8 +336,10 @@
 		<gender type="string">Male</gender>
 		<height type="string">6&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
+			<total type="number">33</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Creativity - I don't even follow my own recipes, I just follow my gut instinct! (Chaotic)</ideals>
@@ -393,6 +395,7 @@
 					<p>This bedroll is only big enough for a tiny creature.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Bedroll (tiny)</name>
 				<subtype type="string">Standard</subtype>
@@ -417,6 +420,7 @@
 					<p>This tiny tin box's lid serves as a plate or shallow bowl and the other side may be used as a pan to heat things over the fire.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Mess Kit (tiny)</name>
 				<rarity type="string">Rare</rarity>
@@ -435,6 +439,7 @@
 					<p>Tiny Rations contain enough rations for a tiny creature for one day.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (tiny)</name>
 				<rarity type="string">Common</rarity>
@@ -452,6 +457,7 @@
 					<p>A tiny waterskin holds 1/4 gallon of liquid. This is enough for a tiny creature for one day.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin (tiny)</name>
 				<rarity type="string">Common</rarity>
@@ -462,7 +468,7 @@
 			<id-00008>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">101 - 500 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -501,22 +507,45 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0.2</weight>
 			</id-00009>
+			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00010>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Elvish</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Mikon</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Swino son of Apia</name>
-		<notes type="string">As a 10 pound mouse, my strength is limited to 20 pounds carrying and 40 pounds pushing.\nwe made changes</notes>
-		<perception type="number">15</perception>
+		<notes type="string">As a 5 pound mouse, my strength is limited to 10 pounds carrying and 40 pounds pushing.\nwe made changes</notes>
+		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I like to take my time and savor each moment.</personalitytraits>
 		<powergroup>
@@ -529,64 +558,84 @@
 			<id-00002>
 				<name type="string">Effect</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Passive</name>
+			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1122,6 +1171,26 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Cleric, Druid, Paladin</source>
 			</id-00019>
+			<id-00020>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You make yourself-including your clothing, armor, weapons, and other belongings on your person- look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you. The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Effect</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Disguise Self - Hat of Disguise</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00020>
 			<id-00021>
 				<actions>
 					<id-00001>
@@ -1335,7 +1404,7 @@
 						<atkbase type="string">ability</atkbase>
 						<atkmod type="number">0</atkmod>
 						<atkprof type="number">1</atkprof>
-						<atkstat type="string">strength</atkstat>
+						<atkstat type="string">dexterity</atkstat>
 						<atktype type="string">melee</atktype>
 						<order type="number">1</order>
 						<savedcmod type="number">0</savedcmod>
@@ -1499,7 +1568,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Heat Metal</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1782,7 +1851,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Call Lightning</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
@@ -2023,45 +2092,6 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
 			</id-00046>
-			<id-00047>
-				<actions>
-					<id-00001>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<label type="string">Prone</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
-					<id-00003>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Sleet Storm; (C)</label>
-						<order type="number">3</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a pinch of dust and a few drops of water)</components>
-				<description type="formattedtext">
-					<p>Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused. The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone. If a creature is concentrating in the spell's area, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Sleet Storm</name>
-				<prepared type="number">0</prepared>
-				<range type="string">150 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Druid, Sorcerer, Wizard</source>
-			</id-00047>
 			<id-00048>
 				<actions>
 				</actions>
@@ -2141,8 +2171,38 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Druid, Ranger</source>
 			</id-00051>
+			<id-00052>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Mikon Specialty; IFT: TYPE(beast,fey); ATK:1d4</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<label type="string">CHECK: 1; SAVE: 1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>There is only so much time in school, so Mikons specialize in learning the weaknesses of different types of creatures. All Mikons learn the weaknesses of beasts. At levels 3, 6, 9, 12, 15, 18, and 20 you may learn additional types from: Aberrations, Celestials, Constructs, Dragons, Elementals, Feys, Fiends, Giants, Humanoids, Misons, Monstrosities, Oozes, Plants, Swarms, Undead.</p>
+					<p>Knowing the weaknesses not only lets you know their weaknesses, but also grants you a 1d4 increase to your attack rolls.</p>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Mikon Specialty - beasts, fey</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Mikon</source>
+				<type type="string">racial</type>
+			</id-00052>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Cook's Utensils</name>
@@ -2170,21 +2230,21 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Performance</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -2289,7 +2349,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00018>
 		</skilllist>
 		<speed>
@@ -2301,7 +2361,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token"></token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2376,6 +2436,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -2398,6 +2459,6 @@
 				<type type="number">1</type>
 			</id-00002>
 		</weaponlist>
-		<weight type="string">10 lbs</weight>
+		<weight type="string">5 lbs</weight>
 	</character>
 </root>

@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">99</amount>
+				<amount type="number">141</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">112</amount>
+				<amount type="number">166</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">104</amount>
+				<amount type="number">165</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,12 +110,25 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">87.901</load>
+			<load type="number">88.701</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">456</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">520</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Destruction Master : Melee</name>
+				<text type="formattedtext">
+					<h>Destruction Master</h>
+					<p>You have mastered the art of causing the most damage with everything you do. When you choose this feat pick either melee, range, or spell.</p>
+					<p>An amount of times equal to that attacks ability modifier per long rest you may choose to cause max damage instead of rolling. You may only use this feature once per turn.</p>
+					<p>You may choose this feat multiple times but you must choose a different option each time.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Destruction_Master_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -201,13 +214,33 @@
 			<id-00008>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement Lvl 4: Chose Destruction Master Melee</name>
 				<source type="string">Barbarian</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Fast Movement</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 5th level, you speed increases by 10 feet while you aren't wearing heavy armor.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">My hatred of my enemies is blind and unreasoning.</flaws>
 		<gender type="string">Male</gender>
@@ -216,7 +249,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">41</total>
+			<total type="number">50</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</ideals>
@@ -481,7 +514,7 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<count type="number">18</count>
+				<count type="number">17</count>
 				<description type="formattedtext">
 					<linklist>
 						<link class="encounter" recordname="encounter.id-00115">Ugebru - Plant</link>
@@ -533,27 +566,64 @@
 				<location type="string">backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Vial of Spifier Poison</name>
-				<nonid_name type="string">Vial of Spifier Poison</nonid_name>
+				<nonid_name type="string">Vial</nonid_name>
 				<weight type="number">0</weight>
 			</id-00019>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00391@Incarnate-Engine">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
+				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This concoction looks, smells, and tastes like a potion of healing or other beneficial potion. However, it is actually poison masked by illusion magic. An identify spell reveals its true nature.</p>
-					<p>If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of your turns while you are poisoned in this way, you take 3d6 poison damage. At the end of each of your turns, you can repeat the saving throw. On a successful save, the poison damage you take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.</p>
+					<p>The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains 1d3 expended charges daily at dawn.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Potion of Poison</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<name type="string">Wand of Secrets</name>
+				<nonid_name type="string">Wand</nonid_name>
+				<nonidentified type="string">A magical wand.</nonidentified>
 				<rarity type="string">uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
+				<type type="string">Wand</type>
+				<weight type="number">1</weight>
 			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
@@ -606,9 +676,9 @@
 				<name type="string">Orc</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Jok the Fearless</name>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I enjoy being strong and like breaking things.</personalitytraits>
 		<powergroup>
@@ -694,6 +764,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -741,8 +812,39 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Barbarian</source>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">15</bonus>
+								<statmult type="number">0</statmult>
+								<type type="string">Slashing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">2</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00002>
+					<id-00003>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Effect</group>
+				<name type="string">Destruction Master: Greataxe</name>
+				<prepared type="number">3</prepared>
+			</id-00003>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: One type of gaming set, vehicles (land)</name>
@@ -767,35 +869,35 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -892,13 +994,13 @@
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">30</base>
-			<misc type="number">0</misc>
+			<misc type="number">10</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">30</total>
+			<total type="number">40</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -954,6 +1056,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d12</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>

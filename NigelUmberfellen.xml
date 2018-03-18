@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">4</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
-				<save type="number">1</save>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">8</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">75</amount>
+				<amount type="number">117</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">103</amount>
+				<amount type="number">157</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">93</amount>
+				<amount type="number">154</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -108,10 +108,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">88.501</load>
+			<load type="number">85.501</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">475</exp>
+		<exp type="number">539</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -167,6 +167,21 @@
 					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00548@Incarnate-Engine">Uncanny Dodge</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+				</text>
+			</id-00005>
 			<id-00006>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -236,7 +251,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<hdmod type="number">0</hdmod>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">I help the people who help me - that's what keeps us alive.</ideals>
@@ -312,7 +327,7 @@
 			<id-00006>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">10</count>
+				<count type="number">9</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -327,7 +342,7 @@
 			<id-00007>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">9</count>
+				<count type="number">8</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
@@ -637,9 +652,9 @@
 				<name type="string">Thieves' Cant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Nigel Umberfellen</name>
-		<perception type="number">13</perception>
+		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I bluntly say what other people are hinting at or hiding.</personalitytraits>
 		<powergroup>
@@ -653,9 +668,9 @@
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 			</id-00002>
-			<id-00003>
-				<name type="string">Effect</name>
-			</id-00003>
+			<id-00004>
+				<name type="string">Magic Items</name>
+			</id-00004>
 			<id-00005>
 				<name type="string">Class Abilities</name>
 			</id-00005>
@@ -739,30 +754,19 @@
 		</powermeta>
 		<powermode type="string">standard</powermode>
 		<powers>
-			<id-00001>
+			<id-00002>
 				<actions>
 					<id-00001>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Stone of Good Luck; SAVE: 1; CHECK: 1</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00018@Incarnate-Engine">Sneak Attack</link>
-					</linklist>
-				</description>
-				<group type="string">Effect</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Sneak Attack</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00001>
+				<group type="string">Magic Items</group>
+				<name type="string">Stone of Good Luck</name>
+			</id-00002>
 			<id-00003>
 				<actions>
 					<id-00001>
@@ -803,15 +807,34 @@
 			</id-00004>
 			<id-00005>
 				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Sneak Attack; DMG: 3d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Effect</group>
-				<level type="number">0</level>
-				<name type="string">Stone of Good Luck</name>
-				<prepared type="number">0</prepared>
+				<group type="string">Class Abilities</group>
+				<name type="string">Sneak Attack</name>
 			</id-00005>
+			<id-00007>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+				</description>
+				<group type="string">Class Abilities</group>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00007>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Disguise kit</name>
@@ -838,28 +861,28 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">2</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">8</total>
+				<total type="number">10</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -901,7 +924,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">8</total>
+				<total type="number">10</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -922,7 +945,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -936,7 +959,7 @@
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -970,7 +993,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
