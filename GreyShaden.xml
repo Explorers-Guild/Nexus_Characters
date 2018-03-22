@@ -58,9 +58,11 @@
 		<bonds type="string">my brother Richie, here is the peace in death that I could not give you in life!</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,14 +72,16 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">12</amount>
+				<amount type="number">131</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">28</amount>
+				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">25</amount>
+				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
@@ -105,10 +109,19 @@
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">79.61</load>
+			<load type="number">78.61</load>
 			<max type="number">135</max>
 		</encumbrance>
+		<exp type="number">405</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Skilled</name>
+				<text type="formattedtext">
+					<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -197,13 +210,24 @@
 					<p>Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00009>
 		</featurelist>
-		<flaws type="string">And I don't want to hear anything about &#34;I don't believe in vampires&#34; because I don't believe in vampires, but I believe in my own two eyes, and what I saw is fucking vampires!</flaws>
+		<flaws type="string">And I don't want to hear anything about &#34;I don't believe in vampires&#34; because I don't believe in vampires, but I believe in my own two eyes, and what I saw is fucking vampires!\nYou touch my brother with that stake, Fighter, and vampires won't have to suck your blood. They'll be able to lick it up off the floor...</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'3&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
+			<total type="number">31</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Freedom. Chains are meant to be broken, as are those who would forge them. (Chaotic)</ideals>
@@ -282,6 +306,8 @@
 				<weight type="number">5</weight>
 			</id-00005>
 			<id-00006>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
@@ -362,21 +388,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00011>
-			<id-00012>
-				<carried type="number">1</carried>
-				<cost type="string">1 sp</cost>
-				<count type="number">2</count>
-				<description type="formattedtext">
-					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Oil (Flask)</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
-			</id-00012>
 			<id-00013>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -475,7 +486,7 @@
 				<weight type="number">1</weight>
 			</id-00019>
 			<id-00020>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -489,7 +500,7 @@
 				<weight type="number">1</weight>
 			</id-00020>
 			<id-00021>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -514,10 +525,15 @@
 				<weight type="number">2</weight>
 			</id-00022>
 			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Shortbow</name>
@@ -540,17 +556,63 @@
 				<type type="string">Tools</type>
 				<weight type="number">1</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>Contact poison,</p>
+					<p>Does 2d8 acid damge. Will corrode any non-magical metal it touches after 1 minute. (-1 to attack or AC)</p>
+					<p>You may collect one vial per spifier with a poisoner's kit for a DC 10 an alchemists kit for DC 15 or with just a vial for DC 20.</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Vial of Spifier Poison</name>
+				<nonid_name type="string">Vial of Spifier Poison</nonid_name>
+				<weight type="number">0</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Choice</name>
+				<name type="string">Elvish</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Dwarish</name>
+			</id-00003>
+			<id-00004>
+				<name type="string">Thieves' Cant</name>
+			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
-		<name type="string">Shaden</name>
+		<level type="number">4</level>
+		<name type="string">Grey-Shaden</name>
 		<notes type="string">A Saying i do to clerics who dont heal ;P\nSo what are you, Jacob? A faithless preacher? Or a mean motherfuckin' servant of God?</notes>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -570,40 +632,76 @@
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -613,7 +711,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">0</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Sneak Attack; DMG: 3d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -641,6 +739,7 @@
 							<id-00002>
 								<bonus type="number">2</bonus>
 								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
 							</id-00002>
 						</heallist>
 						<order type="number">1</order>
@@ -662,7 +761,7 @@
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
 			<id-00001>
-				<name type="string">Tool: One type of gaming set, thieves' tools</name>
+				<name type="string">Tool: One type of gaming set, Disguise Kit</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords</name>
@@ -712,16 +811,16 @@
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">1</total>
+				<total type="number">3</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -733,9 +832,9 @@
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -755,8 +854,8 @@
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">0</prof>
-				<stat type="string">intelligence</stat>
-				<total type="number">1</total>
+				<stat type="string">wisdom</stat>
+				<total type="number">2</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -768,9 +867,9 @@
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">5</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -814,11 +913,6 @@
 				<stat type="string">dexterity</stat>
 				<total type="number">7</total>
 			</id-00019>
-			<id-00020>
-				<misc type="number">0</misc>
-				<prof type="number">0</prof>
-				<total type="number">0</total>
-			</id-00020>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -829,7 +923,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token"></token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 		</traitlist>
 		<weaponlist>
@@ -846,6 +940,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Dagger</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -868,6 +963,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">2</maxammo>
 				<name type="string">Dagger</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -890,6 +986,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Rapier</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse</properties>
@@ -900,6 +997,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -911,6 +1009,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Shortbow</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>

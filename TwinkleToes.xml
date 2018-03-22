@@ -25,7 +25,7 @@
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
-				<save type="number">2</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">11</score>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">14</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">88</amount>
+				<amount type="number">207</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">109</amount>
+				<amount type="number">137</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">111</amount>
+				<amount type="number">136</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -112,9 +112,28 @@
 			<load type="number">94.41</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">435</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">540</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Greater Shape-shifting</name>
+				<text type="formattedtext">
+					<h>Greater Shape-shifting</h>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00464@Incarnate-Engine">Greater Shape-shifting</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Wild Shape</p>
+					<p>You have become a practiced master of shapes able to move in and out of them with ease.</p>
+					<p>All shapes gain +1 to attack accuracy and damage</p>
+					<p>By expending two uses of Wildshape you can take on a form 2 CR greater than you would be normally capable of. This feature can only be used once per long rest.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Greater_Shapeshifting">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -216,6 +235,7 @@
 						<link class="npc" recordname="reference.npcdata.tiger@Incarnate5eBestiary">Tiger</link>
 						<link class="npc" recordname="reference.npcdata.lion@Incarnate5eBestiary">Lion</link>
 						<link class="npc" recordname="reference.npcdata.giantspider@Incarnate5eBestiary">Giant Spider</link>
+						<link class="npc" recordname="reference.npcdata.giantscorpion@Incarnate5eBestiary">Giant Scorpion</link>
 						<link class="npc" recordname="reference.npcdata.gianthyena@Incarnate5eBestiary">Giant Hyena</link>
 						<link class="npc" recordname="reference.npcdata.direwolf@Incarnate5eBestiary">Dire Wolf</link>
 						<link class="npc" recordname="reference.npcdata.brownbear@Incarnate5eBestiary">Brown Bear</link>
@@ -277,7 +297,7 @@
 			<id-00008>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement- Greater Shape-Shifting Feat</name>
 				<source type="string">Druid</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -292,7 +312,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">26</total>
+			<total type="number">32</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Free Thinking. Inquiry and curiosity are the pillars of progress. (Chaotic)</ideals>
@@ -302,18 +322,6 @@
 			<total type="number">2</total>
 		</initiative>
 		<inventorylist>
-			<id-00001>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<name type="string">spifier leg</name>
-				<weight type="number">0</weight>
-			</id-00001>
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -456,9 +464,14 @@
 				<weight type="number">1</weight>
 			</id-00010>
 			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
@@ -548,7 +561,7 @@
 				<istemplate type="number">0</istemplate>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Herbalism Kit - 1 vials</name>
+				<name type="string">Herbalism Kit - 0 vials</name>
 				<subtype type="string">Kits / Sets</subtype>
 				<type type="string">Tools</type>
 				<weight type="number">3</weight>
@@ -610,14 +623,6 @@
 				<name type="string">Vial of Copper Chloride</name>
 				<weight type="number">0</weight>
 			</id-00022>
-			<id-00023>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<name type="string">Vial of Sodium Nitrate</name>
-				<weight type="number">0</weight>
-			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -784,12 +789,21 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00027>
-			<id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
+				<description type="formattedtext">
+					<p>Contact poison,</p>
+					<p>Does 2d8 acid damge. Will corrode any metal it touches after 1 minute. (-1 to attack or AC)</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Vial of Spifier Poison</name>
+				<nonid_name type="string">Vial of Spifier Poison</nonid_name>
 				<weight type="number">0</weight>
-			</id-00028>
+			</id-00029>
 		</inventorylist>
 		<languagelist>
 			<id-00002>
@@ -799,11 +813,12 @@
 				<name type="string">Elvish</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Twinkle Toes</name>
-		<perception type="number">14</perception>
+		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am utterly serene, even in the face of disaster.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkmod type="number">0</atkmod>
@@ -879,7 +894,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -907,7 +922,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">preparation</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1608,7 +1623,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Flame Blade</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -2089,6 +2104,7 @@
 					<p>Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
 				</description>
 				<group type="string">Effect</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Combat Wild Shape</name>
 				<prepared type="number">0</prepared>
@@ -2193,44 +2209,6 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00043>
-			<id-00044>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
-								<type type="string">fire</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.</p>
-					<p>You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.</p>
-					<p>This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
-				</description>
-				<duration type="string">10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Produce Flame</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Druid</source>
-			</id-00044>
 			<id-00045>
 				<actions>
 				</actions>
@@ -2251,8 +2229,142 @@
 				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 			</id-00045>
+			<id-00046>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+				</description>
+				<group type="string">Z Giant Spider</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00046>
+			<id-00047>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Conjure Animals; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:</p>
+					<linklist>
+						<link class="table" recordname="tables.id-02413@Incarnate-Engine">One beast of challenge rating 2 or lower</link>
+						<link class="table" recordname="tables.id-02414@Incarnate-Engine">Two beasts of challenge rating 1 or lower</link>
+						<link class="table" recordname="tables.id-02415@Incarnate-Engine">Four beasts of challenge rating 1/2 or lower</link>
+						<link class="table" recordname="tables.id-02416@Incarnate-Engine">Eight beasts of challenge rating 1/4 or lower</link>
+					</linklist>
+					<p>Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the creatures' statistics.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Conjure Animals</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00047>
+			<id-00048>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.</p>
+					<p>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Poison Spray</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00048>
+			<id-00049>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10,d10</dice>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).</p>
+					<p>When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.</p>
+					<p>If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Call Lightning</name>
+				<prepared type="number">1</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Cleric Tempest Domain, Druid, Druid Forest Circle</source>
+			</id-00049>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Herbalism kit</name>
@@ -2277,42 +2389,42 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>

@@ -45,6 +45,8 @@
 				<score type="number">8</score>
 			</wisdom>
 		</abilities>
+		<adventurelist>
+		</adventurelist>
 		<age type="string">20 (young adult)</age>
 		<alignment type="string">Chaotic Good</alignment>
 		<background type="string">Farmer</background>
@@ -55,9 +57,11 @@
 		<bonds type="string">My son was sent to war and never returned. I must find him!</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -67,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">134</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -75,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">25</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -83,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">28</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -105,12 +109,36 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">93.6</load>
+			<load type="number">98.6</load>
 			<max type="number">240</max>
 		</encumbrance>
+		<exp type="number">405</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Dual Wielder</name>
+				<text type="formattedtext">
+					<p>You master fighting with two weapons, gaining the following benefits:</p>
+					<list>
+						<li>You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.</li>
+						<li>You can use two-weapon fighting even when the onehanded melee weapons you are wielding aren't light.</li>
+						<li>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
+			<id-00001>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - Dual Wielder</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
+				</text>
+			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
 				<name type="string">Of the People</name>
@@ -213,8 +241,10 @@
 		<flaws type="string">I can be lazy and sleepy, sneaking off to take naps when work can wait.</flaws>
 		<height type="string">6' 9&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">25</total>
+			<total type="number">32</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Amusement - Playing a hand in the growth and development of things delights me. (Chaotic)</ideals>
@@ -223,6 +253,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">1</total>
 		</initiative>
+		<inspiration type="number">0</inspiration>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
@@ -511,6 +542,88 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1,115 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing silver</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00498@Incarnate-Engine">Sword of Life Stealing</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Silver Coated Longsword of Life Stealing</name>
+				<nonid_name type="string">Longsword</nonid_name>
+				<nonidentified type="string">A sharp longsword.</nonidentified>
+				<properties type="string">Versatile (1d10)</properties>
+				<rarity type="string">common</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,425 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 slashing silver</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>Mithral weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00481@Incarnate-Engine">Elemental Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an Elemental with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;Elemental&#34; refers to any creature with the Elemental type.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Silver Coated Mithral Scimitar of Elemental Slaying</name>
+				<nonid_name type="string">Scimitar</nonid_name>
+				<nonidentified type="string">A sharp scimitar.</nonidentified>
+				<properties type="string">Finesse light</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -520,7 +633,7 @@
 				<name type="string">Draconic</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Morrt - Ltbadger</name>
 		<notes type="string">Specialization: Peasant. You harvested edible or useful plants such as wheat, corn crops, or apples at an orchard.</notes>
 		<perception type="number">9</perception>
@@ -539,57 +652,75 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -624,8 +755,10 @@
 								<bonus type="number">0</bonus>
 								<dice type="dice">d10</dice>
 								<stat type="string">fighter</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
+						<healtargeting type="string">self</healtargeting>
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
@@ -710,6 +843,45 @@
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">IFT: TYPE(aberration, beast, celestials, dragon, elemental, fey, fiend, giant, humanoid, mison, monstrosity, ooze, plant, swarm); DMG:3d6 necrotic, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00838@Incarnate-Engine">Sword of Life Stealing</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sword of Life Stealing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00005>
+			<id-00006>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Action Surge</name>
+				<prepared type="number">1</prepared>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00006>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -866,7 +1038,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token"></token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -976,6 +1148,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -983,6 +1156,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1086,6 +1260,50 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00005>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing,silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Silver Coated Longswoaqswrd of Life Stealing</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
+			<id-00007>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing,silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Silver Coated Mithral Scimitar of Elemental Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse light</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00021</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00007>
 		</weaponlist>
 		<weight type="string">234 lb.</weight>
 	</character>
