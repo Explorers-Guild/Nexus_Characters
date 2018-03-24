@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">2</hdused>
 				<level type="number">4</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">131</amount>
+				<amount type="number">145</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">28</amount>
+				<amount type="number">41</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">25</amount>
+				<amount type="number">41</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -112,16 +112,29 @@
 			<load type="number">78.61</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">405</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">479</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
-			<id-00002>
+			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Skilled</name>
+				<name type="string">Dead Shot</name>
 				<text type="formattedtext">
-					<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+					<h>Dead Shot</h>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00469@Incarnate-Engine">Dead Shot</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have learned techniques to give you uncanny accuracy against a target you set your sights on. you gain the following benefits:</p>
+					<list>
+						<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.</li>
+						<li>As an action, you can take aim and focus your attention on a creature you can see, requiring you to start concentrating as if maintaining concentration on a spell. Until you lose concentration, ranged attack rolls you make against the chosen creature have advantage.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Dead_Shot_(5e_Feat)">Online copy</link>
+					</linklist>
 				</text>
-			</id-00002>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -228,7 +241,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">31</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">10</wounds>
 		</hp>
 		<ideals type="string">Freedom. Chains are meant to be broken, as are those who would forge them. (Chaotic)</ideals>
 		<initiative>
@@ -617,6 +630,7 @@
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">Do you think this is who I am? I am a professional thief, I don't run around killing people I don't have to.\nI know that I have put you through hell, and I know that I have been one rough pecker. But from here on, you are all in my cool book.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -704,7 +718,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -791,8 +805,7 @@
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
-				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">2</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -811,9 +824,9 @@
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">1</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -832,9 +845,9 @@
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">2</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -867,9 +880,9 @@
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -923,7 +936,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 		</traitlist>
 		<weaponlist>
@@ -997,7 +1010,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">0</ammo>
+				<ammo type="number">12</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
