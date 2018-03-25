@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">10</amount>
+				<amount type="number">0</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">4</amount>
+				<amount type="number">0</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,7 +113,7 @@
 			<load type="number">5.58</load>
 			<max type="number">60</max>
 		</encumbrance>
-		<exp type="number">502</exp>
+		<exp type="number">544</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
@@ -548,6 +548,7 @@
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I like to take my time and savor each moment.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -561,6 +562,9 @@
 			<id-00003>
 				<name type="string">Passive</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Z Black Bear</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -636,6 +640,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -875,6 +880,28 @@
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">3</order>
+						<type type="string">heal</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1491,7 +1518,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Flaming Sphere</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Wizard</source>
@@ -1568,7 +1595,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Heat Metal</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1851,7 +1878,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Call Lightning</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
@@ -2181,12 +2208,6 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
-					<id-00002>
-						<label type="string">CHECK: 1; SAVE: 1</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -2201,6 +2222,114 @@
 				<source type="string">Mikon</source>
 				<type type="string">racial</type>
 			</id-00052>
+			<id-00053>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">6</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">2</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">STR: 7; DEX: -6; CON: 1; Wild Shape - Black Bear; AC: -1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>NPC Link</h>
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.blackbear@DD MM Monster Manual">Black Bear</link>
+					</linklist>
+				</description>
+				<group type="string">Z Black Bear</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">0 Transformation</name>
+				<prepared type="number">0</prepared>
+			</id-00053>
+			<id-00054>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">3</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>NPC Link</h>
+				</description>
+				<group type="string">Z Black Bear</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite</name>
+				<prepared type="number">0</prepared>
+			</id-00054>
+			<id-00055>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">3</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">slashing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>NPC Link</h>
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.blackbear@DD MM Monster Manual">Black Bear</link>
+					</linklist>
+				</description>
+				<group type="string">Z Black Bear</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Claws</name>
+				<prepared type="number">0</prepared>
+			</id-00055>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2361,25 +2490,34 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Tiny Weapons</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
-					<p>Mikon are tiny and as such cannot use traditional weapons. This limits you to tiny weapons which include:</p>
+					<p>As one of the smallest of creatures you cannot use traditional weapons. You are proficient with tiny weapons of any category that your class is normally proficient with. These include:</p>
+					<p><b>Simple Melee Weapons:</b></p>
 					<linklist>
 						<link class="item" recordname="item.id-01022@Incarnate-Engine">Acupuncture Needle</link>
-						<link class="item" recordname="item.id-00178@Incarnate-Engine">Acupuncture Needle - barbed</link>
+					</linklist>
+					<p><b>Martial Melee Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-00178@Incarnate-Engine">Azinga</link>
+					</linklist>
+					<p><b>Simple Ranged Weapons:</b></p>
+					<linklist>
 						<link class="item" recordname="item.id-00179@Incarnate-Engine">Mikon Crossbow</link>
 					</linklist>
-					<p>Mikon may exchange any number of weapons from their class for the same number of tiny weapons.</p>
+					<p>You may exchange any number of weapons from your class for the same number of tiny weapons.</p>
+					<p>Note: you cannot exchange ammunition for weapons.</p>
+					<p>Warning: Acupuncture needles are extremely expensive. Their alloi has a little bit of adamantine mixed into it so that it does not shatter on contact with iron and steel weapons. They can only be made by very talented smiths. Their availability will vary based on the world as the GM sees fit.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00001>
 			<id-00002>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Agile</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
@@ -2389,11 +2527,11 @@
 				<type type="string">racial</type>
 			</id-00002>
 			<id-00003>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Sprint</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
-					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer two levels of exhaustion.</p>
+					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer one levels of exhaustion.</p>
 					<linklist>
 						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
 					</linklist>
@@ -2410,6 +2548,12 @@
 				</text>
 				<type type="string">racial</type>
 			</id-00004>
+			<id-00005>
+				<name type="string">Tiny Capacity</name>
+				<text type="formattedtext">
+					<p>As one of the tinniest of creatures, your carrying capacity is limited even further than normal. Your maximum carrying capacity can be no greater than twice your weight (even if your strength would allow it to be greater).</p>
+				</text>
+			</id-00005>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
