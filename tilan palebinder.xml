@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">3</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">51</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">57</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">65</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,10 +113,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">79.33</load>
+			<load type="number">52.33</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">360</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -279,6 +279,8 @@
 		<gender type="string">Female</gender>
 		<height type="string">4 ft</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">20</total>
 			<wounds type="number">0</wounds>
@@ -618,7 +620,7 @@
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">Tilan Palebinder</name>
-		<notes type="string">No bones, incredibly flexible.</notes>
+		<notes type="string">No bones, incredibly flexible.\nDoes not like snakes.</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">My Master taught me the value of secrets, I keep them very well and have a few of my own.</personalitytraits>
@@ -632,6 +634,9 @@
 				<saveprof type="number">1</saveprof>
 				<stat type="string">intelligence</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Ishilb </name>
+			</id-00002>
 			<id-00005>
 				<name type="string">Black Magic</name>
 			</id-00005>
@@ -642,59 +647,78 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -715,6 +739,27 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
 			</id-00001>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Withdraw; AC: -3; RESIST: all</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You pull back into your shell making you easier to hit (AC: -3) but you take half damage from all attacks. In this state you may only take actions which only affect you.</p>
+				</description>
+				<group type="string">Ishilb </group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Withdraw (Ishilb)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00003>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -838,7 +883,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Feather Fall</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1277,7 +1322,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Sleep</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">90 feet</range>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Eldritch Knight, Warlock (Archfey), Sorcerer, Wizard, Arcane Trickster</source>
