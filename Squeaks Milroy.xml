@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,9 +70,10 @@
 				</shortcut>
 			</id-00001>
 		</classes>
+		<coinother type="string">53 GP 53 SP 50 CP</coinother>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">0</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -110,12 +111,32 @@
 			<encumbered type="number">20</encumbered>
 			<encumberedheavy type="number">40</encumberedheavy>
 			<liftpushdrag type="number">120</liftpushdrag>
-			<load type="number">12.63</load>
+			<load type="number">9.32</load>
 			<max type="number">60</max>
 		</encumbrance>
-		<exp type="number">373</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">465</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Dead Shot</name>
+				<text type="formattedtext">
+					<h>Dead Shot</h>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00469@Incarnate-Engine">Dead Shot</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have learned techniques to give you uncanny accuracy against a target you set your sights on. you gain the following benefits:</p>
+					<list>
+						<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.</li>
+						<li>As an action, you can take aim and focus your attention on a creature you can see, requiring you to start concentrating as if maintaining concentration on a spell. Until you lose concentration, ranged attack rolls you make against the chosen creature have advantage.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Dead_Shot_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -126,6 +147,16 @@
 					<p>Years of working on shoes has let you learn a lot about what different wears and tears mean. If you get to closely examine a pair of shoes (at least 10 minutes of concentration while being able to hold and turn over the shoe) you learn a lot about the individual. This may include information such as the types of places they have gone the past couple of weeks, their exercise habits, and even possibly who they have met with recently. You may even be able to learn how lawful or chaotic the individual is by how they care for their shoes, although you have found this to be an imprecise science.</p>
 				</text>
 			</id-00001>
+			<id-00002>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - Dead Shot</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00002>
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -256,7 +287,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">22</total>
+			<total type="number">28</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Boredom - Get me away from this boring life! (Chaotic)</ideals>
@@ -269,13 +300,14 @@
 			<id-00001>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">3 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>A pair of elaborately made shoes. You get the impression that wearing them outside, especially adventurying, would quickly destroy such delicate things.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">*Room</location>
 				<locked type="number">1</locked>
 				<name type="string">Fancy Pair of Shoes</name>
 				<rarity type="string">Rare</rarity>
@@ -283,28 +315,12 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00001>
-			<id-00002>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">5 SP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Clothes, Common</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.1</weight>
-			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
-				<count type="number">15</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
 				</description>
@@ -488,7 +504,7 @@
 				<name type="string">Matchbox</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.01</weight>
+				<weight type="number">0.1</weight>
 			</id-00014>
 			<id-00015>
 				<ac type="number">11</ac>
@@ -539,6 +555,29 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00017>
+			<id-00019>
+				<carried type="number">0</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">*Room</name>
+				<weight type="number">0</weight>
+			</id-00019>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Common</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -551,7 +590,7 @@
 				<name type="string">Mikon</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Squeaks Milroy</name>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -566,6 +605,12 @@
 			<id-00002>
 				<name type="string">Effect</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Exhaustion</name>
+			</id-00003>
+			<id-00004>
+				<name type="string">Exhaustion</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -802,6 +847,85 @@
 				<name type="string">*Offhand</name>
 				<prepared type="number">0</prepared>
 			</id-00007>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Dead Shot - Target; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Dead Shot; IFT: CUSTOM(Dead Shot - Target); ADVATK: ranged</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00151@Incarnate-Engine">Dead Shot</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dead Shot</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Exhaustion Level 1; DISCHK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
+				</description>
+				<group type="string">Exhaustion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Exhaustion Level 1</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Exhaustion Level 3; DISSAV; DISATK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
+				</description>
+				<group type="string">Exhaustion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Exhaustion Level 3</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00012>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -972,7 +1096,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1047,7 +1171,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1059,7 +1183,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">16</maxammo>
+				<maxammo type="number">15</maxammo>
 				<name type="string">Mikon Crossbow</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 40/120), loading</properties>

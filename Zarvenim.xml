@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -75,19 +75,20 @@
 				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">170</amount>
+				<amount type="number">208</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">90</amount>
+				<amount type="number">140</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">88</amount>
+				<amount type="number">141</amount>
 				<name type="string">CP</name>
 			</slot4>
 			<slot5>
 				<amount type="number">0</amount>
+				<name type="string">EP</name>
 			</slot5>
 			<slot6>
 				<amount type="number">0</amount>
@@ -109,10 +110,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">89.251</load>
+			<load type="number">94.251</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">514</exp>
+		<exp type="number">606</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
@@ -220,7 +221,7 @@
 			<id-00006>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Invocations: Beguiling Influence, Armor of Shadows, Fiendish Vigor</name>
+				<name type="string">Eldritch Invocations: Repelling Blast, Armor of Shadows, Fiendish Vigor</name>
 				<source type="string">Warlock</source>
 				<text type="formattedtext">
 					<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p>
@@ -516,13 +517,25 @@
 			<id-00008>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement: Added Destruction Master Feat</name>
+				<name type="string">Ability Score Improvement: Added Destruction Master Feat at Lvl 4</name>
 				<source type="string">Warlock</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Entropic Ward</name>
+				<source type="string">Warlock</source>
+				<specialization type="string">The Great Old One</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 6th level, you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.</p>
+					<p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I will never fully trust anyone other than myself.</flaws>
 		<gender type="string">Male</gender>
@@ -531,7 +544,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
+			<total type="number">45</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Change. The low are lifted up, and the high and mighty are brought down. Change is the nature of things. (Chaotic)</ideals>
@@ -842,6 +855,97 @@
 				<name type="string">Path of Tome Book</name>
 				<weight type="number">0</weight>
 			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.id-00503@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This robe has cloth patches of various shapes and colors covering it. While wearing the robe, you can use an action to detach one of the patches, causing it to become the object or creature it represents. Once the last patch is removed, the robe becomes an ordinary garment.</p>
+					<p>The robe has two of each of the following patches:</p>
+					<linklist>
+						<link class="item" recordname="item.id-00227@Incarnate-Engine">Dagger</link>
+						<link class="item" recordname="item.id-00110@Incarnate-Engine">Bullseye lantern (filled and lit)</link>
+						<link class="item" recordname="item.id-00118@Incarnate-Engine">Steel mirror</link>
+						<link class="item" recordname="item.id-00128@Incarnate-Engine">10--foot pole</link>
+						<link class="item" recordname="item.id-00138@Incarnate-Engine">Hempen rope (50 feet, coiled)</link>
+						<link class="item" recordname="item.id-00142@Incarnate-Engine">Sack</link>
+					</linklist>
+					<p>In addition, the robe has 4d4 other patches. The</p>
+					<p>GM chooses the patches or determines them randomly.</p>
+					<p>OTHERS:</p>
+					<list>
+						<li>Iron door (up to 10 feet wide and 10 feet high, barred on one side of your choice), which you can place in an openening you can reach; it conforms to fit the opening, attaching and hinging itself.</li>
+						<li>Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach</li>
+					</list>
+					<linklist>
+						<link class="item" recordname="item.id-00282@Incarnate-Engine">2 Mastiffs</link>
+						<link class="item" recordname="item.id-00302@Incarnate-Engine">Rowboat</link>
+						<link class="item" recordname="item.id-00282@Incarnate-Engine">2 Mastiffs</link>
+					</linklist>
+					<list>
+						<li>Bag of 100 GP</li>
+						<li>Iron door (up to 10 feet wide and 10 feet high, barred on one side of your choice), which you can place in an openening you can reach; it conforms to fit the opening, attaching and hinging itself.</li>
+						<li>Silver coffer (1 foot long, 6 inches wide and deep) worth 500 GP</li>
+						<li>Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach</li>
+						<li>Bag of 100 GP</li>
+					</list>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Robe of Useful Items</name>
+				<nonid_name type="string">Robe covered in patches</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">3</weight>
+			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st--level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00184@Incarnate-Engine">Magic Missile</link>
+					</linklist>
+					<p>The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Wand of Magic Missiles</name>
+				<nonid_name type="string">Wand</nonid_name>
+				<nonidentified type="string">A magical wand.</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wand</type>
+				<weight type="number">1</weight>
+			</id-00024>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -851,9 +955,9 @@
 				<name type="string">Infernal</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Zarvenim (Zar)</name>
-		<notes type="string">Pact Boon: Pact of the Tome: A tattered diary of a lunatic driven mad by contact with the Great Old One, holding scraps of spells that only your own burgeoning insanity allows you to understand and cast.\n\n-Eyes of Rune Keeper: I can read any writing.\n-Beguiling Influence: I gain proficiency in Deception and Persuasion </notes>
+		<notes type="string">Pact Boon: Pact of the Tome: A tattered diary of a lunatic driven mad by contact with the Great Old One, holding scraps of spells that only your own burgeoning insanity allows you to understand and cast.\n\n-Fiendish Figor: can cast False Life on myself like a cantrip\n-Armor of Shadows: can cast Mage Armor on myself like a cantrip\n-Repelling Blast: Eldritch blast pushing 10ft\nCode Entropic Ward reaction once per short rest,</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I bluntly say what other people are hinting at or hiding.</personalitytraits>
@@ -882,6 +986,12 @@
 				<name type="string">Stone of Ancient Times (Reserve)</name>
 				<saveprof type="number">1</saveprof>
 			</id-00005>
+			<id-00006>
+				<name type="string">Passive</name>
+			</id-00006>
+			<id-00007>
+				<name type="string">Passive</name>
+			</id-00007>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -957,7 +1067,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1103,6 +1213,7 @@
 				<name type="string">Witch Bolt</name>
 				<prepared type="number">1</prepared>
 				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00004>
@@ -1135,6 +1246,32 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Cleric</source>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">8</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">AC: 2; AC: [DEX]</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can cast mage armor on yourself at will, without expending a spell slot or material components.</p>
+					<linklist>
+						<link class="power" recordname="spell.id-00180@Incarnate-Engine">Spell: Mage Armor</link>
+					</linklist>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Armor of Shadows (Eldritch Invocations)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Eldritch Invocations</source>
+			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
@@ -1599,10 +1736,10 @@
 					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.</p>
 				</description>
 				<duration type="string">1 hour</duration>
-				<group type="string">Spells</group>
+				<group type="string">Passive</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">False Life (Eldritch Invoc)</name>
+				<name type="string">False Life (Eldritch Invocation)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
@@ -1612,29 +1749,76 @@
 			<id-00020>
 				<actions>
 					<id-00001>
-						<durmod type="number">8</durmod>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: fire</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Fire)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
 						<durunit type="string">hour</durunit>
-						<label type="string">AC: 3</label>
+						<label type="string">Invisible; (C)</label>
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a piece of cured leather)</components>
+				<components type="string">V, S, M (an eyelash encased in gum arabic)</components>
 				<description type="formattedtext">
-					<p>You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p>
+					<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
 				</description>
-				<duration type="string">8 hours</duration>
+				<duration type="string">Concentration, up to 1 hour</duration>
 				<group type="string">Spells</group>
-				<level type="number">0</level>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Mage Armor (Eldritch Invoc)</name>
+				<name type="string">Invisibility</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
-				<school type="string">Abjuration</school>
-				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
-			</id-00020>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Druid Grassland Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">GRANTDISATK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>At 6th level, you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.</p>
+					<p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+				</description>
+				<group type="string">Powers</group>
+				<locked type="number">1</locked>
+				<name type="string">Entropic Ward</name>
+				<prepared type="number">1</prepared>
+				<source type="string">Warlock</source>
+				<specialization type="string">The Great Old One</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00022>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1792,7 +1976,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1895,6 +2079,25 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
+			<id-00005>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Offhand Dagger</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">120</weight>
 	</character>
