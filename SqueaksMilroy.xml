@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">-1</bonus>
-				<save type="number">1</save>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">8</score>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,7 +70,7 @@
 				</shortcut>
 			</id-00001>
 		</classes>
-		<coinother type="string">53 GP 53 SP 50 CP</coinother>
+		<coinother type="string">171 GP 82 SP 76 CP</coinother>
 		<coins>
 			<slot1>
 				<amount type="number">0</amount>
@@ -108,17 +108,17 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">20</encumbered>
-			<encumberedheavy type="number">40</encumberedheavy>
-			<liftpushdrag type="number">120</liftpushdrag>
-			<load type="number">9.32</load>
-			<max type="number">60</max>
+			<encumbered type="number">40</encumbered>
+			<encumberedheavy type="number">80</encumberedheavy>
+			<liftpushdrag type="number">240</liftpushdrag>
+			<load type="number">10.32</load>
+			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">465</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">595</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Dead Shot</name>
 				<text type="formattedtext">
 					<h>Dead Shot</h>
@@ -279,6 +279,16 @@
 					<p>When you choose this archetype at 3rd level, the land grants you unmatched speed. When you are wearing light armor or no armor, you gain a +10 bonus to your walking speed. The bonus increases to +20 when you reach 11th level</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">Everyone has a price. Mine happens to be pretty low.</flaws>
 		<gender type="string">Male</gender>
@@ -287,7 +297,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
+			<total type="number">34</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Boredom - Get me away from this boring life! (Chaotic)</ideals>
@@ -315,6 +325,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00001>
+			<id-00002>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Grapes</name>
+				<weight type="number">1</weight>
+			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -374,26 +391,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0.01</weight>
 			</id-00005>
-			<id-00006>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 piercing</damage>
-				<description type="formattedtext">
-					<p>This tiny crossbow can be used to fire regular acupuncture needles at the enemies weak points.</p>
-					<p>This weapon is tiny. Small and medium creatures can use it with a -5 modifier on their attack rolls. Large, huge, and gargantuan creatures cannot attempt to use it.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Mikon Crossbow</name>
-				<properties type="string">Ammunition (range 40/120), loading</properties>
-				<rarity type="string">Very Rare</rarity>
-				<subtype type="string">Tiny Ranged</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">0.2</weight>
-			</id-00006>
 			<id-00007>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -425,6 +422,24 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.25</weight>
 			</id-00008>
+			<id-00009>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">5 CP</cost>
+				<count type="number">20</count>
+				<description type="formattedtext">
+					<p>Great for holding pieces of wood together, but I guess you could shoot it at someone in a pinch.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Mikon Crossbow</location>
+				<locked type="number">1</locked>
+				<name type="string">Nail</name>
+				<nonid_name type="string">Nail</nonid_name>
+				<subtype type="string">Ammunition</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0.01</weight>
+			</id-00009>
 			<id-00010>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -530,12 +545,35 @@
 				<weight type="number">0.5</weight>
 			</id-00015>
 			<id-00016>
-				<carried type="number">1</carried>
-				<count type="number">20</count>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p>This tiny crossbow can be used to fire regular acupuncture needles at the enemies weak points.</p>
+					<h>Special Ammunition</h>
+					<p>The Mikon Crossbow can only fire special tiny ammunition.</p>
+					<p>It normally fires nails which have a 50% chance of breaking on impact.</p>
+					<linklist>
+						<link class="item" recordname="item.id-00042@Incarnate-Engine">Nail</link>
+					</linklist>
+					<p>It can also fire Acupuncture Needles which deal 1d8 piercing damage and are almost indestructible, but they are so tiny that they tend to get lost.</p>
+					<linklist>
+						<link class="item" recordname="item.id-01022@Incarnate-Engine">Acupuncture Needle</link>
+					</linklist>
+					<h>Tiny Weapon</h>
+					<p>This weapon is tiny. Small and medium creatures can use it with a -5 modifier on their attack rolls. Large, huge, and gargantuan creatures cannot attempt to use it.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Mikon Crossbow</location>
-				<name type="string">Mikon Bolts</name>
-				<weight type="number">0.01</weight>
+				<locked type="number">1</locked>
+				<name type="string">Mikon Crossbow</name>
+				<properties type="string">Ammunition (range 40/120), loading</properties>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Tiny Ranged</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0.2</weight>
 			</id-00016>
 			<id-00017>
 				<ac type="number">0</ac>
@@ -590,9 +628,9 @@
 				<name type="string">Mikon</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Squeaks Milroy</name>
-		<perception type="number">14</perception>
+		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I insist on checking every ruined fortress, abandoned town, and forgotten castle I come across. I long to walk where great men and women have walked before. To set my shoes where theirs were. It makes me feel like I'm part of something bigger.\nMy friends know they can rely on me even in the most stressful situations I will try to help them.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -650,11 +688,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
+				<max type="number">4</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -783,37 +821,6 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Druid, Ranger</source>
 			</id-00004>
-			<id-00005>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">1</bonus>
-								<dice type="dice"></dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a sprig of mistletoe)</components>
-				<description type="formattedtext">
-					<p>Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Goodberry</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Druid, Ranger</source>
-			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -847,6 +854,122 @@
 				<name type="string">*Offhand</name>
 				<prepared type="number">0</prepared>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
+					<id-00005>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">5</order>
+						<type type="string">damage</type>
+					</id-00005>
+					<id-00006>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">6</order>
+						<type type="string">damage</type>
+					</id-00006>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_racialtrait" recordname="race.id-00013.traits.id-00012@Incarnate-Engine">Underfoot</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Underfoot</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d4,d4</dice>
+								<type type="string">piercing,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)</components>
+				<description type="formattedtext">
+					<p>The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels. The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Spike Growth</name>
+				<prepared type="number">0</prepared>
+				<range type="string">150 feet</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00009>
 			<id-00010>
 				<actions>
 					<id-00001>
@@ -926,8 +1049,39 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00012>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<stat type="string">base</stat>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Cure Wounds</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
+			</id-00014>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Cobbler's Tools</name>
@@ -945,14 +1099,14 @@
 			<recordname>race.id-00013@Incarnate-Engine</recordname>
 		</racelink>
 		<senses type="string">Darkvision 60</senses>
-		<size type="string">Tiny</size>
+		<size type="string">Mikon</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -1015,7 +1169,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1029,7 +1183,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1057,7 +1211,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1071,7 +1225,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
@@ -1084,7 +1238,7 @@
 						<link class="item" recordname="item.id-00245@Incarnate-Engine">Cobbler's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1096,20 +1250,14 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Tiny Weapons</name>
+				<name type="string">Tiny Capacity</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
-					<p>Mikon are tiny and as such cannot use traditional weapons. This limits you to tiny weapons which include:</p>
-					<linklist>
-						<link class="item" recordname="item.id-01022@Incarnate-Engine">Acupuncture Needle</link>
-						<link class="item" recordname="item.id-00178@Incarnate-Engine">Acupuncture Needle - barbed</link>
-						<link class="item" recordname="item.id-00179@Incarnate-Engine">Mikon Blowgun</link>
-					</linklist>
-					<p>Mikon may exchange any number of weapons from their class for the same number of tiny weapons.</p>
+					<p>As one of the tinniest of creatures, your carrying capacity is limited even further than normal. Your carrying capacity is now 2 times your Strength score.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00001>
@@ -1125,13 +1273,25 @@
 			</id-00002>
 			<id-00003>
 				<locked type="number">1</locked>
-				<name type="string">Sprint</name>
+				<name type="string">Tiny Weapons</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
-					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer two levels of exhaustion.</p>
+					<p>As one of the smallest of creatures you cannot use traditional weapons. You are proficient with tiny weapons of any category that your class is normally proficient with. These include:</p>
+					<p><b>Simple Melee Weapons:</b></p>
 					<linklist>
-						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+						<link class="item" recordname="item.id-01022@Incarnate-Engine">Acupuncture Needle</link>
 					</linklist>
+					<p><b>Martial Melee Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-00178@Incarnate-Engine">Azinga</link>
+					</linklist>
+					<p><b>Simple Ranged Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-00179@Incarnate-Engine">Mikon Crossbow</link>
+					</linklist>
+					<p>Mikon may exchange any number of weapons from their class for the same number of tiny weapons.</p>
+					<p>Note: You cannot exchange ammunition for weapons.</p>
+					<p>Warning: Acupuncture Needles are extremely expensive. Their alloi has a little bit of adamantine mixed into it so that it does not shatter on contact with iron and steel weapons. They can only be made by very talented smiths. Their availability will vary based on the world as the GM sees fit.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00003>
@@ -1145,6 +1305,60 @@
 				</text>
 				<type type="string">racial</type>
 			</id-00004>
+			<id-00005>
+				<locked type="number">1</locked>
+				<name type="string">Underfoot</name>
+				<source type="string">Mikon</source>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.underfoot@Incarnate-Engine">Underfoot</link>
+					</linklist>
+					<h>Description</h>
+					<p>Although Mikon are hard to see, they often get underfoot. When someone walks over their space and does not specifically say that they avoid stepping on you, then you are at risk for taking trampling damage. You may use your reaction to dive out of the way (dexterity save DC 13) taking bludgeoning damage according to the following table:</p>
+					<table>
+						<tr>
+							<td><b>Size</b></td>
+							<td><b>Damage</b></td>
+						</tr>
+						<tr>
+							<td>Small</td>
+							<td>1d4</td>
+						</tr>
+						<tr>
+							<td>Medium</td>
+							<td>2d4</td>
+						</tr>
+						<tr>
+							<td>Large</td>
+							<td>3d4</td>
+						</tr>
+						<tr>
+							<td>Huge</td>
+							<td>4d4</td>
+						</tr>
+						<tr>
+							<td>Gargantuan</td>
+							<td>5d5</td>
+						</tr>
+					</table>
+					<p>For a creature who has not seen you, stepping on you in this way is part of their regular movement and does not cost an action, bonus action, or free action.</p>
+					<p>If a creature has seen you, then they may expend half their movement speed to jump up and down on top of you as a bonus action.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00005>
+			<id-00006>
+				<locked type="number">1</locked>
+				<name type="string">Sprint</name>
+				<source type="string">Mikon</source>
+				<text type="formattedtext">
+					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer two levels of exhaustion.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
+				</text>
+				<type type="string">racial</type>
+			</id-00006>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
@@ -1170,8 +1384,8 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
-			<id-00002>
-				<ammo type="number">1</ammo>
+			<id-00005>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1183,16 +1397,16 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">15</maxammo>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Mikon Crossbow</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 40/120), loading</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00006</recordname>
+					<recordname>....inventorylist.id-00016</recordname>
 				</shortcut>
 				<type type="number">1</type>
-			</id-00002>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">6 lb</weight>
 	</character>

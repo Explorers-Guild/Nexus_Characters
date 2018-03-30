@@ -45,7 +45,8 @@
 				<score type="number">10</score>
 			</wisdom>
 		</abilities>
-		<background type="string">Folk Hero</background>
+		<adventurelist>
+		</adventurelist>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
 			<recordname>reference.backgrounddata.folkhero@DD PHB Deluxe</recordname>
@@ -56,7 +57,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -66,19 +67,24 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">0</amount>
+				<amount type="number">131</amount>
+				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">28</amount>
+				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">29</amount>
+				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
+				<name type="string">PP</name>
 			</slot4>
 			<slot5>
 				<amount type="number">0</amount>
+				<name type="string">EP</name>
 			</slot5>
 			<slot6>
 				<amount type="number">0</amount>
@@ -86,7 +92,9 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">0</armor>
+				<armor type="number">3</armor>
+				<dexbonus type="string">max2</dexbonus>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -95,14 +103,14 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">20</encumbered>
-			<encumberedheavy type="number">40</encumberedheavy>
-			<liftpushdrag type="number">120</liftpushdrag>
-			<load type="number">0</load>
-			<max type="number">60</max>
+			<encumbered type="number">40</encumbered>
+			<encumberedheavy type="number">80</encumberedheavy>
+			<liftpushdrag type="number">240</liftpushdrag>
+			<load type="number">32.381</load>
+			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">430</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -241,17 +249,40 @@
 					<p><b>Black Healing</b></p>
 					<p>You summon a black, gelatinous substance in a vial. Drinking this restores 1d8 HP per level of the spell slot you used. When drunk, the vial dissappears.</p>
 					<linklist>
-						<link class="power" recordname="spell.id-00569@Incarnate-Engine">Black Healing</link>
+						<link class="power" recordname="spell.blackhealing@Incarnate-Engine">Black Healing</link>
 					</linklist>
 					<p><b>Shadow Carapace</b></p>
 					<p>You conjure a bonelike, brittle suit of armour to protect yourself. Your AC increases by an amount equal to the level of the spell slot you used while your Carapace is active. You are proficient with your Carapace. A Carapace cannot be worn by a creature other than you. You cannot wear any other armor or have any other effects that modify your AC while the Carapace is worn.</p>
+					<p>The spell slot you are allowed to use for the Shadow Carapace is limited by your Wizard level as follows:</p>
+					<table>
+						<tr>
+							<td>Wizard Level</td>
+							<td>Maximum Spell Slot</td>
+						</tr>
+						<tr>
+							<td>1-4</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>5-10</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>11-16</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>17+</td>
+							<td>4</td>
+						</tr>
+					</table>
 					<linklist>
-						<link class="power" recordname="spell.id-00576@Incarnate-Engine">Shadow Carapace</link>
+						<link class="power" recordname="spell.shadowcarapace@Incarnate-Engine">Shadow Carapace</link>
 					</linklist>
 					<p><b>Ghostly Crossbow</b></p>
-					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes an action to summon a ghostly bolt for it to fire (so you cannot attack with it the same turn you summon a bolt unless you have a method of getting another action or attacking with a bonus action)</p>
+					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. It has a range of 80/320. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes an action to summon a ghostly bolt for it to fire (so you cannot attack with it the same turn you summon a bolt unless you have a method of getting another action or attacking with a bonus action)</p>
 					<linklist>
-						<link class="power" recordname="spell.id-00575@Incarnate-Engine">Ghostly Crossbow</link>
+						<link class="power" recordname="spell.ghostlycrossbow@Incarnate-Engine">Ghostly Crossbow</link>
 					</linklist>
 				</text>
 			</id-00006>
@@ -267,10 +298,22 @@
 					<p>Starting at 2nd level, the save DC for all spells you cast that directly deal damage increases by 2</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">23</total>
+			<total type="number">29</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -279,16 +322,345 @@
 			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
+			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">2 SP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Quarterstaff</name>
+				<nonid_name type="string">Quarterstaff</nonid_name>
+				<nonidentified type="string">A sturdy quarterstaff.</nonidentified>
+				<properties type="string">Versatile (1d8)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00001>
+			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1000 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement:</b></p>
+					<p>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
+					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
+					<p><b>Prestige 0:</b></p>
+					<p>Insight + 2</p>
+					<p><b>Prestige 1:</b></p>
+					<p>Persuasion Check: +2</p>
+					<p><b>Prestige 2:</b></p>
+					<p>Wisdom + 4 while wearing the ring.</p>
+					<p><b>Prestige 3:</b></p>
+					<p>Can see through a solid surface no thicker than 12 inches and with no lead within 20 feet of you.</p>
+					<p><b>Prestige 4:</b></p>
+					<p>Truesight 30 ft.</p>
+					<p></p>
+					<p>Add:</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Athena - Prestige 1</name>
+				<nonid_name type="string">Ring of the Maiden</nonid_name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.001</weight>
+			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A book with a certain type of lore that a scholar has been researching. Work with your GM on what type of lore and how complete of knowledge this book contains.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Book of Lore</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00003>
+			<id-00004>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Knife (Small)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.25</weight>
+			</id-00004>
+			<id-00005>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Backpack</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00005>
+			<id-00006>
+				<carried type="number">1</carried>
+				<cost type="string">1 SP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Parchment (One Sheet)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00006>
+			<id-00007>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bag (Sand)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.05</weight>
+			</id-00007>
+			<id-00008>
+				<carried type="number">1</carried>
+				<cost type="string">2 CP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink Pen</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00008>
+			<id-00009>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink (1-ounce Bottle)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.06</weight>
+			</id-00009>
+			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">50 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Spellbook</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00010>
+			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Dagger</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger.</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">3 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Spikey Boots</name>
+				<rarity type="string">common</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00012>
+			<id-00013>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00013>
+			<id-00014>
+				<ac type="number">13</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,550 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Made of interlocking metal rings a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.</p>
+					<p>Mithral is a light flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement the mithral version of the armor doesn't.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepsychic@Incarnate-Engine">Type Resistance (Psychic)</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have resistance to Psychic damage while you wear this armor.</p>
+				</description>
+				<dexbonus type="string">Yes (max 2)</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Mithral Chain Shirt of Psychic Resistance</name>
+				<nonid_name type="string">Chain Shirt</nonid_name>
+				<nonidentified type="string">Some well-crafted chain shirt armor.</nonidentified>
+				<rarity type="string">common</rarity>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Medium Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">10</weight>
+			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00015>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">150 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.spiritguardians@Incarnate-Engine">Spirit Guardians</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>Uncommon</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Spirit Guardians</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00017>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Halfling</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Eyrwin Crestfallen</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -306,60 +678,78 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -486,14 +876,6 @@
 			</id-00003>
 			<id-00004>
 				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">day</durunit>
-						<label type="string">Shadow Carapace; AC: [PRF]; AC: 2</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
 					<id-00004>
 						<durmod type="number">1</durmod>
 						<durunit type="string">day</durunit>
@@ -564,6 +946,34 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Sorcerer, Wizard</source>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Unconscious</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of fine sand, rose petals, or a cricket)</components>
+				<description type="formattedtext">
+					<p>This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren't affected by this spell.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Sleep</name>
+				<prepared type="number">1</prepared>
+				<range type="string">90 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00007>
 			<id-00016>
 				<actions>
 					<id-00001>
@@ -615,6 +1025,7 @@
 				<name type="string">Feather Fall</name>
 				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
 			</id-00017>
@@ -769,52 +1180,10 @@
 				<name type="string">Sleep</name>
 				<prepared type="number">1</prepared>
 				<range type="string">90 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
 			</id-00023>
-			<id-00025>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d8,d8</dice>
-								<type type="string">poison</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
-						<label type="string">Poisoned</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw.</p>
-					<p>On a failed save, it is also poisoned until the end of your next turn.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Ray of Sickness</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<school type="string">Necromancy</school>
-				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
-			</id-00025>
 			<id-00026>
 				<actions>
 					<id-00001>
@@ -890,9 +1259,6 @@
 			<id-00001>
 				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows</name>
 			</id-00001>
-			<id-00002>
-				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows</name>
-			</id-00002>
 			<id-00003>
 				<name type="string">Tool: One type of artisan's tools, vehicles (land)</name>
 			</id-00003>
@@ -902,7 +1268,7 @@
 			<class>reference_race</class>
 			<recordname>race.id-00009@Incarnate-Engine</recordname>
 		</racelink>
-		<size type="string">Tiny</size>
+		<size type="string">Nimble</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
@@ -940,11 +1306,11 @@
 				<total type="number">2</total>
 			</id-00005>
 			<id-00006>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -996,11 +1362,11 @@
 				<total type="number">3</total>
 			</id-00013>
 			<id-00014>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1038,7 +1404,9 @@
 			<temporary type="number">0</temporary>
 			<total type="number">25</total>
 		</speed>
-		<token type="token">portrait_id-00004_token</token>
+		<temp>
+		</temp>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1079,8 +1447,138 @@
 				</text>
 				<type type="string">subracial</type>
 			</id-00004>
+			<id-00005>
+				<locked type="number">1</locked>
+				<name type="string">Agile</name>
+				<source type="string">Quarterling</source>
+				<text type="formattedtext">
+					<p>Being so tiny their race has learned to use their agility to compensate. This ability to dodge out of the way of the foe gives them a +2 to AC as long as they are unarmored or wearing custom made light armor.</p>
+					<p>Any armor they wear must be custom made to their size.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00005>
+			<id-00006>
+				<locked type="number">1</locked>
+				<name type="string">Tiny Capacity</name>
+				<source type="string">Quarterling</source>
+				<text type="formattedtext">
+					<p>As one of the tinniest of creatures, your carrying capacity is limited even further than normal. Your carrying capacity is now 6 times your Strength score.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">Tiny Weapons</name>
+				<source type="string">Quarterling</source>
+				<text type="formattedtext">
+					<p>As one of the smallest of creatures you cannot use traditional weapons. You are proficient with tiny weapons of any category that your class is normally proficient with. These include:</p>
+					<p><b>Simple Melee Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-01022@Incarnate-Engine">Acupuncture Needle</link>
+					</linklist>
+					<p><b>Martial Melee Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-00178@Incarnate-Engine">Azinga</link>
+					</linklist>
+					<p><b>Simple Ranged Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-00179@Incarnate-Engine">Mikon Crossbow</link>
+					</linklist>
+					<p>You may exchange any number of weapons from your class for the same number of tiny weapons.</p>
+					<p>Note: you cannot exchange ammunition for weapons.</p>
+					<p>Warning: Acupuncture needles are extremely expensive. Their alloi has a little bit of adamantine mixed into it so that it does not shatter on contact with iron and steel weapons. They can only be made by very talented smiths. Their availability will vary based on the world as the GM sees fit.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00007>
 		</traitlist>
 		<weaponlist>
+			<id-00001>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Quarterstaff</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00001</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00001>
+			<id-00002>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00011</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">1</maxammo>
+				<name type="string">Dagger</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00011</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spikey Boots</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00012</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
 		</weaponlist>
 	</character>
 </root>

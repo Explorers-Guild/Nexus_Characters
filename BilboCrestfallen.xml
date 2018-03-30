@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">7</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">243</amount>
+				<amount type="number">275</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">28</amount>
+				<amount type="number">57</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">40</amount>
+				<amount type="number">68</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,14 +107,14 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">25</encumbered>
-			<encumberedheavy type="number">50</encumberedheavy>
-			<liftpushdrag type="number">150</liftpushdrag>
-			<load type="number">35.59</load>
-			<max type="number">75</max>
+			<encumbered type="number">50</encumbered>
+			<encumberedheavy type="number">100</encumberedheavy>
+			<liftpushdrag type="number">300</liftpushdrag>
+			<load type="number">35.39</load>
+			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">580</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">710</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -209,17 +209,40 @@
 					<p><b>Black Healing</b></p>
 					<p>You summon a black, gelatinous substance in a vial. Drinking this restores 1d8 HP per level of the spell slot you used. When drunk, the vial dissappears.</p>
 					<linklist>
-						<link class="power" recordname="spell.id-00569@Incarnate-Engine">Black Healing</link>
+						<link class="power" recordname="spell.blackhealing@Incarnate-Engine">Black Healing</link>
 					</linklist>
 					<p><b>Shadow Carapace</b></p>
 					<p>You conjure a bonelike, brittle suit of armour to protect yourself. Your AC increases by an amount equal to the level of the spell slot you used while your Carapace is active. You are proficient with your Carapace. A Carapace cannot be worn by a creature other than you. You cannot wear any other armor or have any other effects that modify your AC while the Carapace is worn.</p>
+					<p>The spell slot you are allowed to use for the Shadow Carapace is limited by your Wizard level as follows:</p>
+					<table>
+						<tr>
+							<td>Wizard Level</td>
+							<td>Maximum Spell Slot</td>
+						</tr>
+						<tr>
+							<td>1-4</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>5-10</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>11-16</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>17+</td>
+							<td>4</td>
+						</tr>
+					</table>
 					<linklist>
-						<link class="power" recordname="spell.id-00576@Incarnate-Engine">Shadow Carapace</link>
+						<link class="power" recordname="spell.shadowcarapace@Incarnate-Engine">Shadow Carapace</link>
 					</linklist>
 					<p><b>Ghostly Crossbow</b></p>
-					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes an action to summon a ghostly bolt for it to fire (so you cannot attack with it the same turn you summon a bolt unless you have a method of getting another action or attacking with a bonus action)</p>
+					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. It has a range of 80/320. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes an action to summon a ghostly bolt for it to fire (so you cannot attack with it the same turn you summon a bolt unless you have a method of getting another action or attacking with a bonus action)</p>
 					<linklist>
-						<link class="power" recordname="spell.id-00575@Incarnate-Engine">Ghostly Crossbow</link>
+						<link class="power" recordname="spell.ghostlycrossbow@Incarnate-Engine">Ghostly Crossbow</link>
 					</linklist>
 				</text>
 			</id-00004>
@@ -264,6 +287,22 @@
 					<p>You were formally trained in Magic, and the name of those that trained you can open doors. You can usually gain an audience with another magic user, simply by dropping the name of your Master or School. Furthermore, you can usually find a place to stay among scholars or magic users, unless you show yourself to be a danger to them. You may also have access to resources from those who taught you, whether that is access to your school&#146;s libraries and facilities, or simply the ability to correspond with your Master and ask him or her for advice.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Black Magic Detonation</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Darkness</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.blackmagicdetonation@Incarnate-Engine">Black Magic Detonation</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 6th level, you can use an action to cause one of your Black Magic Form items to detonate. This deals 1d10 Necrotic damage per spell slot level you used, and this damage cannot be avoided except via resistance or immunity. It damages all creatures within 15 feet of it (friendly fire possible).</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I can get so distracted by the mystery and wonder of magic, that I can forget I&#146;m supposed to be fighting that other Wizard</flaws>
 		<gender type="string">Male</gender>
@@ -272,7 +311,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
+			<total type="number">44</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Magic For Magic&#146;s Sake - I seek to study and improve Magic, simply for the betterment of Magic. (Neutral)</ideals>
@@ -345,7 +384,7 @@
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -413,7 +452,7 @@
 			<id-00008>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 SP</cost>
 				<count type="number">10</count>
 				<description type="formattedtext">
@@ -430,7 +469,7 @@
 			<id-00009>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">3 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -547,7 +586,7 @@
 			<id-00014>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -639,7 +678,7 @@
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -681,7 +720,7 @@
 			<id-00020>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">33 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -723,7 +762,7 @@
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">50 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -765,7 +804,7 @@
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>The bearer's of this letter are friends of the orcs and should be treated as such. - Carl son of Achmad (bears his crest)</p>
@@ -778,7 +817,7 @@
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Contact poison,</p>
@@ -793,7 +832,7 @@
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">50 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -832,10 +871,32 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">50 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00261@Incarnate-Engine">Poisoner's Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Poisoner's Kit</name>
+				<subtype type="string">Kits / Sets</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">2</weight>
+			</id-00025>
 			<id-00026>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Contact poison, Can be applied to 3 arrows or weapons for 1 minute.</p>
@@ -851,7 +912,7 @@
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">200 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -890,6 +951,118 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00252@Incarnate-Engine">Potter's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<list>
+						<li>A Light Cloth Apron</li>
+						<li>Chamois: pieces of soft leather used to smooth the edges of thrown pottery</li>
+						<li>2 Potter's Needles: thin metal needles used to cut clay or carve patterns</li>
+						<li>Cut-off Wire: a piece of copper wire between two wooden handles</li>
+						<li>2 Fetting Knives: one is flexible, the other regid. They are used to remove ridges.</li>
+						<li>3 Scrapers: Made of oak, these tools can be used to shape the clay as it is on the wheel</li>
+						<li>A Sponge: a rare plant pulled out of the ocean that absorbs a shocking amount of water, it can be used to keep the clay the right moisture while working with it.</li>
+						<li>1 Course Brush: great for moving water around or applying glazes.</li>
+						<li>(you will likely still need to find a potter's wheel and a kiln to make something)</li>
+					</list>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Potter's Tools</name>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">3</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">20</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Vial</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00259@Incarnate-Engine">Herbalism Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Herbalism Kit</name>
+				<subtype type="string">Kits / Sets</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">3</weight>
+			</id-00030>
+			<id-00031>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">3 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Spikey Boots</name>
+				<rarity type="string">common</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00031>
+			<id-00032>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2,003 GP requires atunement</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing, silver</damage>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.flametongue@Incarnate-Engine">Flame Tongue</link>
+					</linklist>
+					<h>Description</h>
+					<p>You can use a bonus action to speak this magic weapon's command word, causing flames to erupt from the blade. These flames shed bright light in a 40--foot radius and dim light for an additional 40 feet.</p>
+					<p>While the weapon is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Spikey Boots of Flame Tongue</name>
+				<rarity type="string">common</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00032>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -904,8 +1077,11 @@
 			<id-00004>
 				<name type="string">Orc</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Goblin</name>
+			</id-00005>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">7</level>
 		<name type="string">Bilbo Crestfallen</name>
 		<notes type="string">When i was young i was practicing prestidigitation and it went horribly wrong turning my hair permenantly blue but the edges of my hair was blown behind my head so they stayed red. Battle of Tethron-</notes>
 		<perception type="number">10</perception>
@@ -922,9 +1098,6 @@
 			<id-00002>
 				<name type="string">Black Magic Form</name>
 			</id-00002>
-			<id-00003>
-				<name type="string">Effect</name>
-			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -972,11 +1145,11 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
+				<max type="number">1</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -1132,7 +1305,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Comprehend Languages</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
@@ -1229,8 +1402,9 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">4</bonus>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d4</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
@@ -1242,8 +1416,9 @@
 					<id-00002>
 						<heallist>
 							<id-00001>
-								<bonus type="number">4</bonus>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d4,d4</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
@@ -1255,8 +1430,9 @@
 					<id-00003>
 						<heallist>
 							<id-00001>
-								<bonus type="number">4</bonus>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d4,d4,d4</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
@@ -1265,6 +1441,19 @@
 						<order type="number">3</order>
 						<type type="string">heal</type>
 					</id-00003>
+					<id-00004>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d4,d4,d4,d4</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">4</order>
+						<type type="string">heal</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1333,7 +1522,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Vampiric Touch</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Necromancy</school>
@@ -1463,7 +1652,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Misty Step</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
@@ -1571,8 +1760,9 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Ray of Enfeeblement</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Necromancy</school>
 				<source type="string">Warlock, Wizard</source>
 			</id-00016>
@@ -1753,7 +1943,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Find Familiar</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">10 feet</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Conjuration</school>
@@ -1851,8 +2041,12 @@
 			<id-00023>
 				<actions>
 					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcmod type="number">2</savedcmod>
+						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
@@ -1886,6 +2080,149 @@
 				<school type="string">Evocation</school>
 				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Monk, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Flyby; GRANTADVATK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Black Magic Form</group>
+				<level type="number">0</level>
+				<name type="string">Flyby</name>
+				<prepared type="number">0</prepared>
+			</id-00024>
+			<id-00025>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Counterspell</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">charisma</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">IFT: TYPE(aberration, celestial, elemental, fey, fiend, undead); GRANTDISATK; IMMUNE: charmed,frightened,possessed; [FIXED]</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (holy water or powdered silver and iron worth at least 100 GP, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways: . The creature can't willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw. . The creature has disadvantage on attack rolls against targets within the cylinder. . Targets within the cylinder can't be charmed, frightened, or possessed by the creature.</p>
+					<p>When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Magic Circle</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Paladin, Warlock, Wizard</source>
+			</id-00026>
+			<id-00027>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Flame Tongue; DMG: 2d6 fire</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00824@Incarnate-Engine">Flame Tongue</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Flame Tongue</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00027>
+			<id-00028>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Invisible; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Invisibility</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Druid Underdark Circle, Eldritch Knight, Warlock (Archfey), Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00028>
+			<id-00029>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp, and a Tiny replica made from the same materials worth at least 50 gp)</components>
+				<description type="formattedtext">
+					<p>You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).</p>
+					<p>While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica.</p>
+					<p>After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Leomund's Secret Chest</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00029>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1901,7 +2238,7 @@
 			<class>reference_race</class>
 			<recordname>race.id-00009@Incarnate-Engine</recordname>
 		</racelink>
-		<size type="string">Tiny</size>
+		<size type="string">Nimble</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
@@ -2042,6 +2379,36 @@
 				</text>
 				<total type="number">7</total>
 			</id-00019>
+			<id-00020>
+				<misc type="number">0</misc>
+				<name type="string">Herbalism Kit</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00259@Incarnate-Engine">Herbalism Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
+				</text>
+				<total type="number">4</total>
+			</id-00020>
+			<id-00021>
+				<misc type="number">0</misc>
+				<name type="string">Poisoner's Kit</name>
+				<prof type="number">0</prof>
+				<stat type="string">wisdom</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00261@Incarnate-Engine">Poisoner's Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.</p>
+				</text>
+				<total type="number">0</total>
+			</id-00021>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -2093,6 +2460,49 @@
 				</text>
 				<type type="string">subracial</type>
 			</id-00004>
+			<id-00005>
+				<locked type="number">1</locked>
+				<name type="string">Agile</name>
+				<source type="string">Quarterling</source>
+				<text type="formattedtext">
+					<p>Being so tiny their race has learned to use their agility to compensate. This ability to dodge out of the way of the foe gives them a +2 to AC as long as they are unarmored or wearing custom made light armor.</p>
+					<p>Any armor they wear must be custom made to their size.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00005>
+			<id-00006>
+				<locked type="number">1</locked>
+				<name type="string">Tiny Capacity</name>
+				<source type="string">Quarterling</source>
+				<text type="formattedtext">
+					<p>As one of the tinniest of creatures, your carrying capacity is limited even further than normal. Your carrying capacity is now 6 times your Strength score.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">Tiny Weapons</name>
+				<source type="string">Quarterling</source>
+				<text type="formattedtext">
+					<p>As one of the smallest of creatures you cannot use traditional weapons. You are proficient with tiny weapons of any category that your class is normally proficient with. These include:</p>
+					<p><b>Simple Melee Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-01022@Incarnate-Engine">Acupuncture Needle</link>
+					</linklist>
+					<p><b>Martial Melee Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-00178@Incarnate-Engine">Azinga</link>
+					</linklist>
+					<p><b>Simple Ranged Weapons:</b></p>
+					<linklist>
+						<link class="item" recordname="item.id-00179@Incarnate-Engine">Mikon Crossbow</link>
+					</linklist>
+					<p>You may exchange any number of weapons from your class for the same number of tiny weapons.</p>
+					<p>Note: you cannot exchange ammunition for weapons.</p>
+					<p>Warning: Acupuncture needles are extremely expensive. Their alloi has a little bit of adamantine mixed into it so that it does not shatter on contact with iron and steel weapons. They can only be made by very talented smiths. Their availability will vary based on the world as the GM sees fit.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00007>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
@@ -2162,7 +2572,49 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">0</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spikey Boots</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00031</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spikey Boots of Flame Tongue</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00032</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 		</weaponlist>
-		<weight type="string">25</weight>
+		<weight type="string">30</weight>
 	</character>
 </root>

@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">89</amount>
+				<amount type="number">208</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">112</amount>
+				<amount type="number">140</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">116</amount>
+				<amount type="number">145</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -110,11 +110,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">117.501</load>
+			<load type="number">120.501</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">501</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">631</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -282,7 +282,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">35</total>
+			<total type="number">41</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization.</ideals>
@@ -291,6 +291,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
+		<inspiration type="number">1</inspiration>
 		<inventorylist>
 			<id-00001>
 				<carried type="number">2</carried>
@@ -371,7 +372,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Ring of Hades - Prestige 0</name>
+				<name type="string">Ring of Hades - Prestige 1</name>
 				<nonid_name type="string">Ring of Hades</nonid_name>
 				<nonidentified type="string">Has a cornucopia and a three headed dog on the ring.</nonidentified>
 				<weight type="number">0.001</weight>
@@ -656,6 +657,29 @@
 				<type type="string">Ring</type>
 				<weight type="number">1</weight>
 			</id-00021>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.cloakofprotection@Incarnate-Engine">Cloak of Protection</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to AC and saving throws while you wear this cloak.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Cloak of Protection</name>
+				<nonid_name type="string">Cloak</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">3</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -671,7 +695,7 @@
 				<name type="string">Dwarvish</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Viserion</name>
 		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -685,7 +709,9 @@
 				<stat type="string">wisdom</stat>
 			</id-00001>
 			<id-00002>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Druid</name>
+				<saveprof type="number">1</saveprof>
 			</id-00002>
 			<id-00003>
 				<atkprof type="number">1</atkprof>
@@ -694,6 +720,12 @@
 				<uses type="number">1</uses>
 				<usesperiod type="string">once</usesperiod>
 			</id-00003>
+			<id-00004>
+				<name type="string">Effect</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Passive</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -741,7 +773,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -1017,7 +1049,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Dispel Magic</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<school type="string">Abjuration</school>
 				<source type="string">Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard</source>
@@ -1285,6 +1317,30 @@
 				<school type="string">Evocation</school>
 				<source type="string">Druid, Ranger</source>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Cloak of Protection; AC: 1; SAVE: 1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00885@Incarnate-Engine">Cloak of Protection</link>
+					</linklist>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Cloak of Protection</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00018>
 			<id-00043>
 				<actions>
 					<id-00001>
@@ -1347,7 +1403,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Charm Person</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -2438,11 +2494,11 @@
 				<total type="number">2</total>
 			</id-00013>
 			<id-00014>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Deception</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -2482,7 +2538,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

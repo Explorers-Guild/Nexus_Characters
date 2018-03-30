@@ -46,6 +46,9 @@
 			</wisdom>
 		</abilities>
 		<adventurelist>
+			<id-00001>
+				<name type="string">Made an accord with Zafain, son of Gont at Gont's smithy to bring to him the materials for the construction of plate armor. Will need steel and some more exotic materials.</name>
+			</id-00001>
 		</adventurelist>
 		<age type="string">18</age>
 		<alignment type="string">Lawful Neutral</alignment>
@@ -62,7 +65,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +75,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">118</amount>
+				<amount type="number">237</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +83,7 @@
 				<name type="string">EP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">141</amount>
+				<amount type="number">169</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">143</amount>
+				<amount type="number">172</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -112,11 +115,11 @@
 			<encumbered type="number">90</encumbered>
 			<encumberedheavy type="number">180</encumberedheavy>
 			<liftpushdrag type="number">540</liftpushdrag>
-			<load type="number">164</load>
+			<load type="number">214.5</load>
 			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">504</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">634</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -294,6 +297,22 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Aura of Protection</name>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.auraofprotection@Incarnate-Engine">Aura of Protection</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</p>
+					<p>At 18th level, the range of this aura increases to 30 feet.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I'm convinced of the significance of my destiny, and blind to my shortcomings and the risk of failure.</flaws>
 		<gender type="string">Male</gender>
@@ -302,7 +321,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">43</total>
+			<total type="number">51</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Destiny. Nothing and no one can steer me away from my higher calling. (Any)</ideals>
@@ -671,6 +690,57 @@
 				<type type="string">Ring</type>
 				<weight type="number">1</weight>
 			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<p>A bar of Steel</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Steel Ignots</name>
+				<weight type="number">10</weight>
+			</id-00025>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -683,12 +753,13 @@
 				<name type="string">Dwarvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Lucian Martell</name>
 		<notes type="string">Lucian was born in Everlund, in the Silver Marches. His father Viktor is a human smith. His mother Rhiannon is a elven weaver and homemaker. \nLucian is the eldest child, he has a sister who is only 2 years younger and a brother that is 5 years younger.\nThe family worked and lived in Everlund for many generations. They were never well off and it seemed only one bad month away from disaster. They were comfortable though, and happy. \nLucian was brought up in the smithing trade and worked with his father as an apprentice ever since he could use the bellows. He grew up strong and stout.\nFor as far back as anyone could remember the whole family revered Helm and worshiped at his temple in Everlund regularly. \nThe Martell family have always gone out of their way to protect their community, fighting off evil creatures and men as needed. The men folk were members of the local militia and the women worked as nurses and midwives, when there was need. Lucian and his father both spent time fighting off bands of orcs, as well as other foul creatures from time to time.\nThe family lived outside the city walls on the southern edge of the city in a small cluster of cottages populated with other working families. At the edge of the high forest is where Lucian, in his youth, played with others from his community. Lucian loved the forest but knew that to go into a dense forest alone and unarmed was unwise.\nThe community was very close knit and shared a great deal with each other.\nThere were members of many races that lived and worked in the city and most of the working families lived as the Martells did. There were elves, dwarves, and even a small number of halfling families along with humans that made up the members of their small community.\nLucian loved his family and his friends. He pictured himself at times taking up his fathers hammer and becoming the village smith, once his father could no longer do so. There were other times that Lucian dreamed of becoming a Paladin of Helm and offering his protection to the entire city as well as the outlaying communities. \nWhen Lucian reached 17 years old, he felt as if he had a decision to make. Will he become the smith? or the Paladin? He did not want to be away from his family but he felt a need to become a Protector in the service of the mighty Helm.\nThen it happened.\nOne day, shortly before Lucian's 18th year, his sister and brother and several other village children were playing at the edge of the high forest. No one in the village thought much about this, until the smoke was seen. No one heard the screams of the children. It seemed as if the forest muffled the sounds. The elderly elven couple that lived nearest to the forest said later that it was like a spell that created silence. Lucian and his father were on the northern edge of the city conducting a meeting with some other smiths in the city to go over some future contracts within the city proper. The Martell men did not find out that the youngest members of their family would never be coming home until later that very day.\nThe local Militia went to investigate the site that evening. No one was ready for what was seen. 13 children, ages 5 to 16, were found dead that day. Dead is not really the right wording, they were mutilated and burned. All of the children were skinned. The 3 youngest of the bunch, all 5 years old, had their hearts removed as well. Some of the victims were missing their heads, others missing limbs. None of these were found. Several of the children looked as if they were gnawed upon, parts eaten.\nLucian and his father were in the group sent out to investigate. When Lucian saw this desicration, this butchery, something inside him snapped. He was very close to his sister, they were the best of friends. He wailed at the sky and silently swore an oath to Helm that he would have vengeance. He would find the evil beings that would do this to children and send them to the next world for judgement. He would never stop hunting down those that would do such a thing to his precious sister, his brother, and the other small ones.\nLucian decided right there, in the sight of his eviserated and burned siblings, that he would indeed become a Paladin of Helm, he would protect not only his remaining family, but the world from all evil creatures. He would have his Vengeance!</notes>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">When I set my mind to something, I follow through no matter what gets in my way.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -976,7 +1047,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Hunter's Mark</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Divination</school>
@@ -1197,7 +1268,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Hold Person</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Cleric, Druid, Druid Arctic Circle, Eldritch Knight, Monk, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
@@ -1216,13 +1287,13 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Misty Step</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid Coast Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00013>
-			<id-00014>
+			<id-00015>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -1239,7 +1310,30 @@
 				<locked type="number">1</locked>
 				<name type="string">Type Resistance (Cold)</name>
 				<prepared type="number">0</prepared>
-			</id-00014>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Aura of Protection; SAVE: [CHA] all</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.propaladin.features.id-00011@Incarnate-Engine">Aura of Protection</link>
+					</linklist>
+				</description>
+				<group type="string">Channel Divinity</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Aura of Protection</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00016>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1397,7 +1491,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1484,6 +1578,7 @@
 				<type type="number">0</type>
 			</id-00005>
 			<id-00006>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>

@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">3</level>
+				<hdused type="number">0</hdused>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">51</amount>
+				<amount type="number">170</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">57</amount>
+				<amount type="number">86</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">65</amount>
+				<amount type="number">93</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,11 +113,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">52.33</load>
+			<load type="number">52.83</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">360</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">490</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -185,6 +185,55 @@
 					</linklist>
 				</text>
 			</id-00003>
+			<id-00004>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Black Magic Form</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Darkness</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, you can manipulate magic to create items. Such manipulation expends spell slots and the casting grows stronger the higher level slots that are used. They dissapear at sunrise. Your choices are:</p>
+					<p><b>Black Healing</b></p>
+					<p>You summon a black, gelatinous substance in a vial. Drinking this restores 1d8 HP per level of the spell slot you used. When drunk, the vial dissappears.</p>
+					<linklist>
+						<link class="power" recordname="spell.blackhealing@Incarnate-Engine">Black Healing</link>
+					</linklist>
+					<p><b>Shadow Carapace</b></p>
+					<p>You conjure a bonelike, brittle suit of armour to protect yourself. Your AC increases by an amount equal to the level of the spell slot you used while your Carapace is active. You are proficient with your Carapace. A Carapace cannot be worn by a creature other than you. You cannot wear any other armor or have any other effects that modify your AC while the Carapace is worn.</p>
+					<p>The spell slot you are allowed to use for the Shadow Carapace is limited by your Wizard level as follows:</p>
+					<table>
+						<tr>
+							<td>Wizard Level</td>
+							<td>Maximum Spell Slot</td>
+						</tr>
+						<tr>
+							<td>1-4</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>5-10</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>11-16</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>17+</td>
+							<td>4</td>
+						</tr>
+					</table>
+					<linklist>
+						<link class="power" recordname="spell.shadowcarapace@Incarnate-Engine">Shadow Carapace</link>
+					</linklist>
+					<p><b>Ghostly Crossbow</b></p>
+					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. It has a range of 80/320. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes an action to summon a ghostly bolt for it to fire (so you cannot attack with it the same turn you summon a bolt unless you have a method of getting another action or attacking with a bonus action)</p>
+					<linklist>
+						<link class="power" recordname="spell.ghostlycrossbow@Incarnate-Engine">Ghostly Crossbow</link>
+					</linklist>
+				</text>
+			</id-00004>
 			<id-00005>
 				<locked type="number">1</locked>
 				<name type="string">Student of Magic - Starting Items</name>
@@ -237,29 +286,13 @@
 				</text>
 			</id-00007>
 			<id-00008>
-				<level type="number">2</level>
+				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Black Magic Form</name>
+				<name type="string">Ability Score Improvement</name>
 				<source type="string">Wizard</source>
-				<specialization type="string">School of Darkness</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>Starting at 2nd level, you can manipulate magic to create items. Such manipulation expends spell slots and the casting grows stronger the higher level slots that are used. They dissapear at sunrise. Your choices are:</p>
-					<p><b>Black Healing</b></p>
-					<p>You summon a black, gelatinous substance in a vial. Drinking this restores 1d8 HP per level of the spell slot you used. When drunk, the vial dissappears.</p>
-					<linklist>
-						<link class="power" recordname="spell.id-00569@Incarnate-Engine">Black Healing</link>
-					</linklist>
-					<p><b>Shadow Carapace</b></p>
-					<p>You conjure a bonelike, brittle suit of armour to protect yourself. Your AC increases by an amount equal to the level of the spell slot you used while your Carapace is active. You are proficient with your Carapace. A Carapace cannot be worn by a creature other than you. You cannot wear any other armor or have any other effects that modify your AC while the Carapace is worn.</p>
-					<linklist>
-						<link class="power" recordname="spell.id-00576@Incarnate-Engine">Shadow Carapace</link>
-					</linklist>
-					<p><b>Ghostly Crossbow</b></p>
-					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes an action to summon a ghostly bolt for it to fire (so you cannot attack with it the same turn you summon a bolt unless you have a method of getting another action or attacking with a bonus action)</p>
-					<linklist>
-						<link class="power" recordname="spell.id-00575@Incarnate-Engine">Ghostly Crossbow</link>
-					</linklist>
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
 			<id-00009>
@@ -282,7 +315,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">20</total>
+			<total type="number">26</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Greater Good - Magic should be used to protect and improve the lives of the common people. (Good)</ideals>
@@ -606,6 +639,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -618,9 +688,9 @@
 				<name type="string">Primordial</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Tilan Palebinder</name>
-		<notes type="string">No bones, incredibly flexible.\nDoes not like snakes.</notes>
+		<notes type="string">No bones, incredibly flexible.\nDoes not like snakes.\nProficient with pipes?\nDistrusts Athena - she locked up snailfolk : (</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">My Master taught me the value of secrets, I keep them very well and have a few of my own.</personalitytraits>
@@ -635,10 +705,12 @@
 				<stat type="string">intelligence</stat>
 			</id-00001>
 			<id-00002>
-				<name type="string">Ishilb </name>
+				<name type="string">Ishilb</name>
 			</id-00002>
 			<id-00005>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Black Magic</name>
+				<saveprof type="number">1</saveprof>
 			</id-00005>
 			<id-00007>
 				<name type="string">Black Magic</name>
@@ -686,7 +758,7 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -718,7 +790,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -753,7 +824,7 @@
 				<description type="formattedtext">
 					<p>You pull back into your shell making you easier to hit (AC: -3) but you take half damage from all attacks. In this state you may only take actions which only affect you.</p>
 				</description>
-				<group type="string">Ishilb </group>
+				<group type="string">Ishilb</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Withdraw (Ishilb)</name>
@@ -1205,7 +1276,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Thunderwave</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self (15-foot cube)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1291,7 +1362,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Chromatic Orb</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1322,7 +1393,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Sleep</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">90 feet</range>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Eldritch Knight, Warlock (Archfey), Sorcerer, Wizard, Arcane Trickster</source>
@@ -1369,7 +1440,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Ray of Sickness</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Necromancy</school>
@@ -1528,7 +1599,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
