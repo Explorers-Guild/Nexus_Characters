@@ -174,7 +174,7 @@
 			<id-00005>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Fighting Style (Great Weapon Fighting)</name>
+				<name type="string">Fighting Style (Defense)</name>
 				<source type="string">Paladin</source>
 				<text type="formattedtext">
 					<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
@@ -759,7 +759,6 @@
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">When I set my mind to something, I follow through no matter what gets in my way.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -1293,6 +1292,30 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid Coast Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Fighting Style Defense; AC:1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00055@Incarnate-Engine">Fighting Style</link>
+					</linklist>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style - Defense</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
 			<id-00015>
 				<actions>
 					<id-00001>
@@ -1491,7 +1514,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
