@@ -31,11 +31,11 @@
 				<score type="number">14</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">0</bonus>
-				<save type="number">0</save>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">10</score>
+				<score type="number">14</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">1</bonus>
@@ -75,15 +75,15 @@
 				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">208</amount>
+				<amount type="number">277</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">140</amount>
+				<amount type="number">150</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">141</amount>
+				<amount type="number">152</amount>
 				<name type="string">CP</name>
 			</slot4>
 			<slot5>
@@ -107,13 +107,13 @@
 		</defenses>
 		<deity type="string">Hades</deity>
 		<encumbrance>
-			<encumbered type="number">50</encumbered>
-			<encumberedheavy type="number">100</encumberedheavy>
-			<liftpushdrag type="number">300</liftpushdrag>
+			<encumbered type="number">70</encumbered>
+			<encumberedheavy type="number">140</encumberedheavy>
+			<liftpushdrag type="number">420</liftpushdrag>
 			<load type="number">94.251</load>
-			<max type="number">150</max>
+			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">606</exp>
+		<exp type="number">634</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
@@ -818,7 +818,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Ring of Hades - Prestige 1</name>
+				<name type="string">Ring of Hades - Prestige 2</name>
 				<nonid_name type="string">Ring of Hades</nonid_name>
 				<nonidentified type="string">Has a cornucopia and a three headed dog on the ring.</nonidentified>
 				<weight type="number">0.001</weight>
@@ -870,6 +870,7 @@
 					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Heartstone</name>
 				<nonid_name type="string">Heartstone</nonid_name>
@@ -1067,7 +1068,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1301,6 +1301,17 @@
 						<order type="number">3</order>
 						<type type="string">damage</type>
 					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">force</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1616,10 +1627,14 @@
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<name type="string">Destruction Master</name>
 				<prepared type="number">3</prepared>
+				<ritual type="number">0</ritual>
 			</id-00016>
 			<id-00017>
 				<actions>
@@ -1720,6 +1735,7 @@
 							<id-00001>
 								<bonus type="number">4</bonus>
 								<dice type="dice">d4</dice>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<healtargeting type="string">self</healtargeting>
@@ -1812,13 +1828,36 @@
 					<p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>
 				</description>
 				<group type="string">Powers</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Entropic Ward</name>
 				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
 				<source type="string">Warlock</source>
 				<specialization type="string">The Great Old One</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00022>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<dice type="dice">d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">force</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Powers</group>
+				<level type="number">0</level>
+				<name type="string">Wand of Magic Missles</name>
+				<prepared type="number">7</prepared>
+			</id-00024>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1922,7 +1961,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">0</prof>
 				<stat type="string">strength</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1976,7 +2015,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
