@@ -353,7 +353,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Emblem</name>
+				<name type="string">Emblem (Holy Symbol)</name>
 				<subtype type="string">Holy Symbol</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.02</weight>
@@ -551,6 +551,27 @@
 				<prepared type="number">4</prepared>
 				<stat type="string">charisma</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Oath Spells</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Lay on Hands</name>
+			</id-00003>
+			<id-00004>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Channel Divinity</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<uses type="number">0</uses>
+			</id-00004>
+			<id-00005>
+				<name type="string">Paladin</name>
+			</id-00005>
+			<id-00006>
+				<name type="string">Half Elf</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -762,13 +783,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Paladin</source>
 			</id-00003>
-			<id-00004>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<level type="number">0</level>
-				<prepared type="number">0</prepared>
-			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -803,7 +817,7 @@
 						<type type="string">effect</type>
 					</id-00003>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S, M (a cup of water)</components>
 				<description type="formattedtext">
@@ -812,7 +826,7 @@
 					<p>When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st.</p>
 				</description>
 				<duration type="string">1 hour</duration>
-				<group type="string">Spells</group>
+				<group type="string">Oath Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Armor of Agathys (S)</name>
@@ -822,7 +836,7 @@
 				<school type="string">Abjuration</school>
 				<source type="string">Warlock</source>
 			</id-00005>
-			<id-00006>
+			<id-00008>
 				<actions>
 					<id-00001>
 						<order type="number">1</order>
@@ -836,7 +850,7 @@
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V</components>
 				<description type="formattedtext">
@@ -848,7 +862,7 @@
 					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
 				</description>
 				<duration type="string">1 round</duration>
-				<group type="string">Spells</group>
+				<group type="string">Oath Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Command</name>
@@ -857,7 +871,144 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Cleric, Paladin</source>
-			</id-00006>
+			</id-00008>
+			<id-00011>
+				<actions>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<dice type="dice"></dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<heallist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+								<dice type="dice"></dice>
+							</id-00001>
+						</heallist>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.propaladin.features.id-00021@Incarnate-Engine">Lay on Hands</link>
+					</linklist>
+				</description>
+				<group type="string">Lay on Hands</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Lay on Hands</name>
+				<prepared type="number">5</prepared>
+				<ritual type="number">0</ritual>
+			</id-00011>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Channel Divinity: Conquering Presense; Frightened</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+					<p><b><i>Conquering Presence. </i></b>You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+					<p><b><i>Guided Strike. </i></b>You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.</p>
+				</description>
+				<group type="string">Channel Divinity</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Paladin: Channel Divinity: Conquering Presense (30)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<specialization type="string">Oath of Conquest</specialization>
+			</id-00013>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Divine Smite; DMG: 2d8 radiant</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Divine Smite; DMG: 3d8 radiant</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Divine Smite; DMG: 4d8 radiant</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Divine Smite; DMG: 5d8 radiant</label>
+						<order type="number">4</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.propaladin.features.id-00016@Incarnate-Engine">Divine Smite</link>
+					</linklist>
+				</description>
+				<group type="string">Paladin</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Divine Smite</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00018>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Fey Ancestry; Advantage on saving throws vs. charmed, no magic sleep</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+				</description>
+				<group type="string">Half Elf</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Half-Elf: Fey Ancestry</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Racial</school>
+				<source type="string">Half-Elf</source>
+				<type type="string">racial</type>
+			</id-00020>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1018,7 +1169,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
