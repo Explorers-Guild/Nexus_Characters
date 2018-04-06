@@ -57,6 +57,8 @@
 		<bonds type="string">My honor is my life.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">3</level>
@@ -69,20 +71,23 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">10</amount>
+				<amount type="number">23</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
 				<amount type="number">0</amount>
+				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">11</amount>
+				<name type="string">SP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">13</amount>
+				<name type="string">CP</name>
 			</slot5>
 			<slot6>
 				<amount type="number">0</amount>
@@ -99,16 +104,17 @@
 				<temporary type="number">0</temporary>
 				<total type="number">14</total>
 			</ac>
+			<special type="string">Of Hades</special>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">77.2</load>
+			<load type="number">95.2</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">373</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -193,7 +199,7 @@
 				</text>
 			</id-00007>
 		</featurelist>
-		<flaws type="string">My hatred of my enemies is blind and unreasoning.</flaws>
+		<flaws type="string">My hunger for my enemies is blind and unreasoning.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">3'7&#34;</height>
 		<hp>
@@ -225,7 +231,7 @@
 			<id-00002>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">9</count>
+				<count type="number">10</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -240,7 +246,7 @@
 			<id-00003>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">9</count>
+				<count type="number">10</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
@@ -407,19 +413,92 @@
 				<weight type="number">0.2</weight>
 			</id-00015>
 			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">50 gp</cost>
-				<count type="number">2</count>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Potion Of Healing</name>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.5</weight>
+				<weight type="number">1</weight>
 			</id-00016>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1GP</cost>
+				<count type="number">12</count>
+				<description type="formattedtext">
+					<p>same as 1 ration.</p>
+					<p>Constitution saving throw of 14 or date 1d4 poison damage</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">rotten snake meat</name>
+				<nonid_name type="string">rotten snake meat</nonid_name>
+				<weight type="number">1</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,000 GV</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 necrotic, magic</damage>
+				<description type="formattedtext">
+					<p>This Boomerang of Hades may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement: </b>This boomerang is attached to your life essence. When not in use, it magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you. As a bonus action you may remove it as a throwable weapon (a boomerang). It magically retuns to your finger at sunset.</p>
+					<p><b>Farwatching </b>: the primary individual can see true vision through the boomerang for 30 ft.</p>
+					<p><b>Farspeaking </b>: the primary individual can speak telepathically to the secondary binding.</p>
+					<p>Only a servant of Hades can touch the handle of this weapon (to all others it is a beam of pure darkness)</p>
+					<p>Level: 1</p>
+					<p><b>Prestige 0:</b></p>
+					<p>+0 magic weapon, necrotic damage</p>
+					<p>If you throw the spear and it misses it flies back to your hand.</p>
+					<p>Range (30/90)</p>
+					<p><b>Prestige 1:</b></p>
+					<p>+1 magic weapon, necrotic damage</p>
+					<p>If you throw the boomerang and it hits or misses it flies back to your hand.</p>
+					<p>Range (40/120)</p>
+					<p><b>Prestige 2:</b></p>
+					<p>+1 magic weapon, necrotic damage</p>
+					<p>The boomerang will return itself to you if ever separated for more than a minute.</p>
+					<p><b>Prestige 3:</b></p>
+					<p>+2 magic weapon, necrotic damage</p>
+					<p>The boomerang will return itself to you if ever separated for more than a minute.</p>
+					<p>It scores a critical hit on a roll of 19 or 20.</p>
+					<p>Range (60/180)</p>
+					<p><b>Prestige 4:</b></p>
+					<p>+3 magic weapon, necrotic damage</p>
+					<p>The boomerang will try to return itself to you if ever separated.</p>
+					<p>It scores a critical hit on a roll of 19 or 20.</p>
+					<p>This ring allows you to see normally in dim light, darkness, and magical darkness.</p>
+					<p>Once per short rest you may cast a lvl 7 darkness from the ring.</p>
+					<p>Range (70/210)</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Boomerang of Hades - Prestige 0</name>
+				<nonid_name type="string">Boomerang of the Hidden Champion</nonid_name>
+				<properties type="string">Thrown (range 30/90), versatile (1d8)</properties>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -435,60 +514,85 @@
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I enjoy being strong and like breaking things.\nI have a crude sense of humor.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
+		<powergroup>
+			<id-00004>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Class</name>
+				<saveprof type="number">1</saveprof>
+			</id-00004>
+		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -521,13 +625,13 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">ADVCHK: strength; ADVSAV: strength; DMG: 2; RESIST: bludgeoning, piercing, slashing</label>
+						<label type="string">ADVCHK: strength; ADVSAV: strength; DMG: 2 melee; RESIST: bludgeoning, piercing, slashing</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p>
 					<list>
@@ -539,12 +643,107 @@
 					<p>Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you have neither attacked a hostile creature since your last turn nor taken damage since then. You can also end your rage as a bonus action on your turn</p>
 					<p>Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.</p>
 				</description>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Rage</name>
+				<name type="string">*Rage</name>
 				<prepared type="number">3</prepared>
 				<source type="string">Barbarian</source>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<label type="string">Danger Sense 30ft; ADVSAV: dexterity</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.</p>
+					<p>You have advantage on Dexterity saving throws against effects that originate within 30 feet of you, such as a trap or a spellcaster within that range. To gain this benefit, you cannot be blinded, deafened, or incapacitated.</p>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Danger Sense</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Barbarian</source>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<label type="string">ADVATK; GRANTADVATK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 2nd level, you can throw aside all concern for defense and attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Reckless Attack</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Barbarian</source>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<label type="string">DMG: [-STR]</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Offhand</name>
+				<prepared type="number">0</prepared>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Exhaustion Level 1; DISCHK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">3</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Exhaustion Level 3; DISSAV; DISATK</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<label type="string">Attack as a bonus, Exhaustion on end</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Frenzied Hunger</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00006>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -694,7 +893,7 @@
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
-				<name type="string">Artificer's Lore</name>
+				<name type="string">Artificer's Lore(History)</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">4</total>
@@ -783,11 +982,13 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
+				<ammo type="number">1</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -839,6 +1040,70 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe - offhand</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
+			<id-00007>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">necrotic,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">0</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">** Boomerang of the Hidden Champion **</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 30/90), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00007>
+			<id-00008>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">necrotic,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">0</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">** Boomerang of the Hidden Champion **</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 30/90), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00008>
 		</weaponlist>
 		<weight type="string">180lb</weight>
 	</character>

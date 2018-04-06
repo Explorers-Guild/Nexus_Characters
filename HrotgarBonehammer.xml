@@ -72,14 +72,16 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">10</amount>
+				<amount type="number">23</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">11</amount>
+				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">13</amount>
+				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
@@ -107,10 +109,10 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">70</load>
+			<load type="number">70.001</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">373</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -192,6 +194,9 @@
 				<specialization type="string">Path of the Berserker</specialization>
 				<text type="formattedtext">
 					<p>Starting when you choose this path at 3rd level, when you rage you can choose to go into a frenzy. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action each turn. When your rage ends, you suffer one level of exhaustion (as described in the conditions appendix).</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
 				</text>
 			</id-00007>
 		</featurelist>
@@ -203,7 +208,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">32</total>
-			<wounds type="number">26</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Destiny. Nothing and no one can steer me away from my higher calling. (Any)</ideals>
 		<initiative>
@@ -254,21 +259,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00003>
-			<id-00004>
-				<carried type="number">1</carried>
-				<cost type="string">50 gp</cost>
-				<count type="number">2</count>
-				<description type="formattedtext">
-					<p>A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Pouch</location>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.5</weight>
-			</id-00004>
 			<id-00005>
 				<carried type="number">1</carried>
 				<cost type="string">2 gp</cost>
@@ -407,6 +397,62 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1000 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ring may be attuned to two creatures at a time, one primary, one secondary. To bind as a primary you must make a competing wisdom save against the current primary owner. If you attune and do not win the competition then you bind to the secondary slot. You cannot choose to unatune it, but someone else may attune to it taking over the secondary slot. You may only attempt to take primary ownership during an equinox.</p>
+					<p><b>Binding of Engagement:</b></p>
+					<p>This ring is attached to your life essence. It magically shrinks to perfectly fit one of your fingers. No one but the primary binding can remove it from you. If you loose the finger/hand/arm then the ring detaches itself and flies to seek out your life essence and reattach itself to you.</p>
+					<p><b>Farwatching: </b>the primary individual can see true vision through the ring for 30 ft.</p>
+					<p><b>Farspeaking: </b>the primary individual can speak telepathically to the secondary binding.</p>
+					<p><b>Prestige 0:</b></p>
+					<p>Insight + 2</p>
+					<p><b>Prestige 1:</b></p>
+					<p>Persuasion Check: +2</p>
+					<p><b>Prestige 2:</b></p>
+					<p>Wisdom + 4 while wearing the ring.</p>
+					<p><b>Prestige 3:</b></p>
+					<p>Can see through a solid surface no thicker than 12 inches and with no lead within 20 feet of you.</p>
+					<p><b>Prestige 4:</b></p>
+					<p>Truesight 30 ft.</p>
+					<p>Radiant Immunity: you are immune to radiant damage.</p>
+					<p>Add:</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">0</locked>
+				<name type="string">Ring of Athena - Prestige 0</name>
+				<nonid_name type="string">Ring of the Maiden</nonid_name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.001</weight>
+			</id-00016>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -418,10 +464,11 @@
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">Hrotgar Bonehammer</name>
-		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.</notes>
+		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.\n\nTrying to find the focal point of both water and the gate if Hades\n</notes>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">If someone is in trouble, I'm always ready to lend help.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkmod type="number">0</atkmod>
@@ -435,9 +482,16 @@
 			<id-00002>
 				<name type="string">Class Features</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Effect</name>
+			</id-00003>
 			<id-00004>
 				<name type="string">Standard Actions</name>
 			</id-00004>
+			<id-00005>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00005>
 			<id-00006>
 				<name type="string">Race Abilities</name>
 			</id-00006>
@@ -445,57 +499,75 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -514,7 +586,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<group type="string">Consumables</group>
 				<level type="number">0</level>
 				<name type="string">Healing potion</name>
@@ -613,6 +685,9 @@
 				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
 					<p>Starting when you choose this path at 3rd level, when you rage you can choose to go into a frenzy. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action each turn. When your rage ends, you suffer one level of exhaustion (as described in the conditions appendix).</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
 				</description>
 				<group type="string">Class Features</group>
 				<level type="number">0</level>
@@ -658,7 +733,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
 					<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p>
@@ -676,7 +751,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Barbarian: Rage (B)</name>
-				<prepared type="number">2</prepared>
+				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<source type="string">Barbarian</source>
@@ -736,6 +811,54 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Actions</school>
 			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Exhaustion Level 1; DISCHK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
+				</description>
+				<group type="string">Class Features</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Exhaustion Level 1</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Exhaustion Level 3; DISSAV; DISATK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-Engine">Exhaustion</link>
+					</linklist>
+				</description>
+				<group type="string">Class Features</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Exhaustion Level 3</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00011>
 			<id-00012>
 				<actions>
 					<id-00001>
@@ -782,6 +905,30 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Actions</school>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-Engine">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
 			<id-00016>
 				<actions>
 					<id-00001>
@@ -973,7 +1120,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
