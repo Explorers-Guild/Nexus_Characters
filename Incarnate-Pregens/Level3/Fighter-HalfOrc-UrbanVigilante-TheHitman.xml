@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<fighterdragonbornbattlesmith>
+	<fighterhalforcurbanvigilantethehitman>
 		<abilities>
 			<charisma>
-				<bonus type="number">2</bonus>
-				<save type="number">2</save>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">14</score>
+				<score type="number">13</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
 				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">14</score>
+				<score type="number">15</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">1</bonus>
@@ -47,21 +47,21 @@
 		</abilities>
 		<adventurelist>
 		</adventurelist>
-		<age type="string">22 Young Adult</age>
+		<age type="string">53 Middle Aged Adult</age>
 		<alignment type="string">Lawful Neutral</alignment>
-		<background type="string">Battlesmith</background>
+		<background type="string">Urban Vigilante</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
-			<recordname>background.id-00005@Incarnate-Engine</recordname>
+			<recordname>background.id-00022@Incarnate-Engine</recordname>
 		</backgroundlink>
-		<bonds type="string">I became a battlesmith to defend my home and people from a great evil.</bonds>
+		<bonds type="string">I have a group of adoring fans that follow my crimefighting acts with interest.</bonds>
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -110,31 +110,31 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">144.71</load>
+			<load type="number">133.7</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Battlesmith - Starting Equipment</name>
-				<source type="string">Battlesmith</source>
+				<name type="string">Urban Vigilante - Starting Items</name>
+				<source type="string">Urban Vigilante</source>
 				<text type="formattedtext">
-					<h>Parcel</h>
+					<h>Parcels</h>
 					<linklist>
-						<link class="treasureparcel" recordname="treasureparcels.id-00027@Incarnate-Engine">Starting Items - Battlesmith</link>
+						<link class="treasureparcel" recordname="treasureparcels.id-00068@Incarnate-Engine">Starting Items - Urban Vigilante</link>
 					</linklist>
 				</text>
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Champion</name>
-				<source type="string">Battlesmith</source>
+				<name type="string">My City</name>
+				<source type="string">Urban Vigilante</source>
 				<text type="formattedtext">
-					<p>You are or were, the champion of a patron, (likely a noble dwarven clan) and a known battlesmith. Your patron may come to you with demands or requests; enemies of your patron may try to buy, manipulate, or kill you; and you will likely have made some enemies of your own during your career. The life of a battlesmith can be busy, hectic, and complicated, even long after retirement or expulsion. Work with your GM to flesh out your patron, their enemies, and your personal enemies if you have any.</p>
+					<p>Your city is a living organism and you are its heartbeat. You know every brick, paving stone and shadow. Within the city you have a contact either within law enforcement or within the criminal underground and have common to uncommon knowledge of the city like alleys and hidden routes.</p>
 				</text>
 			</id-00002>
 			<id-00003>
@@ -186,15 +186,57 @@
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Action Surge</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<locked type="number">1</locked>
+				<name type="string">The Hitman</name>
+				<source type="string">Fighter</source>
+				<text type="formattedtext">
+					<p>You are the shadow in the corner of the room that puts 4 arrows in your mark and walks away. You are the unassuming man in the crowd whom just stabbed the constable and no one noticed. You are the killer who slaughters a mans guards in front him before issuing a threat. You are the Hitman.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00011@Incarnate-Engine">Strike from the Shadows</link>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00012@Incarnate-Engine">Unassuming Guise</link>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00013@Incarnate-Engine">Precision Strike</link>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00014@Incarnate-Engine">Intimidating Presence</link>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00015@Incarnate-Engine">Lethal Blow</link>
+					</linklist>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Strike from the Shadows</name>
+				<source type="string">Fighter</source>
+				<specialization type="string">The Hitman</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.strikefromtheshadows@Incarnate-Engine">Strike from the Shadows</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you choose this archetype at 3rd level, you learn how to stay hidden and strike first, no matter the situation. You gain advantage on Initiative rolls and on your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted. You also gain proficiency with Disguise kits.</p>
+				</text>
+			</id-00007>
 		</featurelist>
-		<flaws type="string">I have offended my patron clan, nation, or fellow battlesmiths, and have been stripped of my title.</flaws>
-		<height type="string">6'4&#34;</height>
+		<flaws type="string">I will sacrifice anyone and anything to achieve my goal.</flaws>
+		<height type="string">7'7&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">12</total>
+			<total type="number">28</total>
 			<wounds type="number">0</wounds>
 		</hp>
-		<ideals type="string">Responsibility - My power is a gift not to be taken lightly, and I should avoid seeking out unnecessary conflict. (Lawful)</ideals>
+		<ideals type="string">One Rule - I have a code of conduct I follow to the letter. Otherwise I'd be no better than those I put away. (Lawful)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
@@ -202,138 +244,6 @@
 		</initiative>
 		<inventorylist>
 			<id-00001>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>This letter is from your patron. If your patron is powerful and you are on a plane where they have influence then this letter may allow you to get into meetings with powerful people. If you try to use the letter to influence an enemy of your patron it very well may end with your impronment or death.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Letter from patron</name>
-				<rarity type="string">Rare</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.01</weight>
-			</id-00001>
-			<id-00002>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>A chain has 10 hit points. It can be burst with a successful DC 20 Strength check.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Chain (5 Feet)</name>
-				<rarity type="string">Common</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00002>
-			<id-00003>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Hammer</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">3</weight>
-			</id-00003>
-			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 CP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Whetstone</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
-			</id-00004>
-			<id-00005>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">2 SP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>This metal flask is perfect for toting around a precious liquid. Whether alcohol, medicine, or a rare magical elixer, this flask will give it some protection against dropping and spilling the liquid.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Metal Flask</name>
-				<rarity type="string">Common</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.5</weight>
-			</id-00005>
-			<id-00006>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 SP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. make a ranged attack against a target creature or object, treating the oil as an improvised weapon, On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. if lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Oil (Flask)</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
-			</id-00006>
-			<id-00007>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">5 SP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Clothes, Common</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">3</weight>
-			</id-00007>
-			<id-00008>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>This badge can be worn to publicly declare who you serve. In friendly places this earns you respect, but be careful of the enemies it may bring with it.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Badge showing patron's crest</name>
-				<rarity type="string">Rare</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.1</weight>
-			</id-00008>
-			<id-00009>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -349,8 +259,63 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
-			</id-00009>
-			<id-00010>
+			</id-00001>
+			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00262@Incarnate-Engine">Thieves' Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Thieves' Tools</name>
+				<subtype type="string">Kits / Sets</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">1</weight>
+			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Common</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This is a mask that you may use to disguise your identity.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Mask</name>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00004>
+			<id-00005>
 				<ac type="number">16</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
@@ -371,29 +336,30 @@
 				<subtype type="string">Heavy Armor</subtype>
 				<type type="string">Armor</type>
 				<weight type="number">55</weight>
-			</id-00010>
-			<id-00011>
+			</id-00005>
+			<id-00006>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">15 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 bludgeoning</damage>
+				<damage type="string">1d8 slashing</damage>
 				<description type="formattedtext">
 					<p>-</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Warhammer</name>
-				<nonid_name type="string">Warhammer</nonid_name>
-				<nonidentified type="string">When a skull needs bashed, try the mighty warhammer.</nonidentified>
+				<name type="string">Longsword</name>
+				<nonid_name type="string">Longsword</nonid_name>
+				<nonidentified type="string">A sharp longsword.</nonidentified>
 				<properties type="string">Versatile (1d10)</properties>
+				<rarity type="string">common</rarity>
 				<subtype type="string">Martial Weapons</subtype>
 				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00011>
-			<id-00012>
+				<weight type="number">3</weight>
+			</id-00006>
+			<id-00007>
 				<ac type="number">0</ac>
 				<bonus type="number">2</bonus>
 				<carried type="number">2</carried>
@@ -413,46 +379,29 @@
 				<subtype type="string">Shield</subtype>
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
-			</id-00012>
-			<id-00013>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">5 CP</cost>
-				<count type="number">20</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Crossbow Bolt</name>
-				<nonid_name type="string">Crossbow Bolt</nonid_name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">0.075</weight>
-			</id-00013>
-			<id-00014>
+			</id-00007>
+			<id-00008>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
-				<cost type="string">25 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
+				<cost type="string">5 GP</cost>
+				<count type="number">2</count>
+				<damage type="string">1d6 slashing</damage>
 				<description type="formattedtext">
 					<p>-</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Crossbow, Light</name>
-				<nonid_name type="string">Crossbow, Light</nonid_name>
-				<nonidentified type="string">A light crossbow.</nonidentified>
-				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
-				<subtype type="string">Simple Ranged Weapons</subtype>
+				<name type="string">Handaxe</name>
+				<nonid_name type="string">Handaxe</nonid_name>
+				<nonidentified type="string">A sharp stout handaxe.</nonidentified>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
 				<type type="string">Weapon</type>
-				<weight type="number">5</weight>
-			</id-00014>
-			<id-00015>
+				<weight type="number">2</weight>
+			</id-00008>
+			<id-00009>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -462,8 +411,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
-			</id-00015>
-			<id-00016>
+			</id-00009>
+			<id-00010>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
@@ -476,8 +425,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
-			</id-00016>
-			<id-00017>
+			</id-00010>
+			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -487,8 +436,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
-			</id-00017>
-			<id-00018>
+			</id-00011>
+			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
@@ -501,8 +450,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
-			</id-00018>
-			<id-00019>
+			</id-00012>
+			<id-00013>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">10</count>
@@ -515,8 +464,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
-			</id-00019>
-			<id-00020>
+			</id-00013>
+			<id-00014>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
@@ -526,8 +475,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
-			</id-00020>
-			<id-00021>
+			</id-00014>
+			<id-00015>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">10</count>
@@ -540,8 +489,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
-			</id-00021>
-			<id-00022>
+			</id-00015>
+			<id-00016>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -551,8 +500,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
-			</id-00022>
-			<id-00023>
+			</id-00016>
+			<id-00017>
 				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
 				<count type="number">10</count>
@@ -562,31 +511,28 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.25</weight>
-			</id-00023>
+			</id-00017>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common</name>
+				<name type="string">Your Choice</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Draconic</name>
+				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Dwarvish</name>
+				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Fighter - Dragonborn - Battlesmith</name>
-		<perception type="number">12</perception>
+		<level type="number">3</level>
+		<name type="string">Fighter - Half-Orc - Urban Vigilante - The Hitman</name>
+		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I make light of violence and death.\nI'm never too far from a bottle of alcohol.</personalitytraits>
+		<personalitytraits type="string">I feel great empathy towards the plight of all living things.\nMy civilian identity is my true mask and behaves in the opposite manner to that of my masked alter-ego.</personalitytraits>
 		<powergroup>
-			<id-00003>
+			<id-00002>
 				<name type="string">Passive</name>
-			</id-00003>
-			<id-00004>
-				<name type="string">Ability</name>
-			</id-00004>
+			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -648,71 +594,20 @@
 		<powers>
 			<id-00001>
 				<actions>
-					<id-00001>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">1</order>
-						<savedcbase type="string">ability</savedcbase>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savedcstat type="string">constitution</savedcstat>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6</dice>
-								<type type="string">poison</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<linklist>
-						<link class="reference_racialtrait" recordname="race.id-00003.traits.draconicancestry@Incarnate-Engine">Draconic Ancestry</link>
-					</linklist>
-					<p>You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.</p>
-					<p>When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.</p>
-					<p>After you use your breath weapon, you can't use it again until you complete a short or long rest.</p>
+					<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</p>
 				</description>
-				<group type="string">Ability</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Breath Weapon (Poison)</name>
+				<name type="string">Relentless Endurance</name>
 				<prepared type="number">1</prepared>
 				<ritual type="number">0</ritual>
-				<usesperiod type="string">enc</usesperiod>
+				<source type="string">Half-Orc</source>
+				<type type="string">racial</type>
 			</id-00001>
 			<id-00002>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">day</durunit>
-						<label type="string">RESIST: poison</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<group type="string">Passive</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Type Resistance (Poison) - Race</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00002>
-			<id-00003>
 				<actions>
 					<id-00001>
 						<heallist>
@@ -733,17 +628,58 @@
 						<link class="reference_classfeature" recordname="class.profighter.features.id-00035@Incarnate-Engine">Second Wind</link>
 					</linklist>
 				</description>
-				<group type="string">Ability</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Second Wind</name>
 				<prepared type="number">1</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
+			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Action Surge</name>
+				<prepared type="number">1</prepared>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Strike from the Shadows; ADVINIT</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00011@Incarnate-Engine">Strike from the Shadows</link>
+					</linklist>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Strike from the Shadows</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00004>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
+			<id-00001>
+				<name type="string">Tool: Thieves' Tools</name>
+			</id-00001>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons, martial weapons</name>
 			</id-00002>
@@ -751,84 +687,85 @@
 				<name type="string">Armor: All armor, shields</name>
 			</id-00003>
 			<id-00004>
-				<name type="string">Tool: Cartographer's Tools</name>
+				<name type="string">Tool: Disguise Kit</name>
 			</id-00004>
 		</proficiencylist>
-		<race type="string">Dragonborn</race>
+		<race type="string">Half-Orc</race>
 		<racelink type="windowreference">
 			<class>reference_race</class>
-			<recordname>race.id-00003@Incarnate-Engine</recordname>
+			<recordname>race.id-00008@Incarnate-Engine</recordname>
 		</racelink>
+		<senses type="string">Darkvision 60</senses>
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
 				<name type="string">Perception</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">0</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
-				<name type="string">Athletics</name>
+				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
-				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<stat type="string">dexterity</stat>
+				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
+				<misc type="number">0</misc>
+				<name type="string">Deception</name>
+				<prof type="number">1</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">3</total>
+			</id-00003>
+			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
-			</id-00003>
-			<id-00004>
+				<total type="number">3</total>
+			</id-00004>
+			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
-			</id-00004>
-			<id-00005>
+			</id-00005>
+			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
-			</id-00005>
-			<id-00006>
+				<total type="number">1</total>
+			</id-00006>
+			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
-			</id-00006>
-			<id-00007>
-				<misc type="number">0</misc>
-				<name type="string">Medicine</name>
-				<prof type="number">0</prof>
-				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
-				<name type="string">Survival</name>
+				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
-				<name type="string">Performance</name>
+				<name type="string">Survival</name>
 				<prof type="number">0</prof>
-				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<stat type="string">wisdom</stat>
+				<total type="number">0</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
-				<name type="string">Acrobatics</name>
+				<name type="string">Performance</name>
 				<prof type="number">0</prof>
-				<stat type="string">dexterity</stat>
+				<stat type="string">charisma</stat>
 				<total type="number">1</total>
 			</id-00010>
 			<id-00011>
@@ -840,23 +777,23 @@
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
+				<name type="string">Athletics</name>
+				<prof type="number">1</prof>
+				<stat type="string">strength</stat>
+				<total type="number">5</total>
+			</id-00012>
+			<id-00013>
+				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">1</total>
-			</id-00012>
-			<id-00013>
+			</id-00013>
+			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
-			</id-00013>
-			<id-00014>
-				<misc type="number">0</misc>
-				<name type="string">Deception</name>
-				<prof type="number">0</prof>
-				<stat type="string">charisma</stat>
 				<total type="number">2</total>
 			</id-00014>
 			<id-00015>
@@ -887,6 +824,21 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
 			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string">Thieve's Tools</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00262@Incarnate-Engine">Thieve's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+				</text>
+				<total type="number">3</total>
+			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -901,110 +853,42 @@
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Damage Resistance - Poison</name>
-				<source type="string">Dragonborn</source>
+				<name type="string">Relentless Endurance</name>
+				<source type="string">Half-Orc</source>
 				<text type="formattedtext">
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.typeresistanceacid@Incarnate-Engine">Type Resistance (Acid)</link>
-						<link class="power" recordname="spell.typeresistancecold@Incarnate-Engine">Type Resistance (Cold)</link>
-						<link class="power" recordname="spell.typeresistancefire@Incarnate-Engine">Type Resistance (Fire)</link>
-						<link class="power" recordname="spell.typeresistancelightning@Incarnate-Engine">Type Resistance (Lightning)</link>
-						<link class="power" recordname="spell.typeresistancepoison@Incarnate-Engine">Type Resistance (Poison)</link>
-					</linklist>
-					<h>Description</h>
-					<p>You have resistance to the damage type associated with your draconic ancestry.</p>
+					<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Draconic Ancestry - Green</name>
-				<source type="string">Dragonborn</source>
+				<name type="string">Menacing</name>
+				<source type="string">Half-Orc</source>
 				<text type="formattedtext">
-					<p>You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.</p>
-					<p><b>Draconic Ancestry</b></p>
-					<table>
-						<tr>
-							<td><b>Dragon</b></td>
-							<td><b>Damage Type</b></td>
-							<td><b>Breath Weapon</b></td>
-						</tr>
-						<tr>
-							<td>Black</td>
-							<td>Acid</td>
-							<td>5 by 30 ft. line (Dex. save)</td>
-						</tr>
-						<tr>
-							<td>Blue</td>
-							<td>Lightning</td>
-							<td>5 by 30 ft. line (Dex. save)</td>
-						</tr>
-						<tr>
-							<td>Brass</td>
-							<td>Fire</td>
-							<td>5 by 30 ft. line (Dex. save)</td>
-						</tr>
-						<tr>
-							<td>Bronze</td>
-							<td>Lightning</td>
-							<td>5 by 30 ft. line (Dex. save)</td>
-						</tr>
-						<tr>
-							<td>Copper</td>
-							<td>Acid</td>
-							<td>5 by 30 ft. line (Dex. save)</td>
-						</tr>
-						<tr>
-							<td>Gold</td>
-							<td>Fire</td>
-							<td>15 ft. cone (Dex. save)</td>
-						</tr>
-						<tr>
-							<td>Green</td>
-							<td>Poison</td>
-							<td>15 ft. cone (Con. save)</td>
-						</tr>
-						<tr>
-							<td>Red</td>
-							<td>Fire</td>
-							<td>15 ft. cone (Dex. save)</td>
-						</tr>
-						<tr>
-							<td>Silver</td>
-							<td>Cold</td>
-							<td>15 ft. cone (Con. save)</td>
-						</tr>
-						<tr>
-							<td>White</td>
-							<td>Cold</td>
-							<td>15 ft. cone (Con. save)</td>
-						</tr>
-					</table>
+					<p>You gain proficiency in the Intimidation skill.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00002>
 			<id-00003>
 				<locked type="number">1</locked>
-				<name type="string">Breath Weapon - Poison</name>
-				<source type="string">Dragonborn</source>
+				<name type="string">Savage Attacks</name>
+				<source type="string">Half-Orc</source>
 				<text type="formattedtext">
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.breathweaponacid@Incarnate-Engine">Breath Weapon (Acid)</link>
-						<link class="power" recordname="spell.breathweaponcold@Incarnate-Engine">Breath Weapon (Cold)</link>
-						<link class="power" recordname="spell.breathweaponfire@Incarnate-Engine">Breath Weapon (Fire)</link>
-						<link class="power" recordname="spell.breathweaponlightning@Incarnate-Engine">Breath Weapon (Lightning)</link>
-						<link class="power" recordname="spell.breathweaponpoison@Incarnate-Engine">Breath Weapon (Poison)</link>
-					</linklist>
-					<h>Description</h>
-					<p>You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.</p>
-					<p>When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.</p>
-					<p>After you use your breath weapon, you can't use it again until you complete a short or long rest.</p>
+					<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage to the critical hit.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00003>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+				<melee type="number">1</melee>
+				<ranged type="number">0</ranged>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">20</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
@@ -1014,17 +898,17 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
-						<type type="string">bludgeoning</type>
+						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Warhammer</name>
+				<name type="string">Longsword</name>
 				<prof type="number">1</prof>
 				<properties type="string">Versatile (1d10)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00011</recordname>
+					<recordname>....inventorylist.id-00006</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
@@ -1034,23 +918,45 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
-						<type type="string">piercing</type>
+						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Crossbow, Light</name>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
+				<properties type="string">Light, thrown (range 20/60)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00014</recordname>
+					<recordname>....inventorylist.id-00008</recordname>
 				</shortcut>
-				<type type="number">1</type>
+				<type type="number">0</type>
 			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">2</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00008</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00003>
 		</weaponlist>
-		<weight type="string">229 Pounds</weight>
-	</fighterdragonbornbattlesmith>
+		<weight type="string">286 Pounds</weight>
+	</fighterhalforcurbanvigilantethehitman>
 </root>

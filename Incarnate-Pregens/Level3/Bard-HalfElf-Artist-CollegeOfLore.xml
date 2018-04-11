@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<bardhalfelfartist>
+	<bardhalfelfartistcollegeoflore>
 		<abilities>
 			<charisma>
 				<bonus type="number">3</bonus>
@@ -56,7 +56,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -107,8 +107,8 @@
 			<load type="number">58.39</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -185,10 +185,92 @@
 					<p>You can use a musical instrument (see &#34;Equipment&#34;) as a spellcasting focus for your bard spells.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Song of Rest</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.songofrest@Incarnate-Engine">Song of Rest</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.</p>
+					<p>The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level to 1d10 at 13th level, and to 1d12 at 17th level.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Jack of All Trades</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">College of Lore</name>
+				<source type="string">Bard</source>
+				<text type="formattedtext">
+					<p>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king.</p>
+					<p>The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or adviser knows that the bard would rather be honest than politic.</p>
+					<p>The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.</p>
+					<h>Features</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00014@Incarnate-Engine">Bonus Proficiencies (Lore)</link>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00016@Incarnate-Engine">Cutting Words</link>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00011@Incarnate-Engine">Additional Magical Secrets</link>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00025@Incarnate-Engine">Peerless Skill</link>
+					</linklist>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Cutting Words</name>
+				<source type="string">Bard</source>
+				<specialization type="string">College of Lore</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.cuttingwords@Incarnate-Engine">Cutting Words</link>
+					</linklist>
+					<h>Description</h>
+					<p>Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed.</p>
+				</text>
+			</id-00008>
+			<id-00009>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Bonus Proficiencies (Lore)</name>
+				<source type="string">Bard</source>
+				<specialization type="string">College of Lore</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you join the College of Lore at 3rd Level, you gain proficiency with three skills of your choice.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Expertise</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+					<p>At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">10</total>
+			<total type="number">24</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -517,9 +599,9 @@
 				<name type="string">Halfling</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Bard - Half-Elf - Artist</name>
-		<perception type="number">12</perception>
+		<level type="number">3</level>
+		<name type="string">Bard - Half-Elf - Artist - College of Lore</name>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powergroup>
 			<id-00001>
@@ -557,10 +639,10 @@
 				<max type="number">0</max>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
+				<max type="number">4</max>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -606,7 +688,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Bardic Inspiration</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
 			<id-00002>
@@ -782,6 +864,111 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Cutting Words; DMG: -1d6; ATK: -1d6; CHK: -1d6</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00016@Incarnate-Engine">Cutting Words</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Cutting Words</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00028@Incarnate-Engine">Song of Rest</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Song of Rest</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00009>
+			<id-00010>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of soot and salt)</components>
+				<description type="formattedtext">
+					<p>For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Comprehend Languages</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a chip of mica)</components>
+				<description type="formattedtext">
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00011>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -809,9 +996,9 @@
 			<id-00001>
 				<misc type="number">0</misc>
 				<name type="string">Perception</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -830,30 +1017,30 @@
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -872,23 +1059,23 @@
 			<id-00010>
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">strength</stat>
-				<total type="number">-1</total>
+				<total type="number">0</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -900,16 +1087,16 @@
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
-				<prof type="number">0</prof>
+				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">7</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -921,16 +1108,16 @@
 			<id-00017>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
@@ -1060,5 +1247,5 @@
 				<type type="number">2</type>
 			</id-00003>
 		</weaponlist>
-	</bardhalfelfartist>
+	</bardhalfelfartistcollegeoflore>
 </root>

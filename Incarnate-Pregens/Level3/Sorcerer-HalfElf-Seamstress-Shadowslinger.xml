@@ -59,7 +59,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -109,8 +109,8 @@
 			<load type="number">79.1</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -223,12 +223,104 @@
 					<p>Starting at 1st level, you can teleport up to 10 feet as a bonus action on your turn. You must be in dim light or darkness to do this, or your destination must be in dim light or darkness.</p>
 				</text>
 			</id-00006>
+			<id-00007>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Font of Magic</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.sorcerypoints@Incarnate-Engine">Font of Magic</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
+					<p><b>Sorcery Points</b></p>
+					<p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00046@Incarnate-Engine">The Sorcerer</link>
+					</linklist>
+					<p><b>Flexible Casting</b></p>
+					<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p>
+					<p><i>Creating Spell Slots. </i>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
+					<p>Any spell slot you create with this feature vanishes when you finish a long rest.</p>
+					<p><u>Creating Spell Slots</u></p>
+					<table>
+						<tr>
+							<td><b>Spell Slot</b></td>
+							<td><b>Sorcery</b></td>
+						</tr>
+						<tr>
+							<td><b>Level</b></td>
+							<td><b>Point Cost</b></td>
+						</tr>
+						<tr>
+							<td>1st</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>7</td>
+						</tr>
+					</table>
+					<p><i>Converting a Spell Slot to Sorcery Points. </i>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Metamagic - Distant, Quickened</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p>
+					<p>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>
+					<p><b>Careful Spell</b></p>
+					<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.carefulspell@Incarnate-Engine">Careful Spell</link>
+					</linklist>
+					<p><b>Distant Spell</b></p>
+					<p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.</p>
+					<p>When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+					<p><b>Empowered Spell</b></p>
+					<p>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p>
+					<p>You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+					<p><b>Extended Spell</b></p>
+					<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</p>
+					<p><b>Heightened Spell</b></p>
+					<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.heightenedspell@Incarnate-Engine">Heightened Spell</link>
+					</linklist>
+					<p><b>Quickened Spell</b></p>
+					<p>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</p>
+					<p><b>Subtle Spell</b></p>
+					<p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</p>
+					<p><b>Twinned Spell</b></p>
+					<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spells level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p>
+					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <i>magic missile </i>and <i>scorching ray </i>aren't eligible, but <i>ray of frost </i>is.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">I am so good at my job that the head of the sewing guild in my home city got jealous. He framed me and ran me out of town.</flaws>
 		<height type="string">6'5&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">8</total>
+			<total type="number">20</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Strictly Business - You get what you pay for and I can't help that. (Lawful)</ideals>
@@ -500,7 +592,7 @@
 				<name type="string">Sylvan</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
+		<level type="number">3</level>
 		<name type="string">Sorcerer - Half-Elf - Seamstress - Shadowslinger</name>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -541,10 +633,10 @@
 				<max type="number">0</max>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
+				<max type="number">4</max>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -789,6 +881,97 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
 			</id-00007>
+			<id-00008>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00042@Incarnate-Engine">Font of Magic</link>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00045@Incarnate-Engine">Metamagic</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sorcery Points</name>
+				<prepared type="number">3</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a chip of mica)</components>
+				<description type="formattedtext">
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Scorching Ray</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00011>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>

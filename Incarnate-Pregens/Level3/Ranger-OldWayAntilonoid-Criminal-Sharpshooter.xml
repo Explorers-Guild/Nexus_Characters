@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<rangeroldwayantilonoidcriminal>
+	<rangeroldwayantilonoidcriminalsharpshooter>
 		<abilities>
 			<charisma>
 				<bonus type="number">-1</bonus>
@@ -57,11 +57,11 @@
 		<bonds type="string">I owe my guild a great debt for forging me into the person I am today.</bonds>
 		<classes>
 			<id-00001>
-				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,8 +112,8 @@
 			<load type="number">85.6</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -170,12 +170,139 @@
 					<p>You choose additional favored terrain types at 6th and 10th level.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Spellcasting</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>By the time you reach the 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does.</p>
+					<linklist>
+						<link class="reference_colindex" recordname="lists.spells.ranger@Incarnate-Engine">Ranger Spells</link>
+					</linklist>
+					<p>The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+					<p>For example, if you know the 1st-level spell <i>animal friendship </i>and have a 1st-level and 2nd-level spell slot available, you can cast <i>animal friendship </i>using either slot.</p>
+					<p><b>Spells Known of 1st Level and Higher</b></p>
+					<p>You know two 1st-level spells of your choice from the ranger spell list.</p>
+					<p>The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00043@Incarnate-Engine">The Ranger</link>
+					</linklist>
+					<p>Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.</p>
+					<p><b>Spellcasting Ability</b></p>
+					<p>Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.</p>
+					<p><b>Spell save DC </b>= 8 + your proficiency bonus + your Wisdom modifier</p>
+					<p><b>Spell attack modifier </b>= your proficiency bonus + your Wisdom modifier</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style - Archery</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a fighting Style option more than once, even if you later get to choose again.</p>
+					<p><b>Archery</b></p>
+					<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstylearchery@Incarnate-Engine">Fighting Style - Archery</link>
+					</linklist>
+					<p><b>Defense</b></p>
+					<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstyledefense@Incarnate-Engine">Fighting Style - Defense</link>
+					</linklist>
+					<p><b>Dueling</b></p>
+					<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2bonus to damage rolls with that weapon.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstyledueling@Incarnate-Engine">Fighting Style - Dueling</link>
+					</linklist>
+					<p><b>Two-Weapon Fighting</b></p>
+					<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">Sharpshooter</name>
+				<source type="string">Ranger</source>
+				<text type="formattedtext">
+					<p>You're the type of ranger that prefers to hide in the trees and eliminate invaders one at a time. You can hit a target from a tavern before it even enters town. Sharpshooters prefer to stand back and let their enemies attempt to come to them. Choose this archetype if you want to hone your skills as a sniper.</p>
+					<h>Hunter</h>
+					<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of The Wilderness. As you walk the Hunter&#146;s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering Giants and terrifying dragons.</p>
+					<p>3</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00037@Incarnate-Engine">Hunter's Prey</link>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00038@Incarnate-Engine">Long Range</link>
+					</linklist>
+					<p>7</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00040@Incarnate-Engine">Sharpest of Shooters</link>
+					</linklist>
+					<p>11</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00041@Incarnate-Engine">Tenacious Assault</link>
+					</linklist>
+					<p>15</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00042@Incarnate-Engine">Extra nock</link>
+					</linklist>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Primeval Awareness</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number.</p>
+				</text>
+			</id-00008>
+			<id-00009>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Hunter's Prey - Horde Breaker</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Sharpshooter</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, you gain one of the following features of your choice;</p>
+					<list>
+						<li>Colossus Slayer</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.colossusslayer@Incarnate-Engine">Colossus Slayer</link>
+					</linklist>
+					<p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon Attack, the creature takes an extra 1d8 damage if it&#146;s below its hit point maximum. You can deal this extra damage only once per turn.</p>
+					<list>
+						<li>Giant Killer</li>
+					</list>
+					<p>When a Large or larger creature within 5 feet of you hits or misses you with an Attack, you can use your reaction to Attack that creature immediately after its Attack, provided that you can see the creature.</p>
+					<list>
+						<li>Horde Breaker</li>
+					</list>
+					<p>Once on each of your turns when you make a weapon Attack, you can make another Attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Long Range</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Sharpshooter</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, attacking at a weapon's long range no longer poses disadvantage on the attack roll.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">Not only am I good at what I do, but I love what I do - and I hate myself for it.</flaws>
 		<height type="string">5'</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">12</total>
+			<total type="number">28</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People - I help people who help me--that's what keeps us alive. (Neutral)</ideals>
@@ -476,15 +603,22 @@
 				<name type="string">Plainstoungue</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Ranger - Old Way Antilonoid - Criminal</name>
+		<level type="number">3</level>
+		<name type="string">Ranger - Old Way Antilonoid - Criminal - Sharpshooter</name>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I always check the escape routes of every building I enter.\nI don't like killing.</personalitytraits>
 		<powergroup>
 			<id-00001>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<stat type="string">wisdom</stat>
+				<uses type="number">0</uses>
 			</id-00001>
 		</powergroup>
 		<powermeta>
@@ -516,7 +650,7 @@
 				<max type="number">0</max>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">0</max>
+				<max type="number">3</max>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -582,6 +716,89 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Fighting Style - Archer; ATK: 2 ranged</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00055@Incarnate-Engine">Fighting Style</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style - Archery</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a grasshopper's hind leg)</components>
+				<description type="formattedtext">
+					<p>You touch a creature. The creature's jump distance is tripled until the spell ends.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Jump</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
+			</id-00003>
+			<id-00005>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a tiny bell and a piece of fine silver wire)</components>
+				<description type="formattedtext">
+					<p>You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible. A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.</p>
+				</description>
+				<duration type="string">8 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Alarm</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Ranger, Wizard</source>
+			</id-00005>
+			<id-00006>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of dirt)</components>
+				<description type="formattedtext">
+					<p>You touch a creature. The target's speed increases by 10 feet until the spell ends.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Longstrider</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Druid, Ranger, Wizard</source>
+			</id-00006>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -873,5 +1090,5 @@
 			</id-00002>
 		</weaponlist>
 		<weight type="string">119 Pounds</weight>
-	</rangeroldwayantilonoidcriminal>
+	</rangeroldwayantilonoidcriminalsharpshooter>
 </root>

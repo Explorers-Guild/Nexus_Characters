@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<warlockredcapgnomeartistfiend>
+	<warlocktieflingmerchantfiend>
 		<abilities>
 			<charisma>
-				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<bonus type="number">3</bonus>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">15</score>
+				<score type="number">17</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
@@ -24,11 +24,11 @@
 				<score type="number">8</score>
 			</dexterity>
 			<intelligence>
-				<bonus type="number">2</bonus>
-				<save type="number">2</save>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">14</score>
+				<score type="number">13</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
@@ -45,21 +45,23 @@
 				<score type="number">10</score>
 			</wisdom>
 		</abilities>
-		<age type="string">65 Young Adult</age>
-		<alignment type="string">Neutral Neutral</alignment>
-		<background type="string">Artist</background>
+		<adventurelist>
+		</adventurelist>
+		<age type="string">19 Young Adult</age>
+		<alignment type="string">Good Neutral</alignment>
+		<background type="string">Merchant</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
-			<recordname>background.id-00038@Incarnate-Engine</recordname>
+			<recordname>background.id-00016@Incarnate-Engine</recordname>
 		</backgroundlink>
-		<bonds type="string">I am in love with someone far richer than I am.</bonds>
+		<bonds type="string">I am pressured by a crime boss I can never repay.</bonds>
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -107,31 +109,31 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">93.2</load>
+			<load type="number">99.1</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Eye for Beauty</name>
-				<source type="string">Artist</source>
+				<name type="string">Merchant - starting Items</name>
+				<source type="string">Merchant</source>
 				<text type="formattedtext">
-					<p>After years creating art you have a pretty good sense of what people think is beautiful and who you can sell it to. As such you have advantage on checks to make pieces of art and on history checks to remember potential buyers.</p>
+					<h>Parcel</h>
+					<linklist>
+						<link class="treasureparcel" recordname="treasureparcels.id-00052@Incarnate-Engine">Starting Items - Merchant</link>
+					</linklist>
 				</text>
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Artist - Starting Items</name>
-				<source type="string">Artist</source>
+				<name type="string">Charismatic Demeanor</name>
+				<source type="string">Merchant</source>
 				<text type="formattedtext">
-					<h>Parcel</h>
-					<linklist>
-						<link class="treasureparcel" recordname="treasureparcels.id-00024@Incarnate-Engine">Starting Items - Artist</link>
-					</linklist>
+					<p>Your experience with people gives you an advantage with people, once a day, you can use this feature to give you advantage in Charisma checks that involve negotiation with others.</p>
 				</text>
 			</id-00002>
 			<id-00003>
@@ -241,15 +243,234 @@
 					<p>Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>
 				</text>
 			</id-00006>
+			<id-00007>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Eldritch Invocations - Agonizing Blast, Eldritch Sight</name>
+				<source type="string">Warlock</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00047@Incarnate-Engine">The Warlock</link>
+					</linklist>
+					<p><b>Agonizing Blast</b></p>
+					<p><i>Prerequisite </i>: eldritch blast <i>cantrip</i></p>
+					<p>When you cast <i>eldritch blast </i>, add your Charisma modifier to the damage it deals on a hit.</p>
+					<linklist>
+						<link class="power" recordname="spell.agonizingblast@Incarnate-Engine">Agonizing Blast</link>
+					</linklist>
+					<p><b>Armor of Shadows</b></p>
+					<p>You can cast <i>mage armor </i>on yourself at will, without expending a spell slot or material components.</p>
+					<linklist>
+						<link class="power" recordname="spell.armorofshadows@Incarnate-Engine">Armor of Shadows</link>
+					</linklist>
+					<p><b>Ascendant Step</b></p>
+					<p><i>Prerequisite: 9th level</i></p>
+					<p>You can cast <i>levitate </i>on yourself at will, without expending a spell slot or material components.</p>
+					<linklist>
+						<link class="power" recordname="spell.ascendantstep@Incarnate-Engine">Ascendant Step</link>
+					</linklist>
+					<p><b>Beast Speech</b></p>
+					<p>You can cast <i>speak with animals </i>at will, without expending a spell slot.</p>
+					<linklist>
+						<link class="power" recordname="spell.beastspeech@Incarnate-Engine">Beast Speech</link>
+					</linklist>
+					<p><b>Beguiling Influence</b></p>
+					<p>You gain proficiency in Deception and Persuasion skills</p>
+					<linklist>
+						<link class="power" recordname="spell.beguilinginfluence@Incarnate-Engine">Beguiling Influence</link>
+					</linklist>
+					<p><b>Bewitching Whispers</b></p>
+					<p><i>Prerequisite: 7th level</i></p>
+					<p>You can cast <i>compulsion </i>once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+					<linklist>
+						<link class="power" recordname="spell.bewitchingwhispers@Incarnate-Engine">Bewitching Whispers</link>
+					</linklist>
+					<p><b>Book of Ancient Secrets</b></p>
+					<p><i>Prerequisite: Pact of Tome feature</i></p>
+					<p>You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two don't need to be from the same list). The spells appear in the book and don't count against the number of spells you know. with your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.</p>
+					<p>On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 GP for the rare inks needed to inscribe it.</p>
+					<linklist>
+						<link class="power" recordname="spell.bookofancientsecrets@Incarnate-Engine">Book of Ancient Secrets</link>
+					</linklist>
+					<p><b>Chains of Hell</b></p>
+					<p><i>Prerequisite: 15th level, Pact of the chain feature</i></p>
+					<p>You can cast <i>hold monster </i>at will - targeting a celestial, fiend, or elemental - without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again.</p>
+					<linklist>
+						<link class="power" recordname="spell.chainsofhell@Incarnate-Engine">Chains of Hell</link>
+					</linklist>
+					<p><b>Devil's Sight</b></p>
+					<p>You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</p>
+					<linklist>
+						<link class="power" recordname="spell.devilssight@Incarnate-Engine">Devil's Sight</link>
+					</linklist>
+					<p><b>Dreadful Word</b></p>
+					<p><i>Prerequisite: 7th level</i></p>
+					<p>You can cast <i>confusion </i>once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+					<linklist>
+						<link class="power" recordname="spell.dreadfulword@Incarnate-Engine">Dreadful Word</link>
+					</linklist>
+					<p><b>Eldritch Sight</b></p>
+					<p>You can cast <i>detect magic </i>at will, without expending a spell slot.</p>
+					<linklist>
+						<link class="power" recordname="spell.eldritchsight@Incarnate-Engine">Eldritch Sight</link>
+					</linklist>
+					<p><b>Eldritch Spear</b></p>
+					<p><i>Prerequisite </i>: eldritch blast <i>cantrip</i></p>
+					<p>When you cast <i>eldritch blast </i>, its range is 300 feet.</p>
+					<linklist>
+						<link class="power" recordname="spell.eldritchspear@Incarnate-Engine">Eldritch Spear</link>
+					</linklist>
+					<p><b>Eyes of the Rune Keeper</b></p>
+					<p>You can read all writing.</p>
+					<linklist>
+						<link class="power" recordname="spell.eyesoftherunekeeper@Incarnate-Engine">Eyes of the Rune Keeper</link>
+					</linklist>
+					<p><b>Fiendish Vigor</b></p>
+					<p>You can cast <i>false life </i>on yourself at will as a 1st-level spell, without expending a spell slot or material components</p>
+					<linklist>
+						<link class="power" recordname="spell.fiendishvigor@Incarnate-Engine">Fiendish Vigor</link>
+					</linklist>
+					<p><b>Gaze of Two Minds</b></p>
+					<p>You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. as long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</p>
+					<linklist>
+						<link class="power" recordname="spell.gazeoftwominds@Incarnate-Engine">Gaze of Two Minds</link>
+					</linklist>
+					<p><b>Life drinker</b></p>
+					<p><i>Prerequisite: 12th level, Pact of the Blade feature</i></p>
+					<p>When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1).</p>
+					<linklist>
+						<link class="power" recordname="spell.lifedrinker@Incarnate-Engine">Lifedrinker</link>
+					</linklist>
+					<p><b>Mask of Many Faces</b></p>
+					<p>You can cast <i>disguise self </i>at will, without expending a spell slot.</p>
+					<linklist>
+						<link class="power" recordname="spell.maskofmanyfaces@Incarnate-Engine">Mask of Many Faces</link>
+					</linklist>
+					<p><b>Master of Myriad Forms</b></p>
+					<p><i>Prerequisite: 15th level</i></p>
+					<p>You can cast <i>alter self </i>at will, without expending a spell slot.</p>
+					<linklist>
+						<link class="power" recordname="spell.masterofmyriadforms@Incarnate-Engine">Master of Myriad Forms</link>
+					</linklist>
+					<p><b>Minions of Chaos</b></p>
+					<p><i>Prerequisite: 9th level</i></p>
+					<p>You can cast <i>conjure elemental </i>once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+					<linklist>
+						<link class="power" recordname="spell.minionsofchaos@Incarnate-Engine">Minions of Chaos</link>
+					</linklist>
+					<p><b>Mire the Mind</b></p>
+					<p><i>Prerequisite: 5th level</i></p>
+					<p>You can cast <i>slow </i>once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+					<linklist>
+						<link class="power" recordname="spell.mirethemind@Incarnate-Engine">Mire the Mind</link>
+					</linklist>
+					<p><b>Misty Visions</b></p>
+					<p>You can cast <i>silent image </i>at will, without expending a spell slot or material components.</p>
+					<linklist>
+						<link class="power" recordname="spell.mistyvisions@Incarnate-Engine">Misty Visions</link>
+					</linklist>
+					<p><b>One with Shadows</b></p>
+					<p><i>Prerequisite: 5th level</i></p>
+					<p>When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or reaction.</p>
+					<linklist>
+						<link class="power" recordname="spell.onewithshadows@Incarnate-Engine">One with Shadows</link>
+					</linklist>
+					<p><b>Otherworldly Leap</b></p>
+					<p><i>Prerequisite: 9th level</i></p>
+					<p>You can cast <i>jump </i>on yourself at will, without expending a spell slot or material components.</p>
+					<linklist>
+						<link class="power" recordname="spell.otherworldlyleap@Incarnate-Engine">Otherworldly Leap</link>
+					</linklist>
+					<p><b>Repelling Blast</b></p>
+					<p><i>Prerequisite </i>: eldritch blast <i>cantrip</i></p>
+					<p>When you hit a creature with <i>eldritch blast </i>, you can push the creature up to 10 feet away from you in a straight line.</p>
+					<linklist>
+						<link class="power" recordname="spell.repellingblast@Incarnate-Engine">Repelling Blast</link>
+					</linklist>
+					<p><b>Sculptor of Flesh</b></p>
+					<p><i>Prerequisite: 7th level</i></p>
+					<p>You can cast <i>polymorph </i>once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+					<linklist>
+						<link class="power" recordname="spell.sculptorofflesh@Incarnate-Engine">Sculptor of Flesh</link>
+					</linklist>
+					<p><b>Sign of Ill Omen</b></p>
+					<p><i>Prerequisite: 5th level</i></p>
+					<p>You can cast <i>bestow curse </i>once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+					<linklist>
+						<link class="power" recordname="spell.signofillomen@Incarnate-Engine">Sign of Ill Omen</link>
+					</linklist>
+					<p><b>Thief of Five Fates</b></p>
+					<p>You can cast <i>bane </i>once using a warlock spell slot. You can't do so again until you finish a long rest.</p>
+					<linklist>
+						<link class="power" recordname="charsheet.id-00001.powers.id-00022@Incarnate-Engine">Thief of Five Fates</link>
+					</linklist>
+					<p><b>Thirsting Blade</b></p>
+					<p><i>Prerequisite: 5th level, Pact of the Blade feature</i></p>
+					<p>You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</p>
+					<linklist>
+						<link class="power" recordname="spell.thirstingblade@Incarnate-Engine">Thirsting Blade</link>
+					</linklist>
+					<p><b>Visions of Distant Realms</b></p>
+					<p><i>Prerequisite: 15th level</i></p>
+					<p>You can cast <i>arcane eye </i>at will, without expending a spell slot.</p>
+					<linklist>
+						<link class="power" recordname="spell.visionsofdistantrealms@Incarnate-Engine">Visions of Distant Realms</link>
+					</linklist>
+					<p><b>Voice of the Chain Master</b></p>
+					<p><i>Prerequisite: Pact of the Chain feature</i></p>
+					<p>You can communicate telepathically with your familiar as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.</p>
+					<linklist>
+						<link class="power" recordname="spell.voiceofthechainmaster@Incarnate-Engine">Voice of the Chain Master</link>
+					</linklist>
+					<p><b>Whispers of the Grave</b></p>
+					<p><i>Prerequisite: 9th level</i></p>
+					<p>You can cast <i>speak with dead </i>at will, without expending a spell slot.</p>
+					<linklist>
+						<link class="power" recordname="spell.whispersofthegrave@Incarnate-Engine">Whispers of the Grave</link>
+					</linklist>
+					<p><b>Witch Sight</b></p>
+					<p><i>Prerequisite: 15th level</i></p>
+					<p>You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight.</p>
+					<linklist>
+						<link class="power" recordname="spell.witchsight@Incarnate-Engine">Witch Sight</link>
+					</linklist>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Pact Boon - Pact of Chain</name>
+				<source type="string">Warlock</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.</p>
+					<p><b>Pact of the Chain</b></p>
+					<p>You learn the <i>find familiar </i>spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</p>
+					<p>When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, or sprite.</p>
+					<p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction.</p>
+					<linklist>
+						<link class="power" recordname="spell.findfamiliar@Incarnate-Engine">Spell: Find Familiar</link>
+					</linklist>
+					<p><b>Pact of the Blade</b></p>
+					<p>You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to non-magical attacks and damage.</p>
+					<p>Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p>
+					<p>You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.</p>
+					<p><b>Pact of the Tome</b></p>
+					<p>Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock spells for you.</p>
+					<p>If you loose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</p>
+				</text>
+			</id-00008>
 		</featurelist>
-		<flaws type="string">I care only for my own authority.</flaws>
-		<height type="string">3'6&#34;</height>
+		<flaws type="string">No amount of gold is worth my life, I will run when in danger.</flaws>
+		<height type="string">6'1&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">10</total>
+			<total type="number">24</total>
 			<wounds type="number">0</wounds>
 		</hp>
-		<ideals type="string">A Simple Way of Life - If it ain't broke, don't fix it! (Neutral)</ideals>
+		<ideals type="string">Charity - I'm doing what I do so others can benefit from my goods. (Good)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
@@ -260,18 +481,18 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">1 CP</cost>
-				<count type="number">1</count>
+				<cost type="string">2 GP</cost>
+				<count type="number">2</count>
 				<description type="formattedtext">
-					<p>This tiny portrait is of your family. Hand drawn it keeps them close.</p>
+					<p>This is an item you aquired while in a far off land. Although it is not worth much, it bring back memories of the trip.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Portrait of Your Family - Pocket Sized</name>
-				<rarity type="string">Rare</rarity>
+				<name type="string">Souvenir</name>
+				<rarity type="string">Uncommon</rarity>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.1</weight>
+				<weight type="number">1</weight>
 			</id-00001>
 			<id-00002>
 				<ac type="number">0</ac>
@@ -280,20 +501,33 @@
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00251@Incarnate-Engine">Painter's Supplies</link>
-					</linklist>
+					<p>This is an item of medium worth that you have been unable to sell for several years. It may be a particularly ugly rug, or an item that is somehow damaged or defective. Regardless, you ended up being stuck with it.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Painter's Supplies</name>
-				<subtype type="string">Artisan's Tools</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">5</weight>
+				<name type="string">Unsellable Item</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
 			</id-00002>
 			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Traveler's</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">4</weight>
+			</id-00003>
+			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -309,24 +543,19 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
-			</id-00003>
-			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">5 SP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Clothes, Common</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">3</weight>
 			</id-00004>
 			<id-00005>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">2</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Backpack</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00005>
+			<id-00006>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -342,8 +571,8 @@
 				<subtype type="string">Ammunition</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">0.075</weight>
-			</id-00005>
-			<id-00006>
+			</id-00006>
+			<id-00007>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
@@ -363,8 +592,8 @@
 				<subtype type="string">Simple Ranged Weapons</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">5</weight>
-			</id-00006>
-			<id-00007>
+			</id-00007>
+			<id-00008>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -379,8 +608,8 @@
 				<subtype type="string">Arcane Focus</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
-			</id-00007>
-			<id-00008>
+			</id-00008>
+			<id-00009>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -390,8 +619,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
-			</id-00008>
-			<id-00009>
+			</id-00009>
+			<id-00010>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
@@ -404,8 +633,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
-			</id-00009>
-			<id-00010>
+			</id-00010>
+			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -415,8 +644,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
-			</id-00010>
-			<id-00011>
+			</id-00011>
+			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
@@ -429,8 +658,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
-			</id-00011>
-			<id-00012>
+			</id-00012>
+			<id-00013>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">10</count>
@@ -443,17 +672,6 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
-			</id-00012>
-			<id-00013>
-				<carried type="number">1</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Backpack</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
 			</id-00013>
 			<id-00014>
 				<carried type="number">1</carried>
@@ -560,20 +778,20 @@
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Elvish</name>
+				<name type="string">Choice</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Gnomish</name>
+				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Warlock - Redcap Gnome - Artist - Fiend</name>
-		<perception type="number">10</perception>
+		<level type="number">3</level>
+		<name type="string">Warlock - Tiefling - Merchant - Fiend</name>
+		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I look at the ceiling every time I enter a room. Some of the greatest open places to paint are on the ceilings. Few people think of decorating them so they end up being huge pallets that I can fill with art.\nDrinking on the job is never a problem. It adds a flair of inspiration that I find stunning... even if most people are too naive to recognize it.</personalitytraits>
+		<personalitytraits type="string">I talk very quickly, and always cut to the chase.\nI like to joke around and tell stories.</personalitytraits>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -583,10 +801,10 @@
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
-				<max type="number">1</max>
+				<max type="number">0</max>
 			</pactmagicslots1>
 			<pactmagicslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
@@ -641,62 +859,206 @@
 		<powers>
 			<id-00001>
 				<actions>
-					<id-00001>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Chill Touch Caster</label>
 						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">wisdom</savetype>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00006>
+					<id-00007>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00007>
+					<id-00008>
+						<durmod type="number">1</durmod>
+						<label type="string">NOTE: cannot heal; IF: TYPE(undead); IFT: CUSTOM(Chill Touch Caster); DISATK</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00008>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Chill Touch</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d4</dice>
-								<type type="string">psychic</type>
+								<dice type="dice">d10</dice>
+								<stat type="string">charisma</stat>
+								<statmult type="number">1</statmult>
+								<type type="string">force</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
-					<id-00003>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Vicious Mockery; DISATK</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
+					<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Vicious Mockery - Redcap</name>
+				<name type="string">Eldritch Blast</name>
 				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
+				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Enchantment</school>
-				<source type="string">Bard</source>
-			</id-00001>
-			<id-00002>
+				<school type="string">Evocation</school>
+				<source type="string">Warlock</source>
+			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 hour</castingtime>
+				<components type="string">V, S, M (10 GP worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier)</components>
+				<description type="formattedtext">
+					<p>You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast. Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal. When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses. As an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you. You can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature. Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Find Familiar - Pact of Chain</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Wizard</source>
+			</id-00003>
+			<id-00004>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of soot and salt)</components>
+				<description type="formattedtext">
+					<p>For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Comprehend Languages</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00004>
+			<id-00005>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<p>If at first you don't succeed stab it again! If you make a weapon attack roll against a creature at least one size larger than you and miss, you can use a bonus action to make a weapon attack against the same target. You must finish a long rest before you can use this feature again.</p>
+					<p>You can cast detect magic at will, without expending a spell slot.</p>
+					<linklist>
+						<link class="power" recordname="spell.detectmagic@Incarnate-Engine">Spell: Detect Magic</link>
+					</linklist>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Ankle Shanker</name>
-				<prepared type="number">1</prepared>
-				<source type="string">Redcap</source>
-				<type type="string">subracial</type>
-			</id-00002>
-			<id-00003>
+				<name type="string">Eldritch Sight</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Eldritch Invocations</source>
+			</id-00005>
+			<id-00006>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p>
+					<list>
+						<li>Your voice booms up to three times as loud as normal for 1 minute.</li>
+						<li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li>
+						<li>You cause harmless tremors in the ground for 1 minute.</li>
+						<li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li>
+						<li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li>
+						<li>You alter the appearance of your eyes for 1 minute.</li>
+					</list>
+					<p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>
+				</description>
+				<duration type="string">Up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Thaumaturgy - Tiefling</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Cleric</source>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: fire</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Fire) - Tiefling</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00007>
+			<id-00008>
 				<actions>
 					<id-00002>
 						<heallist>
@@ -728,8 +1090,21 @@
 				<name type="string">Dark One's Blessing</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
-			</id-00003>
-			<id-00004>
+			</id-00008>
+			<id-00009>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Your experience with people gives you an advantage with people, once a day, you can use this feature to give you advantage in Charisma checks that involve negotiation with others.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Charismatic Demeanor</name>
+				<prepared type="number">1</prepared>
+				<source type="string">Merchant</source>
+			</id-00009>
+			<id-00010>
 				<actions>
 					<id-00001>
 						<onmissdamage type="string">half</onmissdamage>
@@ -742,7 +1117,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6,d6</dice>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -761,61 +1137,29 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Burning Hands - fiend</name>
+				<name type="string">Burning Hands</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self (15-foot cone)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
-			</id-00004>
-			<id-00005>
+			</id-00010>
+			<id-00011>
 				<actions>
 					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
 						<savemagic type="number">1</savemagic>
-						<savetype type="string">wisdom</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<label type="string">Prone</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
-				<description type="formattedtext">
-					<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the GM determines how the target behaves. If the target can't follow your command, the spell ends.</p>
-					<p><b>Approach </b>. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p>
-					<p><b>Drop </b>. The target drops whatever it is holding and then ends its turn.</p>
-					<p><b>Flee </b>. The target spends its turn moving away from you by the fastest available means.</p>
-					<p><b>Grovel </b>. The target falls prone and then ends its turn. Halt. The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
-				</description>
-				<duration type="string">1 round</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Command - fiend</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<school type="string">Enchantment</school>
-				<source type="string">Cleric, Paladin</source>
-			</id-00005>
-			<id-00006>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
+						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d10</dice>
-								<type type="string">force</type>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
@@ -823,25 +1167,27 @@
 					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
+				<castingtime type="string">1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>
+					<p>You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st. Heroes'</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">0</level>
+				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Blast</name>
+				<name type="string">Hellish Rebuke</name>
 				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
+				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Warlock</source>
-			</id-00006>
-			<id-00007>
+			</id-00011>
+			<id-00012>
 				<actions>
 					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
@@ -851,8 +1197,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d12</dice>
-								<type type="string">poison</type>
+								<dice type="dice">d8,d8,d8</dice>
+								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
@@ -861,26 +1207,26 @@
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
+				<components type="string">V, S, M (a chip of mica)</components>
 				<description type="formattedtext">
-					<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">0</level>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Poison Spray</name>
+				<name type="string">Shatter</name>
 				<prepared type="number">0</prepared>
-				<range type="string">10 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Druid, Sorcerer, Warlock, Wizard</source>
-			</id-00007>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00012>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
 			<id-00001>
-				<name type="string">Tool: Painter's Supplies</name>
+				<name type="string">Tool: One gaming set of your choice</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons</name>
@@ -889,118 +1235,118 @@
 				<name type="string">Armor: Light armor</name>
 			</id-00003>
 		</proficiencylist>
-		<race type="string">Gnome (Redcap)</race>
+		<race type="string">Tiefling</race>
 		<racelink type="windowreference">
 			<class>reference_race</class>
-			<recordname>race.id-00006@Incarnate-Engine</recordname>
+			<recordname>race.id-00012@Incarnate-Engine</recordname>
 		</racelink>
 		<senses type="string">Darkvision 60</senses>
-		<size type="string">Small</size>
+		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
 				<name type="string">Perception</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
-				<misc type="number">0</misc>
-				<name type="string">Investigation</name>
-				<prof type="number">1</prof>
-				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
-			</id-00003>
-			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">3</total>
+			</id-00003>
+			<id-00004>
+				<misc type="number">0</misc>
+				<name type="string">Nature</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">1</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
-				<name type="string">Nature</name>
-				<prof type="number">1</prof>
-				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<name type="string">Medicine</name>
+				<prof type="number">0</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">0</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
-				<name type="string">Medicine</name>
+				<name type="string">Survival</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
-				<name type="string">Survival</name>
-				<prof type="number">0</prof>
-				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
-			</id-00007>
-			<id-00008>
-				<misc type="number">0</misc>
 				<name type="string">Performance</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
-			</id-00008>
-			<id-00009>
+				<total type="number">3</total>
+			</id-00007>
+			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">-1</total>
-			</id-00009>
-			<id-00010>
+			</id-00008>
+			<id-00009>
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
-			</id-00010>
-			<id-00011>
+				<total type="number">1</total>
+			</id-00009>
+			<id-00010>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">0</prof>
 				<stat type="string">strength</stat>
 				<total type="number">1</total>
-			</id-00011>
-			<id-00012>
+			</id-00010>
+			<id-00011>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">-1</total>
-			</id-00012>
-			<id-00013>
+			</id-00011>
+			<id-00012>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
-			</id-00013>
-			<id-00014>
+			</id-00012>
+			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
-			</id-00014>
-			<id-00015>
+				<total type="number">5</total>
+			</id-00013>
+			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
+			</id-00014>
+			<id-00015>
+				<misc type="number">0</misc>
+				<name type="string">Investigation</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">1</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1014,7 +1360,7 @@
 				<name type="string">History</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">1</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1023,26 +1369,13 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
 			</id-00018>
-			<id-00019>
-				<misc type="number">0</misc>
-				<name type="string">Painter's Supplies</name>
-				<prof type="number">1</prof>
-				<stat type="string">charisma</stat>
-				<text type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00251@Incarnate-Engine">Painter's Supplies</link>
-					</linklist>
-				</text>
-				<total type="number">4</total>
-			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
-			<base type="number">25</base>
+			<base type="number">30</base>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">25</total>
+			<total type="number">30</total>
 		</speed>
 		<temp>
 		</temp>
@@ -1050,34 +1383,38 @@
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Gnome Cunning</name>
-				<source type="string">Gnome</source>
+				<name type="string">Infernal Legacy</name>
+				<source type="string">Tiefling</source>
 				<text type="formattedtext">
-					<p>You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.</p>
+					<p>You know the <i>thaumaturgy </i>cantrip. When you reach 3rd level, you can cast <i>hellish rebuke </i>spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the <i>darkness </i>spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>
+					<linklist>
+						<link class="power" recordname="spell.thaumaturgy@Incarnate-Engine">Thaumaturgy</link>
+					</linklist>
+					<p>3</p>
+					<linklist>
+						<link class="power" recordname="spell.hellishrebuke@Incarnate-Engine">Hellish Rebuke</link>
+					</linklist>
+					<p>5</p>
+					<linklist>
+						<link class="power" recordname="spell.darkness@Incarnate-Engine">Darkness</link>
+					</linklist>
 				</text>
 				<type type="string">racial</type>
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Ankle Shanker</name>
-				<source type="string">Redcap</source>
+				<name type="string">Hellish Resistance</name>
+				<source type="string">Tiefling</source>
 				<text type="formattedtext">
-					<p>If at first you don't succeed stab it again! If you make a weapon attack roll against a creature at least one size larger than you and miss, you can use a bonus action to make a weapon attack against the same target. You must finish a long rest before you can use this feature again.</p>
-				</text>
-				<type type="string">subracial</type>
-			</id-00002>
-			<id-00003>
-				<locked type="number">1</locked>
-				<name type="string">Nasty Little Bugger</name>
-				<source type="string">Redcap</source>
-				<text type="formattedtext">
-					<p>You have such a way with words. You know the vicious mockery cantrip.</p>
+					<h>Effect Coding</h>
 					<linklist>
-						<link class="power" recordname="spell.viciousmockery@Incarnate-Engine">Vicious Mockery</link>
+						<link class="power" recordname="spell.typeresistancefire@Incarnate-Engine">Type Resistance (Fire)</link>
 					</linklist>
+					<h>Description</h>
+					<p>You have resistance to fire damage.</p>
 				</text>
-				<type type="string">subracial</type>
-			</id-00003>
+				<type type="string">racial</type>
+			</id-00002>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
@@ -1092,13 +1429,13 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Crossbow, Light</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00006</recordname>
+					<recordname>....inventorylist.id-00007</recordname>
 				</shortcut>
 				<type type="number">1</type>
 			</id-00001>
@@ -1158,7 +1495,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">2</maxammo>
 				<name type="string">Dagger</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -1169,6 +1506,6 @@
 				<type type="number">2</type>
 			</id-00004>
 		</weaponlist>
-		<weight type="string">40 Pounds</weight>
-	</warlockredcapgnomeartistfiend>
+		<weight type="string">205 Pounds</weight>
+	</warlocktieflingmerchantfiend>
 </root>

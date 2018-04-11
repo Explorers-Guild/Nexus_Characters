@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<roguemikonassassin>
+	<roguemikonassassinthief>
 		<abilities>
 			<charisma>
 				<bonus type="number">0</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,8 +112,8 @@
 			<load type="number">11.01</load>
 			<max type="number">16</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -179,12 +179,62 @@
 					</linklist>
 				</text>
 			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Cunning Action</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Thief</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>You hone your skills in the larcenous arts. Burglars, bandits, cut-purses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.</p>
+					<h>Features</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00013@Incarnate-Engine">Fast Hands</link>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00016@Incarnate-Engine">Second-Story Work</link>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00020@Incarnate-Engine">Supreme Sneak</link>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00024@Incarnate-Engine">Use Magic Device</link>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00021@Incarnate-Engine">Thief's Reflexes</link>
+					</linklist>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fast Hands</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Thief</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open lock, or take the Use an Object action.</p>
+				</text>
+			</id-00008>
+			<id-00009>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Second-Story Work</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Thief</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.</p>
+					<p>In addition when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I judge others harshly, and myself even more severely.</flaws>
 		<height type="string">10&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">10</total>
+			<total type="number">24</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Aspiration - I work hard to be the best there is at my craft. (Any)</ideals>
@@ -504,8 +554,8 @@
 				<name type="string">Thieves' Cant</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Rogue - Mikon - Assassin</name>
+		<level type="number">3</level>
+		<name type="string">Rogue - Mikon - Assassin - Thief</name>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I don't like killing at all, but what must be done, must be done.\nI do not mind stabbing an ally in the back if it will benefit me in the long run.</personalitytraits>
@@ -687,7 +737,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 1d6</label>
+						<label type="string">Sneak Attack; DMG: 2d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1058,5 +1108,5 @@
 			</id-00002>
 		</weaponlist>
 		<weight type="string">10 Pounds</weight>
-	</roguemikonassassin>
+	</roguemikonassassinthief>
 </root>

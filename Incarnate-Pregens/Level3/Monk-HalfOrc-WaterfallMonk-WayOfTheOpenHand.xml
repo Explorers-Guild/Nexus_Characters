@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<monkhalforcwaterfallmonk>
+	<monkhalforcwaterfallmonkwayoftheopenhand>
 		<abilities>
 			<charisma>
 				<bonus type="number">1</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,8 +112,8 @@
 			<load type="number">89.1</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -171,12 +171,124 @@
 					<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.ki@Incarnate-Engine">Ki</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00040@Incarnate-Engine">The Monk</link>
+					</linklist>
+					<p>You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p>
+					<p>When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
+					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects.</p>
+					<p>The saving throw DC is calculated as follows:</p>
+					<list>
+						<li><b>Ki save DC </b>= 8 + your proficiency bonus + your Wisdom modifier</li>
+					</list>
+					<p><b>Flurry of Blows</b></p>
+					<p>Immediately after you take the Attack action of your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</p>
+					<p><b>Patient Defense</b></p>
+					<p>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</p>
+					<linklist>
+						<link class="power" recordname="spell.dodge@Incarnate-Engine">Dodge</link>
+					</linklist>
+					<p><b>Step of the Wind</b></p>
+					<p>You can spend 1 ki to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Unarmored Movement</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in the Monk table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00040@Incarnate-Engine">The Monk</link>
+					</linklist>
+					<p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Way of the Open Hand</name>
+				<source type="string">Monk</source>
+				<text type="formattedtext">
+					<p>Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.</p>
+					<h>Features</h>
+					<p>3</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00028@Incarnate-Engine">Open Hand Technique</link>
+					</linklist>
+					<p>6</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00041@Incarnate-Engine">Wholeness of Body</link>
+					</linklist>
+					<p>11</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00037@Incarnate-Engine">Tranquility</link>
+					</linklist>
+					<p>17</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00031@Incarnate-Engine">Quivering Palm</link>
+					</linklist>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Open Hand Technique</name>
+				<source type="string">Monk</source>
+				<specialization type="string">Way of the Open Hand</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.openhandtechnique@Incarnate-Engine">Open Hand Technique</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting when you choose this tradition at 3rd level, you can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:</p>
+					<list>
+						<li>It must succeed on a Dexterity saving throw or be knocked prone.</li>
+						<li>It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.</li>
+						<li>It can't take reactions until the end of your next turn.</li>
+					</list>
+				</text>
+			</id-00008>
+			<id-00009>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Deflect Missiles</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<p>This has two forms of effect coding. The effect reduces damage dealt. The heal is for if you forgot to apply the effect and will give you your damage back. (for simplicity use &#34;Unarmed Strike (Monk) with range 20/60). (The Effect requires version 3.3.4+ of FG)</p>
+					<linklist>
+						<link class="power" recordname="spell.deflectmissles@Incarnate-Engine">Deflect Missiles</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 3rd Level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p>
+					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">Making a profit is more important than honesty or integrity.</flaws>
 		<height type="string">7'</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">10</total>
+			<total type="number">24</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nature - Just like trees, people live and people die. It's the law of the land. (Lawful)</ideals>
@@ -438,11 +550,17 @@
 				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Monk - Half-Orc - Waterfal Monk</name>
+		<level type="number">3</level>
+		<name type="string">Monk - Half-Orc - Waterfal Monk - Way of the Open Hand</name>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I don't like killing at all.\nI instinctively give orders instead of requests.</personalitytraits>
+		<powergroup>
+			<id-00001>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00001>
+		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
@@ -499,7 +617,7 @@
 				<max type="number">0</max>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -508,12 +626,112 @@
 				<description type="formattedtext">
 					<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Relentless Endurance</name>
 				<prepared type="number">1</prepared>
 				<source type="string">Half-Orc</source>
 				<type type="string">racial</type>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00002>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<label type="string">Open Hand Techniaue; prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00004>
+					<id-00005>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">3</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00028@Incarnate-Engine">Open Hand Technique</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Open Hand Technique</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-Engine">Ki</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10</dice>
+								<stat type="string">monk</stat>
+							</id-00001>
+							<id-00006>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">dexterity</stat>
+							</id-00006>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Deflect Missles; DMG: -1d10; DMG: [-MNK]; DMG:[-DEX]</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00019@Incarnate-Engine">Deflect Missiles</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Deflect Missles</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00004>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -783,5 +1001,5 @@
 			</id-00003>
 		</weaponlist>
 		<weight type="string">237 Pounds</weight>
-	</monkhalforcwaterfallmonk>
+	</monkhalforcwaterfallmonkwayoftheopenhand>
 </root>

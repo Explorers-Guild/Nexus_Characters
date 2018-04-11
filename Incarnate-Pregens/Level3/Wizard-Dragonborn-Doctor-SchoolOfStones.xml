@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<wizarddragonborndoctor>
+	<wizarddragonborndoctorschoolofstones>
 		<abilities>
 			<charisma>
 				<bonus type="number">-1</bonus>
@@ -59,7 +59,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -109,8 +109,8 @@
 			<load type="number">89.6</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -182,12 +182,117 @@
 					<p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<locked type="number">1</locked>
+				<name type="string">School of Stones</name>
+				<source type="string">Wizard</source>
+				<text type="formattedtext">
+					<h>Lore</h>
+					<p>Some wizards seek new heights and fancy spells. For those in the school of stones, they look for something far more fundamental.</p>
+					<h>Features</h>
+					<p>2</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prowizard.features.id-00046@Incarnate-Engine">Stone Lover</link>
+						<link class="reference_classfeature" recordname="class.prowizard.features.id-00047@Incarnate-Engine">Magic Stones</link>
+					</linklist>
+					<p>6</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prowizard.features.id-00048@Incarnate-Engine">Communicate with Earth</link>
+					</linklist>
+					<p>10</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prowizard.features.id-00049@Incarnate-Engine">Stone Wardens</link>
+					</linklist>
+					<p>14</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prowizard.features.id-00050@Incarnate-Engine">Stoneshaping</link>
+					</linklist>
+					<h>Origin</h>
+					<p>Originally the Geomancy was found online:</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Geomancy_(5e_Subclass)">here</link>
+					</linklist>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Magic Stones</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Stones</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.magicstones@Incarnate-Engine">Magic Stones</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 2nd level, you gain the ability to command small stones. You can use your action to touch a pebble or chunk of rock no larger than a sling bullet. The infused pebble rises and orbits you, requiring no concentration, and it does so until it is expended or until your next long rest. After the third pebble is commanded, you cannot use this ability again until the end of a long rest.</p>
+					<p>When a creature moves adjacent to you, you can use your reaction to expend a magic stone. The creature must succeed on a Dexterity saving trhow or take 1d6 damage.</p>
+					<p>You can use a bonus action to fire a magic stone at a target within 30 feet. This expends the stone. Make a ranged spell attack against the target. On a hit the target takes 1d6 damage.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Stone Lover</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Stones</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy a stone oriented spell into your spellbook is halved. All stone oriented spells are wizard spells to you. The following are stone oriented spells (a gm may consider others if you make a convincing case):</p>
+					<p><b>Cantrips:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.earthshot@Incarnate-Engine">Earth Shot</link>
+					</linklist>
+					<p><b>1st Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.creapingstone@Incarnate-Engine">Creaping Stone</link>
+					</linklist>
+					<p><b>2nd Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.darkvision@Incarnate-Engine">Darkvision</link>
+					</linklist>
+					<p><b>3rd Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.meldintostone@Incarnate-Engine">Meld into Stone</link>
+					</linklist>
+					<p><b>4th Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.conjureminorelementals@Incarnate-Engine">Conjure Minor Elementals</link>
+						<link class="power" recordname="spell.stoneshape@Incarnate-Engine">Stone Shape</link>
+						<link class="power" recordname="spell.stoneskin@Incarnate-Engine">Stoneskin</link>
+					</linklist>
+					<p><b>5th Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.conjureelemental@Incarnate-Engine">Conjure Elemental</link>
+						<link class="power" recordname="spell.wallofstone@Incarnate-Engine">Wall of Stone</link>
+					</linklist>
+					<p><b>6th Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.fleshtostone@Incarnate-Engine">Flesh to Stone</link>
+						<link class="power" recordname="spell.moveearth@Incarnate-Engine">Move Earth</link>
+					</linklist>
+					<p><b>7th Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.reversegravity@Incarnate-Engine">Reverse Gravity</link>
+					</linklist>
+					<p><b>8th Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.earthquake@Incarnate-Engine">Earthquake</link>
+					</linklist>
+					<p><b>9th Level:</b></p>
+					<linklist>
+						<link class="power" recordname="spell.meteorswarm@Incarnate-Engine">Meteor Swarm</link>
+					</linklist>
+				</text>
+			</id-00007>
 		</featurelist>
 		<flaws type="string">No one can know that I have broken my vow.</flaws>
 		<height type="string">6'11&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">8</total>
+			<total type="number">20</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Life - I was put in this world to protect and save life. (Good)</ideals>
@@ -485,8 +590,8 @@
 				<name type="string">Draconic</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Wizard - Dragonborn - Doctor</name>
+		<level type="number">3</level>
+		<name type="string">Wizard - Dragonborn - Doctor - School of Stones</name>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I consider magical healers and healing either to be cheating and unaccountable, or an integral future counterpart of a greater medical art.\nI am waging a personal war on death itself.</personalitytraits>
@@ -527,10 +632,10 @@
 				<max type="number">0</max>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
+				<max type="number">4</max>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -938,12 +1043,164 @@
 					<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. the spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
 					<p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Arcane Recovery</name>
 				<prepared type="number">1</prepared>
 				<source type="string">Wizard</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00008>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">intelligence</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00008>
+					<id-00009>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning, magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00009>
+					<id-00010>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">intelligence</atkstat>
+						<atktype type="string">ranged</atktype>
+						<order type="number">3</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00010>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prowizard.features.id-00047@Incarnate-Engine">Magic Stones</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Magic Stones</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00013>
+			<id-00014>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a piece of rock)</components>
+				<description type="formattedtext">
+					<p>The target has a lump of stone sprout out of them. Each time the target moves or takes an action its DC increases by 1. Each time anyone tries attempts to break it off (Strength save if inside, Athletics-Strength if outside) its DC increases by 1 on a fail.</p>
+					<p>If the DC reaches 30 then the stone &#34;sets&#34;. It will no longer grow, but is no longer dependant upon concentration. It leaves a small hole by the mouth for air to pass. If concentration is broken before the stone &#34;sets&#34; then the stone crumbles to a pile of dust.</p>
+					<p>If outside of rock you either have advantage to break them free or can chip off a piece reducing the DC by 5. (If the creature is only pretending to break the individual free then their check is with disadvantage and the stone still grows.)</p>
+					<p><b>At Higher Levels: </b>When you cast this spell using a spell slot of 2nd level or higher, the DC increase (both for actions and checks) increases by 1 for each slot above 1st.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Creaping Stone</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<source type="string">School of Stones</source>
+			</id-00014>
+			<id-00015>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of soot and salt)</components>
+				<description type="formattedtext">
+					<p>For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Comprehend Languages</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a chip of mica)</components>
+				<description type="formattedtext">
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00016>
+			<id-00017>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (gold dust worth at least 25 GP, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes. While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.</p>
+				</description>
+				<duration type="string">Until dispelled</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Arcane Lock</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Wizard</source>
+			</id-00017>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1264,5 +1521,5 @@
 			</id-00002>
 		</weaponlist>
 		<weight type="string">249 Pounds</weight>
-	</wizarddragonborndoctor>
+	</wizarddragonborndoctorschoolofstones>
 </root>

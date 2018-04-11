@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<fighterdragonbornbattlesmith>
+	<fighterdragonbornbattlesmithchampion>
 		<abilities>
 			<charisma>
 				<bonus type="number">2</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -113,8 +113,8 @@
 			<load type="number">144.71</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -131,7 +131,7 @@
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Champion</name>
+				<name type="string">Champion - Background</name>
 				<source type="string">Battlesmith</source>
 				<text type="formattedtext">
 					<p>You are or were, the champion of a patron, (likely a noble dwarven clan) and a known battlesmith. Your patron may come to you with demands or requests; enemies of your patron may try to buy, manipulate, or kill you; and you will likely have made some enemies of your own during your career. The life of a battlesmith can be busy, hectic, and complicated, even long after retirement or expulsion. Work with your GM to flesh out your patron, their enemies, and your personal enemies if you have any.</p>
@@ -186,12 +186,64 @@
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Action Surge</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Improved Critical</name>
+				<source type="string">Fighter</source>
+				<specialization type="string">Champion</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Champion</name>
+				<source type="string">Fighter</source>
+				<text type="formattedtext">
+					<p>The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.</p>
+					<h>Features</h>
+					<p>3</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00029@Incarnate-Engine">Improved Critical</link>
+					</linklist>
+					<p>7</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00034@Incarnate-Engine">Remarkable Athlete</link>
+					</linklist>
+					<p>10</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00026@Incarnate-Engine">Additional Fighting Style</link>
+					</linklist>
+					<p>15</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00036@Incarnate-Engine">Superior Critical</link>
+					</linklist>
+					<p>18</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00037@Incarnate-Engine">Survivor</link>
+					</linklist>
+				</text>
+			</id-00007>
 		</featurelist>
 		<flaws type="string">I have offended my patron clan, nation, or fellow battlesmiths, and have been stripped of my title.</flaws>
 		<height type="string">6'4&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">12</total>
+			<total type="number">28</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Responsibility - My power is a gift not to be taken lightly, and I should avoid seeking out unnecessary conflict. (Lawful)</ideals>
@@ -575,8 +627,8 @@
 				<name type="string">Dwarvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Fighter - Dragonborn - Battlesmith</name>
+		<level type="number">3</level>
+		<name type="string">Fighter - Dragonborn - Battlesmith - Champion</name>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I make light of violence and death.\nI'm never too far from a bottle of alcohol.</personalitytraits>
@@ -644,7 +696,7 @@
 				<max type="number">0</max>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">preparation</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -741,6 +793,22 @@
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00003>
+			<id-00004>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+				</description>
+				<group type="string">Ability</group>
+				<locked type="number">1</locked>
+				<name type="string">Action Surge</name>
+				<prepared type="number">1</prepared>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00004>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1005,6 +1073,16 @@
 				<type type="string">racial</type>
 			</id-00003>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+				<melee type="number">0</melee>
+				<ranged type="number">0</ranged>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">19</melee>
+				<ranged type="number">19</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
@@ -1052,5 +1130,5 @@
 			</id-00002>
 		</weaponlist>
 		<weight type="string">229 Pounds</weight>
-	</fighterdragonbornbattlesmith>
+	</fighterdragonbornbattlesmithchampion>
 </root>

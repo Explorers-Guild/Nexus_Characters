@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<sorcererhalfelfseamstressshadowslinger>
+	<sorcerersuvajudgedraconicbloodline>
 		<abilities>
 			<charisma>
 				<bonus type="number">3</bonus>
@@ -14,7 +14,7 @@
 				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">15</score>
+				<score type="number">14</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
@@ -45,21 +45,23 @@
 				<score type="number">12</score>
 			</wisdom>
 		</abilities>
-		<age type="string">30 Young Adult</age>
-		<alignment type="string">Lawful Neutral</alignment>
-		<background type="string">Seamstress</background>
+		<adventurelist>
+		</adventurelist>
+		<age type="string">453 Ageless Adult</age>
+		<alignment type="string">Chaotic Neutral</alignment>
+		<background type="string">Judge</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
-			<recordname>background.id-00042@Incarnate-Engine</recordname>
+			<recordname>background.id-00041@Incarnate-Engine</recordname>
 		</backgroundlink>
-		<bonds type="string">I can never linger anywhere for too long, or my secret will catch up to me.</bonds>
+		<bonds type="string">I have fallen in love here and i cannot leave knowing they could be in danger.</bonds>
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -94,86 +96,129 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">0</armor>
+				<armor type="number">3</armor>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">12</total>
+				<total type="number">15</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">79.1</load>
+			<load type="number">75.1</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Tailor</name>
-				<source type="string">Seamstress</source>
+				<name type="string">Judge - Starting Items</name>
+				<source type="string">Judge</source>
 				<text type="formattedtext">
-					<p>Working with people's clothing gives you a whole new view of them. From the stain on the sleeve to the type of dust on the shoulder there is so much information available that most people pass over, but not you. If you can spend an hour or longer studying the clothing of an individual, including being able to pick it up and turn it over, then you learn where that piece of clothing has been over the last day.</p>
+					<h>Parcel</h>
+					<linklist>
+						<link class="treasureparcel" recordname="treasureparcels.id-00046@Incarnate-Engine">Starting Items - Judge</link>
+					</linklist>
 				</text>
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Seamstress - Starting Items</name>
-				<source type="string">Seamstress</source>
+				<name type="string">Intimidation</name>
+				<source type="string">Judge</source>
 				<text type="formattedtext">
-					<h>Parcel</h>
-					<linklist>
-						<link class="treasureparcel" recordname="treasureparcels.id-00062@Incarnate-Engine">Starting Items - Seamstress</link>
-					</linklist>
+					<p>As a judge your reputation usually precedes you. Criminal's fear your presence even if they are not the one on trial. This gives a benefit to intimidation checks against criminals based on how strong of a reputation you have in that area.</p>
 				</text>
 			</id-00002>
 			<id-00003>
+				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Shadowslinger</name>
+				<name type="string">Draconic Bloodline</name>
 				<source type="string">Sorcerer</source>
 				<text type="formattedtext">
-					<p>Shadowslinger are people born with the power to control shadows to their will.</p>
+					<p>Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.</p>
+					<h>Features</h>
 					<p>1</p>
 					<linklist>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00017@Incarnate-Engine">Shadowfall1</link>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00026@Incarnate-Engine">Covered Darkness</link>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00039@Incarnate-Engine">Dragon Ancestor</link>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00038@Incarnate-Engine">Draconic Resilience</link>
 					</linklist>
 					<p>6</p>
 					<linklist>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00021@Incarnate-Engine">Transcendence</link>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00018@Incarnate-Engine">Shadowfall2</link>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00041@Incarnate-Engine">Elemental Affinity</link>
 					</linklist>
 					<p>14</p>
 					<linklist>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00022@Incarnate-Engine">Shadow Weaving</link>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00019@Incarnate-Engine">Shadowfall3</link>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00040@Incarnate-Engine">Dragon Wings</link>
 					</linklist>
 					<p>18</p>
 					<linklist>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00023@Incarnate-Engine">Superior Transcendence</link>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00037@Incarnate-Engine">Draconic Presence</link>
 					</linklist>
 				</text>
 			</id-00003>
 			<id-00004>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Covered Darkness</name>
+				<name type="string">Dragon Ancestor - bronze</name>
 				<source type="string">Sorcerer</source>
-				<specialization type="string">Shadowslinger</specialization>
+				<specialization type="string">Draconic Bloodline</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.covereddarkness@Incarnate-Engine">Covered Darkness</link>
-					</linklist>
-					<h>Description</h>
-					<p>When standing in darkness or shadow you can warp shadows around you making you extremely hard to see. This gives you advantage on stealth checks and enemies disadvantage on attack roles. Covered Darkness lasts until it encounters a light source or Sorcerer Level*2 minutes have passed.</p>
+					<p>At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.</p>
+					<p><u>Draconic Ancestry</u></p>
+					<table>
+						<tr>
+							<td><b>Dragon</b></td>
+							<td><b>Damage Type</b></td>
+						</tr>
+						<tr>
+							<td>Black</td>
+							<td>Acid</td>
+						</tr>
+						<tr>
+							<td>Blue</td>
+							<td>Lightning</td>
+						</tr>
+						<tr>
+							<td>Brass</td>
+							<td>Fire</td>
+						</tr>
+						<tr>
+							<td>Bronze</td>
+							<td>Lightning</td>
+						</tr>
+						<tr>
+							<td>Copper</td>
+							<td>Acid</td>
+						</tr>
+						<tr>
+							<td>Gold</td>
+							<td>Fire</td>
+						</tr>
+						<tr>
+							<td>Green</td>
+							<td>Poison</td>
+						</tr>
+						<tr>
+							<td>Red</td>
+							<td>Fire</td>
+						</tr>
+						<tr>
+							<td>Silver</td>
+							<td>Cold</td>
+						</tr>
+						<tr>
+							<td>White</td>
+							<td>Cold</td>
+						</tr>
+					</table>
+					<p>You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.</p>
 				</text>
 			</id-00004>
 			<id-00005>
@@ -215,23 +260,116 @@
 			<id-00006>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Shadowfall1</name>
+				<name type="string">Draconic Resilience</name>
 				<source type="string">Sorcerer</source>
-				<specialization type="string">Shadowslinger</specialization>
+				<specialization type="string">Draconic Bloodline</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>Starting at 1st level, you can teleport up to 10 feet as a bonus action on your turn. You must be in dim light or darkness to do this, or your destination must be in dim light or darkness.</p>
+					<p>As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit points maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p>
+					<p>Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + Dexterity modifier.</p>
 				</text>
 			</id-00006>
+			<id-00007>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Font of Magic</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.sorcerypoints@Incarnate-Engine">Font of Magic</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
+					<p><b>Sorcery Points</b></p>
+					<p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00046@Incarnate-Engine">The Sorcerer</link>
+					</linklist>
+					<p><b>Flexible Casting</b></p>
+					<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p>
+					<p><i>Creating Spell Slots. </i>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
+					<p>Any spell slot you create with this feature vanishes when you finish a long rest.</p>
+					<p><u>Creating Spell Slots</u></p>
+					<table>
+						<tr>
+							<td><b>Spell Slot</b></td>
+							<td><b>Sorcery</b></td>
+						</tr>
+						<tr>
+							<td><b>Level</b></td>
+							<td><b>Point Cost</b></td>
+						</tr>
+						<tr>
+							<td>1st</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>7</td>
+						</tr>
+					</table>
+					<p><i>Converting a Spell Slot to Sorcery Points. </i>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Metamagic - Distant, Quickened</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p>
+					<p>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>
+					<p><b>Careful Spell</b></p>
+					<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.carefulspell@Incarnate-Engine">Careful Spell</link>
+					</linklist>
+					<p><b>Distant Spell</b></p>
+					<p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.</p>
+					<p>When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+					<p><b>Empowered Spell</b></p>
+					<p>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p>
+					<p>You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+					<p><b>Extended Spell</b></p>
+					<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</p>
+					<p><b>Heightened Spell</b></p>
+					<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.heightenedspell@Incarnate-Engine">Heightened Spell</link>
+					</linklist>
+					<p><b>Quickened Spell</b></p>
+					<p>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</p>
+					<p><b>Subtle Spell</b></p>
+					<p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</p>
+					<p><b>Twinned Spell</b></p>
+					<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spells level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p>
+					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <i>magic missile </i>and <i>scorching ray </i>aren't eligible, but <i>ray of frost </i>is.</p>
+				</text>
+			</id-00008>
 		</featurelist>
-		<flaws type="string">I am so good at my job that the head of the sewing guild in my home city got jealous. He framed me and ran me out of town.</flaws>
-		<height type="string">6'5&#34;</height>
+		<flaws type="string">I don't care about the odds of victory. If I see evil i will destroy it no matter what the cost.</flaws>
+		<height type="string">5'5&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">8</total>
+			<total type="number">23</total>
 			<wounds type="number">0</wounds>
 		</hp>
-		<ideals type="string">Strictly Business - You get what you pay for and I can't help that. (Lawful)</ideals>
+		<ideals type="string">Frivolity I was sent to accomplish something and I will accomplish it when I want to (Chaotic)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
@@ -242,19 +380,37 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">5 SP</cost>
+				<cost type="string">5 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p></p>
+					<p>This elegant robe implies the great status of the wearer.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Clothes, Common</name>
+				<name type="string">Clothes, Elegant Robe</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00001>
 			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>These are a set of scales that can be used for weighing coins, spices, or other small items. The inscription on the side reads &#34;Balance both sides and judge fairly&#34;.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Scales of Justice</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00002>
+			<id-00003>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -270,46 +426,8 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
-			</id-00002>
-			<id-00003>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00255@Incarnate-Engine">Weaver's Tools</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Weaver's Tools</name>
-				<subtype type="string">Artisan's Tools</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">5</weight>
 			</id-00003>
 			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">5 CP</cost>
-				<count type="number">20</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Crossbow Bolt</name>
-				<nonid_name type="string">Crossbow Bolt</nonid_name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">0.075</weight>
-			</id-00004>
-			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
@@ -329,6 +447,23 @@
 				<subtype type="string">Simple Ranged Weapons</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">5</weight>
+			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 CP</cost>
+				<count type="number">20</count>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Crossbow Bolt</name>
+				<nonid_name type="string">Crossbow Bolt</nonid_name>
+				<subtype type="string">Ammunition</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0.075</weight>
 			</id-00005>
 			<id-00006>
 				<ac type="number">0</ac>
@@ -494,17 +629,23 @@
 				<name type="string">Elvish</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common</name>
+				<name type="string">Celestial</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Sylvan</name>
+				<name type="string">Common</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Goblin</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Dwarvish</name>
+			</id-00005>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Sorcerer - Half-Elf - Seamstress - Shadowslinger</name>
+		<level type="number">3</level>
+		<name type="string">Sorcerer - Suva - Judge - Draconic Bloodline</name>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I give my two cents on everything.\nI live for knowledge. There is nothing better than an interesting conversation.</personalitytraits>
+		<personalitytraits type="string">I am intrigued by mortals and am always looking for opportunities to learn about them.\nI tend to over dramatize things and usually tell stories a bit more exciting than they actually are.</personalitytraits>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -541,10 +682,10 @@
 				<max type="number">0</max>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
+				<max type="number">4</max>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -573,39 +714,42 @@
 			<id-00001>
 				<actions>
 					<id-00001>
-						<durmod type="number">2</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Covered Darkness; ADVSKILL: dexterity; GRANTDISATK</label>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">level</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
 						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
+						<type type="string">heal</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<linklist>
-						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00026@Incarnate-Engine">Covered Darkness</link>
-					</linklist>
+					<p>You have a pool of hit points equal to your character level. As an action you can touch a character and heal them with this pool. Whether you use the entire amount of the pool or not you can only use this ability once per long rest.</p>
 				</description>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Covered Darkness</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Celestial Soothing</name>
+				<prepared type="number">1</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
-						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
-								<type type="string">cold</type>
+								<dice type="dice">d6</dice>
+								<type type="string">acid</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
@@ -616,83 +760,39 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+					<p>You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage. This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Ray of Frost</name>
+				<name type="string">Acid Splash</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
-				<school type="string">Evocation</school>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00002>
 			<id-00003>
 				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d10</dice>
-								<type type="string">fire</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+					<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
 				</description>
-				<duration type="string">Instantaneous</duration>
+				<duration type="string">1 minute</duration>
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Fire Bolt</name>
+				<name type="string">Mage Hand</name>
 				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Sorcerer, Wizard</source>
+				<range type="string">30 feet</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
 			</id-00003>
 			<id-00004>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Dancing Lights; (C)</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a bit of phosphorus or wychwood, or a glowworm)</components>
-				<description type="formattedtext">
-					<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10- foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Dancing Lights</name>
-				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Bard, Sorcerer, Wizard</source>
-			</id-00004>
-			<id-00005>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -708,8 +808,45 @@
 				<name type="string">Message</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.</p>
+					<p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Shocking Grasp</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
 			</id-00005>
 			<id-00006>
 				<actions>
@@ -753,18 +890,60 @@
 			<id-00007>
 				<actions>
 					<id-00001>
-						<onmissdamage type="string">half</onmissdamage>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Expeditious Retreat; (C)</label>
 						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Expeditious Retreat</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00007>
+			<id-00008>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00042@Incarnate-Engine">Font of Magic</link>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00045@Incarnate-Engine">Metamagic</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sorcery Points</name>
+				<prepared type="number">3</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d8,d8</dice>
-								<type type="string">thunder</type>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
@@ -775,37 +954,71 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+					<p>You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Thunderwave</name>
+				<name type="string">Scorching Ray</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Self (15-foot cube)</range>
+				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
-				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
-			</id-00007>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a chip of mica)</components>
+				<description type="formattedtext">
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00010>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
 			<id-00001>
-				<name type="string">Tool: Weaver's Tools</name>
-			</id-00001>
-			<id-00002>
 				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows</name>
-			</id-00002>
+			</id-00001>
 		</proficiencylist>
-		<race type="string">Half-Elf</race>
+		<race type="string">Suva</race>
 		<racelink type="windowreference">
 			<class>reference_race</class>
-			<recordname>race.id-00007@Incarnate-Engine</recordname>
+			<recordname>race.id-00014@Incarnate-Engine</recordname>
 		</racelink>
-		<senses type="string">Darkvision 60</senses>
-		<size type="string">Medium</size>
+		<size type="string">medium</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
@@ -823,10 +1036,10 @@
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
-				<name type="string">Sleight of Hand</name>
+				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
-				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<stat type="string">charisma</stat>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -838,9 +1051,9 @@
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">3</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -893,10 +1106,10 @@
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
-				<name type="string">Intimidation</name>
-				<prof type="number">1</prof>
-				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<name type="string">Sleight of Hand</name>
+				<prof type="number">0</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">2</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -933,26 +1146,13 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">1</total>
 			</id-00018>
-			<id-00019>
-				<misc type="number">0</misc>
-				<name type="string">Weaver's Tools</name>
-				<prof type="number">1</prof>
-				<stat type="string">dexterity</stat>
-				<text type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00255@Incarnate-Engine">Weaver's Tools</link>
-					</linklist>
-				</text>
-				<total type="number">4</total>
-			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
-			<base type="number">30</base>
+			<base type="number">35</base>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">30</total>
+			<total type="number">35</total>
 		</speed>
 		<temp>
 		</temp>
@@ -960,22 +1160,45 @@
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Fey Ancestry</name>
-				<source type="string">Half-Elf</source>
+				<name type="string">Battle Ready</name>
+				<source type="string">Suva</source>
 				<text type="formattedtext">
-					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+					<p>You can now draw or stow 2 weapons instead of one and you are proficient with acrobatics.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Skill Versatility</name>
-				<source type="string">Half-Elf</source>
+				<name type="string">Fiery Devotion</name>
+				<source type="string">Suva</source>
 				<text type="formattedtext">
-					<p>You gain proficiency in two skills of your choice.</p>
+					<p>You have advantage on saving throws against being charmed or frightened as long as you are within 5ft of an ally.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00002>
+			<id-00003>
+				<locked type="number">1</locked>
+				<name type="string">Celestial Soothing</name>
+				<source type="string">Suva</source>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.celestialsoothing@Incarnate-Engine">Celestial Soothing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have a pool of hit points equal to your character level. As an action you can touch a character and heal them with this pool. Whether you use the entire amount of the pool or not you can only use this ability once per long rest.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00003>
+			<id-00004>
+				<locked type="number">1</locked>
+				<name type="string">Compassionate Tone</name>
+				<source type="string">Suva</source>
+				<text type="formattedtext">
+					<p>You are proficient in charisma (persuasion) checks.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00004>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
@@ -996,7 +1219,7 @@
 				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00005</recordname>
+					<recordname>....inventorylist.id-00004</recordname>
 				</shortcut>
 				<type type="number">1</type>
 			</id-00001>
@@ -1047,6 +1270,6 @@
 				<type type="number">2</type>
 			</id-00003>
 		</weaponlist>
-		<weight type="string">235 Pounds</weight>
-	</sorcererhalfelfseamstressshadowslinger>
+		<weight type="string">147 Pounds</weight>
+	</sorcerersuvajudgedraconicbloodline>
 </root>

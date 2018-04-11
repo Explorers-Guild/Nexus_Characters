@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<monksandelfmonastic>
+	<monksandelfmonasticfireelemental>
 		<abilities>
 			<charisma>
 				<bonus type="number">1</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,8 +112,8 @@
 			<load type="number">73.1</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -171,12 +171,129 @@
 					<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.ki@Incarnate-Engine">Ki</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00040@Incarnate-Engine">The Monk</link>
+					</linklist>
+					<p>You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p>
+					<p>When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
+					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects.</p>
+					<p>The saving throw DC is calculated as follows:</p>
+					<list>
+						<li><b>Ki save DC </b>= 8 + your proficiency bonus + your Wisdom modifier</li>
+					</list>
+					<p><b>Flurry of Blows</b></p>
+					<p>Immediately after you take the Attack action of your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</p>
+					<p><b>Patient Defense</b></p>
+					<p>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</p>
+					<linklist>
+						<link class="power" recordname="spell.dodge@Incarnate-Engine">Dodge</link>
+					</linklist>
+					<p><b>Step of the Wind</b></p>
+					<p>You can spend 1 ki to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Unarmored Movement</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in the Monk table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00040@Incarnate-Engine">The Monk</link>
+					</linklist>
+					<p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">Fire Elemental</name>
+				<source type="string">Monk</source>
+				<text type="formattedtext">
+					<p>This is an archetype belonging to the Monk class ( it is based off of the Way of the Sun Soul in the SCAG, but with some minor changes to add some utility and versatility and a more appropriate capstone ability).</p>
+					<p>A bare-chested dwarf exhales white hot flame as he breathes over a damaged sword, duplicating the heat of a forge so that he can repair it on the road.</p>
+					<p>A red-skinned tiefling extends her leg with a high kick as a mote of flame engulfs her opponent 30 feet away.</p>
+					<p>A human extends two fingers as lightning extends through his body, and outward, demolishing an outer wall as the siege gets underway.</p>
+					<p>A Fire Elementalist is a Monk who (through study, fortune or fate) have unlocked their inner flame. Using their breath to generate energy, these monks extend their Ki outward from their body, creating and manipulating flame.</p>
+					<p>3</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00010@Incarnate-Engine">Inner Flame</link>
+					</linklist>
+					<p>6</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00011@Incarnate-Engine">Forges Fire</link>
+					</linklist>
+					<p>11</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00012@Incarnate-Engine">Fire Aura</link>
+					</linklist>
+					<p>17</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00013@Incarnate-Engine">Trial of the White Flame</link>
+					</linklist>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Deflect Missiles</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<p>This has two forms of effect coding. The effect reduces damage dealt. The heal is for if you forgot to apply the effect and will give you your damage back. (for simplicity use &#34;Unarmed Strike (Monk) with range 20/60). (The Effect requires version 3.3.4+ of FG)</p>
+					<linklist>
+						<link class="power" recordname="spell.deflectmissles@Incarnate-Engine">Deflect Missiles</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 3rd Level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p>
+					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet.</p>
+				</text>
+			</id-00008>
+			<id-00009>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Inner Flame</name>
+				<source type="string">Monk</source>
+				<specialization type="string">Fire Elemental</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.innerflame@Incarnate-Engine">Inner Flame</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 3rd level you have learned how to extend your Ki past your limbs. You may do any of the following:</p>
+					<list>
+						<li>Use an Action to generate a flickering flame that emits bright light in a radius of 10 feet and dim light for an additional 10 feet that lasts for 10 minutes or until you dismiss it as an Action.</li>
+						<li>You may spend 1 ki point to shroud your hands in flame for 1 minute adding 1d4 fire damage to your hits.</li>
+					</list>
+					<p>When you use the Attack action on your turn to use this special attack, you can still use any of your ki features as if you had just made an attack action.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-Engine">Ki</link>
+					</linklist>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I feel the need to meditate three times a day to purify my thoughts.</flaws>
 		<height type="string">5'9&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">10</total>
+			<total type="number">24</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Meditation - In order to understand the world, I must first understand myself. (Any)</ideals>
@@ -448,8 +565,8 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Monk - Sand Elf - Monastic</name>
+		<level type="number">3</level>
+		<name type="string">Monk - Sand Elf - Monastic - Fire Elemental</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am one with myself. I strive for balance in all things. I work hard but play just as hard.\nI am the living flame. My fire and vigor ignites those around me.</personalitytraits>
@@ -534,7 +651,6 @@
 					<p>You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 minute</duration>
-				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Resistance - Racial</name>
@@ -543,6 +659,83 @@
 				<school type="string">Abjuration</school>
 				<source type="string">Cleric, Druid</source>
 			</id-00001>
+			<id-00002>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-Engine">Ki</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki</name>
+				<prepared type="number">3</prepared>
+				<ritual type="number">0</ritual>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Inner Flame; DMG: 1d4 fire, melee</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00010@Incarnate-Engine">Inner Flame</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Inner Flame</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10</dice>
+								<stat type="string">monk</stat>
+							</id-00001>
+							<id-00006>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">dexterity</stat>
+							</id-00006>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Deflect Missles; DMG: -1d10; DMG: [-MNK]; DMG:[-DEX]</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00019@Incarnate-Engine">Deflect Missiles</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Deflect Missles</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00004>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -819,5 +1012,5 @@
 			</id-00003>
 		</weaponlist>
 		<weight type="string">135 Pounds</weight>
-	</monksandelfmonastic>
+	</monksandelfmonasticfireelemental>
 </root>

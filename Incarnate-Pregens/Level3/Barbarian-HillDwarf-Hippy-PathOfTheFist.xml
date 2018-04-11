@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.3" release="8|CoreRPG:3">
-	<barbarianhilldwarfhippy>
+	<barbarianhilldwarfhippypathofthefist>
 		<abilities>
 			<charisma>
 				<bonus type="number">1</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,8 +112,8 @@
 			<load type="number">95.4</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">100</exp>
-		<expneeded type="number">200</expneeded>
+		<exp type="number">300</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -173,12 +173,73 @@
 					<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>
 				</text>
 			</id-00004>
+			<id-00005>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Danger Sense</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.dangersense@Incarnate-Engine">Danger Sense</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Reckless Attack</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.recklessattack@Incarnate-Engine">Reckless Attack</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">Path of the Fist</name>
+				<source type="string">Barbarian</source>
+				<text type="formattedtext">
+					<p>Some warriors are never happier than when they are slugging it out in the thick of the fray. Weapons are well and good but a true bruiser only really needs two good fists.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00005@Incarnate-Engine">Powerful Blows</link>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00006@Incarnate-Engine">Knock About</link>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00007@Incarnate-Engine">Adrenaline Surge</link>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00008@Incarnate-Engine">Hammer Fists</link>
+					</linklist>
+				</text>
+			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Powerful Blows</name>
+				<source type="string">Barbarian</source>
+				<specialization type="string">Path of the Fist</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.powerfulblows@Incarnate-Engine">Powerful Blows</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting when you choose this path at 3rd level, you can roll a d6 in place of the normal damage of your unarmed strikes. This die changes to a d8 when you are raging. Additionally your physical prowess gains you Expertise with Strength (Athletics) checks.</p>
+					<p>If the GM allows fist weapons (cestus, katar, spiked gauntlet, tiger claws, etc.), use the best damage die with the damage type/properties of the weapon.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">The woods are my home. I will only leave them in times of great need, and will long for my return to them.</flaws>
 		<height type="string">4'7&#34;</height>
 		<hp>
 			<temporary type="number">0</temporary>
-			<total type="number">15</total>
+			<total type="number">35</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Seasons - Winter is the season of the dead, Spring is the season of life. I'm somewhere in between. (Any)</ideals>
@@ -491,12 +552,16 @@
 				<name type="string">Dwarvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">1</level>
-		<name type="string">Barbarian - Hill Dwarf - Hippy</name>
+		<level type="number">3</level>
+		<name type="string">Barbarian - Hill Dwarf - Hippy - Path of the Fist</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I will defend my masculinity to the extent of other's thinking I'm insecure.\nI consider my Master to have been a font of wisdom, and have a quote from him for almost every situation</personalitytraits>
 		<powergroup>
+			<id-00001>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00001>
 			<id-00002>
 				<name type="string">Passive</name>
 			</id-00002>
@@ -605,6 +670,101 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Barbarian</source>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Reckless Attack; ADVATK: melee; GRANTADVATK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00029@Incarnate-Engine">Reckless Attack</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Reckless Attack</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Barbarian</source>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00003>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">dexterity</atkstat>
+						<atktype type="string">melee</atktype>
+						<order type="number">3</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6</dice>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
+					<id-00005>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">5</order>
+						<type type="string">damage</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting when you choose this path at 3rd level, you can roll a d6 in place of the normal damage of your unarmed strikes. This die changes to a d8 when you are raging. Additionally your physical prowess gains you Expertise with Strength (Athletics) checks.</p>
+					<p>If the GM allows fist weapons (cestus, katar, spiked gauntlet, tiger claws, etc.), use the best damage die with the damage type/properties of the weapon.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Powerful Blows</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">ADVSAV: dexterity</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00041@Incarnate-Engine">Danger Sense</link>
+					</linklist>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Danger Sense</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00005>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -692,9 +852,9 @@
 			<id-00010>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">6</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -941,5 +1101,5 @@
 			</id-00005>
 		</weaponlist>
 		<weight type="string">177 Pounds</weight>
-	</barbarianhilldwarfhippy>
+	</barbarianhilldwarfhippypathofthefist>
 </root>
