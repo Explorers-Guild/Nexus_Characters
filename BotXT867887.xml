@@ -58,6 +58,7 @@
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">3</level>
@@ -70,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">22</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">8</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">8</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,20 +97,24 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
+				<stat2 type="string">constitution</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">12</total>
+				<total type="number">14</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">72.11</load>
+			<load type="number">45.11</load>
 			<max type="number">210</max>
 		</encumbrance>
+		<exp type="number">337</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -244,13 +249,14 @@
 			</id-00007>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge.</flaws>
+		<gender type="string">Unknown</gender>
 		<height type="string">6'5</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">20</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">12</wounds>
 		</hp>
 		<ideals type="string">Master - I'm a predator, and everyone else is my prey. (Evil)</ideals>
 		<initiative>
@@ -508,7 +514,7 @@
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Aloii</name>
@@ -570,6 +576,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
@@ -876,10 +883,17 @@
 					<id-00001>
 						<durmod type="number">8</durmod>
 						<durunit type="string">hour</durunit>
-						<label type="string">AC: 3</label>
+						<label type="string">AC: 1</label>
 						<order type="number">1</order>
+						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">AC: 3</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
