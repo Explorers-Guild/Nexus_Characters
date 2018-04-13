@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">3</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">95</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">77</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">76</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">67.29</load>
+			<load type="number">67.79</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">422</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -280,7 +280,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">18</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">7</wounds>
 		</hp>
 		<ideals type="string">Virtue - I am the sword of virtue for those in need! (Good)</ideals>
 		<initiative>
@@ -467,7 +467,7 @@
 			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment.</p>
 				</description>
@@ -611,6 +611,68 @@
 				<type type="string">Armor</type>
 				<weight type="number">10</weight>
 			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ordinary bag, made from gray, rust, or tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.</p>
+					<p>You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points.</p>
+					<p>The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.</p>
+					<p>Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.</p>
+					<linklist>
+						<link class="table" recordname="tables.id-01119@Incarnate-Engine"><b>Bag of Tricks (Gray)</b></link>
+					</linklist>
+					<table>
+						<tr>
+							<td>d8</td>
+							<td>Creature</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Weasel</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Giant rat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Badger</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Boar</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Panther</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Giant badger</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Dire wolf</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>Giant elk</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bag of Tricks (Gray)</name>
+				<nonid_name type="string">Gray Bag</nonid_name>
+				<nonidentified type="string">A small gray bag, it seems to be empty.</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -632,6 +694,24 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00120">Vipapump - Plant</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Vipapump Fruit</name>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Fruit</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -719,33 +799,42 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -795,7 +884,7 @@
 					<id-00003>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Vicious Mockery; DISATK</label>
+						<label type="string">Vicious Flattery; DISATK</label>
 						<order type="number">3</order>
 						<type type="string">effect</type>
 					</id-00003>
@@ -815,6 +904,7 @@
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
+				<shortdescription type="string">Complimented a Tarike</shortdescription>
 				<source type="string">Bard</source>
 			</id-00002>
 			<id-00003>
@@ -824,6 +914,7 @@
 						<durunit type="string">minute</durunit>
 						<label type="string">Dancing Lights; 10ft</label>
 						<order type="number">1</order>
+						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
@@ -1051,6 +1142,51 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00011>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bardic Inspiration; ATK: 1d6; SAVE: 1d6; CHECK: 1d6</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">2</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00013@Incarnate-Engine">Bardic Inspiration</link>
+					</linklist>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bardic Inspiration</name>
+				<prepared type="number">3</prepared>
+				<ritual type="number">0</ritual>
+			</id-00013>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<label type="string">Jack of All Trades; INIT: [HPRF]</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</p>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Jack of All Trades</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00015>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
