@@ -3,11 +3,11 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">22</amount>
+				<amount type="number">88</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">11</amount>
+				<amount type="number">69</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">13</amount>
+				<amount type="number">65</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,10 +110,10 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">141.02</load>
+			<load type="number">142.52</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">373</exp>
+		<exp type="number">433</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -307,6 +307,16 @@
 					<p><b><i>Strength Above All. </i></b>You shall rule until a stronger one arises. Then you must grow mightier and meet the challenge, or fall to your own ruin.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">I judge others harshly, and myself even more severely.</flaws>
 		<gender type="string">Male</gender>
@@ -315,7 +325,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
+			<total type="number">36</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Power. I hope to one day rise to the top of my faith's religious hierarchy. (Lawful)</ideals>
@@ -352,7 +362,7 @@
 				<weight type="number">2</weight>
 			</id-00002>
 			<id-00003>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -598,6 +608,61 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-Engine">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00120">Vipapump - Plant</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Vipapump Fruit</name>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Fruit</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -616,7 +681,7 @@
 				<name type="string">Orc</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Nicholas Von Kemp</name>
 		<notes type="string">*background story in progress*</notes>
 		<perception type="number">13</perception>
@@ -725,7 +790,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -879,6 +944,22 @@
 				<school type="string">Evocation</school>
 				<source type="string">Paladin</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>The presence of strong evil registers on your senses like a noxious odor, and a powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>hallow </i>spell.</p>
+					<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Divine Sense</name>
+				<prepared type="number">4</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1142,7 +1223,7 @@
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1170,7 +1251,7 @@
 				<name type="string">Performance</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1212,14 +1293,14 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1249,12 +1330,6 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">1</total>
 			</id-00018>
-			<id-00019>
-				<misc type="number">0</misc>
-				<name type="string">usually Investigation</name>
-				<prof type="number">1</prof>
-				<total type="number">2</total>
-			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -1265,7 +1340,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00014_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
