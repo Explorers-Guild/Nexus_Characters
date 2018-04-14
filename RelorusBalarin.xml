@@ -61,24 +61,26 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.wizard@D&#38;D Sword Coast Adventurer's Guide - Player's Guide</recordname>
+					<recordname>reference.classdata.wizard@DD Xanathar's Guide to Everything Players</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">87</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">53</amount>
+				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">70</amount>
+				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
@@ -105,12 +107,19 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">67</load>
+			<load type="number">69</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">300</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">452</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Tough</name>
+				<text type="formattedtext">
+					<p>Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.</p>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -219,6 +228,15 @@
 					<p>You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area.</p>
 				</text>
 			</id-00006>
+			<id-00007>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Wizard</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00007>
 		</featurelist>
 		<flaws type="string">An innocent person is in prison for a crime that I committed. I'm okay with that.</flaws>
 		<gender type="string">Male</gender>
@@ -227,7 +245,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">14</total>
+			<total type="number">27</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</ideals>
@@ -417,6 +435,61 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-Engine">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Eyes of the Eagle</name>
+				<nonid_name type="string">Crystal Lenses</nonid_name>
+				<nonidentified type="string">Two crystal lenses bound together with a little bit of wire.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00016>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -432,7 +505,7 @@
 				<name type="string">Infernal</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Relorus Balarin</name>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -493,7 +566,7 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -525,7 +598,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -534,6 +607,7 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -789,6 +863,7 @@
 				<name type="string">Shield</name>
 				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00010>
@@ -858,6 +933,38 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid Coast Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">psychic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You weave together threads of shadow to create a sword of solidified gloom in your hand. This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals 2d8 psychic damage on a hit and has the finesse, light, and thrown properties (range 20/60). In addition, when you use the sword to attack a target that is in dim light or darkness, you make the attack roll with advantage.</p>
+					<p>If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the sword to reappear in your hand.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a 3rd-or 4th-level spell slot, the damage increases to 3d8. When you cast it using a 5th-or 6th-level spell slot, the damage increases to 4d8. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d8.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Shadow Blade</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00014>
 			<id-00015>
 				<actions>
 				</actions>
@@ -890,11 +997,79 @@
 					<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
 					<p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Arcane Recovery</name>
 				<prepared type="number">1</prepared>
 				<source type="string">Wizard</source>
 			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a bit of tallow, a pinch of brimstone, and a dusting of powdered iron)</components>
+				<description type="formattedtext">
+					<p>A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw.</p>
+					<p>The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+					<p>As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.</p>
+					<p>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Flaming Sphere</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Cleric Light Domain, Druid, Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end)</components>
+				<description type="formattedtext">
+					<p>One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature must make a Constitution saving throw and is unaffected on a success.</p>
+					<p>The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move.</p>
+					<p>Otherwise, you can use your action to move the target, which must remain within the spell's range. When the spell ends, the target floats gently to the ground if it is still aloft.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Levitate - from scroll</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00018>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1069,7 +1244,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00015_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1115,6 +1290,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>

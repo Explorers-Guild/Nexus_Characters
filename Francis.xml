@@ -56,6 +56,8 @@
 		<bonds type="string">Very loyal to friends, party members, and whoever is nice to him.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">3</level>
@@ -68,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">73</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -76,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">45</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -84,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">35</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,7 +112,7 @@
 			<load type="number">83.1</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">390</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -237,6 +239,8 @@
 		<gender type="string">Male</gender>
 		<height type="string">6'8&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">35</total>
 			<wounds type="number">0</wounds>
@@ -499,57 +503,75 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -609,11 +631,10 @@
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00009@Incarnate-Engine">Healer</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Healer - Barbarian</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
 			<id-00002>
@@ -672,6 +693,7 @@
 				<description type="formattedtext">
 					<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage to the critical hit.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Savage Attacks</name>
 				<prepared type="number">0</prepared>
@@ -952,6 +974,7 @@
 				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -959,6 +982,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
