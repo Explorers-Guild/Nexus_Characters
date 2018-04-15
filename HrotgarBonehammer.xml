@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">14</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">6</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">23</amount>
+				<amount type="number">314</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">11</amount>
+				<amount type="number">120</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">13</amount>
+				<amount type="number">127</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -109,12 +109,24 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">70.001</load>
+			<load type="number">84.501</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">373</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">643</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Dual Wielder</name>
+				<text type="formattedtext">
+					<p>You master fighting with two weapons, gaining the following benefits:</p>
+					<list>
+						<li>You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.</li>
+						<li>You can use two-weapon fighting even when the onehanded melee weapons you are wielding aren't light.</li>
+						<li>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -199,6 +211,53 @@
 					</linklist>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - Dual Wielder</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00008>
+			<id-00009>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Fast Movement</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 5th level, you speed increases by 10 feet while you aren't wearing heavy armor.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00010>
+			<id-00011>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Mindless Rage</name>
+				<source type="string">Barbarian</source>
+				<specialization type="string">Path of the Berserker</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.mindlessrage@Incarnate-Engine">Mindless Rage</link>
+						<link class="charsheet" recordname="charsheet.id-00002@Incarnate-Engine"></link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I have a family, but I have no idea where they are. One day, I hope to see them again.</flaws>
 		<gender type="string">Male</gender>
@@ -207,7 +266,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
+			<total type="number">59</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Destiny. Nothing and no one can steer me away from my higher calling. (Any)</ideals>
@@ -218,7 +277,7 @@
 		</initiative>
 		<inventorylist>
 			<id-00001>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 slashing</damage>
@@ -259,6 +318,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-Engine">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00004>
 			<id-00005>
 				<carried type="number">1</carried>
 				<cost type="string">2 gp</cost>
@@ -447,12 +543,234 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">0</locked>
-				<name type="string">Ring of Athena - Prestige 0</name>
+				<name type="string">Ring of Athena - Prestige 1</name>
 				<nonid_name type="string">Ring of the Maiden</nonid_name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.001</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This ordinary bag, made from gray, rust, or tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.</p>
+					<p>You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 hit points.</p>
+					<p>The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.</p>
+					<p>Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.</p>
+					<linklist>
+						<link class="table" recordname="tables.id-01189@Incarnate-Engine">Bag of Tricks (Tan)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>d8</td>
+							<td>Creature</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Jackal</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Ape</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Baboon</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Axe beak</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Black bear</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Giant weasel</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Giant hyena</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>Tiger</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bag of Tricks (Tan)</name>
+				<nonid_name type="string">Tan Bag</nonid_name>
+				<nonidentified type="string">A small tan colored bag, it seems to be empty.</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0.5</weight>
+			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">30 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d12 slashing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Greataxe</name>
+				<nonid_name type="string">Greataxe</nonid_name>
+				<nonidentified type="string">A sharp greataxe.</nonidentified>
+				<properties type="string">Heavy, two-handed</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">7</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 slashing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Handaxe</name>
+				<nonid_name type="string">Handaxe</nonid_name>
+				<nonidentified type="string">A sharp stout handaxe.</nonidentified>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will.</p>
+					<p>Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Animal Friendship</name>
+				<nonid_name type="string">100 GP</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<subtype type="string">Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.</subtype>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This small packet contains 1d6 + 4 pinches of dust.</p>
+					<p>You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble--sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible.</p>
+					<p>Someone can use an action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic.</p>
+					<p>An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Dust of Dryness</name>
+				<nonid_name type="string">Bag of Dust</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,800 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker.</p>
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.berserker@Incarnate-Battles">Berserker</link>
+					</linklist>
+					<p>They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.</p>
+					<p>Four types of horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. The</p>
+					<p>GM chooses the horn's type or determines it randomly.</p>
+					<table>
+						<tr>
+							<td><b>d100</b></td>
+							<td><b>Horn Type</b></td>
+							<td><b>Berserkers Summoned</b></td>
+							<td><b>Requirement</b></td>
+						</tr>
+						<tr>
+							<td>41-75</td>
+							<td>Brass</td>
+							<td>3d4 + 3</td>
+							<td>Proficiency with all simple weapons</td>
+						</tr>
+					</table>
+					<p>If you blow the horn without meeting its requirement, the summoned berserkers attack you.</p>
+					<p>If you meet the requirement, they are friendly to you and your companions and follow your commands.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Horn of Valhalla (brass)</name>
+				<nonid_name type="string">Brass horn</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">2</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -462,9 +780,9 @@
 				<name type="string">Draconic</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">6</level>
 		<name type="string">Hrotgar Bonehammer</name>
-		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.\n\nTrying to find the focal point of both water and the gate if Hades\n</notes>
+		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.\n\nTrying to find the focal point of both water and the gate if Hades\n\nDragonborns in the island around 0502\n</notes>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">If someone is in trouble, I'm always ready to lend help.</personalitytraits>
@@ -570,7 +888,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -929,6 +1247,15 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00014>
+			<id-00015>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Consumables</group>
+				<level type="number">0</level>
+				<name type="string">Bag of Tricks (Tan)</name>
+				<prepared type="number">3</prepared>
+			</id-00015>
 			<id-00016>
 				<actions>
 					<id-00001>
@@ -955,7 +1282,7 @@
 				<type type="string">racial</type>
 			</id-00016>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Leatherworker's Tools, vehicles (land)</name>
@@ -986,21 +1313,21 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1010,11 +1337,11 @@
 				<total type="number">-1</total>
 			</id-00005>
 			<id-00006>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1066,11 +1393,11 @@
 				<total type="number">1</total>
 			</id-00013>
 			<id-00014>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1108,7 +1435,7 @@
 				<text type="formattedtext">
 					<p></p>
 				</text>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1120,7 +1447,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00009_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1212,7 +1539,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d8</dice>
@@ -1262,7 +1589,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">2</maxammo>
+				<maxammo type="number">3</maxammo>
 				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -1295,6 +1622,7 @@
 				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1336,6 +1664,68 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00006>
+			<id-00007>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d12</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Greataxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Heavy, two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00007>
+			<id-00008>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
+			<id-00009>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00009>
 		</weaponlist>
 		<weight type="string">260 lb</weight>
 	</character>
