@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">14</score>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">6</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">62</amount>
+				<amount type="number">118</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">49</amount>
+				<amount type="number">126</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">54</amount>
+				<amount type="number">128</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -112,10 +112,10 @@
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">63.7</load>
+			<load type="number">68.7</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">412</exp>
+		<exp type="number">600</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -228,6 +228,17 @@
 					<p>When you choose this archetype at 3rd level, choose one Melee weapon you are proficient with. Attacks with this specific type of weapon add your proficiency bonus to its damage. You cannot be disarmed or pick-pocketed of this weapon as long as you are not incapacitated. This weapon of choice will be used for other Brutal Combatant features.</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+					<p>The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">I constantly scan the ground and my surroundings for signs of precious metals.</flaws>
 		<gender type="string">Male</gender>
@@ -236,7 +247,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">40</total>
+			<total type="number">58</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Simplicity - A simple way of life: If it ain&#146;t broke don&#146;t fix it. (Lawful)</ideals>
@@ -468,6 +479,23 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.25</weight>
 			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This thick blanket can keep you warm even during an average winter. (good for 0 degree weather as long as you are dry)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Winter Blanket</name>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00016>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -480,13 +508,16 @@
 				<name type="string">Aloii</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">6</level>
 		<name type="string">59483</name>
-		<perception type="number">14</perception>
+		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">When work needs doing, I do the work.\nI am regularly tasting bits of rock and soil in order to search for signs of precious metals.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00003>
+				<name type="string">Class</name>
+			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -588,6 +619,7 @@
 					<h>Description</h>
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</description>
+				<group type="string">Class</group>
 				<locked type="number">1</locked>
 				<name type="string">Second Wind</name>
 				<prepared type="number">1</prepared>
@@ -602,12 +634,36 @@
 					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
+				<group type="string">Class</group>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
 				<prepared type="number">1</prepared>
 				<specializationchoice type="number">0</specializationchoice>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-Engine">Actions in Combat</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00003>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -622,14 +678,46 @@
 				<description type="formattedtext">
 					<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
 				</description>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Fighting Style - Dueling</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - check; ADVCHK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - attack; ADVATK</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.</p>
+					<p>Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target beforre your next turn, the first attack roll is made with advantage.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-Engine">Actions in Combat</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Help</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00005>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Prospector's Tools</name>
@@ -656,21 +744,21 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">5</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -698,7 +786,7 @@
 				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -712,7 +800,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -733,14 +821,14 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -761,21 +849,21 @@
 				<name type="string">Stealth</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00018>
 		</skilllist>
 		<speed>
@@ -787,7 +875,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -907,7 +995,7 @@
 					</id-00002>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Greataxe Head</name>
+				<name type="string">Greataxe Hand</name>
 				<prof type="number">1</prof>
 				<properties type="string">heavy, two-handed</properties>
 				<shortcut type="windowreference">

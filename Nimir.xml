@@ -93,6 +93,9 @@
 				<totalgold type="string">149.12</totalgold>
 				<totalxp type="string">358</totalxp>
 			</id-00003>
+			<id-00004>
+				<name type="string">2018-04-15 FG-Con12 Session 11</name>
+			</id-00004>
 		</adventurelist>
 		<age type="string">263</age>
 		<alignment type="string">Neutral</alignment>
@@ -109,8 +112,8 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
-				<name type="string">Rogue</name>
+				<level type="number">4</level>
+				<name type="string">Scout</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
 					<recordname>reference.classdata.rogue@DD Xanathar's Guide to Everything Players</recordname>
@@ -119,15 +122,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">107</amount>
+				<amount type="number">257</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">29</amount>
+				<amount type="number">70</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">27</amount>
+				<amount type="number">59</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -157,12 +160,26 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">77.101</load>
+			<load type="number">79.101</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">389</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">495</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Skulker</name>
+				<prerequisite type="string">Dexterity 13 or higher</prerequisite>
+				<text type="formattedtext">
+					<p><i>Prerequisite: Dexterity 13 or higher</i></p>
+					<p>You are expert at slinking through shadows. You gain the following benefits:</p>
+					<list>
+						<li>You can try to hide when you are lightly obscured from the creature from which you are hiding.</li>
+						<li>When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.</li>
+						<li>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -184,6 +201,15 @@
 					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
 				</text>
 			</id-00002>
+			<id-00003>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (Feat: Skulker)</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00003>
 			<id-00004>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -251,8 +277,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
-			<wounds type="number">18</wounds>
+			<total type="number">26</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Live and Let Live. Ideals aren't worth killing over or going to war for. (Neutral)</ideals>
 		<initiative>
@@ -261,13 +287,31 @@
 			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
+			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This thick blanket can keep you warm even during an average winter. (good for 0 degree weather as long as you are dry)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Worn/Packed</location>
+				<locked type="number">1</locked>
+				<name type="string">Winter Blanket</name>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00001>
 			<id-00002>
 				<carried type="number">2</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">2</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Melee</location>
+				<location type="string">Weapon Harness</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -281,7 +325,7 @@
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Melee</location>
+				<location type="string">Weapon Harness</location>
 				<locked type="number">1</locked>
 				<name type="string">Shortsword</name>
 				<properties type="string">Finesse, light</properties>
@@ -295,7 +339,7 @@
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Ranged</location>
+				<location type="string">Weapon Harness</location>
 				<locked type="number">1</locked>
 				<name type="string">Longbow</name>
 				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
@@ -309,7 +353,7 @@
 				<count type="number">1</count>
 				<damage type="string">1d4 bludgeoning</damage>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Ranged</location>
+				<location type="string">Weapon Harness</location>
 				<locked type="number">1</locked>
 				<name type="string">Sling</name>
 				<properties type="string">Ammunition (range 30/120)</properties>
@@ -318,39 +362,87 @@
 				<weight type="number">0</weight>
 			</id-00005>
 			<id-00006>
-				<carried type="number">0</carried>
-				<count type="number">0</count>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-Engine">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<name type="string">Equipped</name>
-				<weight type="number">0</weight>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00006>
 			<id-00007>
-				<carried type="number">0</carried>
-				<count type="number">0</count>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-Engine">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<name type="string">Equipment: Melee</name>
-				<weight type="number">0</weight>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00007>
-			<id-00008>
-				<carried type="number">0</carried>
-				<count type="number">0</count>
-				<isidentified type="number">1</isidentified>
-				<name type="string">Equipment: Ranged</name>
-				<weight type="number">0</weight>
-			</id-00008>
-			<id-00009>
-				<carried type="number">0</carried>
-				<count type="number">0</count>
-				<isidentified type="number">1</isidentified>
-				<name type="string">Equipment: Armor</name>
-				<weight type="number">0</weight>
-			</id-00009>
 			<id-00010>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Bedroll</name>
 				<subtype type="string">Standard</subtype>
@@ -365,7 +457,7 @@
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard</subtype>
@@ -380,7 +472,7 @@
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Torch</name>
 				<subtype type="string">Standard</subtype>
@@ -395,7 +487,7 @@
 					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Tinderbox</name>
 				<subtype type="string">Standard</subtype>
@@ -407,7 +499,7 @@
 				<cost type="string">2 sp</cost>
 				<count type="number">2</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard</subtype>
@@ -422,7 +514,7 @@
 					<p>This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Mess Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -434,7 +526,7 @@
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -446,8 +538,9 @@
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Worn</location>
 				<locked type="number">1</locked>
-				<name type="string">Equipment: Backpack</name>
+				<name type="string">Backpack</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
@@ -460,7 +553,7 @@
 					<p>This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Healer's Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -475,7 +568,7 @@
 					<p>A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipped</location>
+				<location type="string">Weapon Harness</location>
 				<locked type="number">1</locked>
 				<name type="string">Pouch</name>
 				<subtype type="string">Standard</subtype>
@@ -490,7 +583,7 @@
 					<p>A quiver can hold up to 20 arrows.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipped</location>
+				<location type="string">Weapon Harness</location>
 				<locked type="number">1</locked>
 				<name type="string">Quiver</name>
 				<subtype type="string">Standard</subtype>
@@ -526,25 +619,13 @@
 				<cost type="string">1 cp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Whetstone</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00023>
-			<id-00024>
-				<carried type="number">2</carried>
-				<cost type="string">2 gp</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Equipped</location>
-				<locked type="number">1</locked>
-				<name type="string">Clothes, Traveler's</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">4</weight>
-			</id-00024>
 			<id-00025>
 				<ac type="number">12</ac>
 				<bonus type="number">0</bonus>
@@ -557,7 +638,7 @@
 				</description>
 				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Armor</location>
+				<location type="string">Worn</location>
 				<locked type="number">1</locked>
 				<name type="string">Studded Leather</name>
 				<stealth type="string">-</stealth>
@@ -581,7 +662,7 @@
 					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipment: Backpack</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Heartstone</name>
 				<nonid_name type="string">Heartstone</nonid_name>
@@ -616,8 +697,8 @@
 					<p>Add:</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Equipped</location>
-				<locked type="number">0</locked>
+				<location type="string">Worn</location>
+				<locked type="number">1</locked>
 				<name type="string">Ring of Athena - Prestige 1</name>
 				<nonid_name type="string">Ring of the Maiden</nonid_name>
 				<subtype type="string">Standard</subtype>
@@ -636,7 +717,7 @@
 				<name type="string">Choice</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Nimir</name>
 		<notes type="string">Race: Perception*\nBackground: Athletics, Survival**\nClass: Acrobatics, Insight, Investigation, Stealth*; Nature**, Medicine</notes>
 		<perception type="number">16</perception>
@@ -644,6 +725,11 @@
 		<personalitytraits type="string">I've lost too many friends, and I'm slow to make new ones.\nI am horribly, horribly awkward in social situations.\nI've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00001>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Feats</name>
+				<saveprof type="number">1</saveprof>
+			</id-00001>
 			<id-00002>
 				<name type="string">Racial Traits</name>
 			</id-00002>
@@ -653,6 +739,9 @@
 			<id-00004>
 				<name type="string">Items</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Passive Abilities</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -924,6 +1013,64 @@
 				<usesperiod type="string">once</usesperiod>
 				<weight type="number">1</weight>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<label type="string">Passive Perception: 16</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Passive Abilities</group>
+				<level type="number">0</level>
+				<name type="string">Perception</name>
+				<prepared type="number">0</prepared>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<label type="string">Passive Stealth: 17; normal mode of movement is inconspicuous, but not enough to slow movement to half</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Passive Abilities</group>
+				<level type="number">0</level>
+				<name type="string">Stealth</name>
+				<prepared type="number">0</prepared>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Skulker; hide in lightly obscurred; non reveal ranged attack; dim light advantage</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p><i>Prerequisite: Dexterity 13 or higher</i></p>
+					<p>You are expert at slinking through shadows. You gain the following benefits:</p>
+					<list>
+						<li>You can try to hide when you are lightly obscured from the creature from which you are hiding.</li>
+						<li>When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.</li>
+						<li>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</li>
+					</list>
+				</description>
+				<group type="string">Feats</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Feat: Skulker</name>
+				<prepared type="number">0</prepared>
+				<prerequisite type="string">Dexterity 13 or higher</prerequisite>
+				<ritual type="number">0</ritual>
+			</id-00010>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1207,7 +1354,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">2</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>

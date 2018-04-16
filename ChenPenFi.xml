@@ -59,7 +59,7 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">3</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
@@ -70,14 +70,16 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">10</amount>
+				<amount type="number">22</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">9</amount>
+				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">8</amount>
+				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
@@ -92,6 +94,7 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -107,8 +110,8 @@
 			<load type="number">73.5</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">401</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -218,9 +221,11 @@
 		<gender type="string">Male</gender>
 		<height type="string">5' 10&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">21</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">4</wounds>
 		</hp>
 		<ideals type="string">People. I help the people who help me-that's what keeps us alive. (Neutral)</ideals>
 		<initiative>
@@ -465,6 +470,9 @@
 				<saveprof type="number">1</saveprof>
 				<uses type="number">0</uses>
 			</id-00004>
+			<id-00005>
+				<name type="string">Effect</name>
+			</id-00005>
 			<id-00006>
 				<name type="string">Monk Abilities</name>
 			</id-00006>
@@ -472,30 +480,39 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
@@ -525,12 +542,75 @@
 				<max type="number">0</max>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">dexterity</atkstat>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4</dice>
+								<stat type="string">dexterity</stat>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</p>
+					<p>You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</p>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Unarmed Strike (Monk)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-Engine">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Monk Abilities</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00002>
 			<id-00003>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
 					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
@@ -546,10 +626,11 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Ki</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00003>
 			<id-00004>
 				<actions>
@@ -602,39 +683,32 @@
 			<id-00005>
 				<actions>
 					<id-00001>
-						<atkbase type="string">ability</atkbase>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atkstat type="string">dexterity</atkstat>
-						<atktype type="string">melee</atktype>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - check; ADVCHK</label>
 						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
+						<type type="string">effect</type>
 					</id-00001>
 					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d4</dice>
-								<stat type="string">dexterity</stat>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - attack; ADVATK</label>
 						<order type="number">2</order>
-						<type type="string">damage</type>
+						<type type="string">effect</type>
 					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<p>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</p>
-					<p>You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.</p>
+					<p>You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.</p>
+					<p>Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target beforre your next turn, the first attack roll is made with advantage.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-Engine">Actions in Combat</link>
+					</linklist>
 				</description>
-				<group type="string">Ki</group>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Unarmed Strike (Monk)</name>
+				<name type="string">Help</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00005>
@@ -789,9 +863,9 @@
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">35</base>
-			<misc type="number">0</misc>
+			<misc type="number">10</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">35</total>
+			<total type="number">45</total>
 		</speed>
 		<temp>
 		</temp>
@@ -855,6 +929,7 @@
 		</weapon>
 		<weaponlist>
 			<id-00003>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -925,29 +1000,6 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00007>
-			<id-00008>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">dexterity</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Spear (two handed)</name>
-				<prof type="number">1</prof>
-				<properties type="string">versatile (1d8)</properties>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00008>
 		</weaponlist>
 		<weight type="string">150 lbs</weight>
 	</character>
