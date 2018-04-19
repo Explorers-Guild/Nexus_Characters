@@ -31,11 +31,11 @@
 				<score type="number">10</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<bonus type="number">3</bonus>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">15</score>
+				<score type="number">16</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">1</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">23</amount>
+				<amount type="number">51</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,14 +79,14 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">11</amount>
+				<amount type="number">58</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">13</amount>
+				<amount type="number">57</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -107,15 +107,28 @@
 			<special type="string">Of Hades</special>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">75</encumbered>
-			<encumberedheavy type="number">150</encumberedheavy>
-			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">95.2</load>
-			<max type="number">225</max>
+			<encumbered type="number">80</encumbered>
+			<encumberedheavy type="number">160</encumberedheavy>
+			<liftpushdrag type="number">480</liftpushdrag>
+			<load type="number">94.2</load>
+			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">373</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">447</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Tavern Brawler</name>
+				<text type="formattedtext">
+					<p>Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:</p>
+					<list>
+						<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+						<li>You are proficient with improvised weapons.</li>
+						<li>Your unarmed strike uses a d4 for damage.</li>
+						<li>When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -198,6 +211,16 @@
 					<p>Starting when you choose this path at 3rd level, when you rage you can choose to go into a frenzy. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action each turn. When your rage ends, you suffer one level of exhaustion (as described in the conditions appendix).</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - Tavern Brawler</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">My hunger for my enemies is blind and unreasoning.</flaws>
 		<gender type="string">Male</gender>
@@ -206,7 +229,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
+			<total type="number">41</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</ideals>
@@ -440,7 +463,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1GP</cost>
-				<count type="number">12</count>
+				<count type="number">11</count>
 				<description type="formattedtext">
 					<p>same as 1 ration.</p>
 					<p>Constitution saving throw of 14 or date 1d4 poison damage</p>
@@ -448,7 +471,7 @@
 				<isidentified type="number">0</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">rotten snake meat</name>
-				<nonid_name type="string">rotten snake meat</nonid_name>
+				<nonid_name type="string">Rotten snake meat</nonid_name>
 				<weight type="number">1</weight>
 			</id-00018>
 			<id-00019>
@@ -508,8 +531,9 @@
 				<name type="string">Gnomish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Jarise Highplate</name>
+		<notes type="string">Rotten Snake meat - \nDeath Elemental - 1d6 necrotic</notes>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I enjoy being strong and like breaking things.\nI have a crude sense of humor.</personalitytraits>
@@ -756,6 +780,9 @@
 			<id-00003>
 				<name type="string">Armor: Light armor. medium armor, shields</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Weapon: Improvised</name>
+			</id-00004>
 		</proficiencylist>
 		<race type="string">Rock Gnome</race>
 		<racelink type="windowreference">
@@ -777,7 +804,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -892,6 +919,7 @@
 				<total type="number">1</total>
 			</id-00018>
 			<id-00019>
+				<locked type="number">1</locked>
 				<misc type="number">0</misc>
 				<name type="string">Artificer's Lore(History)</name>
 				<prof type="number">2</prof>
@@ -908,7 +936,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -942,6 +970,14 @@
 				<type type="string">subracial</type>
 			</id-00003>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">20</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<carried type="number">2</carried>
@@ -982,7 +1018,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1040,29 +1076,9 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
-			<id-00006>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<statmult type="number">1</statmult>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Handaxe - offhand</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00006>
 			<id-00007>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1084,7 +1100,7 @@
 			</id-00007>
 			<id-00008>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1104,6 +1120,26 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00008>
+			<id-00009>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">strength</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Bite</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00009>
 		</weaponlist>
 		<weight type="string">180lb</weight>
 	</character>

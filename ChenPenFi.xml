@@ -17,11 +17,11 @@
 				<score type="number">13</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
@@ -59,8 +59,8 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">3</level>
+				<hdused type="number">0</hdused>
+				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,15 +70,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">22</amount>
+				<amount type="number">50</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">9</amount>
+				<amount type="number">56</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">8</amount>
+				<amount type="number">52</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -100,17 +100,17 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">73.5</load>
+			<load type="number">75.25</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">401</exp>
+		<exp type="number">475</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -216,6 +216,32 @@
 					</list>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<p>(uses heal to compensate for damage dealt)</p>
+					<linklist>
+						<link class="power" recordname="spell.slowfall@Incarnate-Engine">Slow Fall</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I will never fully trust anyone other than myself.</flaws>
 		<gender type="string">Male</gender>
@@ -224,20 +250,34 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
-			<wounds type="number">4</wounds>
+			<total type="number">27</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I help the people who help me-that's what keeps us alive. (Neutral)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
+			<id-00001>
+				<carried type="number">1</carried>
+				<cost type="string">2 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus, as described in Part 3: The Rules of Magic, Casting a Spell. Each type of musical instrument requires a separate proficiency.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Flute</name>
+				<subtype type="string">Musical Instrument</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">1</weight>
+			</id-00001>
 			<id-00002>
 				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
-				<count type="number">10</count>
+				<count type="number">9</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
@@ -425,6 +465,29 @@
 				<name type="string">Map of Neverwinter</name>
 				<weight type="number">0.25</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-Engine">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -455,15 +518,20 @@
 				<name type="string">Elvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Chen Pen Fi</name>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I bluntly say what other people are hinting at or hiding.</personalitytraits>
 		<powergroup>
+			<id-00001>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00001>
 			<id-00004>
 				<atkmod type="number">0</atkmod>
 				<atkprof type="number">1</atkprof>
+				<atkstat type="string">dexterity</atkstat>
 				<name type="string">Ki</name>
 				<prepared type="number">0</prepared>
 				<savemod type="number">0</savemod>
@@ -516,30 +584,39 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -610,7 +687,7 @@
 			<id-00003>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
 					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
@@ -626,7 +703,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Ki</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
@@ -712,6 +789,88 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00002>
+							<id-00003>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00003>
+							<id-00004>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00004>
+							<id-00005>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00005>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Monk Abilities</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<prepared type="number">0</prepared>
+			</id-00006>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10</dice>
+								<stat type="string">monk</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+							<id-00006>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">dexterity</stat>
+								<statmult type="number">1</statmult>
+							</id-00006>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Deflect Missles; DMG: -1d10; DMG: [-MNK]; DMG:[-DEX]</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00019@Incarnate-Engine">Deflect Missiles</link>
+					</linklist>
+				</description>
+				<group type="string">Monk Abilities</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Deflect Missles</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -745,21 +904,21 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -869,7 +1028,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -942,7 +1101,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">10</maxammo>
+				<maxammo type="number">9</maxammo>
 				<name type="string">Dart</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, thrown (range 20/60)</properties>
