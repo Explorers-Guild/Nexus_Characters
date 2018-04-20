@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">42</amount>
+				<amount type="number">49</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">53</amount>
+				<amount type="number">113</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">56</amount>
+				<amount type="number">119</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,15 +109,15 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">89.01</load>
+			<load type="number">89.51</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">374</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">477</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Mobile</name>
+				<name type="string">Mobile - Human Variant</name>
 				<text type="formattedtext">
 					<p>You are exceptionally speedy and agile. You gain the following benefits:</p>
 					<list>
@@ -127,6 +127,15 @@
 					</list>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Lucky</name>
+				<text type="formattedtext">
+					<p>You have inexplicable luck that seems to kick in at just the right moment.</p>
+					<p>You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.</p>
+					<p>You can also spend one luck point when an attack roll is made against you. Roll a d20, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck points when you finish a long rest.</p>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -280,13 +289,25 @@
 					<p>Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - Lucky</name>
+				<source type="string">Druid</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">I'd risk too much to uncover a lost bit of knowledge.</flaws>
 		<gender type="string">Female</gender>
 		<height type="string">1.7m</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
+			<total type="number">31</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Self-Knowledge. If you know yourself, there's nothing left to know. (Any)</ideals>
@@ -555,10 +576,47 @@
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00018>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Elves</name>
+				<name type="string">Elvish</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Common</name>
@@ -567,7 +625,7 @@
 				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Polydora Underhill</name>
 		<notes type="string">I was searching for spiritual enlightenment.\n\nYou saw a vision of a burial mound with exotic magic items deep within. As you watched a group walks up to the front of it and the magician casts fly on the door causing it to raise up. Inside a hologram of an old man asks them some questions (If only your vision had audio) and they pass further into the tomb. You sense they brought provisions to last several days, but the vision fades before you see the end. As it fades, a blue portal opens and you dive through, assuming it is going to bring it to that place, rather you find yourself in the Nexus. Happend 900 years ago in Penolia</notes>
 		<perception type="number">15</perception>
@@ -581,90 +639,89 @@
 				<prepared type="number">3</prepared>
 				<stat type="string">wisdom</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Wildshape Lion</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Wildshape Giant Spider</name>
+			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
-			<id-00001>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">S</components>
-				<description type="formattedtext">
-					<p>You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:</p>
-					<p>You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.</p>
-					<p>You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.</p>
-					<p>You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.</p>
-					<p>You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.</p>
-					<p>If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
-				</description>
-				<duration type="string">Instantaneous or 1 hour (see below)</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Shape Water</name>
-				<prepared type="number">0</prepared>
-				<range type="string">30 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Druid, Sorcerer, Wizard</source>
-			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
@@ -692,12 +749,472 @@
 				<school type="string">Divination</school>
 				<source type="string">Cleric, Druid</source>
 			</id-00002>
-			<id-00003>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">slashing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.lion@Incarnate-Battles">Lion</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Lion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Lion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.lion@Incarnate-Battles">Lion</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Lion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Claw - Lion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">prone; NOTE: lion may make bit attack as bonus action</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.lion@Incarnate-Battles">Lion</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Lion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Pounce - Lion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00011>
+			<id-00012>
 				<actions>
 					<id-00001>
 						<heallist>
 							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d10,d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 7; DEX: [-2DEX]; DEX: 5; CON: [-2CON]; CON: 3; AC: -1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.lion@Incarnate-Battles">Lion</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Lion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Lion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00012>
+			<id-00013>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Common Transformations</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-Engine">98 Wildshape/Polymorph</link>
+					</linklist>
+					<h>Main Description</h>
+					<p>Starting at 2nd Level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+					<p>Your druid level determines the beasts you can transform into as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.</p>
+					<table>
+						<tr>
+							<td colspan="6"><b>Beast Shapes</b></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><b>Max.</b></td>
+							<td colspan="3"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><b>Level</b></td>
+							<td><b>CR</b></td>
+							<td colspan="3"><b>Limitations</b></td>
+							<td><b>Example</b></td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>1/4</td>
+							<td colspan="3">No flying or swimming speed</td>
+							<td>Wolf</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>1/2</td>
+							<td colspan="3">No flying speed</td>
+							<td>Crocodile</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td><b>1</b></td>
+							<td colspan="3"></td>
+							<td>Giant eagle</td>
+						</tr>
+					</table>
+					<p>You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 9 hit points, or die.</p>
+					<p>While you are transformed the following rules apply:</p>
+					<list>
+						<li>Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</li>
+						<li>When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and only have 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.</li>
+						<li>You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities f your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as <i>call lightning </i>, that you've already cast.</li>
+						<li>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
+						<li>You choose whether your equipment falls to the ground in your space, merges into your new form or is worn by it. Worn equipment functions as normal, but the GM decides if it is practical for the new form to ear a piece of equipment based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
+					</list>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Wild Shape</name>
+				<prepared type="number">2</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Druid</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">ADVCHK; ADVSAV; ADVATK</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">DISATK</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">ADVATK</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have inexplicable luck that seems to kick in at just the right moment.</p>
+					<p>You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.</p>
+					<p>You can also spend one luck point when an attack roll is made against you. Roll a d20, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck points when you finish a long rest.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Lucky</name>
+				<prepared type="number">3</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d10,d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 14; DEX: [-2DEX]; DEX: 6; CON: [-2CON]; CON: 2; AC: 0</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantspider@Incarnate-Battles">Giant Spider</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Spider</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Giant Spider</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">3</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">11</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
 								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">NOTE: Only if the target is knocked unconscious; poisoned; restrained</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantspider@Incarnate-Battles">Giant Spider</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Spider</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Giant Spider</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Web; restrained; NOTE escape DC 12, AC 10, hp 5, web is vulnerable to fire and immune to bludgeoning, poison, and psychic damage</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantspider@Incarnate-Battles">Giant Spider</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Spider</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Web - Giant Spider</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Produce Flame</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid</source>
+			</id-00018>
+			<id-00019>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must succeed on a Constitution saving throw or take 1d6 thunder damage.</p>
+					<p>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Thunderclap</name>
+				<prepared type="number">0</prepared>
+				<range type="string">5 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
 								<dice type="dice">d8</dice>
 								<stat type="string">base</stat>
 							</id-00001>
@@ -718,18 +1235,17 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Cure Wounds</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
-			</id-00003>
-			<id-00004>
+			</id-00020>
+			<id-00021>
 				<actions>
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
 								<dice type="dice">d4</dice>
 								<stat type="string">base</stat>
 							</id-00001>
@@ -750,65 +1266,55 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Word</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Druid</source>
-			</id-00004>
-			<id-00005>
+			</id-00021>
+			<id-00022>
 				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a sprig of mistletoe)</components>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.</p>
+					<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Goodberry</name>
-				<prepared type="number">1</prepared>
-				<range type="string">Touch</range>
+				<name type="string">Thunderwave</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (15-foot cube)</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Druid, Ranger</source>
-			</id-00005>
-			<id-00006>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Barkskin; (C); AC: 1</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a handful of oak bark)</components>
-				<description type="formattedtext">
-					<p>You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 hour</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Barkskin</name>
-				<prepared type="number">1</prepared>
-				<range type="string">Touch</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Druid, Ranger</source>
-			</id-00006>
-			<id-00007>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
+			</id-00022>
+			<id-00023>
 				<actions>
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
 								<dice type="dice">d6</dice>
 							</id-00001>
 						</heallist>
@@ -830,13 +1336,39 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Spirit</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
-				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Ranger</source>
-			</id-00007>
-			<id-00008>
+			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Barkskin; (C); AC: 1</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a handful of oak bark)</components>
+				<description type="formattedtext">
+					<p>You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Barkskin</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00024>
+			<id-00025>
 				<actions>
 					<id-00001>
 						<damagelist>
@@ -869,12 +1401,63 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Spike Growth</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">150 feet</range>
-				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Druid, Ranger</source>
-			</id-00008>
+			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">strength</atkstat>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Flame Blade; (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V, S, M (leaf of sumac)</components>
+				<description type="formattedtext">
+					<p>You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action. You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes 3d6 fire damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Flame Blade</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Druid</source>
+			</id-00026>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>

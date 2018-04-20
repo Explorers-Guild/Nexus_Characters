@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">60</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">60</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">63</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,12 +110,29 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">71.35</load>
+			<load type="number">71.85</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">300</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">403</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Furious Fists</name>
+				<text type="formattedtext">
+					<h>Furious Fists</h>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.furiousfists@Incarnate-Engine">Furious Fists</link>
+					</linklist>
+					<h>Description</h>
+					<p>Your Unarmed Strikes become very Brutal, tearing at the fabric of a creatures Soul.</p>
+					<p>You're unarmed strikes deal an additional 1d4 radiant damage.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Furious_Fists_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -282,14 +299,42 @@
 					<p>Due to your mysterious and dark appearance, as well as any potential rumors surfacing about you, many criminal organizations will be willing to house you, and only you, at a comfortable lifestyle, provided you do some favors or jobs for them. If you are openly convicted for a crime that an organization is not able or unwilling to cover up, they will cut all ties with you until your name is cleared.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00010>
+			<id-00011>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<p>(uses heal to compensate for damage dealt)</p>
+					<linklist>
+						<link class="power" recordname="spell.slowfall@Incarnate-Engine">Slow Fall</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">Memories of my old life distract and daze me after reliving them. The image of the death of my master haunts me.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5' 6&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<hdmod type="number">0</hdmod>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
+			<total type="number">31</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Redemption - Even though I might have done wrong in the past, I can do right in the present. (Good)</ideals>
@@ -309,6 +354,7 @@
 					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Coin Pouch - Small</name>
 				<rarity type="string">Common</rarity>
@@ -355,6 +401,7 @@
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard</subtype>
@@ -369,6 +416,7 @@
 					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Tinderbox</name>
 				<subtype type="string">Standard</subtype>
@@ -380,6 +428,7 @@
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Hammer</name>
 				<subtype type="string">Standard</subtype>
@@ -394,6 +443,7 @@
 					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Crowbar</name>
 				<subtype type="string">Standard</subtype>
@@ -408,6 +458,7 @@
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Torch</name>
 				<subtype type="string">Standard</subtype>
@@ -433,6 +484,7 @@
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard</subtype>
@@ -444,6 +496,7 @@
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -455,6 +508,7 @@
 				<cost type="string">5 CP</cost>
 				<count type="number">10</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Piton</name>
 				<subtype type="string">Standard</subtype>
@@ -508,12 +562,12 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
-				<damage type="string">1d4 bludgeoning</damage>
+				<damage type="string">1d4 bludgeoning 1d4 radiant</damage>
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<isidentified type="number">0</isidentified>
-				<locked type="number">1</locked>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">0</locked>
 				<name type="string">Unarmed Strike (Monk)</name>
 				<nonid_name type="string">Unarmed Strike (Monk)</nonid_name>
 				<properties type="string">Finesse</properties>
@@ -521,6 +575,50 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0</weight>
 			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00016>
+			<id-00017>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<weight type="number">0</weight>
+			</id-00017>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -533,7 +631,7 @@
 				<name type="string">Choose two exotic language (Abyssal, Celestial, Deep Speech, Draconic, Infernal, Primordial, Sylvan, or Undercommon)</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Caradine Lee</name>
 		<notes type="string">False Criminal. Despite never having commit crimes before, you were convicted or accused of a crime you had no part in.\n\nI am sole student of a great master, during training I accidentally died (came very close to death) but then mysteriously recovered. The village folk thought I was brought back by a demon and tried to kill me. My master intervened and was slain. I escaped out of coardice and fled as far away as I could.</notes>
 		<perception type="number">12</perception>
@@ -551,63 +649,85 @@
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Feat</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -661,7 +781,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">1 Ki</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
@@ -866,6 +986,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -890,12 +1011,14 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
@@ -912,6 +1035,7 @@
 			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -931,40 +1055,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
-			<id-00004>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<statmult type="number">1</statmult>
-						<type type="string">bludeoning</type>
-					</id-00001>
-				</damagelist>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Unarmed Strike</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00004>
-			<id-00005>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
-				<damagelist>
-				</damagelist>
-				<maxammo type="number">3</maxammo>
-				<name type="string">Ki</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00005>
 			<id-00006>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -974,12 +1064,19 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d4</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">radiant</type>
+					</id-00002>
 				</damagelist>
-				<isidentified type="number">0</isidentified>
+				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">** Unarmed Strike (Monk) **</name>
+				<name type="string">Unarmed Strike (Monk)</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse</properties>
 				<shortcut type="windowreference">
