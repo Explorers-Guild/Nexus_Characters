@@ -78,7 +78,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">10</level>
+				<level type="number">11</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -88,15 +88,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">663</amount>
+				<amount type="number">1092</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">382</amount>
+				<amount type="number">441</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">281</amount>
+				<amount type="number">341</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -126,11 +126,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">145.34</load>
+			<load type="number">156.34</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">1031</exp>
-		<expneeded type="number">1100</expneeded>
+		<exp type="number">1115</exp>
+		<expneeded type="number">1200</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -449,6 +449,17 @@
 					<p>At 10th level, you learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">11</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack (3 total)</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+					<p>The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish.</flaws>
 		<gender type="string">Male</gender>
@@ -457,7 +468,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">84</total>
+			<total type="number">92</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Honor. If I dishonor myself, I dishonor my whole clan. (Lawful)</ideals>
@@ -979,24 +990,42 @@
 				<name type="string">* Party Weight</name>
 				<weight type="number">0</weight>
 			</id-00034>
+			<id-00035>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<name type="string">Trophy - T-rex Tooth</name>
+				<weight type="number">10</weight>
+			</id-00035>
 			<id-00036>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">0</carried>
-				<cost type="string">5 gp</cost>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d6 slashing</damage>
 				<description type="formattedtext">
-					<p></p>
+					<p>You have resistance to one damage type while wearing this ring.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancefire@Incarnate-5eExpansion">Type Resistance (Fire)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>3</td>
+							<td>Fire</td>
+							<td>Garnet</td>
+						</tr>
+					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
-				<name type="string">Handaxe</name>
-				<properties type="string">Light, thrown (range 20/60)</properties>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
+				<name type="string">Ring of Fire Resistance (ATT)</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A garnet ring.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
 			</id-00036>
 			<id-00037>
 				<ac type="number">0</ac>
@@ -1102,12 +1131,13 @@
 				<name type="string">Aquan</name>
 			</id-00009>
 		</languagelist>
-		<level type="number">10</level>
+		<level type="number">11</level>
 		<name type="string">Varric Adahlin</name>
 		<notes type="string">0605 Coal: W,N,W; W,N,E,NW\nAthena's - Dove's Nest</notes>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -1117,7 +1147,9 @@
 				<stat type="string">intelligence</stat>
 			</id-00001>
 			<id-00002>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Class</name>
+				<saveprof type="number">1</saveprof>
 			</id-00002>
 			<id-00003>
 				<name type="string">Effect</name>
@@ -1249,7 +1281,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d10,d10</dice>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -1672,6 +1705,14 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Flaming Sphere (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1780,6 +1821,42 @@
 				<name type="string">Greater Potion</name>
 				<prepared type="number">0</prepared>
 			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Scorching Ray</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00020>
 			<id-00021>
 				<actions>
 					<id-00001>
@@ -1812,6 +1889,19 @@
 			</id-00021>
 			<id-00022>
 				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">IFT: CUSTOM (Eldritch Strike); DISSAV</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">2</durmod>
+						<label type="string">Eldritch Strike</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1824,6 +1914,88 @@
 				<specialization type="string">Eldritch Knight</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00022>
+			<id-00023>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a drop of mercury)</components>
+				<description type="formattedtext">
+					<p>This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.</p>
+					<p>The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.</p>
+					<p>If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Tenser's Floating Disk</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12,d12,d12</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.</p>
+					<p>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Poison Spray</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00024>
+			<id-00025>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: fire</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">ATT</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Fire</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00025>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -1981,7 +2153,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2161,48 +2333,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00007>
-			<id-00008>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">0</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Handaxe</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00036</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00008>
-			<id-00009>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">0</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Handaxe</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00036</recordname>
-				</shortcut>
-				<type type="number">2</type>
-			</id-00009>
 			<id-00010>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">0</carried>
