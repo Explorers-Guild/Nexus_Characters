@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">95</amount>
+				<amount type="number">215</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,14 +79,14 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">121</amount>
+				<amount type="number">155</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">117</amount>
+				<amount type="number">146</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -110,11 +110,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">92.2</load>
+			<load type="number">95.2</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">550</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">634</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -247,6 +247,23 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Mindless Rage</name>
+				<source type="string">Barbarian</source>
+				<specialization type="string">Path of the Berserker</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.mindlessrage@Incarnate-5eExpansion">Mindless Rage</link>
+						<link class="charsheet" recordname="charsheet.id-00002@Incarnate-5eExpansion"></link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">My hunger for my enemies is blind and unreasoning.</flaws>
 		<gender type="string">Male</gender>
@@ -255,7 +272,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">50</total>
+			<total type="number">59</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</ideals>
@@ -264,7 +281,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
-		<inspiration type="number">1</inspiration>
+		<inspiration type="number">0</inspiration>
 		<inventorylist>
 			<id-00001>
 				<carried type="number">1</carried>
@@ -442,6 +459,7 @@
 					<p>A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. The Player's Handbook lists many gods in the multiverse and their typical symbols. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Insignia Amulet</name>
 				<subtype type="string">Holy Symbol</subtype>
@@ -482,6 +500,7 @@
 					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Heartstone</name>
 				<nonid_name type="string">Heartstone</nonid_name>
@@ -490,6 +509,27 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3 expended charges daily at dawn.</p>
+					<linklist>
+						<link class="power" recordname="spell.teleport@Incarnate-5eExpansion">Teleport</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">0</locked>
+				<name type="string">Helm of Teleportation</name>
+				<nonid_name type="string">Bronze Helm</nonid_name>
+				<nonidentified type="string">Taken from a young red dragon.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">3</weight>
+			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -563,14 +603,21 @@
 				<name type="string">Gnomish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Jarise Highplate</name>
-		<notes type="string">Log of Meals --\nRotten Snake meat - *\nDeath Elemental - 1d6 necrotic\nGoblin - *, Well Marinated\nDemon - wisdom dropped by three and gained mild telekenetic feat, Char-Grilled\nMagma Mephit - 2d8, Spicy</notes>
+		<notes type="string">Log of Meals --\nRotten Snake meat - *\nDeath Elemental - 1d6 necrotic\nGoblin - *, Well Marinated\nDemon - Wisdom dropped by three and gained mild telekenetic feat, Char-Grilled\nMagma Mephit - 2d8 fire, Spicy\nGiant Wolf Spider - 2d6 poison, Crunchy, Tangy\nOgre - Chewy, Gritty\nPanther - Tender</notes>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I enjoy being strong and like breaking things.\nI have a crude sense of humor.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00001>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">ATT</name>
+			</id-00002>
 			<id-00004>
 				<atkprof type="number">1</atkprof>
 				<name type="string">Class</name>
@@ -651,6 +698,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -680,7 +728,7 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">ADVCHK: strength; ADVSAV: strength; DMG: 2 melee; RESIST: bludgeoning, piercing, slashing</label>
+						<label type="string">ADVCHK: strength; ADVSAV: strength; DMG: 2 melee; RESIST: bludgeoning, piercing, slashing; Immune to frightened and charmed</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -744,6 +792,7 @@
 				<locked type="number">1</locked>
 				<name type="string">Reckless Attack</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 				<source type="string">Barbarian</source>
 			</id-00004>
 			<id-00005>
@@ -806,11 +855,104 @@
 				<description type="formattedtext">
 					<p>You can apply the force of 1 pound to an object up to 15 feet away from you. This ability lasts for 10 minutes. You must finish a short or long rest before you can use this feature again.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Mild Telekenetic</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10,d10</dice>
+								<type type="string">force</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the table.</p>
+					<table>
+						<tr>
+							<td colspan="2"><b>Familiarity</b></td>
+							<td><b>Mishap</b></td>
+							<td><b>Similar Area</b></td>
+							<td><b>Off Target</b></td>
+							<td><b>On Target</b></td>
+						</tr>
+						<tr>
+							<td colspan="2">Permanent circle</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>01-100</td>
+						</tr>
+						<tr>
+							<td colspan="2">Associated object</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>01-100</td>
+						</tr>
+						<tr>
+							<td colspan="2">Very familiar</td>
+							<td>01-05</td>
+							<td>06-13</td>
+							<td>14-24</td>
+							<td>25-100</td>
+						</tr>
+						<tr>
+							<td colspan="2">Seen casually</td>
+							<td>01-33</td>
+							<td>34-43</td>
+							<td>44-53</td>
+							<td>54-100</td>
+						</tr>
+						<tr>
+							<td colspan="2">Viewed once</td>
+							<td>01-43</td>
+							<td>44-53</td>
+							<td>54-73</td>
+							<td>74-100</td>
+							<td>Description</td>
+							<td>01-43</td>
+							<td>44-53</td>
+							<td>54-73</td>
+							<td>74-100</td>
+						</tr>
+						<tr>
+							<td colspan="2">False destination</td>
+							<td>01-50</td>
+							<td>51-100</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</table>
+					<p><b>Familiarity </b>. &#34;Permanent circle&#34; means a permanent teleportation circle whose sigil sequence you know. &#34;Associated object&#34; means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb. &#34;Very familiar&#34; is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell. &#34;Seen casually&#34; is someplace you have seen more than once but with which you aren't very familiar. &#34;Viewed once&#34; is a place you have seen once, possibly using magic. &#34;Description&#34; is a place whose location and appearance you know through someone else's description, perhaps from a map. &#34;False destination&#34; is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.</p>
+					<p><b>On Target </b>. You and your group (or the target object) appear where you want to.</p>
+					<p><b>Off Target </b>. You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 &#215; 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</p>
+					<p><b>Similar Area </b>. You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</p>
+					<p><b>Mishap </b>. The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the GM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">ATT</group>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Helm to Teleport</name>
+				<prepared type="number">3</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+				<usesperiod type="string">once</usesperiod>
+			</id-00008>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -979,7 +1121,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

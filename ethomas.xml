@@ -17,18 +17,18 @@
 				<score type="number">14</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">2</bonus>
-				<save type="number">2</save>
+				<bonus type="number">3</bonus>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">15</score>
+				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">17</score>
+				<score type="number">18</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">0</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">72</amount>
+				<amount type="number">86</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">49</amount>
+				<amount type="number">73</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">46</amount>
+				<amount type="number">72</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -102,18 +102,18 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">constitution</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">15</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">29.69</load>
+			<load type="number">35.28</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">408</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">492</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -276,19 +276,29 @@
 					<p>Starting at 2nd level, the save DC for all spells you cast that directly deal damage increases by 2</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement [dex+1, int+1]</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">20</total>
+			<total type="number">26</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Magic For Magic&#146;s Sake - I seek to study and improve Magic, simply for the betterment of Magic. (Neutral)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">2</total>
+			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -305,6 +315,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Sachel</location>
 				<locked type="number">1</locked>
 				<name type="string">Alchemist's Supplies</name>
 				<subtype type="string">Artisan's Tools</subtype>
@@ -321,6 +332,7 @@
 					<p>A quill pen is great for writing, and if you ever use it you can easily replace it. Just pluck another from any bird.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Day)</location>
 				<locked type="number">1</locked>
 				<name type="string">Quill Pen</name>
 				<rarity type="string">Common</rarity>
@@ -331,13 +343,14 @@
 			<id-00003>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Main)</location>
 				<locked type="number">1</locked>
 				<name type="string">Coin Pouch - Small</name>
 				<rarity type="string">Common</rarity>
@@ -349,17 +362,20 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">10 GP</cost>
+				<cost type="string">400 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p></p>
+					<p>When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
-				<name type="string">Ink (1-ounce Bottle)</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.06</weight>
+				<name type="string">Potion of Flying</name>
+				<nonid_name type="string">Shiny Potion</nonid_name>
+				<nonidentified type="string">This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</nonidentified>
+				<rarity type="string">very rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
@@ -371,6 +387,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">0</location>
 				<locked type="number">1</locked>
 				<name type="string">Clothes, Apprentice Robes</name>
 				<subtype type="string">Standard</subtype>
@@ -380,13 +397,14 @@
 			<id-00006>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">3 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This book talks about various magical topics.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Main)</location>
 				<locked type="number">1</locked>
 				<name type="string">Book, Arcana</name>
 				<rarity type="string">Very Rare</rarity>
@@ -404,6 +422,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Sachel</location>
 				<locked type="number">1</locked>
 				<name type="string">Parchment (One Sheet)</name>
 				<subtype type="string">Standard</subtype>
@@ -420,6 +439,7 @@
 					<p>This letter of introdution was written by your master so that people know that you studied under/serve him.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Letter from Master</name>
 				<rarity type="string">Rare</rarity>
@@ -439,6 +459,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Clothes, Apprentice Robes</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<nonid_name type="string">Dagger</nonid_name>
@@ -452,7 +473,7 @@
 			<id-00010>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">25 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -460,8 +481,9 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack (Main)</location>
 				<locked type="number">1</locked>
-				<name type="string">Book of Lore</name>
+				<name type="string">Book, Lore</name>
 				<rarity type="string">Rare</rarity>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
@@ -477,6 +499,7 @@
 					<p>An arcane focus is a special item - an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item - designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Orb</name>
 				<subtype type="string">Arcane Focus</subtype>
@@ -484,10 +507,11 @@
 				<weight type="number">3</weight>
 			</id-00011>
 			<id-00012>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Main)</location>
 				<locked type="number">1</locked>
 				<name type="string">Knife (Small)</name>
 				<subtype type="string">Standard</subtype>
@@ -499,8 +523,9 @@
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">5</location>
 				<locked type="number">1</locked>
-				<name type="string">Backpack</name>
+				<name type="string">Backpack (Day)</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
@@ -510,6 +535,7 @@
 				<cost type="string">1 SP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Sachel</location>
 				<locked type="number">1</locked>
 				<name type="string">Parchment (One Sheet)</name>
 				<subtype type="string">Standard</subtype>
@@ -524,6 +550,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Day)</location>
 				<locked type="number">1</locked>
 				<name type="string">Bag (Sand)</name>
 				<subtype type="string">Standard</subtype>
@@ -535,6 +562,7 @@
 				<cost type="string">2 CP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Day)</location>
 				<locked type="number">1</locked>
 				<name type="string">Ink Pen</name>
 				<subtype type="string">Standard</subtype>
@@ -546,6 +574,7 @@
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Day)</location>
 				<locked type="number">1</locked>
 				<name type="string">Ink (1-ounce Bottle)</name>
 				<subtype type="string">Standard</subtype>
@@ -562,12 +591,79 @@
 					<p>Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Spellbook</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">1</location>
+				<locked type="number">1</locked>
+				<name type="string">Pouch</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<cost type="string">1 cp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">2</location>
+				<locked type="number">1</locked>
+				<name type="string">Sachel</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
+			<id-00021>
+				<carried type="number">0</carried>
+				<cost type="string">2 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">6</location>
+				<locked type="number">1</locked>
+				<name type="string">Backpack (Main)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00021>
+			<id-00022>
+				<carried type="number">1</carried>
+				<cost type="string">1 cp</cost>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Day)</location>
+				<locked type="number">1</locked>
+				<name type="string">Torch</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00022>
+			<id-00023>
+				<carried type="number">1</carried>
+				<cost type="string">2 sp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (Day)</location>
+				<locked type="number">1</locked>
+				<name type="string">Waterskin</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -580,7 +676,7 @@
 				<name type="string">Choice</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">e (thomas)</name>
 		<notes type="string">rapid reload...arcna infused</notes>
 		<perception type="number">10</perception>
@@ -596,6 +692,9 @@
 				<saveprof type="number">1</saveprof>
 				<stat type="string">intelligence</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">class</name>
+			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -639,8 +738,8 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
-				<used type="number">1</used>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -676,7 +775,11 @@
 			<id-00001>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
 						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
 					</id-00001>
@@ -704,7 +807,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Catapult (150)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">150 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -717,7 +820,7 @@
 						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
-						<savedcmod type="number">2</savedcmod>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">dexterity</savetype>
@@ -799,7 +902,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Dragon's Breath (B) (T) (C)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -873,6 +976,7 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">class</group>
 				<level type="number">0</level>
 				<name type="string">healing potion</name>
 				<prepared type="number">0</prepared>
@@ -911,7 +1015,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Thunderwave (S-15)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self (15-foot cube)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1076,8 +1180,10 @@
 			<id-00010>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">strength</savetype>
 						<type type="string">cast</type>
@@ -1123,7 +1229,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Maximilian's Earthen Grasp (30) (C)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1163,7 +1269,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Shatter (60)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1215,15 +1321,18 @@
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Illusion</school>
+				<shortdescription type="string">1</shortdescription>
 				<source type="string">Bard, Eldritch Knight, Warlock (Archfey), Warlock (Great Old One), Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00012>
 			<id-00013>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
-						<savetype type="string">wisdom</savetype>
+						<savetype type="string">intelligence</savetype>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -1265,12 +1374,50 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Mind Spike (60) (C)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Divination</school>
 				<source type="string">Sorcerer, Warlock, Wizard</source>
 			</id-00013>
+			<id-00016>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
+					<p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
+				</description>
+				<group type="string">class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Wizard: Arcane Recovery</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Class</school>
+				<source type="string">Wizard</source>
+			</id-00016>
+			<id-00017>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a pearl worth at least 100 gp and an owl feather)</components>
+				<description type="formattedtext">
+					<p>You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.</p>
+					<p>If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Identify (RIT) (T) ($)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Cleric Knowledge Domain, Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00017>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1300,14 +1447,14 @@
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1321,7 +1468,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1349,28 +1496,28 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">0</prof>
-				<stat type="string">strength</stat>
-				<total type="number">0</total>
+				<stat type="string">dexterity</stat>
+				<total type="number">3</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1398,14 +1545,14 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1424,7 +1571,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00014_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1526,7 +1673,7 @@
 			</id-00002>
 			<id-00003>
 				<attackstat type="string">intelligence</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4,d4</dice>
@@ -1535,7 +1682,7 @@
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
-				<name type="string">X-Bow</name>
+				<name type="string">X-Bow unleoaded</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class></class>

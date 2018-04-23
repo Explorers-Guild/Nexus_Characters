@@ -25,7 +25,7 @@
 			</dexterity>
 			<intelligence>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">12</score>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">49</amount>
+				<amount type="number">169</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">113</amount>
+				<amount type="number">142</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">119</amount>
+				<amount type="number">153</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,8 +112,8 @@
 			<load type="number">89.51</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">477</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">561</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -307,7 +307,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Self-Knowledge. If you know yourself, there's nothing left to know. (Any)</ideals>
@@ -625,10 +625,10 @@
 				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Polydora Underhill</name>
 		<notes type="string">I was searching for spiritual enlightenment.\n\nYou saw a vision of a burial mound with exotic magic items deep within. As you watched a group walks up to the front of it and the magician casts fly on the door causing it to raise up. Inside a hologram of an old man asks them some questions (If only your vision had audio) and they pass further into the tomb. You sense they brought provisions to last several days, but the vision fades before you see the end. As it fades, a blue portal opens and you dive through, assuming it is going to bring it to that place, rather you find yourself in the Nexus. Happend 900 years ago in Penolia</notes>
-		<perception type="number">15</perception>
+		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I feel tremendous empathy for all who suffer.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -692,7 +692,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -720,8 +720,27 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Cambat Wild Shape</name>
+				<prepared type="number">0</prepared>
+			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
@@ -749,6 +768,91 @@
 				<school type="string">Divination</school>
 				<source type="string">Cleric, Druid</source>
 			</id-00002>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12,d12,d12</dice>
+								<type type="string">bludgeoning,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a piece of obsidian)</components>
+				<description type="formattedtext">
+					<p>Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes 3d12 bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d12 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Erupting Earth</name>
+				<prepared type="number">1</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Sorcerer, Wizard</source>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8</dice>
+								<type type="string">bludgeoning,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<label type="string">Prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<label type="string">Prone</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a drop of water)</components>
+				<description type="formattedtext">
+					<p>You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 4d8 bludgeoning damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it, and then it vanishes.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Tidal Wave</name>
+				<prepared type="number">1</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Sorcerer, Wizard</source>
+			</id-00005>
 			<id-00009>
 				<actions>
 					<id-00001>
@@ -1235,7 +1339,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Cure Wounds</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1266,50 +1370,12 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Word</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Druid</source>
 			</id-00021>
-			<id-00022>
-				<actions>
-					<id-00001>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d8,d8</dice>
-								<type type="string">thunder</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Thunderwave</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self (15-foot cube)</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
-			</id-00022>
 			<id-00023>
 				<actions>
 					<id-00001>
@@ -1336,8 +1402,9 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Spirit</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Ranger</source>
 			</id-00023>
@@ -1362,7 +1429,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Barkskin</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1401,8 +1468,9 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Spike Growth</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">150 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Druid, Ranger</source>
 			</id-00025>
@@ -1459,7 +1527,7 @@
 				<source type="string">Druid</source>
 			</id-00026>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Herbalism kit</name>
@@ -1483,28 +1551,28 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1560,7 +1628,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1614,7 +1682,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

@@ -4,7 +4,7 @@
 		<abilities>
 			<charisma>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">14</score>
@@ -39,13 +39,16 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
+			<id-00001>
+				<name type="string">found a plant for a mage, saved a boy from kidnappers, killed goblin patrol, killed 2 dragon wormlings</name>
+			</id-00001>
 		</adventurelist>
 		<age type="string">25</age>
 		<alignment type="string">Neutral Good</alignment>
@@ -60,8 +63,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">4</level>
+				<hdused type="number">0</hdused>
+				<level type="number">5</level>
 				<name type="string">Cleric</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +74,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">209</amount>
+				<amount type="number">329</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +82,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">98</amount>
+				<amount type="number">127</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +90,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">109</amount>
+				<amount type="number">143</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,8 +116,8 @@
 			<load type="number">112.06</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">493</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">577</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -292,13 +295,52 @@
 			<id-00009>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement - augment healing</name>
 				<source type="string">Cleric</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<p>When you reach the 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Destroy Undead</name>
+				<source type="string">Cleric</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Destroy undead table.</p>
+					<table>
+						<tr>
+							<td colspan="2"><b>Destroy Undead</b></td>
+						</tr>
+						<tr>
+							<td><b>Cleric Level</b></td>
+							<td><b>Destroys Undead of CR _____</b></td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>1/2 or lower</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>1 or lower</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>2 or lower</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>3 or lower</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>4 or lower</td>
+						</tr>
+					</table>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">As much as I pretend to love fighting, I secretly hate hurting others.</flaws>
 		<height type="string">6'3&#34;</height>
@@ -306,8 +348,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
-			<wounds type="number">1</wounds>
+			<total type="number">38</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Charity - I'm doing what I do so others can benefit. (Good)</ideals>
 		<initiative>
@@ -744,7 +786,7 @@
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Celestial, Infernal</name>
+				<name type="string">Celestial</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Common</name>
@@ -752,8 +794,11 @@
 			<id-00003>
 				<name type="string">Orc</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Infernal</name>
+			</id-00004>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Segon</name>
 		<notes type="string">I have perfected the dramatic wedding ceremony.</notes>
 		<perception type="number">13</perception>
@@ -770,9 +815,6 @@
 			<id-00002>
 				<name type="string">Class Feature</name>
 			</id-00002>
-			<id-00004>
-				<name type="string">Feat</name>
-			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -820,7 +862,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -848,7 +890,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -883,9 +925,10 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
+								<bonus type="number">4</bonus>
 								<dice type="dice">d8</dice>
 								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -894,7 +937,7 @@
 					<id-00002>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
+								<bonus type="number">8</bonus>
 								<dice type="dice">d8,d8</dice>
 								<stat type="string">base</stat>
 								<statmult type="number">1</statmult>
@@ -980,94 +1023,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Cleric, Cleric Life Domain</source>
 			</id-00004>
-			<id-00005>
-				<actions>
-					<id-00005>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 1 Spell Slot); HEAL: 3</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00005>
-					<id-00006>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 2 Spell Slot); HEAL: 4</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00006>
-					<id-00007>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 3 Spell Slot); HEAL: 5</label>
-						<order type="number">3</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00007>
-					<id-00008>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 4 Spell Slot); HEAL: 6</label>
-						<order type="number">4</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00008>
-					<id-00009>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 5 Spell Slot); HEAL: 7</label>
-						<order type="number">5</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00009>
-					<id-00010>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 6 Spell Slot); HEAL: 8</label>
-						<order type="number">6</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00010>
-					<id-00011>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 7 Spell Slot); HEAL: 9</label>
-						<order type="number">7</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00011>
-					<id-00012>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 8 Spell Slot); HEAL: 10</label>
-						<order type="number">8</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00012>
-					<id-00013>
-						<apply type="string">action</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Disciple of Life (Level 9 Spell Slot); HEAL: 11</label>
-						<order type="number">9</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00013>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="reference_classfeature" recordname="class.procleric.features.id-00013@Incarnate-5eExpansion">Disciple of Life</link>
-					</linklist>
-				</description>
-				<group type="string">Class Feature</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Disciple of Life</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -1542,14 +1497,27 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
+								<bonus type="number">4</bonus>
 								<dice type="dice">d4</dice>
 								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">8</bonus>
+								<dice type="dice">d4</dice>
+								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 bonus action</castingtime>
@@ -2065,9 +2033,10 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
+								<bonus type="number">8</bonus>
 								<dice type="dice">d8,d8</dice>
 								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -2285,40 +2254,8 @@
 				<specialization type="string">Life Domain</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00044>
-			<id-00048>
-				<actions>
-					<id-00006>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Level 1 Augment Healing; Heal: 2</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00006>
-					<id-00007>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Level 2 Augment Healing; Heal: 4</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00007>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00197@Incarnate-5eExpansion">Augment Healing</link>
-					</linklist>
-				</description>
-				<group type="string">Feat</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Augment Healing</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00048>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Simple weapons</name>
@@ -2346,21 +2283,21 @@
 				<name type="string">Religion</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -2416,7 +2353,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -2470,7 +2407,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00012_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 		</traitlist>
 		<weaponlist>
