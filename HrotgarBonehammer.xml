@@ -14,7 +14,7 @@
 				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">14</score>
+				<score type="number">15</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">1</bonus>
@@ -31,11 +31,11 @@
 				<score type="number">8</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<bonus type="number">4</bonus>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">17</score>
+				<score type="number">18</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">8</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">743</amount>
+				<amount type="number">988</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">179</amount>
+				<amount type="number">228</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">187</amount>
+				<amount type="number">236</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -107,13 +107,13 @@
 		</defenses>
 		<deity type="string">Bahamut</deity>
 		<encumbrance>
-			<encumbered type="number">85</encumbered>
-			<encumberedheavy type="number">170</encumberedheavy>
-			<liftpushdrag type="number">510</liftpushdrag>
+			<encumbered type="number">90</encumbered>
+			<encumberedheavy type="number">180</encumberedheavy>
+			<liftpushdrag type="number">540</liftpushdrag>
 			<load type="number">91.501</load>
-			<max type="number">255</max>
+			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">727</exp>
+		<exp type="number">811</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
@@ -259,6 +259,32 @@
 					<p>Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Feral Instinct</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.feralinstinct@Incarnate-5eExpansion">Feral Instinct</link>
+					</linklist>
+					<h>Description</h>
+					<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
+					<p>Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</p>
+				</text>
+			</id-00012>
+			<id-00013>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I have a family, but I have no idea where they are. One day, I hope to see them again.</flaws>
 		<gender type="string">Male</gender>
@@ -267,7 +293,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">59</total>
+			<total type="number">77</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Destiny. Nothing and no one can steer me away from my higher calling. (Any)</ideals>
@@ -278,10 +304,15 @@
 		</initiative>
 		<inventorylist>
 			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
@@ -621,7 +652,7 @@
 			<id-00018>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">30 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d12 slashing</damage>
@@ -630,6 +661,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpackk</location>
 				<locked type="number">1</locked>
 				<name type="string">Greataxe</name>
 				<nonid_name type="string">Greataxe</nonid_name>
@@ -703,44 +735,6 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">1</weight>
 			</id-00021>
-			<id-00022>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Greater Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -785,7 +779,7 @@
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">4,530 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d12 slashing</damage>
@@ -805,7 +799,7 @@
 					<p><b>Curse </b>. This axe is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the axe, keeping it within reach at all times. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear.</p>
 					<p>Whenever a hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to attack the next nearest creature after you fell your current target. If you have multiple possible targets, you attack one at random. You are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear.</p>
 				</description>
-				<isidentified type="number">0</isidentified>
+				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
 				<name type="string">Berserker Adamantine Greataxe of Sharpness</name>
@@ -816,6 +810,69 @@
 				<type type="string">Weapon</type>
 				<weight type="number">7</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This key opens the door in the elven dungeon in 06,05. It is the door on the otherside of the lava pit. It contains:</p>
+					<linklist>
+						<link class="treasureparcel" recordname="treasureparcels.id-00006">Elven Hoard</link>
+					</linklist>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Small Silver Key</name>
+				<nonid_name type="string">Small Silver Key</nonid_name>
+				<nonidentified type="string">It has a prism shapped handle made of crystal.</nonidentified>
+				<weight type="number">0</weight>
+			</id-00025>
+			<id-00026>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Rope, Hempen (50 Feet)</name>
+				<weight type="number">0</weight>
+			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -825,7 +882,7 @@
 				<name type="string">Draconic</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">8</level>
 		<name type="string">Hrotgar Bonehammer</name>
 		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.\n\nTrying to find the focal point of both water and the gate if Hades\n\nDragonborns in the island around 0502\n\nHIlda and Heirum is the name of his Family\nq\n\nCannot use Horn of Valhala for 3 sessions\n\nCannot use Horn for 3 more sessions\n</notes>
 		<perception type="number">10</perception>
@@ -1371,6 +1428,30 @@
 				<name type="string">Potion of Greater Healing</name>
 				<prepared type="number">0</prepared>
 			</id-00018>
+			<id-00019>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Sword of Sharpness; DMG:4d6 slashing, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00839@Incarnate-5eExpansion">Sword of Sharpness</link>
+					</linklist>
+				</description>
+				<group type="string">Class Features</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sword of Sharpness</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00019>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1473,7 +1554,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">0</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1537,7 +1618,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1669,7 +1750,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1756,7 +1837,7 @@
 			</id-00006>
 			<id-00007>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1817,19 +1898,19 @@
 				<type type="number">2</type>
 			</id-00009>
 			<id-00010>
-				<attackbonus type="number">0</attackbonus>
+				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
+						<bonus type="number">1</bonus>
 						<dice type="dice">d12</dice>
 						<stat type="string">base</stat>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
-				<isidentified type="number">0</isidentified>
+				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">** Greataxe **</name>
+				<name type="string">Berserker Adamantine Greataxe of Sharpness</name>
 				<prof type="number">1</prof>
 				<properties type="string">Heavy two-handed</properties>
 				<shortcut type="windowreference">

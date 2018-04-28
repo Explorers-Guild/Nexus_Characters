@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">801</amount>
+				<amount type="number">1146</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">302</amount>
+				<amount type="number">351</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">283</amount>
+				<amount type="number">332</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -97,12 +97,13 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">1</armor>
-				<misc type="number">0</misc>
+				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
+				<misc type="number">1</misc>
 				<prof type="number">1</prof>
-				<shield type="number">0</shield>
+				<shield type="number">2</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">13</total>
+				<total type="number">15</total>
 			</ac>
 		</defenses>
 		<deity type="string">Wats this mean? There aint but one God</deity>
@@ -110,10 +111,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">65.6</load>
+			<load type="number">71.6</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">748</exp>
+		<exp type="number">832</exp>
 		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
@@ -533,7 +534,7 @@
 			<id-00010>
 				<ac type="number">11</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -668,7 +669,7 @@
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -874,6 +875,42 @@
 				<name type="string">Weapons</name>
 				<weight type="number">0</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">2</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,510 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>-</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="" recordname="@Incarnate-Forge">Shield of Missile Attraction</link>
+					</linklist>
+					<h>Description</h>
+					<p>While holding this shield you have resistance to damage from ranged weapon attacks.</p>
+					<p><b>Curse </b>. This shield is cursed. Attuning to it curses you until you are targeted by the remove curse spell or similar magic. Removing the shield fails to end the curse on you. Whenever a ranged weapon attack is made against a target within 10 feet of you the curse causes you to become the target instead.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepoison@Incarante-Foundation">Type Resistance (Poison)</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have resistance to poison damage while you wear this armor.</p>
+				</description>
+				<dexbonus type="string">-</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Attuned items</location>
+				<locked type="number">1</locked>
+				<name type="string">Arrow Attraction Shield (Wooden) of Poison Resistance</name>
+				<nonid_name type="string">Shield</nonid_name>
+				<nonidentified type="string">A well crafted shield.</nonidentified>
+				<rarity type="string">common</rarity>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Shield</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">6</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -894,6 +931,7 @@
 		<perception type="number">18</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I try reel hard to be friendly to folk, but some dont lik me cause I dont no much about the world. But I can tell what peeple think about me reel well. If there mean, I dont have anything to do with them. If there nice, I'll do anything for them. I dont jump into truble, but if my friends in truble, I'll wade rit in to help him.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -1219,12 +1257,25 @@
 						<savetype type="string">wisdom</savetype>
 						<type type="string">cast</type>
 					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Polymorph; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S, M (a caterpillar cocoon)</components>
 				<description type="formattedtext">
-					<p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech. The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>
+					<h>Common Transformations</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">98 Wildshape/Polymorph</link>
+					</linklist>
+					<h>Description</h>
+					<p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). This Challenge Rating may not exceed 8.</p>
+					<p>The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech. The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 hour</duration>
 				<group type="string">Spells</group>
@@ -2571,6 +2622,13 @@
 			</id-00052>
 			<id-00053>
 				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">IF: TYPE(undead); DISATK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">

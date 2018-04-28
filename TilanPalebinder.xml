@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">527</amount>
+				<amount type="number">872</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">159</amount>
+				<amount type="number">208</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">163</amount>
+				<amount type="number">212</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,10 +113,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">56.83</load>
+			<load type="number">61.83</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">647</exp>
+		<exp type="number">731</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -200,7 +200,7 @@
 						<link class="power" recordname="spell.blackhealing@Incarnate-5eExpansion">Black Healing</link>
 					</linklist>
 					<p><b>Shadow Carapace</b></p>
-					<p>You conjure a bonelike, brittle suit of armour to protect yourself. Your AC increases by an amount equal to the level of the spell slot you used while your Carapace is active. You are proficient with your Carapace. A Carapace cannot be worn by a creature other than you. You cannot wear any other armor or have any other effects that modify your AC while the Carapace is worn.</p>
+					<p>You conjure a bonelike, brittle suit of armour to protect yourself. Your AC increases by an amount equal to the level of the spell slot you used while your Carapace is active. You are proficient with your Carapace. A Carapace cannot be worn by a creature other than you. The Carapace qualifies as medium armor so you cannot wear any other armor while the Carapace is worn. This armor is made of shadows and is therefore not metalic.</p>
 					<p>The spell slot you are allowed to use for the Shadow Carapace is limited by your Wizard level as follows:</p>
 					<table>
 						<tr>
@@ -228,7 +228,7 @@
 						<link class="power" recordname="spell.shadowcarapace@Incarnate-5eExpansion">Shadow Carapace</link>
 					</linklist>
 					<p><b>Ghostly Crossbow</b></p>
-					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. It has a range of 80/320. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes an action to summon a ghostly bolt for it to fire (so you cannot attack with it the same turn you summon a bolt unless you have a method of getting another action or attacking with a bonus action)</p>
+					<p>You conjure a ghostly Crossbow. It deals Xd4 piercing damage, with X being the level of the spell slot you used to create it. It counts as magical for the purposes of overcoming resisistance and immunity, and you are proficient with it. It has a range of 80/320. To any other creature it is a normal Crossbow (that vanishes at sunrise). It takes a bonus action to summon a ghostly bolt for it to fire.</p>
 					<linklist>
 						<link class="power" recordname="spell.ghostlycrossbow@Incarnate-5eExpansion">Ghostly Crossbow</link>
 					</linklist>
@@ -304,7 +304,7 @@
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<p>Loving death and pain, your spells seem to seek life making them even harder to evade and resist.</p>
-					<p>Starting at 2nd level, the save DC for all spells you cast that directly deal damage increases by 2</p>
+					<p>Starting at 2nd level, your spells may seek the life force of the target. You have advantage on an attack with a spell or your target has disadvantage on its save. You may use this ability as many times as your Intelligence modifier per day.</p>
 				</text>
 			</id-00009>
 			<id-00010>
@@ -331,7 +331,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
+			<total type="number">44</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Greater Good - Magic should be used to protect and improve the lives of the common people. (Good)</ideals>
@@ -770,6 +770,49 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.</p>
+					<p>The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the GM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain 1d3 expended charges daily at dawn.</p>
+					<p>Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Pipes of the Sewers</name>
+				<nonid_name type="string">Pipes (musical instrument)</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2,700 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>Legends of crystal weapons abound. Many are said to have strange properties... but if these properties exist and how they are unlocked is a mystery that may never be answered. Maybe if you could track down their creators?</p>
+					<p>For now crystal weapons are prized because they are almost indestructible. They survive in the roughest of environments. Acid and rust cannot touch them, and no one has been able to break one yet. They also shine and glitter as light passes through parts of them and makes the images on the sides light up.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Crystal Quarterstaff</name>
+				<nonid_name type="string">Quarterstaff</nonid_name>
+				<nonidentified type="string">A sturdy quarterstaff.</nonidentified>
+				<properties type="string">Versatile (1d8)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00025>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -782,7 +825,7 @@
 				<name type="string">Primordial</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Tilan Palebinder</name>
 		<notes type="string">No bones, incredibly flexible.\nDoes not like snakes.\nProficient with pipes?\nDistrusts Athena - she locked up snailfolk : ( and is generally creepy\nDistrusts Hades - wants to destroy the land in the process\nThere must be a middle ground</notes>
 		<perception type="number">11</perception>
@@ -801,6 +844,12 @@
 			<id-00002>
 				<name type="string">Ishilb</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Item</name>
+			</id-00003>
+			<id-00004>
+				<name type="string">Effect</name>
+			</id-00004>
 			<id-00005>
 				<atkprof type="number">1</atkprof>
 				<name type="string">Black Magic</name>
@@ -849,7 +898,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
@@ -860,7 +909,7 @@
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
+				<max type="number">1</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -884,7 +933,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1154,7 +1203,7 @@
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
 						<savedcbase type="string">ability</savedcbase>
-						<savedcmod type="number">2</savedcmod>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
 						<savedcstat type="string">intelligence</savedcstat>
 						<savemagic type="number">1</savemagic>
@@ -1245,7 +1294,7 @@
 						<atkmod type="number">0</atkmod>
 						<atkprof type="number">1</atkprof>
 						<order type="number">1</order>
-						<savedcmod type="number">2</savedcmod>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">dexterity</savetype>
@@ -1316,6 +1365,19 @@
 			<id-00014>
 				<actions>
 					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4</dice>
+								<stat type="string">dexterity</stat>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing, magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
 						<atkbase type="string">ability</atkbase>
 						<atkmod type="number">0</atkmod>
 						<atkprof type="number">1</atkprof>
@@ -1326,38 +1388,25 @@
 						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">0</savemagic>
 						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
+					</id-00002>
+					<id-00003>
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d4</dice>
 								<stat type="string">dexterity</stat>
 								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
+								<type type="string">piercing, magic</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d4,d4</dice>
-								<stat type="string">dexterity</stat>
-								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">3</order>
 						<type type="string">damage</type>
 					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="power" recordname="spell.beastsight@Incarnate-5eExpansion">Ghostly Crossbow</link>
+						<link class="reference_classfeature" recordname="class.prowizard.features.id-00031@Incarnate-5eExpansion">Black Magic Form</link>
 					</linklist>
 				</description>
 				<group type="string">Black Magic</group>
@@ -1408,7 +1457,7 @@
 						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
-						<savedcmod type="number">2</savedcmod>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
@@ -1566,7 +1615,7 @@
 						<atkprof type="number">1</atkprof>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
-						<savedcmod type="number">2</savedcmod>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
@@ -1647,7 +1696,50 @@
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00020>
-			<id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Ishilb</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<prepared type="number">0</prepared>
+			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Black Magic Savant; DISSAV</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Loving death and pain, your spells seem to seek life making them even harder to evade and resist.</p>
+					<p>Starting at 2nd level, your spells may seek the life force of the target. You have advantage on an attack with a spell or your target has disadvantage on its save. You may use this ability as many times as your Intelligence modifier per day.</p>
+				</description>
+				<group type="string">Black Magic</group>
+				<locked type="number">1</locked>
+				<name type="string">Black Magic Savant</name>
+				<prepared type="number">3</prepared>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Darkness</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00023>
+			<id-00024>
 				<actions>
 					<id-00005>
 						<damagelist>
@@ -1698,7 +1790,7 @@
 				<name type="string">Black Magic Detonation</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
-			</id-00021>
+			</id-00024>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1852,7 +1944,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2010,6 +2102,28 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Crystal Quarterstaff</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
 		</weaponlist>
 		<weight type="string">150 lbs</weight>
 	</character>

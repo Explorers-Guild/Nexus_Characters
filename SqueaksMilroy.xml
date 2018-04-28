@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,7 +70,7 @@
 				</shortcut>
 			</id-00001>
 		</classes>
-		<coinother type="string">171 GP 82 SP 76 CP</coinother>
+		<coinother type="string">516 GP 131 SP 125 CP</coinother>
 		<coins>
 			<slot1>
 				<amount type="number">0</amount>
@@ -108,14 +108,14 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">40</encumbered>
-			<encumberedheavy type="number">80</encumberedheavy>
-			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">10.32</load>
-			<max type="number">120</max>
+			<encumbered type="number">5.33333</encumbered>
+			<encumberedheavy type="number">10.6667</encumberedheavy>
+			<liftpushdrag type="number">32</liftpushdrag>
+			<load type="number">9.32</load>
+			<max type="number">16</max>
 		</encumbrance>
-		<exp type="number">595</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">679</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">0</locked>
@@ -160,7 +160,7 @@
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Favored Enemy - Ooze</name>
+				<name type="string">Favored Enemy - Ooze, Undead</name>
 				<source type="string">Ranger</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -297,7 +297,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">34</total>
+			<total type="number">40</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Boredom - Get me away from this boring life! (Chaotic)</ideals>
@@ -325,13 +325,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00001>
-			<id-00002>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<name type="string">Grapes</name>
-				<weight type="number">1</weight>
-			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -628,7 +621,7 @@
 				<name type="string">Mikon</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Squeaks Milroy</name>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -649,6 +642,12 @@
 			<id-00004>
 				<name type="string">Exhaustion</name>
 			</id-00004>
+			<id-00007>
+				<name type="string">Z Polymorph Mammoth</name>
+			</id-00007>
+			<id-00008>
+				<name type="string">Z Polymorph</name>
+			</id-00008>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -729,7 +728,7 @@
 			<id-00001>
 				<actions>
 					<id-00001>
-						<label type="string">Mikon Specialty; IFT:TYPE(beast,ooze); ATK: 1d4</label>
+						<label type="string">Mikon Specialty; IFT:TYPE(beast,ooze,undead); ATK: 1d4</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -821,6 +820,45 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Druid, Ranger</source>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">10</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">7</bonus>
+								<dice type="dice">d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-Battles">Mammoth</link>
+					</linklist>
+				</description>
+				<group type="string">Z Polymorph Mammoth</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Gore - Mammoth</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -1049,6 +1087,45 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">10</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">7</bonus>
+								<dice type="dice">d10,d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-Battles">Mammoth</link>
+					</linklist>
+				</description>
+				<group type="string">Z Polymorph Mammoth</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Stomp - Mammoth</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00013>
 			<id-00014>
 				<actions>
 					<id-00001>
@@ -1080,6 +1157,91 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
 			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">18</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-Battles">Mammoth</link>
+					</linklist>
+				</description>
+				<group type="string">Z Polymorph Mammoth</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Trampling Charge - Mammoth</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">55</bonus>
+								<dice type="dice">d12,d12,d12,d12,d12,d12,d12,d12,d12,d12,d12</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 14; DEX: [-2DEX]; DEX: -1; CON: [-2CON]; CON: 11; AC: 3</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-Battles">Mammoth</link>
+					</linklist>
+				</description>
+				<group type="string">Z Polymorph Mammoth</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Mammoth</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Polymorph armor conversion; AC: -6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Z Polymorph</group>
+				<level type="number">0</level>
+				<name type="string">Armor Conversion</name>
+				<prepared type="number">0</prepared>
+			</id-00017>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1099,7 +1261,7 @@
 			<recordname>race.id-00013@Incarnate-5eExpansion</recordname>
 		</racelink>
 		<senses type="string">Darkvision 60</senses>
-		<size type="string">Mikon</size>
+		<size type="string">Pocket</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
@@ -1250,7 +1412,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1297,7 +1459,7 @@
 			</id-00003>
 			<id-00004>
 				<locked type="number">1</locked>
-				<name type="string">Mikon Specialty - Beast, Ooze</name>
+				<name type="string">Mikon Specialty - Beast, Ooze, Undead</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
 					<p>There is only so much time in school, so Mikons specialize in learning the weaknesses of different types of creatures. All Mikons learn the weaknesses of beasts. At levels 3, 6, 9, 12, 15, 18, and 20 you may learn additional types from: Aberrations, Celestials, Constructs, Dragons, Elementals, Feys, Fiends, Giants, Humanoids, Misons, Monstrosities, Oozes, Plants, Swarms, Undead.</p>
@@ -1347,18 +1509,18 @@
 				</text>
 				<type type="string">racial</type>
 			</id-00005>
-			<id-00006>
+			<id-00007>
 				<locked type="number">1</locked>
 				<name type="string">Sprint</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
-					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer two levels of exhaustion.</p>
+					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer one level of exhaustion.</p>
 					<linklist>
 						<link class="encounter" recordname="encounter.id-00004@Incarnate-5eExpansion">Exhaustion</link>
 					</linklist>
 				</text>
 				<type type="string">racial</type>
-			</id-00006>
+			</id-00007>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
@@ -1370,6 +1532,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
