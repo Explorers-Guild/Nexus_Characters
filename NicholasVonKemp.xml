@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1169</amount>
+				<amount type="number">440</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">277</amount>
+				<amount type="number">411</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">300</amount>
+				<amount type="number">436</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -95,14 +95,14 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">6</armor>
+				<armor type="number">8</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
 				<misc type="number">1</misc>
 				<prof type="number">1</prof>
 				<shield type="number">2</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">19</total>
+				<total type="number">21</total>
 			</ac>
 		</defenses>
 		<deity type="string">Tempus</deity>
@@ -110,11 +110,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">139.02</load>
+			<load type="number">149.52</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">820</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">839</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -392,7 +392,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Effect Coding</h>
 					<linklist>
@@ -575,26 +575,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00013>
-			<id-00014>
-				<ac type="number">16</ac>
-				<carried type="number">2</carried>
-				<cost type="string">75 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk.</p>
-					<p>Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.</p>
-				</description>
-				<dexbonus type="string">-</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Worn</location>
-				<locked type="number">1</locked>
-				<name type="string">Chain Mail</name>
-				<stealth type="string">Disadvantage</stealth>
-				<strength type="string">Str 13</strength>
-				<subtype type="string">Heavy Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">55</weight>
-			</id-00014>
 			<id-00015>
 				<ac type="number">2</ac>
 				<carried type="number">2</carried>
@@ -767,6 +747,29 @@
 				<type type="string">Weapon</type>
 				<weight type="number">6</weight>
 			</id-00020>
+			<id-00021>
+				<ac type="number">18</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1,500 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Plate consists of shaped, interlocking metal plates that cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p>
+				</description>
+				<dexbonus type="string">-</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Plate</name>
+				<nonid_name type="string">Plate Armor</nonid_name>
+				<nonidentified type="string">Some well-crafted plate armor.</nonidentified>
+				<rarity type="string">rare</rarity>
+				<stealth type="string">Disadvantage</stealth>
+				<strength type="string">Str 15</strength>
+				<subtype type="string">Heavy Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">65</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -791,6 +794,7 @@
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I see omens in every event and action. The gods try to speak to us, we just need to listen.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -820,7 +824,9 @@
 				<name type="string">Half Elf</name>
 			</id-00006>
 			<id-00007>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Effect</name>
+				<saveprof type="number">1</saveprof>
 			</id-00007>
 			<id-00009>
 				<name type="string">Healing Consumables</name>
@@ -942,8 +948,10 @@
 					<id-00001>
 						<atkbase type="string">fixed</atkbase>
 						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
 						<atktype type="string">melee</atktype>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<savetype type="string">wisdom</savetype>
 						<type type="string">cast</type>
 					</id-00001>
@@ -1069,7 +1077,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Divine Sense</name>
-				<prepared type="number">4</prepared>
+				<prepared type="number">6</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Paladin</source>
 				<specializationchoice type="number">0</specializationchoice>
@@ -1130,30 +1138,29 @@
 			<id-00006>
 				<actions>
 					<id-00001>
-						<durmod type="number">1</durmod>
+						<durmod type="number">10</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Divine Favor; DMG: 1d4 radiant; (C)</label>
+						<label type="string">Shield of Faith; AC: 2; (C)</label>
 						<order type="number">1</order>
-						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 bonus action</castingtime>
-				<components type="string">V, S</components>
+				<components type="string">V, S, M (a small parchment with a bit of holy text written on it)</components>
 				<description type="formattedtext">
-					<p>Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.</p>
+					<p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p>
 				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
+				<duration type="string">Concentration, up to 10 minutes</duration>
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Divine Favor</name>
+				<name type="string">Shield of Faith</name>
 				<prepared type="number">1</prepared>
-				<range type="string">Self</range>
+				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Paladin</source>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Paladin</source>
 			</id-00006>
 			<id-00007>
 				<actions>
@@ -1763,7 +1770,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1809,7 +1816,7 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

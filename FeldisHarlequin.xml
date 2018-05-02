@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">163</amount>
+				<amount type="number">1060</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">10</amount>
+				<amount type="number">144</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">17</amount>
+				<amount type="number">153</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,10 +110,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">75.281</load>
+			<load type="number">86.281</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">623</exp>
+		<exp type="number">642</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -264,7 +264,7 @@
 			<id-00008>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement - 2CHA</name>
 				<source type="string">Sorcerer</source>
 				<text type="formattedtext">
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
@@ -752,6 +752,54 @@
 				<name type="string">Etagra</name>
 				<weight type="number">5</weight>
 			</id-00033>
+			<id-00034>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>Drink up and see who tips over. This small keg has enough for a two-person competition. (Needs to be refilled between each use. Average price of refilling is 1 GP)</p>
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00002@Incarnate-5eExpansion">Keg of Ale</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Keg of Ale</name>
+				<subtype type="string">Gaming Set</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">10</weight>
+			</id-00034>
+			<id-00035>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">902 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00010@Incarnate-Syrinscape"><b>Syrinscape </b></link>: Dagger</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature.</p>
+					<p>That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Dagger of Venom</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">rare</rarity>
+				<subtype type="string">(dagger)</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00035>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -780,6 +828,9 @@
 				<stat type="string">charisma</stat>
 				<uses type="number">0</uses>
 			</id-00001>
+			<id-00002>
+				<name type="string">Effect</name>
+			</id-00002>
 			<id-00003>
 				<name type="string">Class</name>
 			</id-00003>
@@ -891,6 +942,7 @@
 				<description type="formattedtext">
 					<p>You can use your action to headbutt a creature within 10 feet of you. Your target makes a Dexterity saving throw. The dc for this saving throw equals 8 + your strength modifier + your proficiency bonus. On a failure, the target takes bludgeoning damage equal to 1d6 + your Constitution modifier and is knocked five feet away from you. You automatically move to their previous position. On a success, they take no damage and can make an opportunity attack.</p>
 				</description>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Horns (Antilonoid)</name>
@@ -942,6 +994,12 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<label type="string">NOTE: No Reaction</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1089,6 +1147,34 @@
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Cleric Trickery Domain, Druid, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<label type="string">ATK: 1d4; CHECK: 1d4; SAVE: 1d4</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<label type="string">ATK: -1d4; CHECK: -1d4; SAVE: -1d4</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 6th level, you have the ability to twist fate using your wild magic. When another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll. You can do so after the creature rolls but before any effects of the roll occur.</p>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bend Luck (2SP)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Sorcerer</source>
+				<specialization type="string">Wild Magic</specialization>
+			</id-00008>
 			<id-00009>
 				<actions>
 					<id-00001>
@@ -1250,6 +1336,7 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">*Offhand</name>
 				<prepared type="number">0</prepared>
@@ -1265,6 +1352,7 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">*Dodge</name>
 				<prepared type="number">0</prepared>
@@ -1318,7 +1406,9 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">*Musk</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
@@ -1343,10 +1433,21 @@
 						<type type="string">damage</type>
 					</id-00002>
 					<id-00003>
+						<durmod type="number">1</durmod>
 						<label type="string">Poisoned</label>
 						<order type="number">3</order>
 						<type type="string">effect</type>
 					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">4</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1371,10 +1472,14 @@
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<group type="string">Class</group>
 				<level type="number">0</level>
 				<name type="string">*SorcererPoints</name>
 				<prepared type="number">6</prepared>
+				<ritual type="number">0</ritual>
 			</id-00020>
 			<id-00021>
 				<actions>
@@ -1414,6 +1519,7 @@
 			<class>reference_race</class>
 			<recordname>race.id-00002@Incarnate-5eExpansion</recordname>
 		</racelink>
+		<senses type="string">Darkvision 30</senses>
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
@@ -1579,7 +1685,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1705,13 +1811,36 @@
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">20</maxammo>
 				<name type="string">Shortbow</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00017</recordname>
 				</shortcut>
 				<type type="number">1</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger of Venom</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00035</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
@@ -1753,6 +1882,29 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00006>
+			<id-00007>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger of Venom</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00035</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00007>
 		</weaponlist>
 		<weight type="string">160</weight>
 	</character>
