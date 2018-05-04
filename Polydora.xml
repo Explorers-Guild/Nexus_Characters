@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">169</amount>
+				<amount type="number">205</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">142</amount>
+				<amount type="number">203</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">153</amount>
+				<amount type="number">215</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,24 +96,25 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">1</armor>
+				<armor type="number">2</armor>
+				<dexbonus type="string">max2</dexbonus>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">2</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">15</total>
+				<total type="number">16</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">89.51</load>
+			<load type="number">98.01</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">561</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">645</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -299,6 +300,16 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Primal Strike</name>
+				<source type="string">Druid</source>
+				<specialization type="string">Circle of the Moon</specialization>
+				<text type="formattedtext">
+					<p>Starting at 6th level, your attacks in beast form count as being magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I'd risk too much to uncover a lost bit of knowledge.</flaws>
 		<gender type="string">Female</gender>
@@ -307,7 +318,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
+			<total type="number">45</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Self-Knowledge. If you know yourself, there's nothing left to know. (Any)</ideals>
@@ -500,17 +511,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00012>
-			<id-00013>
-				<carried type="number">1</carried>
-				<cost type="string">2 gp</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Backpack</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00013>
 			<id-00014>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -527,7 +527,7 @@
 			</id-00014>
 			<id-00015>
 				<ac type="number">11</ac>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -536,6 +536,7 @@
 				</description>
 				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Leather</name>
 				<stealth type="string">-</stealth>
@@ -581,7 +582,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Effect Coding</h>
 					<linklist>
@@ -613,6 +614,57 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">12</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.</p>
+				</description>
+				<dexbonus type="string">Yes (max 2)</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Hide</name>
+				<nonid_name type="string">Hide Armor</nonid_name>
+				<nonidentified type="string">Some well-crafted hide armor.</nonidentified>
+				<rarity type="string">common</rarity>
+				<strength type="string">-</strength>
+				<subtype type="string">Medium Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">12</weight>
+			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Backpack</name>
+				<weight type="number">0</weight>
+			</id-00020>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,800 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancecold@Incarnate-5eExpansion">Type Resistance (Cold)</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Warmth</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A ruby ring.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -625,7 +677,7 @@
 				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Polydora Underhill</name>
 		<notes type="string">I was searching for spiritual enlightenment.\n\nYou saw a vision of a burial mound with exotic magic items deep within. As you watched a group walks up to the front of it and the magician casts fly on the door causing it to raise up. Inside a hologram of an old man asks them some questions (If only your vision had audio) and they pass further into the tomb. You sense they brought provisions to last several days, but the vision fades before you see the end. As it fades, a blue portal opens and you dive through, assuming it is going to bring it to that place, rather you find yourself in the Nexus. Happend 900 years ago in Penolia</notes>
 		<perception type="number">16</perception>
@@ -645,6 +697,20 @@
 			<id-00003>
 				<name type="string">Wildshape Giant Spider</name>
 			</id-00003>
+			<id-00004>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Wildshape Giant Lizard</name>
+				<saveprof type="number">1</saveprof>
+			</id-00004>
+			<id-00005>
+				<name type="string">Wildshape Lizard</name>
+			</id-00005>
+			<id-00006>
+				<name type="string">Wildshape Saber-toothed Tiger</name>
+			</id-00006>
+			<id-00007>
+				<name type="string">Wildshape Polar Bear</name>
+			</id-00007>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -692,7 +758,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -720,7 +786,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -731,12 +797,12 @@
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
-						<healtargeting type="string">self</healtargeting>
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Wildshape Giant Lizard</group>
 				<level type="number">0</level>
 				<name type="string">Cambat Wild Shape</name>
 				<prepared type="number">0</prepared>
@@ -768,6 +834,45 @@
 				<school type="string">Divination</school>
 				<source type="string">Cleric, Druid</source>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">4</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantlizard@Incarnate-Battles">Giant Lizard</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Lizard</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Giant Lizard</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00003>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -853,6 +958,120 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 5; DEX: [-2DEX]; DEX: 2; CON: [-2CON]; CON: 1; AC: 0</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantlizard@Incarnate-Battles">Giant Lizard</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Lizard</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Giant Lizard</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">6</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+								<dice type="dice">d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.sabertoothedtiger@Incarnate-Battles">Saber-toothed Tiger</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Saber-toothed Tiger</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Saber-toothed Tiger</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">6</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">slashing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.sabertoothedtiger@Incarnate-Battles">Saber-toothed Tiger</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Saber-toothed Tiger</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Claw - Saber-toothed Tiger</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
 			<id-00009>
 				<actions>
 					<id-00001>
@@ -1002,6 +1221,52 @@
 			</id-00012>
 			<id-00013>
 				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Wildshape; Armor Adjustment; AC: -3</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">3</order>
+						<type type="string">heal</type>
+					</id-00003>
+					<id-00004>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">4</order>
+						<type type="string">heal</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1057,6 +1322,7 @@
 						<li>You choose whether your equipment falls to the ground in your space, merges into your new form or is worn by it. Worn equipment functions as normal, but the GM decides if it is practical for the new form to ear a piece of equipment based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
 					</list>
 				</description>
+				<group type="string">Wildshape Giant Lizard</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Wild Shape</name>
@@ -1097,6 +1363,7 @@
 					<p>You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.</p>
 					<p>You can also spend one luck point when an attack roll is made against you. Roll a d20, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck points when you finish a long rest.</p>
 				</description>
+				<group type="string">Wildshape Giant Lizard</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Lucky</name>
@@ -1288,7 +1555,8 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d6</dice>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -1376,6 +1644,39 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Druid</source>
 			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">14</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.sabertoothedtiger@Incarnate-Battles">Saber-toothed Tiger</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Saber-toothed Tiger</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Pounce - Saber-toothed Tiger</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00022>
 			<id-00023>
 				<actions>
 					<id-00001>
@@ -1526,6 +1827,156 @@
 				<school type="string">Evocation</school>
 				<source type="string">Druid</source>
 			</id-00026>
+			<id-00027>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">14</bonus>
+								<dice type="dice">d10,d10,d10,d10,d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 8; DEX: [-2DEX]; DEX: 4; CON: [-2CON]; CON: 5; AC: -1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.sabertoothedtiger@Incarnate-Battles">Saber-toothed Tiger</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Saber-toothed Tiger</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Saber-toothed Tiger</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00027>
+			<id-00029>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">15</bonus>
+								<dice type="dice">d10,d10,d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 10; DEX: [-2DEX]; DEX: 0; CON: [-2CON]; CON: 6; AC: 1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.polarbear@Incarnate-Battles">Polar Bear</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Polar Bear</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Polar Bear</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00029>
+			<id-00030>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">7</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">slashing, magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.polarbear@Incarnate-Battles">Polar Bear</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Polar Bear</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Claws - Polar Bear</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00030>
+			<id-00031>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">7</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing, magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.polarbear@Incarnate-Battles">Polar Bear</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Polar Bear</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Polar Bear</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00031>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1682,7 +2133,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
