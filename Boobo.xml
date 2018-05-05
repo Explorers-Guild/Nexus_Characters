@@ -25,7 +25,7 @@
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
-				<save type="number">1</save>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">8</score>
@@ -38,11 +38,11 @@
 				<score type="number">15</score>
 			</strength>
 			<wisdom>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -59,7 +59,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">5</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -100,18 +100,18 @@
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">13</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">10</encumbered>
 			<encumberedheavy type="number">20</encumberedheavy>
 			<liftpushdrag type="number">60</liftpushdrag>
-			<load type="number">42.11</load>
+			<load type="number">0</load>
 			<max type="number">30</max>
 		</encumbrance>
-		<exp type="number">384</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">523</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -291,6 +291,16 @@
 					</list>
 				</text>
 			</id-00006>
+			<id-00007>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement(level 4 Wis)</name>
+				<source type="string">Druid</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00007>
 		</featurelist>
 		<gender type="string">Male</gender>
 		<height type="string">5in</height>
@@ -298,7 +308,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">17</total>
+			<total type="number">25</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -310,7 +320,7 @@
 			<id-00001>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -323,22 +333,66 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00001>
-			<id-00005>
-				<carried type="number">1</carried>
-				<cost type="string">2 SP</cost>
+			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">priceless</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Waterskin</name>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00005>
+				<weight type="number">0.1</weight>
+			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This backpack holds much less than a normal backpack.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Backpack (tiny)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.5</weight>
+			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">1 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This bedroll is only big enough for a tiny creature.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack (tiny)</location>
+				<locked type="number">1</locked>
+				<name type="string">Bedroll (tiny)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00004>
 			<id-00006>
 				<ac type="number">11</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -348,7 +402,7 @@
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Leather</name>
+				<name type="string">Leather (tiny)</name>
 				<nonid_name type="string">Leather Armor</nonid_name>
 				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
 				<rarity type="string">common</rarity>
@@ -356,49 +410,32 @@
 				<strength type="string">-</strength>
 				<subtype type="string">Light Armor</subtype>
 				<type type="string">Armor</type>
-				<weight type="number">10</weight>
+				<weight type="number">3</weight>
 			</id-00006>
 			<id-00007>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Torch</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00007>
-			<id-00008>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">5 SP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Rations (1 Day)</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">2</weight>
-			</id-00008>
 			<id-00009>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Mess Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -406,14 +443,14 @@
 				<weight type="number">1</weight>
 			</id-00009>
 			<id-00010>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Tinderbox</name>
 				<subtype type="string">Standard</subtype>
@@ -423,7 +460,7 @@
 			<id-00011>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">15 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
@@ -441,18 +478,55 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0.01</weight>
 			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">2 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
+					<p>Tiny Rations contain enough rations for a tiny creature for one day.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack (tiny)</location>
+				<locked type="number">1</locked>
+				<name type="string">Rations (tiny)(4)</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.25</weight>
+			</id-00012>
+			<id-00013>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">1 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A tiny waterskin holds 1/4 gallon of liquid. This is enough for a tiny creature for one day.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack (tiny)</location>
+				<locked type="number">1</locked>
+				<name type="string">Waterskin (tiny)</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">2</weight>
+			</id-00013>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Mikon</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">5</level>
 		<name type="string">Boobo</name>
-		<perception type="number">15</perception>
+		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">likes shiny things</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -463,14 +537,15 @@
 				<prepared type="number">1</prepared>
 				<stat type="string">wisdom</stat>
 			</id-00001>
-			<id-00002>
-				<name type="string">Wildshape Giant Lizard</name>
-			</id-00002>
 			<id-00003>
-				<name type="string">Effect</name>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Wildshape Warhorse</name>
+				<saveprof type="number">1</saveprof>
 			</id-00003>
 			<id-00004>
-				<name type="string">Wildshape Black Bear</name>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Mikon Specialty Humanoid</name>
+				<saveprof type="number">1</saveprof>
 			</id-00004>
 			<id-00005>
 				<name type="string">Wildshape Blackbear</name>
@@ -518,11 +593,11 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -978,81 +1053,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Druid</source>
 			</id-00013>
-			<id-00014>
-				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">4</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d8</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantlizard@Incarnate-Battles">Giant Lizard</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Lizard</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Bite - Giant Lizard</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00014>
-			<id-00015>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">3</bonus>
-								<dice type="dice">d10,d10,d10</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 5; DEX: [-2DEX]; DEX: 2; CON: [-2CON]; CON: 1; AC: 0</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantlizard@Incarnate-Battles">Giant Lizard</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Lizard</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Transformation - Giant Lizard</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00015>
 			<id-00016>
 				<actions>
 					<id-00001>
@@ -1070,7 +1070,7 @@
 						<link class="reference_racialtrait" recordname="race.id-00013.traits.id-00009@Incarnate-5eExpansion">Mikon Specialty</link>
 					</linklist>
 				</description>
-				<group type="string">Wildshape Black Bear</group>
+				<group type="string">Mikon Specialty Humanoid</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Mikon Specialty</name>
@@ -1141,7 +1141,7 @@
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-Battles">Black Bear</link>
+						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-5eBattles">Black Bear</link>
 					</linklist>
 				</description>
 				<group type="string">Wildshape Blackbear</group>
@@ -1180,7 +1180,7 @@
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-Battles">Black Bear</link>
+						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-5eBattles">Black Bear</link>
 					</linklist>
 				</description>
 				<group type="string">Wildshape Blackbear</group>
@@ -1219,7 +1219,7 @@
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-Battles">Black Bear</link>
+						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-5eBattles">Black Bear</link>
 					</linklist>
 				</description>
 				<group type="string">Wildshape Blackbear</group>
@@ -1229,8 +1229,163 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">6</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-Battles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Hooves - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">14</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-Battles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Trampling Charge - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 8; DEX: [-2DEX]; DEX: 2; CON: [-2CON]; CON: 3; AC: -1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-Battles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Flaming Sphere; (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a bit of tallow, a pinch of brimstone, and a dusting of powdered iron)</components>
+				<description type="formattedtext">
+					<p>A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one. As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn. When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Flaming Sphere</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Wizard</source>
+			</id-00024>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears</name>
@@ -1258,7 +1413,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -1286,14 +1441,14 @@
 				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1335,7 +1490,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1377,7 +1532,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00018>
 		</skilllist>
 		<speed>
@@ -1508,7 +1663,7 @@
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

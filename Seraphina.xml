@@ -3,11 +3,11 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">17</score>
+				<score type="number">18</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
@@ -49,7 +49,7 @@
 		</adventurelist>
 		<age type="string">unknown( Appearance of a girl around 12 years old)</age>
 		<alignment type="string">Chaotic Neutral</alignment>
-		<appearance type="string">Seraphina has the appearance of a young girl of about 12 years. She does not know her true age and only holds a ring as a reminder of her mother. She has auburn hair and hazel coloerd eyes that burn with a radiance that is captivating. He is very charismatic and even dressed in rags would project refinement. Her skin is slightly more reddish than a normal human's but not to the point of being emediatly eveident. If closely examined, there are very small and thin pinkish dragon-like scales that cover entire body. This is not seen by many. Mostly she is seen as just another Human Urchin (although she is in fact a half-elf)</appearance>
+		<appearance type="string">Seraphina has the appearance of a young girl of about 12 years. She does not know her true age and only holds a ring as a reminder of her mother. She has auburn hair and hazel coloerd eyes that burn with a radiance that is captivating. She is very charismatic and even dressed in rags would project refinement. Her skin is slightly more reddish than a normal human's but not to the point of being emediatly eveident. If closely examined, there are very small and thin translucient pinkish dragon scales that cover her entire body. This is not seen by many. Mostly she is seen as just another Human child. (although she is in fact a half-elf)</appearance>
 		<background type="string">Urchin</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -59,9 +59,10 @@
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -105,10 +106,25 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">75.76</load>
+			<load type="number">3</load>
 			<max type="number">120</max>
 		</encumbrance>
+		<exp type="number">439</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Elven Accuracy</name>
+				<prerequisite type="string">Elf or half-elf</prerequisite>
+				<text type="formattedtext">
+					<p><i>Prerequisite: Elf or half-elf</i></p>
+					<p>The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits:</p>
+					<list>
+						<li>Increase your Dexterity, Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+						<li>Whenever you have advantage on an attack roll using Dexterity, Intelligence, Wisdom, or Charisma, you can reroll one of the dice once.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -335,13 +351,25 @@
 					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <i>magic missile </i>and <i>scorching ray </i>aren't eligible, but <i>ray of frost </i>is.</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">It's not stealing if I need it more than someone else.</flaws>
 		<gender type="string">Female</gender>
 		<height type="string">4' 10&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">23</total>
+			<total type="number">30</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I help the people who help me-that's what keeps us alive.</ideals>
@@ -352,10 +380,11 @@
 		</initiative>
 		<inventorylist>
 			<id-00001>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Crossbow Bolts (20)</name>
 				<subtype type="string">Ammunition</subtype>
@@ -363,11 +392,12 @@
 				<weight type="number">1.5</weight>
 			</id-00001>
 			<id-00002>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Slung</location>
 				<locked type="number">1</locked>
 				<name type="string">Crossbow, Light</name>
 				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
@@ -376,13 +406,14 @@
 				<weight type="number">5</weight>
 			</id-00002>
 			<id-00003>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description).</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Component Pouch</name>
 				<subtype type="string">Standard</subtype>
@@ -390,10 +421,11 @@
 				<weight type="number">2</weight>
 			</id-00003>
 			<id-00004>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Strapped to Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Bedroll</name>
 				<subtype type="string">Standard</subtype>
@@ -401,13 +433,14 @@
 				<weight type="number">7</weight>
 			</id-00004>
 			<id-00005>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">10</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard</subtype>
@@ -415,13 +448,14 @@
 				<weight type="number">2</weight>
 			</id-00005>
 			<id-00006>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">10</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Torch</name>
 				<subtype type="string">Standard</subtype>
@@ -429,13 +463,14 @@
 				<weight type="number">1</weight>
 			</id-00006>
 			<id-00007>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Tinderbox</name>
 				<subtype type="string">Standard</subtype>
@@ -443,10 +478,11 @@
 				<weight type="number">1</weight>
 			</id-00007>
 			<id-00008>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Slung</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard</subtype>
@@ -454,13 +490,14 @@
 				<weight type="number">5</weight>
 			</id-00008>
 			<id-00009>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Mess Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -468,10 +505,11 @@
 				<weight type="number">1</weight>
 			</id-00009>
 			<id-00010>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Strapped to Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -479,22 +517,24 @@
 				<weight type="number">10</weight>
 			</id-00010>
 			<id-00011>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Worn</location>
 				<locked type="number">1</locked>
-				<name type="string">Backpack (Empty)</name>
+				<name type="string">Backpack</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00011>
 			<id-00012>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">2</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -503,13 +543,14 @@
 				<weight type="number">1</weight>
 			</id-00012>
 			<id-00013>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Thieves' Tools</name>
 				<subtype type="string">Kits / Sets</subtype>
@@ -517,10 +558,11 @@
 				<weight type="number">1</weight>
 			</id-00013>
 			<id-00014>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Knife (Small)</name>
 				<subtype type="string">Standard</subtype>
@@ -528,27 +570,30 @@
 				<weight type="number">0.25</weight>
 			</id-00014>
 			<id-00015>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<name type="string">Map of Neverwinter</name>
 				<weight type="number">0.5</weight>
 			</id-00015>
 			<id-00016>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pocket</location>
 				<name type="string">Pet Mouse (Named &#34;Stump&#34;)</name>
 				<weight type="number">0.5</weight>
 			</id-00016>
 			<id-00017>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Pouch</name>
 				<subtype type="string">Standard</subtype>
@@ -556,10 +601,11 @@
 				<weight type="number">1</weight>
 			</id-00017>
 			<id-00018>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Worn</location>
 				<locked type="number">1</locked>
 				<name type="string">Signet Ring (Token from mother)</name>
 				<subtype type="string">Standard</subtype>
@@ -571,12 +617,62 @@
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Worn</location>
 				<locked type="number">1</locked>
 				<name type="string">Clothes, Common</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">2,702 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>Legends of crystal weapons abound. Many are said to have strange properties... but if these properties exist and how they are unlocked is a mystery that may never be answered. Maybe if you could track down their creators?</p>
+					<p>For now crystal weapons are prized because they are almost indestructible. They survive in the roughest of environments. Acid and rust cannot touch them, and no one has been able to break one yet. They also shine and glitter as light passes through parts of them and makes the images on the sides light up.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Crystal Dagger</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger.</nonidentified>
+				<properties type="string">Finesse light thrown (range 20/60)</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -589,73 +685,100 @@
 				<name type="string">Draconic</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Seraphina</name>
 		<notes type="string">*backstory in progress*</notes>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I bluntly say what other people are hinting at or hiding. I do not like liars. I care not for law but I hold loyality dear. I will do whateve I want, whenever I want to do it.</personalitytraits>
+		<personalitytraits type="string">I bluntly say what other people are hinting at or hiding. I do not like liars. I care not for law but I hold loyality dear. I will do whatever I want, whenever I want to do it.</personalitytraits>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 				<stat type="string">charisma</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Feats</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Font of Magic</name>
+			</id-00003>
+			<id-00004>
+				<name type="string">Metamagic</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -738,27 +861,21 @@
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">S</components>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>You choose a nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:</p>
-					<list>
-						<li>You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.</li>
-						<li>You instantaneously extinguish the flames within the cube.</li>
-						<li>You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.</li>
-						<li>You cause simple shapes-such as the vague form of a creature, an inanimate object, or a location-to appear within the flames and animate as you like. The shapes last for 1 hour.</li>
-					</list>
-					<p>If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action.</p>
+					<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p>
+					<p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p>
+					<p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
 				</description>
-				<duration type="string">Instantaneous or 1 hour (see below)</duration>
+				<duration type="string">1 minute</duration>
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Control Flames</name>
+				<name type="string">Mage Hand</name>
 				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Druid, Sorcerer, Wizard</source>
+				<range type="string">30 feet</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00003>
 			<id-00004>
 				<actions>
@@ -800,49 +917,57 @@
 			<id-00005>
 				<actions>
 					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d12</dice>
-								<type type="string">lightning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
 						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Witch Bolt (C)</label>
-						<order type="number">3</order>
+						<label type="string">AC: 5</label>
+						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
-					</id-00003>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a twig from a tree that has been struck by lightning)</components>
+				<castingtime type="string">1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell</castingtime>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has total cover from you.</p>
-					<p>At Higher Levels.</p>
-					<p>When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.</p>
+					<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>
 				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
+				<duration type="string">1 round</duration>
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Witch Bolt (30)</name>
-				<prepared type="number">0</prepared>
-				<range type="string">30 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+				<name type="string">Shield</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Self</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">GRANTDISATK; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Blur</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Druid Desert Circle, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
@@ -876,7 +1001,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Burning Hands</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self (15-foot cone)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -913,7 +1038,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Scorching Ray</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -933,11 +1058,95 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Misty Step</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<school type="string">Conjuration</school>
 				<source type="string">Sorcerer, Warlock, Wizard</source>
 			</id-00009>
+			<id-00010>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Font of Magic</group>
+				<level type="number">0</level>
+				<name type="string">Sorcery Points</name>
+				<prepared type="number">4</prepared>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00010>
+			<id-00011>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Metamagic</group>
+				<level type="number">0</level>
+				<name type="string">Quicken Spell</name>
+				<prepared type="number">0</prepared>
+			</id-00011>
+			<id-00012>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Metamagic</group>
+				<level type="number">0</level>
+				<name type="string">Careful Spell</name>
+				<prepared type="number">0</prepared>
+			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.</p>
+					<p>The bonfire ignites flammable objects in its area that aren't being worn or carried.</p>
+					<p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Create Bonfire</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00013>
+			<id-00015>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p><i>Prerequisite: Elf or half-elf</i></p>
+					<p>The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits:</p>
+					<list>
+						<li>Increase your Dexterity, Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+						<li>Whenever you have advantage on an attack roll using Dexterity, Intelligence, Wisdom, or Charisma, you can reroll one of the dice once.</li>
+					</list>
+				</description>
+				<group type="string">Feats</group>
+				<locked type="number">1</locked>
+				<name type="string">Elven Accuracy</name>
+				<prepared type="number">0</prepared>
+				<prerequisite type="string">Elf or half-elf</prerequisite>
+			</id-00015>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -975,7 +1184,7 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1003,7 +1212,7 @@
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1031,7 +1240,7 @@
 				<name type="string">Performance</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1059,7 +1268,7 @@
 				<name type="string">Deception</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1092,7 +1301,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1116,7 +1325,7 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1139,7 +1348,7 @@
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1162,7 +1371,7 @@
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1182,6 +1391,28 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">0</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Crystal Dagger</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse light thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00021</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
 		</weaponlist>
 		<weight type="string">76 lbs.</weight>
 	</character>
