@@ -46,6 +46,12 @@
 			</wisdom>
 		</abilities>
 		<adventurelist>
+			<id-00001>
+				<name type="string">Level 6 - Get Misty Step spell</name>
+				<text type="formattedtext">
+					<p></p>
+				</text>
+			</id-00001>
 		</adventurelist>
 		<age type="string">17</age>
 		<alignment type="string">Chaotic Neutral</alignment>
@@ -404,9 +410,14 @@
 				<weight type="number">5</weight>
 			</id-00009>
 			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Knife (Small)</name>
@@ -500,6 +511,7 @@
 					<p>Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">1 Magic Items</location>
 				<locked type="number">1</locked>
 				<name type="string">Horn of Blasting</name>
 				<nonid_name type="string">Horn</nonid_name>
@@ -537,6 +549,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">1 Magic Items</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Greater Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -579,6 +592,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">1 Magic Items</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Remove Curse</name>
 				<nonid_name type="string">Scroll</nonid_name>
@@ -605,6 +619,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">1 Magic Items</name>
+				<weight type="number">0</weight>
+			</id-00020>
 		</inventorylist>
 		<languagelist>
 			<id-00002>
@@ -628,6 +649,9 @@
 				<prepared type="number">4</prepared>
 				<stat type="string">intelligence</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Effects - Reapply daily</name>
+			</id-00002>
 			<id-00003>
 				<name type="string">Effects</name>
 			</id-00003>
@@ -679,7 +703,7 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">2</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -723,14 +747,42 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Effects</group>
+				<group type="string">Effects - Reapply daily</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Type Resistance (Fire)</name>
+				<name type="string">Type Resistance (Fire) - Tiefling</name>
 				<prepared type="number">5</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Darkness; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, M (bat fur and a drop of pitch or piece of coal)</components>
+				<description type="formattedtext">
+					<p>Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness. If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">1 Darkness - Tiefling - doesn't use spell slot - once per long rest</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00002>
 			<id-00003>
 				<actions>
 				</actions>
@@ -753,7 +805,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">1 Tiefling Thaumaturgy</name>
+				<name type="string">1 Thaumaturgy - Tiefling</name>
 				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
@@ -793,7 +845,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">1 Tiefling Hellish Rebuke Lvl 2</name>
+				<name type="string">1 Hellish Rebuke Lvl 2 - Tiefling - doesn't use spell slot - once per long rest</name>
 				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
@@ -849,6 +901,7 @@
 				<name type="string">Mage Hand</name>
 				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
 			</id-00006>
@@ -1085,7 +1138,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Shield</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
@@ -1143,7 +1196,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Thunderwave</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self (15-foot cube)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1238,7 +1291,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Shatter</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1278,7 +1331,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Unseen Servant - ritual</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Conjuration</school>
@@ -1316,7 +1369,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Fireball</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">150 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1343,7 +1396,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Gaseous Form</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1563,7 +1616,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00011_token</token>
+		<token type="token">portrait_localid-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
