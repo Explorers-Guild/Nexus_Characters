@@ -17,11 +17,11 @@
 				<score type="number">14</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
@@ -48,18 +48,19 @@
 		<adventurelist>
 		</adventurelist>
 		<alignment type="string">Chaotic Good</alignment>
-		<background type="string">Adventurer</background>
+		<background type="string">Battlesmith</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
-			<recordname>background.id-00001@Incarnate-5eExpansion</recordname>
+			<recordname>background.id-00005@Incarnate-5eExpansion</recordname>
 		</backgroundlink>
+		<bonds type="string">A battlesmith saved me, and I strive towards filling their enormous footsteps.</bonds>
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">74</amount>
+				<amount type="number">112</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -77,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">61</amount>
+				<amount type="number">116</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">62</amount>
+				<amount type="number">117</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -100,17 +101,17 @@
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">15</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">68.1</load>
+			<load type="number">82.71</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">384</exp>
+		<exp type="number">426</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -151,7 +152,7 @@
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Favored Enemy</name>
+				<name type="string">Favored Enemy (Orc, hobgoblin)</name>
 				<source type="string">Ranger</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -181,6 +182,16 @@
 					</linklist>
 				</text>
 			</id-00005>
+			<id-00006>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - 2 in dex</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00006>
 			<id-00007>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -308,25 +319,46 @@
 					<p>At 3rd level, attacking at a weapon's long range no longer poses disadvantage on the attack roll.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<locked type="number">1</locked>
+				<name type="string">Guardian</name>
+				<source type="string">Battlesmith</source>
+				<text type="formattedtext">
+					<p>You are or were, the guardian of a patron, (likely a noble dwarven clan) and a known battlesmith. Your patron may come to you with demands or requests; enemies of your patron may try to buy, manipulate, or kill you; and you will likely have made some enemies of your own during your career. The life of a battlesmith can be busy, hectic, and complicated, even long after retirement or expulsion. Work with your GM to flesh out your patron, their enemies, and your personal enemies if you have any.</p>
+				</text>
+			</id-00013>
+			<id-00014>
+				<locked type="number">1</locked>
+				<name type="string">Battlesmith - Starting Equipment</name>
+				<source type="string">Battlesmith</source>
+				<text type="formattedtext">
+					<h>Parcel</h>
+					<linklist>
+						<link class="treasureparcel" recordname="treasureparcels.id-00027@Incarnate-5eExpansion">Starting Items - Battlesmith</link>
+					</linklist>
+				</text>
+			</id-00014>
 		</featurelist>
+		<flaws type="string">I find any reason to fight, often attacking enemies when other solutions could have been met.</flaws>
 		<gender type="string">male</gender>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
+			<total type="number">32</total>
 			<wounds type="number">0</wounds>
 		</hp>
+		<ideals type="string">i do as i wish who is going to stop me</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">1</count>
 				<damage type="string">1 bludgeoning</damage>
@@ -344,7 +376,7 @@
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">priceless... but only to you</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -379,7 +411,7 @@
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -449,7 +481,7 @@
 				<weight type="number">10</weight>
 			</id-00007>
 			<id-00008>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -474,7 +506,7 @@
 				<weight type="number">7</weight>
 			</id-00009>
 			<id-00010>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -501,7 +533,7 @@
 				<weight type="number">5</weight>
 			</id-00011>
 			<id-00012>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -517,7 +549,7 @@
 			<id-00013>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -531,7 +563,7 @@
 				<weight type="number">2</weight>
 			</id-00013>
 			<id-00014>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -545,7 +577,7 @@
 				<weight type="number">1</weight>
 			</id-00014>
 			<id-00015>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -640,6 +672,160 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00019>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This badge can be worn to publicly declare who you serve. In friendly places this earns you respect, but be careful of the enemies it may bring with it.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Badge showing patron's crest</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A chain has 10 hit points. It can be burst with a successful DC 20 Strength check.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Chain (5 Feet)</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Common</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Hammer</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This letter is from your patron. If your patron is powerful and you are on a plane where they have influence then this letter may allow you to get into meetings with powerful people. If you try to use the letter to influence an enemy of your patron it very well may end with your impronment or death.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Letter from patron</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This metal flask is perfect for toting around a precious liquid. Whether alcohol, medicine, or a rare magical elixer, this flask will give it some protection against dropping and spilling the liquid.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Metal Flask</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.5</weight>
+			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. make a ranged attack against a target creature or object, treating the oil as an improvised weapon, On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. if lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Oil (Flask)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Whetstone</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00262@Incarnate-5eExpansion">Thieve's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Thieve's Tools</name>
+				<subtype type="string">Kits / Sets</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">1</weight>
+			</id-00029>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -655,10 +841,11 @@
 				<name type="string">Orc</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">jasper</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
+		<personalitytraits type="string">my loyalty to my employer is unmatched</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
@@ -667,7 +854,9 @@
 				<stat type="string">wisdom</stat>
 			</id-00001>
 			<id-00002>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Effect</name>
+				<saveprof type="number">1</saveprof>
 			</id-00002>
 		</powergroup>
 		<powermeta>
@@ -773,10 +962,9 @@
 			<id-00002>
 				<actions>
 					<id-00001>
-						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<durunit type="string">day</durunit>
-						<label type="string">IFT: CUSTOM(Hunter's Mark); DMG: 1d6</label>
+						<durunit type="string">hour</durunit>
+						<label type="string">IFT: CUSTOM(Hunter's Mark); DMG: 1d6; (C)</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -881,6 +1069,9 @@
 			<id-00003>
 				<name type="string">Tool: Thieves' Tools</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Tool: Cartographer's Tools</name>
+			</id-00004>
 		</proficiencylist>
 		<race type="string">Half-Elf</race>
 		<racelink type="windowreference">
@@ -902,7 +1093,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -958,7 +1149,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -979,7 +1170,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -991,9 +1182,9 @@
 			<id-00015>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1026,7 +1217,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1050,7 +1241,7 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -1070,7 +1261,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">0</ammo>
+				<ammo type="number">5</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
