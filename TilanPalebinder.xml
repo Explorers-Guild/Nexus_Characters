@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">872</amount>
+				<amount type="number">1486</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">208</amount>
+				<amount type="number">286</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">212</amount>
+				<amount type="number">291</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,11 +113,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">61.83</load>
+			<load type="number">58.83</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">731</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">787</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -332,7 +332,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">44</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">35</wounds>
 		</hp>
 		<ideals type="string">Greater Good - Magic should be used to protect and improve the lives of the common people. (Good)</ideals>
 		<initiative>
@@ -655,43 +655,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00019>
-			<id-00020>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Greater Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -718,7 +681,7 @@
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -738,7 +701,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Effect Coding</h>
 					<linklist>
@@ -902,15 +865,15 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">1</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
@@ -1162,7 +1125,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Feather Fall</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1696,6 +1659,56 @@
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8,d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8,d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a small piece of phosphorus)</components>
+				<description type="formattedtext">
+					<p>You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.</p>
+					<p>When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.</p>
+					<p>One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Wall of Fire</name>
+				<prepared type="number">1</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric Light Domain, Druid, Eldritch Knight, Warlock (Fiend), Monk, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00021>
 			<id-00022>
 				<actions>
 					<id-00001>
@@ -1732,6 +1745,7 @@
 					<p>Starting at 2nd level, your spells may seek the life force of the target. You have advantage on an attack with a spell or your target has disadvantage on its save. You may use this ability as many times as your Intelligence modifier per day.</p>
 				</description>
 				<group type="string">Black Magic</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Black Magic Savant</name>
 				<prepared type="number">3</prepared>
@@ -1791,6 +1805,57 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00024>
+			<id-00025>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Black Magic</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00026>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1944,7 +2009,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2104,7 +2169,7 @@
 			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

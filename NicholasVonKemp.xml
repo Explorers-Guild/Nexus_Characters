@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">440</amount>
+				<amount type="number">1054</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">411</amount>
+				<amount type="number">490</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">436</amount>
+				<amount type="number">514</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -113,7 +113,7 @@
 			<load type="number">149.52</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">839</exp>
+		<exp type="number">895</exp>
 		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
@@ -356,7 +356,7 @@
 				</text>
 			</id-00015>
 		</featurelist>
-		<flaws type="string">I judge others harshly, and myself even more severely.</flaws>
+		<flaws type="string">I judge others harshly. I suffer no evil.\n</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">6'2&#34;</height>
 		<hp>
@@ -364,7 +364,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">68</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">64</wounds>
 		</hp>
 		<ideals type="string">Power. I hope to one day rise to the top of my faith's religious hierarchy. (Lawful)</ideals>
 		<initiative>
@@ -416,7 +416,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Pouch</location>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Greater Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -738,6 +738,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Slung</location>
 				<locked type="number">1</locked>
 				<name type="string">Crystal Lance</name>
 				<nonid_name type="string">Lance</nonid_name>
@@ -759,6 +760,7 @@
 				<dexbonus type="string">-</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Worn</location>
 				<locked type="number">1</locked>
 				<name type="string">Plate</name>
 				<nonid_name type="string">Plate Armor</nonid_name>
@@ -874,11 +876,11 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">4</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -909,7 +911,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1068,7 +1070,7 @@
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>The presence of strong evil registers on your senses like a noxious odor, and a powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>hallow </i>spell.</p>
 					<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
@@ -1328,8 +1330,18 @@
 						<order type="number">4</order>
 						<type type="string">heal</type>
 					</id-00004>
+					<id-00005>
+						<heallist>
+							<id-00001>
+								<bonus type="number">30</bonus>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">5</order>
+						<type type="string">heal</type>
+					</id-00005>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">40</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.propaladin.features.id-00021@Incarnate-5eExpansion">Lay on Hands</link>
@@ -1501,6 +1513,30 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Paladin</source>
 			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Half Elf</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00017>
 			<id-00018>
 				<actions>
 					<id-00001>

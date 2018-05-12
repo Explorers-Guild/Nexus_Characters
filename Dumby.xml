@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">134</amount>
+				<amount type="number">743</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">129</amount>
+				<amount type="number">207</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">124</amount>
+				<amount type="number">203</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">84.18</load>
+			<load type="number">84.68</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">660</exp>
+		<exp type="number">716</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -255,15 +255,15 @@
 				</text>
 			</id-00011>
 		</featurelist>
-		<flaws type="string">There's no room for caution in a life lived to the fullest.</flaws>
+		<flaws type="string">There's no room for caution in a life lived to the fullest.(needs to climb on things larger than himself)</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'1</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
-			<deathsavesuccess type="number">0</deathsavesuccess>
+			<deathsavesuccess type="number">1</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">45</total>
-			<wounds type="number">3</wounds>
+			<wounds type="number">36</wounds>
 		</hp>
 		<ideals type="string">Death - Some people deserve to die. (Chaotic)</ideals>
 		<initiative>
@@ -686,7 +686,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">priceless</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Effect Coding</h>
 					<linklist>
@@ -704,44 +704,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00026>
-			<id-00027>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00027>
 			<id-00028>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -800,6 +762,9 @@
 			<id-00003>
 				<name type="string">Effect</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Item</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -882,7 +847,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Sneak Attack; DMG: 3d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -981,6 +946,54 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00004>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Uncanny Dodge; RESIST: all</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00023@Incarnate-5eExpansion">Uncanny Dodge</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00006>
+			<id-00008>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1010,7 +1023,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">5</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -1031,7 +1044,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1059,7 +1072,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1073,14 +1086,14 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1101,7 +1114,7 @@
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1115,14 +1128,14 @@
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">8</total>
+				<total type="number">10</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1144,7 +1157,7 @@
 					<h>Description</h>
 					<p>A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.</p>
 				</text>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
@@ -1159,7 +1172,7 @@
 					<h>Description</h>
 					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
 				</text>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00020>
 		</skilllist>
 		<speed>
@@ -1171,7 +1184,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00019_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
