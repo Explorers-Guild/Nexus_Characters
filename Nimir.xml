@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
-				<save type="number">2</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -112,7 +112,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Scout</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -122,15 +122,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">257</amount>
+				<amount type="number">344</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">70</amount>
+				<amount type="number">139</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">59</amount>
+				<amount type="number">141</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -160,11 +160,11 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">79.101</load>
+			<load type="number">79.601</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">495</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">579</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -191,16 +191,6 @@
 					<p>Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized.</p>
 				</text>
 			</id-00001>
-			<id-00002>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Expertise</name>
-				<source type="string">Rogue</source>
-				<text type="formattedtext">
-					<p>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
-					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
-				</text>
-			</id-00002>
 			<id-00003>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
@@ -269,6 +259,31 @@
 					<p>Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.uncannydodge@Incarnate-5eExpansion">Uncanny Dodge</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Expertise (Perception, Stealth)</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I often pretend not to know the local language in order to avoid conversations I would rather not have.</flaws>
 		<gender type="string">Female</gender>
@@ -277,7 +292,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">26</total>
+			<total type="number">28</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Live and Let Live. Ideals aren't worth killing over or going to war for. (Neutral)</ideals>
@@ -286,6 +301,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">3</total>
 		</initiative>
+		<inspiration type="number">1</inspiration>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
@@ -297,7 +313,7 @@
 					<p>This thick blanket can keep you warm even during an average winter. (good for 0 degree weather as long as you are dry)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Worn/Packed</location>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Winter Blanket</name>
 				<rarity type="string">Uncommon</rarity>
@@ -437,6 +453,43 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00007>
+			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00008>
 			<id-00010>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -717,10 +770,10 @@
 				<name type="string">Choice</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Nimir</name>
 		<notes type="string">Race: Perception*\nBackground: Athletics, Survival**\nClass: Acrobatics, Insight, Investigation, Stealth*; Nature**, Medicine</notes>
-		<perception type="number">16</perception>
+		<perception type="number">18</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I've lost too many friends, and I'm slow to make new ones.\nI am horribly, horribly awkward in social situations.\nI've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -894,7 +947,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">0</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Sneak Attack; DMG: 3d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -915,28 +968,6 @@
 				<school type="string">Class</school>
 				<source type="string">Rogue</source>
 			</id-00004>
-			<id-00005>
-				<actions>
-					<id-00001>
-						<durmod type="number">0</durmod>
-						<label type="string">Survivalist; SKILL: [PRF] nature, survival</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<p>When you choose this archetype at 3rd level, you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
-				</description>
-				<group type="string">Class Abilities</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Survivalist</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-				<specialization type="string">Scout</specialization>
-			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -1066,13 +1097,13 @@
 				<group type="string">Feats</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Feat: Skulker</name>
+				<name type="string">Skulker</name>
 				<prepared type="number">0</prepared>
 				<prerequisite type="string">Dexterity 13 or higher</prerequisite>
 				<ritual type="number">0</ritual>
 			</id-00010>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Herbalism Kit</name>
@@ -1100,14 +1131,14 @@
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -1133,23 +1164,23 @@
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">6</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">8</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1163,7 +1194,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1184,7 +1215,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1198,14 +1229,14 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1226,7 +1257,7 @@
 				<name type="string">Herbalism Kit</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1340,6 +1371,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1362,6 +1394,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
