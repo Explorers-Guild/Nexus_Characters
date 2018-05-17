@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">4</bonus>
-				<save type="number">7</save>
+				<save type="number">8</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">8</level>
+				<level type="number">9</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1602</amount>
+				<amount type="number">2150</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">307</amount>
+				<amount type="number">423</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">314</amount>
+				<amount type="number">432</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,11 +110,11 @@
 			<encumbered type="number">90</encumbered>
 			<encumberedheavy type="number">180</encumberedheavy>
 			<liftpushdrag type="number">540</liftpushdrag>
-			<load type="number">92.001</load>
+			<load type="number">97.501</load>
 			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">867</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">942</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -285,6 +285,17 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">9</level>
+				<locked type="number">1</locked>
+				<name type="string">Brutal Critical</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
+					<p>This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I have a family, but I have no idea where they are. One day, I hope to see them again.</flaws>
 		<gender type="string">Male</gender>
@@ -293,8 +304,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">86</total>
-			<wounds type="number">52</wounds>
+			<total type="number">95</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Destiny. Nothing and no one can steer me away from my higher calling. (Any)</ideals>
 		<initiative>
@@ -500,21 +511,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00012>
-			<id-00013>
-				<carried type="number">1</carried>
-				<cost type="string">5 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Pouch</location>
-				<locked type="number">1</locked>
-				<name type="string">Leatherworker's Tools</name>
-				<subtype type="string">Artisan's Tools</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">5</weight>
-			</id-00013>
 			<id-00014>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
@@ -740,7 +736,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -910,6 +906,85 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00249@Incarnate-5eExpansion">Leatherworker's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>An awl, chisel, sharp blade, ruller, and a set of pliars.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00014@Incarnate-5eExpansion">Rules for Using Leatherworker's Tools</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<location type="string">Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Leatherworker's Tools</name>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">5</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.</p>
+					<p>The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.</p>
+					<p>The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it.</p>
+					<p>When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.</p>
+					<p><b>Serpentine Owl (Rare) </b>. This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Figurine of Wondrous Power (Serpentine Owl)</name>
+				<nonid_name type="string">Serpentine Owl</nonid_name>
+				<nonidentified type="string">An owl fashioned out of serpentine.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">4</weight>
+			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">400 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.</p>
+					<p>This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.</p>
+					<table>
+						<tr>
+							<td>Type of Giant</td>
+							<td>Strength</td>
+							<td>Rarity</td>
+						</tr>
+						<tr>
+							<td>Cloud giant</td>
+							<td>27</td>
+							<td>Very rare</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Cloud Giant Strength</name>
+				<nonid_name type="string">Shiny Potion</nonid_name>
+				<nonidentified type="string">This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type.</nonidentified>
+				<rarity type="string">Very rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -919,10 +994,10 @@
 				<name type="string">Draconic</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">8</level>
+		<level type="number">9</level>
 		<name type="string">Hrotgar Bonehammer</name>
-		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.\n\nTrying to find the focal point of both water and the gate if Hades\n\nDragonborns in the island around 0502\n\nHIlda and Heirum is the name of his Family\nq\n\nCannot use Horn of Valhala for 1 session\n</notes>
-		<perception type="number">10</perception>
+		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.\n\nTrying to find the focal point of both water and the gate if Hades\n\nDragonborns in the island around 0502\n\nHIlda and Heirum is the name of his Family\nq\n\nCannot use Horn of Valhala for 1 session\n\n5gp per batch of blue flowers\n\n</notes>
+		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">If someone is in trouble, I'm always ready to lend help.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -1185,33 +1260,24 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Rage; ADVCHK: strength; ADVSAV: strength; DMG: 2,melee; RESIST: bludgeoning,piercing,slashing; IMMUNE: charmed; IMMUNE: frightened</label>
+						<label type="string">Rage;ADVCHK:strength;ADVSAV:strength;DMG:2, melee;RESIST:bludgeoning,slashing,piercing</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
-					<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p>
-					<list>
-						<li>You have advantage on Strength checks and Strength saving throws.</li>
-						<li>When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.</li>
-						<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-					</list>
-					<p>If you are able to cast spells, you can't cast them while raging.</p>
-					<p>Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you have neither attacked a hostile creature since your last turn nor taken damage since then. You can also end your rage as a bonus action on your turn</p>
-					<p>Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00028@Incarnate-5eExpansion">Rage</link>
+					</linklist>
 				</description>
-				<duration type="string">1 minute</duration>
 				<group type="string">Class Features</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Barbarian: Rage (B)</name>
+				<name type="string">Rage</name>
 				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
-				<school type="string">Class</school>
 				<source type="string">Barbarian</source>
 			</id-00007>
 			<id-00008>
@@ -1490,7 +1556,7 @@
 				<ritual type="number">0</ritual>
 			</id-00019>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Leatherworker's Tools, vehicles (land)</name>
@@ -1513,28 +1579,29 @@
 				<misc type="number">0</misc>
 				<name type="string">Perception</name>
 				<prof type="number">0</prof>
-				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
+				<stat type="string">charisma</stat>
+				<total type="number">2</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
-				<total type="number">3</total>
+				<stat type="string">charisma</stat>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1642,7 +1709,7 @@
 				<text type="formattedtext">
 					<p></p>
 				</text>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1654,7 +1721,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
