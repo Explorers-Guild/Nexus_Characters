@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">4</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
@@ -59,8 +59,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">4</level>
+				<hdused type="number">0</hdused>
+				<level type="number">5</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">223</amount>
+				<amount type="number">359</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">77</amount>
+				<amount type="number">95</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">76</amount>
+				<amount type="number">95</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,6 +96,7 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -112,7 +113,7 @@
 			<load type="number">89.1</load>
 			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">496</exp>
+		<exp type="number">580</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -244,6 +245,26 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Fast Movement</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 5th level, you speed increases by 10 feet while you aren't wearing heavy armor.</p>
+				</text>
+			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">He really hates it when someone calls him a Barbarian, so much so that someone's gonna get punched. Reads at a third grade level. Needs a 'keeper' to watch out for him and keep him out of trouble.</flaws>
 		<gender type="string">Male</gender>
@@ -252,8 +273,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
-			<wounds type="number">19</wounds>
+			<total type="number">55</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Badly wants to do what's right. But it might accidentally kill whoever he's helping if they're not careful.</ideals>
 		<initiative>
@@ -263,7 +284,7 @@
 		</initiative>
 		<inventorylist>
 			<id-00001>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -297,7 +318,7 @@
 			<id-00003>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -313,7 +334,7 @@
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">30 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d12 slashing</damage>
@@ -322,6 +343,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">2 Weapons</location>
 				<locked type="number">1</locked>
 				<name type="string">Greataxe</name>
 				<nonid_name type="string">Greataxe</nonid_name>
@@ -334,7 +356,7 @@
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 GP</cost>
 				<count type="number">2</count>
 				<damage type="string">1d6 slashing</damage>
@@ -343,6 +365,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">2 Weapons</location>
 				<locked type="number">1</locked>
 				<name type="string">Handaxe</name>
 				<nonid_name type="string">Handaxe</nonid_name>
@@ -465,7 +488,7 @@
 			<id-00014>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">4</count>
 				<damage type="string">1d6 piercing</damage>
@@ -474,6 +497,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">2 Weapons</location>
 				<locked type="number">1</locked>
 				<name type="string">Javelin</name>
 				<nonid_name type="string">Javelin</nonid_name>
@@ -503,7 +527,7 @@
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1,105 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d10 piercing, silver, magical</damage>
@@ -520,6 +544,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">2 Weapons</location>
 				<locked type="number">1</locked>
 				<name type="string">Silver Coated Pike of Construct Slaying</name>
 				<nonid_name type="string">Pike</nonid_name>
@@ -529,6 +554,37 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00016>
+			<id-00017>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">1 Magic Items</name>
+			</id-00017>
+			<id-00018>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">2 Weapons</name>
+			</id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">3 Defense</name>
+			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">4 Stuff to Sell</name>
+			</id-00020>
+			<id-00021>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">1 Magic Items</location>
+				<name type="string">  Attuned Items</name>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -544,7 +600,7 @@
 				<name type="string">Giant</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Francis</name>
 		<perception type="number">9</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -643,48 +699,26 @@
 								<bonus type="number">0</bonus>
 								<dice type="dice"></dice>
 								<stat type="string">barbarian</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 							<id-00002>
 								<bonus type="number">0</bonus>
 								<dice type="dice"></dice>
 								<stat type="string">barbarian</stat>
+								<statmult type="number">1</statmult>
 							</id-00002>
 							<id-00003>
 								<bonus type="number">0</bonus>
 								<dice type="dice"></dice>
 								<stat type="string">barbarian</stat>
+								<statmult type="number">1</statmult>
 							</id-00003>
-							<id-00004>
-								<bonus type="number">0</bonus>
-								<dice type="dice"></dice>
-								<stat type="string">barbarian</stat>
-							</id-00004>
-							<id-00005>
-								<bonus type="number">0</bonus>
-								<dice type="dice"></dice>
-								<stat type="string">barbarian</stat>
-							</id-00005>
-							<id-00006>
-								<bonus type="number">0</bonus>
-								<dice type="dice"></dice>
-								<stat type="string">barbarian</stat>
-							</id-00006>
-							<id-00007>
-								<bonus type="number">0</bonus>
-								<dice type="dice"></dice>
-								<stat type="string">barbarian</stat>
-							</id-00007>
-							<id-00008>
-								<bonus type="number">0</bonus>
-								<dice type="dice"></dice>
-								<stat type="string">barbarian</stat>
-							</id-00008>
 						</heallist>
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00009@Incarnate-5eExpansion">Healer</link>
@@ -693,8 +727,8 @@
 				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Healer - Barbarian</name>
-				<prepared type="number">1</prepared>
+				<name type="string">Healer - Barbarian-long rest</name>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
 			<id-00002>
@@ -708,7 +742,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00028@Incarnate-5eExpansion">Rage</link>
@@ -717,7 +751,7 @@
 				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Rage</name>
+				<name type="string">Rage - long rest</name>
 				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Barbarian</source>
@@ -803,8 +837,45 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00005>
+			<id-00006>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack - each turn</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Relentless Endurance</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Half-Orc</source>
+				<type type="string">racial</type>
+			</id-00007>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Simple weapons, martial weapons</name>
@@ -833,28 +904,28 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -951,13 +1022,13 @@
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">30</base>
-			<misc type="number">0</misc>
+			<misc type="number">10</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">30</total>
+			<total type="number">40</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00016_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1000,12 +1071,13 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d12</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
@@ -1022,7 +1094,7 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1044,7 +1116,7 @@
 			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1066,7 +1138,7 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1089,7 +1161,7 @@
 			<id-00005>
 				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

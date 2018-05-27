@@ -75,7 +75,7 @@
 				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">15</amount>
+				<amount type="number">148</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
@@ -83,11 +83,11 @@
 				<name type="string">EP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">0</amount>
+				<amount type="number">19</amount>
 				<name type="string">SP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">18</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -104,15 +104,16 @@
 				<temporary type="number">0</temporary>
 				<total type="number">14</total>
 			</ac>
+			<special type="string">Cunning Action (Bonus Action: Dash, Disengage, Hide)</special>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">75.61</load>
+			<load type="number">67.82</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">384</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -183,7 +184,7 @@
 			<id-00006>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Cunning Action (Bonus Action:  Dash, Disengage, Hide)</name>
+				<name type="string">Cunning Action (Bonus Action: Dash, Disengage, Hide)</name>
 				<source type="string">Rogue</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -426,6 +427,8 @@
 		<gender type="string">Male</gender>
 		<height type="string">5' - 10&#34;</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">18</total>
 			<wounds type="number">0</wounds>
@@ -534,7 +537,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
-				<count type="number">20</count>
+				<count type="number">40</count>
 				<description type="formattedtext">
 					<p>-</p>
 				</description>
@@ -642,6 +645,44 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00013>
+			<id-00014>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00014>
 			<id-00015>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -763,7 +804,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<p>A quiver can hold up to 20 arrows.</p>
 				</description>
@@ -779,7 +820,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">2 GP</cost>
-				<count type="number">2</count>
+				<count type="number">3</count>
 				<damage type="string">1d4 piercing</damage>
 				<description type="formattedtext">
 					<h>Sound</h>
@@ -826,7 +867,7 @@
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Elvish</name>
@@ -840,6 +881,7 @@
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I always have a plan for what to do when things go wrong.\nI am always calm, no matter what the situation. I never raise my voice or let my emotions control me.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -869,30 +911,39 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">2</max>
@@ -900,27 +951,35 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -963,6 +1022,7 @@
 					<p>You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check.</p>
 					<p>In addition, you can use the bonus action granted by your Cunning Action to control the hand.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Mage Hand Legerdemain</name>
 				<prepared type="number">0</prepared>
@@ -991,6 +1051,19 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Fey Step (30' Misty Step)</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Eladrin</source>
+				<type type="string">subracial</type>
+			</id-00004>
 			<id-00005>
 				<actions>
 				</actions>
@@ -1363,12 +1436,13 @@
 			<armor type="number">0</armor>
 			<base type="number">30</base>
 			<misc type="number">0</misc>
+			<special type="string">Fey Step (30' Misty Step)</special>
 			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00016_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1439,16 +1513,18 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
+				<maxammo type="number">40</maxammo>
 				<name type="string">Shortbow</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>
