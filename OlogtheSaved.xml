@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<hdused type="number">1</hdused>
+				<level type="number">4</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">102</amount>
+				<amount type="number">126</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">69</amount>
+				<amount type="number">98</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">82</amount>
+				<amount type="number">107</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,12 +110,24 @@
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">147.62</load>
+			<load type="number">149.12</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">384</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">452</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Shield Master</name>
+				<text type="formattedtext">
+					<p>You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:</p>
+					<list>
+						<li>If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.</li>
+						<li>If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.</li>
+						<li>If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -271,6 +283,15 @@
 					<p><b><i>Strength Above All. </i></b>You shall rule until a stronger one arises. Then you must grow mightier and meet the challenge, or fall to your own ruin.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Paladin</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</flaws>
 		<gender type="string">Male</gender>
@@ -279,8 +300,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
-			<wounds type="number">0</wounds>
+			<total type="number">36</total>
+			<wounds type="number">22</wounds>
 		</hp>
 		<ideals type="string">Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings. (Any)</ideals>
 		<initiative>
@@ -345,7 +366,7 @@
 				<carried type="number">2</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<name type="string">Holy Symbol - Pendant of an Owl of Athena</name>
+				<name type="string">Holy Symbol - Pendant of Torm</name>
 				<weight type="number">0.1</weight>
 			</id-00005>
 			<id-00006>
@@ -406,6 +427,13 @@
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
 			</id-00010>
+			<id-00011>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Goat Horn</name>
+				<weight type="number">1</weight>
+			</id-00011>
 			<id-00012>
 				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
@@ -546,6 +574,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -561,7 +626,7 @@
 				<name type="string">Celestial</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Olog the Saved</name>
 		<notes type="string">Olog has no knowledge of his birth mother or father, and wishes for it to remain that way. His earliest memories are of the temple on whose steps he was left as an infant. Those who found him chose to ignore his infernal blood, or perhaps they thought they could purify it. Whatever their intentions, Olog was raised a ward of Torm. He grew to accept and honor her, eventually chosing to remain in her service once he was old enough to fend for himself. Attracting the attention of some knights of Athena, he began his martial training with them. Vowing to smite evil wherever it stood, and to protect all those who stood against it. However his infernal blood still remained: a calling of rage, a disdain for mercy, impatient and violent. He often sees the world in black and white, good and evil. Quick to judge and quick to deliver justice. Evil must be smote, no matter what gets in his way. He does not see this as a weakness, or as a vioation of his oath, but rather as a means to an end.</notes>
 		<perception type="number">11</perception>
@@ -653,7 +718,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -779,7 +844,7 @@
 						<type type="string">damage</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
@@ -812,7 +877,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">3</cast>
 				<castingtime type="string">1 action</castingtime>
 				<description type="formattedtext">
 					<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
@@ -839,7 +904,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">1 action</castingtime>
 				<description type="formattedtext">
 					<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance).</p>
@@ -1840,7 +1905,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<hdused type="number">3</hdused>
+				<level type="number">6</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -113,8 +113,8 @@
 			<load type="number">5.58</load>
 			<max type="number">60</max>
 		</encumbrance>
-		<exp type="number">544</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">612</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -265,13 +265,15 @@
 			</id-00006>
 			<id-00007>
 				<level type="number">2</level>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Wild Shape</name>
 				<source type="string">Druid</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<h>Common Transformations</h>
-					<p></p>
+					<linklist>
+						<link class="encounter" recordname="encounter.p98wildshape_polymorphcheatsheet@Incarnate-5eExpansion">98 Wildshape/Polymorph</link>
+					</linklist>
 					<h>Main Description</h>
 					<p>Starting at 2nd Level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
 					<p>Your druid level determines the beasts you can transform into as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.</p>
@@ -331,6 +333,171 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Partial Transformation</name>
+				<source type="string">Druid</source>
+				<specialization type="string">Circle of Transformation</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Through intense training you have become able to transform part of your body independently of the rest. Of the six zones of your body (head, two arms, two legs, and torso) you may transform up to 1 + Wisdom Modifier zones. This counts as a wild shape transformation. You may only transform zones into animals that you are allowed to transform into for wild shape.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prodruid.features.id-00040@Incarnate-5eExpansion">Wild Shape</link>
+					</linklist>
+					<p>Benefits of transformation:</p>
+					<table>
+						<tr>
+							<td>Creature</td>
+							<td>CR</td>
+							<td>Head</td>
+							<td>Arm</td>
+							<td>Leg</td>
+							<td>Torso</td>
+						</tr>
+						<tr>
+							<td>Ape</td>
+							<td>1/2</td>
+							<td>WIS: 12</td>
+							<td>Climb Speed of 30ft. (requires both arms)</td>
+							<td>Walking speed of 30 ft. (requires both legs)</td>
+							<td>5 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Black Bear</td>
+							<td>1/2</td>
+							<td>Bite; Melee Weapon Attack: reach 5 ft., one target. Hit: 1d6 + STR piercing damage.</td>
+							<td>Claws; Melee Weapon Attack: reach 5 ft. Hit: 2d4 + STR.</td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>5 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Crocodile</td>
+							<td>1/2</td>
+							<td>Hold Breath: You can hold your breath for 15 minutes.</td>
+							<td></td>
+							<td></td>
+							<td>swim speed of 30 ft. (requires torso and head)</td>
+						</tr>
+						<tr>
+							<td>Giant Goat</td>
+							<td>1/2</td>
+							<td>Ram; reach 5 ft. 2d4 + STR bludgeoning damage</td>
+							<td>Nimble: GRANTDISATK (requires both legs and both arms)</td>
+							<td>Sure-Footed: You have advantage on Strength and Dexterity saving throws made against effects that would knock it prone. (requires both legs)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Giant Mosquito</td>
+							<td>1/2</td>
+							<td>Mosquito Bite; range 5 ft. 1d10 piercing damage</td>
+							<td>20 ft. flying (requires both arms)</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Warhorse</td>
+							<td>1/2</td>
+							<td></td>
+							<td></td>
+							<td>Walking speed 60 ft. (requires both legs and both arms and torso)</td>
+						</tr>
+						<tr>
+							<td>Brown Bear</td>
+							<td>1</td>
+							<td>Keen Smell: You have advantage on Wisdom (Perception) checks that rely on smell.</td>
+							<td>Claws; Melee Weapon Attack: reach 5 ft. Hit: 2d6 + STR.</td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>10 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Dire Wolf</td>
+							<td>1</td>
+							<td>Pack tactics: You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</td>
+							<td>Walking speed of 50 ft. (requires both legs and both arms and torso)</td>
+							<td>Walking speed of 35 ft. (requires both legs)</td>
+							<td>8 temporary hit points.</td>
+						</tr>
+						<tr>
+							<td>Giant Eagle</td>
+							<td>1</td>
+							<td>Keen Sight: The eagle has advantage on Wisdom (Perception) checks that rely on sight.</td>
+							<td>Fly speed 80 ft. Requires both arms.</td>
+							<td>Claws; Melee Weapon Attack: reach 5ft., 2d6 + STR</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Giant Octopus</td>
+							<td>1</td>
+							<td>Water Breathing: You may breath underwater</td>
+							<td>Tentacles: Melee Weapon Attack: reach 15ft., one target. 2d6 + STR. If target is a creature then it is grappled (escape DC 16). (requires both arms)</td>
+							<td>Swim speed 60. (requires both arms, both legs, and torso).</td>
+							<td>Inc Cloud: a 20 foot radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink the octopus can use the Dash action as a bonus action. (recharges after a short or long rest)</td>
+						</tr>
+						<tr>
+							<td>Giant Toad</td>
+							<td>1</td>
+							<td>Amphibious: You may breath both air and water.</td>
+							<td></td>
+							<td>Standing Leap: Your long jump is up to 20 feet and your high jump is up to 10 feet. (requires both legs)</td>
+							<td>Wet skin; RESIST: Fire</td>
+						</tr>
+						<tr>
+							<td>Tiger</td>
+							<td>1</td>
+							<td>Darkvision 60 ft.</td>
+							<td></td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>8 temporary hit points</td>
+						</tr>
+						<tr>
+							<td>Cave Bear</td>
+							<td>2</td>
+							<td>Keen Smell: You have advantage on Wisdom (Perception) checks that rely on smell.</td>
+							<td>Claws; Melee Weapon Attack: reach 5 ft. Hit: 2d6 + STR.</td>
+							<td>Walking speed of 40 ft. (requires both legs and both arms and torso)</td>
+							<td>Sets your temporary hit points to 10 at each initiative roll.</td>
+						</tr>
+						<tr>
+							<td>Giant Constrictor Snake</td>
+							<td>2</td>
+							<td>blindsight 10 ft.</td>
+							<td></td>
+							<td></td>
+							<td>Constrict: Melee Weapon attack: reach 5 ft., one creature (2d8 + STR) bludgeoning damage, and the target is grappled (escape DC 13 + STR). Until the grapple ends, the creature is restrained, and the snake can't constrict another target.</td>
+						</tr>
+						<tr>
+							<td>Rhinoceros</td>
+							<td>2</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Leathery skin: RESIST: slashing; RESIST: bludgeoning; VULN: piercing</td>
+						</tr>
+					</table>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Larger Transformation (CR 1)</name>
+				<source type="string">Druid</source>
+				<specialization type="string">Circle of Transformation</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Those in the circle of transformation can transform into large and more powerful beasts according to the following table:</p>
+					<table>
+						<tr>
+							<td>Level</td>
+							<td>Max CR</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>1</td>
+						</tr>
+					</table>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">My people believe that Lawful Good is the only way to exist honorably. If they ever discover that I am chaotic, they will hunt me down and drag me back to my warren to &#34;re-educate&#34; me.</flaws>
 		<gender type="string">Male</gender>
@@ -338,8 +505,8 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">0</temporary>
-			<total type="number">33</total>
+			<temporary type="number">16</temporary>
+			<total type="number">39</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Creativity - I don't even follow my own recipes, I just follow my gut instinct! (Chaotic)</ideals>
@@ -352,7 +519,7 @@
 			<id-00001>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">15 GP</cost>
 				<count type="number">2</count>
 				<damage type="string">1d6 piercing</damage>
@@ -468,7 +635,7 @@
 			<id-00008>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">101 - 500 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -490,7 +657,7 @@
 			<id-00009>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
@@ -522,6 +689,7 @@
 					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack (tiny)</location>
 				<locked type="number">1</locked>
 				<name type="string">Heartstone</name>
 				<nonid_name type="string">Heartstone</nonid_name>
@@ -542,9 +710,8 @@
 				<name type="string">Mikon</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Swino son of Apia</name>
-		<notes type="string">As a 5 pound mouse, my strength is limited to 10 pounds carrying and 40 pounds pushing.\nwe made changes</notes>
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I like to take my time and savor each moment.</personalitytraits>
@@ -563,8 +730,32 @@
 				<name type="string">Passive</name>
 			</id-00003>
 			<id-00004>
-				<name type="string">Z Black Bear</name>
+				<name type="string">Wildshape</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Wildshape Ape</name>
+			</id-00005>
+			<id-00006>
+				<name type="string">Wildshape Black Bear</name>
+			</id-00006>
+			<id-00007>
+				<name type="string">Wildshape Giant Goat</name>
+			</id-00007>
+			<id-00008>
+				<name type="string">Wildshape Crocodile</name>
+			</id-00008>
+			<id-00009>
+				<name type="string">Wildshape Giant Sea Horse</name>
+			</id-00009>
+			<id-00010>
+				<name type="string">Wildshape Giant Wasp</name>
+			</id-00010>
+			<id-00011>
+				<name type="string">Wildshape Reef Shark</name>
+			</id-00011>
+			<id-00012>
+				<name type="string">Wildshape Warhorse</name>
+			</id-00012>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -605,15 +796,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">4</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">2</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -642,17 +833,6 @@
 		</powermeta>
 		<powermode type="string">combat</powermode>
 		<powers>
-			<id-00001>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<group type="string">Effect</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Wildshape</name>
-				<prepared type="number">2</prepared>
-				<usesperiod type="string">enc</usesperiod>
-			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
@@ -664,7 +844,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -700,7 +881,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d12</dice>
+								<dice type="dice">d12,d12</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">poison</type>
 							</id-00001>
 						</damagelist>
@@ -805,7 +987,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Animal Friendship</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -831,6 +1013,10 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNoYXJtLXBlcnNvbi1h/play/"><b>Syrinscape </b></link>: Charm - Wizard Spells E</linklist>
+					<h>Description</h>
 					<p>You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p>
 					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
 				</description>
@@ -872,7 +1058,6 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
 								<dice type="dice">d8</dice>
 								<stat type="string">base</stat>
 							</id-00001>
@@ -880,28 +1065,6 @@
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
-					<id-00002>
-						<heallist>
-							<id-00001>
-								<dice type="dice">d8,d8</dice>
-								<stat type="string">base</stat>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<order type="number">2</order>
-						<type type="string">heal</type>
-					</id-00002>
-					<id-00003>
-						<heallist>
-							<id-00001>
-								<dice type="dice">d8,d8,d8</dice>
-								<stat type="string">base</stat>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<order type="number">3</order>
-						<type type="string">heal</type>
-					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -915,7 +1078,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Cure Wounds</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -936,6 +1099,10 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmRldGVjdC1tYWdpYy1h/play/"><b>Syrinscape </b></link>: Detect Magic - Wizard Spells E</linklist>
+					<h>Description</h>
 					<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
 				</description>
 				<duration type="string">Concentration, up to 10 minutes</duration>
@@ -964,6 +1131,10 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S, M (a yew leaf)</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmRldGVjdC1wb2lzb24/play/"><b>Syrinscape </b></link>: Detect Poisons - Wizard Spells E</linklist>
+					<h>Description</h>
 					<p>For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
 				</description>
 				<duration type="string">Concentration, up to 10 minutes</duration>
@@ -971,7 +1142,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Detect Poison and Disease</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
@@ -1074,6 +1245,11 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Om9ic2N1cmluZy1taXN0/play/">Obscuring fog - Wizard Spells E</link>
+					</linklist>
+					<h>Description</h>
 					<p>You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p>
 					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.</p>
 				</description>
@@ -1084,6 +1260,7 @@
 				<name type="string">Fog Cloud</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
 			</id-00014>
@@ -1101,7 +1278,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Goodberry</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1112,7 +1289,6 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">0</bonus>
 								<dice type="dice">d4</dice>
 								<stat type="string">base</stat>
 							</id-00001>
@@ -1133,7 +1309,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Word</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1146,6 +1322,11 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S, M (a grasshopper's hind leg)</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Omp1bXAtMQ/play/">Jumping - Wizard Spells E</link>
+					</linklist>
+					<h>Description</h>
 					<p>You touch a creature. The creature's jump distance is tripled until the spell ends.</p>
 				</description>
 				<duration type="string">1 minute</duration>
@@ -1155,6 +1336,7 @@
 				<name type="string">Jump</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
 			</id-00017>
@@ -1220,6 +1402,26 @@
 			</id-00020>
 			<id-00021>
 				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM's discretion.</p>
+				</description>
+				<duration type="string">10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Speak with Animals</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Druid, Ranger</source>
+			</id-00021>
+			<id-00022>
+				<actions>
 					<id-00001>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
@@ -1230,7 +1432,6 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<bonus type="number">0</bonus>
 								<dice type="dice">d8,d8</dice>
 								<type type="string">thunder</type>
 							</id-00001>
@@ -1251,13 +1452,13 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Thunderwave</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self (15-foot cube)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
-			</id-00021>
-			<id-00022>
+			</id-00022>
+			<id-00023>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -1277,8 +1478,8 @@
 				<ritual type="number">1</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Druid, Ranger</source>
-			</id-00022>
-			<id-00023>
+			</id-00023>
+			<id-00024>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -1292,6 +1493,10 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S, M (a handful of oak bark)</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Om1hZ2UtYXJtb3ItYQ/play/"><b>Syrinscape </b></link>: Magical armor - Wizard Spells E</linklist>
+					<h>Description</h>
 					<p>You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 hour</duration>
@@ -1304,8 +1509,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Druid, Ranger</source>
-			</id-00023>
-			<id-00024>
+			</id-00024>
+			<id-00025>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -1324,8 +1529,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
-			</id-00024>
-			<id-00025>
+			</id-00025>
+			<id-00026>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -1404,8 +1609,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Cleric, Druid, Sorcerer</source>
-			</id-00025>
-			<id-00026>
+			</id-00026>
+			<id-00027>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -1424,14 +1629,14 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Divination</school>
 				<source type="string">Cleric, Druid, Ranger</source>
-			</id-00026>
-			<id-00027>
+			</id-00027>
+			<id-00028>
 				<actions>
 					<id-00001>
 						<atkbase type="string">ability</atkbase>
 						<atkmod type="number">0</atkmod>
 						<atkprof type="number">1</atkprof>
-						<atkstat type="string">dexterity</atkstat>
+						<atkstat type="string">strength</atkstat>
 						<atktype type="string">melee</atktype>
 						<order type="number">1</order>
 						<savedcmod type="number">0</savedcmod>
@@ -1471,13 +1676,13 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Flame Blade</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Druid</source>
-			</id-00027>
-			<id-00028>
+			</id-00028>
+			<id-00029>
 				<actions>
 					<id-00001>
 						<onmissdamage type="string">half</onmissdamage>
@@ -1522,8 +1727,8 @@
 				<range type="string">60 feet</range>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Wizard</source>
-			</id-00028>
-			<id-00029>
+			</id-00029>
+			<id-00030>
 				<actions>
 					<id-00001>
 						<order type="number">1</order>
@@ -1555,8 +1760,8 @@
 				<range type="string">Self (60-foot line)</range>
 				<school type="string">Evocation</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
-			</id-00029>
-			<id-00030>
+			</id-00030>
+			<id-00031>
 				<actions>
 					<id-00001>
 						<damagelist>
@@ -1595,13 +1800,13 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Heat Metal</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Druid</source>
-			</id-00030>
-			<id-00031>
+			</id-00031>
+			<id-00032>
 				<actions>
 					<id-00001>
 						<order type="number">1</order>
@@ -1634,8 +1839,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Cleric, Druid, Sorcerer, Warlock, Wizard</source>
-			</id-00031>
-			<id-00032>
+			</id-00032>
+			<id-00033>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -1654,8 +1859,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
-			</id-00032>
-			<id-00033>
+			</id-00033>
+			<id-00034>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -1669,13 +1874,13 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Locate Animals or Plants</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
 				<source type="string">Bard, Druid, Ranger</source>
-			</id-00033>
-			<id-00034>
+			</id-00034>
+			<id-00035>
 				<actions>
 					<id-00001>
 						<durmod type="number">10</durmod>
@@ -1702,8 +1907,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Divination</school>
 				<source type="string">Bard, Cleric, Druid, Paladin, Ranger, Wizard</source>
-			</id-00034>
-			<id-00035>
+			</id-00035>
+			<id-00036>
 				<actions>
 					<id-00001>
 						<onmissdamage type="string">half</onmissdamage>
@@ -1724,9 +1929,11 @@
 						<type type="string">damage</type>
 					</id-00002>
 					<id-00003>
-						<durmod type="number">0</durmod>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
 						<label type="string">Moonbeam; (C)</label>
 						<order type="number">3</order>
+						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00003>
 				</actions>
@@ -1742,12 +1949,12 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Moonbeam</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<school type="string">Evocation</school>
 				<source type="string">Druid</source>
-			</id-00035>
-			<id-00036>
+			</id-00036>
+			<id-00037>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -1768,12 +1975,12 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Pass without Trace</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<school type="string">Abjuration</school>
 				<source type="string">Druid, Ranger</source>
-			</id-00036>
-			<id-00037>
+			</id-00037>
+			<id-00038>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -1787,6 +1994,10 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnByb3RlY3Rpb24/play/"><b>Syrinscape </b></link>: Protection - Wizard Spells E</linklist>
+					<h>Description</h>
 					<p>You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.</p>
 				</description>
 				<duration type="string">1 hour</duration>
@@ -1796,10 +2007,11 @@
 				<name type="string">Protection from Poison</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
 				<source type="string">Cleric, Druid, Paladin, Ranger</source>
-			</id-00037>
-			<id-00038>
+			</id-00038>
+			<id-00039>
 				<actions>
 					<id-00001>
 						<damagelist>
@@ -1836,8 +2048,8 @@
 				<range type="string">150 feet</range>
 				<school type="string">Transmutation</school>
 				<source type="string">Druid, Ranger</source>
-			</id-00038>
-			<id-00039>
+			</id-00039>
+			<id-00040>
 				<actions>
 					<id-00001>
 						<onmissdamage type="string">half</onmissdamage>
@@ -1883,8 +2095,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid</source>
-			</id-00039>
-			<id-00040>
+			</id-00040>
+			<id-00041>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -1919,14 +2131,18 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Ranger</source>
-			</id-00040>
-			<id-00041>
+			</id-00041>
+			<id-00042>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmxpZ2h0/play/"><b>Syrinscape </b></link>: Light bright - Wizard Spells E</linklist>
+					<h>Description</h>
 					<p>A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light. If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>
 				</description>
 				<duration type="string">1 hour</duration>
@@ -1939,8 +2155,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Cleric, Druid, Paladin, Ranger, Sorcerer</source>
-			</id-00041>
-			<id-00042>
+			</id-00042>
+			<id-00043>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -1959,13 +2175,12 @@
 				<range type="string">120 feet</range>
 				<school type="string">Abjuration</school>
 				<source type="string">Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard</source>
-			</id-00042>
-			<id-00043>
+			</id-00043>
+			<id-00044>
 				<actions>
 					<id-00001>
 						<damagelist>
 							<id-00001>
-								<bonus type="number">0</bonus>
 								<dice type="dice">d6,d6,d6,d6,d6,d6</dice>
 								<type type="string">bludgeoning,magic</type>
 							</id-00001>
@@ -2006,8 +2221,8 @@
 				<ritual type="number">1</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Cleric, Druid</source>
-			</id-00043>
-			<id-00044>
+			</id-00044>
+			<id-00045>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -2025,8 +2240,8 @@
 				<range type="string">150 feet</range>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Druid, Ranger</source>
-			</id-00044>
-			<id-00045>
+			</id-00045>
+			<id-00046>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -2068,6 +2283,10 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnByb3RlY3Rpb24/play/"><b>Syrinscape </b></link>: Protection - Wizard Spells E</linklist>
+					<h>Description</h>
 					<p>For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 hour</duration>
@@ -2077,10 +2296,11 @@
 				<name type="string">Protection from Energy</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
 				<source type="string">Cleric, Druid, Ranger, Sorcerer, Wizard</source>
-			</id-00045>
-			<id-00046>
+			</id-00046>
+			<id-00047>
 				<actions>
 					<id-00001>
 						<order type="number">1</order>
@@ -2113,12 +2333,12 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Sleet Storm</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">150 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
-			</id-00046>
+			</id-00047>
 			<id-00048>
 				<actions>
 				</actions>
@@ -2225,6 +2445,288 @@
 			<id-00053>
 				<actions>
 					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<type type="string">bludgeoning,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Wind Wall; (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a tiny fan and a feather of</components>
+				<description type="formattedtext">
+					<p>A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration. When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one. The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Wind Wall</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00053>
+			<id-00054>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
+					<id-00005>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">5</order>
+						<type type="string">damage</type>
+					</id-00005>
+					<id-00006>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">6</order>
+						<type type="string">damage</type>
+					</id-00006>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_racialtrait" recordname="race.id-00013.traits.id-00012@Incarnate-5eExpansion">Underfoot</link>
+					</linklist>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Underfoot</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00054>
+			<id-00056>
+				<actions>
+					<id-00004>
+						<label type="string">Wildshape; AC: -1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Common Transformations</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.p98wildshape_polymorphcheatsheet@Incarnate-5eExpansion">98 Wildshape/Polymorph</link>
+					</linklist>
+					<h>Main Description</h>
+					<p>Starting at 2nd Level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+					<p>Your druid level determines the beasts you can transform into as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.</p>
+					<table>
+						<tr>
+							<td colspan="6"><b>Beast Shapes</b></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><b>Max.</b></td>
+							<td colspan="3"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><b>Level</b></td>
+							<td><b>CR</b></td>
+							<td colspan="3"><b>Limitations</b></td>
+							<td><b>Example</b></td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>1/4</td>
+							<td colspan="3">No flying or swimming speed</td>
+							<td>Wolf</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>1/2</td>
+							<td colspan="3">No flying speed</td>
+							<td>Crocodile</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td><b>1</b></td>
+							<td colspan="3"></td>
+							<td>Giant eagle</td>
+						</tr>
+					</table>
+					<p>You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 9 hit points, or die.</p>
+					<p>While you are transformed the following rules apply:</p>
+					<list>
+						<li>Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</li>
+						<li>When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and only have 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious.</li>
+						<li>You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities f your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as <i>call lightning </i>, that you've already cast.</li>
+						<li>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
+						<li>You choose whether your equipment falls to the ground in your space, merges into your new form or is worn by it. Worn equipment functions as normal, but the GM decides if it is practical for the new form to ear a piece of equipment based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
+					</list>
+				</description>
+				<group type="string">Wildshape</group>
+				<locked type="number">1</locked>
+				<name type="string">Wild Shape</name>
+				<prepared type="number">2</prepared>
+				<source type="string">Druid</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00056>
+			<id-00057>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.ape@Incarnate-5eBattles">Ape</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Ape</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fist - Ape</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00057>
+			<id-00058>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.ape@Incarnate-5eBattles">Ape</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Ape</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Rock - Ape</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00058>
+			<id-00059>
+				<actions>
+					<id-00001>
 						<heallist>
 							<id-00001>
 								<bonus type="number">6</bonus>
@@ -2238,9 +2740,8 @@
 						<type type="string">heal</type>
 					</id-00001>
 					<id-00002>
-						<durmod type="number">2</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">STR: 7; DEX: -6; CON: 1; Wild Shape - Black Bear; AC: -1</label>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 6; DEX: [-2DEX]; DEX: 4; CON: [-2CON]; CON: 4; AC: -1</label>
 						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -2248,18 +2749,18 @@
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<h>NPC Link</h>
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.blackbear@DD MM Monster Manual">Black Bear</link>
+						<link class="npc" recordname="reference.npcdata.ape@Incarnate-5eBattles">Ape</link>
 					</linklist>
 				</description>
-				<group type="string">Z Black Bear</group>
+				<group type="string">Wildshape Ape</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">0 Transformation</name>
+				<name type="string">Transformation - Ape</name>
 				<prepared type="number">0</prepared>
-			</id-00053>
-			<id-00054>
+				<ritual type="number">0</ritual>
+			</id-00059>
+			<id-00060>
 				<actions>
 					<id-00001>
 						<atkbase type="string">fixed</atkbase>
@@ -2267,7 +2768,9 @@
 						<atkprof type="number">1</atkprof>
 						<atktype type="string">melee</atktype>
 						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -2285,15 +2788,18 @@
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<h>NPC Link</h>
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-5eBattles">Black Bear</link>
+					</linklist>
 				</description>
-				<group type="string">Z Black Bear</group>
+				<group type="string">Wildshape Black Bear</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Bite</name>
+				<name type="string">Bite - Black Bear</name>
 				<prepared type="number">0</prepared>
-			</id-00054>
-			<id-00055>
+				<ritual type="number">0</ritual>
+			</id-00060>
+			<id-00061>
 				<actions>
 					<id-00001>
 						<atkbase type="string">fixed</atkbase>
@@ -2301,7 +2807,9 @@
 						<atkprof type="number">1</atkprof>
 						<atktype type="string">melee</atktype>
 						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -2319,17 +2827,720 @@
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<h>NPC Link</h>
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.blackbear@DD MM Monster Manual">Black Bear</link>
+						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-5eBattles">Black Bear</link>
 					</linklist>
 				</description>
-				<group type="string">Z Black Bear</group>
+				<group type="string">Wildshape Black Bear</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Claws</name>
+				<name type="string">Claws - Black Bear</name>
 				<prepared type="number">0</prepared>
-			</id-00055>
+				<ritual type="number">0</ritual>
+			</id-00061>
+			<id-00062>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">6</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 5; DEX: [-2DEX]; DEX: 0; CON: [-2CON]; CON: 4; AC: 0</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.blackbear@Incarnate-5eBattles">Black Bear</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Black Bear</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Black Bear</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00062>
+			<id-00063>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantgoat@Incarnate-5eBattles">Giant Goat</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Goat</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Charge - Giant Goat</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00063>
+			<id-00064>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantgoat@Incarnate-5eBattles">Giant Goat</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Goat</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ram - Giant Goat</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00064>
+			<id-00065>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 7; DEX: [-2DEX]; DEX: 1; CON: [-2CON]; CON: 2; AC: 0</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantgoat@Incarnate-5eBattles">Giant Goat</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Goat</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Giant Goat</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00065>
+			<id-00066>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">4</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Grappled; Restrained; NOTE: escape DC 12</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.crocodile@Incarnate-5eBattles">Crocodile</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Crocodile</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Crocodile</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00066>
+			<id-00067>
+				<actions>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 5; DEX: [-2DEX]; DEX: 0; CON: [-2CON]; CON: 3; AC: 1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.crocodile@Incarnate-5eBattles">Crocodile</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Crocodile</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Crocodile</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00067>
+			<id-00068>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">11</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">2</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantseahorse@Incarnate-5eBattles">Giant Sea Horse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Sea Horse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Charge - Giant Sea Horse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00068>
+			<id-00069>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">3</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantseahorse@Incarnate-5eBattles">Giant Sea Horse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Sea Horse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ram - Giant Sea Horse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00069>
+			<id-00070>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 2; DEX: [-2DEX]; DEX: 5; CON: [-2CON]; CON: 1; AC: 0</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantseahorse@Incarnate-5eBattles">Giant Sea Horse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Sea Horse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Giant Sea Horse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00070>
+			<id-00071>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">4</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">3</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">11</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Note: Only if target is knocked unconscious; poisoned; paralyzed</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantwasp@Incarnate-5eBattles">Giant Wasp</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Wasp</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sting - Giant Wasp</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00071>
+			<id-00072>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 0; DEX: [-2DEX]; DEX: 4; CON: [-2CON]; CON: 0; AC: -1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.giantwasp@Incarnate-5eBattles">Giant Wasp</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Giant Wasp</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Giant Wasp</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00072>
+			<id-00073>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">4</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.reefshark@Incarnate-5eBattles">Reef Shark</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Reef Shark</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Reef Shark</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00073>
+			<id-00074>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 4; DEX: [-2DEX]; DEX: 3; CON: [-2CON]; CON: 3; AC: 0</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.reefshark@Incarnate-5eBattles">Reef Shark</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Reef Shark</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Reef Shark</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00074>
+			<id-00075>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">6</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-5eBattles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Hooves - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00075>
+			<id-00076>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">14</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-5eBattles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Trampling Charge - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00076>
+			<id-00077>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 8; DEX: [-2DEX]; DEX: 2; CON: [-2CON]; CON: 3; AC: -1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-5eBattles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00077>
+			<id-00078>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00078>
+			<id-00079>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - check; ADVCHK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - attack; ADVATK</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.</p>
+					<p>Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target beforre your next turn, the first attack roll is made with advantage.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Help</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00079>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2492,8 +3703,54 @@
 		</temp>
 		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
-			<id-00001>
-				<locked type="number">0</locked>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Agile</name>
+				<source type="string">Mikon</source>
+				<text type="formattedtext">
+					<p>Being so tiny their race has learned to use their agility to compensate. This ability to dodge out of the way of the foe gives them a +2 to AC as long as they are unarmored or wearing custom made light armor.</p>
+					<p>Any armor they wear must be custom made to their size.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00002>
+			<id-00006>
+				<locked type="number">1</locked>
+				<name type="string">Mikon Specialty - beasts, fey</name>
+				<source type="string">Mikon</source>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.mikonspecialty@Incarnate-5eExpansion">Mikon Specialty</link>
+					</linklist>
+					<h>Description</h>
+					<p>There is only so much time in school, so Mikons specialize in learning the weaknesses of different types of creatures. All Mikons learn the weaknesses of beasts. At levels 3, 6, 9, 12, 15, 18, and 20 you may learn additional types from: Aberrations, Celestials, Constructs, Dragons, Elementals, Feys, Fiends, Giants, Humanoids, Misons, Monstrosities, Oozes, Plants, Swarms, Undead.</p>
+					<p>Knowing the weaknesses not only lets you know their weaknesses, but also grants you a 1d4 increase to your attack rolls.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">Sprint</name>
+				<source type="string">Mikon</source>
+				<text type="formattedtext">
+					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer one level of exhaustion.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00004@Incarnate-5eExpansion">Exhaustion</link>
+					</linklist>
+				</text>
+				<type type="string">racial</type>
+			</id-00007>
+			<id-00008>
+				<locked type="number">1</locked>
+				<name type="string">Tiny Capacity</name>
+				<source type="string">Mikon</source>
+				<text type="formattedtext">
+					<p>As one of the tinniest of creatures, your carrying capacity is limited even further than normal. Your carrying capacity is now 2 times your Strength score.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00008>
+			<id-00009>
+				<locked type="number">1</locked>
 				<name type="string">Tiny Weapons</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
@@ -2510,56 +3767,60 @@
 					<linklist>
 						<link class="item" recordname="item.id-00179@Incarnate-5eExpansion">Mikon Crossbow</link>
 					</linklist>
-					<p>You may exchange any number of weapons from your class for the same number of tiny weapons.</p>
-					<p>Note: you cannot exchange ammunition for weapons.</p>
-					<p>Warning: Acupuncture needles are extremely expensive. Their alloi has a little bit of adamantine mixed into it so that it does not shatter on contact with iron and steel weapons. They can only be made by very talented smiths. Their availability will vary based on the world as the GM sees fit.</p>
+					<p>Mikon may exchange any number of weapons from their class for the same number of tiny weapons.</p>
+					<p>Note: You cannot exchange ammunition for weapons.</p>
+					<p>Warning: Acupuncture Needles are extremely expensive. Their alloi has a little bit of adamantine mixed into it so that it does not shatter on contact with iron and steel weapons. They can only be made by very talented smiths. Their availability will vary based on the world as the GM sees fit.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00001>
-			<id-00002>
-				<locked type="number">0</locked>
-				<name type="string">Agile</name>
-				<source type="string">Mikon</source>
-				<text type="formattedtext">
-					<p>Being so tiny their race has learned to use their agility to compensate. This ability to dodge out of the way of the foe gives them a +2 to AC as long as they are unarmored or wearing custom made light armor.</p>
-					<p>Any armor they wear must be custom made to their size.</p>
-				</text>
-				<type type="string">racial</type>
-			</id-00002>
-			<id-00003>
-				<locked type="number">0</locked>
-				<name type="string">Sprint</name>
-				<source type="string">Mikon</source>
-				<text type="formattedtext">
-					<p>When push comes to shove, Mikon can fly like the wind. They may use a bonus action to enter a spirit. The sprint lasts for 1 minute and allows them to double their regular movement speed. At the end of the sprint they suffer one levels of exhaustion.</p>
-					<linklist>
-						<link class="encounter" recordname="encounter.id-00004@Incarnate-5eExpansion">Exhaustion</link>
-					</linklist>
-				</text>
-				<type type="string">racial</type>
-			</id-00003>
-			<id-00004>
+			</id-00009>
+			<id-00010>
 				<locked type="number">1</locked>
-				<name type="string">Mikon Specialty - beasts, fey</name>
+				<name type="string">Underfoot</name>
 				<source type="string">Mikon</source>
 				<text type="formattedtext">
-					<p>There is only so much time in school, so Mikons specialize in learning the weaknesses of different types of creatures. All Mikons learn the weaknesses of beasts. At levels 3, 6, 9, 12, 15, 18, and 20 you may learn additional types from: Aberrations, Celestials, Constructs, Dragons, Elementals, Feys, Fiends, Giants, Humanoids, Misons, Monstrosities, Oozes, Plants, Swarms, Undead.</p>
-					<p>Knowing the weaknesses not only lets you know their weaknesses, but also grants you a 1d4 increase to your attack rolls.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.underfoot@Incarnate-5eExpansion">Underfoot</link>
+					</linklist>
+					<h>Description</h>
+					<p>Although Mikon are hard to see, they often get underfoot. When someone walks over their space and does not specifically say that they avoid stepping on you, then you are at risk for taking trampling damage. You may use your reaction to dive out of the way (dexterity save DC 13) taking bludgeoning damage according to the following table:</p>
+					<table>
+						<tr>
+							<td><b>Size</b></td>
+							<td><b>Damage</b></td>
+						</tr>
+						<tr>
+							<td>Small</td>
+							<td>1d4</td>
+						</tr>
+						<tr>
+							<td>Medium</td>
+							<td>2d4</td>
+						</tr>
+						<tr>
+							<td>Large</td>
+							<td>3d4</td>
+						</tr>
+						<tr>
+							<td>Huge</td>
+							<td>4d4</td>
+						</tr>
+						<tr>
+							<td>Gargantuan</td>
+							<td>5d5</td>
+						</tr>
+					</table>
+					<p>For a creature who has not seen you, stepping on you in this way is part of their regular movement and does not cost an action, bonus action, or free action.</p>
+					<p>If a creature has seen you, then they may expend half their movement speed to jump up and down on top of you as a bonus action.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00004>
-			<id-00005>
-				<name type="string">Tiny Capacity</name>
-				<text type="formattedtext">
-					<p>As one of the tinniest of creatures, your carrying capacity is limited even further than normal. Your maximum carrying capacity can be no greater than twice your weight (even if your strength would allow it to be greater).</p>
-				</text>
-			</id-00005>
+			</id-00010>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2582,7 +3843,7 @@
 			<id-00002>
 				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

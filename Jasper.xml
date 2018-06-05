@@ -59,7 +59,7 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">4</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">112</amount>
+				<amount type="number">136</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">116</amount>
+				<amount type="number">141</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">117</amount>
+				<amount type="number">146</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,11 +108,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">82.71</load>
+			<load type="number">73.71</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">426</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">494</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -163,25 +163,6 @@
 					<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
 				</text>
 			</id-00003>
-			<id-00004>
-				<locked type="number">1</locked>
-				<name type="string">Beloved Outcast</name>
-				<source type="string">Adventurer</source>
-				<text type="formattedtext">
-					<p>You can always find a job, but somehow you can never find a place to sleep. People know you`re good for the work, but the fact that you are indicates that you`re probably not the sort of person they want to have around. People view adventurers in a mixed light with conflicting values. On the one hand, most adventurers are nothing more than murderous, grave-robbing vagrants. On the other hand, who else will rob that grave and murder those local bullies for you? Most common folk consider adventurers to be dangerous, unpredictable, and probably insane... But in a world filled with slavers, mad cults, dragons, walking dead, pit fiends, and extradimensional horrors, just about everyone could find a use for a psychotic sell-sword. Adventurers who survive and reach higher renown may find they have a small following of supporters or fans, but even they may cringe at the idea of that adventurer spending an evening in their home. Most adventurers by profession are members of an adventurers guild through which they can readily attain professional work and contacts in the field.</p>
-				</text>
-			</id-00004>
-			<id-00005>
-				<locked type="number">1</locked>
-				<name type="string">Adventurer - Starting Gear</name>
-				<source type="string">Adventurer</source>
-				<text type="formattedtext">
-					<h>Parcel</h>
-					<linklist>
-						<link class="treasureparcel" recordname="treasureparcels.id-00021@Incarnate-5eExpansion">Starting Items - Adventurer</link>
-					</linklist>
-				</text>
-			</id-00005>
 			<id-00006>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
@@ -355,42 +336,30 @@
 			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
-			<id-00001>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">1 CP</cost>
-				<count type="number">1</count>
-				<damage type="string">1 bludgeoning</damage>
-				<description type="formattedtext">
-					<p>This wooden training sword is great for the standard farmer who wants to practice with a sword. It lets you practice your swings without cutting off your hand or foot. For those who rarely if ever hit yourself... you will want a better weapon.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Wooden Training Sword</name>
-				<rarity type="string">Common</rarity>
-				<subtype type="string">Improvised</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00001>
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">priceless... but only to you</cost>
+				<carried type="number">1</carried>
+				<cost type="string">15 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
+					<h>Skill Coding</h>
 					<linklist>
-						<link class="table" recordname="tables.id-01878@Incarnate-5eExpansion">Random Trophy</link>
+						<link class="reference_skill" recordname="skill.id-00244@Incarnate-5eExpansion">Cartographer's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>A quil, a protractor (used to precisely measure and draw angles and circles), and a precise ruler.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00044@Incarnate-5eExpansion">Rules for Using Cartographer's Tools</link>
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Trophy</name>
-				<rarity type="string">Rare</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">2</weight>
+				<name type="string">Cartographer's Tools</name>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">6</weight>
 			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
@@ -408,22 +377,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00003>
-			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Shovel</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -441,22 +394,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00005>
-			<id-00006>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Crowbar</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00006>
 			<id-00007>
 				<ac type="number">11</ac>
 				<bonus type="number">0</bonus>
@@ -480,17 +417,6 @@
 				<type type="string">Armor</type>
 				<weight type="number">10</weight>
 			</id-00007>
-			<id-00008>
-				<carried type="number">2</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Rope, Hempen (50 Feet)</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">10</weight>
-			</id-00008>
 			<id-00009>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -551,7 +477,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
-				<count type="number">1</count>
+				<count type="number">9</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -689,23 +615,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00021>
-			<id-00022>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>A chain has 10 hit points. It can be burst with a successful DC 20 Strength check.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Chain (5 Feet)</name>
-				<rarity type="string">Common</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -804,28 +713,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00028>
-			<id-00029>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">25 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00262@Incarnate-5eExpansion">Thieve's Tools</link>
-					</linklist>
-					<h>Description</h>
-					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Thieve's Tools</name>
-				<subtype type="string">Kits / Sets</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">1</weight>
-			</id-00029>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -898,7 +785,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -1066,9 +953,6 @@
 			<id-00002>
 				<name type="string">Armor: Light armor, medium armor, shields</name>
 			</id-00002>
-			<id-00003>
-				<name type="string">Tool: Thieves' Tools</name>
-			</id-00003>
 			<id-00004>
 				<name type="string">Tool: Cartographer's Tools</name>
 			</id-00004>
@@ -1217,7 +1101,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1238,30 +1122,17 @@
 				<type type="string">racial</type>
 			</id-00002>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">20</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
-			<id-00001>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">1</bonus>
-						<dice type="dice"></dice>
-						<stat type="string">base</stat>
-						<type type="string">bludgeoning</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Wooden Training Sword</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00001</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00001>
 			<id-00002>
-				<ammo type="number">5</ammo>
+				<ammo type="number">4</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
