@@ -4,14 +4,14 @@
 		<abilities>
 			<charisma>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">12</score>
@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<hdused type="number">1</hdused>
+				<level type="number">5</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">100</amount>
+				<amount type="number">115</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">103</amount>
+				<amount type="number">106</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">104</amount>
+				<amount type="number">105</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,11 +110,11 @@
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">74.8</load>
+			<load type="number">78.3</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">452</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">515</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -314,7 +314,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">22</total>
+			<total type="number">27</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Victory - I'll never make a bet unless I'm sure I can win. (Lawful)</ideals>
@@ -595,6 +595,7 @@
 						<link class="reference_skill" recordname="skill.id-00265@Incarnate-5eExpansion">Playing Card Set</link>
 						<link class="encounter" recordname="encounter.id-00068@Incarnate-5eExpansion">Rules for Using Playing Card Set</link>
 					</linklist>
+					<p>Unlawfully borrowed from Adar, son of Almelon</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
@@ -643,6 +644,20 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Wolf Pelt (Cloak)</name>
+				<weight type="number">3</weight>
+			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Survival Manual (Green Yolks and Bacon)</name>
+				<weight type="number">0.5</weight>
+			</id-00020>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -652,13 +667,12 @@
 				<name type="string">Dwarvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Dug of Barreldon</name>
 		<notes type="string">Adar of Almelon - Crow's Nest, Ebtevib | Wheel of Fortune</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I gambled big and lost. Never again.\nI would bet good coin on anything, even simple activities.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -711,14 +725,14 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -760,7 +774,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d6</dice>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">acid</type>
 							</id-00001>
 						</damagelist>
@@ -800,7 +815,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d10</dice>
+								<dice type="dice">d10,d10</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -854,66 +870,6 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Cleric, Druid, Sorcerer, Wizard</source>
 			</id-00003>
-			<id-00004>
-				<actions>
-					<id-00005>
-						<durmod type="number">1</durmod>
-						<durunit type="string">day</durunit>
-						<label type="string">Chill Touch Caster</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00005>
-					<id-00006>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<order type="number">2</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">strength</savetype>
-						<type type="string">cast</type>
-					</id-00006>
-					<id-00007>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">necrotic</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">3</order>
-						<type type="string">damage</type>
-					</id-00007>
-					<id-00008>
-						<durmod type="number">1</durmod>
-						<label type="string">NOTE: cannot heal; IF: TYPE(undead); IFT: CUSTOM(Chill Touch Caster); DISATK</label>
-						<order type="number">4</order>
-						<type type="string">effect</type>
-					</id-00008>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNoaWxsLXRvdWNo/play/"><b>Syrinscape </b></link>: Chilling Hand - Wizard Spells E</linklist>
-					<h>Description</h>
-					<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
-				</description>
-				<duration type="string">1 round</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Chill Touch</name>
-				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Necromancy</school>
-				<source type="string">Sorcerer, Warlock, Wizard</source>
-			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -952,37 +908,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
 			</id-00005>
-			<id-00006>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<label type="string">Blinded</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a pinch of powder or sand that is colored red, yellow, and blue)</components>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNvbG9yLXNwcmF5/play/"><b>Syrinscape </b></link>: Colorful spray - Wizard Spells E</linklist>
-					<h>Description</h>
-					<p>A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can't see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.</p>
-				</description>
-				<duration type="string">1 round</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Color Spray</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Se lf (15-foot cone)</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Illusion</school>
-				<source type="string">Sorcerer, Wizard</source>
-			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
@@ -1078,12 +1003,12 @@
 			<id-00010>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Sorcery Points</name>
-				<prepared type="number">4</prepared>
+				<prepared type="number">5</prepared>
 			</id-00010>
 			<id-00011>
 				<actions>
@@ -1120,7 +1045,7 @@
 				<actions>
 					<id-00001>
 						<durmod type="number">0</durmod>
-						<label type="string">Acceleration; INIT: [PRF]; CHECK: [HPRF] dexterity</label>
+						<label type="string">Acceleration; INIT: [PRF] [-HPRF]; CHECK: [HPRF] dexterity</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1218,6 +1143,13 @@
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1236,8 +1168,147 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Chill Touch Caster</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">ranged</atktype>
+						<order type="number">2</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00006>
+					<id-00007>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00007>
+					<id-00008>
+						<durmod type="number">1</durmod>
+						<label type="string">NOTE: cannot heal; IF: TYPE(undead); IFT: CUSTOM(Chill Touch Caster); DISATK</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00008>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNoaWxsLXRvdWNo/play/"><b>Syrinscape </b></link>: Chilling Hand - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Chill Touch</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00017>
+			<id-00019>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<label type="string">Prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Sleet Storm; (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkprof type="number">1</atkprof>
+						<order type="number">4</order>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of dust and a few drops of water)</components>
+				<description type="formattedtext">
+					<p>Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused. The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone. If a creature is concentrating in the spell's area, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Sleet Storm</name>
+				<prepared type="number">0</prepared>
+				<range type="string">150 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Sorcerer, Wizard</source>
+			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">NOTE: Slowed; AC: -2; DISSAV: dexterity; NOTE: Save on end of round; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a drop of molasses)</components>
+				<description type="formattedtext">
+					<p>You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration. An affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00020>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: battleaxe, handaxe, light hammer, warhammer</name>
@@ -1272,14 +1343,14 @@
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1342,7 +1413,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1356,7 +1427,7 @@
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1390,7 +1461,7 @@
 				<name type="string">Stonecunning</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00019>
 			<id-00020>
 				<name type="string">Dice Set</name>
@@ -1403,7 +1474,7 @@
 						<link class="encounter" recordname="encounter.id-00032@Incarnate-5eExpansion">Rules for Using Dice Set</link>
 					</linklist>
 				</text>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00020>
 			<id-00021>
 				<name type="string">Playing Card Set</name>
@@ -1416,7 +1487,7 @@
 						<link class="encounter" recordname="encounter.id-00068@Incarnate-5eExpansion">Rules for Using Playing Card Set</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00021>
 			<id-00022>
 				<name type="string">Mason's Tools</name>
@@ -1429,7 +1500,7 @@
 						<link class="encounter" recordname="encounter.id-00015@Incarnate-5eExpansion">Rules for Using Mason's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00022>
 		</skilllist>
 		<speed>
@@ -1441,7 +1512,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00012_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1594,8 +1665,14 @@
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Unarmed Attack</name>
 				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
 			</id-00005>
 		</weaponlist>
 		<weight type="string">210 lb</weight>
