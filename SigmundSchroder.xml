@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">4</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
@@ -47,7 +47,7 @@
 		</abilities>
 		<adventurelist>
 		</adventurelist>
-		<age type="string">30</age>
+		<age type="string">56</age>
 		<alignment type="string">True Neutral</alignment>
 		<background type="string">Knight of the Order</background>
 		<backgroundlink type="windowreference">
@@ -61,31 +61,31 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">1</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.profighter@Incarnate-5eExpansion</recordname>
+					<recordname>reference.classdata.fighter@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">75</amount>
+				<amount type="number">127</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
 				<amount type="number">0</amount>
 			</slot2>
 			<slot3>
-				<amount type="number">47</amount>
+				<amount type="number">40</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">48</amount>
+				<amount type="number">39</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,11 +109,11 @@
 			<encumbered type="number">90</encumbered>
 			<encumberedheavy type="number">180</encumberedheavy>
 			<liftpushdrag type="number">540</liftpushdrag>
-			<load type="number">136.4</load>
+			<load type="number">137.9</load>
 			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">437</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">545</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -430,6 +430,17 @@
 					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+					<p>The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I'd rather eat my armor than admit when I'm wrong.</flaws>
 		<gender type="string">Male</gender>
@@ -438,7 +449,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">40</total>
+			<total type="number">49</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</ideals>
@@ -620,6 +631,43 @@
 				<locked type="number">1</locked>
 				<name type="string">Picture of Ziggurat in 04,04</name>
 			</id-00013>
+			<id-00014>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00014>
 			<id-00015>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -752,6 +800,29 @@
 				<type type="string">Tools</type>
 				<weight type="number">0.5</weight>
 			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -764,9 +835,9 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Sigmund Schroder</name>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I can stare down a hell hound without flinching.\nI have a crude sense of humor.</personalitytraits>
 		<powergroup>
@@ -778,7 +849,9 @@
 				<stat type="string">intelligence</stat>
 			</id-00001>
 			<id-00002>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Ability</name>
+				<saveprof type="number">1</saveprof>
 			</id-00002>
 		</powergroup>
 		<powermeta>
@@ -824,27 +897,35 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -988,7 +1069,7 @@
 					</id-00004>
 					<id-00005>
 						<durmod type="number">1</durmod>
-						<label type="string">RESIST: thunder </label>
+						<label type="string">RESIST: thunder</label>
 						<order type="number">5</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1180,7 +1261,7 @@
 				<source type="string">Xanathar's Guide to Everything</source>
 			</id-00011>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Simple weapons, martial weapons</name>
@@ -1204,28 +1285,28 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1302,7 +1383,7 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1338,7 +1419,7 @@
 						<link class="encounter" recordname="encounter.id-00068@Incarnate-5eExpansion">Rules for Using Playing Card Set</link>
 					</linklist>
 				</text>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00021>
 		</skilllist>
 		<speed>
@@ -1350,7 +1431,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

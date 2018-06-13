@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -83,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">105</amount>
+				<amount type="number">149</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -91,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">137</amount>
+				<amount type="number">200</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -99,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">124</amount>
+				<amount type="number">188</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -121,11 +121,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">100.1</load>
+			<load type="number">101</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">565</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">673</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -355,7 +355,7 @@
 			<id-00012>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Metamagic</name>
+				<name type="string">Metamagic - careful, </name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -396,7 +396,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
+			<total type="number">33</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Authority - I am above lesser folk, and people will do as I say. (Evil)</ideals>
@@ -428,7 +428,7 @@
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -724,27 +724,26 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00019>
-			<id-00020>
+			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">0</count>
+				<cost type="string">20 GP</cost>
+				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Description</h>
-					<p>Drink up and see who tips over. This small keg has enough for a two-person competition. (Needs to be refilled between each use. Average price of refilling is 1 GP)</p>
-					<h>Skill Coding</h>
+					<p>This Keg of Beer has 10 portion for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw DC 16 or increase one Stage of Drunkeness.</p>
 					<linklist>
-						<link class="reference_skill" recordname="skill.id-00002@Incarnate-5eExpansion">Keg of Ale</link>
+						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkeness</link>
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Keg of Ale</name>
-				<subtype type="string">Gaming Set</subtype>
-				<type type="string">Tools</type>
+				<name type="string">Small Keg of Supreme Beer</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Alcohol</subtype>
+				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
-			</id-00020>
+			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -787,18 +786,6 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00022>
-			<id-00023>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<name type="string">Letter in Dwarvish</name>
-				<weight type="number">0.1</weight>
-			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -868,6 +855,24 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Gloves of Swimming and Climbing</name>
+				<nonid_name type="string">Gloves</nonid_name>
+				<nonidentified type="string">A set of light weight leather gloves.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -880,9 +885,9 @@
 				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">FrozenMonk Zirrabanitov</name>
-		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.</notes>
+		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.\n( went to the forest northwest to fight some harpies and goblins found some egg and figured out it from some fireworm(friendly) we went back to town to bring elah the proffessof to talk to them and hear about a tier 2 quest about some demons; we went on to clear the forest a bit and had a bit of roleplay)</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am one with myself. I strive for balance in all things. I work hard but play just as hard.</personalitytraits>
@@ -942,15 +947,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
-				<used type="number">0</used>
+				<max type="number">2</max>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -977,12 +982,12 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00042@Incarnate-5eExpansion">Font of Magic</link>
@@ -993,7 +998,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Sorcery Points</name>
-				<prepared type="number">4</prepared>
+				<prepared type="number">6</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
 			<id-00002>
@@ -1406,6 +1411,48 @@
 				<school type="string">Illusion</school>
 				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a tiny ball of bat guano and sulfur)</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmZpcmViYWxs/play/"><b>Syrinscape </b></link>: Fireball - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fireball</name>
+				<prepared type="number">0</prepared>
+				<range type="string">150 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00014>
 			<id-00015>
 				<actions>
 					<id-00001>
@@ -1470,6 +1517,29 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Sorcerer, Warlock, Wizard</source>
 			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Careful Spell; SAVE: 50</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00045@Incarnate-5eExpansion">Metamagic</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Careful Spell</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00017>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1607,8 +1677,8 @@
 				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">0</prof>
-				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<stat type="string">charisma</stat>
+				<total type="number">3</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
