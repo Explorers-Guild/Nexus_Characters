@@ -47,6 +47,7 @@
 		</abilities>
 		<adventurelist>
 		</adventurelist>
+		<appearance type="string">apprently i have no self imagery</appearance>
 		<background type="string">Acrobat</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -59,7 +60,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">693</amount>
+				<amount type="number">775</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -77,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">83</amount>
+				<amount type="number">127</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">79</amount>
+				<amount type="number">125</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,12 +108,21 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">60.15</load>
+			<load type="number">61.75</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">394</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">495</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Inspiring Leader</name>
+				<prerequisite type="string">Charisma 13 or higher</prerequisite>
+				<text type="formattedtext">
+					<p><i>Prerequisite: Charisma 13 or higher</i></p>
+					<p>You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest.</p>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -271,7 +281,7 @@
 			<id-00010>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Expertise</name>
+				<name type="string">Expertise Performance /deception</name>
 				<source type="string">Bard</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -279,13 +289,23 @@
 					<p>At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement / Inspireing leader</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I don't care about the odds of victory. If I see evil i will destroy it no matter what the cost.</flaws>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
+			<total type="number">27</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Service I am here for a purpose and I shall not rest until it is completed (Lawful)</ideals>
@@ -665,6 +685,95 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00018>
+			<id-00019>
+				<carried type="number">0</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Nexus Room</name>
+				<weight type="number">0</weight>
+			</id-00019>
+			<id-00020>
+				<carried type="number">0</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus Room</location>
+				<name type="string">GP</name>
+				<weight type="number">0</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>In Orcish: The training has been difficult, but we are making some progress. We might be able to train these creatures eventually. If successful they will be terrifying steads.</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Training Report</name>
+				<nonid_name type="string">Orcish Papers</nonid_name>
+				<weight type="number">0.1</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -680,7 +789,7 @@
 				<name type="string">Dwarvish</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">JahArud Serafimov</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -735,7 +844,7 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -1149,6 +1258,84 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard</source>
 			</id-00013>
+			<id-00014>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a short piece of copper wire)</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Om1lc3NhZ2UtYQ/play/">Messages - Wizard Spells E</link>
+					</linklist>
+					<h>Description</h>
+					<p>You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Message</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00014>
+			<id-00015>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a pearl worth at least 100 GP and an owl feather)</components>
+				<description type="formattedtext">
+					<p>You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it. If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Identify</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Wizard</source>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">level</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">charisma</stat>
+								<statmult type="number">1</statmult>
+							</id-00002>
+						</heallist>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p><i>Prerequisite: Charisma 13 or higher</i></p>
+					<p>You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Inspiring Leader</name>
+				<prepared type="number">1</prepared>
+				<prerequisite type="string">Charisma 13 or higher</prerequisite>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00016>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1189,9 +1376,9 @@
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Performance</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1266,9 +1453,9 @@
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
-				<prof type="number">3</prof>
+				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
