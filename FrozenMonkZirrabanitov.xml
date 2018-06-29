@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -83,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">149</amount>
+				<amount type="number">1402</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -91,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">200</amount>
+				<amount type="number">330</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -99,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">188</amount>
+				<amount type="number">313</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -121,11 +121,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">101</load>
+			<load type="number">106.5</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">673</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">731</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -355,7 +355,7 @@
 			<id-00012>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Metamagic - careful, </name>
+				<name type="string">Metamagic - careful,</name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -388,6 +388,40 @@
 					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <i>magic missile </i>and <i>scorching ray </i>aren't eligible, but <i>ray of frost </i>is.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Transcendence</name>
+				<source type="string">Sorcerer</source>
+				<specialization type="string">Shadowslinger</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.transcendence@Incarnate-5eExpansion">Transcendence</link>
+					</linklist>
+					<h>Description</h>
+					<p>From 6th level onward, you can take an action on your turn to create one of the following effects for 1 Minute:</p>
+					<list>
+						<li>Your AC increases by 2 but cannot exceed 20.</li>
+						<li>A 15ft aura of darkness surrounds a point of your choice. A creature with Darkvision cannot see through it, and nonmagical light can't illuminate it. If the point you choose is an object that you are holding or one that isn't being worn or carried, the darkness emanates from that object and moves with it. This benefit lasts for 10 minutes.</li>
+						<li>Enemies have disadvantage on attack rolls against you.</li>
+						<li>A darkvision ability that lets you see 120 feet even in magical darkness (that blocks normal darkvision).</li>
+					</list>
+					<p>You regain the ability to do this when you finish a long rest. Also, creatures with Truesight ignore Transcendence bonuses.</p>
+				</text>
+			</id-00013>
+			<id-00014>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Shadowfall2</name>
+				<source type="string">Sorcerer</source>
+				<specialization type="string">Shadowslinger</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, you can teleport up to 20 feet as a bonus action on your turn. You must be in dim light or darkness to do this, or your destination must be in dim light or darkness.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">If I find someone smarter than me, I have to take them down.</flaws>
 		<gender type="string">Male</gender>
@@ -396,7 +430,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">33</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Authority - I am above lesser folk, and people will do as I say. (Evil)</ideals>
@@ -724,6 +758,36 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">600 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>These furred boots are snug and feel quite warm.</p>
+					<p>While you wear them, you gain the following benefits:</p>
+					<list>
+						<li>You have resistance to cold damage.</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancecold@Incarnate-5eExpansion">Type Resistance (Cold)</link>
+					</linklist>
+					<list>
+						<li>You ignore difficult terrain created by ice or snow.</li>
+						<li>You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection.</li>
+					</list>
+					<p>If you wear heavy clothes, you can tolerate temperatures as low as -100 degrees Fahrenheit.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Boots of the Winterlands</name>
+				<nonid_name type="string">Boots</nonid_name>
+				<nonidentified type="string">A pair of thick warm boots.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">4</weight>
+			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -786,6 +850,43 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -823,7 +924,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -885,9 +986,9 @@
 				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">FrozenMonk Zirrabanitov</name>
-		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.\n( went to the forest northwest to fight some harpies and goblins found some egg and figured out it from some fireworm(friendly) we went back to town to bring elah the proffessof to talk to them and hear about a tier 2 quest about some demons; we went on to clear the forest a bit and had a bit of roleplay)</notes>
+		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.\n( went to the forest northwest to fight some harpies and goblins found some egg and figured out it from some fireworm(friendly) we went back to town to bring elah the proffessof to talk to them and hear about a tier 2 quest about some demons; we went on to clear the forest a bit and had a bit of roleplay)\n(we went to a wizard south of the nexusstart, helped him with a creatin a magical very powerfull Staff as he removed a curse from a partymembers wepon; after sometalk we went on to slay a red dragoni</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am one with myself. I strive for balance in all things. I work hard but play just as hard.</personalitytraits>
@@ -905,7 +1006,13 @@
 				<uses type="number">0</uses>
 			</id-00001>
 			<id-00002>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Effect</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<uses type="number">0</uses>
 			</id-00002>
 		</powergroup>
 		<powermeta>
@@ -947,15 +1054,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">1</used>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -987,7 +1094,7 @@
 			<id-00001>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00042@Incarnate-5eExpansion">Font of Magic</link>
@@ -1540,6 +1647,89 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: fire</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Fire)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00018>
+			<id-00019>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Fly; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a wing feather from any bird)</components>
+				<description type="formattedtext">
+					<p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fly</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Transcendence; AC:2</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Transcendence; GRANTDISATK</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00021@Incarnate-5eExpansion">Transcendence</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transcendence</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00020>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1710,7 +1900,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

@@ -108,17 +108,17 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">5.33333</encumbered>
-			<encumberedheavy type="number">10.6667</encumberedheavy>
-			<liftpushdrag type="number">32</liftpushdrag>
-			<load type="number">9.52</load>
-			<max type="number">16</max>
+			<encumbered type="number">40</encumbered>
+			<encumberedheavy type="number">80</encumberedheavy>
+			<liftpushdrag type="number">240</liftpushdrag>
+			<load type="number">9.32</load>
+			<max type="number">120</max>
 		</encumbrance>
 		<exp type="number">679</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
-				<locked type="number">0</locked>
+				<locked type="number">1</locked>
 				<name type="string">Dead Shot</name>
 				<text type="formattedtext">
 					<h>Dead Shot</h>
@@ -244,20 +244,6 @@
 					<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
 				</text>
 			</id-00006>
-			<id-00007>
-				<locked type="number">1</locked>
-				<name type="string">LandMaster</name>
-				<source type="string">Ranger</source>
-				<text type="formattedtext">
-					<p>Land masters are rangers who connect with the land on a deeper level. The world has taken them in as a part of nature, and even the land views them as its friends.</p>
-					<linklist>
-						<link class="reference_classfeature" recordname="class.proranger.features.id-00033@Incarnate-5eExpansion">Natural Speed</link>
-						<link class="reference_classfeature" recordname="class.proranger.features.id-00034@Incarnate-5eExpansion">Steady Feet</link>
-						<link class="reference_classfeature" recordname="class.proranger.features.id-00035@Incarnate-5eExpansion">Land's Arsenal</link>
-						<link class="reference_classfeature" recordname="class.proranger.features.id-00036@Incarnate-5eExpansion">Lord of the Land</link>
-					</linklist>
-				</text>
-			</id-00007>
 			<id-00008>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
@@ -271,12 +257,21 @@
 			<id-00009>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Natural Speed</name>
+				<name type="string">Hunter's Prey - Colossus Slayer</name>
 				<source type="string">Ranger</source>
-				<specialization type="string">LandMaster</specialization>
+				<specialization type="string">Sharpshooter</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>When you choose this archetype at 3rd level, the land grants you unmatched speed. When you are wearing light armor or no armor, you gain a +10 bonus to your walking speed. The bonus increases to +20 when you reach 11th level</p>
+					<p>At 3rd level, you gain one of the following features of your choice;</p>
+					<p><b>Colossus Slayer</b></p>
+					<linklist>
+						<link class="power" recordname="spell.colossusslayer@Incarnate-5eExpansion">Colossus Slayer</link>
+					</linklist>
+					<p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon Attack, the creature takes an extra 1d8 damage if it&#146;s below its hit point maximum. You can deal this extra damage only once per turn.</p>
+					<p><b>Giant Killer</b></p>
+					<p>When a Large or larger creature within 5 feet of you hits or misses you with an Attack, you can use your reaction to Attack that creature immediately after its Attack, provided that you can see the creature.</p>
+					<p><b>Horde Breaker</b></p>
+					<p>Once on each of your turns when you make a weapon Attack, you can make another Attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
 				</text>
 			</id-00009>
 			<id-00010>
@@ -289,6 +284,35 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Long Range</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Sharpshooter</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, attacking at a weapon's long range no longer poses disadvantage on the attack roll.</p>
+				</text>
+			</id-00011>
+			<id-00012>
+				<locked type="number">1</locked>
+				<name type="string">Sharpshooter</name>
+				<source type="string">Ranger</source>
+				<text type="formattedtext">
+					<p>You're the type of ranger that prefers to hide in the trees and eliminate invaders one at a time. You can hit a target from a tavern before it even enters town. Sharpshooters prefer to stand back and let their enemies attempt to come to them. Choose this archetype if you want to hone your skills as a sniper.</p>
+					<h>Hunter</h>
+					<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of The Wilderness. As you walk the Hunter&#146;s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering Giants and terrifying dragons.</p>
+					<h>Abilities</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00037@Incarnate-5eExpansion">Level 3: Hunter's Prey</link>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00038@Incarnate-5eExpansion">Level 3: Long Range</link>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00040@Incarnate-5eExpansion">Level 7: Sharpest of Shooters</link>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00041@Incarnate-5eExpansion">Level 11: Tenacious Assault</link>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00042@Incarnate-5eExpansion">Level 15: Extra nock</link>
+					</linklist>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">Everyone has a price. Mine happens to be pretty low.</flaws>
 		<gender type="string">Male</gender>
@@ -328,7 +352,7 @@
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">910 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
@@ -445,7 +469,7 @@
 			<id-00009>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
 				<count type="number">20</count>
 				<description type="formattedtext">
@@ -567,7 +591,7 @@
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
@@ -669,12 +693,6 @@
 			<id-00004>
 				<name type="string">Exhaustion</name>
 			</id-00004>
-			<id-00007>
-				<name type="string">Z Polymorph Mammoth</name>
-			</id-00007>
-			<id-00008>
-				<name type="string">Z Polymorph</name>
-			</id-00008>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -750,7 +768,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -762,7 +780,6 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">Mikon Specialty</name>
 				<prepared type="number">0</prepared>
@@ -784,7 +801,6 @@
 						<link class="reference_classfeature" recordname="class.proranger.features.id-00055@Incarnate-5eExpansion">Fighting Style</link>
 					</linklist>
 				</description>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Fighting Style - Archery</name>
@@ -847,45 +863,6 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Druid, Ranger</source>
 			</id-00004>
-			<id-00005>
-				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">10</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">7</bonus>
-								<dice type="dice">d8,d8,d8,d8</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-5eBattles">Mammoth</link>
-					</linklist>
-				</description>
-				<group type="string">Z Polymorph Mammoth</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Gore - Mammoth</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -897,7 +874,6 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">*Dodge</name>
 				<prepared type="number">0</prepared>
@@ -914,7 +890,6 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">*Offhand</name>
 				<prepared type="number">0</prepared>
@@ -1116,40 +1091,43 @@
 			</id-00012>
 			<id-00013>
 				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">10</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
+					<id-00003>
+						<apply type="string">action</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Undead Slayer; IFT:TYPE(undead);DMG:2d6</label>
 						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
 						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
 						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">7</bonus>
-								<dice type="dice">d10,d10,d10,d10</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00005>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-5eBattles">Mammoth</link>
+						<link class="itemtemplate" recordname="itemtemplate.id-00010@Incarnate-5eExpansion">Undead Slayer</link>
 					</linklist>
 				</description>
-				<group type="string">Z Polymorph Mammoth</group>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Stomp - Mammoth</name>
+				<name type="string">Undead Slayer</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00013>
@@ -1184,91 +1162,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
 			</id-00014>
-			<id-00015>
-				<actions>
-					<id-00001>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<order type="number">1</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">18</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">strength</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">Prone</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-5eBattles">Mammoth</link>
-					</linklist>
-				</description>
-				<group type="string">Z Polymorph Mammoth</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Trampling Charge - Mammoth</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00015>
-			<id-00016>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">55</bonus>
-								<dice type="dice">d12,d12,d12,d12,d12,d12,d12,d12,d12,d12,d12</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 14; DEX: [-2DEX]; DEX: -1; CON: [-2CON]; CON: 11; AC: 3</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.mammoth@Incarnate-5eBattles">Mammoth</link>
-					</linklist>
-				</description>
-				<group type="string">Z Polymorph Mammoth</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Transformation - Mammoth</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00016>
-			<id-00017>
-				<actions>
-					<id-00001>
-						<durmod type="number">0</durmod>
-						<label type="string">Polymorph armor conversion; AC: -6</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<group type="string">Z Polymorph</group>
-				<level type="number">0</level>
-				<name type="string">Armor Conversion</name>
-				<prepared type="number">0</prepared>
-			</id-00017>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1439,7 +1332,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00012_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1576,6 +1469,7 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1585,7 +1479,9 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Mikon Crossbow of Undead Slaying</name>
+				<prof type="number">1</prof>
 				<properties type="string">Amunition (range 40/120) loading</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
@@ -1596,7 +1492,7 @@
 			<id-00005>
 				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

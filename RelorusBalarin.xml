@@ -73,25 +73,25 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">2</level>
+				<level type="number">3</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.prorogue@Incarnate-5eExpansion</recordname>
+					<recordname>reference.classdata.rogue@D&#38;D Sword Coast Adventurer's Guide - Player's Guide</recordname>
 				</shortcut>
 			</id-00002>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">785</amount>
+				<amount type="number">39</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">12</amount>
+				<amount type="number">4</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">16</amount>
+				<amount type="number">6</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -119,11 +119,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">84.2</load>
+			<load type="number">84.1</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">956</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">1038</exp>
+		<expneeded type="number">1100</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -311,6 +311,47 @@
 					</linklist>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Swashbuckler</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>You focus your training on the art of the blade, relying on speed, elegance, and charm in equal parts. While some warriors are brutes clad in heavy armor, your method of fighting looks almost like a performance. Duelists and pirates typically belong to this archetype.</p>
+					<p>A Swashbuckler excels in single combat, and can fight with two weapons while safely darting away from an opponent.</p>
+					<p><b>Swashbucklers and Two-Weapon Fighting</b></p>
+					<p>The Swashbuckler relies on a good understanding of the D&#38;D rules to realize its potential, specifically when it comes to fighting with two weapons. Other characters must use an action to Disengage if they want to escape a melee, but the Fancy Footwork feature of the Swashbuckler bundles a more limited version of Disengage within your attack. This allows you to use your bonus action to fight with two weapons, and then safely evade each foe you attacked.</p>
+					<h>Features</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.fancyfootwork3@*">Fancy Footwork</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.rakishaudacity3@*">Rakish Audacity</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.panache9@*">Panache</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.elegantmaneuver13@*">Elegant Maneuver</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.masterduelist17@*">Master Duelist</link>
+					</linklist>
+				</text>
+			</id-00013>
+			<id-00014>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Rakish Audacity</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Swashbuckler</specialization>
+				<text type="formattedtext">
+					<p>Starting at 3rd level, your unmistakable confidence propels you into battle. You can add your Charisma modifier to your initiative rolls.</p>
+					<p>In addition, you don't need advantage on your attack roll to use your Sneak Attack if no creature other than your target is within 5 feet of you. All the other rules for the Sneak Attack class feature still apply to you.</p>
+				</text>
+			</id-00014>
+			<id-00015>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fancy Footwork</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Swashbuckler</specialization>
+				<text type="formattedtext">
+					<p>When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.</p>
+				</text>
+			</id-00015>
 		</featurelist>
 		<flaws type="string">An innocent person is in prison for a crime that I committed. I'm okay with that.</flaws>
 		<gender type="string">Male</gender>
@@ -319,14 +360,14 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">64</total>
+			<total type="number">72</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</ideals>
 		<initiative>
-			<misc type="number">0</misc>
+			<misc type="number">1</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">4</total>
+			<total type="number">5</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -334,7 +375,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This poison must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.</p>
 				</description>
@@ -538,7 +579,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Effect Coding</h>
 					<linklist>
@@ -625,90 +666,6 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00017>
-			<id-00018>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.enlargereduce@Incarnate-5eExpansion">Enlarge/Reduce</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>2nd</td>
-							<td>Uncommon</td>
-							<td>13</td>
-							<td>+5</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Enlarge/Reduce</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Simple Scroll</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00018>
-			<id-00019>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">200 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.blight@Incarnate-5eExpansion">Blight</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>4th</td>
-							<td>Rare</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Blight</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Fine Scroll</nonidentified>
-				<rarity type="string">Rare</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00019>
 			<id-00020>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -724,7 +681,7 @@
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Crystal Shortsword</name>
+				<name type="string">Crystal Shortsword Psyonic Damage</name>
 				<nonid_name type="string">Shortsword</nonid_name>
 				<nonidentified type="string">For when you want something longer than a dagger but shorter than a longsword the shortsword is for you.</nonidentified>
 				<properties type="string">Finesse light</properties>
@@ -774,28 +731,6 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00021>
-			<id-00022>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">200 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Description</h>
-					<linklist>
-						<link class="power" recordname="spell.gaseousform@Incarnate-5eExpansion">Gaseous Form</link>
-					</linklist>
-					<p>When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Gaseous Form</name>
-				<nonid_name type="string">Potion</nonid_name>
-				<nonidentified type="string">This potion's container seems to hold fog that moves and pours like water.</nonidentified>
-				<rarity type="string">rare</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -893,7 +828,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -980,7 +915,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 GP</cost>
-				<count type="number">3</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<p>This poison is typically made only by the drow, and only in a place far removed from sunlight. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.</p>
 				</description>
@@ -992,6 +927,34 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.5</weight>
 			</id-00031>
+			<id-00033>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,825 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing and 2d6 fire</damage>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.flametongue@Incarnate-5eExpansion">Flame Tongue</link>
+					</linklist>
+					<h>Description</h>
+					<p>You can use a bonus action to speak this magic weapon's command word, causing flames to erupt from the blade. These flames shed bright light in a 40--foot radius and dim light for an additional 40 feet.</p>
+					<p>While the weapon is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Flame Tongue Rapier</name>
+				<nonid_name type="string">Rapier</nonid_name>
+				<nonidentified type="string">A pointy rapier.</nonidentified>
+				<properties type="string">Finesse</properties>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00033>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1007,7 +970,7 @@
 				<name type="string">Infernal</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">9</level>
+		<level type="number">10</level>
 		<name type="string">Relorus Balarin</name>
 		<notes type="string">Elven Dungeon 1 1 1\nCrystal Elf's Location: ????\nFound a book on how to trigger psyionic traps. It included a command phrase that doubles the power, but talks of unexpected results.</notes>
 		<perception type="number">14</perception>
@@ -1106,8 +1069,40 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">11</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00003>
+						<damagelist>
+							<id-00002>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">poison</type>
+							</id-00002>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Serpent's Venom</name>
+				<prepared type="number">0</prepared>
+			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
@@ -1284,7 +1279,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Feather Fall</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
@@ -1668,56 +1663,6 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Druid Grassland Circle, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00021>
-			<id-00022>
-				<actions>
-					<id-00001>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
-								<type type="string">fire</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6,d6</dice>
-								<statmult type="number">0</statmult>
-								<type type="string">fire</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">3</order>
-						<type type="string">damage</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a tiny ball of bat guano and sulfur)</components>
-				<description type="formattedtext">
-					<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
-					<p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Fireball</name>
-				<prepared type="number">1</prepared>
-				<range type="string">150 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Monk, Sorcerer, Wizard, Arcane Trickster</source>
-			</id-00022>
 			<id-00023>
 				<actions>
 					<id-00001>
@@ -1835,7 +1780,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Disguise Self</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<school type="string">Illusion</school>
 				<source type="string">Bard, Cleric Trickery Domain, Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
@@ -1979,6 +1924,27 @@
 				<school type="string">Evocation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00030>
+			<id-00031>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<level type="number">0</level>
+				<name type="string">Drow Poison</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00031>
 			<id-00032>
 				<actions>
 					<id-00001>
@@ -1992,7 +1958,7 @@
 					<id-00002>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Booming Blade; DMG: 1d8 thunder; Sneak Attack; DMG: 1d6; [ROLL];[SELF]</label>
+						<label type="string">Booming Blade; DMG: 1d8 thunder; Sneak Attack; DMG: 2d6; [ROLL];[SELF]</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
 					</id-00002>
@@ -2010,6 +1976,44 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00032>
+			<id-00033>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a tiny ball of bat guano and sulfur)</components>
+				<description type="formattedtext">
+					<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+					<p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fireball</name>
+				<prepared type="number">0</prepared>
+				<range type="string">150 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Monk, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00033>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2087,8 +2091,8 @@
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
-				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
+				<stat type="string">charisma</stat>
+				<total type="number">1</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -2108,8 +2112,8 @@
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">0</prof>
-				<stat type="string">wisdom</stat>
-				<total type="number">0</total>
+				<stat type="string">charisma</stat>
+				<total type="number">1</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -2206,7 +2210,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2299,6 +2303,36 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6,d6</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">fire</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Flame Tongue Rapier</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00033</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">154 Pounds</weight>
 	</character>
