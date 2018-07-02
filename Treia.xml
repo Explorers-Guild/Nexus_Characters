@@ -79,11 +79,11 @@
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">196</amount>
+				<amount type="number">293</amount>
 				<name type="string">GP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">44</amount>
+				<amount type="number">36</amount>
 				<name type="string">CP</name>
 			</slot4>
 			<slot5>
@@ -110,11 +110,11 @@
 			<encumbered type="number">180</encumbered>
 			<encumberedheavy type="number">360</encumberedheavy>
 			<liftpushdrag type="number">1080</liftpushdrag>
-			<load type="number">149.52</load>
+			<load type="number">167.52</load>
 			<max type="number">540</max>
 		</encumbrance>
-		<exp type="number">401</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">434</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -225,7 +225,7 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">0</temporary>
+			<temporary type="number">7</temporary>
 			<total type="number">40</total>
 			<wounds type="number">0</wounds>
 		</hp>
@@ -393,7 +393,6 @@
 			</id-00011>
 			<id-00012>
 				<ac type="number">15</ac>
-				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">75 gp</cost>
 				<count type="number">1</count>
@@ -497,25 +496,94 @@
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00019>
+			<id-00020>
 				<carried type="number">2</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
-				<damage type="string">2d6 - 1  bludgeoning</damage>
-				<description type="formattedtext">
-					<p>degraded by black ooze</p>
-				</description>
+				<damage type="string">2d6 bludgeoning</damage>
 				<isidentified type="number">1</isidentified>
-				<locked type="number">0</locked>
-				<name type="string">Maul (corroded)</name>
+				<locked type="number">1</locked>
+				<name type="string">Maul</name>
 				<properties type="string">Heavy, two-handed</properties>
 				<subtype type="string">Martial Weapons</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">10</weight>
-			</id-00019>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Pole (10-foot)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">7</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Shovel</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Spike, Iron (10)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Dwarven</name>
+				<name type="string">Dwarvish</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Common</name>
@@ -546,87 +614,75 @@
 			<id-00005>
 				<name type="string">CONSUMABLES</name>
 			</id-00005>
+			<id-00006>
+				<name type="string">Effect</name>
+			</id-00006>
+			<id-00007>
+				<name type="string">Item</name>
+			</id-00007>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
@@ -656,7 +712,7 @@
 						<type type="string">heal</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can't use it again until you finish a short or long rest.</p>
 				</description>
@@ -696,7 +752,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.</p>
@@ -711,6 +767,30 @@
 				<school type="string">Class</school>
 				<source type="string">Fighter</source>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00005>
 			<id-00006>
 				<actions>
 				</actions>
@@ -1004,7 +1084,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1077,6 +1157,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1121,11 +1202,9 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
 						<dice type="dice">d12</dice>
 						<stat type="string">base</stat>
 						<type type="string">slashing</type>
@@ -1142,29 +1221,26 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
-			<id-00005>
-				<attackbonus type="number">0</attackbonus>
+			<id-00006>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">-1</bonus>
 						<dice type="dice">d6,d6</dice>
 						<stat type="string">base</stat>
-						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Maul (corroded)</name>
+				<name type="string">Maul</name>
 				<prof type="number">1</prof>
 				<properties type="string">Heavy, two-handed</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00019</recordname>
+					<recordname>....inventorylist.id-00020</recordname>
 				</shortcut>
 				<type type="number">0</type>
-			</id-00005>
+			</id-00006>
 		</weaponlist>
 		<weight type="string">300</weight>
 	</character>

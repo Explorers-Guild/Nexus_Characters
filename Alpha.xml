@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">125</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -96,6 +96,7 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -108,10 +109,10 @@
 			<encumbered type="number">170</encumbered>
 			<encumberedheavy type="number">340</encumberedheavy>
 			<liftpushdrag type="number">1020</liftpushdrag>
-			<load type="number">83.6</load>
+			<load type="number">85.1</load>
 			<max type="number">510</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">374</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -259,7 +260,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">35</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">8</wounds>
 		</hp>
 		<ideals type="string">Hierarchy - I know my place. Know yours. Blood and friends are sacred, and i will protect them until my last breath.</ideals>
 		<initiative>
@@ -289,7 +290,7 @@
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">3 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -527,7 +528,7 @@
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">4</count>
 				<damage type="string">1d6 piercing</damage>
@@ -546,6 +547,66 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00017>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -560,10 +621,11 @@
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">Alpha</name>
-		<notes type="string">\nConflict between Tribesman &#38; Goliath both giving Athletics &#62; gave intimidation instead.</notes>
+		<notes type="string">\nConflict between Tribesman &#38; Goliath both giving Athletics &#62; gave intimidation instead. Got a bag of treats from the Bugbear.</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I have never found a problem that a good boot to the head and a knife to a throat could not cure.I like to joke around and tell stories.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -576,6 +638,9 @@
 			<id-00003>
 				<name type="string">Effect</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Item</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -666,11 +731,36 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Stone's Endurance</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Goliath</source>
 				<type type="string">racial</type>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00002>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -900,7 +990,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1001,7 +1091,7 @@
 				<type type="number">2</type>
 			</id-00003>
 			<id-00004>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
@@ -1021,7 +1111,8 @@
 				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
-				<carried type="number">2</carried>
+				<ammo type="number">1</ammo>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
