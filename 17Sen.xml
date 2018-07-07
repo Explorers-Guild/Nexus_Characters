@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">12</score>
@@ -49,7 +49,7 @@
 		</adventurelist>
 		<age type="string">0(20)</age>
 		<alignment type="string">Chaotic Good</alignment>
-		<appearance type="string">'17' is a rather thin, pale-skinned man wearing a loose, button-up shirt, a hood, and corsair pants. From the age of 6, he has been a part of the Kinship of Hecatoncheires, when the elders of the monastery found him unconscious at the doors of the cathedral. The name '17' was given to him due to a brand on his back, a scar burnt in the shape of the number 17, a number which seems to haunts him wherever he goes. Most of those at the monastery took to calling him Sen, in an attempt to draw focus away from the brand. He hasn't spoken a word during his monastism, so very little is known about him, even among the elder monks of the monastery.</appearance>
+		<appearance type="string">'17' is a rather thin, pale-skinned man wearing a loose, button-up shirt, a hood, and corsair pants. From the age of 6, he has been a part of the Kinship of Hecatoncheires, when the elders of the monastery found him unconscious at the doors of the cathedral. The name '17' was given to him due to a brand on his back, a scar burnt in the shape of the number 17, a number which seems to haunts him wherever he goes. Most of those at the monastery took to calling him Sen, in an attempt to draw focus away from the brand. He hasn't spoken a word during his monastism, so very1/afk little is known about him, even among the elder monks of the monastery.</appearance>
 		<background type="string">Monastic</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">8</level>
+				<level type="number">9</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2120</amount>
+				<amount type="number">2363</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">134</amount>
+				<amount type="number">197</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">137</amount>
+				<amount type="number">195</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,11 +110,11 @@
 			<encumbered type="number">120</encumbered>
 			<encumberedheavy type="number">240</encumberedheavy>
 			<liftpushdrag type="number">720</liftpushdrag>
-			<load type="number">94.51</load>
+			<load type="number">110.31</load>
 			<max type="number">360</max>
 		</encumbrance>
-		<exp type="number">816</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">907</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -206,13 +206,20 @@
 				<specialization type="string">Fire Elemental</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.innerflame@Incarnate-5eExpansion">Inner Flame</link>
+					</linklist>
+					<h>Description</h>
 					<p>At 3rd level you have learned how to extend your Ki past your limbs. You may do any of the following:</p>
 					<list>
 						<li>Use an Action to generate a flickering flame that emits bright light in a radius of 10 feet and dim light for an additional 10 feet that lasts for 10 minutes or until you dismiss it as an Action.</li>
-						<li>Cast the Control Flames Cantrip, or spend 1 Ki to cast the Absorb Elements spell (agaisnt fire damage only).</li>
-						<li>You may spend 1 ki point to shroud your hands in flame for 1 minute adding 1d4 fire damage to your hits.</li>
+						<li>You may spend 1 ki point to shroud your hands in flame for 1 minute adding 1d6 fire damage to your hits.</li>
 					</list>
-					<p>When you use the Attack action on your turn to use this special attack, you can spend 1 ki point to make two additional attacks with it as a bonus action.</p>
+					<p>When you use the Attack action on your turn to use this special attack, you can still use any of your ki features as if you had just made an attack action.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-5eExpansion">Ki</link>
+					</linklist>
 				</text>
 			</id-00007>
 			<id-00008>
@@ -383,7 +390,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">51</total>
+			<total type="number">57</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Pacifist - My skills are only to be used for defense. I will not kill my opponent unless it is unavoidable. (Good)</ideals>
@@ -632,26 +639,6 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">0.2</weight>
 			</id-00015>
-			<id-00016>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">50 - 100 gp</cost>
-				<count type="number">2</count>
-				<description type="formattedtext">
-					<h>Description</h>
-					<p>You regain 2d4 + 2 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Potion</nonid_name>
-				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.1</weight>
-			</id-00016>
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -684,6 +671,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">*Room</location>
 				<locked type="number">1</locked>
 				<name type="string">Medium Pile of Splintered Young Red Dragon Scales</name>
 				<weight type="number">5</weight>
@@ -726,7 +714,7 @@
 				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
+				<location type="string">*Room</location>
 				<name type="string">hunk of oak</name>
 				<weight type="number">30</weight>
 			</id-00021>
@@ -765,18 +753,90 @@
 					<p>This Keg of Beer has 10 portion for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw DC 14 or increase one Stage of Drunkeness.</p>
 					<linklist>
 						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkeness</link>
+						<link class="item" recordname="item.id-00264@Incarnate-5eExpansion">Small Keg of Common Mead</link>
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Small Keg (Empty)</name>
+				<locked type="number">0</locked>
+				<name type="string">Small Keg (Common Mead)</name>
 				<rarity type="string">Rare</rarity>
 				<subtype type="string">Alcohol</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>NPC Coding</h>
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.worg@Incarnate-5eBattles">Worg</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Pet: Worg</name>
+				<weight type="number">0</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>The wing of a Wyvern. Might make some fine boots.</p>
+					<h>NPC Link</h>
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.wyvern@Incarnate-5eBattles">Wyvern</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Wyvern Wing</name>
+				<weight type="number">15</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
+			<id-00001>
+				<name type="string">Auran</name>
+			</id-00001>
 			<id-00002>
 				<name type="string">Primordial</name>
 			</id-00002>
@@ -786,20 +846,31 @@
 			<id-00004>
 				<name type="string">Common</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Aquan</name>
+			</id-00005>
 			<id-00006>
 				<name type="string">Orc</name>
 			</id-00006>
+			<id-00007>
+				<name type="string">Terran</name>
+			</id-00007>
+			<id-00008>
+				<name type="string">Ignan</name>
+			</id-00008>
 		</languagelist>
-		<level type="number">8</level>
+		<level type="number">9</level>
 		<name type="string">17 &#34;Sen&#34;</name>
-		<notes type="string">S.30 - Bitten by Were-tiger\nS.48: Dead - 1 day, Resurected Orcish, ATK+CHK -4\n</notes>
-		<perception type="number">16</perception>
+		<notes type="string">DM note (in case I can't return to Nexus):\nSen doesn't use Common often. When he does, his speech is rsaspy and forced, and his writing is messy.\n\nS.30 - Bitten by Were-tiger\nS.48: Dead - 1 day, Resurected Orcish, ATK+CHK -4\nS.54: Released Balor, started working w/ Orcs</notes>
+		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am shattered. Something has happened that has shaken my beliefs and I will not find peace until I can face what has happened.\nI am like a leaf in the wind. I go where ever the road takes me. Life just &#34;happens&#34;, and I am content to let it.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Ki</name>
+				<saveprof type="number">1</saveprof>
 			</id-00001>
 			<id-00002>
 				<atkprof type="number">1</atkprof>
@@ -928,14 +999,35 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">3</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00003>
+					<id-00004>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">ranged</atktype>
+						<order type="number">4</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A flame appears in your hand. The flame sheds 20ft of light. It can be thrown 30ft. On hit, it deals 1d8 damage</p>
+				</description>
+				<duration type="string">10 min or until used</duration>
 				<group type="string">Fire</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Spiritual Flame</name>
 				<prepared type="number">0</prepared>
-				<shortdescription type="string">conjure flame</shortdescription>
+				<range type="string">Self / 30ft</range>
+				<shortdescription type="string">produce flame</shortdescription>
 			</id-00002>
 			<id-00003>
 				<actions>
@@ -970,7 +1062,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Ki</name>
-				<prepared type="number">6</prepared>
+				<prepared type="number">8</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
 			<id-00005>
@@ -1037,7 +1129,7 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Flaming Fists; DMG: 1d4 fire; Light 10ft</label>
+						<label type="string">Flaming Fists; DMG: 1d6 fire; Light 10ft</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1053,7 +1145,7 @@
 				<name type="string">Flaming Fists(1K)</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
-				<shortdescription type="string">1d4 fire damage</shortdescription>
+				<shortdescription type="string">1d6 fire damage</shortdescription>
 			</id-00008>
 			<id-00009>
 				<actions>
@@ -1082,7 +1174,7 @@
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00034@Incarnate-5eExpansion">Stunning Strike</link>
 					</linklist>
 				</description>
-				<group type="string">Class</group>
+				<group type="string">Ki</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Stunning Strike(1K)</name>
@@ -1304,7 +1396,7 @@
 				<source type="string">Bard, Druid</source>
 			</id-00017>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Woodcarver's Tools</name>
@@ -1329,14 +1421,14 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -1406,14 +1498,14 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1434,7 +1526,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1455,14 +1547,14 @@
 				<name type="string">Woodcarver's Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
 				<name type="string">Instrument: Flute</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00020>
 		</skilllist>
 		<speed>
