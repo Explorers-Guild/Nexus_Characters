@@ -3,28 +3,46 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">1</bonus>
-				<save type="number">1</save>
-				<score type="number">12</score>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">15</score>
 			</charisma>
 			<constitution>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">10</score>
 			</constitution>
 			<dexterity>
-				<score type="number">10</score>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">12</score>
 			</dexterity>
 			<intelligence>
-				<save type="number">2</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">11</score>
+				<score type="number">18</score>
 			</intelligence>
 			<strength>
-				<score type="number">10</score>
+				<bonus type="number">-1</bonus>
+				<save type="number">-1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">8</score>
 			</strength>
 			<wisdom>
-				<save type="number">2</save>
+				<bonus type="number">2</bonus>
+				<save type="number">4</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">10</score>
+				<score type="number">14</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -39,9 +57,10 @@
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -51,33 +70,46 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">28</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
+				<amount type="number">13</amount>
+				<name type="string">SP</name>
 			</slot2>
 			<slot3>
+				<amount type="number">18</amount>
+				<name type="string">CP</name>
 			</slot3>
 			<slot4>
+				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
+				<amount type="number">0</amount>
 			</slot5>
 			<slot6>
+				<amount type="number">0</amount>
 			</slot6>
 		</coins>
 		<defenses>
 			<ac>
+				<armor type="number">0</armor>
+				<misc type="number">0</misc>
 				<prof type="number">1</prof>
-				<total type="number">10</total>
+				<shield type="number">0</shield>
+				<temporary type="number">0</temporary>
+				<total type="number">11</total>
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">50</encumbered>
-			<encumberedheavy type="number">100</encumberedheavy>
-			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">28.68</load>
-			<max type="number">150</max>
+			<encumbered type="number">40</encumbered>
+			<encumberedheavy type="number">80</encumberedheavy>
+			<liftpushdrag type="number">240</liftpushdrag>
+			<load type="number">26.78</load>
+			<max type="number">120</max>
 		</encumbrance>
+		<exp type="number">426</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -211,15 +243,32 @@
 					<p>At 2nd level, you gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell's level, or three times its level if the spell belongs to the School of Necromancy. You don't gain this benefit for killing constructs or undead.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement / Int +2</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I am only interested in the ailments my patients suffer from, not the people themselves.</flaws>
 		<gender type="string">m</gender>
 		<height type="string">4'9</height>
 		<hp>
-			<total type="number">14</total>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
+			<temporary type="number">0</temporary>
+			<total type="number">18</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Research - In order to treat patients effectively, we must understand the maladies afflicting them. (Any)</ideals>
 		<initiative>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
+			<total type="number">1</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -280,28 +329,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00003>
-			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">5 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00259@Incarnate-5eExpansion">Herbalism Kit</link>
-					</linklist>
-					<h>Description</h>
-					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Herbalism Kit</name>
-				<subtype type="string">Kits / Sets</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">3</weight>
-			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -443,10 +470,48 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00016>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Too many of our patrols have been missing and we must protect today's shipment. Go to the edge of the forest and head back, but set up an ambush and kill anyone trying to get in. We must succeed for it is what our God commanded.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Goblin Orders - completed</name>
+				<nonid_name type="string">Papers in Orcish</nonid_name>
+				<nonidentified type="string">Papers written in Orcish, wander what they say?</nonidentified>
+				<weight type="number">0.1</weight>
+			</id-00018>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Infernal</name>
@@ -455,10 +520,12 @@
 				<name type="string">Gnomish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Cit D. Frostmoon</name>
-		<perception type="number">10</perception>
+		<perception type="number">12</perception>
+		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I talk down to others when speaking on a field I believe myself to be knowledgeable in.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -469,46 +536,104 @@
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00005>
@@ -684,7 +809,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Burning Hands</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self (15-foot cone)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -735,7 +860,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Mage Armor</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
@@ -766,7 +891,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Shield</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
@@ -828,7 +953,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Magic Missile</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -989,7 +1114,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Feather Fall</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1009,11 +1134,70 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Misty Step</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<school type="string">Conjuration</school>
 				<source type="string">Sorcerer, Warlock, Wizard</source>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a chip of mica)</components>
+				<description type="formattedtext">
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00018>
+			<id-00019>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a drop of mercury)</components>
+				<description type="formattedtext">
+					<p>This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.</p>
+					<p>The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.</p>
+					<p>If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Tenser's Floating Disk</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00019>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1033,96 +1217,160 @@
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
+				<misc type="number">0</misc>
 				<name type="string">Perception</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">2</total>
 			</id-00001>
 			<id-00002>
+				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
+				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00003>
 			<id-00004>
+				<misc type="number">0</misc>
 				<name type="string">Nature</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">4</total>
 			</id-00004>
 			<id-00005>
+				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00005>
 			<id-00006>
+				<misc type="number">0</misc>
 				<name type="string">Survival</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">2</total>
 			</id-00006>
 			<id-00007>
+				<misc type="number">0</misc>
 				<name type="string">Performance</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00007>
 			<id-00008>
+				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
+				<total type="number">1</total>
 			</id-00008>
 			<id-00009>
+				<misc type="number">0</misc>
 				<name type="string">Religion</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">4</total>
 			</id-00009>
 			<id-00010>
+				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
+				<prof type="number">0</prof>
 				<stat type="string">strength</stat>
+				<total type="number">-1</total>
 			</id-00010>
 			<id-00011>
+				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
+				<total type="number">1</total>
 			</id-00011>
 			<id-00012>
+				<misc type="number">0</misc>
 				<name type="string">Insight</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">2</total>
 			</id-00012>
 			<id-00013>
+				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00013>
 			<id-00014>
+				<misc type="number">0</misc>
 				<name type="string">Deception</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00014>
 			<id-00015>
+				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">6</total>
 			</id-00015>
 			<id-00016>
+				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
+				<total type="number">1</total>
 			</id-00016>
 			<id-00017>
+				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">6</total>
 			</id-00017>
 			<id-00018>
+				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">2</total>
 			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string">Herbalism Kit</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00259@Incarnate-5eExpansion">Herbalism Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">Rules for Using Herbalism Kit</link>
+					</linklist>
+				</text>
+				<total type="number">6</total>
+			</id-00019>
 		</skilllist>
 		<speed>
+			<armor type="number">0</armor>
 			<base type="number">30</base>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
 		<temp>
 		</temp>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

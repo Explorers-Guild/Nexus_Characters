@@ -3,15 +3,15 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">14</score>
@@ -49,6 +49,7 @@
 		</adventurelist>
 		<age type="string">22</age>
 		<alignment type="string">Chaotic Neutral</alignment>
+		<appearance type="string">Fair skin, Dark Clothes, Dark Grey Cloak, Bright brown hair</appearance>
 		<background type="string">Criminal</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -60,11 +61,11 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">2</level>
+				<level type="number">4</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.sorcerer@DD5E SRD Data</recordname>
+					<recordname>class.prosorcerer@Incarnate-5eExpansion</recordname>
 				</shortcut>
 			</id-00001>
 			<id-00002>
@@ -82,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">118</amount>
+				<amount type="number">121</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -90,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">18</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -98,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">8</amount>
+				<amount type="number">21</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -123,7 +124,7 @@
 			<load type="number">93.5</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">374</exp>
+		<exp type="number">500</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -303,6 +304,42 @@
 					<p>You can use a musical instrument (see &#34;Equipment&#34;) as a spellcasting focus for your bard spells.</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Metamagic</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p>
+					<p>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>
+					<p><b>Careful Spell</b></p>
+					<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.carefulspell@Incarnate-5eExpansion">Careful Spell</link>
+					</linklist>
+					<p><b>Distant Spell</b></p>
+					<p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.</p>
+					<p>When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+					<p><b>Empowered Spell</b></p>
+					<p>When you roll damage for a spell, you can spend 1 sorcery point to re-roll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p>
+					<p>You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+					<p><b>Extended Spell</b></p>
+					<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</p>
+					<p><b>Heightened Spell</b></p>
+					<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.heightenedspell@Incarnate-5eExpansion">Heightened Spell</link>
+					</linklist>
+					<p><b>Quickened Spell</b></p>
+					<p>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</p>
+					<p><b>Subtle Spell</b></p>
+					<p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</p>
+					<p><b>Twinned Spell</b></p>
+					<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spells level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p>
+					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <i>magic missile </i>and <i>scorching ray </i>aren't eligible, but <i>ray of frost </i>is.</p>
+				</text>
+			</id-00008>
 			<id-00009>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -359,14 +396,24 @@
 					<p><i>Converting a Spell Slot to Sorcery Points. </i>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - 2 Cha</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<gender type="string">Female</gender>
 		<height type="string">5'1''/155 cm</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">1</temporary>
-			<total type="number">23</total>
+			<temporary type="number">0</temporary>
+			<total type="number">37</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -709,7 +756,6 @@
 					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Pocket, attached with a string to belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Heartstone</name>
 				<nonid_name type="string">Heartstone</nonid_name>
@@ -730,8 +776,9 @@
 					<p>The chime can be used ten times. After the tenth time, it cracks and becomes useless.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Chime of Opening</name>
+				<name type="string">Chime of Opening (used 0 times)</name>
 				<nonid_name type="string">Metal Tube</nonid_name>
 				<nonidentified type="string">A hollow metal tube about 1 foot long</nonidentified>
 				<rarity type="string">rare</rarity>
@@ -741,7 +788,7 @@
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Gnomish</name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Elvish</name>
@@ -750,88 +797,104 @@
 				<name type="string">Gnomish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">5</level>
 		<name type="string">Liastra</name>
-		<notes type="string">Player: Equalatior\nTo aquire (in order of importance): Thieves' tools, Flute, Playing Card Set</notes>
-		<perception type="number">13</perception>
+		<notes type="string">Player: Equalatior\nTo aquire (in order of importance): Thieves' tools, Flute, Pinch of soot and salt (for comprehend languages), Playing Card Set\nPHB + Xanathar's</notes>
+		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 				<stat type="string">charisma</stat>
 			</id-00001>
-			<id-00002>
-				<castertype type="string">memorization</castertype>
-				<name type="string">Spells (Bard)</name>
-				<stat type="string">charisma</stat>
-			</id-00002>
 			<id-00003>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Effect</name>
+				<saveprof type="number">1</saveprof>
 			</id-00003>
 			<id-00004>
 				<name type="string">Items</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Metamagic</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">3</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -857,6 +920,136 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Invisible; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (an eyelash encased in gum arabic)</components>
+				<description type="formattedtext">
+					<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Invisibility (T) (C)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Twinned Spell</p>
+					<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spells level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p>
+					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost is.</p>
+				</description>
+				<group type="string">Metamagic</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Twinned Spell</name>
+				<prepared type="number">0</prepared>
+			</id-00003>
+			<id-00004>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Quickened Spell</p>
+					<p>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</p>
+				</description>
+				<group type="string">Metamagic</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Quicken Spell</name>
+				<prepared type="number">0</prepared>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Scorching Ray</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.</p>
+					<p>The bonfire ignites flammable objects in its area that aren't being worn or carried.</p>
+					<p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Create Bonfire</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00006>
 			<id-00009>
 				<actions>
 				</actions>
@@ -866,6 +1059,7 @@
 				</description>
 				<group type="string">Effect</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Bardic Inspiration (1d6)</name>
 				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
@@ -1283,14 +1477,20 @@
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>FLEXIBLE CASTING</p>
+					<p>Creating Spell Slots, Bonus Action. Slot Level, SP cost: 1st=2SP, 2nd=3SP, 3rd=5SP, 4th=6SP, 5th=7SP.</p>
+					<p>Converting a Spell Slot to Sorcery Points, Bonus Action: Spell slot level=SP gain. Max SP=Sorcerer level.</p>
+				</description>
 				<group type="string">Effect</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Sorcery Points</name>
-				<prepared type="number">2</prepared>
+				<prepared type="number">4</prepared>
 				<shortdescription type="string">Sorcerer level per long rest</shortdescription>
 			</id-00035>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Playing card set, thieves' tools, Flute</name>
@@ -1315,35 +1515,35 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Performance</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1357,7 +1557,7 @@
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1406,14 +1606,14 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1448,7 +1648,7 @@
 						<link class="encounter" recordname="encounter.id-00068@Incarnate-5eExpansion">Rules for Using Playing Card Set</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
@@ -1466,7 +1666,7 @@
 						<link class="encounter" recordname="encounter.id-00064@Incarnate-5eExpansion">Rules for Using Thieve's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00020>
 			<id-00021>
 				<misc type="number">0</misc>
@@ -1480,7 +1680,7 @@
 						<link class="encounter" recordname="encounter.id-00002@Incarnate-5eExpansion">Rules for Using a Musical Instrument</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00021>
 		</skilllist>
 		<speed>
@@ -1492,7 +1692,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
