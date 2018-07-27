@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">118</amount>
+				<amount type="number">378</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">126</amount>
+				<amount type="number">156</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">128</amount>
+				<amount type="number">163</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -112,18 +112,18 @@
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">68.7</load>
+			<load type="number">69.2</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">600</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">663</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
 			<id-00001>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement - 1 DEX, 1 WIS</name>
 				<source type="string">Fighter</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -248,7 +248,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">58</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">43</wounds>
 		</hp>
 		<ideals type="string">Simplicity - A simple way of life: If it ain&#146;t broke don&#146;t fix it. (Lawful)</ideals>
 		<initiative>
@@ -496,6 +496,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00017>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -510,11 +547,16 @@
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">59483</name>
+		<notes type="string">Dwarven Mine - Hall 1\n  - 1 Lead\n  - 2 Lead</notes>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">When work needs doing, I do the work.\nI am regularly tasting bits of rock and soil in order to search for signs of precious metals.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00002>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00002>
 			<id-00003>
 				<name type="string">Class</name>
 			</id-00003>
@@ -620,6 +662,7 @@
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</description>
 				<group type="string">Class</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Second Wind</name>
 				<prepared type="number">1</prepared>
@@ -635,6 +678,7 @@
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
 				<group type="string">Class</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
 				<prepared type="number">1</prepared>
@@ -716,6 +760,154 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+								<dice type="dice">d8,d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<heallist>
+							<id-00001>
+								<bonus type="number">10</bonus>
+								<dice type="dice">d8,d8,d8,d8,d8,d8,d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">3</order>
+						<type type="string">heal</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>The Aloii are a construct race. As such, they cannot be healed by normal healing items and spells. As they flow over land they pick up small bits of metal which they digest to heal over a short (via hit dice) or long rest (normally). To regain hitpoints at other times, they must consume additional metal. Any spellcaster may dump a spell into a metal item, melting the item, then add the melted item to the Aloii to heal it. This is not a &#34;spell,&#34; but rather a use of spell slots in relation to Aloii. Items of greater value take a higher spell slot to melt, but also heal more health. If an item takes multiple spell slots to melt, all spell slots must be spent within 1 minute or the energy radiates off.</p>
+					<table>
+						<tr>
+							<td>Item Value</td>
+							<td>Needed Spell Slot</td>
+							<td>Healed Amount</td>
+						</tr>
+						<tr>
+							<td>1 GP - 100 GP</td>
+							<td>1st</td>
+							<td>1d8 + 1</td>
+						</tr>
+						<tr>
+							<td>101 GP - 250 GP</td>
+							<td>2nd</td>
+							<td>5d8 + 5</td>
+						</tr>
+						<tr>
+							<td>251 GP - 500 GP</td>
+							<td>3rd</td>
+							<td>10d8 + 10</td>
+						</tr>
+						<tr>
+							<td>501 GP - 1000 GP</td>
+							<td>4th</td>
+							<td>20d8 + 20</td>
+						</tr>
+						<tr>
+							<td>1,001 GP - 2,000 GP</td>
+							<td>5th</td>
+							<td>30d8 + 30</td>
+						</tr>
+						<tr>
+							<td>2,001 GP - 3,000 GP</td>
+							<td>6th</td>
+							<td>40d8 + 40</td>
+						</tr>
+						<tr>
+							<td>3,001 GP - 4,000 GP</td>
+							<td>7th</td>
+							<td>50d8 + 50</td>
+						</tr>
+						<tr>
+							<td>4,001 GP - 5,000 GP</td>
+							<td>8th</td>
+							<td>60d8 + 60</td>
+						</tr>
+						<tr>
+							<td>5,001 GP - 10,000 GP</td>
+							<td>9th</td>
+							<td>70d8 + 70</td>
+						</tr>
+						<tr>
+							<td>10,001 GP - 20,000 GP</td>
+							<td>2x9th</td>
+							<td>80d8 + 80</td>
+						</tr>
+						<tr>
+							<td>20,001 GP - 30,000 GP</td>
+							<td>3x9th</td>
+							<td>90d8 + 90</td>
+						</tr>
+						<tr>
+							<td>30,001 GP - 40,000 GP</td>
+							<td>4x9th</td>
+							<td>100d8 + 100</td>
+						</tr>
+						<tr>
+							<td>40,000 GP +</td>
+							<td>5x9th</td>
+							<td>110d8 + 110</td>
+						</tr>
+					</table>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Construct Healing</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Aloii</source>
+				<type type="string">racial</type>
+			</id-00006>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -875,18 +1067,26 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
-			<id-00001>
+			<id-00007>
 				<locked type="number">1</locked>
 				<name type="string">Liquimetal Weaponry</name>
 				<source type="string">Aloii</source>
 				<text type="formattedtext">
 					<p>Choose 3 melee weapons with which you have proficiency. As an action, you can transform one of your limbs into a replica of one of the chosen weapons or back. All weapon traits (finesse, versatile, two-handed, etc) apply.</p>
+					<p>Aloii may learn to shape more melee weapons that they are proficient with by absorbing the weapon via the instructions under &#34;Construct&#34;.</p>
+					<linklist>
+						<link class="reference_racialtrait" recordname="race.id-00001.traits.id-00001@Incarnate-5eExpansion">Construct</link>
+					</linklist>
+					<p>Aloii may make learn certain ranged weapon formations if they have the feat &#34;Springy Form&#34;.</p>
+					<linklist>
+						<link class="reference_feat" recordname="feat.id-00004@Incarnate-5eExpansion">Springy Form</link>
+					</linklist>
 				</text>
 				<type type="string">racial</type>
-			</id-00001>
-			<id-00002>
+			</id-00007>
+			<id-00008>
 				<locked type="number">1</locked>
 				<name type="string">Natural Luster</name>
 				<source type="string">Aloii</source>
@@ -894,8 +1094,8 @@
 					<p>Due to your metallic body, you reflect light. Because of this, you get disadvantage to all Stealth checks in all but complete darkness.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00002>
-			<id-00003>
+			</id-00008>
+			<id-00009>
 				<locked type="number">1</locked>
 				<name type="string">Liquid Body</name>
 				<source type="string">Aloii</source>
@@ -903,8 +1103,8 @@
 					<p>Aloii cannot wear armor or wield weaponry of any kind.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00003>
-			<id-00004>
+			</id-00009>
+			<id-00010>
 				<locked type="number">1</locked>
 				<name type="string">Liquid</name>
 				<source type="string">Aloii</source>
@@ -912,8 +1112,89 @@
 					<p>You do not need to breathe, eat or drink, but you can ingest food or drink if you wish.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00004>
-			<id-00005>
+			</id-00010>
+			<id-00012>
+				<locked type="number">1</locked>
+				<name type="string">Construct</name>
+				<source type="string">Aloii</source>
+				<text type="formattedtext">
+					<p>The Aloii are a construct race. As such, they cannot be healed by normal healing items and spells. As they flow over land they pick up small bits of metal which they digest to heal over a short (via hit dice) or long rest (normally). To regain hitpoints at other times, they must consume additional metal. Any spellcaster may dump a spell into a metal item, melting the item, then add the melted item to the Aloii to heal it. This is not a &#34;spell,&#34; but rather a use of spell slots in relation to Aloii. Items of greater value take a higher spell slot to melt, but also heal more health. If an item takes multiple spell slots to melt, all spell slots must be spent within 1 minute or the energy radiates off.</p>
+					<table>
+						<tr>
+							<td>Item Value</td>
+							<td>Needed Spell Slot</td>
+							<td>Healed Amount</td>
+						</tr>
+						<tr>
+							<td>1 GP - 100 GP</td>
+							<td>1st</td>
+							<td>1d8 + 1</td>
+						</tr>
+						<tr>
+							<td>101 GP - 250 GP</td>
+							<td>2nd</td>
+							<td>5d8 + 5</td>
+						</tr>
+						<tr>
+							<td>251 GP - 500 GP</td>
+							<td>3rd</td>
+							<td>10d8 + 10</td>
+						</tr>
+						<tr>
+							<td>501 GP - 1000 GP</td>
+							<td>4th</td>
+							<td>20d8 + 20</td>
+						</tr>
+						<tr>
+							<td>1,001 GP - 2,000 GP</td>
+							<td>5th</td>
+							<td>30d8 + 30</td>
+						</tr>
+						<tr>
+							<td>2,001 GP - 3,000 GP</td>
+							<td>6th</td>
+							<td>40d8 + 40</td>
+						</tr>
+						<tr>
+							<td>3,001 GP - 4,000 GP</td>
+							<td>7th</td>
+							<td>50d8 + 50</td>
+						</tr>
+						<tr>
+							<td>4,001 GP - 5,000 GP</td>
+							<td>8th</td>
+							<td>60d8 + 60</td>
+						</tr>
+						<tr>
+							<td>5,001 GP - 10,000 GP</td>
+							<td>9th</td>
+							<td>70d8 + 70</td>
+						</tr>
+						<tr>
+							<td>10,001 GP - 20,000 GP</td>
+							<td>2x9th</td>
+							<td>80d8 + 80</td>
+						</tr>
+						<tr>
+							<td>20,001 GP - 30,000 GP</td>
+							<td>3x9th</td>
+							<td>90d8 + 90</td>
+						</tr>
+						<tr>
+							<td>30,001 GP - 40,000 GP</td>
+							<td>4x9th</td>
+							<td>100d8 + 100</td>
+						</tr>
+						<tr>
+							<td>40,000 GP +</td>
+							<td>5x9th</td>
+							<td>110d8 + 110</td>
+						</tr>
+					</table>
+				</text>
+				<type type="string">racial</type>
+			</id-00012>
+			<id-00013>
 				<locked type="number">1</locked>
 				<name type="string">Liquimetal Armour</name>
 				<source type="string">Aloii</source>
@@ -921,8 +1202,8 @@
 					<p>Your armor class is 10 plus Constitution bonus and Dexterity bonus .</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00005>
-			<id-00006>
+			</id-00013>
+			<id-00014>
 				<locked type="number">1</locked>
 				<name type="string">Amorphous Movement</name>
 				<source type="string">Aloii</source>
@@ -930,7 +1211,7 @@
 					<p>Due to the fluidity of their bodies, Aloii can alter their shape to fit through any opening larger than 2 inches in diameter. When moving outside of their natural shape, Aloii are only able to move at half speed.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00006>
+			</id-00014>
 		</traitlist>
 		<weaponlist>
 			<id-00006>
@@ -969,7 +1250,7 @@
 				</damagelist>
 				<maxammo type="number">0</maxammo>
 				<name type="string">War-forge Pick</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<shortcut type="windowreference">
 					<class></class>
 					<recordname></recordname>

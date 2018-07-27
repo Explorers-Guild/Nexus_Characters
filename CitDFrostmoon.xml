@@ -25,7 +25,7 @@
 			</dexterity>
 			<intelligence>
 				<bonus type="number">4</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">14</score>
@@ -60,7 +60,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -109,7 +109,7 @@
 			<max type="number">120</max>
 		</encumbrance>
 		<exp type="number">500</exp>
-		<expneeded type="number">500</expneeded>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -261,7 +261,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">18</total>
+			<total type="number">22</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Research - In order to treat patients effectively, we must understand the maladies afflicting them. (Any)</ideals>
@@ -599,7 +599,7 @@
 				<name type="string">Gnomish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Cit D. Frostmoon</name>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -659,7 +659,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -687,7 +687,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1278,8 +1278,66 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
 			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6</dice>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Vampiric Touch</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Eldritch Knight, Warlock, Wizard, Arcane Trickster</source>
+			</id-00020>
+			<id-00021>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a small crystal bead)</components>
+				<description type="formattedtext">
+					<p>A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.</p>
+					<p>Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.</p>
+					<p>Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.</p>
+				</description>
+				<duration type="string">8 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Leomund's Tiny Hut</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (10-foot-radius hemisphere)</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00021>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows</name>
@@ -1308,7 +1366,7 @@
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -1329,7 +1387,7 @@
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1399,7 +1457,7 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1413,7 +1471,7 @@
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1438,7 +1496,7 @@
 						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">Rules for Using Herbalism Kit</link>
 					</linklist>
 				</text>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1450,7 +1508,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00015_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
