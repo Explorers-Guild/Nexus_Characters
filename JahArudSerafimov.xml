@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -60,7 +60,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">6</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">641</amount>
+				<amount type="number">588</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -96,23 +96,23 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">0</armor>
+				<armor type="number">2</armor>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">10</total>
+				<total type="number">12</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">124.251</load>
+			<load type="number">76.651</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">653</exp>
+		<exp type="number">681</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
@@ -360,9 +360,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">8</temporary>
+			<temporary type="number">0</temporary>
 			<total type="number">39</total>
-			<wounds type="number">7</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Service I am here for a purpose and I shall not rest until it is completed (Lawful)</ideals>
 		<initiative>
@@ -486,27 +486,6 @@
 				<type type="string">Tools</type>
 				<weight type="number">3</weight>
 			</id-00006>
-			<id-00007>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">12</count>
-				<description type="formattedtext">
-					<p>This thick blanket can keep you warm even during an average winter. (good for 0 degree weather as long as you are dry)</p>
-					<p>This blanket is embroidered with the crest of the Fighting Quail</p>
-					<linklist>
-						<link class="encounter" recordname="encounter.id-00573">Guildhouse of the Fighting Quails</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Quail Blanket</name>
-				<rarity type="string">Uncommon</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00007>
 			<id-00008>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
@@ -631,89 +610,28 @@
 				<weight type="number">10</weight>
 			</id-00014>
 			<id-00015>
-				<ac type="number">0</ac>
+				<ac type="number">12</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">150 GP</cost>
+				<carried type="number">2</carried>
+				<cost type="string">45 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.masshealingword@Incarnate-5eExpansion">Mass Healing Word</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>3rd</td>
-							<td>Uncommon</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+					<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>
 				</description>
+				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Scroll of Mass Healing Word</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Scroll</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
+				<name type="string">Studded Leather Armor</name>
+				<nonid_name type="string">Studded Leather Armor</nonid_name>
+				<nonidentified type="string">Some well-crafted studded leather armor.</nonidentified>
+				<rarity type="string">common</rarity>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Light Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">13</weight>
 			</id-00015>
-			<id-00016>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">150 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.blink@Incarnate-5eExpansion">Blink</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>3rd</td>
-							<td>Uncommon</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Blink</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Scroll</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00016>
 			<id-00018>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -798,6 +716,7 @@
 					<p>In Orcish: The training has been difficult, but we are making some progress. We might be able to train these creatures eventually. If successful they will be terrifying steads.</p>
 				</description>
 				<isidentified type="number">0</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Training Report</name>
 				<nonid_name type="string">Orcish Papers</nonid_name>
@@ -822,6 +741,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Pan Flute</name>
 				<subtype type="string">Musical Instrument</subtype>
@@ -838,6 +758,7 @@
 					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Crowbar</name>
 				<subtype type="string">Standard</subtype>
@@ -898,6 +819,7 @@
 					<p>Add:</p>
 				</description>
 				<isidentified type="number">0</isidentified>
+				<location type="string">backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Athena - Prestige 0</name>
 				<nonid_name type="string">Ring of the Maiden</nonid_name>
@@ -979,15 +901,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">4</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">3</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1030,7 +952,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>You have a pool of hit points equal to your character level. As an action you can touch a character and heal them with this pool. Whether you use the entire amount of the pool or not you can only use this ability once per long rest.</p>
 				</description>
@@ -1052,7 +974,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">3</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.probard.features.id-00013@Incarnate-5eExpansion">Bardic Inspiration</link>
@@ -1467,7 +1389,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p><i>Prerequisite: Charisma 13 or higher</i></p>
 					<p>You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest.</p>
@@ -1847,7 +1769,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00016_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

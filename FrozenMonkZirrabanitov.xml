@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
 				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</charisma>
 			<constitution>
-				<bonus type="number">1</bonus>
-				<save type="number">4</save>
+				<bonus type="number">2</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">13</score>
+				<score type="number">14</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">0</bonus>
@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">4</hdused>
-				<level type="number">7</level>
+				<hdused type="number">0</hdused>
+				<level type="number">8</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">1</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
@@ -83,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1115</amount>
+				<amount type="number">955</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -124,9 +124,24 @@
 			<load type="number">107.5</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">885</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">913</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Last Breath</name>
+				<text type="formattedtext">
+					<h>Last Breath</h>
+					<p>Your determination and physical resolve grants you the ability to hold on just a little longer. You gain the following benefits:</p>
+					<list>
+						<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+						<li>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a short or long rest.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Last_Breath_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -422,6 +437,15 @@
 					<p>Starting at 6th level, you can teleport up to 20 feet as a bonus action on your turn. You must be in dim light or darkness to do this, or your destination must be in dim light or darkness.</p>
 				</text>
 			</id-00014>
+			<id-00015>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement last breath</name>
+				<source type="string">Sorcerer</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00015>
 		</featurelist>
 		<flaws type="string">If I find someone smarter than me, I have to take them down.</flaws>
 		<gender type="string">Male</gender>
@@ -430,7 +454,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">43</total>
+			<total type="number">48</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Authority - I am above lesser folk, and people will do as I say. (Evil)</ideals>
@@ -523,7 +547,7 @@
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -599,6 +623,7 @@
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard</subtype>
@@ -613,6 +638,7 @@
 					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Tinderbox</name>
 				<subtype type="string">Standard</subtype>
@@ -624,6 +650,7 @@
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Hammer</name>
 				<subtype type="string">Standard</subtype>
@@ -638,6 +665,7 @@
 					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Crowbar</name>
 				<subtype type="string">Standard</subtype>
@@ -652,6 +680,7 @@
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Torch</name>
 				<subtype type="string">Standard</subtype>
@@ -677,6 +706,7 @@
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard</subtype>
@@ -693,6 +723,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -844,6 +875,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Light</name>
 				<nonid_name type="string">Scroll</nonid_name>
@@ -918,6 +950,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Letter in Orcish</name>
 				<weight type="number">0.1</weight>
@@ -1003,6 +1036,7 @@
 					<p>The object is either knocked over or pushed up to 15 feet away from you.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Decanter of Endless Water</name>
 				<nonid_name type="string">Flash</nonid_name>
@@ -1024,6 +1058,7 @@
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<name type="string">Deed to Guildhouse of the Fighting Quail</name>
 				<weight type="number">0</weight>
 			</id-00031>
@@ -1039,9 +1074,9 @@
 				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">8</level>
+		<level type="number">9</level>
 		<name type="string">FrozenMonk Zirrabanitov</name>
-		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.\n( went to the forest northwest to fight some harpies and goblins found some egg and figured out it from some fireworm(friendly) we went back to town to bring elah the proffessof to talk to them and hear about a tier 2 quest about some demons; we went on to clear the forest a bit and had a bit of roleplay)\n(we went to a wizard south of the nexusstart, helped him with a creatin a magical very powerfull Staff as he removed a curse from a partymembers wepon; after sometalk we went on to slay a red dragoni; and had to get off in a hurry)\n(out with sen(jtron) and francis(malamute) going towards the dwarfs;spent a legendary beer to tell the tail of the &#34;Jail brake&#34; aswell as pass along the letter and tried to esablish a stone sorce for buildin a thiefling settelment? xD yeaay)\n(went to dwarfen town to find out the talkin to them did nothing, no note of the letter the guard must have all given it to waste,...went to dwaven min hall-1 killed sum ettin and dreugar</notes>
+		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.\n( went to the forest northwest to fight some harpies and goblins found some egg and figured out it from some fireworm(friendly) we went back to town to bring elah the proffessof to talk to them and hear about a tier 2 quest about some demons; we went on to clear the forest a bit and had a bit of roleplay)\n(we went to a wizard south of the nexusstart, helped him with a creatin a magical very powerfull Staff as he removed a curse from a partymembers wepon; after sometalk we went on to slay a red dragoni; and had to get off in a hurry)\n(out with sen(jtron) and francis(malamute) going towards the dwarfs;spent a legendary beer to tell the tail of the &#34;Jail brake&#34; aswell as pass along the letter and tried to esablish a stone sorce for buildin a thiefling settelment? xD yeaay)\n(went to dwarfen town to find out the talkin to them did nothing, no note of the letter the guard must have all given it to waste,...went to dwaven min hall-1 killed sum ettin and dreugar)\n(solosession with Pronobis, sattle160g; leather armor for jaharud industrial district; went to the elfsrefugees talk to the upper class master fletcher (lv25druid) go info about makein wood fortress need to collect seeds. bout 200g worth of wood </notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am one with myself. I strive for balance in all things. I work hard but play just as hard.</personalitytraits>
@@ -1123,11 +1158,11 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">1</max>
-				<used type="number">1</used>
+				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
@@ -2020,8 +2055,27 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00027>
+			<id-00028>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Misty Step</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00028>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Keg of Ale</name>
@@ -2053,21 +2107,21 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">7</total>
+				<total type="number">8</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -2130,7 +2184,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -2178,7 +2232,7 @@
 						<link class="item" recordname="item.id-00034@Incarnate-5eExpansion">Keg of Ale</link>
 					</linklist>
 				</text>
-				<total type="number">4</total>
+				<total type="number">6</total>
 			</id-00019>
 		</skilllist>
 		<speed>
