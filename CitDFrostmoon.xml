@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -46,8 +46,15 @@
 			</wisdom>
 		</abilities>
 		<adventurelist>
+			<id-00001>
+				<name type="string">dungeon with Arjhan(wolfie) the potion of Immortal, dont drink xD</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">we sayed a mahaha</name>
+			</id-00002>
 		</adventurelist>
 		<age type="string">9</age>
+		<alignment type="string">chaotic neutral</alignment>
 		<background type="string">Apothecary</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -60,7 +67,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,15 +77,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">671</amount>
+				<amount type="number">524</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">112</amount>
+				<amount type="number">202</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">113</amount>
+				<amount type="number">223</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -94,6 +101,7 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -105,11 +113,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">25.58</load>
+			<load type="number">28.08</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">500</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">626</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -253,6 +261,21 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Undead Thralls</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Necromancy</specialization>
+				<text type="formattedtext">
+					<p>At 6th level, you add the animate dead spell to your spellbook if it is not there already. When you cast animate dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.</p>
+					<p>Whenever you create an undead using a necromancy spell, it has additional benefits:</p>
+					<list>
+						<li>The creature's hit point maximum is increased by an amount equal to your wizard level.</li>
+						<li>The creature adds your proficiency bonus to its weapon damage rolls.</li>
+					</list>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I am only interested in the ailments my patients suffer from, not the people themselves.</flaws>
 		<gender type="string">m</gender>
@@ -261,8 +284,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">22</total>
-			<wounds type="number">0</wounds>
+			<total type="number">26</total>
+			<wounds type="number">8</wounds>
 		</hp>
 		<ideals type="string">Research - In order to treat patients effectively, we must understand the maladies afflicting them. (Any)</ideals>
 		<initiative>
@@ -270,6 +293,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">1</total>
 		</initiative>
+		<inspiration type="number">0</inspiration>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
@@ -290,6 +314,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Herbalism Kit</name>
 				<subtype type="string">Kits / Sets</subtype>
@@ -299,7 +324,7 @@
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -329,43 +354,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00003>
-			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -376,6 +364,7 @@
 					<p>A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Scale, Merchant's</name>
 				<subtype type="string">Standard</subtype>
@@ -432,6 +421,7 @@
 				<cost type="string">1 sp</cost>
 				<count type="number">10</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Parchment (One Sheet)</name>
 				<subtype type="string">Standard</subtype>
@@ -454,6 +444,7 @@
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Ink (1-ounce Bottle)</name>
 				<subtype type="string">Standard</subtype>
@@ -465,6 +456,7 @@
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Knife (Small)</name>
 				<subtype type="string">Standard</subtype>
@@ -476,6 +468,7 @@
 				<cost type="string">2 cp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Ink Pen</name>
 				<subtype type="string">Standard</subtype>
@@ -490,6 +483,7 @@
 					<p>A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section).</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Book</name>
 				<subtype type="string">Standard</subtype>
@@ -502,7 +496,7 @@
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Backpack (Empty)</name>
+				<name type="string">Backpack</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
@@ -539,6 +533,7 @@
 					<p>Too many of our patrols have been missing and we must protect today's shipment. Go to the edge of the forest and head back, but set up an ambush and kill anyone trying to get in. We must succeed for it is what our God commanded.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Goblin Orders - completed</name>
 				<nonid_name type="string">Papers in Orcish</nonid_name>
@@ -579,6 +574,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Freedom of Movement</name>
 				<nonid_name type="string">Scrolls</nonid_name>
@@ -587,6 +583,82 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00018>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Lore</h>
+					<p>Derived from crazy colored paste found in a dungeon (with a 27 Herbalism kit)</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -599,7 +671,7 @@
 				<name type="string">Gnomish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Cit D. Frostmoon</name>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -659,8 +731,8 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">2</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1295,6 +1367,14 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Vampiric Touch; (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1336,6 +1416,117 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Eldritch Knight, Wizard, Arcane Trickster</source>
 			</id-00021>
+			<id-00022>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:</p>
+					<list>
+						<li>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</li>
+						<li>You instantaneously light or snuff out a candle, a torch, or a small campfire.</li>
+						<li>You instantaneously clean or soil an object no larger than 1 cubic foot.</li>
+						<li>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</li>
+						<li>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</li>
+						<li>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</li>
+					</list>
+					<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+				</description>
+				<duration type="string">Up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Prestidigitation</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00022>
+			<id-00023>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a drop of blood, a piece of flesh, and a pinch of bone dust)</components>
+				<description type="formattedtext">
+					<p>This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature's game statistics).</p>
+					<p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p>
+					<p>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Animate Dead</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<school type="string">Necromancy</school>
+				<source type="string">Cleric, Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00023>
+			<id-00025>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of talc and a small sprinkling of powdered silver)</components>
+				<description type="formattedtext">
+					<p>For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">See Invisibility</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00025>
+			<id-00026>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a short reed or piece of straw)</components>
+				<description type="formattedtext">
+					<p>This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.</p>
+				</description>
+				<duration type="string">24 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Water Breathing</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Druid Coast Circle, Eldritch Knight, Ranger, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00026>
+			<id-00027>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.</p>
+					<p>While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Blink</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Cleric Trickery Domain, Eldritch Knight, Warlock (Archfey), Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00027>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1508,7 +1699,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00015_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
