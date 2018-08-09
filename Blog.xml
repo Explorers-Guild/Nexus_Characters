@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -600,12 +600,7 @@
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I enjoyed my busy days as a city guard, but the slow days when nothing was happening drove me crazy. That's why I quit and went adventuring.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
-			<id-00001>
-				<castertype type="string">memorization</castertype>
-				<name type="string">Spells</name>
-			</id-00001>
 			<id-00002>
 				<name type="string">Effect</name>
 			</id-00002>
@@ -727,7 +722,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.profighter.features.id-00035@Incarnate-5eExpansion">Second Wind</link>
@@ -744,7 +739,7 @@
 			<id-00003>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">Action Surge</name>
@@ -753,6 +748,17 @@
 			</id-00003>
 			<id-00004>
 				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Effect</group>
@@ -917,7 +923,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
