@@ -49,7 +49,7 @@
 		</adventurelist>
 		<age type="string">86</age>
 		<alignment type="string">Neutral Good</alignment>
-		<appearance type="string">an average height elf with animlistic look to him with black hair and heterochromatic eyes one a dark blue the outher a dark green </appearance>
+		<appearance type="string">an average height elf with animlistic look to him with black hair and heterochromatic eyes one a dark blue the outher a dark green</appearance>
 		<background type="string">Hermit</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">5</amount>
+				<amount type="number">70</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">71</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">67</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">69.5</load>
+			<load type="number">106</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">300</exp>
+		<exp type="number">373</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -151,19 +151,6 @@
 					<p>Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.</p>
 				</text>
 			</id-00002>
-			<id-00003>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Monk Starting Items</name>
-				<source type="string">Monk</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p><b>Click the shield below to open you choices for monk starting items.</b></p>
-					<linklist>
-						<link class="reference_weapontable" recordname="lists.startingequipment.monk@Incarnate-5eExpansion">Monk Starting Equipment Options</link>
-					</linklist>
-				</text>
-			</id-00003>
 			<id-00004>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -293,6 +280,8 @@
 		<gender type="string">Male</gender>
 		<height type="string">6ft</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">24</total>
 			<wounds type="number">0</wounds>
@@ -456,6 +445,44 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00010>
+			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00259@Incarnate-5eExpansion">Herbalism Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and 3 vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">Rules for Using Herbalism Kit</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Herbalism Kit</name>
+				<subtype type="string">Kits / Sets</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">3</weight>
+			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A huge enamel tooth. It is about the size of a human head.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Tarike Tooth</name>
+				<weight type="number">25</weight>
+			</id-00012>
 			<id-00013>
 				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
@@ -468,23 +495,98 @@
 				<weight type="number">3</weight>
 			</id-00013>
 			<id-00014>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">5 gp</cost>
+				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing.</p>
+					<p>You have resistance to one damage type while wearing this ring.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistanceradiant@Incarnate-5eExpansion">Type Resistance (Radiant)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>9</td>
+							<td>Radiant</td>
+							<td>Topaz</td>
+						</tr>
+					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Herbalism Kit</name>
-				<subtype type="string">Kits / Sets</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">3</weight>
+				<name type="string">Ring of Radiant Resistance</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A topaz ring.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
 			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>Drink up and see who tips over. This small keg has enough for a two-person competition. (Needs to be refilled between each use. Average price of refilling with <i>Common Beer </i>is 1 GP)</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00033@Incarnate-5eExpansion">Rules for Using Keg of Ale</link>
+					</linklist>
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00002@Incarnate-5eExpansion">Keg of Ale</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Keg of Ale</name>
+				<subtype type="string">Gaming Set</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">10</weight>
+			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00016>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Lycan</name>
@@ -499,6 +601,7 @@
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I've been isolated for so long that I rarely speak, preferring gestures and the occasional grunt.I often get lost in my own thoughts and contemplation, becoming oblivious to my surroundings.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -510,61 +613,82 @@
 			<id-00003>
 				<name type="string">Action</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Effect</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -593,6 +717,28 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: radiant</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Action</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Radiant)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00002>
 			<id-00003>
 				<actions>
 					<id-00001>
@@ -604,7 +750,7 @@
 						<savedcprof type="number">1</savedcprof>
 						<savedcstat type="string">strength</savedcstat>
 						<savemagic type="number">0</savemagic>
-						<savetype type="string">base</savetype>
+						<savetype type="string">strength</savetype>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -618,6 +764,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">Pack Hunter</name>
 				<prepared type="number">0</prepared>
@@ -655,6 +802,7 @@
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00019@Incarnate-5eExpansion">Deflect Missiles</link>
 					</linklist>
 				</description>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Deflect Missles</name>
@@ -861,6 +1009,24 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string">Herbalism Kit</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00259@Incarnate-5eExpansion">Herbalism Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">Rules for Using Herbalism Kit</link>
+					</linklist>
+				</text>
+				<total type="number">2</total>
+			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -871,7 +1037,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
