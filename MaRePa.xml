@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">132</amount>
+				<amount type="number">869</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">238</amount>
+				<amount type="number">290</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">246</amount>
+				<amount type="number">299</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,10 +109,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">127.5</load>
+			<load type="number">130</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">604</exp>
+		<exp type="number">655</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
@@ -1119,27 +1119,73 @@
 				<weight type="number">0.5</weight>
 			</id-00023>
 			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
-				<weight type="number">0</weight>
+				<damage type="string">1d6 bludgeoning</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00011@Incarnate-Syrinscape"><b>Syrinscape : Staff</b></link>
+					</linklist>
+					<h>Description</h>
+					<p>This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, a swarm of insects consumes and destroys the staff, then disperses.</p>
+					<p><b>Spells </b>. While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC: giant insect (4 charges) or insect plague (5 charges).</p>
+					<linklist>
+						<link class="power" recordname="spell.giantinsect@Incarnate-5eExpansion">Giant Insect</link>
+						<link class="power" recordname="spell.insectplague@Incarnate-5eExpansion">Insect Plague</link>
+					</linklist>
+					<p><b>Insect Cloud </b>. While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30--foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Staff of Swarming Insects</name>
+				<nonid_name type="string">Staff</nonid_name>
+				<nonidentified type="string">A magical staff.</nonidentified>
+				<properties type="string">Versatile (1d8)</properties>
+				<rarity type="string">rare (requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard)</rarity>
+				<subtype type="string">Arcane Focus</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
 			</id-00024>
 			<id-00025>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">300 GP</cost>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30--foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-- foot radius.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Lantern of Revealing</name>
-				<nonid_name type="string">hooded lantern</nonid_name>
-				<nonidentified type="string">-</nonidentified>
-				<rarity type="string">uncommon</rarity>
-				<type type="string">Wondrous Item</type>
-				<weight type="number">2</weight>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00025>
 		</inventorylist>
 		<languagelist>
@@ -3247,10 +3293,14 @@
 					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<group type="string">Ability</group>
 				<level type="number">0</level>
 				<name type="string">Spirit Totem</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 			</id-00060>
 			<id-00061>
 				<actions>
@@ -4002,7 +4052,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -4101,6 +4151,28 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Staff of Swarming Insects</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00024</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
 		</weaponlist>
 		<weight type="string">NA</weight>
 	</character>
