@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">-1</bonus>
-				<save type="number">1</save>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">9</score>
@@ -59,8 +59,8 @@
 			<id-00001>
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<hdused type="number">2</hdused>
+				<level type="number">5</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">70</amount>
+				<amount type="number">266</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">72</amount>
+				<amount type="number">115</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">72</amount>
+				<amount type="number">122</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,10 +107,10 @@
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">79.6</load>
+			<load type="number">85.1</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">400</exp>
+		<exp type="number">503</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -334,6 +334,16 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I love my trophy collection and constantly show it off. Unforunately most people don't like seeing cut up pieces of demons.</flaws>
 		<gender type="string">Male</gender>
@@ -342,8 +352,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
-			<wounds type="number">0</wounds>
+			<total type="number">34</total>
+			<wounds type="number">22</wounds>
 		</hp>
 		<ideals type="string">Acceptance: I know my place and my duty and will fulfill it. Someone has to (any).</ideals>
 		<initiative>
@@ -388,7 +398,7 @@
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Cold-Forged Shortsword </name>
+				<name type="string">Cold-Forged Shortsword</name>
 				<nonid_name type="string">Shortsword</nonid_name>
 				<nonidentified type="string">For when you want something longer than a dagger but shorter than a longsword, the shortsword is for you.</nonidentified>
 				<properties type="string">Finesse, light</properties>
@@ -739,21 +749,95 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you drink this potion, you gain resistance to psychic damage for 1 hour.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepsychic@Incarnate-5eExpansion">Type Resistance (Psychic)</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Psychic Resistance</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">This purple potion is filled with lots of swirls.</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,800 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker.</p>
+					<linklist>
+						<link class="npc" recordname="npc.berserker@Incarnate-5eBattles">Berserker</link>
+					</linklist>
+					<p>They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.</p>
+					<p>Four types of horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. The</p>
+					<p>GM chooses the horn's type or determines it randomly.</p>
+					<table>
+						<tr>
+							<td><b>d100</b></td>
+							<td><b>Horn Type</b></td>
+							<td><b>Berserkers Summoned</b></td>
+							<td><b>Requirement</b></td>
+						</tr>
+						<tr>
+							<td>41-75</td>
+							<td>Brass</td>
+							<td>3d4 + 3</td>
+							<td>Proficiency with all simple weapons</td>
+						</tr>
+					</table>
+					<p>If you blow the horn without meeting its requirement, the summoned berserkers attack you.</p>
+					<p>If you meet the requirement, they are friendly to you and your companions and follow your commands.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Horn of Valhalla (brass)</name>
+				<nonid_name type="string">Brass horn</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">2</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This hook came from a pirate with a magical hook. Unfortunately the magic seems to have faded</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">A hook that used to be magical</name>
+				<weight type="number">3</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Infernal</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Virren</name>
-		<perception type="number">15</perception>
+		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">My job is dark and messy. Most of it should be left unsaid. All you need to know is the job is done.I've cradled countless numbers as my friends as they have drawn their last breath. It is an occupational hazard.</personalitytraits>
 		<powergroup>
@@ -766,8 +850,13 @@
 				<name type="string">Effect</name>
 			</id-00002>
 			<id-00003>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Feat</name>
+				<saveprof type="number">1</saveprof>
 			</id-00003>
+			<id-00004>
+				<name type="string">Item</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -807,11 +896,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
-				<used type="number">0</used>
+				<max type="number">4</max>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -856,6 +945,7 @@
 				</description>
 				<group type="string">Effect</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Drakonic Ruby</name>
 				<prepared type="number">1</prepared>
 				<ritual type="number">0</ritual>
@@ -1034,8 +1124,151 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Slayer's Prey; DMG: 1d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<name type="string">Slayer's Prey</name>
+				<prepared type="number">0</prepared>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Javelin of Lightning</name>
+				<prepared type="number">0</prepared>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">11</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Serpent Venom</name>
+				<prepared type="number">0</prepared>
+			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">charisma</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw. An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.</p>
+				</description>
+				<duration type="string">10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Zone of Truth</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Cleric, Paladin</source>
+			</id-00012>
+			<id-00013>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Lesser Restoration</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
+			</id-00013>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Navigator's Tools</name>
@@ -1060,42 +1293,42 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1181,6 +1414,23 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">3</total>
 			</id-00018>
+			<id-00019>
+				<name type="string">Navigator's Tools</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00260@Incarnate-5eExpansion">Navigator's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of instruments is used for navigation at sea. Proficiency with navigator's tools lets you chart a ship's course and follow navigation charts. In addition, these tools allow you to add your proficiency bonus to any ability check you make to avoid getting lost at sea.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00062@Incarnate-5eExpansion">Rules for Using Navigator's Tools</link>
+					</linklist>
+				</text>
+				<total type="number">3</total>
+			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -1191,7 +1441,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1320,7 +1570,7 @@
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Dagger</name>
+				<name type="string">Dagger </name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
 				<shortcut type="windowreference">
@@ -1351,7 +1601,7 @@
 				<type type="number">2</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">4</ammo>
+				<ammo type="number">10</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1373,7 +1623,7 @@
 			</id-00004>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1394,8 +1644,9 @@
 				<type type="number">0</type>
 			</id-00005>
 			<id-00006>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

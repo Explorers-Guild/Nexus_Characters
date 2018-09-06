@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -63,7 +63,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -73,7 +73,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">93</amount>
+				<amount type="number">189</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -81,7 +81,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">18</amount>
+				<amount type="number">61</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -89,7 +89,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">13</amount>
+				<amount type="number">63</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,11 +110,11 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">81.83</load>
+			<load type="number">58.83</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">426</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">529</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -346,8 +346,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
-			<wounds type="number">0</wounds>
+			<total type="number">30</total>
+			<wounds type="number">23</wounds>
 		</hp>
 		<ideals type="string">Independence - I have cast off the shackles of my tutelage and will seek my own path. (Chaotic)</ideals>
 		<initiative>
@@ -709,12 +709,34 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.</p>
+					<p>The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.</p>
+					<p>The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it.</p>
+					<p>When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.</p>
+					<p><b>Serpentine Owl (Rare) </b>. This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Figurine of Wondrous Power (Serpentine Owl)</name>
+				<nonid_name type="string">Serpentine Owl</nonid_name>
+				<nonidentified type="string">An owl fashioned out of serpentine.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">4</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
 					</linklist>
 					<h>Description</h>
 					<p>You regain hit points when you drink this potion.</p>
@@ -727,25 +749,26 @@
 							<td>HP Regained</td>
 						</tr>
 						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
 						</tr>
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
 				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
+				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
-			</id-00021>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Halfling</name>
@@ -757,11 +780,12 @@
 				<name type="string">Goblin</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Skeeter</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">When exposed to some new piece of magic, I can&#146;t help but try to figure out what it does and how it works.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -771,6 +795,9 @@
 			<id-00002>
 				<name type="string">Effect</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Item</name>
+			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -818,7 +845,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -846,7 +873,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1093,7 +1120,7 @@
 				<group type="string">Spells</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Spider Climb(not learned yet)</name>
+				<name type="string">Spider Climb</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<school type="string">Transmutation</school>
@@ -1182,7 +1209,7 @@
 				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
 			</id-00013>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows</name>
@@ -1206,19 +1233,19 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00004>
 			<id-00005>
 				<name type="string">Nature</name>
@@ -1279,7 +1306,7 @@
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00017>
 			<id-00018>
 				<name type="string">Animal Handling</name>
@@ -1295,7 +1322,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1336,6 +1363,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
