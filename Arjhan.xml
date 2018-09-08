@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">3</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">5</level>
+				<hdused type="number">0</hdused>
+				<level type="number">6</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">833</amount>
+				<amount type="number">1140</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">243</amount>
+				<amount type="number">336</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">248</amount>
+				<amount type="number">348</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -97,10 +97,10 @@
 				<armor type="number">6</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<prof type="number">1</prof>
 				<shield type="number">2</shield>
-				<temporary type="number">1</temporary>
+				<temporary type="number">0</temporary>
 				<total type="number">19</total>
 			</ac>
 		</defenses>
@@ -111,8 +111,8 @@
 			<load type="number">194.8</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">553</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">694</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -138,6 +138,23 @@
 			<id-00002>
 				<name type="string">Poor Blacksmith</name>
 			</id-00002>
+			<id-00003>
+				<locked type="number">1</locked>
+				<name type="string">Legendary Strength</name>
+				<text type="formattedtext">
+					<h>Legendary Strength</h>
+					<p>Prerequisites: Strength 13 or higher</p>
+					<p>Years of intense combat and extensive weapons training granted you great physical power both in and out of combat.</p>
+					<p>You gain the following benefits:</p>
+					<list>
+						<li>When attacking with a weapon that has the versatile property in one hand, you may roll damage as if you were holding it in both hands.</li>
+						<li>You now count as one size larger when determining your carrying capacity and the weight that you can push, drag, or lift.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Legendary_Strength_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00003>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -436,6 +453,15 @@
 					<p>The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Fighter</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</flaws>
 		<gender type="string">Male</gender>
@@ -444,7 +470,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">44</total>
+			<total type="number">52</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization.</ideals>
@@ -694,44 +720,6 @@
 				<name type="string">Pelt</name>
 				<weight type="number">1</weight>
 			</id-00018>
-			<id-00019>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00019>
 			<id-00020>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -777,43 +765,6 @@
 				<type type="string">Tools</type>
 				<weight type="number">1</weight>
 			</id-00021>
-			<id-00022>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">2</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1049,33 +1000,105 @@
 			<id-00034>
 				<ac type="number">0</ac>
 				<bonus type="number">2</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">6,000 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d10 piercing</damage>
 				<description type="formattedtext">
-					<h>Item Coding</h>
-					<p></p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.crossbowofthehouseofathishut@Incarnate-5eExpansion">Crossbow of the House of Athishut</link>
+					</linklist>
 					<h>Description</h>
 					<p>The DC for this weapon is 8 + Dex + Prof</p>
 					<p>The Crossbow of House of Athishut has a variable nob with 6 glyphs that it can be set to. It is a free action to turn the nob to a different glyph, but all but effect 6 only apply to the first shot with this crossbow per round:</p>
 					<p>1. Acid: The target must make a DC Constitution saving throw, taking an additional 10 (3d6) acid damage on a failed save, or half as much damage on a successful one. This destroys the bolt used.</p>
 					<p>2. Concussion: The target and each creature within 20 feet of it must make a Constitution saving throw, taking 7 (1d12) thunder damage on a failed save, or half as much damage on a successful one.</p>
-					<p>3. Entanglement: The target must make a successful Dexterity saving throw or be restrained for 1 hour by strands of sticky webbing. A restrained creature can escape by using an action to make a sucessful DC Dexterity or Strength check. Any creature other than this crossbow's wielder who touches the restrained creature must make a successful Dexterity saving throw or become similarly restrained.</p>
+					<p>3. Entanglement: The target must make a successful Dexterity saving throw or be restrained for 1 hour by strands of sticky webbing. A restrained creature can escape by using an action to make a sucessful DC Dexterity or Strength check. Sticky: Any creature other than this crossbow's wielder who touches the restrained creature must make a successful Dexterity saving throw or become similarly restrained.</p>
 					<p>4. Tracking: For the next 24 hours, the wielderknows the direction and distance to the target, as long as it's on the same plane of existence. If the target is on a different plane, the wielder knows which one, but not the exact location there.</p>
 					<p>5. Self Destruct: When fired, crossbow blows up destroying itself and dealing 6d8 fire damage to all creatures within 30 feet.</p>
 					<p>6. Etheral shot: The crossbow forms etheral ammuntion allowing it to fire magical shots that bypass immunities. This also ignores the ammunition and loading properties.</p>
+					<h>Lore</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.houseOfAthishutCanonical@Incarnate-5eExpansion">House of Athishut - Canonical</link>
+						<link class="encounter" recordname="encounter.houseOfAthishutHomebrew@Incarnate-5eExpansion">House of Athishut - Homebrew</link>
+					</linklist>
 				</description>
 				<locked type="number">1</locked>
 				<name type="string">Crossbow of House of Athishut</name>
 				<nonid_name type="string">Crossbow, Light</nonid_name>
-				<nonidentified type="string">An elegenat crossbow with </nonidentified>
+				<nonidentified type="string">An elegenat crossbow with</nonidentified>
 				<properties type="string">Ammunition (range 100/400), loading, two-handed</properties>
 				<rarity type="string">legendary</rarity>
 				<subtype type="string">Simple Ranged Weapons</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">7</weight>
 			</id-00034>
+			<id-00035>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00035>
+			<id-00036>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You have resistance to one damage type while wearing this ring.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistanceforce@Incarnate-5eExpansion">Type Resistance (Force)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>4</td>
+							<td>Force</td>
+							<td>Sapphire</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Force Resistance</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A sapphire ring.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00036>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1088,7 +1111,7 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Arjhan</name>
 		<notes type="string">did you pay 48 gold?</notes>
 		<perception type="number">10</perception>
@@ -1101,6 +1124,9 @@
 				<name type="string">Spells</name>
 				<saveprof type="number">1</saveprof>
 			</id-00001>
+			<id-00002>
+				<name type="string">Item</name>
+			</id-00002>
 			<id-00003>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
@@ -1576,6 +1602,132 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">dexterity</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">acid</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d12</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">4</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">dexterity</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">0</durmod>
+						<label type="string">restrained; NOTE: Escape DC #; sticky</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-01049@Incarnate-5eExpansion">Crossbow of House of Athishut</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Crossbow of the House of Athishut</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00016>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1732,7 +1884,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1873,8 +2025,9 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
+						<dice type="dice">d10</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
