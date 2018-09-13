@@ -108,7 +108,7 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">194.8</load>
+			<load type="number">189.8</load>
 			<max type="number">255</max>
 		</encumbrance>
 		<exp type="number">694</exp>
@@ -720,6 +720,28 @@
 				<name type="string">Pelt</name>
 				<weight type="number">1</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.</p>
+					<p>The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Javelin of Lightning</name>
+				<nonid_name type="string">Javelin</nonid_name>
+				<nonidentified type="string">A strong javelin</nonidentified>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<rarity type="string">uncommon</rarity>
+				<subtype type="string">(javelin)</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00019>
 			<id-00020>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -997,43 +1019,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00033>
-			<id-00034>
-				<ac type="number">0</ac>
-				<bonus type="number">2</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">6,000 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d10 piercing</damage>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.crossbowofthehouseofathishut@Incarnate-5eExpansion">Crossbow of the House of Athishut</link>
-					</linklist>
-					<h>Description</h>
-					<p>The DC for this weapon is 8 + Dex + Prof</p>
-					<p>The Crossbow of House of Athishut has a variable nob with 6 glyphs that it can be set to. It is a free action to turn the nob to a different glyph, but all but effect 6 only apply to the first shot with this crossbow per round:</p>
-					<p>1. Acid: The target must make a DC Constitution saving throw, taking an additional 10 (3d6) acid damage on a failed save, or half as much damage on a successful one. This destroys the bolt used.</p>
-					<p>2. Concussion: The target and each creature within 20 feet of it must make a Constitution saving throw, taking 7 (1d12) thunder damage on a failed save, or half as much damage on a successful one.</p>
-					<p>3. Entanglement: The target must make a successful Dexterity saving throw or be restrained for 1 hour by strands of sticky webbing. A restrained creature can escape by using an action to make a sucessful DC Dexterity or Strength check. Sticky: Any creature other than this crossbow's wielder who touches the restrained creature must make a successful Dexterity saving throw or become similarly restrained.</p>
-					<p>4. Tracking: For the next 24 hours, the wielderknows the direction and distance to the target, as long as it's on the same plane of existence. If the target is on a different plane, the wielder knows which one, but not the exact location there.</p>
-					<p>5. Self Destruct: When fired, crossbow blows up destroying itself and dealing 6d8 fire damage to all creatures within 30 feet.</p>
-					<p>6. Etheral shot: The crossbow forms etheral ammuntion allowing it to fire magical shots that bypass immunities. This also ignores the ammunition and loading properties.</p>
-					<h>Lore</h>
-					<linklist>
-						<link class="encounter" recordname="encounter.houseOfAthishutCanonical@Incarnate-5eExpansion">House of Athishut - Canonical</link>
-						<link class="encounter" recordname="encounter.houseOfAthishutHomebrew@Incarnate-5eExpansion">House of Athishut - Homebrew</link>
-					</linklist>
-				</description>
-				<locked type="number">1</locked>
-				<name type="string">Crossbow of House of Athishut</name>
-				<nonid_name type="string">Crossbow, Light</nonid_name>
-				<nonidentified type="string">An elegenat crossbow with</nonidentified>
-				<properties type="string">Ammunition (range 100/400), loading, two-handed</properties>
-				<rarity type="string">legendary</rarity>
-				<subtype type="string">Simple Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">7</weight>
-			</id-00034>
 			<id-00035>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1884,7 +1869,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2043,27 +2028,47 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<attackbonus type="number">2</attackbonus>
+				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">2</bonus>
-						<dice type="dice">d10</dice>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Crossbow of House of Athishut</name>
+				<name type="string">Javelin of Lightning</name>
 				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 100/400), loading, two-handed</properties>
+				<properties type="string">Thrown (range 30/120)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00034</recordname>
+					<recordname>....inventorylist.id-00019</recordname>
 				</shortcut>
-				<type type="number">1</type>
+				<type type="number">0</type>
 			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Javelin of Lightning</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">250</weight>
 	</character>
