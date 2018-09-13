@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">877</amount>
+				<amount type="number">990</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">204</amount>
+				<amount type="number">236</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">199</amount>
+				<amount type="number">227</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,11 +110,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">114.8</load>
+			<load type="number">121.8</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">551</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">677</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -335,6 +335,58 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Forges Fire</name>
+				<source type="string">Monk</source>
+				<specialization type="string">Fire Elemental</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 6th level, you gain the ability to spend ki points to cast Fire Bolt and Heat Metal as follows:</p>
+					<table>
+						<tr>
+							<td>Ability</td>
+							<td>Ki for 1st cast</td>
+							<td>Ki for 2nd cast</td>
+							<td>Ki for 3rd cast</td>
+							<td>Ki for 4th cast</td>
+							<td>Ki for 5th or more cast</td>
+						</tr>
+						<tr>
+							<td>Fire Bolt</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>Heat Metal</td>
+							<td>2</td>
+							<td>4</td>
+							<td>6</td>
+							<td>8</td>
+							<td>10</td>
+						</tr>
+					</table>
+					<p>You go down 1 casting count for a short rest and fully reset on a long rest. Your spellcasting modifier for these spells is Wisdom.</p>
+					<linklist>
+						<link class="power" recordname="spell.firebolt@Incarnate-5eExpansion">Fire Bolt</link>
+						<link class="power" recordname="spell.heatmetal@Incarnate-5eExpansion">Heat Metal</link>
+					</linklist>
+				</text>
+			</id-00013>
+			<id-00014>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki-Empowered Strikes</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I like keeping secrets and won't share them with anyone.</flaws>
 		<gender type="string">Male</gender>
@@ -343,7 +395,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
+			<total type="number">45</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Greater Good. My gifts are meant to be shared with all, not used for my own benefit. (Good)</ideals>
@@ -648,7 +700,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">15 gp</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<damage type="string">1d8 slashing</damage>
 				<description type="formattedtext">
 					<p>A simple sythe, but in the hands of a death elemental it becomes something far more.</p>
@@ -701,7 +753,30 @@
 				<type type="string">Tools</type>
 				<weight type="number">5</weight>
 			</id-00019>
-			<id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00021>
+			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -737,7 +812,7 @@
 				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
-			</id-00020>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -750,7 +825,7 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Xanxus</name>
 		<notes type="string">when transformed he is a 71/2ft tall 290 pound wolfman</notes>
 		<perception type="number">15</perception>
@@ -841,7 +916,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1038,7 +1113,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Ki</name>
-				<prepared type="number">5</prepared>
+				<prepared type="number">6</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00007>
@@ -1066,6 +1141,117 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmZsYXJl/play/"><b>Syrinscape </b></link>: Flare - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Ki</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fire Bolt</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<order type="number">2</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heat Metal; (C)</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a piece of iron and a flame)</components>
+				<description type="formattedtext">
+					<p>Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again. If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Ki</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Heat Metal</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Druid</source>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Action</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00011>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1255,7 +1441,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1407,7 +1593,7 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">slashing</type>
+						<type type="string">slashing, magic</type>
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
@@ -1429,7 +1615,7 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">bludgeoning</type>
+						<type type="string">bludgeoning, magic</type>
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>

@@ -21,7 +21,7 @@
 				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">15</score>
+				<score type="number">14</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
@@ -38,11 +38,11 @@
 				<score type="number">16</score>
 			</strength>
 			<wisdom>
-				<bonus type="number">-1</bonus>
-				<save type="number">-1</save>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">8</score>
+				<score type="number">10</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -56,8 +56,10 @@
 		</backgroundlink>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
-				<hdused type="number">2</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">4</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
@@ -68,15 +70,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">33</amount>
+				<amount type="number">174</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">34</amount>
+				<amount type="number">8</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">30</amount>
+				<amount type="number">2</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -104,11 +106,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">106</load>
+			<load type="number">136.6</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">401</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">474</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -239,7 +241,7 @@
 			<id-00008>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Totem Spirit</name>
+				<name type="string">Totem Spirit (Bear)</name>
 				<source type="string">Barbarian</source>
 				<specialization type="string">Path of the Totem Warrior</specialization>
 				<specializationchoice type="number">0</specializationchoice>
@@ -292,7 +294,7 @@
 			<id-00001>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -343,6 +345,29 @@
 				<name type="string">Wolf's Head</name>
 				<weight type="number">4</weight>
 			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.heartstone@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+					<h>Description</h>
+					<p>By concentrating on this stone for 1 minute you are teleported into the Nexus, a place of safety for most adventurers. (It is your ticket back, so guard it with your life.)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<nonid_name type="string">Heartstone</nonid_name>
+				<rarity type="string">legendary</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00005>
 			<id-00006>
 				<carried type="number">1</carried>
 				<cost type="string">2 gp</cost>
@@ -354,19 +379,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">4</weight>
 			</id-00006>
-			<id-00007>
-				<carried type="number">2</carried>
-				<cost type="string">50 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">2d6 slashing</damage>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Greatsword</name>
-				<properties type="string">Heavy, two-handed</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">6</weight>
-			</id-00007>
 			<id-00008>
 				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
@@ -483,23 +495,16 @@
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">2 SP</cost>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 bludgeoning</damage>
 				<description type="formattedtext">
-					<p>-</p>
+					<p>This pelt was clearly removed by an amature with nothing done to preserve it. I wonder how long before it begins to rot?</p>
+					<p>(skinned on September 12th, 2018)</p>
 				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Greatclub</name>
-				<nonid_name type="string">Greatclub</nonid_name>
-				<nonidentified type="string">A sturdy greatclub.</nonidentified>
-				<properties type="string">Two-handed</properties>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">10</weight>
+				<name type="string">Poorly Cut Winter Wolf Pelt</name>
+				<weight type="number">15</weight>
 			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
@@ -513,7 +518,7 @@
 				<isidentified type="number">0</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Unarmed Strike (Monk)</name>
-				<nonid_name type="string">Unarmed Strike (Monk)</nonid_name>
+				<nonid_name type="string">Groin Kick Shoe</nonid_name>
 				<properties type="string">Finesse</properties>
 				<subtype type="string">Z Effect Coding</subtype>
 				<type type="string">Weapon</type>
@@ -535,86 +540,212 @@
 				<type type="string">Weapon</type>
 				<weight type="number">10</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This mundane cloak is a dark gray or black allowing the wearer to blend in with the shadows.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Cloak, Dark</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">2</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A tiny key shapped like a skeleton.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Skelton Key</name>
+				<weight type="number">0.1</weight>
+			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn.</p>
+					<linklist>
+						<link class="power" recordname="spell.gustofwind@Incarnate-5eExpansion">Gust of Wind</link>
+					</linklist>
+					<p>Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, nonmagical tatters.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Wind Fan</name>
+				<nonid_name type="string">Fan</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Dwarvish</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Giant</name>
+				<name type="string">Primordial</name>
 			</id-00003>
 		</languagelist>
 		<level type="number">4</level>
 		<name type="string">Scotlass</name>
-		<perception type="number">11</perception>
+		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powergroup>
-			<id-00001>
-				<castertype type="string">memorization</castertype>
-				<name type="string">Spells</name>
-			</id-00001>
+			<id-00002>
+				<name type="string">Powers</name>
+			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion.</p>
+				</description>
+				<duration type="string">10 minutes</duration>
+				<group type="string">Powers</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Speak with Animals</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Cleric Nature Domain, Druid, Eldritch Invocations, Ranger</source>
+			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
@@ -632,13 +763,14 @@
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00028@Incarnate-5eExpansion">Rage</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Rage (Bear)</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Barbarian</source>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
 			<id-00003>
 				<actions>
@@ -656,7 +788,7 @@
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00029@Incarnate-5eExpansion">Reckless Attack</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Reckless Attack</name>
@@ -667,7 +799,6 @@
 			<id-00004>
 				<actions>
 					<id-00001>
-						<apply type="string">roll</apply>
 						<durmod type="number">0</durmod>
 						<label type="string">ADVSAV: dexterity</label>
 						<order type="number">1</order>
@@ -681,7 +812,7 @@
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00041@Incarnate-5eExpansion">Danger Sense</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Danger Sense</name>
@@ -705,10 +836,32 @@
 						<li>Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
 					</list>
 				</description>
+				<group type="string">Powers</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Great Weapon Master</name>
 				<prepared type="number">0</prepared>
 			</id-00005>
+			<id-00006>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Powers</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Beast Sense</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00006>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -734,7 +887,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -753,23 +906,23 @@
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">1</total>
+				<total type="number">-1</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">-1</total>
+				<total type="number">0</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -811,7 +964,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">-1</total>
+				<total type="number">0</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -851,9 +1004,9 @@
 			<id-00018>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">-1</total>
+				<total type="number">2</total>
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
@@ -902,7 +1055,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00003>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
@@ -922,7 +1075,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
@@ -942,7 +1095,7 @@
 				<type type="number">2</type>
 			</id-00004>
 			<id-00006>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4</dice>
@@ -961,7 +1114,7 @@
 				<type type="number">0</type>
 			</id-00006>
 			<id-00007>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6,d6</dice>
