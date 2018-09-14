@@ -7,14 +7,14 @@
 				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">12</score>
+				<score type="number">13</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">1</bonus>
 				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">13</score>
+				<score type="number">12</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">4</bonus>
@@ -60,7 +60,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">4</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">7</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
@@ -80,18 +80,29 @@
 					<recordname>reference.classdata.rogue@D&#38;D Sword Coast Adventurer's Guide - Player's Guide</recordname>
 				</shortcut>
 			</id-00002>
+			<id-00003>
+				<casterlevelinvmult type="number">1</casterlevelinvmult>
+				<hddie type="dice">d8</hddie>
+				<hdused type="number">0</hdused>
+				<level type="number">1</level>
+				<name type="string">Bard</name>
+				<shortcut type="windowreference">
+					<class>reference_class</class>
+					<recordname>reference.classdata.bard@DD PHB Deluxe</recordname>
+				</shortcut>
+			</id-00003>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">776</amount>
+				<amount type="number">1794</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">57</amount>
+				<amount type="number">8</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">58</amount>
+				<amount type="number">3</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -107,6 +118,7 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -122,8 +134,8 @@
 			<load type="number">86.4</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">1089</exp>
-		<expneeded type="number">1100</expneeded>
+		<exp type="number">1159</exp>
+		<expneeded type="number">1200</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -352,6 +364,73 @@
 					<p>When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.</p>
 				</text>
 			</id-00015>
+			<id-00016>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Bardic Inspiration</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<p>Almost everyone will just play this one by hand with the bardic inspiration die rolled and then added manually, but you may use this variant if you want coding that rolls the inspiration die on the next check, attack roll, or saving throw.</p>
+					<linklist>
+						<link class="power" recordname="spell.bardicinspiration@Incarnate-5eExpansion">Bardic Inspiration</link>
+					</linklist>
+					<h>Description</h>
+					<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
+					<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use th Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
+					<p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p>
+					<p>Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</p>
+				</text>
+			</id-00016>
+			<id-00017>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Spellcasting (Bard)</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations.</p>
+					<linklist>
+						<link class="reference_colindex" recordname="lists.spells.bard@Incarnate-5eExpansion">Bard Spells</link>
+					</linklist>
+					<p><b>Cantrips</b></p>
+					<p>You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00035@Incarnate-5eExpansion">The Bard</link>
+					</linklist>
+					<p><b>Spell Slots</b></p>
+					<p>The Bard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. you regain all expended spell slots when you finish a long rest.</p>
+					<p>For example, if you know the 1st-level spell <i>cure wounds </i>and have a 1st-level and a 2nd-level spell slot available, you can cast <i>cure wounds </i>using either slot.</p>
+					<p><b>Spells Known of 1st Level and Higher</b></p>
+					<p>You know four 1st-level spells of your choice from the bard spell list.</p>
+					<p>The Spells Known column of the Bard table shows when you learn more bard spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.</p>
+					<p>Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots.</p>
+					<p><b>Spellcasting Ability</b></p>
+					<p>Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.</p>
+					<list>
+						<li><b>Spell save DC </b>= 8 + your proficiency bonus + your Charisma modifier</li>
+						<li><b>Spell attack modifier </b>= your proficiency bonus + your Charisma modifier</li>
+					</list>
+					<p><b>Ritual Casting</b></p>
+					<p>You can cast any bard spell you know as a ritual if that spell has the ritual tag.</p>
+					<p><b>Spellcasting Focus</b></p>
+					<p>You can use a musical instrument (see &#34;Equipment&#34;) as a spellcasting focus for your bard spells.</p>
+				</text>
+			</id-00017>
+			<id-00018>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Bard Starting Items</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p><b>Click the shield below to open you choices for bard starting items.</b></p>
+					<linklist>
+						<link class="reference_weapontable" recordname="lists.startingequipment.bard@Incarnate-5eExpansion">Bard Starting Equipment Options</link>
+					</linklist>
+				</text>
+			</id-00018>
 		</featurelist>
 		<flaws type="string">An innocent person is in prison for a crime that I committed. I'm okay with that.</flaws>
 		<gender type="string">Male</gender>
@@ -360,7 +439,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">72</total>
+			<total type="number">80</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I'm loyal to my friends, not to any ideals, and everyone else can take a trip down the Styx for all I care. (Neutral)</ideals>
@@ -669,7 +748,7 @@
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">902 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d4 piercing</damage>
@@ -761,7 +840,7 @@
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">2</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">6,300 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d4 piercing, magic 2d6 fire 1d8 necrotic</damage>
@@ -1059,13 +1138,12 @@
 				<name type="string">Infernal</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">10</level>
+		<level type="number">11</level>
 		<name type="string">Relorus Balarin</name>
-		<notes type="string">Elven Dungeon 1 1 1\nCrystal Elf's Location: ????\nFound a book on how to trigger psyionic traps. It included a command phrase that doubles the power, but talks of unexpected results.</notes>
+		<notes type="string">Elven Dungeon 1 1 1\nCrystal Elf's Location: ????\nFound a book on how to trigger psyionic traps. It included a command phrase that doubles the power, but talks of unexpected results.\n</notes>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I always have a plan for what to do when things go wrong.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkmod type="number">0</atkmod>
@@ -1078,11 +1156,9 @@
 				<stat type="string">intelligence</stat>
 				<uses type="number">0</uses>
 			</id-00001>
-			<id-00002>
-				<atkprof type="number">1</atkprof>
-				<name type="string">Effect</name>
-				<saveprof type="number">1</saveprof>
-			</id-00002>
+			<id-00006>
+				<name type="string">Powers</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1134,7 +1210,7 @@
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">1</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -1158,6 +1234,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1186,6 +1263,7 @@
 					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Serpent's Venom</name>
@@ -1215,7 +1293,7 @@
 					</list>
 					<p>You can use this feature twice. You regain all expended uses of it when you finish a short or long rest.</p>
 				</description>
-				<group type="string">Effect</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Bladesong</name>
@@ -1573,7 +1651,7 @@
 					<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
 					<p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
 				</description>
-				<group type="string">Effect</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Arcane Recovery</name>
@@ -1642,52 +1720,12 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Levitate - from scroll</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00018>
-			<id-00019>
-				<actions>
-					<id-00001>
-						<atkprof type="number">1</atkprof>
-						<order type="number">1</order>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d12,d12</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">poison</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.</p>
-					<p>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Poison Spray</name>
-				<prepared type="number">0</prepared>
-				<range type="string">10 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Druid, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
-			</id-00019>
 			<id-00020>
 				<actions>
 					<id-00001>
@@ -1785,7 +1823,7 @@
 						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Greater Potion of Healing</name>
@@ -1976,7 +2014,7 @@
 				<level type="number">4</level>
 				<locked type="number">1</locked>
 				<name type="string">Ice Storm</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">300 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -2070,7 +2108,9 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Drow Poison</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
@@ -2099,7 +2139,7 @@
 						<link class="reference_classfeature" recordname="class.prorogue.features.id-00018@Incarnate-5eExpansion">Sneak Attack</link>
 					</linklist>
 				</description>
-				<group type="string">Effect</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Sneak Attack</name>
@@ -2161,28 +2201,230 @@
 						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Dodge</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00034>
+			<id-00036>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">poisoned</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Powers</group>
+				<level type="number">0</level>
+				<name type="string">Dagger of Venom</name>
+				<prepared type="number">0</prepared>
+			</id-00036>
+			<id-00037>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a short piece of copper wire)</components>
+				<description type="formattedtext">
+					<p>You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.</p>
+					<p>You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence. 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Message</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00037>
+			<id-00038>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">ADVCHK: charisma; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S, M (a small amount of makeup applied to the face as this spell is cast)</components>
+				<description type="formattedtext">
+					<p>For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Friends</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00038>
+			<id-00039>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice"></dice>
+								<stat type="string">base</stat>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<label type="string">DMG: 1d8 fire</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, M (a weapon)</components>
+				<description type="formattedtext">
+					<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.</p>
+					<p>This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level and 17th level.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Green-Flame Blade</name>
+				<prepared type="number">0</prepared>
+				<range type="string">5 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00039>
+			<id-00040>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d4</dice>
+								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Healing Word</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Druid</source>
+			</id-00040>
+			<id-00041>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Invisible; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (an eyelash encased in gum arabic)</components>
+				<description type="formattedtext">
+					<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Invisibility</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Druid Grassland Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00041>
+			<id-00043>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Lesser Restoration</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
+			</id-00043>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
-				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows</name>
+				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows, rapier's</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Tool: thieves' tools - flute</name>
+				<name type="string">Tool:  thieves' tools - flute</name>
 			</id-00002>
-			<id-00003>
-				<name type="string">Armor: Light armor</name>
-			</id-00003>
 			<id-00004>
 				<name type="string">Tool: poisoner's kit</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Armor: Light armor</name>
+			</id-00005>
 		</proficiencylist>
 		<race type="string">Half-Elf</race>
 		<racelink type="windowreference">
@@ -2279,9 +2521,9 @@
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">8</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -2337,6 +2579,7 @@
 				<total type="number">12</total>
 			</id-00019>
 			<id-00020>
+				<locked type="number">1</locked>
 				<misc type="number">0</misc>
 				<name type="string">Poisoner's Kit</name>
 				<prof type="number">1</prof>
@@ -2354,6 +2597,34 @@
 				</text>
 				<total type="number">4</total>
 			</id-00020>
+			<id-00023>
+				<misc type="number">0</misc>
+				<name type="string">Flute</name>
+				<prof type="number">1</prof>
+				<stat type="string">charisma</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00270@Incarnate-5eExpansion">Flute</link>
+						<link class="encounter" recordname="encounter.id-00002@Incarnate-5eExpansion">Rules for Using a Musical Instrument</link>
+					</linklist>
+				</text>
+				<total type="number">5</total>
+			</id-00023>
+			<id-00024>
+				<misc type="number">0</misc>
+				<name type="string">Smith's Tools</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00253@Incarnate-5eExpansion">Smith's Tools</link>
+						<link class="encounter" recordname="encounter.id-00019@Incarnate-5eExpansion">Rules for Using Smith's Tools</link>
+					</linklist>
+				</text>
+				<total type="number">8</total>
+			</id-00024>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -2364,7 +2635,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00011_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2394,53 +2665,6 @@
 			</critrange>
 		</weapon>
 		<weaponlist>
-			<id-00001>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">dexterity</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Dagger</name>
-				<prof type="number">1</prof>
-				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00003</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00001>
-			<id-00002>
-				<ammo type="number">0</ammo>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">dexterity</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">3</maxammo>
-				<name type="string">Dagger</name>
-				<prof type="number">1</prof>
-				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00003</recordname>
-				</shortcut>
-				<type type="number">2</type>
-			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -2498,7 +2722,7 @@
 			<id-00007>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2521,7 +2745,7 @@
 			<id-00008>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2544,7 +2768,7 @@
 			<id-00009>
 				<attackbonus type="number">2</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>
@@ -2575,9 +2799,10 @@
 				<type type="number">0</type>
 			</id-00009>
 			<id-00010>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">2</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>

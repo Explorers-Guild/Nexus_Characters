@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1816</amount>
+				<amount type="number">3225</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">577</amount>
+				<amount type="number">653</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">577</amount>
+				<amount type="number">648</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,11 +113,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">58.81</load>
+			<load type="number">60.81</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">1036</exp>
-		<expneeded type="number">1000</expneeded>
+		<exp type="number">1106</exp>
+		<expneeded type="number">1100</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -705,6 +705,32 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.</p>
+					<p>You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options:</p>
+					<list>
+						<li>&#34;Stream&#34; produces 1 gallon of water.</li>
+						<li>&#34;Fountain&#34; produces 5 gallons of water.</li>
+						<li>&#34;Geyser&#34; produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide.</li>
+					</list>
+					<p>As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds.</p>
+					<p>The object is either knocked over or pushed up to 15 feet away from you.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Decanter of Endless Water</name>
+				<nonid_name type="string">Flash</nonid_name>
+				<nonidentified type="string">This stoppered flask sloshes when shaken, as if it contains water.</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">2</weight>
+			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1170,7 +1196,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Fireball</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">150 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1284,7 +1310,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Plant Growth</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">150 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1325,7 +1351,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Blindness/Deafness</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Necromancy</school>
@@ -1706,6 +1732,7 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -1742,6 +1769,17 @@
 						<order type="number">7</order>
 						<type type="string">damage</type>
 					</id-00007>
+					<id-00008>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">8</order>
+						<type type="string">damage</type>
+					</id-00008>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1847,16 +1885,17 @@
 						<order type="number">1</order>
 						<type type="string">cast</type>
 					</id-00001>
-					<id-00002>
+					<id-00003>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d10</dice>
+								<dice type="dice">d10,d10</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
-						<order type="number">2</order>
+						<order type="number">3</order>
 						<type type="string">damage</type>
-					</id-00002>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -2097,7 +2136,7 @@
 				<level type="number">4</level>
 				<locked type="number">1</locked>
 				<name type="string">Greater Invisibility</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Illusion</school>
@@ -2196,7 +2235,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Misty Step</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
@@ -2290,7 +2329,7 @@
 				<level type="number">4</level>
 				<locked type="number">1</locked>
 				<name type="string">Ice Storm</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">300 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>

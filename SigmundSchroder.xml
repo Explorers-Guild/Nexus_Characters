@@ -99,9 +99,9 @@
 				<disstealth type="number">1</disstealth>
 				<misc type="number">1</misc>
 				<prof type="number">1</prof>
-				<shield type="number">3</shield>
+				<shield type="number">4</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">22</total>
+				<total type="number">23</total>
 			</ac>
 		</defenses>
 		<deity type="string">Azuth</deity>
@@ -475,25 +475,47 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00001>
-			<id-00003>
-				<ac type="number">2</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">0</carried>
-				<cost type="string">10 gp</cost>
+			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">4</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">3,910 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
+					<p>-</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.adamantinearmor@Incarnate-5eExpansion">Adamantine Armor</link>
+					</linklist>
+					<h>Description</h>
+					<p>This suit of armor is reinforced with adamantine one of the hardest substances in existence. While you're wearing it any critical hit against you becomes a normal hit.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="" recordname="@Incarnate-Forge">Shield of Missile Attraction</link>
+					</linklist>
+					<h>Description</h>
+					<p>While holding this shield you have resistance to damage from ranged weapon attacks.</p>
+					<p><b>Curse </b>. This shield is cursed. Attuning to it curses you until you are targeted by the remove curse spell or similar magic. Removing the shield fails to end the curse on you. Whenever a ranged weapon attack is made against a target within 10 feet of you the curse causes you to become the target instead.</p>
+					<p>While holding this shield you have a +2 bonus to AC determined by the shield's rarity.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepsychic@Incarnate-5eExpansion">Type Resistance (Psychic)</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have resistance to psychic damage while you wear this armor.</p>
 				</description>
 				<dexbonus type="string">-</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Shield</name>
+				<name type="string">Magical Arrow Attraction Adamantine Shield of Psychic Resistance</name>
+				<nonid_name type="string">Shield</nonid_name>
+				<nonidentified type="string">A well crafted shield.</nonidentified>
 				<stealth type="string">-</stealth>
 				<strength type="string">-</strength>
 				<subtype type="string">Shield</subtype>
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
-			</id-00003>
+			</id-00002>
 			<id-00004>
 				<carried type="number">1</carried>
 				<cost type="string">5 cp</cost>
@@ -807,7 +829,7 @@
 			<id-00026>
 				<ac type="number">0</ac>
 				<bonus type="number">3</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1,510 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1117,6 +1139,30 @@
 				<school type="string">Abjuration</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Adamantine Armor; IMMUNE: critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00344@Incarnate-5eExpansion">Adamantine Armor</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Adamantine Armor</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
@@ -1228,6 +1274,28 @@
 				<school type="string">abjuration</school>
 				<source type="string">Xanathar's Guide to Everything</source>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: psychic</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Psychic)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
 			<id-00009>
 				<actions>
 					<id-00001>
@@ -1512,7 +1580,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00011_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

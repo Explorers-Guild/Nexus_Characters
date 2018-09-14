@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">266</amount>
+				<amount type="number">1775</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">115</amount>
+				<amount type="number">191</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">122</amount>
+				<amount type="number">193</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,10 +107,10 @@
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">90.1</load>
+			<load type="number">104.6</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">503</exp>
+		<exp type="number">573</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -695,7 +695,7 @@
 				<bonus type="number">2</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">6,000 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<damage type="string">1d10 piercing</damage>
 				<description type="formattedtext">
 					<h>Action Coding</h>
@@ -764,6 +764,43 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Superior healing</td>
+							<td>Rare</td>
+							<td>8d4 + 8</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -970,8 +1007,9 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
 								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -1282,6 +1320,84 @@
 				<school type="string">Abjuration</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">dexterity</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">acid</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d12</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">4</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">dexterity</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">0</durmod>
+						<label type="string">restrained; NOTE: Escape DC 14; sticky</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<durmod type="number">0</durmod>
+						<label type="string">Crossbow of House of Athishut; DMG: magic</label>
+						<order type="number">6</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00006>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-01049@Incarnate-5eExpansion">Crossbow of House of Athishut</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Crossbow of the House of Athishut</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1616,7 +1732,7 @@
 				<type type="number">2</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">10</ammo>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1637,8 +1753,9 @@
 				<type type="number">1</type>
 			</id-00004>
 			<id-00007>
+				<ammo type="number">5</ammo>
 				<attackbonus type="number">2</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>
@@ -1648,6 +1765,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Crossbow of House of Athishut</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 100/400), loading, two-handed</properties>
