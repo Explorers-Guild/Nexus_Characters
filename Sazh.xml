@@ -111,29 +111,28 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">132.5</load>
+			<load type="number">103.25</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">527</exp>
+		<exp type="number">536</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Eternal Optimist</name>
+				<name type="string">Hero's Heart</name>
 				<text type="formattedtext">
-					<h>Eternal Optimist</h>
+					<h>Hero's Heart</h>
 					<h>Action Coding</h>
 					<linklist>
 						<link class="power" recordname="spell.advantagesave@Incarnate-5eExpansion">Advantage Save</link>
 					</linklist>
 					<h>Description</h>
-					<p>Your positive attitude is relentless to the point of naivety. Nothing can challenge your resolve.</p>
-					<list>
-						<li>Increase your Charisma score by 1, to a maximum of 20.</li>
-						<li>You have an advantage on saves vs the Frightened Condition.</li>
-					</list>
+					<p>Prerequisites: Good Alignment</p>
+					<p>You have the heart of a hero granting you the following benefits:</p>
+					<p>An ability score of your choice increases by 1.</p>
+					<p>You have advantage on saving throws against being frightened, stunned, and petrified if you are not incapacitated.</p>
 					<linklist>
-						<link class="url" recordname="http://www.dandwiki.com/wiki/Eternal_Optimist_(5e_Feat)">Online copy</link>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Hero%27s_Heart_(5e_Feat)">Online copy</link>
 					</linklist>
 				</text>
 			</id-00001>
@@ -849,7 +848,7 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">0</temporary>
+			<temporary type="number">8</temporary>
 			<total type="number">33</total>
 			<wounds type="number">0</wounds>
 		</hp>
@@ -1272,9 +1271,6 @@
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">There's nothing I like more than a good mystery.\nI'm willing to listen to every side of an argument before I make my own judgment.\nI like to talk at length about my profession.</personalitytraits>
 		<powergroup>
-			<id-00001>
-				<name type="string">Feat</name>
-			</id-00001>
 			<id-00002>
 				<atkprof type="number">1</atkprof>
 				<atkstat type="string">charisma</atkstat>
@@ -1740,7 +1736,7 @@
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">DMG: 2d6 radiant; (C)</label>
+						<label type="string">DMG: 3d6 radiant; (C)</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1804,28 +1800,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Warlock</source>
 			</id-00019>
-			<id-00021>
-				<actions>
-					<id-00001>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">ADVSAV: all</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<p>This effect applies advantage save to the caster. It should be used when an save is about to be made that you have advantage on.</p>
-				</description>
-				<group type="string">Feat</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Advantage Save</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00021>
 			<id-00027>
 				<actions>
 					<id-00001>
@@ -2040,6 +2014,7 @@
 				<name type="string">Thunder Step</name>
 				<prepared type="number">0</prepared>
 				<range type="string">90 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Sorcerer, Warlock, Wizard</source>
 			</id-00034>
@@ -2172,7 +2147,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00002>
 				<locked type="number">0</locked>
@@ -2248,8 +2223,8 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">base</stat>
+						<dice type="dice"></dice>
+						<stat type="string">strength</stat>
 						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
@@ -2309,29 +2284,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
-			<id-00004>
-				<attackbonus type="number">1</attackbonus>
-				<attackstat type="string">charisma</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">1</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">charisma</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing, magic</type>
-					</id-00001>
-				</damagelist>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Pact Longbow</name>
-				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00004>
 			<id-00005>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
@@ -2380,12 +2332,14 @@
 			</id-00006>
 			<id-00007>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<attackstat type="string">charisma</attackstat>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
+						<stat type="string">charisma</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
