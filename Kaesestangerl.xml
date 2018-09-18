@@ -58,7 +58,7 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">2</hdused>
 				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
@@ -69,15 +69,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">33</amount>
+				<amount type="number">58</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">41</amount>
+				<amount type="number">113</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">37</amount>
+				<amount type="number">100</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -105,10 +105,10 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">72.5</load>
+			<load type="number">14</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">401</exp>
+		<exp type="number">471</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -283,7 +283,7 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">5</temporary>
+			<temporary type="number">0</temporary>
 			<total type="number">27</total>
 			<wounds type="number">0</wounds>
 		</hp>
@@ -321,7 +321,7 @@
 				<weight type="number">10</weight>
 			</id-00002>
 			<id-00003>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -333,7 +333,7 @@
 				<weight type="number">7</weight>
 			</id-00003>
 			<id-00004>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">10</count>
 				<description type="formattedtext">
@@ -348,7 +348,7 @@
 				<weight type="number">2</weight>
 			</id-00004>
 			<id-00005>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">10</count>
 				<description type="formattedtext">
@@ -363,7 +363,7 @@
 				<weight type="number">1</weight>
 			</id-00005>
 			<id-00006>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -378,7 +378,7 @@
 				<weight type="number">1</weight>
 			</id-00006>
 			<id-00007>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -390,7 +390,7 @@
 				<weight type="number">5</weight>
 			</id-00007>
 			<id-00008>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -405,7 +405,7 @@
 				<weight type="number">1</weight>
 			</id-00008>
 			<id-00009>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -417,7 +417,7 @@
 				<weight type="number">10</weight>
 			</id-00009>
 			<id-00010>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -445,6 +445,43 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0</weight>
 			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00012>
 			<id-00013>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -547,30 +584,39 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -600,7 +646,7 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<level type="number">0</level>
 				<name type="string">ki</name>
 				<prepared type="number">0</prepared>
@@ -644,6 +690,28 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: radiant</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Radiant)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00004>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -829,7 +897,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
