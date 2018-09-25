@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">13</score>
@@ -58,8 +58,8 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">2</hdused>
-				<level type="number">4</level>
+				<hdused type="number">0</hdused>
+				<level type="number">5</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,15 +69,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">58</amount>
+				<amount type="number">63</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">113</amount>
+				<amount type="number">122</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">100</amount>
+				<amount type="number">110</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -105,11 +105,11 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">14</load>
+			<load type="number">73</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">471</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">564</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -276,6 +276,31 @@
 					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.stunningstrike@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">Don't expect me to save those who can't save themselves. It is nature's way that the strong thrive and the weak perish.</flaws>
 		<gender type="string">M</gender>
@@ -284,7 +309,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
+			<total type="number">33</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Change. Life is like the seasons, in constant change, and we must change with it. (Chaotic)</ideals>
@@ -295,10 +320,15 @@
 		</initiative>
 		<inventorylist>
 			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
 				<count type="number">10</count>
 				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Dart</name>
@@ -321,7 +351,7 @@
 				<weight type="number">10</weight>
 			</id-00002>
 			<id-00003>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -333,7 +363,7 @@
 				<weight type="number">7</weight>
 			</id-00003>
 			<id-00004>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">10</count>
 				<description type="formattedtext">
@@ -348,7 +378,7 @@
 				<weight type="number">2</weight>
 			</id-00004>
 			<id-00005>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">10</count>
 				<description type="formattedtext">
@@ -363,7 +393,7 @@
 				<weight type="number">1</weight>
 			</id-00005>
 			<id-00006>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -378,7 +408,7 @@
 				<weight type="number">1</weight>
 			</id-00006>
 			<id-00007>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -390,7 +420,7 @@
 				<weight type="number">5</weight>
 			</id-00007>
 			<id-00008>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -405,7 +435,7 @@
 				<weight type="number">1</weight>
 			</id-00008>
 			<id-00009>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -417,7 +447,7 @@
 				<weight type="number">10</weight>
 			</id-00009>
 			<id-00010>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -450,7 +480,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
+				<count type="number">0</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -523,12 +553,12 @@
 				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">K&#228;s e Stangerl</name>
+		<notes type="string">follow a group to a luvcano, meet a balor they from hades and 3 people took the ring on.  and went to murder an old lady. 3 didnt agree with it and 3 Alia wander and arkki. arkki got free  the other didnt  and a local from Umag 06_05 called Shimon can instant kill everyone hes knows the name from,.. .an d hes knows them all.</notes>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I watch over my friends as if they were a litter of newborn pups.\nI place no stock in wealthy or well-mannered folk. Money and manners won't save you from a hungry owlbear.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -544,6 +574,12 @@
 			<id-00003>
 				<name type="string">Effect</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Ki</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Ability</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -619,7 +655,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -646,10 +681,11 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
+				<group type="string">Ki</group>
 				<level type="number">0</level>
-				<name type="string">ki</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Ki Points</name>
+				<prepared type="number">5</prepared>
 			</id-00002>
 			<id-00003>
 				<actions>
@@ -712,8 +748,92 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">wisdom</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+								<statmult type="number">1</statmult>
+							</id-00002>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Ability</group>
+				<level type="number">0</level>
+				<name type="string">Touch of Death</name>
+				<prepared type="number">0</prepared>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<label type="string">Stunned</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.stunningstrike@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</description>
+				<group type="string">Ability</group>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00007>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: One type of musical instrument</name>
@@ -745,14 +865,14 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -794,7 +914,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -843,7 +963,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -871,7 +991,7 @@
 						<link class="encounter" recordname="encounter.id-00002@Incarnate-5eExpansion">Rules for Using a Musical Instrument</link>
 					</linklist>
 				</text>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
@@ -885,7 +1005,7 @@
 						<link class="encounter" recordname="encounter.id-00021@Incarnate-5eExpansion">Rules for Using Weaver's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00020>
 		</skilllist>
 		<speed>
@@ -897,7 +1017,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00010_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -920,6 +1040,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
+				<ammo type="number">1</ammo>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -967,7 +1088,7 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
