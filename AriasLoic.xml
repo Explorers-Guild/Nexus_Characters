@@ -3,11 +3,11 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">1</bonus>
-				<save type="number">1</save>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">12</score>
+				<score type="number">14</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">1</bonus>
@@ -24,11 +24,11 @@
 				<score type="number">18</score>
 			</dexterity>
 			<intelligence>
-				<bonus type="number">0</bonus>
-				<save type="number">3</save>
+				<bonus type="number">-1</bonus>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">10</score>
+				<score type="number">8</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">0</bonus>
@@ -58,7 +58,7 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">2</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">5</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
@@ -68,7 +68,7 @@
 			</id-00001>
 			<id-00002>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">1</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
@@ -79,11 +79,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">146</amount>
+				<amount type="number">1073</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">5</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
@@ -116,10 +116,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">93.62</load>
+			<load type="number">87.41</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">630</exp>
+		<exp type="number">679</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
@@ -296,29 +296,6 @@
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</text>
 			</id-00011>
-			<id-00012>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Fighter Starting Items</name>
-				<source type="string">Fighter</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p><b>Click the shield below to open you choices for fighter starting items.</b></p>
-					<linklist>
-						<link class="reference_weapontable" recordname="lists.startingequipment.fighter@Incarnate-5eExpansion">Fighter Starting Equipment Options</link>
-					</linklist>
-				</text>
-			</id-00012>
-			<id-00013>
-				<level type="number">4</level>
-				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement - Skulker</name>
-				<source type="string">Rogue</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
-				</text>
-			</id-00013>
 			<id-00014>
 				<level type="number">5</level>
 				<locked type="number">1</locked>
@@ -415,18 +392,19 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00002>
-			<id-00003>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">2</count>
-				<description type="formattedtext">
-					<p>Killed Sept 5, 2018. Needs to be harvested &#34;soon&#34;</p>
-				</description>
+			<id-00004>
+				<carried type="number">2</carried>
+				<cost type="string">50 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Giant Poisonous Serpent Head</name>
-				<weight type="number">10</weight>
-			</id-00003>
+				<name type="string">Longbow</name>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
+				<subtype type="string">Martial Ranged Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -438,11 +416,39 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Quiver (77 arrow's)</name>
+				<name type="string">Quiver (66 arrow's)</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00005>
+			<id-00006>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1,825 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing and 2d6 fire</damage>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.flametongue@Incarnate-5eExpansion">Flame Tongue</link>
+					</linklist>
+					<h>Description</h>
+					<p>You can use a bonus action to speak this magic weapon's command word, causing flames to erupt from the blade. These flames shed bright light in a 40--foot radius and dim light for an additional 40 feet.</p>
+					<p>While the weapon is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Flame Tongue Rapier</name>
+				<nonid_name type="string">Rapier</nonid_name>
+				<nonidentified type="string">A pointy rapier.</nonidentified>
+				<properties type="string">Finesse</properties>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00006>
 			<id-00007>
 				<ac type="number">11</ac>
 				<bonus type="number">0</bonus>
@@ -664,6 +670,19 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00022>
+			<id-00023>
+				<carried type="number">2</carried>
+				<cost type="string">Bunch of Foilage</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A ghillie cloak a camouflaged cloak that resembles heavy foliage.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Ghillie suit</name>
+				<rarity type="string">common</rarity>
+				<type type="string">Item</type>
+				<weight type="number">5</weight>
+			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -708,22 +727,54 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This poison must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Serpent Venom (Injury) (1/3 bottle)</name>
+				<name type="string">Serpent Venom (Injury) (3/3 uses)</name>
 				<rarity type="string">Uncommon</rarity>
 				<subtype type="string">Poisons</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.5</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This stoppered flask is filled with hezrou stench. When unstopped or broken, anyone within 10 feet must make a DC 14 Constitution saving throw or be poisoned until the start of its next turn.</p>
+				</description>
+				<locked type="number">0</locked>
+				<name type="string">Hezrou Stench Bomb!</name>
+				<weight type="number">1</weight>
+			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of hostile creatures that are ethereal, invisible, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.</p>
+					<p>The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Wand of Enemy Detection</name>
+				<nonid_name type="string">Wand</nonid_name>
+				<nonidentified type="string">A magical wand.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Wand</type>
+				<weight type="number">1</weight>
+			</id-00028>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Dwarvish</name>
@@ -737,6 +788,7 @@
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I always have a plan for what to do when things go wrong.\n\nI'm a born gambler who can't resist taking a risk for a potential payoff.\n\nI don't pay attention to the risks in a situation. Never tell me the odds.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00003>
 				<name type="string">Power's</name>
@@ -850,8 +902,8 @@
 			<id-00002>
 				<actions>
 					<id-00001>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
+						<durmod type="number">99</durmod>
+						<durunit type="string">day</durunit>
 						<label type="string">Sneak Attack; DMG: 3d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
@@ -898,8 +950,8 @@
 			<id-00004>
 				<actions>
 					<id-00001>
-						<apply type="string">single</apply>
-						<durmod type="number">0</durmod>
+						<durmod type="number">99</durmod>
+						<durunit type="string">day</durunit>
 						<label type="string">ATK: -5, ranged; DMG: 10, ranged</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
@@ -1001,16 +1053,18 @@
 			<id-00002>
 				<name type="string">Arcana</name>
 				<stat type="string">intelligence</stat>
+				<total type="number">-1</total>
 			</id-00002>
 			<id-00003>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<name type="string">Nature</name>
 				<stat type="string">intelligence</stat>
+				<total type="number">-1</total>
 			</id-00004>
 			<id-00005>
 				<name type="string">Medicine</name>
@@ -1025,7 +1079,7 @@
 			<id-00007>
 				<name type="string">Performance</name>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00007>
 			<id-00008>
 				<name type="string">Acrobatics</name>
@@ -1036,6 +1090,7 @@
 			<id-00009>
 				<name type="string">Religion</name>
 				<stat type="string">intelligence</stat>
+				<total type="number">-1</total>
 			</id-00009>
 			<id-00010>
 				<name type="string">Athletics</name>
@@ -1057,17 +1112,18 @@
 			<id-00013>
 				<name type="string">Intimidation</name>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00013>
 			<id-00014>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00014>
 			<id-00015>
 				<name type="string">Investigation</name>
 				<stat type="string">intelligence</stat>
+				<total type="number">-1</total>
 			</id-00015>
 			<id-00016>
 				<name type="string">Stealth</name>
@@ -1078,6 +1134,7 @@
 			<id-00017>
 				<name type="string">History</name>
 				<stat type="string">intelligence</stat>
+				<total type="number">-1</total>
 			</id-00017>
 			<id-00018>
 				<name type="string">Animal Handling</name>
@@ -1149,7 +1206,7 @@
 						<link class="encounter" recordname="encounter.id-00003@Incarnate-5eExpansion">Rules for Using Alchemist's Supplies</link>
 					</linklist>
 				</text>
-				<total type="number">3</total>
+				<total type="number">2</total>
 			</id-00022>
 		</skilllist>
 		<speed>
@@ -1161,7 +1218,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1204,13 +1261,65 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
+			<id-00002>
+				<ammo type="number">0</ammo>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">66</maxammo>
+				<name type="string">Longbow</name>
+				<prof type="number">1</prof>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00004</recordname>
+				</shortcut>
+				<type type="number">1</type>
+			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00003>
+						<dice type="dice">d6,d6</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">fire</type>
+					</id-00003>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Flame Tongue Rapier</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00006</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
 			<id-00004>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1229,7 +1338,7 @@
 				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4</dice>

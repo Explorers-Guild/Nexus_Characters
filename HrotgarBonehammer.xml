@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">10</level>
+				<level type="number">11</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">4228</amount>
+				<amount type="number">5140</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">619</amount>
+				<amount type="number">768</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">638</amount>
+				<amount type="number">787</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -111,10 +111,10 @@
 			<encumbered type="number">100</encumbered>
 			<encumberedheavy type="number">200</encumberedheavy>
 			<liftpushdrag type="number">600</liftpushdrag>
-			<load type="number">167.001</load>
+			<load type="number">173.501</load>
 			<max type="number">300</max>
 		</encumbrance>
-		<exp type="number">1094</exp>
+		<exp type="number">1143</exp>
 		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
@@ -315,6 +315,17 @@
 					<p>If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours.</p>
 				</text>
 			</id-00015>
+			<id-00016>
+				<level type="number">11</level>
+				<locked type="number">1</locked>
+				<name type="string">Relentless Rage</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
+					<p>Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
+				</text>
+			</id-00016>
 		</featurelist>
 		<flaws type="string">I have a family, but I have no idea where they are. One day, I hope to see them again.</flaws>
 		<gender type="string">Male</gender>
@@ -323,7 +334,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">105</total>
+			<total type="number">114</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Destiny. Nothing and no one can steer me away from my higher calling. (Any)</ideals>
@@ -723,6 +734,24 @@
 				<type type="string">Weapon</type>
 				<weight type="number">7</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">15 gp</cost>
+				<count type="number">2</count>
+				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p>A simple sythe, but in the hands of a death elemental it becomes something far more.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Death's Scythe</name>
+				<properties type="string">Versatile (1d10)</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00019>
 			<id-00020>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -771,7 +800,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">6</count>
+				<count type="number">7</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -1104,7 +1133,7 @@
 				<name type="string">Draconic</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">10</level>
+		<level type="number">11</level>
 		<name type="string">Hrotgar Bonehammer</name>
 		<notes type="string">Horse (Riding): \n\nI broke into a tyrant's castle and stole weapons to arm my people. i wear the hilt of one of the weapons as a necklace to always remember the victory, I'm fiercly proud of my actions, even if I had to leave my family behind in order to keep them safe.\n\nTrying to find the focal point of both water and the gate if Hades\n\nDragonborns in the island around 0502\n\nHIlda and Heirum is the name of his Family\nq\n\nCannot use Horn of Valhala for 1 session\n\n5gp per batch of blue flowers\n\nAfter each use of the Horn, tick it off\n</notes>
 		<perception type="number">12</perception>
@@ -1124,6 +1153,9 @@
 			<id-00002>
 				<name type="string">Class Features</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Wildshape Tyrannosaurus Rex</name>
+			</id-00003>
 			<id-00004>
 				<name type="string">Standard Actions</name>
 			</id-00004>
@@ -1209,7 +1241,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1225,7 +1256,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<group type="string">Consumables</group>
 				<level type="number">0</level>
 				<name type="string">Healing potion</name>
@@ -1676,7 +1707,7 @@
 						<type type="string">damage</type>
 					</id-00001>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">3</cast>
 				<description type="formattedtext">
 					<h>Item Coding</h>
 					<linklist>
@@ -1723,27 +1754,24 @@
 			</id-00021>
 			<id-00022>
 				<actions>
-					<id-00001>
+					<id-00002>
 						<atkmod type="number">0</atkmod>
 						<atkprof type="number">1</atkprof>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Intimidating Presence; frightened</label>
-						<order type="number">1</order>
+						<order type="number">2</order>
 						<savedcbase type="string">ability</savedcbase>
 						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
 						<savedcstat type="string">charisma</savedcstat>
 						<savemagic type="number">0</savemagic>
 						<savetype type="string">wisdom</savetype>
-						<type type="string">effect</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">1</durmod>
-						<label type="string">EFF: Frightened</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
+						<type type="string">cast</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<label type="string">Intimidating Presence; frightened</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1758,6 +1786,126 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">10</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">7</bonus>
+								<dice type="dice">d12,d12,d12,d12</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Grappled; NOTE: escape DC 17</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.tyrannosaurusrex@Incarnate-5eBattles">Tyrannosaurus Rex</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Tyrannosaurus Rex</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bite - Tyrannosaurus Rex</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">10</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">7</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.tyrannosaurusrex@Incarnate-5eBattles">Tyrannosaurus Rex</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Tyrannosaurus Rex</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Tail - Tyrannosaurus Rex</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00024>
+			<id-00025>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">52</bonus>
+								<dice type="dice">d12,d12,d12,d12,d12,d12,d12,d12,d12,d12,d12,d12,d12</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 15; DEX: [-2DEX]; DEX: 0; CON: [-2CON]; CON: 9; AC: -4</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.tyrannosaurusrex@Incarnate-5eBattles">Tyrannosaurus Rex</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape Tyrannosaurus Rex</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Tyrannosaurus Rex</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00025>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2066,7 +2214,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
-				<ammo type="number">0</ammo>
+				<ammo type="number">2</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -2173,6 +2321,28 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00007>
+			<id-00008>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Death's Scythe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
 			<id-00011>
 				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
@@ -2197,7 +2367,7 @@
 			</id-00011>
 			<id-00012>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>

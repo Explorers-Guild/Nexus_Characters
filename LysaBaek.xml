@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">223</amount>
+				<amount type="number">1135</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">93</amount>
+				<amount type="number">242</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">92</amount>
+				<amount type="number">241</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,30 +112,26 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">105.86</load>
+			<load type="number">106.36</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">547</exp>
+		<exp type="number">596</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
-			<id-00002>
+			<id-00001>
 				<locked type="number">1</locked>
 				<name type="string">Arcana Infused</name>
 				<text type="formattedtext">
 					<h>Description</h>
-					<p>Prerequisites: The ability to cast at least one spell</p>
-					<p>Your blood flows with an abundance of magical energy, allowing you to access a well of magical power.</p>
-					<list>
-						<li>After each long rest roll 1d4, you then gain a temporary spell slot of equal value to the number rolled for that day. If a 4 is rolled you may re-roll that die adding an extra 1d4 and instead gain a temporary spell slot equal to the combine values on the dice (Any 4 on the extra roll is counted as nothing).</li>
-						<li>After each short rest you can regain a combination of spell slots equal to your spellcasting ability modifier (Minimum of 0)</li>
-						<li>(For example; a wizard with an intelligence modifier of +3 can regain either 1 third level spell, 1 second level spell and 1 first level spell, or 3 first level spells)</li>
-						<li>You may not gain a spell slot with this ability that you would not normally be able to cast otherwise</li>
-					</list>
+					<p>Prerequisites: The ability to cast at least one spell, and <b>NOT </b>wizard</p>
+					<p>Your blood flows with an abundance of magical energy, allowing you to access a well of mana.</p>
+					<p>Once per day when you finish a short rest, you can choose expended spell slots to recover. the spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
+					<p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
 					<linklist>
 						<link class="url" recordname="http://www.dandwiki.com/wiki/Arcana_Infused_(5e_Feat)">Online copy</link>
 					</linklist>
 				</text>
-			</id-00002>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -647,6 +643,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1758,7 +1791,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Calm Emotions</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -1857,7 +1890,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Enhance Ability</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -2031,7 +2064,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Protection from Poison</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<school type="string">Abjuration</school>
 				<source type="string">Cleric, Druid, Paladin, Ranger</source>
@@ -2206,7 +2239,9 @@
 			<id-00046>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
 					</id-00001>
@@ -2214,7 +2249,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">radiant</type>
 							</id-00001>
 						</damagelist>
@@ -2235,6 +2271,7 @@
 				<name type="string">Sacred Flame</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Cleric</source>
 			</id-00046>
@@ -3132,7 +3169,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">3</ammo>
+				<ammo type="number">5</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
