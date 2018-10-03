@@ -50,7 +50,7 @@
 		<age type="string">1 year</age>
 		<alignment type="string">Lawful good</alignment>
 		<appearance type="string">Look like a panda.</appearance>
-		<background type="string">Urchin</background>
+		<background type="string">Dragon Warrior</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
 			<recordname>reference.backgrounddata.urchin@DD PHB Deluxe</recordname>
@@ -58,8 +58,10 @@
 		<bonds type="string">I owe my survival to another urchin who taught me to live on the streets. No one else should have to endure the hardships I've been through. The druid that enlightened me.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">3</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
@@ -70,11 +72,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">21</amount>
+				<amount type="number">38</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">38</amount>
+				<amount type="number">63</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
@@ -82,7 +84,7 @@
 				<name type="string">PP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">55</amount>
+				<amount type="number">128</amount>
 				<name type="string">CP</name>
 			</slot4>
 			<slot5>
@@ -110,11 +112,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">6</load>
+			<load type="number">23.5</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">373</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -293,6 +295,8 @@
 		<gender type="string">Male</gender>
 		<height type="string">3 feet</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">24</total>
 			<wounds type="number">0</wounds>
@@ -364,6 +368,114 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">1</weight>
 			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Blanket</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<carryingcapacity type="string">-</carryingcapacity>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Speed: 40 ft.</p>
+					<p>Carrying Capacity: 195 lb.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Mastiff</name>
+				<speed type="string">-</speed>
+				<subtype type="string">Mounts &#38; Animals</subtype>
+				<type type="string">Mounts And Other Animals</type>
+				<weight type="number">0</weight>
+			</id-00005>
+			<id-00006>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This heavy coat comes with a hat, scarf, and mittens.</p>
+					<p>You can tolerate temperatures as low as -25 degrees Fahrenheit without any additional protection.</p>
+					<p>(These qualify as &#34;heavy cloathes&#34; therefore stacking with Boots of the Winterlands)</p>
+					<linklist>
+						<link class="item" recordname="item.id-00869@Incarnate-5eExpansion">Boots of the Winterlands</link>
+					</linklist>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Winter Coat Tailored</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">10</weight>
+			</id-00006>
+			<id-00007>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You have resistance to one damage type while wearing this ring.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistanceradiant@Incarnate-5eExpansion">Type Resistance (Radiant)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>9</td>
+							<td>Radiant</td>
+							<td>Topaz</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Radiant Resistance</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A topaz ring.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00007>
+			<id-00009>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the bless spell (no concentration required). This blue potion bubbles and steams as if boiling.</p>
+					<linklist>
+						<link class="power" recordname="spell.bless@Incarnate-5eExpansion">Bless</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Heroism</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">This blue potion bubbles and steams as if boiling.</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00009>
 			<id-00013>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
@@ -386,6 +498,7 @@
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I hide scraps of food and trinkets away in my pockets. \nI like to squeeze into small places where no one else can get to me.\nI bluntly say what other people are hinting at or hiding.\nI don't like to bathe.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00003>
 				<castertype type="string">memorization</castertype>
@@ -402,60 +515,78 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -474,6 +605,28 @@
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: radiant</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Radiant)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00002>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -718,7 +871,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token"></token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -840,6 +993,7 @@
 					<id-00001>
 						<dice type="dice">d10</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
