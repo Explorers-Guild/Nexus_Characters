@@ -3,11 +3,11 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">1</bonus>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
-				<save type="number">2</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -47,7 +47,7 @@
 		</abilities>
 		<adventurelist>
 		</adventurelist>
-		<age type="string">35</age>
+		<age type="string">62</age>
 		<alignment type="string">Neutral Good</alignment>
 		<background type="string">Guild Artisan</background>
 		<backgroundlink type="windowreference">
@@ -72,17 +72,17 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.prosorcerer@Incarnate-5eExpansion</recordname>
+					<recordname>reference.classdata.sorcerer@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00002>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">20</amount>
+				<amount type="number">32</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -90,7 +90,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">10</amount>
+				<amount type="number">52</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -98,20 +98,22 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">9</amount>
+				<amount type="number">62</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
+				<amount type="number">0</amount>
 			</slot6>
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">1</armor>
+				<armor type="number">2</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">2</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<deity type="string">Eldritch Blast God</deity>
@@ -119,11 +121,11 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">29.58</load>
+			<load type="number">40.9</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">393</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">533</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -268,7 +270,7 @@
 			<id-00007>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Invocations </name>
+				<name type="string">Eldritch Invocations</name>
 				<source type="string">Warlock</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -460,6 +462,62 @@
 					</linklist>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Font of Magic</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.sorcerypoints@Incarnate-5eExpansion">Font of Magic</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
+					<p><b>Sorcery Points</b></p>
+					<p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00046@Incarnate-5eExpansion">The Sorcerer</link>
+					</linklist>
+					<p><b>Flexible Casting</b></p>
+					<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p>
+					<p><i>Creating Spell Slots. </i>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
+					<p>Any spell slot you create with this feature vanishes when you finish a long rest.</p>
+					<p><u>Creating Spell Slots</u></p>
+					<table>
+						<tr>
+							<td><b>Spell Slot</b></td>
+							<td><b>Sorcery</b></td>
+						</tr>
+						<tr>
+							<td><b>Level</b></td>
+							<td><b>Point Cost</b></td>
+						</tr>
+						<tr>
+							<td>1st</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>7</td>
+						</tr>
+					</table>
+					<p><i>Converting a Spell Slot to Sorcery Points. </i>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
+				</text>
+			</id-00008>
 			<id-00009>
 				<locked type="number">1</locked>
 				<name type="string">Time Sorcery</name>
@@ -482,19 +540,6 @@
 					<p>All modifications are protected and all rights are reserved to the greatest extent permissible by law.</p>
 				</text>
 			</id-00009>
-			<id-00010>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Sorcerer Starting Items</name>
-				<source type="string">Sorcerer</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p><b>Click the shield below to open you choices for sorcerer starting items.</b></p>
-					<linklist>
-						<link class="reference_weapontable" recordname="lists.startingequipment.sorcerer@Incarnate-5eExpansion">Sorcerer Starting Equipment Options</link>
-					</linklist>
-				</text>
-			</id-00010>
 			<id-00011>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -548,45 +593,59 @@
 					<p>Additionally, and when you aren't wearing heavy armor, your AC equals 12 + your Dexterity modifier.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Metamagic Quickened Spell Twinned Spell</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p>
+					<p>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>
+					<p><b>Careful Spell</b></p>
+					<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.carefulspell@Incarnate-5eExpansion">Careful Spell</link>
+					</linklist>
+					<p><b>Distant Spell</b></p>
+					<p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.</p>
+					<p>When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+					<p><b>Empowered Spell</b></p>
+					<p>When you roll damage for a spell, you can spend 1 sorcery point to re-roll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p>
+					<p>You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+					<p><b>Extended Spell</b></p>
+					<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</p>
+					<p><b>Heightened Spell</b></p>
+					<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.heightenedspell@Incarnate-5eExpansion">Heightened Spell</link>
+					</linklist>
+					<p><b>Quickened Spell</b></p>
+					<p>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</p>
+					<p><b>Subtle Spell</b></p>
+					<p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</p>
+					<p><b>Twinned Spell</b></p>
+					<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spells level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p>
+					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <i>magic missile </i>and <i>scorching ray </i>aren't eligible, but <i>ray of frost </i>is.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<gender type="string">Male</gender>
 		<height type="string">6.0</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">5</temporary>
-			<total type="number">23</total>
+			<temporary type="number">6</temporary>
+			<total type="number">33</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
-			<misc type="number">2</misc>
+			<misc type="number">3</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">5</total>
+			<total type="number">6</total>
 		</initiative>
+		<inspiration type="number">0</inspiration>
 		<inventorylist>
-			<id-00001>
-				<ac type="number">11</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
-				</description>
-				<dexbonus type="string">Yes</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Leather Armor</name>
-				<nonid_name type="string">Leather Armor</nonid_name>
-				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
-				<rarity type="string">common</rarity>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Light Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">10</weight>
-			</id-00001>
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -613,6 +672,12 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00002>
+			<id-00003>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Poor Quality Lion Pelt</name>
+				<weight type="number">1</weight>
+			</id-00003>
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -641,7 +706,7 @@
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Book of Lore</name>
+				<name type="string">Book of Lore (Planes)</name>
 				<rarity type="string">Rare</rarity>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
@@ -716,6 +781,28 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.06</weight>
 			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.gaseousform@Incarnate-5eExpansion">Gaseous Form</link>
+					</linklist>
+					<p>When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Gaseous Form</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">This potion's container seems to hold fog that moves and pours like water.</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00012>
 			<id-00013>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -741,6 +828,68 @@
 				<type type="string">Tools</type>
 				<weight type="number">5</weight>
 			</id-00013>
+			<id-00014>
+				<carried type="number">1</carried>
+				<count type="number">2</count>
+				<name type="string">Good Quality Badger Pelt</name>
+				<weight type="number">1</weight>
+			</id-00014>
+			<id-00015>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Normal Quality Badger Pelt</name>
+				<weight type="number">1</weight>
+			</id-00015>
+			<id-00016>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Map of Runeus Detailed</name>
+				<weight type="number">0</weight>
+			</id-00016>
+			<id-00017>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Really Good Quality Badger Pelt</name>
+				<weight type="number">1</weight>
+			</id-00017>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">15 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p>A simple sythe, but in the hands of a death elemental it becomes something far more.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Death's Scythe</name>
+				<properties type="string">Versatile (1d10)</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00019>
+			<id-00022>
+				<ac type="number">12</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">45 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.</p>
+					<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>
+				</description>
+				<dexbonus type="string">Yes</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Studded Leather</name>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Light Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">13</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -753,9 +902,9 @@
 				<name type="string">Infernal</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">5</level>
 		<name type="string">EldritchMG</name>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
@@ -767,7 +916,9 @@
 				<stat type="string">charisma</stat>
 			</id-00001>
 			<id-00003>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Eldritch Evocation</name>
+				<saveprof type="number">1</saveprof>
 			</id-00003>
 			<id-00004>
 				<name type="string">Eldritch Feature</name>
@@ -811,11 +962,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
+				<max type="number">4</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -847,7 +998,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -923,6 +1074,96 @@
 				<specialization type="string">The Fiend</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00002>
+			<id-00004>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sorcery points</name>
+				<prepared type="number">3</prepared>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: constitution; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtype type="string">temp</healtype>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: strength; (C)</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: dexterity; (C)</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: charisma; (C)</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: intelligence; (C)</label>
+						<order type="number">6</order>
+						<type type="string">effect</type>
+					</id-00006>
+					<id-00007>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: wisdom; (C)</label>
+						<order type="number">7</order>
+						<type type="string">effect</type>
+					</id-00007>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (fur or a feather from a beast)</components>
+				<description type="formattedtext">
+					<p>You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.</p>
+					<p><b>Bear's Endurance. </b>The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</p>
+					<p><b>Bull's Strength. </b>The target has advantage on Strength checks, and his or her carrying capacity doubles.</p>
+					<p><b>Cat's Grace. </b>The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.</p>
+					<p><b>Eagle's Splendor. </b>The target has advantage on Charisma checks.</p>
+					<p><b>Fox's Cunning. </b>The target has advantage on Intelligence checks.</p>
+					<p><b>Owl's Wisdom. </b>The target has advantage on Wisdom checks.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour.</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Enhance Ability</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Cleric, Druid, Sorcerer</source>
+			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -950,6 +1191,36 @@
 				<shortdescription type="string">Evocation cantrip</shortdescription>
 				<source type="string">Eldritch Invocations</source>
 			</id-00006>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Unconscious</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of fine sand, rose petals, or a cricket)</components>
+				<description type="formattedtext">
+					<p>This spell sends creatures into a magical slumber.</p>
+					<p>Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).</p>
+					<p>Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.</p>
+					<p>Undead and creatures immune to being charmed aren't affected by this spell.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Sleep</name>
+				<prepared type="number">0</prepared>
+				<range type="string">90 feet</range>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Eldritch Knight, Warlock (Archfey), Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00008>
 			<id-00009>
 				<actions>
 					<id-00002>
@@ -1274,10 +1545,10 @@
 				<source type="string">Cleric, Cleric Knowledge Domain, Warlock (Fiend), Paladin</source>
 			</id-00027>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
-				<name type="string">Tool: </name>
+				<name type="string">Tool: Leatherwork Tools</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons</name>
@@ -1298,28 +1569,28 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1354,7 +1625,7 @@
 				<name type="string">Performance</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -1389,7 +1660,7 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1420,6 +1691,7 @@
 				<total type="number">0</total>
 			</id-00018>
 			<id-00022>
+				<locked type="number">1</locked>
 				<misc type="number">0</misc>
 				<name type="string">Leatherworker's Tools</name>
 				<prof type="number">1</prof>
@@ -1431,7 +1703,7 @@
 						<link class="encounter" recordname="encounter.id-00014@Incarnate-5eExpansion">Rules for Using Leatherworker's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00022>
 		</skilllist>
 		<speed>
@@ -1443,7 +1715,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -1507,6 +1779,28 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Death's Scythe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
 		</weaponlist>
 		<weight type="string">155</weight>
 	</character>
