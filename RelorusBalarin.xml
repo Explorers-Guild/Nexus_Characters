@@ -49,6 +49,7 @@
 		</adventurelist>
 		<age type="string">62</age>
 		<alignment type="string">Neutral Neutral</alignment>
+		<appearance type="string">This pale skinned man has a respectable feel about him.\nStanding tall, he has broad shoulders and weak arms, a short torso with defined muscles, round hips, and long legs.\nHis dark brown hair is long and wavy.\nHe has a triangular face with a round chin with an unkempt beard. His eyebrows are smooth, and his beady, soft eyes are green. \nHis particularly noticeable features are his freckles and his persistent grin.</appearance>
 		<background type="string">Urban Bounty Hunter</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -81,6 +82,8 @@
 				</shortcut>
 			</id-00002>
 			<id-00003>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">1</level>
@@ -93,15 +96,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1794</amount>
+				<amount type="number">4845</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">8</amount>
+				<amount type="number">60</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">3</amount>
+				<amount type="number">59</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -130,10 +133,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">84.4</load>
+			<load type="number">104</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">1159</exp>
+		<exp type="number">1163</exp>
 		<expneeded type="number">1200</expneeded>
 		<featlist>
 			<id-00001>
@@ -392,6 +395,22 @@
 					<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
 				</text>
 			</id-00017>
+			<id-00019>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Spellbook</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient library.</p>
+					<p><b>Copying a Spell into the Book </b>. When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it.</p>
+					<p>Copying that spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the qizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.</p>
+					<p>For each level of the spell, the process takes 2 hours and costs 50 GP. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent the time and money, you can prepare the spell just like your other spells.</p>
+					<p><b>Replacing the Book </b>. You can copy a spell from your own spellbook into another book - for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell.</p>
+					<p>If you loose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.</p>
+					<p><b>The Book's Appearance </b>. Your spellbook is a unique compilation of spells, with its own decorative fourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap.</p>
+				</text>
+			</id-00019>
 		</featurelist>
 		<flaws type="string">An innocent person is in prison for a crime that I committed. I'm okay with that.</flaws>
 		<gender type="string">Male</gender>
@@ -447,7 +466,7 @@
 			<id-00003>
 				<carried type="number">2</carried>
 				<cost type="string">2 gp</cost>
-				<count type="number">3</count>
+				<count type="number">1</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
@@ -518,20 +537,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">7</weight>
 			</id-00007>
-			<id-00008>
-				<carried type="number">1</carried>
-				<cost type="string">5 sp</cost>
-				<count type="number">10</count>
-				<description type="formattedtext">
-					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Rations (1 Day)</name>
-				<subtype type="string">Standard Adventuring Gear</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">2</weight>
-			</id-00008>
 			<id-00009>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
@@ -733,133 +738,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00019>
-			<id-00020>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">2,710 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 slashing</damage>
-				<description type="formattedtext">
-					<p>-</p>
-					<p>Legends of crystal weapons abound. Many are said to have strange properties... but if these properties exist and how they are unlocked is a mystery that may never be answered. Maybe if you could track down their creators?</p>
-					<p>For now crystal weapons are prized because they are almost indestructible. They survive in the roughest of environments. Acid and rust cannot touch them, and no one has been able to break one yet. They also shine and glitter as light passes through parts of them and makes the images on the sides light up.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Crystal Shortsword Psyonic Damage</name>
-				<nonid_name type="string">Shortsword</nonid_name>
-				<nonidentified type="string">For when you want something longer than a dagger but shorter than a longsword the shortsword is for you.</nonidentified>
-				<properties type="string">Finesse light</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00020>
-			<id-00021>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">150 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.bestowcurse@Incarnate-5eExpansion">Bestow Curse</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>3rd</td>
-							<td>Uncommon</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Bestow Curse</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Scroll</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00021>
-			<id-00022>
-				<ac type="number">0</ac>
-				<bonus type="number">2</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">6,300 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d4 piercing, magic 2d6 fire 1d8 necrotic</damage>
-				<description type="formattedtext">
-					<p>This elegant dagger has an emblem of the House of Athishut.</p>
-				</description>
-				<locked type="number">1</locked>
-				<name type="string">Dagger of House Athishut</name>
-				<nonid_name type="string">Dagger</nonid_name>
-				<nonidentified type="string">A finely crafted dagger with a crest of the Infernal House of Athishut.</nonidentified>
-				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
-				<rarity type="string">Legendary</rarity>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">1</weight>
-			</id-00022>
-			<id-00023>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">150 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.speakwithdead@Incarnate-5eExpansion">Speak with Dead</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>3rd</td>
-							<td>Uncommon</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Speak with Dead</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Scroll</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -997,48 +875,6 @@
 				<type type="string">Tools</type>
 				<weight type="number">2</weight>
 			</id-00029>
-			<id-00030>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">150 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.sending@Incarnate-5eExpansion">Sending</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>3rd</td>
-							<td>Uncommon</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Sending</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Scroll</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00030>
 			<id-00031>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1056,6 +892,202 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.5</weight>
 			</id-00031>
+			<id-00032>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">15 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00258@Incarnate-5eExpansion">Forgery Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00057@Incarnate-5eExpansion">Rules for Using Forgery Kit</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Forgery Kit</name>
+				<subtype type="string">Kits / Sets</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">5</weight>
+			</id-00032>
+			<id-00033>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">20 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00253@Incarnate-5eExpansion">Smith's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>Two Metal Files (fine and rough), Three Metal Hammers (1 lb, 2 lb, 3lb), a Small Vial of Oil.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00019@Incarnate-5eExpansion">Rules for Using Smith's Tools</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Smith's Tools</name>
+				<rarity type="string">-</rarity>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">8</weight>
+			</id-00033>
+			<id-00034>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00251@Incarnate-5eExpansion">Painter's Supplies</link>
+					</linklist>
+					<h>Description</h>
+					<p>3 paint brushes, a set of paints in a variety of colors.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00016@Incarnate-5eExpansion">Rules for Using Painter's Supplies</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Painter's Supplies</name>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">5</weight>
+			</id-00034>
+			<id-00035>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from the point without undoing the anchor.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Climber's Kit</name>
+				<subtype type="string">Equipment Kits</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">12</weight>
+			</id-00035>
+			<id-00036>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00246@Incarnate-5eExpansion">Cook's Utensils</link>
+					</linklist>
+					<h>Description</h>
+					<p>An iron pot, a couple small pouches of spices, a small pouch of salt, a ladle, and a wooden spoon.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00010@Incarnate-5eExpansion">Rules for Using Cook's Utensils</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Cook's Utensils</name>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">8</weight>
+			</id-00036>
+			<id-00037>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Mirror, Steel</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.5</weight>
+			</id-00037>
+			<id-00039>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Bag of Coffee</name>
+				<weight type="number">1</weight>
+			</id-00039>
+			<id-00040>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd--level fireball spell (save DC 15).</p>
+					<linklist>
+						<link class="power" recordname="spell.fireball@Incarnate-5eExpansion">Fireball</link>
+					</linklist>
+					<p>You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Necklace of Fireballs - 7 beads</name>
+				<nonid_name type="string">Necklace</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">rare</rarity>
+				<subtype type="string">-</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00040>
+			<id-00042>
+				<ac type="number">0</ac>
+				<bonus type="number">2</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">6,300 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing, magic 2d6 fire 1d8 necrotic</damage>
+				<description type="formattedtext">
+					<p>This elegant dagger has an emblem of the House of Athishut. If the emblem is slid forward then it triggers a self-destruct mechanism. After 10 seconds the dagger will destroy itself releasing all of its energy at one time (6d6 fire and 3d8 necrotic).</p>
+					<h>Lore</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.houseOfAthishutCanonical@Incarnate-5eExpansion">House of Athishut - Canonical</link>
+						<link class="encounter" recordname="encounter.houseOfAthishutHomebrew@Incarnate-5eExpansion">House of Athishut - Homebrew</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Dagger of House Athishut</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger with a crest of the Infernal House of Athishut.</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">Legendary</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00042>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1073,7 +1105,7 @@
 		</languagelist>
 		<level type="number">11</level>
 		<name type="string">Relorus Balarin</name>
-		<notes type="string">Elven Dungeon 1 1 1\nCrystal Elf's Location: ????\nFound a book on how to trigger psyionic traps. It included a command phrase that doubles the power, but talks of unexpected results.\n</notes>
+		<notes type="string">Elven Dungeon 1 1 1\nCrystal Elf's Location: UnderGround\nFound a book on how to trigger psyionic traps. It included a command phrase that doubles the power, but talks of unexpected results.</notes>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I always have a plan for what to do when things go wrong.</personalitytraits>
@@ -1826,7 +1858,7 @@
 				<level type="number">4</level>
 				<locked type="number">1</locked>
 				<name type="string">Dimension Door</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">500 feet</range>
 				<school type="string">Conjuration</school>
 				<source type="string">Bard, Cleric Trickery Domain, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
@@ -1990,6 +2022,21 @@
 				<school type="string">Evocation</school>
 				<source type="string">Cleric Tempest Domain, Druid, Druid Arctic Circle, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00028>
+			<id-00029>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>The presence of strong evil registers on your senses like a noxious odor, and a powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>hallow </i>spell.</p>
+					<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Divine Sense</name>
+				<prepared type="number">2</prepared>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00029>
 			<id-00030>
 				<actions>
 					<id-00001>
@@ -2058,7 +2105,7 @@
 					<id-00002>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Booming Blade; DMG: 1d8 thunder; Sneak Attack; DMG: 2d6; [ROLL];[SELF]</label>
+						<label type="string">Booming Blade; DMG: 2d8 thunder; Sneak Attack; DMG: 2d6; [ROLL];[SELF]</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
 					</id-00002>
@@ -2138,6 +2185,46 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00034>
+			<id-00035>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">cold</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a bit of phosphorus or a firefly)</components>
+				<description type="formattedtext">
+					<p>Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it. The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.</p>
+				</description>
+				<duration type="string">10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Fire Shield</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Wizard</source>
+			</id-00035>
 			<id-00036>
 				<actions>
 					<id-00001>
@@ -2177,6 +2264,66 @@
 				<name type="string">Dagger of Venom</name>
 				<prepared type="number">0</prepared>
 			</id-00036>
+			<id-00037>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice"></dice>
+								<stat type="string">paladin</stat>
+							</id-00001>
+							<id-00002>
+								<dice type="dice"></dice>
+								<stat type="string">paladin</stat>
+							</id-00002>
+							<id-00003>
+								<dice type="dice"></dice>
+								<stat type="string">paladin</stat>
+							</id-00003>
+							<id-00004>
+								<dice type="dice"></dice>
+								<stat type="string">paladin</stat>
+							</id-00004>
+							<id-00005>
+								<dice type="dice"></dice>
+								<stat type="string">paladin</stat>
+							</id-00005>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
+					<p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p>
+					<p>This feature has no effect on undead and constructs.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Lay on Hands</name>
+				<prepared type="number">0</prepared>
+			</id-00037>
+			<id-00038>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a short piece of fine copper wire)</components>
+				<description type="formattedtext">
+					<p>You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message. You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Sending</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Unlimited</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Wizard</source>
+			</id-00038>
 			<id-00039>
 				<actions>
 					<id-00001>
@@ -2217,34 +2364,91 @@
 			</id-00039>
 			<id-00040>
 				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<dice type="dice">d4</dice>
-								<stat type="string">base</stat>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bestow Curse - Curser; IFT: CUSTOM(Bestow Curse - Cursed); DMG: 1d8, necrotic</label>
 						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bestow Curse - Cursed; DISCHK: strength; DISSAV: strength; NOTE: wisdom check at start each turn, if fail then it wastes its action; IFT: CUSTOM(Bestow Curse - Curser); DISATK</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bestow Curse - Cursed; DISCHK: dexterity; DISSAV: dexterity; NOTE: wisdom check at start each turn, if fail then it wastes its action; IFT: CUSTOM(Bestow Curse - Curser); DISATK</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00006>
+					<id-00007>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bestow Curse - Cursed; DISCHK: constitution; DISSAV: constitution; NOTE: wisdom check at start each turn, if fail then it wastes its action; IFT: CUSTOM(Bestow Curse - Curser); DISATK</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00007>
+					<id-00008>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bestow Curse - Cursed; DISCHK: intelligence; DISSAV: intelligence; NOTE: wisdom check at start each turn, if fail then it wastes its action; IFT: CUSTOM(Bestow Curse - Curser); DISATK</label>
+						<order type="number">6</order>
+						<type type="string">effect</type>
+					</id-00008>
+					<id-00009>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bestow Curse - Cursed; DISCHK: wisdom; DISSAV: wisdom; NOTE: wisdom check at start each turn, if fail then it wastes its action; IFT: CUSTOM(Bestow Curse - Curser); DISATK</label>
+						<order type="number">7</order>
+						<type type="string">effect</type>
+					</id-00009>
+					<id-00010>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Bestow Curse - Cursed; DISCHK: charisma; DISSAV: charisma; NOTE: wisdom check at start each turn, if fail then it wastes its action; IFT: CUSTOM(Bestow Curse - Curser); DISATK</label>
+						<order type="number">8</order>
+						<type type="string">effect</type>
+					</id-00010>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 bonus action</castingtime>
-				<components type="string">V</components>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.</p>
+					<p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:</p>
+					<list>
+						<li>Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.</li>
+						<li>While cursed, the target has disadvantage on attack rolls against you.</li>
+						<li>While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.</li>
+						<li>While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.</li>
+					</list>
+					<p>A remove curse spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.</p>
+					<p><b>At Higher Levels </b>: If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.</p>
 				</description>
-				<duration type="string">Instantaneous</duration>
+				<duration type="string">Concentration, up to 1 minute</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Healing Word</name>
-				<prepared type="number">1</prepared>
-				<range type="string">60 feet</range>
-				<school type="string">Evocation</school>
-				<source type="string">Bard, Cleric, Druid</source>
+				<name type="string">Bestow Curse</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Bard, Cleric, Wizard</source>
 			</id-00040>
 			<id-00041>
 				<actions>
@@ -2280,7 +2484,7 @@
 				<name type="string">Tool: thieves' tools - flute</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Armor: Light armor, medium armor, shields</name>
+				<name type="string">Armor: All Armor, shields</name>
 			</id-00003>
 			<id-00004>
 				<name type="string">Tool: poisoner's kit</name>
@@ -2460,6 +2664,40 @@
 				</text>
 				<total type="number">3</total>
 			</id-00020>
+			<id-00021>
+				<locked type="number">1</locked>
+				<misc type="number">0</misc>
+				<name type="string">Cook's Utensils</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00246@Incarnate-5eExpansion">Cook's Utensils</link>
+						<link class="encounter" recordname="encounter.id-00010@Incarnate-5eExpansion">Rules for Using Cook's Utensils</link>
+					</linklist>
+				</text>
+				<total type="number">2</total>
+			</id-00021>
+			<id-00022>
+				<locked type="number">1</locked>
+				<misc type="number">0</misc>
+				<name type="string">Forgery Kit</name>
+				<prof type="number">0</prof>
+				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00258@Incarnate-5eExpansion">Forgery Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This small box contains a variety of papers and parchments, pens and inks, seals and sealing wax, gold and silver leaf, and other supplies necessary to create convincing forgeries of physical documents. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a physical forgery of a document.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00057@Incarnate-5eExpansion">Rules for Using Forgery Kit</link>
+					</linklist>
+				</text>
+				<total type="number">4</total>
+			</id-00022>
 			<id-00023>
 				<misc type="number">0</misc>
 				<name type="string">Flute</name>
@@ -2475,6 +2713,7 @@
 				<total type="number">6</total>
 			</id-00023>
 			<id-00024>
+				<locked type="number">1</locked>
 				<misc type="number">0</misc>
 				<name type="string">Smith's Tools</name>
 				<prof type="number">1</prof>
@@ -2488,6 +2727,20 @@
 				</text>
 				<total type="number">8</total>
 			</id-00024>
+			<id-00025>
+				<misc type="number">0</misc>
+				<name type="string">Painter's Supplies</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00251@Incarnate-5eExpansion">Painter's Supplies</link>
+						<link class="encounter" recordname="encounter.id-00016@Incarnate-5eExpansion">Rules for Using Painter's Supplies</link>
+					</linklist>
+				</text>
+				<total type="number">2</total>
+			</id-00025>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -2498,7 +2751,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2552,6 +2805,72 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">2</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6,d6</dice>
+						<type type="string">fire</type>
+					</id-00002>
+					<id-00003>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<type type="string">necrotic</type>
+					</id-00003>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger of House Athishut</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00042</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">2</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6,d6</dice>
+						<type type="string">fire</type>
+					</id-00002>
+					<id-00003>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<type type="string">necrotic</type>
+					</id-00003>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger of House Athishut</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00042</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 			<id-00007>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -2583,7 +2902,8 @@
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d4</dice>
-						<stat type="string">dexterity</stat>
+						<stat type="string">wisdom</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -2596,75 +2916,8 @@
 					<class>item</class>
 					<recordname>....inventorylist.id-00019</recordname>
 				</shortcut>
-				<type type="number">2</type>
-			</id-00008>
-			<id-00009>
-				<attackbonus type="number">2</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">2</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">dexterity</stat>
-						<type type="string">piercing,magic</type>
-					</id-00001>
-					<id-00002>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6,d6</dice>
-						<type type="string">fire</type>
-					</id-00002>
-					<id-00003>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<type type="string">necrotic</type>
-					</id-00003>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Dagger of House Athishut</name>
-				<prof type="number">1</prof>
-				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00022</recordname>
-				</shortcut>
 				<type type="number">0</type>
-			</id-00009>
-			<id-00010>
-				<ammo type="number">0</ammo>
-				<attackbonus type="number">2</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">2</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">dexterity</stat>
-						<type type="string">piercing,magic</type>
-					</id-00001>
-					<id-00002>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6,d6</dice>
-						<type type="string">fire</type>
-					</id-00002>
-					<id-00003>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<type type="string">necrotic</type>
-					</id-00003>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">1</maxammo>
-				<name type="string">Dagger of House Athishut</name>
-				<prof type="number">1</prof>
-				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00022</recordname>
-				</shortcut>
-				<type type="number">2</type>
-			</id-00010>
+			</id-00008>
 		</weaponlist>
 		<weight type="string">154 Pounds</weight>
 	</character>

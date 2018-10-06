@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">9</level>
+				<hdused type="number">1</hdused>
+				<level type="number">10</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -83,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1213</amount>
+				<amount type="number">1728</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -91,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">700</amount>
+				<amount type="number">756</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -99,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">679</amount>
+				<amount type="number">731</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,6 +109,7 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -121,11 +122,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">109.6</load>
+			<load type="number">110.6</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">1083</exp>
-		<expneeded type="number">1100</expneeded>
+		<exp type="number">1146</exp>
+		<expneeded type="number">1200</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -370,7 +371,7 @@
 			<id-00012>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Metamagic - careful,</name>
+				<name type="string">Metamagic - Careful Spell</name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -446,6 +447,42 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00015>
+			<id-00016>
+				<level type="number">10</level>
+				<locked type="number">1</locked>
+				<name type="string">Metamagic - Quickend Spell</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p>
+					<p>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>
+					<p><b>Careful Spell</b></p>
+					<p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.carefulspell@Incarnate-5eExpansion">Careful Spell</link>
+					</linklist>
+					<p><b>Distant Spell</b></p>
+					<p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.</p>
+					<p>When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+					<p><b>Empowered Spell</b></p>
+					<p>When you roll damage for a spell, you can spend 1 sorcery point to re-roll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p>
+					<p>You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+					<p><b>Extended Spell</b></p>
+					<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</p>
+					<p><b>Heightened Spell</b></p>
+					<p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
+					<linklist>
+						<link class="power" recordname="spell.heightenedspell@Incarnate-5eExpansion">Heightened Spell</link>
+					</linklist>
+					<p><b>Quickened Spell</b></p>
+					<p>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</p>
+					<p><b>Subtle Spell</b></p>
+					<p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</p>
+					<p><b>Twinned Spell</b></p>
+					<p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spells level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p>
+					<p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, <i>magic missile </i>and <i>scorching ray </i>aren't eligible, but <i>ray of frost </i>is.</p>
+				</text>
+			</id-00016>
 		</featurelist>
 		<flaws type="string">If I find someone smarter than me, I have to take them down.</flaws>
 		<gender type="string">Male</gender>
@@ -454,8 +491,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">54</total>
-			<wounds type="number">0</wounds>
+			<total type="number">60</total>
+			<wounds type="number">45</wounds>
 		</hp>
 		<ideals type="string">Authority - I am above lesser folk, and people will do as I say. (Evil)</ideals>
 		<initiative>
@@ -597,6 +634,7 @@
 					<p>-</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Crossbow Bolt</name>
 				<nonid_name type="string">Crossbow Bolt</nonid_name>
@@ -625,6 +663,7 @@
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard</subtype>
@@ -724,6 +763,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -792,26 +832,28 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00019>
-			<id-00021>
+			<id-00020>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">20 GP</cost>
+				<cost type="string">1005 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This Keg of Beer has 10 portion for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw DC 16 or increase one Stage of Drunkeness.</p>
+					<p>This heavy coat comes with a hat, scarf, and mittens.</p>
+					<p>You can tolerate temperatures as low as -100 degrees Fahrenheit without any additional protection.</p>
+					<p>You have resistance to cold damage.</p>
 					<linklist>
-						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkeness</link>
+						<link class="power" recordname="spell.typeresistancecold@Incarnate-5eExpansion">Type Resistance (Cold)</link>
 					</linklist>
 				</description>
-				<isidentified type="number">1</isidentified>
+				<location type="string">Attunement</location>
 				<locked type="number">1</locked>
-				<name type="string">Small Keg of Supreme Beer</name>
+				<name type="string">Winter Coat of the Winterlands</name>
 				<rarity type="string">Rare</rarity>
-				<subtype type="string">Alcohol</subtype>
+				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
-			</id-00021>
+			</id-00020>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -906,6 +948,7 @@
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Small Keg of Legendary Beer</name>
 				<rarity type="string">Rare</rarity>
@@ -932,7 +975,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -1065,6 +1108,7 @@
 					<p>A simple sythe, but in the hands of a death elemental it becomes something far more.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Death's Scythe</name>
 				<properties type="string">Versatile (1d10)</properties>
@@ -1160,6 +1204,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Divination</name>
 				<nonid_name type="string">Scroll</nonid_name>
@@ -1202,6 +1247,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Plant Growth</name>
 				<nonid_name type="string">Scroll</nonid_name>
@@ -1222,9 +1268,9 @@
 				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">10</level>
+		<level type="number">11</level>
 		<name type="string">FrozenMonk Zirrabanitov</name>
-		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.\n( went to the forest northwest to fight some harpies and goblins found some egg and figured out it from some fireworm(friendly) we went back to town to bring elah the proffessof to talk to them and hear about a tier 2 quest about some demons; we went on to clear the forest a bit and had a bit of roleplay)\n(we went to a wizard south of the nexusstart, helped him with a creatin a magical very powerfull Staff as he removed a curse from a partymembers wepon; after sometalk we went on to slay a red dragoni; and had to get off in a hurry)\n(out with sen(jtron) and francis(malamute) going towards the dwarfs;spent a legendary beer to tell the tail of the &#34;Jail brake&#34; aswell as pass along the letter and tried to esablish a stone sorce for buildin a thiefling settelment? xD yeaay)\n(went to dwarfen town to find out the talkin to them did nothing, no note of the letter the guard must have all given it to waste,...went to dwaven min hall-1 killed sum ettin and dreugar)\n(solosession with Pronobis, sattle160g; leather armor for jaharud industrial district; went to the elfsrefugees talk to the upper class master fletcher (lv25druid) go info about makein wood fortress need to collect seeds. bout 200g worth of wood\n600g for skills deception and persuation\nfaced emilie in the crows nest with 2 snails (puppetmasters) who enchants emilies wepons, guys</notes>
+		<notes type="string">(impressed by Eldors(PClvl7) grosz&#252;gigkeit )\n(keg of ale to get into palaces; Lied to Orc emperor about beein a Thiefling Lord; Many lies; led to diplometic threaties between orc emperess and &#34;thiefling Lord from the north&#34;;all got enslaved and im a kicked out diplomat;4)\nsesh45 (went west to goblin army in the forest; on the border of the forest is an orc tower; Goldenhelmet orc in the tower &#34;greedy&#34;, tried to conviced him to allie with or maybe even consipre; Made him aware of the riches in the north (lie) maybe i can use this?!;)\n(R&#38;E gambler enconter killed some bandits &#38; their captain and went to the crows nets, i made Elah daugther of Zerach(professor) make 2 letter for 7 gold, 1st for the Dwarfen saying the documents have been destroyed sign as Frostmonch, 2nd is To the Orc Empresses about some diplomatic relations plitocs blablabla gifts and offers? of more ale and beer maybe. Sign as ThieflingLord Zirrabanitov.\n( went to the forest northwest to fight some harpies and goblins found some egg and figured out it from some fireworm(friendly) we went back to town to bring elah the proffessof to talk to them and hear about a tier 2 quest about some demons; we went on to clear the forest a bit and had a bit of roleplay)\n(we went to a wizard south of the nexusstart, helped him with a creatin a magical very powerfull Staff as he removed a curse from a partymembers wepon; after sometalk we went on to slay a red dragoni; and had to get off in a hurry)\n(out with sen(jtron) and francis(malamute) going towards the dwarfs;spent a legendary beer to tell the tail of the &#34;Jail brake&#34; aswell as pass along the letter and tried to esablish a stone sorce for buildin a thiefling settelment? xD yeaay)\n(went to dwarfen town to find out the talkin to them did nothing, no note of the letter the guard must have all given it to waste,...went to dwaven min hall-1 killed sum ettin and dreugar)\n(solosession with Pronobis, sattle160g; leather armor for jaharud industrial district; went to the elfsrefugees talk to the upper class master fletcher (lv25druid) go info about makein wood fortress need to collect seeds. bout 200g worth of wood\n600g for skills deception and persuation\nfaced emilie in the crows nest with 2 snails (puppetmasters) who enchants emilies wepons, guys\nwe freed the prisoners aswell as promised to help get the orc army into the dwarfen city big old bluff maybe used to set a trap; and lure them into an ambush. \nafter that we went of to the mounten range and got ambushed by a stone gaint and a griffon with a orc. Relorus(yasuragi) showed amzaing speed and helped Varric(jtron) tame the griffon. Varrics kindness was remarkable</notes>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am one with myself. I strive for balance in all things. I work hard but play just as hard.</personalitytraits>
@@ -1310,7 +1356,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
@@ -1318,15 +1364,15 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots4>
 			<spellslots5>
-				<max type="number">1</max>
-				<used type="number">0</used>
+				<max type="number">2</max>
+				<used type="number">2</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
@@ -1345,12 +1391,12 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">6</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.prosorcerer.features.id-00042@Incarnate-5eExpansion">Font of Magic</link>
@@ -1561,38 +1607,6 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
 			</id-00006>
-			<id-00007>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Unconscious</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a pinch of fine sand, rose petals, or a cricket)</components>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnNsZWVw/play/"><b>Syrinscape </b></link>: Sleep - Wizard Spells E</linklist>
-					<h>Description</h>
-					<p>This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren't affected by this spell.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.</p>
-				</description>
-				<duration type="string">1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Sleep</name>
-				<prepared type="number">0</prepared>
-				<range type="string">90 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Enchantment</school>
-				<source type="string">Bard, Sorcerer, Wizard</source>
-			</id-00007>
 			<id-00008>
 				<actions>
 				</actions>
@@ -1722,7 +1736,7 @@
 					<id-00001>
 						<durmod type="number">8</durmod>
 						<durunit type="string">hour</durunit>
-						<label type="string">AC: 3</label>
+						<label type="string">AC: 2</label>
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
@@ -2079,6 +2093,18 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00002>
+					<id-00003>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">charisma</atkstat>
+						<atktype type="string">melee</atktype>
+						<order type="number">3</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -2139,6 +2165,26 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
 			</id-00025>
+			<id-00026>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S, M (a bit of fleece)</components>
+				<description type="formattedtext">
+					<p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again. If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends. If you create an image of an object-such as a chair, muddy footprints, or a small chest-it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it. If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Minor Illusion</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00026>
 			<id-00027>
 				<actions>
 					<id-00001>
@@ -2201,7 +2247,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">Last Breath</name>
@@ -2438,6 +2484,47 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00035>
+			<id-00036>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, M (rare chalks and inks infused with</components>
+				<description type="formattedtext">
+					<p>As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied. Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence-a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute. You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Teleportation Circle</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00036>
+			<id-00038>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Counterspell</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00038>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2615,7 +2702,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00010_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2677,7 +2764,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">2</ammo>
+				<ammo type="number">3</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -2741,7 +2828,7 @@
 			</id-00004>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
