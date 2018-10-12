@@ -60,7 +60,7 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">4</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
@@ -112,17 +112,18 @@
 			<load type="number">137.5</load>
 			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">440</exp>
+		<exp type="number">478</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Polearm Master</name>
+				<name type="string">Dual Wielder</name>
 				<text type="formattedtext">
-					<p>You can keep your enemies at bay with reach weapons. You gain the following benefits:</p>
+					<p>You master fighting with two weapons, gaining the following benefits:</p>
 					<list>
-						<li>When you take the Attack action and attack with only a glaive, halberd, or quarterstaff, you can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon's damage die for this attack is a d4, and the attack deals bludgeoning damage. The bonus attack uses the same ability modifier as the main attack.</li>
-						<li>While you are wielding a glaive, halberd, pike, or quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach.</li>
+						<li>You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.</li>
+						<li>You can use two-weapon fighting even when the onehanded melee weapons you are wielding aren't light.</li>
+						<li>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</li>
 					</list>
 				</text>
 			</id-00001>
@@ -268,9 +269,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">7</temporary>
+			<temporary type="number">0</temporary>
 			<total type="number">36</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">11</wounds>
 		</hp>
 		<ideals type="string">Greater Good. Our lot is to lay down our livResponsibility. I do whIndependence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)at I must and obey just authority. (Lawful)es in defense of others. (Good)</ideals>
 		<initiative>
@@ -604,7 +605,7 @@
 			<id-00021>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
-				<name type="string">paper of pattern to open the cube</name>
+				<name type="string">Drawing of rune circle</name>
 				<weight type="number">0</weight>
 			</id-00021>
 		</inventorylist>
@@ -629,9 +630,6 @@
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 			</id-00001>
-			<id-00002>
-				<name type="string">Effect</name>
-			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -798,9 +796,11 @@
 						<link class="url" recordname="http://www.dandwiki.com/wiki/Crippling_Striker_(5e_Feat)">Online copy</link>
 					</linklist>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Crippling Striker</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 			</id-00003>
 		</powers>
 		<profbonus type="number">2</profbonus>
@@ -958,7 +958,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -971,7 +971,7 @@
 			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Feat (Polearm Master)</name>
+				<name type="string">Feat (Dual Wielder)</name>
 				<source type="string">Human-Variant</source>
 				<text type="formattedtext">
 					<p>You gain one feat of your choice.</p>

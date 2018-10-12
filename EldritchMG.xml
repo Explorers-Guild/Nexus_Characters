@@ -72,7 +72,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -82,7 +82,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">32</amount>
+				<amount type="number">91</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -90,7 +90,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">52</amount>
+				<amount type="number">0</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -98,7 +98,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">62</amount>
+				<amount type="number">0</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -121,11 +121,11 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">40.9</load>
+			<load type="number">42.4</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">533</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">643</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -540,10 +540,20 @@
 					<p>All modifications are protected and all rights are reserved to the greatest extent permissible by law.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00010>
 			<id-00011>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Spellcasting</name>
+				<name type="string">Eldritchcasting</name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -596,7 +606,7 @@
 			<id-00013>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Metamagic Quickened Spell Twinned Spell</name>
+				<name type="string">Metamagic Quickened Spell Extended Spell</name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -635,8 +645,8 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">6</temporary>
-			<total type="number">33</total>
+			<temporary type="number">0</temporary>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -646,6 +656,12 @@
 		</initiative>
 		<inspiration type="number">0</inspiration>
 		<inventorylist>
+			<id-00001>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Ogre Leather Skin!</name>
+				<weight type="number">0</weight>
+			</id-00001>
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -786,7 +802,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">200 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Description</h>
 					<linklist>
@@ -852,10 +868,33 @@
 				<name type="string">Really Good Quality Badger Pelt</name>
 				<weight type="number">1</weight>
 			</id-00017>
-			<id-00019>
+			<id-00018>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.bracersofarchery@Incarnate-5eExpansion">Bracers of Archery</link>
+					</linklist>
+					<h>Description</h>
+					<p>While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bracers of Archery</name>
+				<nonid_name type="string">Bracers</nonid_name>
+				<nonidentified type="string">Thin leather bracers.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
 				<cost type="string">15 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 slashing</damage>
@@ -902,7 +941,7 @@
 				<name type="string">Infernal</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">EldritchMG</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -915,6 +954,9 @@
 				<saveprof type="number">1</saveprof>
 				<stat type="string">charisma</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Item</name>
+			</id-00002>
 			<id-00003>
 				<atkprof type="number">1</atkprof>
 				<name type="string">Eldritch Evocation</name>
@@ -966,7 +1008,7 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -998,7 +1040,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1068,20 +1110,30 @@
 				<group type="string">Eldritch Feature</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Dark One's Blessing</name>
+				<name type="string">Eldritch Blessing</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Warlock</source>
 				<specialization type="string">The Fiend</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<name type="string">Dual Casting</name>
+				<prepared type="number">3</prepared>
+			</id-00003>
 			<id-00004>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Sorcery points</name>
-				<prepared type="number">3</prepared>
+				<name type="string">Eldritch points</name>
+				<prepared type="number">4</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
 			<id-00005>
@@ -1157,7 +1209,7 @@
 				<group type="string">Spells</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Enhance Ability</name>
+				<name type="string">Eldritch Enhance Ability</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
@@ -1215,9 +1267,10 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Sleep</name>
+				<name type="string">Eldritch Sleep</name>
 				<prepared type="number">0</prepared>
 				<range type="string">90 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Eldritch Knight, Warlock (Archfey), Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00008>
@@ -1287,13 +1340,76 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Hex</name>
+				<name type="string">Eldritch Hex</name>
 				<prepared type="number">0</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Warlock</source>
 			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Levitate; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">charisma</savedcstat>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end)</components>
+				<description type="formattedtext">
+					<p>One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected. The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range. When the spell ends, the target floats gently to the ground if it is still aloft.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Eldritch Levitate</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00011>
 			<id-00016>
 				<actions>
 				</actions>
@@ -1333,7 +1449,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Shield</name>
+				<name type="string">Eldritch Shield</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<school type="string">Abjuration</school>
@@ -1369,7 +1485,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Magic Missile</name>
+				<name type="string">Eldritch Magic Missile</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
@@ -1391,7 +1507,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Mage Hand</name>
+				<name type="string">Eldritch Mage Hand</name>
 				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
 				<school type="string">Conjuration</school>
@@ -1415,7 +1531,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Message</name>
+				<name type="string">Eldritch Message</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
@@ -1444,7 +1560,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Prestidigitation</name>
+				<name type="string">Eldritch Prestidigitation</name>
 				<prepared type="number">0</prepared>
 				<range type="string">10 feet</range>
 				<school type="string">Transmutation</school>
@@ -1470,7 +1586,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Light</name>
+				<name type="string">Eldritch Light</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<school type="string">Evocation</school>
@@ -1496,7 +1612,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Friends</name>
+				<name type="string">Eldritch Friends</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<school type="string">Enchantment</school>
@@ -1537,7 +1653,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Command</name>
+				<name type="string">Eldritch Command</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
@@ -1715,7 +1831,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -1781,18 +1897,19 @@
 			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Death's Scythe</name>
+				<name type="string">Eldritch Scythe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Versatile (1d10)</properties>
 				<shortcut type="windowreference">
