@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root version="3.3" release="8|CoreRPG:4">
+	<character>
+		<abilities>
+			<charisma>
+				<bonus type="number">0</bonus>
+				<save type="number">2</save>
+				<saveprof type="number">1</saveprof>
+				<score type="number">11</score>
+			</charisma>
+			<constitution>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
+				<score type="number">14</score>
+			</constitution>
+			<dexterity>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
+				<score type="number">15</score>
+			</dexterity>
+			<intelligence>
+				<bonus type="number">2</bonus>
+				<save type="number">4</save>
+				<saveprof type="number">1</saveprof>
+				<score type="number">15</score>
+			</intelligence>
+			<strength>
+				<bonus type="number">-1</bonus>
+				<save type="number">-1</save>
+				<score type="number">9</score>
+			</strength>
+			<wisdom>
+				<score type="number">10</score>
+			</wisdom>
+		</abilities>
+		<adventurelist>
+		</adventurelist>
+		<age type="string">202 yr.</age>
+		<background type="string">Blacksmith</background>
+		<backgroundlink type="windowreference">
+			<class>reference_background</class>
+			<recordname>background.id-00026@Incarnate-5eExpansion</recordname>
+		</backgroundlink>
+		<bonds type="string">The forge have been in my family for generations. I would rather die deffending it than abandon that forge.</bonds>
+		<classes>
+			<id-00001>
+				<casterlevelinvmult type="number">1</casterlevelinvmult>
+				<hddie type="dice">d6</hddie>
+				<hdused type="number">0</hdused>
+				<level type="number">1</level>
+				<name type="string">Runecrafter</name>
+				<shortcut type="windowreference">
+					<class>reference_class</class>
+					<recordname>class.id-00001@Incarnate-5eExpansion</recordname>
+				</shortcut>
+			</id-00001>
+		</classes>
+		<coins>
+			<slot1>
+				<amount type="number">15</amount>
+				<name type="string">GP</name>
+			</slot1>
+			<slot2>
+				<amount type="number">0</amount>
+				<name type="string">PP</name>
+			</slot2>
+			<slot3>
+				<amount type="number">0</amount>
+				<name type="string">CP</name>
+			</slot3>
+			<slot4>
+				<amount type="number">0</amount>
+				<name type="string">EP</name>
+			</slot4>
+			<slot5>
+				<amount type="number">0</amount>
+				<name type="string">SP</name>
+			</slot5>
+			<slot6>
+			</slot6>
+		</coins>
+		<defenses>
+			<ac>
+				<prof type="number">1</prof>
+				<total type="number">12</total>
+			</ac>
+		</defenses>
+		<encumbrance>
+			<encumbered type="number">45</encumbered>
+			<encumberedheavy type="number">90</encumberedheavy>
+			<liftpushdrag type="number">270</liftpushdrag>
+			<load type="number">14.1</load>
+			<max type="number">135</max>
+		</encumbrance>
+		<featlist>
+		</featlist>
+		<featurelist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Blacksmith - Starting Items</name>
+				<source type="string">Blacksmith</source>
+				<text type="formattedtext">
+					<h>Parcel</h>
+					<linklist>
+						<link class="treasureparcel" recordname="treasureparcels.id-00029@Incarnate-5eExpansion">Starting Items - Blacksmith</link>
+					</linklist>
+				</text>
+			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Forger's Fire</name>
+				<source type="string">Blacksmith</source>
+				<text type="formattedtext">
+					<p>You have spent your whole life with the forge. When you roll for creating an item in a forge you have an advantage.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00018@Incarnate-5eExpansion">Forging Items</link>
+					</linklist>
+				</text>
+			</id-00002>
+			<id-00003>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Spellcasting</name>
+				<source type="string">Runecrafter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p><b>Interference</b></p>
+					<p>Magical runes are filled with your very essence of magic. Whenever they are in contact with you (such as being on armor you are wearing, a weapon you are wielding, or a stone you are standing on) they become inactive. In such a state they are very fragile, and any damage will destroy the rune. As soon as you are no longer in contact with the runed item (such as taking off the armor, passing or throwing the weapon, or stepping off the stone) then the rune reactivates and resumes behaving as normal. No time is subracted from the life of a rune while it is in an inactive state.</p>
+					<p>An instantaneous rune is more delicate than other runes. If an instantaneous rune is inactive for more than 1 minute, then it fades from existence.</p>
+					<p><b>Non-stacking</b></p>
+					<p>If a rune is placed on an creature/object then no other runes may also be placed on that creature/object. Unless a rune says otherwise, its area of effect is a single continuous piece of material of less than 250 pounds. This may be a door made of a single piece of wood, a stone set in the floor, the blade of a sword, or even a piece of leather wrapped around the hilt of a sword.</p>
+					<p><b>Augmentation</b></p>
+					<p>Some runes are augmentation runes. Such runes are clearly labled in their description. One augmentation rune can be applied to a normal rune. The augmentation can make the lines of the rune turn invisible, make the rune only work for a specific individual or their descendants, or a number of other things. If the base rune is dispelled or otherwise destroyed then the augmentation goes as well. No normal means can dispel the augmentation without dispelling the main rune.</p>
+					<p><b>Hacking</b></p>
+					<p>Some augmentation runes lock a main rune to only work for specific individuals or in specific circumstances. A hacking rune is designed to overcome such an augmentation by carefully dispelling just the augmentation, or tricking the autmentation into believing the condition is met. Many Runecrafters view &#34;Hacking&#34; runes as an abomination and will work together to hunt down anyone who learns such skills.</p>
+					<p>(&#34;Hacking&#34; runes are limited to the &#34;Hacking&#34; archtype, but are fundamental to the world of runes so they are mentioned here.)</p>
+					<p><b>Cantrips</b></p>
+					<p>At 1st level, you know three cantrips of your choice from the Runecrafter spell list. You learn additional Runecrafter cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Runecrafter table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00072@Incarnate-5eExpansion">The Runecrafter</link>
+					</linklist>
+					<p><b>Runebook</b></p>
+					<p>At 1st level, you have a runebook containing eight 1st-level Runecrafter spells of your choice. Your spellbook is the repository of the Runecrafter spells you know, except your cantrips, which are fixed in your mind.</p>
+					<p><b>Preparing and Casting Spells</b></p>
+					<p>The Runecrafter table shows how many spell slots you have to cast your runes for 1st level and higher. To cast one of these spells, you must expend a slot of the rune's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+					<p>You prepare the list of Runecrafter spells that are available for you to cast. To do so, choose a number of Runecrafter spells from your runebook equal to your Intelligence modifier + half your Runecrafter level (minimum of one spell). The runes must be of a level for which you have spell slots.</p>
+					<p>For example, if you're a 3rd-level Runecrafter, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared runes can include four runes of 1st or 2nd level, in any combination, chosen from your runebook. If you prepare the 1st-level rune <i>reinforce </i>, you can cast it using 1st-level or a 2nd-level slot. casting the spell doesn't remove it from your list of prepared runes.You can change your list of prepared runes when you finish a long rest. Preparing a new list of Runecrafter runes requires time spent studying your runebook and memorizing the incantations and strokes you must make to cast the spell: at least 1 minute per rune level for each spell on your list.</p>
+					<p><b>Spellcasting Ability</b></p>
+					<p>Intelligence is your spellcasting ability for Runecrafter spells, since you learn your runes through dedicated study and memorization. You use your Intelligence whenever a rune refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+					<p><b>Rune save DC </b>= 8 + your proficiency bonus + your Intelligence modifier</p>
+					<p><b>Rune attack modifier </b>= your proficiency bonus + your Intelligence modifier</p>
+					<p><b>Spellcasting Focus</b></p>
+					<p>You can use any writing implement as a runecrafting focus for your Runecrafter runes.</p>
+					<p><b>Learning Spells of 1st Level and Higher</b></p>
+					<p>Each time you gain a Runecrafter level, you can add three Runecrafter runes of your choice to your runebook for free. Each of these runes must be of a level for which you have spell slots as shown on the Runecrafter table. On your adventures, you might find other runes that you can add to your runebook (see the &#34;Runebook&#34; section at the end).</p>
+				</text>
+			</id-00003>
+			<id-00004>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Magical Inscription</name>
+				<source type="string">Runecrafter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p><b>Inscription Casting</b></p>
+					<p>You can cast a Runecrafter spell as a ritual if that spell has a ritual tag and you have the spell in your spellbook. A Runecrafter's ritual casting involves carfully using magical ink to inscribe the rune on the surface. This process costs 25 GP per level of the spell in magical ink and takes 30 minutes per level of the spell (instead of the normal 20 minutes longer than the normal casting time).</p>
+				</text>
+			</id-00004>
+			<id-00005>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Runebook</name>
+				<source type="string">Runecrafter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>As a student of runes, you have a runebook containing runes that you have discovered so far.</p>
+					<p><b>General</b></p>
+					<p>The runes that you add to your runebook as you gain levels reflect the runic research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other runes during your adventures. You could discover a rune recorded on a scroll in an evil Runecrafter's lair, or even some runes they left behind on the walls and had long enough durations to survive until you found them.</p>
+					<p><b>Copying a Rune into your RuneBook.</b></p>
+					<p>When you find a rune of a spell level of 1st level or higher, you can add it to your runebook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it. This requires that you be able to clearly see and study the rune (which requires touch). As the design of runes become more complex when cast at a higher spell level, you must be able to prepare spells of the level it was cast at, not at the base level of the rune.</p>
+					<p>Copying that rune into your runebook involves reproducing the basic form of the rune, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the rune until you understand the strokes required, then transcribe it into your runebook using your own notation.</p>
+					<p>For each level of the spell (at its lowest possible level), the process takes 2 hours and costs 50 GP. The cost represents expensive inks you used in your practice. Once you have spent the time and money, you can prepare the spell just like your other spells.</p>
+					<p><b>Replacing the Book.</b></p>
+					<p>You can copy a rune from your own runebook into another book - for example, if you want to make a backup copy of your runebook. This is just like copying a new rune into your runebook, but faster and easier, since you understand your own notation and already know how to enscribe the rune. You need spend only 1 hour and 10 GP for each level of the copied rune.</p>
+					<p>If you loose your runebook, you can use the same procedure to transcribe the runes that you have prepared into a new runebook. Filling out the remainder of your runebook requires you to find new runes to do so, as normal. For this reason, many Runecrafters keep backup runebooks in a safe place.</p>
+					<p><b>The Book's Appearance.</b></p>
+					<p>Your runebook is a unique compilation of runes, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous runebook in a mishap.</p>
+				</text>
+			</id-00005>
+		</featurelist>
+		<flaws type="string">I am loyal to my king and will follow orders from him almost blindly.</flaws>
+		<gender type="string">Male</gender>
+		<height type="string">4'3&#34;</height>
+		<hp>
+			<total type="number">8</total>
+		</hp>
+		<ideals type="string">Quality - Everything I make and do must be the best I can do. (Lawful)</ideals>
+		<initiative>
+			<total type="number">2</total>
+		</initiative>
+		<inventorylist>
+			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">20 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00253@Incarnate-5eExpansion">Smith's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>Two Metal Files (fine and rough), Three Metal Hammers (1 lb, 2 lb, 3lb), a Small Vial of Oil.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00019@Incarnate-5eExpansion">Rules for Using Smith's Tools</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Smith's Tools</name>
+				<rarity type="string">-</rarity>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">8</weight>
+			</id-00001>
+			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">3 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This set of clothing has small burns all across it where frequent sparks have landed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Singed Common</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Coin Pouch - Small</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Hammer</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00004>
+		</inventorylist>
+		<languagelist>
+			<id-00001>
+				<name type="string">Dwarvish</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Common </name>
+			</id-00002>
+		</languagelist>
+		<level type="number">1</level>
+		<name type="string">Yilon son of Dofto of clan Dankil</name>
+		<notes type="string">Average Skill: Smithing</notes>
+		<perception type="number">10</perception>
+		<personalitytraits type="string">You enjoy working for those who ask you nicely but to those who think they can order you to do something they have another thing coming! The stronger the command the deeper you dig your heals in.\nYou are a calm person normally, but if someone threatens your friends or family they will encounter a passionate fury that outshines the sun.</personalitytraits>
+		<powergroup>
+			<id-00001>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+				<prepared type="number">3</prepared>
+				<stat type="string">intelligence</stat>
+			</id-00001>
+		</powergroup>
+		<powermeta>
+			<pactmagicslots1>
+			</pactmagicslots1>
+			<pactmagicslots2>
+			</pactmagicslots2>
+			<pactmagicslots3>
+			</pactmagicslots3>
+			<pactmagicslots4>
+			</pactmagicslots4>
+			<pactmagicslots5>
+			</pactmagicslots5>
+			<pactmagicslots6>
+			</pactmagicslots6>
+			<pactmagicslots7>
+			</pactmagicslots7>
+			<pactmagicslots8>
+			</pactmagicslots8>
+			<pactmagicslots9>
+			</pactmagicslots9>
+			<spellslots1>
+				<max type="number">2</max>
+			</spellslots1>
+			<spellslots2>
+			</spellslots2>
+			<spellslots3>
+			</spellslots3>
+			<spellslots4>
+			</spellslots4>
+			<spellslots5>
+			</spellslots5>
+			<spellslots6>
+			</spellslots6>
+			<spellslots7>
+			</spellslots7>
+			<spellslots8>
+			</spellslots8>
+			<spellslots9>
+			</spellslots9>
+		</powermeta>
+		<powers>
+		</powers>
+		<profbonus type="number">2</profbonus>
+		<proficiencylist>
+			<id-00001>
+				<name type="string">Tool: Smith's Tools</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Weapon: Daggers, darts, quarterstaffs, atoks</name>
+			</id-00002>
+		</proficiencylist>
+		<race type="string">Bronzebeard Clan (Ironforge Dwarf)</race>
+		<racelink type="windowreference">
+			<class>reference_race</class>
+			<recordname>race.id-00004@Incarnate-5eExpansion</recordname>
+		</racelink>
+		<senses type="string">Darkvision 60</senses>
+		<size type="string">Medium</size>
+		<skilllist>
+			<id-00001>
+				<name type="string">Perception</name>
+				<stat type="string">wisdom</stat>
+			</id-00001>
+			<id-00002>
+				<name type="string">Athletics</name>
+				<prof type="number">1</prof>
+				<stat type="string">strength</stat>
+				<total type="number">1</total>
+			</id-00002>
+			<id-00003>
+				<name type="string">Sleight of Hand</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">4</total>
+			</id-00003>
+			<id-00004>
+				<name type="string">Arcana</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">4</total>
+			</id-00004>
+			<id-00005>
+				<name type="string">Persuasion</name>
+				<stat type="string">charisma</stat>
+			</id-00005>
+			<id-00006>
+				<name type="string">Nature</name>
+				<stat type="string">intelligence</stat>
+				<total type="number">2</total>
+			</id-00006>
+			<id-00007>
+				<name type="string">Medicine</name>
+				<stat type="string">wisdom</stat>
+			</id-00007>
+			<id-00008>
+				<name type="string">Survival</name>
+				<stat type="string">wisdom</stat>
+			</id-00008>
+			<id-00009>
+				<name type="string">Performance</name>
+				<stat type="string">charisma</stat>
+			</id-00009>
+			<id-00010>
+				<name type="string">Acrobatics</name>
+				<stat type="string">dexterity</stat>
+				<total type="number">2</total>
+			</id-00010>
+			<id-00011>
+				<name type="string">Religion</name>
+				<stat type="string">intelligence</stat>
+				<total type="number">2</total>
+			</id-00011>
+			<id-00012>
+				<name type="string">Insight</name>
+				<stat type="string">wisdom</stat>
+			</id-00012>
+			<id-00013>
+				<name type="string">Intimidation</name>
+				<stat type="string">charisma</stat>
+			</id-00013>
+			<id-00014>
+				<name type="string">Deception</name>
+				<stat type="string">charisma</stat>
+			</id-00014>
+			<id-00015>
+				<name type="string">Investigation</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">4</total>
+			</id-00015>
+			<id-00016>
+				<name type="string">Stealth</name>
+				<stat type="string">dexterity</stat>
+				<total type="number">2</total>
+			</id-00016>
+			<id-00017>
+				<name type="string">History</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">4</total>
+			</id-00017>
+			<id-00018>
+				<name type="string">Animal Handling</name>
+				<stat type="string">wisdom</stat>
+			</id-00018>
+		</skilllist>
+		<speed>
+			<base type="number">25</base>
+			<total type="number">25</total>
+		</speed>
+		<temp>
+		</temp>
+		<token type="token">portrait_id-00005_token</token>
+		<traitlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Dwarven Combat Training</name>
+				<source type="string">Dwarf</source>
+				<text type="formattedtext">
+					<p>You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Stonecunning</name>
+				<source type="string">Dwarf</source>
+				<text type="formattedtext">
+					<p>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00002>
+			<id-00003>
+				<locked type="number">1</locked>
+				<name type="string">Dwarven Resilience</name>
+				<source type="string">Dwarf</source>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepoison@Incarnate-5eExpansion">Type Resistance (Poison)</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have advantage on saving throws against poison and have resistance against poison damage.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00003>
+			<id-00004>
+				<locked type="number">1</locked>
+				<name type="string">Tool Proficiency</name>
+				<source type="string">Dwarf</source>
+				<text type="formattedtext">
+					<p>You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00004>
+			<id-00005>
+				<locked type="number">1</locked>
+				<name type="string">Bronzebeard Magic</name>
+				<source type="string">Bronzebeard Clan (Ironforge Dwarf)</source>
+				<text type="formattedtext">
+					<p>At 3rd you can cast the spell enlarge on yourself once per day. At 5th level you can also cast the spell stoneskin on yourself once per day at the same time. Your spellcasting ability for these spells is Intelligence.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00005>
+			<id-00006>
+				<locked type="number">1</locked>
+				<name type="string">Forge Trained</name>
+				<source type="string">Bronzebeard Clan (Ironforge Dwarf)</source>
+				<text type="formattedtext">
+					<p>You gain proficiency with the smith&#146;s tools.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">The Will of the Steel</name>
+				<source type="string">Bronzebeard Clan (Ironforge Dwarf)</source>
+				<text type="formattedtext">
+					<p>When you attempt to forge a steel weapon, you can put your heart and soul into forging it thus making each creation a work of art. You recieve a +10 to forging.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00018@Incarnate-5eExpansion">Forging Items</link>
+					</linklist>
+					<p>(Please note that this will only do anything if playing with the forging variant rule.)</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00007>
+		</traitlist>
+		<weaponlist>
+		</weaponlist>
+		<weight type="string">158 pounds</weight>
+	</character>
+</root>
