@@ -61,31 +61,31 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.profighter@Incarnate-5eExpansion</recordname>
+					<recordname>reference.classdata.fighter@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">27</amount>
+				<amount type="number">600</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
 				<amount type="number">0</amount>
 			</slot2>
 			<slot3>
-				<amount type="number">55</amount>
+				<amount type="number">0</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">53</amount>
+				<amount type="number">0</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,11 +109,11 @@
 			<encumbered type="number">100</encumbered>
 			<encumberedheavy type="number">200</encumberedheavy>
 			<liftpushdrag type="number">600</liftpushdrag>
-			<load type="number">159.9</load>
+			<load type="number">160.1</load>
 			<max type="number">300</max>
 		</encumbrance>
-		<exp type="number">690</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">749</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -441,6 +441,16 @@
 					<p>The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">War Magic</name>
+				<source type="string">Fighter</source>
+				<specialization type="string">Eldritch Knight</specialization>
+				<text type="formattedtext">
+					<p>Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I'd rather eat my armor than admit when I'm wrong.</flaws>
 		<gender type="string">Male</gender>
@@ -449,7 +459,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">58</total>
+			<total type="number">67</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</ideals>
@@ -516,6 +526,27 @@
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
 			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so.</p>
+					<linklist>
+						<link class="power" recordname="spell.jump@Incarnate-5eExpansion">Jump</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Jumping</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A jet ring.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00003>
 			<id-00004>
 				<carried type="number">1</carried>
 				<cost type="string">5 cp</cost>
@@ -635,43 +666,6 @@
 				<name type="string">Picture of Ziggurat in 04,04</name>
 				<weight type="number">0</weight>
 			</id-00013>
-			<id-00014>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00014>
 			<id-00015>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -701,14 +695,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00016>
-			<id-00017>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Shatter</name>
-				<weight type="number">0.3</weight>
-			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -826,35 +812,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">4</weight>
 			</id-00024>
-			<id-00026>
-				<ac type="number">0</ac>
-				<bonus type="number">3</bonus>
-				<carried type="number">0</carried>
-				<cost type="string">1,510 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>-</p>
-					<p>While holding this shield you have a +1 bonus to AC determined by the shield's rarity.</p>
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.typeresistancethunder@Incarnate-5eExpansion">Type Resistance (Thunder)</link>
-					</linklist>
-					<h>Description</h>
-					<p>You have resistance to thunder damage while you wear this armor.</p>
-				</description>
-				<dexbonus type="string">-</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Slightly Magical Shield of Thunder Resistance</name>
-				<nonid_name type="string">Shield</nonid_name>
-				<nonidentified type="string">A well crafted shield.</nonidentified>
-				<rarity type="string">common</rarity>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Shield</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">6</weight>
-			</id-00026>
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -883,7 +840,7 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Sigmund Schroder</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -941,11 +898,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
+				<max type="number">4</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -1003,6 +960,20 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Booming Blade; DMG: 1d8 thunder</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<label type="string">Boomed</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1019,6 +990,7 @@
 				<name type="string">Booming Blade</name>
 				<prepared type="number">0</prepared>
 				<range type="string">5 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 			</id-00001>
 			<id-00002>
@@ -1271,6 +1243,7 @@
 				<name type="string">Absorb Elements</name>
 				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
 				<school type="string">abjuration</school>
 				<source type="string">Xanathar's Guide to Everything</source>
 			</id-00007>
@@ -1410,6 +1383,68 @@
 				<school type="string">Evocation</school>
 				<source type="string">Xanathar's Guide to Everything</source>
 			</id-00011>
+			<id-00012>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Ability</group>
+				<level type="number">0</level>
+				<name type="string">Action Surge</name>
+				<prepared type="number">1</prepared>
+			</id-00012>
+			<id-00013>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell's duration.</p>
+					<p>The wind has the following effects:</p>
+					<list>
+						<li>It deafens you and other creatures in its area.</li>
+						<li>It extinguishes unprotected flames in its area that are torch-sized or smaller.</li>
+						<li>It hedges out vapor, gas, and fog that can be dispersed by strong wind.</li>
+						<li>The area is difficult terrain for creatures other than you.</li>
+						<li>The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind.</li>
+					</list>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Warding Wind</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
+			</id-00013>
+			<id-00014>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a grasshopper's hind leg)</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Omp1bXAtMQ/play/">Jumping - Wizard Spells E</link>
+					</linklist>
+					<h>Description</h>
+					<p>You touch a creature. The creature's jump distance is tripled until the spell ends.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Jump</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
+			</id-00014>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1580,7 +1615,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00011_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
