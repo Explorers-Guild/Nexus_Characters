@@ -21,7 +21,7 @@
 				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">17</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">2</bonus>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">341</amount>
+				<amount type="number">374</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">67</amount>
+				<amount type="number">127</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">73</amount>
+				<amount type="number">123</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -109,12 +109,27 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">97.5</load>
+			<load type="number">102</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">373</exp>
+		<exp type="number">426</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Rapid Reloader</name>
+				<text type="formattedtext">
+					<h>Rapid Reloader</h>
+					<p>Prerequisites: Dexterity of 13 or higher</p>
+					<p>You can reload your weapon faster than most.</p>
+					<p>Your Dexterity increases by 1, to a maximum of 20.</p>
+					<p>When using a ranged weapon with the loading property (hand crossbows, crossbows, firearms), the time it takes you to reload is reduced by 1 step (action&#62;bonus action&#62;reaction).</p>
+					<p>On your turn, you can draw or switch a weapon using no action.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Rapid_Reload_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -251,6 +266,16 @@
 					<p>At 3rd level, attacking at a weapon's long range no longer poses disadvantage on the attack roll.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I do not feel guilt or sorrow</flaws>
 		<gender type="string">Male</gender>
@@ -259,7 +284,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">22</total>
+			<total type="number">28</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Life Should be led in simplicity, without need for any luxury</ideals>
@@ -275,19 +300,6 @@
 				<name type="string">Cloak of many fashions</name>
 				<weight type="number">2</weight>
 			</id-00001>
-			<id-00002>
-				<carried type="number">2</carried>
-				<cost type="string">5 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 slashing</damage>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Handaxe</name>
-				<properties type="string">Light, thrown (range 20/60)</properties>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -378,6 +390,70 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00006>
+			<id-00007>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.gaseousform@Incarnate-5eExpansion">Gaseous Form</link>
+					</linklist>
+					<p>When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Gaseous Form</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">This potion's container seems to hold fog that moves and pours like water.</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00007>
+			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">2</count>
+				<damage type="string">1d6 slashing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Handaxe</name>
+				<nonid_name type="string">Handaxe</nonid_name>
+				<nonidentified type="string">A sharp stout handaxe.</nonidentified>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00008>
+			<id-00009>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Rapier</name>
+				<nonid_name type="string">Rapier</nonid_name>
+				<nonidentified type="string">A pointy rapier.</nonidentified>
+				<properties type="string">Finesse</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00009>
 			<id-00011>
 				<carried type="number">2</carried>
 				<cost type="string">50 gp</cost>
@@ -569,7 +645,7 @@
 				<name type="string">Orc</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Kallic Mithaldra</name>
 		<notes type="string">My home was destroyed and my Mentor was killed so I killed escaped by Orcs so now I am out to destroy all orcs.</notes>
 		<perception type="number">13</perception>
@@ -662,44 +738,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
 		<powers>
-			<id-00001>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d10</dice>
-								<type type="string">fire</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p>
-					<p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Fire Bolt</name>
-				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<school type="string">Evocation</school>
-				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
-			</id-00001>
 			<id-00002>
 				<actions>
 				</actions>
@@ -720,63 +759,6 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid Coast Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00002>
-			<id-00003>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
-								<type type="string">cold</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.</p>
-					<p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Ray of Frost</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<school type="string">Evocation</school>
-				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
-			</id-00003>
-			<id-00004>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 minute</castingtime>
-				<components type="string">V, S, M (a pearl worth at least 100 gp and an owl feather)</components>
-				<description type="formattedtext">
-					<p>You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.</p>
-					<p>If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Identify</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<ritual type="number">1</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Bard, Cleric Knowledge Domain, Eldritch Knight, Wizard, Arcane Trickster</source>
-			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1030,7 +1012,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1061,46 +1043,6 @@
 			</id-00005>
 		</traitlist>
 		<weaponlist>
-			<id-00001>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Handaxe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00002</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00001>
-			<id-00002>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Handaxe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00002</recordname>
-				</shortcut>
-				<type type="number">2</type>
-			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -1123,7 +1065,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">5</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">2</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1136,7 +1078,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
+				<maxammo type="number">40</maxammo>
 				<name type="string">Longbow</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
@@ -1146,6 +1088,26 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00004>
+			<id-00005>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00008</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 			<id-00006>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -1170,6 +1132,47 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00006>
+			<id-00007>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00008</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00007>
+			<id-00008>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Rapier</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00009</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
 		</weaponlist>
 		<weight type="string">146</weight>
 	</character>

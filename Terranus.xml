@@ -38,11 +38,11 @@
 				<score type="number">15</score>
 			</strength>
 			<wisdom>
-				<bonus type="number">1</bonus>
-				<save type="number">1</save>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">12</score>
+				<score type="number">14</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">3</level>
+				<hdused type="number">0</hdused>
+				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">92</amount>
+				<amount type="number">140</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">26</amount>
+				<amount type="number">86</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">32</amount>
+				<amount type="number">92</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -102,18 +102,18 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">13</total>
+				<total type="number">14</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">53.72</load>
+			<load type="number">53.99</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">389</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">453</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -142,6 +142,16 @@
 					<p>Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.</p>
 				</text>
 			</id-00001>
+			<id-00002>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - 2 WIS</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00002>
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -259,6 +269,22 @@
 					</list>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<p>(uses heal to compensate for damage dealt)</p>
+					<linklist>
+						<link class="power" recordname="spell.slowfall@Incarnate-5eExpansion">Slow Fall</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</text>
+			</id-00009>
 			<id-00010>
 				<locked type="number">1</locked>
 				<name type="string">You belong in a museum</name>
@@ -275,8 +301,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">18</total>
-			<wounds type="number">10</wounds>
+			<total type="number">23</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Trophy - The original inventors of these relics are dead; why shouldn&#146;t I hold on to them for a while? (Chaotic)</ideals>
 		<initiative>
@@ -478,7 +504,7 @@
 				<weight type="number">10</weight>
 			</id-00013>
 			<id-00014>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -588,7 +614,17 @@
 					<p>A basic map of Runeus.</p>
 					<list>
 						<li>Ruins 1006 1-6 [w/ path]</li>
-						<li>Village ?? 1006 6-3</li>
+						<li>Halfling City 1006 6-3</li>
+						<li>Tower ?? 1106 6-2</li>
+						<li>Red Dragon Lair 0906 2-6 [20yr, Adult]</li>
+						<li>Mage Door 0905 1-6</li>
+					</list>
+					<p></p>
+					<p>Rumors</p>
+					<list>
+						<li>Magic Items 0506</li>
+						<li>Burglary 0803 1-3</li>
+						<li>Pirates (Coastal)</li>
 					</list>
 				</description>
 				<location type="string">Historical Tome</location>
@@ -639,6 +675,27 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">1</weight>
 			</id-00023>
+			<id-00025>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<damage type="string">1d4 bludgeoning; 1 fire</damage>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Torch(lit)</name>
+				<properties type="string">light</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Improvised</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0</weight>
+			</id-00025>
+			<id-00026>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Coin Pouch - Small</location>
+				<locked type="number">1</locked>
+				<name type="string">Saber tooth</name>
+				<weight type="number">0.02</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -651,17 +708,13 @@
 				<name type="string">Primape</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Terranus Firr</name>
 		<notes type="string">Based on Japanese macaque</notes>
-		<perception type="number">11</perception>
+		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am more interested in the past than the present; as a result, I am mostly asocial.\nIgnorance frustrates me, and I always try to correct others when they&#146;re wrong.</personalitytraits>
 		<powergroup>
-			<id-00001>
-				<castertype type="string">memorization</castertype>
-				<name type="string">Spells</name>
-			</id-00001>
 			<id-00002>
 				<atkprof type="number">1</atkprof>
 				<name type="string">Ki</name>
@@ -787,7 +840,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Ki</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">4</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
 			<id-00003>
@@ -820,7 +873,7 @@
 			<id-00004>
 				<actions>
 					<id-00001>
-						<label type="string">CHECK: 1; SAVE: 1</label>
+						<label type="string">Luckstone; CHECK: 1; SAVE: 1</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -886,6 +939,29 @@
 				<name type="string">Dodge</name>
 				<prepared type="number">0</prepared>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00005>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+								<statmult type="number">5</statmult>
+							</id-00005>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<prepared type="number">0</prepared>
+			</id-00007>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -911,7 +987,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -939,14 +1015,14 @@
 				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -988,7 +1064,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1030,7 +1106,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
@@ -1044,7 +1120,7 @@
 						<link class="encounter" recordname="encounter.id-00044@Incarnate-5eExpansion">Rules for Using Cartographer's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
@@ -1186,6 +1262,34 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">1</bonus>
+						<dice type="dice"></dice>
+						<statmult type="number">1</statmult>
+						<type type="string">fire</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Torch(lit)</name>
+				<prof type="number">1</prof>
+				<properties type="string">light</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">22 lb</weight>
 	</character>
