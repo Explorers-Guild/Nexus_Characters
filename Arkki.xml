@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">8</amount>
+				<amount type="number">562</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">73</amount>
+				<amount type="number">158</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">81</amount>
+				<amount type="number">159</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -111,10 +111,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">101.401</load>
+			<load type="number">102.401</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">537</exp>
+		<exp type="number">596</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00003>
@@ -350,7 +350,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">38</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">23</wounds>
 		</hp>
 		<ideals type="string">Freedom. The freedom to go anywhere and do anything.</ideals>
 		<initiative>
@@ -740,7 +740,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -823,6 +823,7 @@
 		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I work hard so that I can play hard when the work is done.To me, a tavern brawl is a nice way to get to know a new city.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -833,8 +834,13 @@
 				<name type="string">Spells</name>
 			</id-00002>
 			<id-00003>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Effect</name>
+				<saveprof type="number">1</saveprof>
 			</id-00003>
+			<id-00004>
+				<name type="string">Item</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -910,7 +916,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1008,7 +1013,7 @@
 			<id-00003>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-5eExpansion">Ki</link>
@@ -1116,6 +1121,7 @@
 				<description type="formattedtext">
 					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
 				</description>
+				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Stunning Strike</name>
@@ -1123,6 +1129,33 @@
 				<ritual type="number">0</ritual>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00007>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1221,11 +1254,11 @@
 				<total type="number">4</total>
 			</id-00011>
 			<id-00012>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Insight</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">6</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">2</misc>
@@ -1279,7 +1312,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1309,6 +1342,16 @@
 				<type type="string">racial</type>
 			</id-00003>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+				<melee type="number">0</melee>
+				<ranged type="number">0</ranged>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">19</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<attackstat type="string">dexterity</attackstat>
@@ -1317,6 +1360,7 @@
 					<id-00001>
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1341,7 +1385,7 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">slashing</type>
+						<type type="string">slashing, magic</type>
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
@@ -1354,7 +1398,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1409,7 +1453,7 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">bludgeoning</type>
+						<type type="string">bludgeoning, magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
@@ -1423,6 +1467,28 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00005>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing, magic</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Magic Needle (temporary)</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
 		</weaponlist>
 		<weight type="string">80</weight>
 	</character>
