@@ -70,7 +70,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2687</amount>
+				<amount type="number">3247</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -78,7 +78,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">340</amount>
+				<amount type="number">431</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">342</amount>
+				<amount type="number">431</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,10 +107,10 @@
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">109.6</load>
+			<load type="number">111.6</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">622</exp>
+		<exp type="number">676</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
@@ -347,7 +347,7 @@
 			<id-00015>
 				<level type="number">6</level>
 				<locked type="number">1</locked>
-				<name type="string">Favored Enemy</name>
+				<name type="string">Favored Enemy(dragons)</name>
 				<source type="string">Ranger</source>
 				<text type="formattedtext">
 					<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
@@ -839,41 +839,23 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">1,800 GP</cost>
+				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker.</p>
-					<linklist>
-						<link class="npc" recordname="npc.berserker@Incarnate-5eBattles">Berserker</link>
-					</linklist>
-					<p>They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.</p>
-					<p>Four types of horn of Valhalla are known to exist, each made of a different metal. The horn's type determines how many berserkers answer its summons, as well as the requirement for its use. The</p>
-					<p>GM chooses the horn's type or determines it randomly.</p>
-					<table>
-						<tr>
-							<td><b>d100</b></td>
-							<td><b>Horn Type</b></td>
-							<td><b>Berserkers Summoned</b></td>
-							<td><b>Requirement</b></td>
-						</tr>
-						<tr>
-							<td>41-75</td>
-							<td>Brass</td>
-							<td>3d4 + 3</td>
-							<td>Proficiency with all simple weapons</td>
-						</tr>
-					</table>
-					<p>If you blow the horn without meeting its requirement, the summoned berserkers attack you.</p>
-					<p>If you meet the requirement, they are friendly to you and your companions and follow your commands.</p>
+					<p>This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.</p>
+					<p>One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.</p>
+					<p>The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably.</p>
+					<p>When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.</p>
+					<p>The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Horn of Valhalla (brass)</name>
-				<nonid_name type="string">Brass horn</nonid_name>
-				<nonidentified type="string">-</nonidentified>
+				<name type="string">Folding Boat</name>
+				<nonid_name type="string">Folding Boat</nonid_name>
+				<nonidentified type="string">A small wooden box 12 inches by 6 by 6.</nonidentified>
 				<rarity type="string">rare</rarity>
 				<type type="string">Wondrous Item</type>
-				<weight type="number">2</weight>
+				<weight type="number">4</weight>
 			</id-00025>
 			<id-00026>
 				<ac type="number">0</ac>
@@ -930,6 +912,9 @@
 			<id-00003>
 				<name type="string">Elvish</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Draconic</name>
+			</id-00004>
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Virren</name>
@@ -1574,6 +1559,7 @@
 				<total type="number">3</total>
 			</id-00018>
 			<id-00019>
+				<misc type="number">0</misc>
 				<name type="string">Navigator's Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
@@ -1600,7 +1586,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1812,7 +1798,7 @@
 				<type type="number">0</type>
 			</id-00005>
 			<id-00007>
-				<ammo type="number">6</ammo>
+				<ammo type="number">8</ammo>
 				<attackbonus type="number">2</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
