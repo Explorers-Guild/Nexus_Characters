@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">17</amount>
+				<amount type="number">30</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">50</amount>
+				<amount type="number">72</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">42</amount>
+				<amount type="number">66</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -107,21 +107,44 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">58.28</load>
+			<load type="number">56.78</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">455</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">517</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Dual Casting</name>
+				<name type="string">Varied Eldritch Blast</name>
 				<text type="formattedtext">
-					<h>Dual Casting</h>
-					<p>Prerequisites: The ability to cast at least one spell</p>
-					<p>When you take this feat, it allows you to cast two spells at once with a single action, with the the maximum spell levels that can be used for the turn equal to your <b>spellcasting modifier + your proficiency bonus. </b>(ie. If you have a spellcasting of +2 and a proficiency of +2 you can use a total of 4 spell levels. You may split that any way you wish. 4/0 3/1 2/2 etc.) Both spells must have a cast time of 1 Action and have a duration of Instantaneous. You may use this feature a number of times equal to your proficiency per long rest.</p>
+					<h>Eldritch Master</h>
+					<h>Action Coding</h>
 					<linklist>
-						<link class="url" recordname="http://www.dandwiki.com/wiki/Dual_Casting_(5e_Feat)">Online copy</link>
+						<link class="power" recordname="spell.variedeldritchblast@Incarnate-5eExpansion">Varied Eldritch Blast</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Eldritch Blast Cantrip</p>
+					<linklist>
+						<link class="power" recordname="spell.eldritchblast@Incarnate-5eExpansion">Eldritch Blast</link>
+					</linklist>
+					<p>Whenever you cast the Eldritch Blast Cantrip, choose one of the following effects:</p>
+					<p><b>Attacks</b></p>
+					<list>
+						<li>Eldritch Blast deals 1d12 force damage per beam</li>
+						<li>Eldritch Blast deals 1d10 Fire damage per beam, and can ignite small flammable objects, such as tinder or paper</li>
+					</list>
+					<p><b>Constitution Saves (8 + spellcasting + proficiency)</b></p>
+					<list>
+						<li>Eldritch Blast deals 1d4 cold damage and reduces their movement speed by 10 ft their next turn. The attack affects creatures in a 15 ft. cone. On a successful save, the target takes no damage and is not slowed. (At higher levels the cone gains one extra die for every extra ray you could normally cast, but you may not cast multiple cones.)</li>
+						<li>Eldritch Blast deals 1d8 thunder damage, and the target is deafened for one minute. On a successful save, the target takes no damage and is not deafened.</li>
+					</list>
+					<p><b>Dexterity Saves (8 + spellcasting + proficiency)</b></p>
+					<list>
+						<li>Eldritch Blast deals 1d6 acid damage to all creatures in a 15 ft cone. On a successful save, the target takes no damage. (At higher levels the cone gains one extra die for every extra ray you could normally cast, but you may not cast multiple cones.)</li>
+						<li>Eldritch Blast deals 1d4 lightning damage and prevents them from taking reactions until the end of their next turn. The attack affects creatures in a 30 ft line. On a successful save, the target takes no damage and may still use reactions. (At higher levels the cone gains one extra die for every extra ray you could normally cast, but you may not cast multiple cones.)</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Eldritch_Master_(5e_Feat)">Online copy</link>
 					</linklist>
 				</text>
 			</id-00001>
@@ -136,17 +159,6 @@
 					<p>You have advantage on investigation checks to find a buyer and persuasion to negotiate prices for artwork and jewelry.</p>
 				</text>
 			</id-00001>
-			<id-00002>
-				<locked type="number">1</locked>
-				<name type="string">Curator - Starting Items</name>
-				<source type="string">Curator</source>
-				<text type="formattedtext">
-					<h>Parcel</h>
-					<linklist>
-						<link class="treasureparcel" recordname="treasureparcels.id-00078@Incarnate-5eExpansion">Starting Items - Curator</link>
-					</linklist>
-				</text>
-			</id-00002>
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -205,19 +217,6 @@
 					<p>Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>
 				</text>
 			</id-00004>
-			<id-00005>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Warlock Starting Items</name>
-				<source type="string">Warlock</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p><b>Click the shield below to open you choices for warlock starting items.</b></p>
-					<linklist>
-						<link class="reference_weapontable" recordname="lists.startingequipment.warlock@Incarnate-5eExpansion">Warlock Starting Equipment Options</link>
-					</linklist>
-				</text>
-			</id-00005>
 			<id-00006>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -475,7 +474,7 @@
 			<id-00010>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement - Varied Eldritch Blast</name>
 				<source type="string">Warlock</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -600,7 +599,7 @@
 			<id-00006>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">25 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
@@ -614,8 +613,9 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Crossbow, Light</name>
+				<name type="string">Crossbow, Light broken</name>
 				<nonid_name type="string">Crossbow, Light</nonid_name>
 				<nonidentified type="string">A light crossbow.</nonidentified>
 				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
@@ -624,12 +624,12 @@
 				<weight type="number">5</weight>
 			</id-00006>
 			<id-00007>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Crossbow Bolts (20)</name>
+				<name type="string">Crossbow Bolts (0)</name>
 				<subtype type="string">Ammunition</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1.5</weight>
@@ -738,6 +738,7 @@
 				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Leather Armor</name>
 				<nonid_name type="string">Leather Armor</nonid_name>
@@ -750,11 +751,12 @@
 				<weight type="number">10</weight>
 			</id-00016>
 			<id-00017>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">2</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -763,11 +765,12 @@
 				<weight type="number">1</weight>
 			</id-00017>
 			<id-00018>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 bludgeoning</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Mace</name>
 				<properties type="string">-</properties>
@@ -838,7 +841,7 @@
 				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
-				<max type="number">4</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
@@ -906,7 +909,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1501,6 +1504,112 @@
 				<specialization type="string">The Undying</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">force</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d4</dice>
+								<type type="string">cold</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
+					<id-00005>
+						<label type="string">Deafened</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6</dice>
+								<type type="string">acid</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">6</order>
+						<type type="string">damage</type>
+					</id-00006>
+					<id-00007>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d4</dice>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">7</order>
+						<type type="string">damage</type>
+					</id-00007>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Eldritch Master</h>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.variedeldritchblast@Incarnate-5eExpansion">Varied Eldritch Blast</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Eldritch Blast Cantrip</p>
+					<linklist>
+						<link class="power" recordname="spell.eldritchblast@Incarnate-5eExpansion">Eldritch Blast</link>
+					</linklist>
+					<p>Whenever you cast the Eldritch Blast Cantrip, choose one of the following effects:</p>
+					<p><b>Attacks</b></p>
+					<list>
+						<li>Eldritch Blast deals 1d12 force damage per beam</li>
+						<li>Eldritch Blast deals 1d10 Fire damage per beam, and can ignite small flammable objects, such as tinder or paper</li>
+					</list>
+					<p><b>Constitution Saves (8 + spellcasting + proficiency)</b></p>
+					<list>
+						<li>Eldritch Blast deals 1d4 cold damage and reduces their movement speed by 10 ft their next turn. The attack affects creatures in a 15 ft. cone. On a successful save, the target takes no damage and is not slowed. (At higher levels the cone gains one extra die for every extra ray you could normally cast, but you may not cast multiple cones.)</li>
+						<li>Eldritch Blast deals 1d8 thunder damage, and the target is deafened for one minute. On a successful save, the target takes no damage and is not deafened.</li>
+					</list>
+					<p><b>Dexterity Saves (8 + spellcasting + proficiency)</b></p>
+					<list>
+						<li>Eldritch Blast deals 1d6 acid damage to all creatures in a 15 ft cone. On a successful save, the target takes no damage. (At higher levels the cone gains one extra die for every extra ray you could normally cast, but you may not cast multiple cones.)</li>
+						<li>Eldritch Blast deals 1d4 lightning damage and prevents them from taking reactions until the end of their next turn. The attack affects creatures in a 30 ft line. On a successful save, the target takes no damage and may still use reactions. (At higher levels the cone gains one extra die for every extra ray you could normally cast, but you may not cast multiple cones.)</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Eldritch_Master_(5e_Feat)">Online copy</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Varied Eldritch Blast</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00018>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1523,93 +1632,128 @@
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
+				<misc type="number">0</misc>
 				<name type="string">Perception</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00001>
 			<id-00002>
+				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">2</total>
 			</id-00002>
 			<id-00003>
+				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
+				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">2</total>
 			</id-00004>
 			<id-00005>
+				<misc type="number">0</misc>
 				<name type="string">Nature</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
 			</id-00005>
 			<id-00006>
+				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00006>
 			<id-00007>
+				<misc type="number">0</misc>
 				<name type="string">Survival</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00007>
 			<id-00008>
+				<misc type="number">0</misc>
 				<name type="string">Performance</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">3</total>
 			</id-00008>
 			<id-00009>
+				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">1</total>
 			</id-00009>
 			<id-00010>
+				<misc type="number">0</misc>
 				<name type="string">Religion</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
 			</id-00010>
 			<id-00011>
+				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
+				<prof type="number">0</prof>
 				<stat type="string">strength</stat>
 				<total type="number">-1</total>
 			</id-00011>
 			<id-00012>
+				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">1</total>
 			</id-00012>
 			<id-00013>
+				<misc type="number">0</misc>
 				<name type="string">Insight</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00013>
 			<id-00014>
+				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">3</total>
 			</id-00014>
 			<id-00015>
+				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">5</total>
 			</id-00015>
 			<id-00016>
+				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">1</total>
 			</id-00016>
 			<id-00017>
+				<misc type="number">0</misc>
 				<name type="string">History</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
 			</id-00017>
 			<id-00018>
+				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00018>
@@ -1623,7 +1767,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1646,7 +1790,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d8</dice>
@@ -1667,7 +1811,7 @@
 			</id-00001>
 			<id-00002>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4</dice>
@@ -1688,7 +1832,7 @@
 			</id-00002>
 			<id-00003>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4</dice>
@@ -1708,7 +1852,7 @@
 				<type type="number">2</type>
 			</id-00003>
 			<id-00004>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>

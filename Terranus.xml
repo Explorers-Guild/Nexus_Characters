@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">140</amount>
+				<amount type="number">106</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">86</amount>
+				<amount type="number">110</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">92</amount>
+				<amount type="number">114</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,11 +109,11 @@
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">53.99</load>
+			<load type="number">54.64</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">453</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">515</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -261,11 +261,16 @@
 						<link class="power" recordname="spell.strikethroughearth@Incarnate-5eExpansion">Strike Through Earth</link>
 					</linklist>
 					<h>Description</h>
-					<p>You have learned to channel your energy to bring down anything your enemy hides behind. At 3rd level, you get an automatic critical against objects with your unarmed strikes. You may spend 1 ki point to gain one of the following effects:</p>
+					<p>You have learned to channel your energy to bring down anything your enemy hides behind.</p>
+					<p>At 3rd level, you get an automatic critical against non-magical objects with your unarmed strikes. Your unarmed strikes break through 6 inches of non-magical wood, 3 inches of non-magical stone, or half an inch of non-magical non-adamantine metal.</p>
+					<p>You may spend 1 ki point to gain one of the following effects for 1 minute:</p>
 					<list>
-						<li>iron resist, you gain resist for piercing, slashing, and bludgeoning, for the next minute</li>
-						<li>iron defense, add 2 AC for the next minute</li>
-						<li>iron Strength, when You use this Ability increase your size by one larger to be able to push, drag, or lift more weight also you gain advantage on grapple checks, this lasts for 1 hour</li>
+						<li>Brass Knuckles: Add 2 bludgeoning to your unarmed strikes damage rolls.</li>
+						<li>Undercarve: Add +1 to your unarmed strike's attack rolls.</li>
+					</list>
+					<p>You may spend 1 ki point to take the following reaction:</p>
+					<list>
+						<li>Northwind: As a reaction, when you miss an unarmed strike you may deal 1d8 force damage from ki extending from your fist. (Not effected by any modifiers offensively or defensively.)</li>
 					</list>
 				</text>
 			</id-00008>
@@ -293,6 +298,31 @@
 					<p>You are a member of a respected museum, university, or other organization that preserves relics of ages past. You can gain access to the facilities where such antiquities are stored and can participate in their study. You may be allowed to accompany expeditions seeking to explore ruins or retrieve items of historical interest, if your area of expertise is relevant to the task at hand.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.stunningstrike@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">If I ever find a relic of singular worth, I might keep it for myself&#133;or for the merchant down the road.</flaws>
 		<gender type="string">Male</gender>
@@ -301,8 +331,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">23</total>
-			<wounds type="number">0</wounds>
+			<total type="number">28</total>
+			<wounds type="number">5</wounds>
 		</hp>
 		<ideals type="string">Trophy - The original inventors of these relics are dead; why shouldn&#146;t I hold on to them for a while? (Chaotic)</ideals>
 		<initiative>
@@ -371,6 +401,7 @@
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This tome contains a history of some rare and obscure settlement or culture.</p>
+					<p>It is currently in the process of being written over.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
@@ -617,7 +648,11 @@
 						<li>Halfling City 1006 6-3</li>
 						<li>Tower ?? 1106 6-2</li>
 						<li>Red Dragon Lair 0906 2-6 [20yr, Adult]</li>
-						<li>Mage Door 0905 1-6</li>
+						<li>Mage Door 0905 1-6 (Ice, Necro)</li>
+						<li>Tower ?? 1105 6-4</li>
+						<li>Ruin ?? 0603 2-5</li>
+						<li>City Valui 0504 6-1</li>
+						<li>Plague Cave 0506 1-3/0507 6-3</li>
 					</list>
 					<p></p>
 					<p>Rumors</p>
@@ -675,6 +710,14 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">1</weight>
 			</id-00023>
+			<id-00024>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Inky Bottle</name>
+				<weight type="number">0.05</weight>
+			</id-00024>
 			<id-00025>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -696,6 +739,59 @@
 				<name type="string">Saber tooth</name>
 				<weight type="number">0.02</weight>
 			</id-00026>
+			<id-00027>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Coin Pouch - Small</location>
+				<name type="string">Boar tusk (half)</name>
+				<weight type="number">0.1</weight>
+			</id-00027>
+			<id-00028>
+				<carried type="number">1</carried>
+				<count type="number">3</count>
+				<description type="formattedtext">
+					<p>A set of notes wriiten over some important historic texts -</p>
+					<list>
+						<li>Blood wirtten runes - new lines added constantly [copied]</li>
+						<li>Bloodied Body - Flew at wall hard&#38;fast, may have activate runes</li>
+						<li>Blood runes(development) - Weak to healing magic</li>
+					</list>
+				</description>
+				<location type="string">Historical Tome</location>
+				<locked type="number">1</locked>
+				<name type="string">Notes written over historical text</name>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.</p>
+					<p>This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.</p>
+					<table>
+						<tr>
+							<td>Type of Giant</td>
+							<td>Strength</td>
+							<td>Rarity</td>
+						</tr>
+						<tr>
+							<td>Hill giant</td>
+							<td>21</td>
+							<td>Uncommon</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Hill Giant Strength</name>
+				<nonid_name type="string">100 GP</nonid_name>
+				<nonidentified type="string">This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00029>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -708,12 +804,13 @@
 				<name type="string">Primape</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Terranus Firr</name>
 		<notes type="string">Based on Japanese macaque</notes>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am more interested in the past than the present; as a result, I am mostly asocial.\nIgnorance frustrates me, and I always try to correct others when they&#146;re wrong.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00002>
 				<atkprof type="number">1</atkprof>
@@ -805,7 +902,7 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Strike Through Earth - iron resist; RESIST: piercing, slashing, bludgeoning</label>
+						<label type="string">Strike Through Earth - Brass Knuckles; DMG: 2 bludgeoning</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -813,11 +910,23 @@
 					<id-00002>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Strike Through Earth - iron defence; AC: 2</label>
+						<label type="string">Strike Through Earth - Undercarve; ATK: 1</label>
 						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">force</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -835,7 +944,7 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<group type="string">Ki</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
@@ -893,11 +1002,13 @@
 								<bonus type="number">0</bonus>
 								<dice type="dice">d10</dice>
 								<stat type="string">monk</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 							<id-00006>
 								<bonus type="number">0</bonus>
 								<dice type="dice"></dice>
 								<stat type="string">dexterity</stat>
+								<statmult type="number">1</statmult>
 							</id-00006>
 						</heallist>
 						<order type="number">1</order>
@@ -933,6 +1044,12 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<label type="string">DISATK; GRANTADVATK</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<level type="number">0</level>
@@ -963,7 +1080,7 @@
 				<prepared type="number">0</prepared>
 			</id-00007>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Simple weapons, shortswords</name>
@@ -1008,7 +1125,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1022,7 +1139,7 @@
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1050,7 +1167,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1064,7 +1181,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1085,7 +1202,7 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -1099,7 +1216,7 @@
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1120,7 +1237,7 @@
 						<link class="encounter" recordname="encounter.id-00044@Incarnate-5eExpansion">Rules for Using Cartographer's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
@@ -1134,7 +1251,7 @@
 						<link class="encounter" recordname="encounter.id-00007@Incarnate-5eExpansion">Rules for Using Calligrapher's Supplies</link>
 					</linklist>
 				</text>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00020>
 		</skilllist>
 		<speed>
@@ -1147,7 +1264,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1264,7 +1381,7 @@
 			</id-00003>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1281,6 +1398,7 @@
 					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Torch(lit)</name>
 				<prof type="number">1</prof>
 				<properties type="string">light</properties>

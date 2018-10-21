@@ -102,7 +102,7 @@
 			<id-00001>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Ranger*</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,15 +112,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">49</amount>
+				<amount type="number">62</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">60</amount>
+				<amount type="number">83</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">60</amount>
+				<amount type="number">84</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -148,12 +148,24 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">115.493</load>
+			<load type="number">108.493</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">364</exp>
+		<exp type="number">426</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Sharpshooter</name>
+				<text type="formattedtext">
+					<p>You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:</p>
+					<list>
+						<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+						<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
+						<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -243,6 +255,16 @@
 					<p>Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (Feat: Sharpshooter) [rogue 4]</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">reckless (no room for caution in a life lived to the fullest)\ntrusts few others</flaws>
 		<gender type="string">Female</gender>
@@ -251,8 +273,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
-			<wounds type="number">0</wounds>
+			<total type="number">27</total>
+			<wounds type="number">16</wounds>
 		</hp>
 		<ideals type="string">freedom\nlive and let live</ideals>
 		<initiative>
@@ -263,6 +285,7 @@
 		<inventorylist>
 			<id-00001>
 				<ac type="number">12</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">45 gp</cost>
 				<count type="number">1</count>
@@ -358,10 +381,32 @@
 				<weight type="number">1</weight>
 			</id-00007>
 			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<count type="number">3</count>
-				<location type="string">Satchel</location>
-				<weight type="number">0</weight>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You have resistance to one damage type while wearing this ring.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancelightning@Incarnate-5eExpansion">Type Resistance (Lightning)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>5</td>
+							<td>Lightning</td>
+							<td>Citrine</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Lightning Resistance</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A citrine ring.</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
 			</id-00008>
 			<id-00009>
 				<ac type="number">0</ac>
@@ -531,7 +576,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">2</count>
+				<count type="number">4</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -706,9 +751,14 @@
 				<weight type="number">5</weight>
 			</id-00031>
 			<id-00032>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Signal Whistle</name>
@@ -810,6 +860,8 @@
 				<weight type="number">0.06</weight>
 			</id-00039>
 			<id-00040>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">15 gp.</cost>
 				<count type="number">1</count>
@@ -851,7 +903,7 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Elsar Ardeth Myya</name>
 		<notes type="string">likes to climb buildings and such when in settlements</notes>
 		<perception type="number">17</perception>
@@ -872,57 +924,75 @@
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
@@ -1122,102 +1192,133 @@
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
+				<misc type="number">0</misc>
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">7</total>
 			</id-00001>
 			<id-00002>
+				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
 				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
+				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
+				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
 			</id-00004>
 			<id-00005>
+				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">-1</total>
 			</id-00005>
 			<id-00006>
+				<misc type="number">0</misc>
 				<name type="string">Nature</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
+				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">5</total>
 			</id-00007>
 			<id-00008>
+				<misc type="number">0</misc>
 				<name type="string">Performance</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">-1</total>
 			</id-00008>
 			<id-00009>
+				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">5</total>
 			</id-00009>
 			<id-00010>
+				<misc type="number">0</misc>
 				<name type="string">Religion</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
 			</id-00010>
 			<id-00011>
+				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">3</total>
 			</id-00011>
 			<id-00012>
+				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">5</total>
 			</id-00012>
 			<id-00013>
+				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">-1</total>
 			</id-00013>
 			<id-00014>
+				<misc type="number">0</misc>
 				<name type="string">Deception</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">-1</total>
 			</id-00014>
 			<id-00015>
+				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">2</total>
 			</id-00015>
 			<id-00016>
+				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">7</total>
 			</id-00016>
 			<id-00017>
+				<misc type="number">0</misc>
 				<name type="string">History</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
 			</id-00017>
 			<id-00018>
+				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">3</total>
 			</id-00018>
 			<id-00019>
+				<misc type="number">0</misc>
 				<name type="string">Lockpicking</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
@@ -1233,7 +1334,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
