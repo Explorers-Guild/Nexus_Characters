@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<hdused type="number">3</hdused>
+				<level type="number">7</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">17</amount>
+				<amount type="number">901</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">3</amount>
+				<amount type="number">225</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">1</amount>
+				<amount type="number">215</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -111,11 +111,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">104.401</load>
+			<load type="number">105.401</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">650</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">718</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -289,6 +289,9 @@
 			</id-00009>
 			<id-00010>
 				<name type="string">Pseudodragon hit and run training</name>
+				<text type="formattedtext">
+					<p></p>
+				</text>
 			</id-00010>
 			<id-00011>
 				<level type="number">4</level>
@@ -362,6 +365,31 @@
 					<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
 				</text>
 			</id-00016>
+			<id-00017>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Evasion</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.evasion@Incarnate-5eExpansion">Evasion</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a <i>fireball </i>spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+				</text>
+			</id-00017>
+			<id-00018>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Stillness of Mind</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>
+				</text>
+			</id-00018>
 		</featurelist>
 		<flaws type="string">Once someone questions my courage, I never back down no matter how dangerous the situation.Once I start drinking, it's hard for me to stop.My pride will probably lead to my destruction.</flaws>
 		<gender type="string">Male</gender>
@@ -370,8 +398,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
-			<wounds type="number">0</wounds>
+			<total type="number">52</total>
+			<wounds type="number">7</wounds>
 		</hp>
 		<ideals type="string">Freedom. The freedom to go anywhere and do anything.</ideals>
 		<initiative>
@@ -538,7 +566,7 @@
 			<id-00011>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
 				<count type="number">10</count>
 				<damage type="string">1d4 piercing</damage>
@@ -616,7 +644,7 @@
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1 SP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d4 bludgeoning</damage>
@@ -873,6 +901,25 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other.</p>
+					<p>The lenses regain all expended charges daily at dawn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Eyes of Charming</name>
+				<nonid_name type="string">Crystal Lenses</nonid_name>
+				<nonidentified type="string">Two crystal lenses bound together with a little bit of wire.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00002>
@@ -885,13 +932,12 @@
 				<name type="string">Auran</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Arkki</name>
 		<notes type="string">The Flying Bluejay is a medium obsidian inn. As you draw nearer you notice a group of women wearing all black forming a circle around the building. They are well known for their Stir-Fried Axe Beak and beer. (tavern on the elves town)</notes>
 		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I work hard so that I can play hard when the work is done.To me, a tavern brawl is a nice way to get to know a new city.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -984,6 +1030,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1081,7 +1128,7 @@
 			<id-00003>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">5</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-5eExpansion">Ki</link>
@@ -1095,52 +1142,6 @@
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00003>
-			<id-00004>
-				<actions>
-					<id-00001>
-						<durmod type="number">0</durmod>
-						<label type="string">Stage 1 - Tipsy; SKILL: -5 insight</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">Stage 2 - Confusion; SKILL: -5 deception</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
-					<id-00003>
-						<durmod type="number">0</durmod>
-						<label type="string">Stage 3 - Intoxicated; Intoxicated</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
-					<id-00004>
-						<durmod type="number">0</durmod>
-						<label type="string">Stage 4 - Unconscious; Unconscious</label>
-						<order type="number">4</order>
-						<type type="string">effect</type>
-					</id-00004>
-					<id-00005>
-						<durmod type="number">0</durmod>
-						<label type="string">Hungover; DISCHK: intelligence, wisdom, charisma</label>
-						<order type="number">5</order>
-						<type type="string">effect</type>
-					</id-00005>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkenness</link>
-					</linklist>
-				</description>
-				<group type="string">Effect</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Stages of Drunkenness</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1381,7 +1382,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1469,7 +1470,7 @@
 			<id-00003>
 				<ammo type="number">0</ammo>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4</dice>
@@ -1491,7 +1492,7 @@
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
