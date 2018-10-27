@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1140</amount>
+				<amount type="number">1900</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">336</amount>
+				<amount type="number">378</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">348</amount>
+				<amount type="number">391</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -105,13 +105,13 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">85</encumbered>
-			<encumberedheavy type="number">170</encumberedheavy>
-			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">189.8</load>
-			<max type="number">255</max>
+			<encumbered type="number">170</encumbered>
+			<encumberedheavy type="number">340</encumberedheavy>
+			<liftpushdrag type="number">1020</liftpushdrag>
+			<load type="number">190.8</load>
+			<max type="number">510</max>
 		</encumbrance>
-		<exp type="number">694</exp>
+		<exp type="number">755</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
@@ -137,6 +137,9 @@
 			</id-00001>
 			<id-00002>
 				<name type="string">Poor Blacksmith</name>
+				<text type="formattedtext">
+					<p></p>
+				</text>
 			</id-00002>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -462,6 +465,16 @@
 					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">War Magic</name>
+				<source type="string">Fighter</source>
+				<specialization type="string">Eldritch Knight</specialization>
+				<text type="formattedtext">
+					<p>Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</flaws>
 		<gender type="string">Male</gender>
@@ -470,7 +483,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">52</total>
+			<total type="number">60</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization.</ideals>
@@ -531,10 +544,15 @@
 				<weight type="number">3</weight>
 			</id-00003>
 			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Crossbow, Light</name>
@@ -972,29 +990,14 @@
 			<id-00032>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">900 GP</cost>
+				<carried type="number">1</carried>
+				<cost type="string">2</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>You have resistance to one damage type while wearing this ring.</p>
-					<linklist>
-						<link class="power" recordname="spell.typeresistancenecrotic@Incarnate-5eExpansion">Type Resistance (Necrotic)</link>
-					</linklist>
-					<table>
-						<tr>
-							<td>6</td>
-							<td>Necrotic</td>
-							<td>Jet</td>
-						</tr>
-					</table>
+					<p>This seams to have been crudely broken off of a Chimera's Goat head.</p>
 				</description>
-				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Ring of Necrotic Resistance</name>
-				<nonid_name type="string">Ring</nonid_name>
-				<nonidentified type="string">A jet ring.</nonidentified>
-				<rarity type="string">rare (requires attunement)</rarity>
-				<type type="string">Ring</type>
+				<name type="string">Broken Goat Horn</name>
 				<weight type="number">1</weight>
 			</id-00032>
 			<id-00033>
@@ -1019,6 +1022,24 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00033>
+			<id-00034>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2,700 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Regeneration</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A ruby ring.</nonidentified>
+				<rarity type="string">very rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00034>
 			<id-00035>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1096,7 +1117,7 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Arjhan</name>
 		<notes type="string">did you pay 48 gold?</notes>
 		<perception type="number">10</perception>
@@ -1158,11 +1179,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
+				<max type="number">4</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -1590,102 +1611,25 @@
 			<id-00014>
 				<actions>
 					<id-00001>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<onmissdamage type="string">half</onmissdamage>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: force</label>
 						<order type="number">1</order>
-						<savedcbase type="string">ability</savedcbase>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savedcstat type="string">dexterity</savedcstat>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6,d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">acid</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d12</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">thunder</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">3</order>
-						<type type="string">damage</type>
-					</id-00003>
-					<id-00004>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<order type="number">4</order>
-						<savedcbase type="string">ability</savedcbase>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savedcstat type="string">dexterity</savedcstat>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00004>
-					<id-00005>
-						<durmod type="number">0</durmod>
-						<label type="string">restrained; NOTE: Escape DC #; sticky</label>
-						<order type="number">5</order>
+						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
-					</id-00005>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-01049@Incarnate-5eExpansion">Crossbow of House of Athishut</link>
-					</linklist>
+					<p></p>
 				</description>
 				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Crossbow of the House of Athishut</name>
+				<name type="string">Type Resistance (Force)</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00014>
-			<id-00015>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">4</bonus>
-								<dice type="dice">d4,d4,d4,d4</dice>
-							</id-00001>
-						</heallist>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
-					</linklist>
-				</description>
-				<group type="string">Item</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00015>
 			<id-00016>
 				<actions>
 					<id-00001>
@@ -1713,6 +1657,43 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<name type="string">Javelin of Lightning</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00017>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1731,7 +1712,7 @@
 			<class>reference_race</class>
 			<recordname>reference.racedata.dragonborn@DD PHB Deluxe</recordname>
 		</racelink>
-		<size type="string">Medium</size>
+		<size type="string">Large</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
@@ -1859,6 +1840,20 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">3</total>
 			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string">Smith's Tools</name>
+				<prof type="number">0</prof>
+				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00253@Incarnate-5eExpansion">Smith's Tools</link>
+						<link class="encounter" recordname="encounter.id-00019@Incarnate-5eExpansion">Rules for Using Smith's Tools</link>
+					</linklist>
+				</text>
+				<total type="number">1</total>
+			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -1869,7 +1864,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00009_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1983,6 +1978,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">5</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -2029,7 +2025,7 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2039,6 +2035,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Javelin of Lightning</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 30/120)</properties>
@@ -2049,8 +2046,9 @@
 				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2060,6 +2058,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">1</maxammo>
 				<name type="string">Javelin of Lightning</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 30/120)</properties>
