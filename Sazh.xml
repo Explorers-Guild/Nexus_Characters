@@ -60,7 +60,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">6</hdused>
 				<level type="number">6</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
@@ -70,8 +70,8 @@
 			</id-00001>
 			<id-00002>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<hdused type="number">1</hdused>
+				<level type="number">2</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -81,15 +81,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">511</amount>
+				<amount type="number">803</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">277</amount>
+				<amount type="number">311</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">272</amount>
+				<amount type="number">305</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -116,16 +116,15 @@
 				<total type="number">17</total>
 			</ac>
 		</defenses>
-		<deity type="string">Raven Queen</deity>
 		<encumbrance>
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">134.65</load>
+			<load type="number">146.65</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">736</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">820</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -335,6 +334,17 @@
 					<p>You can't use this feature again until you finish a short or long rest.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Action Surge</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+				</text>
+			</id-00010>
 			<id-00014>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -922,9 +932,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">0</temporary>
-			<total type="number">46</total>
-			<wounds type="number">0</wounds>
+			<temporary type="number">8</temporary>
+			<total type="number">49</total>
+			<wounds type="number">1</wounds>
 		</hp>
 		<ideals type="string">Nothing should fetter the infinite possibility inherent in all existence.\nI'm going to prove that I'm worthy of a better life.</ideals>
 		<initiative>
@@ -1244,28 +1254,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00018>
-			<id-00020>
-				<ac type="number">0</ac>
-				<bonus type="number">2</bonus>
+			<id-00019>
 				<carried type="number">1</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<dexbonus type="string">-</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
+				<count type="number">5</count>
 				<locked type="number">1</locked>
-				<name type="string">Shield</name>
-				<nonid_name type="string">Shield</nonid_name>
-				<nonidentified type="string">A well crafted shield.</nonidentified>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Shield</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">6</weight>
-			</id-00020>
+				<name type="string">Minotuar Bone</name>
+				<weight type="number">1</weight>
+			</id-00019>
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1295,7 +1290,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<p>Not in the best of shape, but maybe someone could do something with it?</p>
 				</description>
@@ -1325,7 +1320,7 @@
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">45 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 slashing</damage>
@@ -1448,6 +1443,35 @@
 				<type type="string">Armor</type>
 				<weight type="number">40</weight>
 			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,150 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">2d6 slashing silver</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.swarmslayer@Incarnate-5eExpansion">Swarm Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an Swarm with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;Swarm&#34; refers to any creature with the Swarm type.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Silver Coated Greatsword of Swarm Slaying</name>
+				<nonid_name type="string">Greatsword</nonid_name>
+				<nonidentified type="string">A sharp greatsword.</nonidentified>
+				<properties type="string">Heavy two-handed</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">6</weight>
+			</id-00029>
 			<id-00034>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1482,7 +1506,7 @@
 				<name type="string">Aquan</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Sazh</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1584,7 +1608,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1740,6 +1764,7 @@
 				<name type="string">Fiendish Vigor</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Necromancy</school>
 				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00006>
@@ -2197,6 +2222,21 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00020>
+			<id-00021>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
+				</description>
+				<group type="string">Race/Class/Items</group>
+				<locked type="number">1</locked>
+				<name type="string">Action Surge</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00021>
 			<id-00027>
 				<actions>
 					<id-00001>
@@ -2382,96 +2422,133 @@
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
+				<misc type="number">0</misc>
 				<name type="string">Perception</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">0</total>
 			</id-00001>
 			<id-00002>
+				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">3</total>
 			</id-00002>
 			<id-00003>
+				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
+				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">1</total>
 			</id-00004>
 			<id-00005>
+				<misc type="number">0</misc>
 				<name type="string">Nature</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">1</total>
 			</id-00005>
 			<id-00006>
+				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">0</total>
 			</id-00006>
 			<id-00007>
+				<misc type="number">0</misc>
 				<name type="string">Survival</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">0</total>
 			</id-00007>
 			<id-00008>
+				<misc type="number">0</misc>
 				<name type="string">Performance</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">4</total>
 			</id-00008>
 			<id-00009>
+				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">2</total>
 			</id-00009>
 			<id-00010>
+				<misc type="number">0</misc>
 				<name type="string">Religion</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">1</total>
 			</id-00010>
 			<id-00011>
+				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
+				<prof type="number">0</prof>
 				<stat type="string">strength</stat>
 				<total type="number">1</total>
 			</id-00011>
 			<id-00012>
+				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">2</total>
 			</id-00012>
 			<id-00013>
+				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">7</total>
 			</id-00013>
 			<id-00014>
+				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">7</total>
 			</id-00014>
 			<id-00015>
+				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">1</total>
 			</id-00015>
 			<id-00016>
+				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
+				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">2</total>
 			</id-00016>
 			<id-00017>
+				<misc type="number">0</misc>
 				<name type="string">History</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">1</total>
 			</id-00017>
 			<id-00018>
+				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
+				<total type="number">0</total>
 			</id-00018>
 			<id-00019>
+				<misc type="number">0</misc>
 				<name type="string">Leatherworker's Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
@@ -2494,7 +2571,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00002>
 				<locked type="number">0</locked>
@@ -2611,7 +2688,7 @@
 			<id-00003>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2634,7 +2711,7 @@
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2645,7 +2722,7 @@
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Death's Scythe</name>
+				<name type="string">Pact Death's Scythe</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class></class>
@@ -2655,7 +2732,7 @@
 			</id-00004>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2675,10 +2752,33 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00005>
+			<id-00006>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">charisma</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d6,d6</dice>
+						<stat type="string">charisma</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing,silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Silver Coated Greatsword of Swarm Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Heavy two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00029</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
 			<id-00007>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2690,7 +2790,7 @@
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Death's Scythe</name>
+				<name type="string">Pact Death's Scythe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Versatile (1d10)</properties>
 				<shortcut type="windowreference">

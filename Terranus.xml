@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">5</level>
+				<hdused type="number">3</hdused>
+				<level type="number">6</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1443</amount>
+				<amount type="number">1735</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">299</amount>
+				<amount type="number">332</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">320</amount>
+				<amount type="number">354</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,11 +109,11 @@
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">55.14</load>
+			<load type="number">55.68</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">596</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">680</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -323,16 +323,52 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki-Empowered Strikes</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+				</text>
+			</id-00013>
+			<id-00014>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Mountain Stance</name>
+				<source type="string">Monk</source>
+				<specialization type="string">The Way of Iron</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.mountainstance@Incarnate-5eExpansion">Mountain Stance</link>
+					</linklist>
+					<h>Description</h>
+					<p>You harness your energy to become as sturdy as a mountain.</p>
+					<p>At 6th level, you are unable to be moved by a creature that is the same size or smaller than you.</p>
+					<p>You pay 2 ki Points to enter the Mountain Stance. You may choose one of the following effects, which lasts for 1 minute:</p>
+					<list>
+						<li>Stone Fleece: you gain +2 AC and gain temporary HP equaling your Monk level.</li>
+						<li>Brick-skinned: You gain resistance to non-magical bludgeoning, piercing, and slashing damage.</li>
+					</list>
+					<p>You may spend 2 ki points to take the following reaction:</p>
+					<list>
+						<li>Mettle Breaker: As a reaction, when you fail a strength check or save, you may add 3 to the check.</li>
+					</list>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">If I ever find a relic of singular worth, I might keep it for myself&#133;or for the merchant down the road.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">3'8&#34;</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
-			<deathsavesuccess type="number">3</deathsavesuccess>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
-			<wounds type="number">28</wounds>
+			<total type="number">33</total>
+			<wounds type="number">4</wounds>
 		</hp>
 		<ideals type="string">Trophy - The original inventors of these relics are dead; why shouldn&#146;t I hold on to them for a while? (Chaotic)</ideals>
 		<initiative>
@@ -646,7 +682,7 @@
 					<list>
 						<li>Ruins 1006 1-6 [w/ path]</li>
 						<li>Halfling City 1006 6-3</li>
-						<li>Tower ?? 1106 6-2</li>
+						<li>Tower Vluln 1106 6-2</li>
 						<li>Red Dragon Lair 0906 2-6 [20yr, Adult]</li>
 						<li>Mage Door 0905 1-6 (Ice, Necro)</li>
 						<li>Tower ?? 1105 6-4</li>
@@ -654,6 +690,7 @@
 						<li>City Valui 0405 6-1</li>
 						<li>Plague Cave 0506 1-3/0507 6-3</li>
 						<li>Village Beevat 0803 1-3</li>
+						<li>City New Vlu #### #-#</li>
 					</list>
 					<p></p>
 					<p>Rumors</p>
@@ -664,7 +701,7 @@
 					</list>
 				</description>
 				<location type="string">Historical Tome</location>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Map</name>
 				<subtype type="string">World</subtype>
 				<type type="string">Lore</type>
@@ -675,7 +712,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -788,7 +825,7 @@
 			</id-00027>
 			<id-00028>
 				<carried type="number">1</carried>
-				<count type="number">5</count>
+				<count type="number">6</count>
 				<description type="formattedtext">
 					<p>A set of notes wriiten over some important historic texts -</p>
 					<list>
@@ -796,6 +833,7 @@
 						<li>Bloodied Body - Flew at wall hard&#38;fast, may have activate runes</li>
 						<li>Blood runes(development) - Weak to healing magic</li>
 						<li>Magic Cirlce - Teleportation magi</li>
+						<li>New Vlu Relics - STUPID DESIRE!</li>
 					</list>
 					<p></p>
 					<list>
@@ -803,7 +841,7 @@
 					</list>
 				</description>
 				<location type="string">Historical Tome</location>
-				<locked type="number">1</locked>
+				<locked type="number">0</locked>
 				<name type="string">Notes written over historical text</name>
 				<weight type="number">0</weight>
 			</id-00028>
@@ -838,6 +876,26 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00029>
+			<id-00030>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Coin Pouch - Small</location>
+				<locked type="number">1</locked>
+				<name type="string">Pristine Saber tooth</name>
+				<weight type="number">0.03</weight>
+			</id-00030>
+			<id-00031>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Starnge foreead elves. Strage forehad eles. Strenge frehead eves. Strang faeheed elve. Stirge fameheard elks. Stange feeheld emps. trangle markhead eees. Strange forehead elves.</p>
+					<p>Must learn more at bookhearth.</p>
+				</description>
+				<location type="string">Historical Tome</location>
+				<locked type="number">1</locked>
+				<name type="string">Torn cloth</name>
+				<weight type="number">0.01</weight>
+			</id-00031>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -850,7 +908,7 @@
 				<name type="string">Primape</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Terranus Firr</name>
 		<notes type="string">Based on Japanese macaque</notes>
 		<perception type="number">12</perception>
@@ -941,7 +999,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -990,12 +1048,12 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<group type="string">Ki</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Ki</name>
-				<prepared type="number">5</prepared>
+				<prepared type="number">6</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
 			<id-00003>
@@ -1154,6 +1212,81 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Stone Fleece; AC: 2</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Brick-skinned; RESIST: piercing, slashing, bludgeoning, !magic</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00007@Incarnate-5eExpansion">Mountain Stance</link>
+					</linklist>
+				</description>
+				<group type="string">Ki</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Mountain Stance (2K)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<label type="string">AC: -2; STR: 1; CON: 2</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">6</bonus>
+								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtype type="string">temp</healtype>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<durunit type="string">minute</durunit>
+						<label type="string">ATK: 1; DMG: 1</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<name type="string">Ape</name>
+			</id-00010>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1440,9 +1573,9 @@
 				<damagelist>
 					<id-00002>
 						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
+						<stat type="string">strength</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">bludgeoning</type>
+						<type type="string">bludgeoning, magic</type>
 					</id-00002>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
