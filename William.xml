@@ -5,7 +5,6 @@
 			<charisma>
 				<bonus type="number">3</bonus>
 				<save type="number">5</save>
-				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
 			</charisma>
@@ -13,13 +12,11 @@
 				<bonus type="number">1</bonus>
 				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
-				<saveprof type="number">0</saveprof>
 				<score type="number">12</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
 				<save type="number">4</save>
-				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
 			</dexterity>
@@ -27,21 +24,17 @@
 				<bonus type="number">-1</bonus>
 				<save type="number">-1</save>
 				<savemodifier type="number">0</savemodifier>
-				<saveprof type="number">0</saveprof>
 				<score type="number">8</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">0</bonus>
 				<save type="number">0</save>
-				<savemodifier type="number">0</savemodifier>
-				<saveprof type="number">0</saveprof>
 				<score type="number">10</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">-1</bonus>
 				<save type="number">-1</save>
 				<savemodifier type="number">0</savemodifier>
-				<saveprof type="number">0</saveprof>
 				<score type="number">9</score>
 			</wisdom>
 		</abilities>
@@ -58,32 +51,29 @@
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
-				<casterpactmagic type="number">0</casterpactmagic>
+				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">3</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.id-00006</recordname>
+					<recordname>class.probard@Incarnate-5eExpansion</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
 				<amount type="number">56</amount>
-				<name type="string">GP</name>
+				<name type="string">gp</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
-				<name type="string">PP</name>
 			</slot2>
 			<slot3>
 				<amount type="number">73</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">0</amount>
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
@@ -91,17 +81,13 @@
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
-				<amount type="number">0</amount>
+				<name type="string">PP</name>
 			</slot6>
 		</coins>
 		<defenses>
 			<ac>
 				<armor type="number">1</armor>
-				<disstealth type="number">0</disstealth>
-				<misc type="number">0</misc>
 				<prof type="number">1</prof>
-				<shield type="number">0</shield>
-				<temporary type="number">0</temporary>
 				<total type="number">13</total>
 			</ac>
 		</defenses>
@@ -197,79 +183,65 @@
 					<p>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</p>
 				</text>
 			</id-00005>
-			<id-00006>
-				<locked type="number">1</locked>
-				<name type="string">Sunsinger</name>
-				<source type="string">Bard</source>
-				<text type="formattedtext">
-					<p>A rare breed of Bard, the Sunsingers are a reclusive college of song. Their music is touched by the Light of Positive Energy that breathes life into all creatures.</p>
-					<p>https://www.dandwiki.com/wiki/Sunsinger_(5e_Subclass)</p>
-					<p></p>
-					<linklist>
-						<link class="reference_classfeature" recordname="class.id-00006.features.id-00003">Bonus Proficiencies</link>
-						<link class="reference_classfeature" recordname="class.id-00006.features.id-00001">Expanded Spell List</link>
-						<link class="reference_classfeature" recordname="class.id-00006.features.id-00002">Sunsinger Spells</link>
-						<link class="reference_classfeature" recordname="class.id-00006.features.id-00004">Empowering Inspiration</link>
-					</linklist>
-					<p></p>
-				</text>
-			</id-00006>
-			<id-00007>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Bonus Proficiencies</name>
-				<source type="string">Bard</source>
-				<specialization type="string">Sunsinger</specialization>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>When you join the College of the Sunsinger at 3rd level, you gain proficiency with performance and Medicine. If you already have proficiency with one of them, you can pick one other skill of your choice.</p>
-				</text>
-			</id-00007>
-			<id-00008>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Expanded Spell List</name>
-				<source type="string">Bard</source>
-				<specialization type="string">Sunsinger</specialization>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>Upon choosing this College at the 3rd Level, you gain the following spells as Bard Spells at the specified levels. These spells count as bard Spells for you and are not included in the number in the Spells Known column of the Bard table. You also know the cantrip fire bolt, and it doesn't count against your number of bard cantrips known.</p>
-				</text>
-			</id-00008>
 			<id-00009>
-				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Sunsinger Spells</name>
+				<name type="string">College of the Sunsinger</name>
 				<source type="string">Bard</source>
-				<specialization type="string">Sunsinger</specialization>
-				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>Bard Level Spells</p>
+					<h>Description</h>
+					<p>Even in the darkest night, hope remains. Night remains for only so long, then the dawn returns and a new day dawns. So is the inspiring presence of a sunsinger. When they arrive their allies strikes burn their enemies.</p>
+					<h>Abilities</h>
 					<linklist>
-						<link class="power" recordname="spell.scorchingray@Incarnate-5eExpansion">3rd - Scorching ray</link>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00056@Incarnate-5eExpansion">Level 3: Sungsinger's Expanded Spells</link>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00057@Incarnate-5eExpansion">Level 3: Scorching Inspiration</link>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00058@Incarnate-5eExpansion">Level 6: Searing Song</link>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00059@Incarnate-5eExpansion">Level 14: Supernova</link>
 					</linklist>
-					<p>5th - Sunshot</p>
-					<p>7th - Sacred shield</p>
+					<h>Copy Left Notice</h>
+					<p>This content was inspired by a source under the GNU Public Use License. The original content is copy left and can be found</p>
 					<linklist>
-						<link class="power" recordname="spell.raisedead@Incarnate-5eExpansion">9th - Raise dead</link>
-						<link class="power" recordname="spell.sunbeam@Incarnate-5eExpansion">11th - Sunbeam</link>
+						<link class="referencemanualpage" recordname="referencemanual4.DanDwiki8October2018Sunsinger@Incarnate-5eExpansion">here</link>
 					</linklist>
+					<p>All modifications are protected and all rights are reserved to the greatest extent permissible by law.</p>
 				</text>
 			</id-00009>
 			<id-00010>
 				<level type="number">3</level>
-				<locked type="number">0</locked>
-				<name type="string">Empowering Inspiration</name>
+				<locked type="number">1</locked>
+				<name type="string">Scorching Inspiration</name>
 				<source type="string">Bard</source>
-				<specialization type="string">Sunsinger</specialization>
+				<specialization type="string">College of the Sunsinger</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>At the 3rd level, you may use a use of Bardic Inspiration to empower an ally. They add Bardic Inspiration die of fire damage to there next attack.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.scorchinginspiration@Incarnate-5eExpansion">Scorching Inspiration</link>
+					</linklist>
+					<h>Description</h>
+					<p>Also at 3rd level, you learn how to use your charisma to empower your allies. You can use a bonus action to expend one of your uses of Bardic Inspiration to empower an allies next single target damage roll to do aditional fire damage. This damage is equal to your current Bardic Inspiration die size.</p>
 				</text>
 			</id-00010>
 			<id-00011>
 				<level type="number">3</level>
-				<locked type="number">0</locked>
+				<locked type="number">1</locked>
+				<name type="string">Sungsinger's Expanded Spells</name>
+				<source type="string">Bard</source>
+				<specialization type="string">College of the Sunsinger</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Being a sunsinger unlocks certain spells when you reach appropriate levels. These spells are bard spells to you.</p>
+					<linklist>
+						<link class="power" recordname="spell.scorchingray@Incarnate-5eExpansion">3rd level: Scorching Ray</link>
+						<link class="power" recordname="spell.sunshot@Incarnate-5eExpansion">5th Level: Sunshot</link>
+						<link class="power" recordname="spell.sacredshield@Incarnate-5eExpansion">7th Level: Fiery Shield</link>
+						<link class="power" recordname="spell.flamestrike@Incarnate-5eExpansion">9th Level: Flame Strike</link>
+						<link class="power" recordname="spell.sunbeam@Incarnate-5eExpansion">11th level: Sunbeam</link>
+					</linklist>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
 				<name type="string">Expertise</name>
 				<source type="string">Bard</source>
 				<specializationchoice type="number">0</specializationchoice>
@@ -277,15 +249,15 @@
 					<p>At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
 					<p>At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
 				</text>
-			</id-00011>
-			<id-00013>
+			</id-00012>
+			<id-00014>
 				<locked type="number">1</locked>
 				<name type="string">Big Show</name>
 				<source type="string">Acrobat</source>
 				<text type="formattedtext">
 					<p>Having spent most of your life in the circus you know how to entertain crowds and organize events. You can set up a street performance just about anywhere and may even be able to get invitations from nobles to entertain at parties.</p>
 				</text>
-			</id-00013>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I cannot maintain meaningful relationships.\nI made a mistake once, and it cost a lot of lives.</flaws>
 		<gender type="string">Male</gender>
@@ -300,7 +272,6 @@
 		<ideals type="string">Spontaneous show - I perform what I want when I want to.\nFriends - Life is about who I know not what I have.</ideals>
 		<initiative>
 			<misc type="number">1</misc>
-			<temporary type="number">0</temporary>
 			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
@@ -308,106 +279,19 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">1 CP</cost>
+				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNvaW5wdXJzZS0x/play/"><b>Syrinscape </b></link>: Coin purse - Wizard Spells E</linklist>
-					<h>Description</h>
-					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
+					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Coin Pouch - Small</name>
-				<rarity type="string">Common</rarity>
+				<name type="string">Backpack</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.1</weight>
+				<weight type="number">5</weight>
 			</id-00001>
 			<id-00002>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">3 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00271@Incarnate-5eExpansion">Horn</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Horn</name>
-				<subtype type="string">Musical Instrument</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">2</weight>
-			</id-00002>
-			<id-00003>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00005@Incarnate-5eExpansion">Juggling Pins</link>
-					</linklist>
-					<h>Description</h>
-					<p>These juggling pins may be used for performances.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Juggling Pins</name>
-				<rarity type="string">Rare</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">2</weight>
-			</id-00003>
-			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>These colorful flamboyant clothes are often worn by performers.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Clothes, Well-fitting Colorful</name>
-				<rarity type="string">Rare</rarity>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">3</weight>
-			</id-00004>
-			<id-00005>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">25 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Rapier</name>
-				<nonid_name type="string">Rapier</nonid_name>
-				<nonidentified type="string">A pointy rapier.</nonidentified>
-				<properties type="string">Finesse</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00005>
-			<id-00006>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -421,8 +305,34 @@
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">7</weight>
-			</id-00006>
-			<id-00007>
+			</id-00002>
+			<id-00003>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<p>For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Candle</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00003>
+			<id-00004>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Costume</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">4</weight>
+			</id-00004>
+			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -441,158 +351,80 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
-				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Disguise Kit</name>
 				<subtype type="string">Kits / Sets</subtype>
 				<type type="string">Tools</type>
 				<weight type="number">3</weight>
-			</id-00007>
-			<id-00008>
+			</id-00005>
+			<id-00006>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">2 GP</cost>
+				<cost type="string">3 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p></p>
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00271@Incarnate-5eExpansion">Horn</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Horn</name>
+				<subtype type="string">Musical Instrument</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">2</weight>
+			</id-00006>
+			<id-00007>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00005@Incarnate-5eExpansion">Juggling Pins</link>
+					</linklist>
+					<h>Description</h>
+					<p>These juggling pins may be used for performances.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Backpack</name>
+				<name type="string">Juggling Pins</name>
+				<rarity type="string">Rare</rarity>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00008>
-			<id-00009>
+				<weight type="number">2</weight>
+			</id-00007>
+			<id-00008>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
-				<count type="number">5</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
-			</id-00009>
-			<id-00010>
+			</id-00008>
+			<id-00009>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
-			</id-00010>
-			<id-00011>
-				<carried type="number">1</carried>
-				<cost type="string">5 GP</cost>
-				<count type="number">2</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Clothes, Costume</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">4</weight>
-			</id-00011>
-			<id-00012>
-				<carried type="number">1</carried>
-				<cost type="string">1 CP</cost>
-				<count type="number">5</count>
-				<description type="formattedtext">
-					<p>For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Candle</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.01</weight>
-			</id-00012>
-			<id-00014>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">30 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00276@Incarnate-5eExpansion">Viol</link>
-					</linklist>
-					<h>Description</h>
-					<p>A stringed instrument with six strings and a long neck. Normally held on the ground and played with a bow.</p>
-					<linklist>
-						<link class="encounter" recordname="encounter.id-00002@Incarnate-5eExpansion">Rules for Using a Musical Instrument</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Viol</name>
-				<subtype type="string">Musical Instrument</subtype>
-				<type type="string">Tools</type>
-				<weight type="number">1</weight>
-			</id-00014>
-			<id-00016>
-				<ac type="number">11</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
-				</description>
-				<dexbonus type="string">Yes</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Leather Armor</name>
-				<nonid_name type="string">Leather Armor</nonid_name>
-				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
-				<rarity type="string">common</rarity>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Light Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">10</weight>
-			</id-00016>
-			<id-00017>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">2 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d4 piercing</damage>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="encounter" recordname="encounter.id-00010@Incarnate-Syrinscape"><b>Syrinscape </b></link>: Dagger</linklist>
-					<h>Description</h>
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Dagger</name>
-				<nonid_name type="string">Dagger</nonid_name>
-				<nonidentified type="string">A finely crafted dagger.</nonidentified>
-				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
-				<rarity type="string">Common</rarity>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">1</weight>
-			</id-00017>
-			<id-00018>
+			</id-00009>
+			<id-00010>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -621,120 +453,212 @@
 				<rarity type="string">uncommon (requires attunement)</rarity>
 				<type type="string">Wondrous Item</type>
 				<weight type="number">4</weight>
-			</id-00018>
+			</id-00010>
+			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>These colorful flamboyant clothes are often worn by performers.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Well-fitting Colorful</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNvaW5wdXJzZS0x/play/"><b>Syrinscape </b></link>: Coin purse - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Coin Pouch - Small</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00012>
+			<id-00013>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00010@Incarnate-Syrinscape"><b>Syrinscape </b></link>: Dagger</linklist>
+					<h>Description</h>
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Dagger</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger.</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00013>
+			<id-00014>
+				<ac type="number">11</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
+				</description>
+				<dexbonus type="string">Yes</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Leather Armor</name>
+				<nonid_name type="string">Leather Armor</nonid_name>
+				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
+				<rarity type="string">common</rarity>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Light Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">10</weight>
+			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Rapier</name>
+				<nonid_name type="string">Rapier</nonid_name>
+				<nonidentified type="string">A pointy rapier.</nonidentified>
+				<properties type="string">Finesse</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">30 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00276@Incarnate-5eExpansion">Viol</link>
+					</linklist>
+					<h>Description</h>
+					<p>A stringed instrument with six strings and a long neck. Normally held on the ground and played with a bow.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00002@Incarnate-5eExpansion">Rules for Using a Musical Instrument</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Viol</name>
+				<subtype type="string">Musical Instrument</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">1</weight>
+			</id-00016>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Elvish</name>
+				<name type="string">Common </name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common</name>
+				<name type="string">Infernal</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Infernal</name>
+				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">William</name>
 		<notes type="string">Tight Rope - Acrobat Specialty</notes>
 		<perception type="number">10</perception>
-		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am extremely focused. In my line of work to loose focus is to plumet and die.\nI can stare down a hell hound without flinching.</personalitytraits>
 		<powergroup>
-			<id-00001>
-				<atkprof type="number">1</atkprof>
-				<atkstat type="string">charisma</atkstat>
-				<castertype type="string">memorization</castertype>
-				<name type="string">Spells</name>
-				<saveprof type="number">1</saveprof>
-				<savestat type="string">charisma</savestat>
-				<stat type="string">charisma</stat>
-			</id-00001>
 			<id-00002>
-				<name type="string">Item</name>
+				<name type="string">Race</name>
 			</id-00002>
 			<id-00003>
-				<atkprof type="number">1</atkprof>
-				<name type="string">Race</name>
-				<saveprof type="number">1</saveprof>
-				<stat type="string">charisma</stat>
+				<name type="string">Item</name>
 			</id-00003>
 			<id-00004>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Class</name>
+				<saveprof type="number">1</saveprof>
 			</id-00004>
+			<id-00005>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
-				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
-				<max type="number">0</max>
-				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -742,26 +666,35 @@
 			<id-00001>
 				<actions>
 					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">day</durunit>
-						<label type="string">RESIST: cold</label>
+						<heallist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+							</id-00001>
+						</heallist>
+						<healtype type="string">temp</healtype>
 						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
+						<type type="string">heal</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a tiny strip of white cloth)</components>
 				<description type="formattedtext">
-					<p></p>
+					<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd.</p>
 				</description>
-				<group type="string">Item</group>
-				<level type="number">0</level>
+				<duration type="string">8 hours</duration>
+				<group type="string">Race</group>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Type Resistance (Cold)</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Aid - Destiny of Duality</name>
+				<prepared type="number">1</prepared>
+				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Paladin</source>
 			</id-00001>
-			<id-00003>
+			<id-00002>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -794,8 +727,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Divination</school>
 				<source type="string">Cleric, Druid</source>
-			</id-00003>
-			<id-00004>
+			</id-00002>
+			<id-00003>
 				<actions>
 					<id-00001>
 						<heallist>
@@ -835,39 +768,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Paladin</source>
-			</id-00004>
-			<id-00005>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">5</bonus>
-							</id-00001>
-						</heallist>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a tiny strip of white cloth)</components>
-				<description type="formattedtext">
-					<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd.</p>
-				</description>
-				<duration type="string">8 hours</duration>
-				<group type="string">Race</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Aid - Destiny of Duality</name>
-				<prepared type="number">1</prepared>
-				<range type="string">30 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Abjuration</school>
-				<source type="string">Cleric, Paladin</source>
-			</id-00005>
-			<id-00006>
+			</id-00003>
+			<id-00004>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
@@ -888,8 +790,82 @@
 				<name type="string">Type Resistance (Necrotic)</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: cold</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Cold)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<label type="string">DMG: 1d6 fire</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.scorchinginspiration@Incarnate-5eExpansion">Scorching Inspiration</link>
+					</linklist>
+					<h>Description</h>
+					<p>Also at 3rd level, you learn how to use your charisma to empower your allies. You can use a bonus action to expend one of your uses of Bardic Inspiration to empower an allies next single target damage roll to do aditional fire damage. This damage is equal to your current Bardic Inspiration die size.</p>
+				</description>
+				<group type="string">Class</group>
+				<locked type="number">1</locked>
+				<name type="string">Scorching Inspiration</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Bard</source>
+				<specialization type="string">College of the Sunsinger</specialization>
+				<specializationchoice type="number">0</specializationchoice>
 			</id-00006>
 			<id-00008>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probard.features.id-00028@Incarnate-5eExpansion">Song of Rest</link>
+					</linklist>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Song of Rest</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
+			<id-00009>
 				<actions>
 					<id-00001>
 						<apply type="string">roll</apply>
@@ -910,159 +886,10 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Bardic Inspiration</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
-			</id-00008>
+			</id-00009>
 			<id-00010>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d10</dice>
-								<type type="string">fire</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmZsYXJl/play/"><b>Syrinscape </b></link>: Flare - Wizard Spells E</linklist>
-					<h>Description</h>
-					<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Fire Bolt</name>
-				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Sorcerer, Wizard</source>
-			</id-00010>
-			<id-00011>
-				<actions>
-					<id-00001>
-						<apply type="string">roll</apply>
-						<label type="string">DMG: 1d6 fire</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<p>At the 3rd level, you may use a use of Bardic Inspiration to empower an ally. They add Bardic Inspiration die of fire damage to there next attack.</p>
-				</description>
-				<group type="string">Class</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Empowering Inspiration</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00011>
-			<id-00013>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d6,d6</dice>
-								<type type="string">fire</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Scorching Ray</name>
-				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Sorcerer, Wizard</source>
-			</id-00013>
-			<id-00014>
-				<actions>
-					<id-00001>
-						<atkprof type="number">1</atkprof>
-						<order type="number">1</order>
-						<savedcbase type="string">ability</savedcbase>
-						<savedcprof type="number">1</savedcprof>
-						<savedcstat type="string">charisma</savedcstat>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">wisdom</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d4</dice>
-								<type type="string">psychic</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Vicious Mockery; DISATK</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
-				<description type="formattedtext">
-					<h>Ideas for Good Insults</h>
-					<linklist>
-						<link class="table" recordname="tables.id-00113@Incarnate-Foundation">Table: Incarnate - Foundation - Random - Insult</link>
-						<link class="storytemplate" recordname="storytemplate.id-00005@Incarnate-Foundation">Story Template: 100 Insults</link>
-					</linklist>
-					<h>Description</h>
-					<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Vicious Mockery</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Enchantment</school>
-				<source type="string">Bard</source>
-			</id-00014>
-			<id-00015>
 				<actions>
 					<id-00002>
 						<apply type="string">roll</apply>
@@ -1090,39 +917,44 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Cleric</source>
-			</id-00015>
-			<id-00016>
+			</id-00010>
+			<id-00011>
 				<actions>
 					<id-00001>
-						<heallist>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
 							<id-00001>
 								<dice type="dice">d4</dice>
-								<stat type="string">base</stat>
+								<type type="string">psychic</type>
 							</id-00001>
-						</heallist>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 bonus action</castingtime>
+				<castingtime type="string">1 action</castingtime>
 				<components type="string">V</components>
 				<description type="formattedtext">
-					<p>A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.</p>
+					<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</p>
+					<p>This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Healing Word</name>
+				<name type="string">Vicious Mockery</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Bard, Cleric, Druid</source>
-			</id-00016>
-			<id-00017>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard</source>
+			</id-00011>
+			<id-00012>
 				<actions>
 					<id-00001>
 						<atkmod type="number">0</atkmod>
@@ -1158,8 +990,77 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Druid</source>
-			</id-00017>
-			<id-00018>
+			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d4</dice>
+								<stat type="string">base</stat>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Healing Word</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Druid</source>
+			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Thunderwave</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (15-foot cube)</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
+			</id-00014>
+			<id-00015>
 				<actions>
 					<id-00001>
 						<damagelist>
@@ -1203,8 +1104,8 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Druid</source>
-			</id-00018>
-			<id-00019>
+			</id-00015>
+			<id-00016>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
@@ -1223,21 +1124,19 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
-			</id-00019>
-			<id-00020>
+			</id-00016>
+			<id-00017>
 				<actions>
 					<id-00001>
-						<onmissdamage type="string">half</onmissdamage>
+						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d8,d8</dice>
-								<type type="string">thunder</type>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
@@ -1248,46 +1147,20 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+					<p>You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Thunderwave</name>
+				<name type="string">Scorching Ray</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Self (15-foot cube)</range>
+				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
-				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
-			</id-00020>
-			<id-00021>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6</dice>
-							</id-00001>
-						</heallist>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="reference_classfeature" recordname="class.probard.features.id-00028@Incarnate-5eExpansion">Song of Rest</link>
-					</linklist>
-				</description>
-				<group type="string">Class</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Song of Rest</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00021>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00017>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1300,9 +1173,9 @@
 			<id-00003>
 				<name type="string">Armor: Light armor</name>
 			</id-00003>
-			<id-00004>
+			<id-00006>
 				<name type="string">Tool: Horn, Juggling Pins</name>
-			</id-00004>
+			</id-00006>
 		</proficiencylist>
 		<race type="string">Theolan</race>
 		<racelink type="windowreference">
@@ -1313,213 +1186,148 @@
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
-				<misc type="number">0</misc>
 				<name type="string">Perception</name>
 				<prof type="number">3</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
 			</id-00001>
 			<id-00002>
-				<misc type="number">0</misc>
-				<name type="string">Intimidation</name>
-				<prof type="number">1</prof>
-				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<name type="string">Acrobatics</name>
+				<prof type="number">2</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
-				<misc type="number">0</misc>
 				<name type="string">Performance</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
-				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">7</total>
 			</id-00004>
 			<id-00005>
-				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">0</total>
 			</id-00005>
 			<id-00006>
-				<misc type="number">0</misc>
 				<name type="string">Nature</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">0</total>
 			</id-00006>
 			<id-00007>
-				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
-				<prof type="number">1</prof>
+				<prof type="number">3</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00007>
 			<id-00008>
-				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">3</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
 			</id-00008>
 			<id-00009>
-				<misc type="number">0</misc>
-				<name type="string">Acrobatics</name>
-				<prof type="number">1</prof>
-				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
-			</id-00009>
-			<id-00010>
-				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">0</total>
-			</id-00010>
-			<id-00011>
-				<misc type="number">0</misc>
+			</id-00009>
+			<id-00010>
 				<name type="string">Athletics</name>
 				<prof type="number">3</prof>
 				<stat type="string">strength</stat>
 				<total type="number">1</total>
-			</id-00011>
-			<id-00012>
-				<misc type="number">0</misc>
+			</id-00010>
+			<id-00011>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">4</total>
-			</id-00012>
-			<id-00013>
-				<misc type="number">0</misc>
+			</id-00011>
+			<id-00012>
 				<name type="string">Insight</name>
 				<prof type="number">3</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
+			</id-00012>
+			<id-00013>
+				<name type="string">Intimidation</name>
+				<prof type="number">3</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">4</total>
 			</id-00013>
 			<id-00014>
-				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">3</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">4</total>
 			</id-00014>
 			<id-00015>
-				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">0</total>
 			</id-00015>
 			<id-00016>
-				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">3</total>
 			</id-00016>
 			<id-00017>
-				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">0</total>
 			</id-00017>
 			<id-00018>
-				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
 				<prof type="number">3</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">0</total>
 			</id-00018>
 			<id-00019>
-				<misc type="number">0</misc>
-				<name type="string">Juggling Pins</name>
-				<prof type="number">1</prof>
-				<stat type="string">dexterity</stat>
-				<text type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00180@Incarnate-5eExpansion">Juggling Pins</link>
-					</linklist>
-				</text>
-				<total type="number">4</total>
-			</id-00019>
-			<id-00020>
-				<misc type="number">0</misc>
-				<name type="string">Viol</name>
-				<prof type="number">2</prof>
-				<stat type="string">charisma</stat>
-				<text type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00276@Incarnate-5eExpansion">Viol</link>
-						<link class="encounter" recordname="encounter.id-00002@Incarnate-5eExpansion">Rules for Using a Musical Instrument</link>
-					</linklist>
-				</text>
-				<total type="number">7</total>
-			</id-00020>
-			<id-00021>
-				<misc type="number">0</misc>
 				<name type="string">Horn</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<text type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00271@Incarnate-5eExpansion">Horn</link>
-						<link class="encounter" recordname="encounter.id-00002@Incarnate-5eExpansion">Rules for Using a Musical Instrument</link>
-					</linklist>
-				</text>
+				<total type="number">5</total>
+			</id-00019>
+			<id-00020>
+				<name type="string">Juggling Pins</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">4</total>
+			</id-00020>
+			<id-00021>
+				<name type="string">Viol</name>
+				<prof type="number">1</prof>
+				<stat type="string">charisma</stat>
 				<total type="number">5</total>
 			</id-00021>
 			<id-00022>
-				<misc type="number">0</misc>
-				<name type="string">Disguise Kit</name>
+				<name type="string">Disguise kit</name>
 				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<text type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00257@Incarnate-5eExpansion">Disguise Kit</link>
-					</linklist>
-					<h>Description</h>
-					<p>This pouch of cosmetics, hair dye, and small props lets you create disguises that change your physical appearance. proficiency with this kit lets you add your proficiency bonus to any ability checks you make to create a visual disguise.</p>
-					<linklist>
-						<link class="encounter" recordname="encounter.id-00050@Incarnate-5eExpansion">Rules for Using Disguise Kit</link>
-					</linklist>
-				</text>
 				<total type="number">3</total>
 			</id-00022>
 		</skilllist>
 		<speed>
-			<armor type="number">0</armor>
 			<base type="number">30</base>
-			<misc type="number">0</misc>
-			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00013_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Language</name>
-				<source type="string">Theolan</source>
-				<text type="formattedtext">
-					<p>You can speak, read, and write Common and Infernal.</p>
-				</text>
-				<type type="string">racial</type>
-			</id-00001>
-			<id-00002>
-				<locked type="number">0</locked>
 				<name type="string">Destiny of Duality</name>
 				<source type="string">Theolan</source>
 				<text type="formattedtext">
@@ -1543,8 +1351,8 @@
 					</linklist>
 				</text>
 				<type type="string">racial</type>
-			</id-00002>
-			<id-00003>
+			</id-00001>
+			<id-00002>
 				<locked type="number">1</locked>
 				<name type="string">Names</name>
 				<source type="string">Theolan</source>
@@ -1555,8 +1363,8 @@
 					</linklist>
 				</text>
 				<type type="string">racial</type>
-			</id-00003>
-			<id-00004>
+			</id-00002>
+			<id-00003>
 				<locked type="number">1</locked>
 				<name type="string">Blood Bond</name>
 				<source type="string">Theolan</source>
@@ -1565,8 +1373,8 @@
 					<p>This trait is entirely at the GMs direction and may be a celestial pretending to be a fiend, or a fiend pretending to be a celestial or any number of other things.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00004>
-			<id-00005>
+			</id-00003>
+			<id-00004>
 				<locked type="number">1</locked>
 				<name type="string">Fallen Life</name>
 				<source type="string">Theolan</source>
@@ -1579,33 +1387,10 @@
 					<p>Having been cast out of the celestial realms, you have become very familar with death. You have resistance to necrotic damage.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00005>
+			</id-00004>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">dexterity</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Rapier</name>
-				<prof type="number">1</prof>
-				<properties type="string">Finesse</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00005</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00001>
-			<id-00002>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -1618,17 +1403,16 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
 				<name type="string">Dagger</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00017</recordname>
+					<recordname>....inventorylist.id-00013</recordname>
 				</shortcut>
 				<type type="number">0</type>
-			</id-00002>
-			<id-00003>
+			</id-00001>
+			<id-00002>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -1647,9 +1431,31 @@
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00017</recordname>
+					<recordname>....inventorylist.id-00013</recordname>
 				</shortcut>
 				<type type="number">2</type>
+			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Rapier</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00015</recordname>
+				</shortcut>
+				<type type="number">0</type>
 			</id-00003>
 		</weaponlist>
 		<weight type="string">110 Ibs</weight>
