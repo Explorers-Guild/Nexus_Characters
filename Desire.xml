@@ -83,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">138</amount>
+				<amount type="number">444</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -91,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">169</amount>
+				<amount type="number">223</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -99,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">121</amount>
+				<amount type="number">155</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -122,11 +122,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">97.071</load>
+			<load type="number">87.721</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">606</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">690</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -248,19 +248,6 @@
 					<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
 				</text>
 			</id-00007>
-			<id-00008>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Warlock Starting Items</name>
-				<source type="string">Warlock</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p><b>Click the shield below to open you choices for warlock starting items.</b></p>
-					<linklist>
-						<link class="reference_weapontable" recordname="lists.startingequipment.warlock@Incarnate-5eExpansion">Warlock Starting Equipment Options</link>
-					</linklist>
-				</text>
-			</id-00008>
 			<id-00009>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -556,7 +543,7 @@
 				</text>
 			</id-00017>
 		</featurelist>
-		<flaws type="string">I cannot resist a drink, or the folk who serve it.</flaws>
+		<flaws type="string">I cannot resist a drink, or the folk who serve it.\nPranks are fun.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'8</height>
 		<hp>
@@ -628,7 +615,7 @@
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10</cost>
 				<count type="number">1</count>
 				<damage type="string">2 slashing</damage>
@@ -641,6 +628,7 @@
 					<p>The felling axe is great for cutting down trees. This tool does an extra 2d6 slashing damage when used on plants and other wood.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Weapons &#38; Armor</location>
 				<locked type="number">1</locked>
 				<name type="string">Felling Axe</name>
 				<rarity type="string">Uncommon</rarity>
@@ -676,6 +664,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Weapons &#38; Armor</location>
 				<locked type="number">1</locked>
 				<name type="string">Thick Gloves</name>
 				<rarity type="string">Uncommon</rarity>
@@ -704,61 +693,39 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">25 GP</cost>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
 				<description type="formattedtext">
-					<p>-</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Rapier</name>
-				<nonid_name type="string">Rapier</nonid_name>
-				<nonidentified type="string">A pointy rapier.</nonidentified>
-				<properties type="string">Finesse</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00009>
-			<id-00010>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">25 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 piercing</damage>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Shortbow</name>
-				<nonid_name type="string">Shortbow</nonid_name>
-				<nonidentified type="string">A perfect light bow for the ranger on the go.</nonidentified>
-				<properties type="string">Ammunition (range 80/320), two-handed</properties>
-				<subtype type="string">Simple Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00010>
-			<id-00011>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">5 CP</cost>
-				<count type="number">17</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Arrow</name>
-				<nonid_name type="string">Arrow</nonid_name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">0.05</weight>
-			</id-00011>
 			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -955,6 +922,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Weapons &#38; Armor</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<nonid_name type="string">Dagger</nonid_name>
@@ -965,29 +933,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00024>
-			<id-00025>
-				<ac type="number">11</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
-				</description>
-				<dexbonus type="string">Yes</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Leather Armor</name>
-				<nonid_name type="string">Leather Armor</nonid_name>
-				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
-				<rarity type="string">common</rarity>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Light Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">10</weight>
-			</id-00025>
 			<id-00026>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1007,6 +952,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Thieves' Tools</name>
 				<subtype type="string">Kits / Sets</subtype>
@@ -1067,6 +1013,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Magic item</location>
 				<locked type="number">1</locked>
 				<name type="string">Bag of Tricks (Tan)</name>
 				<nonid_name type="string">Tan Bag</nonid_name>
@@ -1093,6 +1040,7 @@
 					<p>A simple sythe, but in the hands of a death elemental it becomes something far more.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">weapons &#38; Armor</location>
 				<locked type="number">1</locked>
 				<name type="string">Death's Scythe</name>
 				<properties type="string">Versatile (1d10)</properties>
@@ -1140,6 +1088,7 @@
 					<p>When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 GP.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Magic item</location>
 				<locked type="number">1</locked>
 				<name type="string">Gem of Brightness</name>
 				<nonid_name type="string">Gem</nonid_name>
@@ -1161,6 +1110,7 @@
 				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Weapons &#38; Armor</location>
 				<locked type="number">1</locked>
 				<name type="string">Studded Leather Armor</name>
 				<nonid_name type="string">Studded Leather Armor</nonid_name>
@@ -1185,6 +1135,7 @@
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Heroism</name>
 				<nonid_name type="string">Potion</nonid_name>
@@ -1204,6 +1155,7 @@
 					<p>Form a Death Elemental</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Weapons &#38; Armor</location>
 				<locked type="number">1</locked>
 				<name type="string">Cloak, Dark</name>
 				<rarity type="string">Common</rarity>
@@ -1220,6 +1172,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">0</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">ruby</name>
 				<nonid_name type="string">odd jewel</nonid_name>
@@ -1229,6 +1182,7 @@
 				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Books</location>
 				<locked type="number">1</locked>
 				<name type="string">The Realms and how to traverse them (book)</name>
 				<weight type="number">0</weight>
@@ -1236,15 +1190,39 @@
 			<id-00037>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Books</location>
 				<name type="string">The Great empire (book)</name>
 				<weight type="number">0</weight>
 			</id-00037>
 			<id-00038>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Books</location>
 				<name type="string">Runes for dumbies (book)</name>
 				<weight type="number">0</weight>
 			</id-00038>
+			<id-00039>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Weapons &#38; Armor</name>
+			</id-00039>
+			<id-00040>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Backpack</location>
+				<name type="string">Books</name>
+			</id-00040>
+			<id-00046>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Magic item</name>
+			</id-00046>
+			<id-00049>
+				<carried type="number">1</carried>
+				<count type="number">5</count>
+				<name type="string">Minotuar Bone</name>
+				<weight type="number">1</weight>
+			</id-00049>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1259,6 +1237,7 @@
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Desire</name>
+		<notes type="string">New Vlu flying city of the vilin:\nRunilogical Research Institute (RRI)\nBooks read:\nRunes for dumbies</notes>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I look at the ceiling every time I enter a room, even if I was just there five seconds ago.\nI am bright and cheeful with a personality that draws the crowd into my performance.</personalitytraits>
@@ -1523,7 +1502,8 @@
 					<id-00001>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -1638,7 +1618,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Hex (B) (90) (C) (SD)</name>
+				<name type="string">Hex</name>
 				<prepared type="number">1</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
@@ -1710,7 +1690,7 @@
 				<group type="string">Spells (Warlock)</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Spare the Dying (T)</name>
+				<name type="string">Spare the Dying</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
@@ -1794,7 +1774,7 @@
 				<group type="string">Spells (Warlock)</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Toll the Dead (60)</name>
+				<name type="string">Toll the Dead</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
@@ -1806,15 +1786,15 @@
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
-					<p>Prerequisite: level 9. You can cast levitate on yourself at will, without expending a spell slot or material components.</p>
+					<p>You can cast speak with animals at will, without expending a spell slot.</p>
 					<linklist>
-						<link class="power" recordname="spell.levitate@Incarnate-5eExpansion">Spell: Levitate</link>
+						<link class="power" recordname="spell.speakwithanimals@Incarnate-5eExpansion">Spell: Speak with Animals</link>
 					</linklist>
 				</description>
 				<group type="string">Item/Class/Race</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Ascendant Step</name>
+				<name type="string">Beast Speech</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Eldritch Invocations</source>
@@ -1856,7 +1836,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Protection from Evil and Good (T) (C)</name>
+				<name type="string">Protection from Evil and Good</name>
 				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
@@ -1908,7 +1888,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Comprehend Languages (RIT) (S)</name>
+				<name type="string">Comprehend Languages</name>
 				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
@@ -2093,7 +2073,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -2117,11 +2097,11 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>
-						<dice type="dice"></dice>
+						<dice type="dice">d8,d8</dice>
 						<stat type="string">base</stat>
 						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
@@ -2130,56 +2110,13 @@
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Felling Axe</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00005</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
-			<id-00002>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d8</dice>
-						<stat type="string">dexterity</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Rapier</name>
-				<prof type="number">1</prof>
-				<properties type="string">Finesse</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00009</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00002>
-			<id-00003>
-				<ammo type="number">0</ammo>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">17</maxammo>
-				<name type="string">Shortbow</name>
-				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 80/320), two-handed</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00010</recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00003>
 			<id-00005>
 				<ammo type="number">1</ammo>
 				<attackstat type="string">dexterity</attackstat>
@@ -2246,26 +2183,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00007>
-			<id-00009>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">slashing, magic</type>
-					</id-00001>
-				</damagelist>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Pact Scythe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Versatile (1d10)</properties>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00009>
 		</weaponlist>
 		<weight type="string">105 Ibs</weight>
 	</character>
