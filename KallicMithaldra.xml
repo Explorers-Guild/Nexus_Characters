@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">12</score>
@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<hdused type="number">3</hdused>
+				<level type="number">5</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">267</amount>
+				<amount type="number">458</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">150</amount>
+				<amount type="number">165</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">144</amount>
+				<amount type="number">176</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -108,11 +108,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">97.2</load>
+			<load type="number">95.7</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">488</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">568</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -275,6 +275,16 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I do not feel guilt or sorrow</flaws>
 		<gender type="string">Male</gender>
@@ -283,8 +293,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
-			<wounds type="number">0</wounds>
+			<total type="number">34</total>
+			<wounds type="number">8</wounds>
 		</hp>
 		<ideals type="string">Life Should be led in simplicity, without need for any luxury</ideals>
 		<initiative>
@@ -294,8 +304,13 @@
 		</initiative>
 		<inventorylist>
 			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<name type="string">Cloak of many fashions</name>
 				<weight type="number">2</weight>
 			</id-00001>
@@ -481,12 +496,41 @@
 				<weight type="number">2</weight>
 			</id-00009>
 			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Cloak of many fashions</name>
-				<weight type="number">0</weight>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00010>
 			<id-00011>
 				<carried type="number">2</carried>
@@ -654,7 +698,7 @@
 			<id-00025>
 				<carried type="number">2</carried>
 				<cost type="string">10 gp</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
@@ -679,10 +723,10 @@
 				<name type="string">Orc</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Kallic Mithaldra</name>
 		<notes type="string">My home was destroyed and my Mentor was killed so I killed escaped by Orcs so now I am out to destroy all orcs.</notes>
-		<perception type="number">13</perception>
+		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I am always quiet observing and studying my surroundings. Look before you leap</personalitytraits>
 		<powergroup>
@@ -736,11 +780,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
+				<max type="number">4</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -772,6 +816,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00002>
 				<actions>
@@ -890,7 +935,7 @@
 				<source type="string">Ranger</source>
 			</id-00017>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: lute</name>
@@ -1046,7 +1091,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1077,29 +1122,8 @@
 			</id-00005>
 		</traitlist>
 		<weaponlist>
-			<id-00003>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Shortsword - offhand</name>
-				<prof type="number">1</prof>
-				<shortcut type="windowreference">
-					<class></class>
-					<recordname></recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00003>
 			<id-00004>
-				<ammo type="number">1</ammo>
+				<ammo type="number">6</ammo>
 				<attackbonus type="number">2</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1192,13 +1216,13 @@
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d8</dice>
-						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Rapier</name>
+				<name type="string">Rapier - offhand</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse</properties>
 				<shortcut type="windowreference">
