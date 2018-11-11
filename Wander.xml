@@ -3,11 +3,11 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<bonus type="number">4</bonus>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">17</score>
+				<score type="number">18</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
@@ -17,11 +17,11 @@
 				<score type="number">16</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">1</bonus>
-				<save type="number">4</save>
+				<bonus type="number">2</bonus>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">13</score>
+				<score type="number">14</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
@@ -76,7 +76,7 @@
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -86,7 +86,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1001</amount>
+				<amount type="number">2138</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -118,19 +118,19 @@
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
-		<deity type="string">Raven Queen</deity>
+		<deity type="string">Purple fog</deity>
 		<encumbrance>
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">85.511</load>
+			<load type="number">92.511</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">744</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">852</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1016,14 +1016,14 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">52</total>
+			<total type="number">60</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">By studying the mistakes of our elders, we might prevent the mistakes of our children.\nWhen people follow orders blindly, they embrace a kind of tyranny.</ideals>
 		<initiative>
 			<misc type="number">1</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">2</total>
+			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -1084,12 +1084,12 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">200 GP</cost>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
-						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
 					</linklist>
 					<h>Description</h>
 					<p>You regain hit points when you drink this potion.</p>
@@ -1102,21 +1102,49 @@
 							<td>HP Regained</td>
 						</tr>
 						<tr>
-							<td>Superior healing</td>
-							<td>Rare</td>
-							<td>8d4 + 8</td>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
 						</tr>
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Superior Potion of Healing</name>
-				<nonid_name type="string">Potion</nonid_name>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
 				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Rare</rarity>
+				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,130 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d12 slashing silver</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.viciousweapon@Incarnate-5eExpansion">Vicious Weapon</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Silver Coated Greataxe</name>
+				<nonid_name type="string">Greataxe</nonid_name>
+				<nonidentified type="string">A sharp greataxe.</nonidentified>
+				<properties type="string">Heavy two-handed</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">7</weight>
+			</id-00005>
 			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">15 GP</cost>
@@ -1356,7 +1384,7 @@
 				<name type="string">Infernal</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Wander</name>
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -2053,6 +2081,43 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Druid</source>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.</p>
+					<p>The bonfire ignites flammable objects in its area that aren't being worn or carried.</p>
+					<p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells (Warlock)</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Create Bonfire</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00018>
 			<id-00019>
 				<actions>
 					<id-00001>
@@ -2209,6 +2274,32 @@
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Druid, Sorcerer, Warlock, Wizard</source>
 			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells (Warlock)</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Enthrall</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Warlock</source>
+			</id-00023>
 			<id-00024>
 				<actions>
 					<id-00001>
@@ -2319,6 +2410,30 @@
 				<source type="string">Bard</source>
 				<specialization type="string">College of Whispers</specialization>
 			</id-00027>
+			<id-00028>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Vicious Weapon; DMG: 2d6, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00842@Incarnate-5eExpansion">Vicious Weapon</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Weapon</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00028>
 			<id-00029>
 				<actions>
 					<id-00001>
@@ -2432,7 +2547,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Protection from Evil and Good</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
@@ -2521,7 +2636,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -2535,7 +2650,7 @@
 				<name type="string">Persuasion</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">9</total>
+				<total type="number">10</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -2563,14 +2678,14 @@
 				<name type="string">Performance</name>
 				<prof type="number">3</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -2591,14 +2706,14 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -2612,7 +2727,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -2633,7 +2748,7 @@
 				<name type="string">Harmonica</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -2645,7 +2760,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00005>
 				<locked type="number">0</locked>
@@ -2686,7 +2801,7 @@
 			<id-00001>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2707,6 +2822,7 @@
 				<type type="number">1</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -2729,10 +2845,34 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00002>
+			<id-00003>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">charisma</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d12</dice>
+						<stat type="string">charisma</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing,silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Vicious Silver Coated Greataxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Heavy two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00005</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>

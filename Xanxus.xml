@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">7</level>
+				<level type="number">8</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1850</amount>
+				<amount type="number">2987</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -110,11 +110,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">123.7</load>
+			<load type="number">130.7</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">738</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">846</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -420,7 +420,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">52</total>
+			<total type="number">59</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Greater Good. My gifts are meant to be shared with all, not used for my own benefit. (Good)</ideals>
@@ -683,43 +683,6 @@
 				<type type="string">Tools</type>
 				<weight type="number">10</weight>
 			</id-00015>
-			<id-00016>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00016>
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -834,7 +797,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -992,6 +955,48 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00025>
+			<id-00026>
+				<carried type="number">1</carried>
+				<cost type="string">50 gp</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion Of Healing</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.5</weight>
+			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">3</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,510 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>While holding this shield you have a +1 bonus to AC determined by the shield's rarity.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.typeresistanceradiant@Incarnate-5eExpansion">Type Resistance (Radiant)</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have resistance to radiant damage while you wear this armor.</p>
+				</description>
+				<dexbonus type="string">-</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Slightly Magical Shield of Radiant Resistance</name>
+				<nonid_name type="string">Shield</nonid_name>
+				<nonidentified type="string">A well crafted shield.</nonidentified>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Shield</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">6</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1004,7 +1009,7 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Xanxus</name>
 		<notes type="string">when transformed he is a 71/2ft tall 290 pound wolfman</notes>
 		<perception type="number">15</perception>
@@ -1478,6 +1483,33 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Action</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1662,12 +1694,12 @@
 			<armor type="number">0</armor>
 			<base type="number">30</base>
 			<misc type="number">0</misc>
-			<temporary type="number">0</temporary>
-			<total type="number">30</total>
+			<temporary type="number">15</temporary>
+			<total type="number">45</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

@@ -4,7 +4,7 @@
 		<abilities>
 			<charisma>
 				<bonus type="number">4</bonus>
-				<save type="number">7</save>
+				<save type="number">8</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -60,7 +60,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">6</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">6</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
@@ -69,9 +69,11 @@
 				</shortcut>
 			</id-00001>
 			<id-00002>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">2</level>
+				<hdused type="number">0</hdused>
+				<level type="number">3</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -81,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">803</amount>
+				<amount type="number">1940</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -116,15 +118,16 @@
 				<total type="number">17</total>
 			</ac>
 		</defenses>
+		<deity type="string">Purple fog</deity>
 		<encumbrance>
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">146.65</load>
+			<load type="number">149.65</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">820</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">928</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -345,6 +348,48 @@
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Samurai</name>
+				<text type="formattedtext">
+					<p>The Samurai is a fighter who draws on an implacable fighting spirit to overcome enemies. A Samurai's resolve is nearly unbreakable, and the enemies in a Samurai's path have two choices: yield or die fighting.</p>
+					<linklist>
+						<link class="imagewindow" recordname="reference.imagedata.img_samurai_jpg@*"><b>Image: </b></link>Samurai</linklist>
+					<h>Features</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.bonusproficiency_samurai_3@*">Bonus Proficiency (Samurai)</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.fightingspirit3@*">Fighting Spirit</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.elegantcourtier7@*">Elegant Courtier</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.tirelessspirit10@*">Tireless Spirit</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.rapidstrike15@*">Rapid Strike</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.strengthbeforedeath18@*">Strength before Death</link>
+					</linklist>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Spirit</name>
+				<source type="string">Fighter</source>
+				<specialization type="string">Samurai</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.</p>
+					<p>You can use this feature three times, and you regain all expended uses of it when you finish a long rest.</p>
+				</text>
+			</id-00012>
+			<id-00013>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Bonus Proficiency (Samurai)</name>
+				<source type="string">Fighter</source>
+				<specialization type="string">Samurai</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you choose this archetype at 3rd level, you gain proficiency in one of the following skills of your choice: History, Insight, Performance, or Persuasion. Alternatively, you learn one language of your choice.</p>
+				</text>
+			</id-00013>
 			<id-00014>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -932,9 +977,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">8</temporary>
-			<total type="number">49</total>
-			<wounds type="number">1</wounds>
+			<temporary type="number">0</temporary>
+			<total type="number">56</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nothing should fetter the infinite possibility inherent in all existence.\nI'm going to prove that I'm worthy of a better life.</ideals>
 		<initiative>
@@ -942,6 +987,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
+		<inspiration type="number">0</inspiration>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
@@ -1122,27 +1168,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00009>
-			<id-00010>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>When you drink this potion, you gain resistance to lightning damage for 1 hour.</p>
-					<linklist>
-						<link class="power" recordname="spell.typeresistancelightning@Incarnate-5eExpansion">Type Resistance (Lightning)</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Lightning Resistance</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">This potion has a pulsing lightning beam making a continuous circle inside of the potion.</nonidentified>
-				<rarity type="string">uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00010>
 			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
@@ -1257,6 +1282,7 @@
 			<id-00019>
 				<carried type="number">1</carried>
 				<count type="number">5</count>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Minotuar Bone</name>
 				<weight type="number">1</weight>
@@ -1320,7 +1346,7 @@
 			<id-00024>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">45 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 slashing</damage>
@@ -1341,7 +1367,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -1446,7 +1472,7 @@
 			<id-00029>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1,150 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">2d6 slashing silver</damage>
@@ -1506,7 +1532,7 @@
 				<name type="string">Aquan</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">8</level>
+		<level type="number">9</level>
 		<name type="string">Sazh</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1545,7 +1571,7 @@
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
@@ -2141,14 +2167,6 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
-					<id-00002>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Branding Smite (C)</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 bonus action</castingtime>
@@ -2231,12 +2249,40 @@
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
 				<group type="string">Race/Class/Items</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Fighter</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">5</bonus>
+								<dice type="dice"></dice>
+							</id-00001>
+						</heallist>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.</p>
+					<p>You can use this feature three times, and you regain all expended uses of it when you finish a long rest.</p>
+				</description>
+				<group type="string">Race/Class/Items</group>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Spirit</name>
+				<prepared type="number">3</prepared>
+				<source type="string">Fighter</source>
+				<specialization type="string">Samurai</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00022>
 			<id-00027>
 				<actions>
 					<id-00001>
@@ -2395,7 +2441,7 @@
 				<prepared type="number">0</prepared>
 			</id-00031>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Leatherworker's Tools</name>
@@ -2433,14 +2479,14 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">7</total>
+				<total type="number">8</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -2510,14 +2556,14 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">7</total>
+				<total type="number">8</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">7</total>
+				<total type="number">8</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -2536,9 +2582,9 @@
 			<id-00017>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">1</total>
+				<total type="number">5</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -2559,7 +2605,7 @@
 						<link class="encounter" recordname="encounter.id-00014@Incarnate-5eExpansion">Rules for Using Leatherworker's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -2571,7 +2617,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00002>
 				<locked type="number">0</locked>
@@ -2643,7 +2689,7 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2688,7 +2734,7 @@
 			<id-00003>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">0</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2711,7 +2757,7 @@
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">0</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2766,6 +2812,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Silver Coated Greatsword of Swarm Slaying</name>
 				<prof type="number">1</prof>
 				<properties type="string">Heavy two-handed</properties>
@@ -2778,7 +2825,7 @@
 			<id-00007>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
