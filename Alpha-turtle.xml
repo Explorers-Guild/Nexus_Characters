@@ -58,6 +58,8 @@
 		<bonds type="string">I can never linger anywhere for too long, or my secret will catch up to me.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">3</level>
@@ -70,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">159</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -82,11 +84,11 @@
 				<name type="string">EP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">0</amount>
+				<amount type="number">35</amount>
 				<name type="string">SP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">36</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -111,9 +113,11 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">93.1</load>
+			<load type="number">103.1</load>
 			<max type="number">255</max>
 		</encumbrance>
+		<exp type="number">393</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -259,9 +263,11 @@
 		<gender type="string">Male</gender>
 		<height type="string">6 feet</height>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">32</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">13</wounds>
 		</hp>
 		<ideals type="string">I look at the ceiling every time I enter a room, even if I was just there five seconds ago.</ideals>
 		<initiative>
@@ -269,6 +275,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">1</total>
 		</initiative>
+		<inspiration type="number">1</inspiration>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
@@ -401,7 +408,7 @@
 			<id-00008>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">5</count>
 				<damage type="string">1d6 piercing</damage>
@@ -537,13 +544,72 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00016>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<count type="number">1</count>
+				<damage type="string">1d6 slashing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Claws</name>
+				<properties type="string">finesse</properties>
+				<rarity type="string">common</rarity>
+				<subtype type="string">Racial</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0</weight>
+			</id-00018>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1,200 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 bludgeoning</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>Mithral weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.giantslayer@Incarnate-5eExpansion">Gaint Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;giant&#34; refers to any creature with the giant type, including ettins and trolls.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Mithral Greatclub of Giant Slaying</name>
+				<nonid_name type="string">Greatclub</nonid_name>
+				<nonidentified type="string">A sturdy greatclub.</nonidentified>
+				<properties type="string">Two-handed</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">10</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Pound of Snake Meet</name>
+				<weight type="number">1</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Elvish</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Aquan </name>
+				<name type="string">Aquan</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Common</name>
@@ -554,7 +620,7 @@
 		<notes type="string">I am more accustomed to life on the road or underground than in a settlement or my actual &#34;home&#34;.</notes>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I am the sword of virtue for those in need! </personalitytraits>
+		<personalitytraits type="string">I am the sword of virtue for those in need!</personalitytraits>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -564,60 +630,78 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -648,7 +732,7 @@
 						<atkbase type="string">ability</atkbase>
 						<atkmod type="number">0</atkmod>
 						<atkprof type="number">1</atkprof>
-						<atkstat type="string">dexterity</atkstat>
+						<atkstat type="string">strength</atkstat>
 						<atktype type="string">melee</atktype>
 						<order type="number">3</order>
 						<savedcmod type="number">0</savedcmod>
@@ -760,6 +844,7 @@
 				<description type="formattedtext">
 					<p>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Claws</name>
 				<prepared type="number">0</prepared>
@@ -922,7 +1007,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1016,7 +1101,7 @@
 			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1038,7 +1123,7 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1058,6 +1143,71 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00004>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Claws</name>
+				<prof type="number">1</prof>
+				<properties type="string">finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
+			<id-00009>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Claws Raging</name>
+				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00009>
+			<id-00011>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Mithral Greatclub of Giant Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00011>
 		</weaponlist>
 		<weight type="string">480</weight>
 	</character>
