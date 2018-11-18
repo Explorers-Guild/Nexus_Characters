@@ -5,31 +5,43 @@
 			<charisma>
 				<bonus type="number">0</bonus>
 				<save type="number">2</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">11</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
 				<save type="number">2</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">14</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
 				<save type="number">2</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">15</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">2</bonus>
 				<save type="number">4</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">-1</bonus>
 				<save type="number">-1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">9</score>
 			</strength>
 			<wisdom>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">10</score>
 			</wisdom>
 		</abilities>
@@ -47,17 +59,17 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Runecrafter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>class.id-00001@Incarnate-5eExpansion</recordname>
+					<recordname>class.prorunecrafter@Incarnate-5eExpansion</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">594</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -65,7 +77,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">83</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -73,7 +85,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">89</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -81,7 +93,11 @@
 		</coins>
 		<defenses>
 			<ac>
+				<armor type="number">0</armor>
+				<misc type="number">0</misc>
 				<prof type="number">1</prof>
+				<shield type="number">0</shield>
+				<temporary type="number">0</temporary>
 				<total type="number">12</total>
 			</ac>
 		</defenses>
@@ -89,9 +105,11 @@
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">14.1</load>
+			<load type="number">56.79</load>
 			<max type="number">135</max>
 		</encumbrance>
+		<exp type="number">381</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -120,39 +138,19 @@
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Spellcasting</name>
+				<name type="string">Runecrafter Starting Items</name>
 				<source type="string">Runecrafter</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p><b>Interference</b></p>
-					<p>Magical runes are filled with your very essence of magic. Whenever they are in contact with you (such as being on armor you are wearing, a weapon you are wielding, or a stone you are standing on) they become inactive. In such a state they are very fragile, and any damage will destroy the rune. As soon as you are no longer in contact with the runed item (such as taking off the armor, passing or throwing the weapon, or stepping off the stone) then the rune reactivates and resumes behaving as normal. No time is subracted from the life of a rune while it is in an inactive state.</p>
-					<p>An instantaneous rune is more delicate than other runes. If an instantaneous rune is inactive for more than 1 minute, then it fades from existence.</p>
-					<p><b>Non-stacking</b></p>
-					<p>If a rune is placed on an creature/object then no other runes may also be placed on that creature/object. Unless a rune says otherwise, its area of effect is a single continuous piece of material of less than 250 pounds. This may be a door made of a single piece of wood, a stone set in the floor, the blade of a sword, or even a piece of leather wrapped around the hilt of a sword.</p>
-					<p><b>Augmentation</b></p>
-					<p>Some runes are augmentation runes. Such runes are clearly labled in their description. One augmentation rune can be applied to a normal rune. The augmentation can make the lines of the rune turn invisible, make the rune only work for a specific individual or their descendants, or a number of other things. If the base rune is dispelled or otherwise destroyed then the augmentation goes as well. No normal means can dispel the augmentation without dispelling the main rune.</p>
-					<p><b>Hacking</b></p>
-					<p>Some augmentation runes lock a main rune to only work for specific individuals or in specific circumstances. A hacking rune is designed to overcome such an augmentation by carefully dispelling just the augmentation, or tricking the autmentation into believing the condition is met. Many Runecrafters view &#34;Hacking&#34; runes as an abomination and will work together to hunt down anyone who learns such skills.</p>
-					<p>(&#34;Hacking&#34; runes are limited to the &#34;Hacking&#34; archtype, but are fundamental to the world of runes so they are mentioned here.)</p>
-					<p><b>Cantrips</b></p>
-					<p>At 1st level, you know three cantrips of your choice from the Runecrafter spell list. You learn additional Runecrafter cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Runecrafter table.</p>
+					<p><b>Click the shield below to open your choices for Runecrafter starting items.</b></p>
 					<linklist>
-						<link class="encounter" recordname="encounter.id-00072@Incarnate-5eExpansion">The Runecrafter</link>
+						<link class="" recordname="@Incarnate-5eExpansion"></link>
 					</linklist>
-					<p><b>Runebook</b></p>
-					<p>At 1st level, you have a runebook containing eight 1st-level Runecrafter spells of your choice. Your spellbook is the repository of the Runecrafter spells you know, except your cantrips, which are fixed in your mind.</p>
-					<p><b>Preparing and Casting Spells</b></p>
-					<p>The Runecrafter table shows how many spell slots you have to cast your runes for 1st level and higher. To cast one of these spells, you must expend a slot of the rune's level or higher. You regain all expended spell slots when you finish a long rest.</p>
-					<p>You prepare the list of Runecrafter spells that are available for you to cast. To do so, choose a number of Runecrafter spells from your runebook equal to your Intelligence modifier + half your Runecrafter level (minimum of one spell). The runes must be of a level for which you have spell slots.</p>
-					<p>For example, if you're a 3rd-level Runecrafter, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared runes can include four runes of 1st or 2nd level, in any combination, chosen from your runebook. If you prepare the 1st-level rune <i>reinforce </i>, you can cast it using 1st-level or a 2nd-level slot. casting the spell doesn't remove it from your list of prepared runes.You can change your list of prepared runes when you finish a long rest. Preparing a new list of Runecrafter runes requires time spent studying your runebook and memorizing the incantations and strokes you must make to cast the spell: at least 1 minute per rune level for each spell on your list.</p>
-					<p><b>Spellcasting Ability</b></p>
-					<p>Intelligence is your spellcasting ability for Runecrafter spells, since you learn your runes through dedicated study and memorization. You use your Intelligence whenever a rune refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
-					<p><b>Rune save DC </b>= 8 + your proficiency bonus + your Intelligence modifier</p>
-					<p><b>Rune attack modifier </b>= your proficiency bonus + your Intelligence modifier</p>
-					<p><b>Spellcasting Focus</b></p>
-					<p>You can use any writing implement as a runecrafting focus for your Runecrafter runes.</p>
-					<p><b>Learning Spells of 1st Level and Higher</b></p>
-					<p>Each time you gain a Runecrafter level, you can add three Runecrafter runes of your choice to your runebook for free. Each of these runes must be of a level for which you have spell slots as shown on the Runecrafter table. On your adventures, you might find other runes that you can add to your runebook (see the &#34;Runebook&#34; section at the end).</p>
+					<h>Description</h>
+					<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+					<p>(A) an atok or (B) a dagger and pen</p>
+					<p>(A) a scholar's pack or (B) a diplomat's pack</p>
+					<p>A runebook</p>
 				</text>
 			</id-00003>
 			<id-00004>
@@ -163,10 +161,240 @@
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<p><b>Inscription Casting</b></p>
-					<p>You can cast a Runecrafter spell as a ritual if that spell has a ritual tag and you have the spell in your spellbook. A Runecrafter's ritual casting involves carfully using magical ink to inscribe the rune on the surface. This process costs 25 GP per level of the spell in magical ink and takes 30 minutes per level of the spell (instead of the normal 20 minutes longer than the normal casting time).</p>
+					<p>You can cast a Runecrafter spell as a ritual if that spell has a ritual tag and you have the spell in your spellbook. A Runecrafter's ritual casting involves carefully using magical ink to inscribe the rune on the surface. This process costs 25 GP per level of the spell in magical ink and takes 30 minutes per level of the spell (instead of the normal 20 minutes longer than the normal casting time).</p>
 				</text>
 			</id-00004>
 			<id-00005>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Runecrafter Spell Level Table</name>
+				<source type="string">Runecrafter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<table>
+						<tr>
+							<td>Runecrafter Level</td>
+							<td>Maximum Rune Level</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td colspan="2">NPC Only Levels</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>28</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>29</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>31</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>32</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>33</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>34</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>35</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>36</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>37</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>38</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>39</td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td>40</td>
+							<td>17</td>
+						</tr>
+					</table>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Spellcasting</name>
+				<source type="string">Runecrafter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p><b>Augmentation</b></p>
+					<p>Some runes are augmentation runes. Such runes are clearly labeled in their description. One augmentation rune can be applied to a normal rune. The augmentation can make the lines of the rune turn invisible, make the rune only work for a specific individual or their descendants, or a number of other things. If the base rune is dispelled or otherwise destroyed then the augmentation goes as well. No normal means can dispel the augmentation without dispelling the main rune.</p>
+					<p><b>Concentration</b></p>
+					<p>Inscribing a rune takes your concentration. You expend your spell slot at the beginning of the inscription. The inscription fails with no effect if either you loose concentration or you pause from your task.</p>
+					<p><b>Cooperation</b></p>
+					<p>Unlike other spellcasters, Runecrafters may work together to make a rune stronger than they can do by themselves. All Runecrafters involved must know the rune and expend a spell level strong enough to inscribe the rune. The resulting rune will have a duration equal to the sum of the durations for the spell levels used. It also becomes significantly more difficult to dispel than a rune made by a single caster. Specifically, all spell levels are individually recorded for that rune (such as 1+2+5).</p>
+					<p>They are individually recorded because only spell slots greater than those used can be used to dispel the combined rune without a check. For example, using the Dispel Rune rune, a level 3 and a level 5 cooperatively cast would dispel the 1+2+5. However, two level 4s cooperatively cast would not be guaranteed to dispel the rune as a level 4 is not guaranteed to dispel a level 5. Similarly, a level 8 Dispel Magic would be capable of dispelling the 1+2+5 without a check.</p>
+					<p>The GM may choose to increase the effected range, or other attributes of a combined rune at her discretion.</p>
+					<p>Some may have already realized that getting 31 Runecrafters to cast a level 1 rune together would result in a rune that other spellcasters cannot dispel (as it would have a DC 31 and the maximum ability check is 30 by 5e definitions). Although this is true, getting such a large number of Runecrafters to work together is very difficult. GMs may choose to place such runes in the world. When players find one, they are cautioned to investigate why Runecrafters banded together to make such a powerful rune before figuring a way out to bypass such a rune.</p>
+					<p><b>Hacking</b></p>
+					<p>Some augmentation runes lock a main rune to only work for specific individuals or in specific circumstances. A hacking rune is designed to overcome such an augmentation by carefully dispelling just the augmentation, or tricking the augmentation into believing the condition is met. Many Runecrafters view &#34;Hacking&#34; runes as an abomination and will work together to hunt down anyone who learns such skills.</p>
+					<p>(&#34;Hacking&#34; runes are limited to the &#34;Hacking&#34; archetype, but are fundamental to the world of runes so they are mentioned here.)</p>
+					<p><b>Interference</b></p>
+					<p>Magical runes are filled with your very essence of magic. Whenever they are in contact with you (such as being on armor you are wearing, a weapon you are wielding, or a stone you are standing on) they become inactive. In such a state they are very fragile, and any damage will destroy the rune. As soon as you are no longer in contact with the runed item (such as taking off the armor, passing or throwing the weapon, or stepping off the stone) then the rune reactivates and resumes behaving as normal. The duration of the rune continues to decrease even while inactive.</p>
+					<p><b>Mental Presence</b></p>
+					<p>A few runes have the &#34;Mental Presence&#34; attribute. These runes provide continuous feedback to the Runecrafter. Due to the strain on their mind of such a connection, only one such rune may exist at a time. Creating a second Mental Presence rune will cause the previous one to dissipate.</p>
+					<p><b>Non-stacking</b></p>
+					<p>If a rune is placed on an creature/object then no other runes may also be placed on that creature/object. Unless a rune says otherwise, its area of effect is a single continuous piece of material of less than 250 pounds. This may be a door made of a single piece of wood, a stone set in the floor, the blade of a sword, or even a piece of leather wrapped around the hilt of a sword.</p>
+					<p><b>Cantrips</b></p>
+					<p>At 1st level, you know three cantrips of your choice from the Runecrafter spell list. You learn additional Runecrafter cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Runecrafter table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00072@Incarnate-5eExpansion">The Runecrafter</link>
+					</linklist>
+					<p><b>Runebook</b></p>
+					<p>At 1st level, you have a runebook containing eight 1st-level Runecrafter spells of your choice. Your spellbook is the repository of the Runecrafter spells you know, except your cantrips, which are fixed in your mind.</p>
+					<p><b>Preparing and Casting Spells</b></p>
+					<p>The Runecrafter table shows how many spell slots you have to cast your runes for 1st level and higher. To cast one of these spells, you must expend a slot of the rune's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+					<p>You prepare the list of Runecrafter spells that are available for you to cast. To do so, choose a number of Runecrafter spells from your runebook equal to your Intelligence modifier + half your Runecrafter level (minimum of one spell). The runes must be of a level allowed by the following table:</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.id-00001.features.id-00010@Incarnate-5eExpansion">Runecrafter Spell Level Table</link>
+					</linklist>
+					<p>For example, if you're a 3rd-level Runecrafter, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared runes can include four runes of 1st or 2nd level, in any combination, chosen from your runebook. If you prepare the 1st-level rune <i>reinforce </i>, you can cast it using 1st-level or a 2nd-level slot. casting the spell doesn't remove it from your list of prepared runes.You can change your list of prepared runes when you finish a long rest. Preparing a new list of Runecrafter runes requires time spent studying your runebook and memorizing the incantations and strokes you must make to cast the spell: at least 1 minute per rune level for each spell on your list.</p>
+					<p><b>Runecrafting Ability</b></p>
+					<p>Intelligence is your Runecrafting ability for Runecrafter spells, since you learn your runes through dedicated study and memorization. You use your Intelligence whenever a rune refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+					<p><b>Rune save DC </b>= 8 + your proficiency bonus + your Intelligence modifier</p>
+					<p><b>Rune attack modifier </b>= your proficiency bonus + your Intelligence modifier</p>
+					<p><b>Runecrafting Focus</b></p>
+					<p>You can use any writing implement as a Runecrafting focus for your Runecrafter runes.</p>
+					<p><b>Learning Spells of 1st Level and Higher</b></p>
+					<p>Each time you gain a Runecrafter level, you can add three Runecrafter runes of your choice to your runebook for free. Each of these runes must be of a level which you are allowed to cast according to the Runecrafter Spell Level Table. On your adventures, you might find other runes that you can add to your runebook (see the &#34;Runebook&#34; section at the end).</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.id-00001.features.id-00010@Incarnate-5eExpansion">Runecrafter Spell Level Table</link>
+					</linklist>
+				</text>
+			</id-00006>
+			<id-00007>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Runebook</name>
@@ -174,28 +402,51 @@
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<p>As a student of runes, you have a runebook containing runes that you have discovered so far.</p>
-					<p><b>General</b></p>
+					<h>General</h>
 					<p>The runes that you add to your runebook as you gain levels reflect the runic research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other runes during your adventures. You could discover a rune recorded on a scroll in an evil Runecrafter's lair, or even some runes they left behind on the walls and had long enough durations to survive until you found them.</p>
-					<p><b>Copying a Rune into your RuneBook.</b></p>
-					<p>When you find a rune of a spell level of 1st level or higher, you can add it to your runebook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it. This requires that you be able to clearly see and study the rune (which requires touch). As the design of runes become more complex when cast at a higher spell level, you must be able to prepare spells of the level it was cast at, not at the base level of the rune.</p>
+					<h>Copying a Rune into your RuneBook</h>
+					<p>When you find a rune of a spell level of 1st level or higher, you can add it to your runebook if it is of a spell level you can prepare (according to the Runecrafter Spell Level Table) and if you can spare the time to decipher and copy it. This requires that you be able to clearly see and study the rune (which requires touch). As the design of runes become more complex when cast at a higher spell level, you must be able to prepare (according to the Runecrafter Spell Level Table) runes of the level it was cast at, not at the base level of the rune.</p>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.id-00001.features.id-00010@Incarnate-5eExpansion">Runecrafter Spell Level Table</link>
+					</linklist>
 					<p>Copying that rune into your runebook involves reproducing the basic form of the rune, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the rune until you understand the strokes required, then transcribe it into your runebook using your own notation.</p>
 					<p>For each level of the spell (at its lowest possible level), the process takes 2 hours and costs 50 GP. The cost represents expensive inks you used in your practice. Once you have spent the time and money, you can prepare the spell just like your other spells.</p>
-					<p><b>Replacing the Book.</b></p>
-					<p>You can copy a rune from your own runebook into another book - for example, if you want to make a backup copy of your runebook. This is just like copying a new rune into your runebook, but faster and easier, since you understand your own notation and already know how to enscribe the rune. You need spend only 1 hour and 10 GP for each level of the copied rune.</p>
+					<h>Replacing the Book</h>
+					<p>You can copy a rune from your own runebook into another book - for example, if you want to make a backup copy of your runebook. This is just like copying a new rune into your runebook, but faster and easier, since you understand your own notation and already know how to inscribe the rune. You need spend only 1 hour and 10 GP for each level of the copied rune.</p>
 					<p>If you loose your runebook, you can use the same procedure to transcribe the runes that you have prepared into a new runebook. Filling out the remainder of your runebook requires you to find new runes to do so, as normal. For this reason, many Runecrafters keep backup runebooks in a safe place.</p>
-					<p><b>The Book's Appearance.</b></p>
+					<h>The Book's Appearance</h>
 					<p>Your runebook is a unique compilation of runes, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous runebook in a mishap.</p>
 				</text>
-			</id-00005>
+			</id-00007>
+			<id-00008>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Spectral Shield</name>
+				<source type="string">Runecrafter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<p></p>
+					<h>Description</h>
+					<p>As a reaction to an ally being targeted, you may point at them allowing some of your energy to course out of you and into them. For the next minute, while you concentrate on this, their AC increases by 2 and your AC decreases by 2.</p>
+					<p>You may only use Spectral Shield once per short rest.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">I am loyal to my king and will follow orders from him almost blindly.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">4'3&#34;</height>
 		<hp>
-			<total type="number">8</total>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">1</deathsavesuccess>
+			<temporary type="number">0</temporary>
+			<total type="number">20</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Quality - Everything I make and do must be the best I can do. (Lawful)</ideals>
 		<initiative>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
 		<inventorylist>
@@ -274,68 +525,1551 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00011@Incarnate-Syrinscape"><b>Syrinscape : Staff</b></link>
+					</linklist>
+					<h>Description</h>
+					<p>An Atok is a specilized quarterstaff which has a pen built into it. Runecrafter's specilize in using this unique weapon to give them just a tiny bit of reach to either bomp people over the head or quickly write a rune onto their weapon or armor. To any but a Runecrafter, it is just an oddly balanced quarterstaff with one end that is easier to break than normal.</p>
+					<p>(Proficiency with an Atok allows for writing runes on things 10 feet away.)</p>
+					<linklist>
+						<link class="reference_class" recordname="class.prorunecrafter@Incarnate-5eExpansion">Runecrafter</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Atok</name>
+				<nonid_name type="string">Atok</nonid_name>
+				<nonidentified type="string">A sturdy quarterstaff with an odd pen like nub on one end and a strange hollow cavity.</nonidentified>
+				<properties type="string">Versatile (1d8)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00005>
+			<id-00006>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">50 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Runebook</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00006>
+			<id-00007>
+				<carried type="number">1</carried>
+				<cost type="string">2 SP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Paper (One Sheet)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00007>
+			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">50 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A vial of sweat smelling liquid.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Perfume (Vial)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00008>
+			<id-00009>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Lamp</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00009>
+			<id-00010>
+				<carried type="number">1</carried>
+				<cost type="string">15 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Fine</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">6</weight>
+			</id-00010>
+			<id-00011>
+				<carried type="number">1</carried>
+				<cost type="string">2 CP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Soap</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnNjcm9sbC1jYXNlLW9wZW4/play/"><b>Syrinscape : Open scrollcase - Wizard Spells E</b></link>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnNjcm9sbC1jYXNlLWNsb3Nl/play/"><b>Syrinscape : Close scrollcase - Wizard Spells E</b></link>
+					</linklist>
+					<h>Description</h>
+					<p>This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Case, Map Or Scroll</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00012>
+			<id-00013>
+				<carried type="number">1</carried>
+				<cost type="string">2 CP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink Pen</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00013>
+			<id-00014>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Chest</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">25</weight>
+			</id-00014>
+			<id-00015>
+				<carried type="number">1</carried>
+				<cost type="string">1 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Oil (Flask)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00015>
+			<id-00016>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Sealing Wax</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.03</weight>
+			</id-00016>
+			<id-00017>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink (1-ounce Bottle)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.06</weight>
+			</id-00017>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Dwarvish</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">1</level>
+		<level type="number">3</level>
 		<name type="string">Yilon son of Dofto of clan Dankil</name>
-		<notes type="string">Average Skill: Smithing</notes>
+		<notes type="string">Average Skill: Smithing\nNote: </notes>
 		<perception type="number">10</perception>
+		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">You enjoy working for those who ask you nicely but to those who think they can order you to do something they have another thing coming! The stronger the command the deeper you dig your heals in.\nYou are a calm person normally, but if someone threatens your friends or family they will encounter a passionate fury that outshines the sun.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 				<prepared type="number">3</prepared>
+				<saveprof type="number">1</saveprof>
 				<stat type="string">intelligence</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Passive</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Runecrafter</name>
+			</id-00003>
+			<id-00004>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Bronzebeard</name>
+				<saveprof type="number">1</saveprof>
+				<stat type="string">intelligence</stat>
+			</id-00004>
+			<id-00006>
+				<name type="string">Base</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
+				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
+				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">preparation</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Spectral Shield; AC: -2</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Spectral Shield; AC: 2</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<p></p>
+					<h>Description</h>
+					<p>As a reaction to an ally being targeted, you may point at them allowing some of your energy to course out of you and into them. For the next minute, while you concentrate on this, their AC increases by 2 and your AC decreases by 2.</p>
+					<p>You may only use Spectral Shield once per short rest.</p>
+				</description>
+				<group type="string">Runecrafter</group>
+				<locked type="number">1</locked>
+				<name type="string">Spectral Shield</name>
+				<prepared type="number">1</prepared>
+				<source type="string">Runecrafter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: poison</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Poison)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">NOTE: Enlarged; ADVCHK: strength; ADVSAV: strength; DMG: 1d4; (C)</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of powdered iron)</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmVubGFyZ2UtcGVyc29u/play/"><b>Syrinscape </b></link>: Enlarge - Wizard Spells E</linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnJlZHVjZS1wZXJzb24tYQ/play/"><b>Syrinscape </b></link>: Reduce - Wizard Spells E
+					<h>Description</h>
+					<p>You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect. If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.</p>
+					<p><b>Enlarge </b>. The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category- from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attacks with them deal 1d4 extra damage.</p>
+					<p><b>Reduce </b>. The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category-from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Bronzebeard</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Enlarge/Reduce</name>
+				<prepared type="number">1</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Stoneskin; RESIST: bludgeoning, piercing, slashing, !magic; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">1</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (diamond dust worth 100 GP, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Bronzebeard</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Stoneskin</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
+				<usesperiod type="string">once</usesperiod>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Arctic Slow; NOTE: Speed reduced by 20</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 hour</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You draw a 20 foot radius rune. As long as you are not on top of the rune, any creature who enters it is slowed by 20 feet per turn.</p>
+					<p>This rune's duration increases when you reach 5th level (1 week), 11th level (1 month), and 17th level (1 year).</p>
+				</description>
+				<duration type="string">1 day</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Arctic Slow</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Runecrafter</source>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Invigorating Time; NOTE: gains temporary hit points at start of each hour</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You place a rune on a creature's armor. At the start of each hour, that creature receives temporary hit points equal to your Runecrafting modifier.</p>
+					<p>This rune's healing increases by 1d4 when you reach 5th level (1d4 + RM), 11th level (2d4 + RM), and 17th level (3d4 + RM).</p>
+				</description>
+				<duration type="string">1 day</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Invigorating Time</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Runecrafter</source>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">cold</type>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00002>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Ice Bomb; DISSAV: dexterity; NOTE: move speed 0</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>A slight hint of ice on a tile cautions to watch your step. Unfortunately if it is an Ice Bomb rune instead of an icy spot the result is a spike of ice shooting straight through your foot. The good news is you won't slip, the bad news is you are now in great pain and about to be ambushed.</p>
+					<p>You may place a rune on the ground. The first creature who stand on that rune triggers it. They must make a Dexterity saving throw taking 1d6 piercing and 1d6 cold damage on a fail and half as much on a success. If they fail then their foot is stuck in place (disadvantage to Dexterity saving throws and movement speed of 0) until it melts (1 minute) or is broken (Strength check).</p>
+					<p><b>At Higher Levels </b>: When you cast this rune using a spell slot of 2nd level or higher, the rune duration and cold damage increase to the appropriate values in the table below.</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Rune Duration</td>
+							<td>Cold Damage</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>3 hours</td>
+							<td>2d6</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>6 hours</td>
+							<td>4d6</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>12 hours</td>
+							<td>6d6</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>1 day</td>
+							<td>8d6</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>3 days</td>
+							<td>12d6</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>1 week</td>
+							<td>16d6</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>2 weeks</td>
+							<td>20d6</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>1 month</td>
+							<td>26d6</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>3 months</td>
+							<td>34d6</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>6 months</td>
+							<td>42d6</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>1 year</td>
+							<td>52d6</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>2 years</td>
+							<td>62d6</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>5 years</td>
+							<td>72d6</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>10 years</td>
+							<td>84d6</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>25 years</td>
+							<td>96d6</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>50 years</td>
+							<td>110d6</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>100 years</td>
+							<td>130d6</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Ice Bomb</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Rune Blade, Runecrafter</source>
+			</id-00007>
+			<id-00008>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a writing implement)</components>
+				<description type="formattedtext">
+					<p>You place a rune on an object that intimately connects it to its surroundings increasing its Threshold damage (a value that if damage from a single source is below then there is no effect) by 5. If the object moves more than 30 feet this connection is broken and the spell dissipates.</p>
+					<p><b>At Higher Levels </b>: When you cast this rune using a spell slot of 2nd level or higher then the Threshold damage and duration increases by the table below:</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Threshold damage</td>
+							<td>Duration</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>10</td>
+							<td>1 week</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>20</td>
+							<td>2 weeks</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>30</td>
+							<td>1 month</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>40</td>
+							<td>3 months</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>50</td>
+							<td>6 months</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>60</td>
+							<td>1 year</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>80</td>
+							<td>5 years</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>100</td>
+							<td>10 years</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>120</td>
+							<td>25 years</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>140</td>
+							<td>50 years</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>160</td>
+							<td>100 years</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>180</td>
+							<td>250 years</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>200</td>
+							<td>500 years</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>250</td>
+							<td>1,000 years</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>500</td>
+							<td>2,500 years</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>1000</td>
+							<td>5,000 years</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>2000</td>
+							<td>10,000 years</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 day</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Reinforce</name>
+				<prepared type="number">0</prepared>
+				<range type="string">5 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Runecrafter</source>
+			</id-00008>
+			<id-00009>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>During the reign of King Ferdinand rumors swept the palace faster than at any other time in history. It took him months to track down the culprit, a young boy who had found his way into the hidden passages in the walls and learned to be un-naturally quiet. The penalty for spying on members of the royal family was normally public execution, but Ferdinand could not bear to issue such a penalty against an 8 year old child. At the same time he could not allow such a child to continue to spy on secret counsels. He tasked his resident Runecrafter to make sure that the child's presence was always known. The result was a rune tattooed onto the child that made his footsteps echo loudly.</p>
+					<p>You may place a rune on a target creature. For the duration, their footsteps echo louder than an angry storm giant (stealth checks are impossible while walking, running, or traversing by any manner by use of feet including but not limited to skipping, jumping, and hopping).</p>
+					<p><b>At Higher Levels </b>: when you cast this rune with a spell slot of 2nd level or higher its duration increases according to the table below.</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Duration</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>3 days</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>1 week</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>2 weeks</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>1 month</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>3 months</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>6 months</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>1 year</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>2 years</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>5 years</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>10 years</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>25 years</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>50 years</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>100 years</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>250 years</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>500 years</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>1,000 years</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>2,500 years</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 day</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Thunder Strut</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Runecrafter</source>
+			</id-00009>
+			<id-00010>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>When mining, there are sometimes pesky boulders in the way. They don't have any good ore in them, so they are just a waste of space and time to deal with. Simply draw a rune on them to create a hole going back into the wall.</p>
+					<p>The hole is 10 feet in diameter and 5 feet deep. It has a portal at both the entrance and the exit, with a smooth walls (DC 15 Athletics to climb) in between. If you dig around the side, you can still dig through the space in between the two portals, because the passage way created goes through the Plane of Rock. On the rare occasion that there is an intersection in the paths on the Plane of Rock, you can use it as a portal between worlds.</p>
+					<p>When Hole in the Wall ends (by dispellment or timing out), creatures are forced out of the tunnel to the nearest opening. The push is quite violent so they take 1d6 bludgeoning per 10 feet they are moved.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the duration and depth increase by the table below:</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Duration</td>
+							<td>Depth</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>1 week</td>
+							<td>10 feet</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>2 weeks</td>
+							<td>15 feet</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>1 month</td>
+							<td>20 feet</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>2 months</td>
+							<td>30 feet</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>4 months</td>
+							<td>40 feet</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>6 months</td>
+							<td>50 feet</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>1 year</td>
+							<td>60 feet</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>2 years</td>
+							<td>70 feet</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>5 years</td>
+							<td>80 feet</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>10 years</td>
+							<td>100 feet</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>25 years</td>
+							<td>120 feet</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>50 years</td>
+							<td>140 feet</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>100 years</td>
+							<td>160 feet</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>250 years</td>
+							<td>180 feet</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>500 years</td>
+							<td>200 feet</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>1,000 years</td>
+							<td>250 feet</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>2,000 years</td>
+							<td>500 feet</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 day</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Hole in the Wall</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Runecrafter</source>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Painting Strike - Target; GRANTADVATK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Painting Strike - Embarrassment; DISCHK: wisdom</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<label type="string">Painting Strike - Camouflage; ADVSKILL: stealth</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">4</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>An artist is always ready to take on a challenge. What could be more difficult than painting an unwilling target during combat? With a little bit of magic it just becomes possible. Imagine the well groomed antilinoid suddenly made up in clown paint? Can you see an Ishilb with a bullseye in the middle of its shell? Did the ambush at the banquet leave your rogue in brightly colored dance attire? A couple quick strokes and those red hues will fade to dull blacks to let her slink back into the shadows.</p>
+					<p>The effect of this rune is dependent on the goal:</p>
+					<p><b>Targeting </b>- placing a bullseye over a target's weak point gives anyone targeting them advantage.</p>
+					<p><b>Embarrassment </b>- a creative and hideous paint job results in such a distraction that they have disadvantage on Wisdom checks (GMs discretion on if your described paint job would really lead to that npc being embarrassed enough to be distracted).</p>
+					<p><b>Camouflage </b>- painting a creature and their clothing to match the environment gives them advantage on Stealth checks. (Don't worry, the magical rune and all colors fade when the rune ends so you won't ruin anyone's clothing)</p>
+					<p><b>At Higher Levels </b>: When you cast this rune using a spell slot of 2nd level or higher, the duration increases to the appropriate value in the table below.</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Duration</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>1 minute</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>10 minutes</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>1 hour</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>3 hours</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>6 hours</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>12 hours</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>1 day</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>3 days</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>1 week</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>2 weeks</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>1 month</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>3 months</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>6 months</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>1 year</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>2 years</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>5 years</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>10 years</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Painting Strike</name>
+				<prepared type="number">1</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Transformation</school>
+				<source type="string">Runecrafter</source>
+			</id-00011>
+			<id-00012>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">S, M (a piece of ammunition)</components>
+				<description type="formattedtext">
+					<p>You may apply a rune to a piece of ammunition. The top of the rune is sticky. If it touches any creature it will transfer to that creature upside down (hence no longer being sticky).</p>
+					<p>This Mental Presence rune continuously feeds you the direction and distance it is from you.</p>
+					<p><b>At Higher Levels </b>: When you cast this rune using a spell slot of 2nd level or higher, the duration increases according to the table below.</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Duration</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>2 hours</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>6 hours</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>12 hours</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>1 day</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>2 days</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>4 days</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>1 week</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>2 weeks</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>1 month</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>2 months</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>6 months</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>1 year</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>2 years</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>5 years</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>10 years</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>25 years</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>50 years</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Tracer Rune</name>
+				<prepared type="number">1</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Runecrafter</source>
+			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Emergency Resuscitator; NOTE: gets healed when reduced to 0 hp</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4</dice>
+								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
+							</id-00002>
+						</heallist>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 hour</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You may place a rune on a creature. When that creature is reduced to 0 hit points but not instantly killed, this rune triggers pouring its energy into that creature allowing it to regain 1d4 + your Runecrafting Modifier in HP. This takes the full energy of the rune, resulting in it being dispelled.</p>
+					<p><b>At Higher Levels </b>: When you cast this rune using a spell slot of 3rd level or higher, the healing power increases by 1d4 for each spell slot above 2nd. The duration also increases according to the table below.</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Duration</td>
+							<td>Healing</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>2 hours</td>
+							<td>2d4 + RM</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>3 hours</td>
+							<td>3d4 + RM</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>4 hours</td>
+							<td>4d4 + RM</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>5 hours</td>
+							<td>5d4 + RM</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Emergency Resuscitator</name>
+				<prepared type="number">1</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Runecrafter</source>
+			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Couch Potato Casting; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 hour</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You place an extremely elaborate rune on a writing implement which allows it to fly and move at your direction within 30 feet of you. While the rune is in existance you may use an action to begin concentrating on the rune. While concentrating, you see and hear what is going on around the object, can direct it to fly up to 15 feet per turn, and can cast runes through it (this allows only casting spells using spell slots, not cantrips, and not through ritual casting).</p>
+					<p>Destroying the implement causes this rune to fade from existence.</p>
+					<p>While concentrating, your physical body is blind and deafened. You still sense taking damage and may stop concentrating as a bonus action.</p>
+					<p><b>At Higher Levels </b>: When you cast this rune using a rune slot of 3rd level or higher, the duration and distance the implement can travel from you increases based on the table below.</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Duration</td>
+							<td>Distance</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>2 hours</td>
+							<td>50 feet</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>4 hours</td>
+							<td>100 feet</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>6 hours</td>
+							<td>200 feet</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>8 hours</td>
+							<td>150 yards</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>10 hours</td>
+							<td>300 yards</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>12 hours</td>
+							<td>500 yards</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>14 hours</td>
+							<td>1/2 mile</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>16 hours</td>
+							<td>1 mile</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>18 hours</td>
+							<td>2 miles</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>20 hours</td>
+							<td>4 miles</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>22 hours</td>
+							<td>6 miles</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>1 day</td>
+							<td>8 miles</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>26 hours</td>
+							<td>10 miles</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>28 hours</td>
+							<td>12 miles</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>30 hours</td>
+							<td>14 miles</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Couch Potato Casting</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Runecrafter</source>
+			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">INIT: [INT]</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>Place a rune on a creature. That creature adds your Runecasting Modifier to their Initiative rolls.</p>
+					<p><b>At Higher Levels </b>: When this rune is inscribed using a spell slot of 3rd level or higher the duration increases according to the following table.</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td>Duration</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>3 hours</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>6 hours</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>12 hours</td>
+						</tr>
+						<tr>
+							<td>6th</td>
+							<td>1 day</td>
+						</tr>
+						<tr>
+							<td>7th</td>
+							<td>3 days</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>1 week</td>
+						</tr>
+						<tr>
+							<td>9th</td>
+							<td>2 weeks</td>
+						</tr>
+						<tr>
+							<td>10th</td>
+							<td>1 month</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>3 months</td>
+						</tr>
+						<tr>
+							<td>12th</td>
+							<td>6 months</td>
+						</tr>
+						<tr>
+							<td>13th</td>
+							<td>1 year</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>2 years</td>
+						</tr>
+						<tr>
+							<td>15th</td>
+							<td>5 years</td>
+						</tr>
+						<tr>
+							<td>16th</td>
+							<td>10 years</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>25 years</td>
+						</tr>
+						<tr>
+							<td>18th</td>
+							<td>50 years</td>
+						</tr>
+					</table>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Accelerated Pursuit</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">1</ritual>
+				<source type="string">Runecrafter</source>
+			</id-00015>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Base</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - check; ADVCHK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - attack; ADVATK</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.</p>
+					<p>Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target beforre your next turn, the first attack roll is made with advantage.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Base</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Help</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00018>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -345,6 +2079,9 @@
 			<id-00002>
 				<name type="string">Weapon: Daggers, darts, quarterstaffs, atoks</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Weapon: Daggers, darts, quarterstaffs, atoks</name>
+			</id-00003>
 		</proficiencylist>
 		<race type="string">Bronzebeard Clan (Ironforge Dwarf)</race>
 		<racelink type="windowreference">
@@ -442,12 +2179,15 @@
 			</id-00018>
 		</skilllist>
 		<speed>
+			<armor type="number">0</armor>
 			<base type="number">25</base>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
 			<total type="number">25</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00010_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -523,6 +2263,26 @@
 			</id-00007>
 		</traitlist>
 		<weaponlist>
+			<id-00001>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Atok</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00005</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00001>
 		</weaponlist>
 		<weight type="string">158 pounds</weight>
 	</character>

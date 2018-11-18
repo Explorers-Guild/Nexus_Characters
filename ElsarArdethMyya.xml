@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
-				<save type="number">2</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -101,8 +101,8 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<hdused type="number">2</hdused>
+				<level type="number">5</level>
 				<name type="string">Ranger*</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,15 +112,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">62</amount>
+				<amount type="number">641</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">83</amount>
+				<amount type="number">172</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">84</amount>
+				<amount type="number">167</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -148,11 +148,11 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">108.493</load>
+			<load type="number">109.093</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">426</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">507</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -265,6 +265,15 @@
 					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge [rogue 5]</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">reckless (no room for caution in a life lived to the fullest)\ntrusts few others</flaws>
 		<gender type="string">Female</gender>
@@ -272,9 +281,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">0</temporary>
-			<total type="number">27</total>
-			<wounds type="number">16</wounds>
+			<temporary type="number">2</temporary>
+			<total type="number">33</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">freedom\nlive and let live</ideals>
 		<initiative>
@@ -383,7 +392,7 @@
 			<id-00008>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -891,6 +900,83 @@
 				<type type="string">Tools</type>
 				<weight type="number">1</weight>
 			</id-00041>
+			<id-00042>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00042>
+			<id-00044>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.</p>
+					<table>
+						<tr>
+							<td><b>Gem</b></td>
+							<td><b>Summoned Elemental</b></td>
+						</tr>
+						<tr>
+							<td>Blue sapphire</td>
+							<td>Air elemental</td>
+						</tr>
+						<tr>
+							<td>Yellow diamond</td>
+							<td>Earth elemental</td>
+						</tr>
+						<tr>
+							<td>Red corundum</td>
+							<td>Fire elemental</td>
+						</tr>
+						<tr>
+							<td>Emerald</td>
+							<td>Water elemental.</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Gem - Blue Saphire</name>
+				<nonid_name type="string">A gem</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0.1</weight>
+			</id-00044>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -903,10 +989,10 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Elsar Ardeth Myya</name>
 		<notes type="string">likes to climb buildings and such when in settlements</notes>
-		<perception type="number">17</perception>
+		<perception type="number">19</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">dislikes settlements larger than small village\nprefers the outdoors and other natural environments to buildings and other constructions</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -1164,8 +1250,21 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Actions</school>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<label type="string">Ring; RESIST: lightning</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Active</group>
+				<name type="string">Ring of Lightning Resistance</name>
+			</id-00008>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords [rogue 1]</name>
@@ -1196,21 +1295,21 @@
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1231,14 +1330,14 @@
 				<name type="string">Nature</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">6</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1252,7 +1351,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -1273,7 +1372,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1294,14 +1393,14 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1322,7 +1421,7 @@
 				<name type="string">Lockpicking</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1334,7 +1433,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00012_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
