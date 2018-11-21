@@ -94,7 +94,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">310</amount>
+				<amount type="number">430</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -102,7 +102,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">84</amount>
+				<amount type="number">106</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -110,7 +110,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">78</amount>
+				<amount type="number">104</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -132,14 +132,14 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">73.03</load>
+			<load type="number">73.53</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">413</exp>
+		<exp type="number">465</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
-				<locked type="number">0</locked>
+				<locked type="number">1</locked>
 				<name type="string">Dead Shot</name>
 				<text type="formattedtext">
 					<h>Action Coding</h>
@@ -150,27 +150,25 @@
 					<p>You have learned techniques to give you uncanny accuracy against a target you set your sights on. You gain the following benefits:</p>
 					<list>
 						<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.</li>
-						<li>You may spend a bonus action focusing on a target within sight. On your next attack, you have advantage on ranged attack rolls against the target. In addition, you may add your proficiency (again) bonus as a bonus to the attack of that roll.</li>
+						<li>You may spend a bonus action focusing on a target within sight. On your next ranged attack against that target this turn, you may add your proficiency bonus a second time to the attack of that roll.</li>
 					</list>
 					<linklist>
 						<link class="url" recordname="http://www.dandwiki.com/wiki/Dead_Shot_(5e_Feat)">Online copy</link>
 					</linklist>
 				</text>
 			</id-00001>
-			<id-00003>
+			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Skulker</name>
-				<prerequisite type="string">Dexterity 13 or higher</prerequisite>
+				<name type="string">Sharpshooter</name>
 				<text type="formattedtext">
-					<p><i>Prerequisite: Dexterity 13 or higher</i></p>
-					<p>You are expert at slinking through shadows. You gain the following benefits:</p>
+					<p>You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:</p>
 					<list>
-						<li>You can try to hide when you are lightly obscured from the creature from which you are hiding.</li>
-						<li>When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.</li>
-						<li>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</li>
+						<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+						<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
+						<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
 					</list>
 				</text>
-			</id-00003>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -238,6 +236,22 @@
 					</linklist>
 				</text>
 			</id-00005>
+			<id-00006>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Discerning Shot</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Neiklot</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.discerningshot@Incarnate-5eExpansion">Discerning Shot</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 3rd level, sacrificing your ability to use magic has unlocked a new reserve for your ranged accuracy. You have found an ability that lets you channel your wisdom modifier into the accuracy of your ranged attacks.</p>
+				</text>
+			</id-00006>
 			<id-00007>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -310,14 +324,30 @@
 			<id-00010>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Long range (Neiklot)</name>
+				<name type="string">Famous Accuracy</name>
 				<source type="string">Ranger</source>
 				<specialization type="string">Neiklot</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>At 3rd level, attacking at a weapon's long range no longer poses disadvantage on the attack roll.</p>
+					<h>Feat Coding</h>
+					<linklist>
+						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00151@Incarnate-5eExpansion">Dead Shot</link>
+					</linklist>
+					<h>Description</h>
+					<p>Your focus into accuracy has gained you the ability to zero in a target and more easily hit them. You gain the feat &#34;Dead Shot&#34;</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Spell-less</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Neiklot</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Your intense focus on the development of your spellcasting has left no room in your mind for learning spellcasting. You loose all spellcasting and cannot gain spellcasting from multi-classing.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
@@ -758,7 +788,7 @@
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -794,6 +824,31 @@
 				<name type="string">Golden Key</name>
 				<weight type="number">1</weight>
 			</id-00024>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.restorativeointment@Incarnate-5eExpansion">Restorative Ointment</link>
+					</linklist>
+					<h>Description</h>
+					<p>This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe.</p>
+					<p>The jar and its contents weigh 1/2 pound.</p>
+					<p>As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Restorative Ointment</name>
+				<nonid_name type="string">Glass jar</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0.5</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -803,7 +858,7 @@
 				<name type="string">Sylvan</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00003>
 			<id-00004>
 				<name type="string">Elvish</name>
@@ -813,7 +868,13 @@
 		<name type="string">Raernyn, Ranger of the 7th Kingdom</name>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00001>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Equipment</name>
+				<saveprof type="number">1</saveprof>
+			</id-00001>
 			<id-00002>
 				<atkprof type="number">1</atkprof>
 				<name type="string">Class Abilities</name>
@@ -824,6 +885,9 @@
 				<name type="string">Class Feats</name>
 				<saveprof type="number">1</saveprof>
 			</id-00003>
+			<id-00004>
+				<name type="string">ASI Feats</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -925,12 +989,85 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00001>
-			<id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<label type="string">Stone of Protection; AC: 1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Equipment</group>
+				<level type="number">0</level>
+				<name type="string">Magic Stone of Protection</name>
+				<prepared type="number">0</prepared>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Discerning Shot; ATK: [WIS], ranged</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Neiklot Feature</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00002@Incarnate-5eExpansion">Discerning Shot</link>
+					</linklist>
+				</description>
+				<group type="string">Class Abilities</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Discerning Shot</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Ranger - Class Ability</source>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; ATK: -5, ranged</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; DMG: 10, ranged</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:</p>
+					<list>
+						<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+						<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
+						<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
+					</list>
+				</description>
+				<group type="string">ASI Feats</group>
+				<locked type="number">1</locked>
+				<name type="string">Sharpshooter</name>
+				<prepared type="number">0</prepared>
+			</id-00005>
+			<id-00007>
 				<actions>
 					<id-00001>
 						<apply type="string">single</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">ADVATK; ATK: [PRF]</label>
+						<label type="string">Dead Shot; ATK: [PRF], ranged</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -948,7 +1085,8 @@
 				<name type="string">Dead Shot</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
-			</id-00002>
+				<source type="string">Feat</source>
+			</id-00007>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1103,7 +1241,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00012_token</token>
 		<traitlist>
 			<id-00002>
 				<locked type="number">1</locked>
@@ -1153,7 +1291,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">1</ammo>
+				<ammo type="number">2</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
