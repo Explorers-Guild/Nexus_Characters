@@ -55,7 +55,7 @@
 			<class>reference_background</class>
 			<recordname>reference.backgrounddata.sage@DD PHB Deluxe</recordname>
 		</backgroundlink>
-		<bonds type="string">My life's work is a series of tomes related to spined devils, in particular the Hamatula. My research into the devils is where I learned the Infernal language.</bonds>
+		<bonds type="string">My life's work is a series of tomes related to spined devils, in particular the Hamatula. My research into devils is where I learned the Infernal language.</bonds>
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
@@ -76,20 +76,20 @@
 				<name type="string">pp</name>
 			</slot1>
 			<slot2>
-				<amount type="number">9</amount>
-				<name type="string">gp</name>
+				<amount type="number">129</amount>
+				<name type="string">GP</name>
 			</slot2>
 			<slot3>
 				<amount type="number">0</amount>
 				<name type="string">ep</name>
 			</slot3>
 			<slot4>
-				<amount type="number">3</amount>
-				<name type="string">sp</name>
+				<amount type="number">29</amount>
+				<name type="string">SP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">8</amount>
-				<name type="string">cp</name>
+				<amount type="number">30</amount>
+				<name type="string">CP</name>
 			</slot5>
 			<slot6>
 				<amount type="number">0</amount>
@@ -110,11 +110,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">47.1</load>
+			<load type="number">47.6</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">352</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -222,7 +222,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">17</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">16</wounds>
 		</hp>
 		<ideals type="string">Knowledge. The path to power and self-improvement is through knowledge.</ideals>
 		<initiative>
@@ -274,7 +274,7 @@
 					<p>Dearest Dindreck,</p>
 					<p>Alas, by the time this letter finds you I will not again experience the delight of watching you do your research on another one of my preposterous ideas. I imagine you have moved on from the study of devils, to your true calling in the school of illusion.</p>
 					<p>Regardless, I expect you still have the heart of a researcher, cognizant that the acquisition of knowledge and truth to be the most powerful of magics. As I write this, laying feebly in bed, I don't expect to reach my 458th year. I've send the clerics on their way, as their help has been temporary at best. My hope is that you will turn some portion of your attention to a question I have yet to answer. I am sure your keen academic mind is up to the task.</p>
-					<p>Below is a passage I came across while studying the relationship between Cornugon's and their pit fiend masters. As far as I can tell, it has been written in multiple languages - infernal, primordial, and deep speech. What connection it describes between the planes of hell, the elements, and the Far Realm, I do not know. </p>
+					<p>Below is a passage I came across while studying the relationship between Cornugon's and their pit fiend masters. As far as I can tell, it has been written in multiple languages - infernal, primordial, and deep speech. What connection it describes between the planes of hell, the elements, and the Far Realm, I do not know.</p>
 					<p>....passage of text....</p>
 					<p>I know this is no easy task, but you are the only one I know that may meet the challenge. Consider it my last request as your mentor and friend.</p>
 					<p>Theruvial Milltall</p>
@@ -410,6 +410,43 @@
 				<name type="string">Pouch - Stones</name>
 				<weight type="number">0</weight>
 			</id-00012>
+			<id-00013>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00013>
 			<id-00019>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -532,7 +569,7 @@
 					<linklist>
 						<link class="power" recordname="....powers.id-00014">Hold Person</link>
 						<link class="power" recordname="....powers.id-00012">Misty Step</link>
-						<link class="power" recordname="....powers.id-00011">Scorching Ray&#10;</link>
+						<link class="power" recordname="....powers.id-00011">Scorching Ray</link>
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
@@ -600,36 +637,47 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">2</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -653,7 +701,6 @@
 				<max type="number">0</max>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -755,6 +802,7 @@
 						<durunit type="string">hour</durunit>
 						<label type="string">AC: 3</label>
 						<order type="number">1</order>
+						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
@@ -1055,7 +1103,7 @@
 				<actions>
 					<id-00001>
 						<durmod type="number">0</durmod>
-						<label type="string">Gnome Cunning;ADVSAV:INT,WIS,CHA</label>
+						<label type="string">Gnome Cunning;ADVSAV:intelligence,wisdom,charisma</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1222,7 +1270,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">tokens/shared/Deep Gnome Wizard Pog.png</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1255,6 +1303,7 @@
 		</weapon>
 		<weaponlist>
 			<id-00001>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>

@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<hdused type="number">2</hdused>
+				<level type="number">4</level>
 				<name type="string">Rune Blade</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">159</amount>
+				<amount type="number">279</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">36</amount>
+				<amount type="number">58</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">35</amount>
+				<amount type="number">61</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,15 +107,32 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">75</encumbered>
-			<encumberedheavy type="number">150</encumberedheavy>
-			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">156.5</load>
-			<max type="number">225</max>
+			<encumbered type="number">150</encumbered>
+			<encumberedheavy type="number">300</encumberedheavy>
+			<liftpushdrag type="number">900</liftpushdrag>
+			<load type="number">167</load>
+			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">393</exp>
+		<exp type="number">445</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Legendary Strength</name>
+				<text type="formattedtext">
+					<h>Legendary Strength</h>
+					<p>Prerequisites: Strength 13 or higher</p>
+					<p>Years of intense combat and extensive weapons training granted you great physical power both in and out of combat.</p>
+					<p>You gain the following benefits:</p>
+					<list>
+						<li>When attacking with a weapon that has the versatile property in one hand, you may roll damage as if you were holding it in both hands.</li>
+						<li>You now count as one size larger when determining your carrying capacity and the weight that you can push, drag, or lift.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Legendary_Strength_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -211,6 +228,16 @@
 					<p>Starting when you choose this archetype at level 3 choose one element of Fire, Cold, or Lightning. As a bonus action you can extend your prime rune up your arm and into your weapon causing it to deal 1d6 + Intelligence Modifier of that type of damage to each hit this round.</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Rune Blade</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">I never forget an insult, and I bide my time for revenge.</flaws>
 		<gender type="string">male</gender>
@@ -219,8 +246,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">25</total>
-			<wounds type="number">0</wounds>
+			<total type="number">32</total>
+			<wounds type="number">22</wounds>
 		</hp>
 		<ideals type="string">Brotherhood - I never feel alone as long as I know my brothers (and/or sisters) are out there. (Any)</ideals>
 		<initiative>
@@ -583,6 +610,57 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">15</weight>
 			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>decently cut wolf pelt</p>
+				</description>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Moderate Wolf Pelt</name>
+				<weight type="number">10</weight>
+			</id-00022>
+			<id-00023>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -595,7 +673,7 @@
 				<name type="string">Aquan</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Leoren</name>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -704,6 +782,7 @@
 					<h>Description</h>
 					<p>When you are reduced to 0 hit points but not instantly killed, your prime rune pours new life into you keeping you from dropping below 1 hit point. Your prime rune takes a while to recharge (you must finish a long rest before using this feature again).</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Primal Resuscitation</name>
 				<prepared type="number">1</prepared>
@@ -715,7 +794,7 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Elemental Weapon; DMG: 1d6 lightning</label>
+						<label type="string">Elemental Weapon; DMG: 1d6 lightning, melee; DMG: [INT] lightning, melee</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -754,7 +833,7 @@
 			<recordname>race.id-00005@Incarnate-5eExpansion</recordname>
 		</racelink>
 		<senses type="string">Darkvision 60</senses>
-		<size type="string">Medium</size>
+		<size type="string">Large</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
@@ -906,7 +985,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1008,8 +1087,9 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
+						<dice type="dice">d10</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
@@ -1036,7 +1116,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Crossbow, Light</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
