@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">275</amount>
+				<amount type="number">265</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">179</amount>
+				<amount type="number">178</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">74.79</load>
+			<load type="number">75.03</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">612</exp>
+		<exp type="number">672</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -139,7 +139,7 @@
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Bardic Inspiration</name>
+				<name type="string">Bardic Inspiration (d8)</name>
 				<source type="string">Bard</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -281,16 +281,6 @@
 					<p>At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
 				</text>
 			</id-00010>
-			<id-00011>
-				<level type="number">5</level>
-				<locked type="number">1</locked>
-				<name type="string">Bardic Inspiration (now d8)</name>
-				<source type="string">Bard</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>The Bardic Inspiration die increases to a d8.</p>
-				</text>
-			</id-00011>
 			<id-00012>
 				<level type="number">5</level>
 				<locked type="number">1</locked>
@@ -461,7 +451,7 @@
 			<id-00007>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
-				<count type="number">4</count>
+				<count type="number">3</count>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Case, Map Or Scroll</location>
 				<locked type="number">1</locked>
@@ -836,9 +826,24 @@
 				<isidentified type="number">1</isidentified>
 				<location type="string">Case, Map Or Scroll</location>
 				<locked type="number">1</locked>
-				<name type="string">Contract</name>
+				<name type="string">Old Contract</name>
 				<weight type="number">0.01</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00052">Ebbalup - Plant</link>
+						<link class="" recordname="">Recieved november 22, 2018. Spoils December 3rd, 2018.</link>
+					</linklist>
+				</description>
+				<name type="string">Ebbalup</name>
+				<weight type="number">0.25</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -856,7 +861,7 @@
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Alterra Beren</name>
-		<notes type="string">Alterra hails from from a sub-plane, from which countless material planes can be accessed, and where contact with the gods is easiest. She was once a citizen of this plane, content with doing what the gods asked of her. During one of these assignments, she was saved by a bystander, who ended up shouldering the ill effect of her failure. She kept in contact with this being, to be sure the evil he held would not be released. Apon hearing he had gone missing, she stepped down from service, desending to the material plane, trying to get information on what had happened to him, and becoming a fighter for those who needed help. Or those she thought needed help.\n\n</notes>
+		<notes type="string">Alterra hails from from a sub-plane, from which countless material planes can be accessed, and where contact with the gods is easiest. She was once a citizen of this plane, content with doing what the gods asked of her. During one of these assignments, she was saved by a bystander, who ended up shouldering the ill effect of her failure. She kept in contact with this being, to be sure the evil he held would not be released. Apon hearing he had gone missing, she stepped down from service, desending to the material plane, trying to get information on what had happened to him, and becoming a fighter for those who needed help. Or those she thinks need help.\n\nDungeon - elvendungeon1</notes>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I sing dance and generally tend to be happy. This is an experience and I should enjoy every moment of it.\nI leave marks for myself wherever I go, as messages to myself when I return. Their meaning is known only by me.</personalitytraits>
@@ -1751,6 +1756,23 @@
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00018>
+			<id-00019>
+				<name type="string">Thieves' Tools</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00262@Incarnate-5eExpansion">Thieves' Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00064@Incarnate-5eExpansion">Rules for Using Thieves' Tools</link>
+					</linklist>
+				</text>
+				<total type="number">5</total>
+			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -1761,7 +1783,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00010_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

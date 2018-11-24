@@ -31,11 +31,11 @@
 				<score type="number">10</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<bonus type="number">4</bonus>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">17</score>
+				<score type="number">19</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">7</level>
+				<level type="number">8</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1900</amount>
+				<amount type="number">1450</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -99,20 +99,20 @@
 				<disstealth type="number">1</disstealth>
 				<misc type="number">1</misc>
 				<prof type="number">1</prof>
-				<shield type="number">2</shield>
+				<shield type="number">3</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">19</total>
+				<total type="number">20</total>
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">170</encumbered>
-			<encumberedheavy type="number">340</encumberedheavy>
-			<liftpushdrag type="number">1020</liftpushdrag>
+			<encumbered type="number">190</encumbered>
+			<encumberedheavy type="number">380</encumberedheavy>
+			<liftpushdrag type="number">1140</liftpushdrag>
 			<load type="number">196.8</load>
-			<max type="number">510</max>
+			<max type="number">570</max>
 		</encumbrance>
-		<exp type="number">755</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">815</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -136,9 +136,11 @@
 				</text>
 			</id-00001>
 			<id-00002>
-				<name type="string">Poor Blacksmith</name>
+				<name type="string">Proficient Blacksmith</name>
 				<text type="formattedtext">
-					<p></p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00060@Incarnate-5eExpansion">Skill Level (Forging/Crafting)</link>
+					</linklist>
 				</text>
 			</id-00002>
 			<id-00003>
@@ -459,7 +461,7 @@
 			<id-00010>
 				<level type="number">6</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement</name>
+				<name type="string">Ability Score Improvement- +2 to STR</name>
 				<source type="string">Fighter</source>
 				<text type="formattedtext">
 					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
@@ -483,7 +485,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">60</total>
+			<total type="number">68</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization.</ideals>
@@ -514,7 +516,7 @@
 			</id-00001>
 			<id-00002>
 				<ac type="number">2</ac>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -808,7 +810,7 @@
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">3</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1,510 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1145,7 +1147,7 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Arjhan</name>
 		<notes type="string">did you pay 48 gold?</notes>
 		<perception type="number">10</perception>
@@ -1212,7 +1214,7 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -1658,6 +1660,29 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: radiant</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Radiant)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00015>
 			<id-00016>
 				<actions>
 					<id-00001>
@@ -1722,6 +1747,27 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<name type="string">Ring of Regeneration</name>
+				<prepared type="number">0</prepared>
+			</id-00018>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1734,6 +1780,9 @@
 			<id-00003>
 				<name type="string">Armor: All armor, shields</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Learned Tools: Smiths Tools</name>
+			</id-00004>
 		</proficiencylist>
 		<race type="string">Dragonborn</race>
 		<racelink type="windowreference">
@@ -1810,7 +1859,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1871,7 +1920,7 @@
 			<id-00019>
 				<misc type="number">0</misc>
 				<name type="string">Smith's Tools</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
 				<text type="formattedtext">
 					<h>Item Coding</h>
@@ -1880,7 +1929,7 @@
 						<link class="encounter" recordname="encounter.id-00019@Incarnate-5eExpansion">Rules for Using Smith's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">1</total>
+				<total type="number">4</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -2006,7 +2055,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">5</ammo>
+				<ammo type="number">2</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -2074,7 +2123,7 @@
 				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
