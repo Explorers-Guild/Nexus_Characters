@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">769</amount>
+				<amount type="number">160</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -96,23 +96,24 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">1</armor>
+				<armor type="number">3</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">16</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">82.1</load>
+			<load type="number">96.1</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">634</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">764</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -300,15 +301,15 @@
 				</text>
 			</id-00009>
 		</featurelist>
-		<flaws type="string">I cannot maintain meaningful relationships.</flaws>
+		<flaws type="string">I cannot maintain meaningful relationships.\nList of people hated:\nTalaal Al-ajid</flaws>
 		<gender type="string">Gender Fluid</gender>
 		<height type="string">5'2&#34;</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">42</total>
-			<wounds type="number">6</wounds>
+			<total type="number">49</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">This is what I was made to do.\nI'm doing what I do so others can benefit.</ideals>
 		<initiative>
@@ -427,7 +428,7 @@
 			<id-00007>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">910 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 slashing</damage>
@@ -593,7 +594,7 @@
 			<id-00017>
 				<ac type="number">11</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -638,43 +639,6 @@
 				<name type="string">heartstone</name>
 				<weight type="number">0</weight>
 			</id-00019>
-			<id-00020>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -771,6 +735,114 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00022>
+			<id-00023>
+				<ac type="number">12</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">501 - 5,000 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>The most basic form of magic armor is a superb product of physical and magical craft. You have a +1 bonus to AC while wearing this armor.</p>
+					<p>A suit of +1 armor never rusts or deteriorates, and it magically resizes to fit its wearer.</p>
+					<p><b>Studded Leather Notes</b></p>
+					<p>Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.</p>
+					<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>
+				</description>
+				<dexbonus type="string">Yes</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Studded Leather Armor, +1</name>
+				<nonid_name type="string">Fine Studded Leather Armor</nonid_name>
+				<nonidentified type="string">This suit of armor is finely wrought</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Rare</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Armor, +1</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Studded Leather</name>
+					</id-00002>
+				</spells>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Studded Leather</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">13</weight>
+			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">128 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Greater Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">902 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00010@Incarnate-Syrinscape"><b>Syrinscape </b></link>: Dagger</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature.</p>
+					<p>That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Dagger of Venom</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">rare</rarity>
+				<subtype type="string">(dagger)</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00025>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -780,7 +852,7 @@
 				<name type="string">Elvish</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Gobin</name>
+				<name type="string">Goblin</name>
 			</id-00003>
 			<id-00004>
 				<name type="string">Draconic</name>
@@ -789,12 +861,12 @@
 				<name type="string">Sylvan</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Herbal</name>
 		<notes type="string">Own a Pseudodragon with \n+10 to hp\nSame as wofie</notes>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I'm always polite and respectful.\nI will live to see the infernal houses fall. Demons have no place in our world.</personalitytraits>
+		<personalitytraits type="string">I will live to see the infernal houses fall. Demons have no place in our world.\nTraveling with Vok as lead to a hate for dragons.\nWith the death of desire and the training as a druid gives Herbal a bruning hate for the undead.</personalitytraits>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -860,18 +932,18 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
+				<max type="number">1</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -1106,7 +1178,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Word</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1126,7 +1198,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Speak with Animals</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
@@ -1135,8 +1207,14 @@
 			<id-00007>
 				<actions>
 					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">dexterity</atkstat>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
@@ -1174,7 +1252,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Ice Knife</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
@@ -1210,7 +1288,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Faerie Fire</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1273,7 +1351,11 @@
 						<type type="string">damage</type>
 					</id-00001>
 					<id-00002>
+						<atkprof type="number">1</atkprof>
 						<order type="number">2</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
@@ -1303,7 +1385,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Heat Metal</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1385,7 +1467,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Spirit</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
@@ -1457,6 +1539,61 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">DMG: 1d6 force; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">10</bonus>
+								<dice type="dice"></dice>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>A nature spirit answers your call and transforms you into a powerful guardian. The transformation lasts until the spell ends. You choose one of the following forms to assume: Primal Beast or Great Tree.</p>
+					<p><b><i>Primal Beast. </i></b>Bestial fur covers your body, your facial features become feral, and you gain the following benefits:</p>
+					<list>
+						<li>Your walking speed increases by 10 feet.</li>
+						<li>You gain darkvision with a range of 120 feet.</li>
+						<li>You make Strength-based attack rolls with advantage.</li>
+						<li>Your melee weapon attacks deal an extra 1d6 force damage on a hit.</li>
+					</list>
+					<p><b><i>Great Tree. </i></b>Your skin appears barky, leaves sprout from your hair, and you gain the following benefits:</p>
+					<list>
+						<li>You gain 10 temporary hit points.</li>
+						<li>You make Constitution saving throws with advantage.</li>
+						<li>You make Dexterity-and Wisdom-based attack rolls with advantage.</li>
+						<li>While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies.</li>
+					</list>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Guardian of Nature</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00014>
 			<id-00015>
 				<actions>
 					<id-00001>
@@ -1543,7 +1680,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Dispel Magic</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
@@ -1677,7 +1814,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Conjure Animals</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
@@ -1686,8 +1823,12 @@
 			<id-00021>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
@@ -1711,6 +1852,17 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1724,7 +1876,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Moonbeam</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1733,7 +1885,7 @@
 			<id-00023>
 				<actions>
 					<id-00001>
-						<label type="string">DMG: magic</label>
+						<label type="string">DMGTYPE: magic</label>
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
@@ -1914,7 +2066,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1989,10 +2141,11 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">slashing</type>
+						<type type="string">slashing,magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Shortsword of Celestial Slaying</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse light</properties>
@@ -2002,6 +2155,52 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger of Venom</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">1</maxammo>
+				<name type="string">Dagger of Venom</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">105 Lbs</weight>
 	</character>

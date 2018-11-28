@@ -10,11 +10,11 @@
 				<score type="number">12</score>
 			</charisma>
 			<constitution>
-				<bonus type="number">0</bonus>
-				<save type="number">0</save>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">10</score>
+				<score type="number">12</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
@@ -58,9 +58,10 @@
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">8</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">3247</amount>
+				<amount type="number">3407</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -99,19 +100,19 @@
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
-				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<temporary type="number">-4</temporary>
+				<total type="number">10</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">111.6</load>
+			<load type="number">112.1</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">676</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">806</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -132,6 +133,26 @@
 					</linklist>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Last Breath</name>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.lastbreath@Incarnate-5eExpansion">Last Breath</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisite: <b>NOT </b>Half-orc <b>NOT </b>Highlander Dwarf</p>
+					<p>Your determination and physical resolve grants you the ability to hold on just a little longer. You gain the following benefits:</p>
+					<list>
+						<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+						<li>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a short or long rest.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Last_Breath_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -357,6 +378,26 @@
 					<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
 				</text>
 			</id-00015>
+			<id-00016>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Supernatural Defense</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Monster Slayer</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 7th level, you gain extra resilience against your prey's assaults on your mind and body. Whenever the target of your Slayer's Prey forces you to make a saving throw and whenever you make an ability check to escape that target's grapple, add 1d6 to your roll.</p>
+				</text>
+			</id-00016>
+			<id-00017>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Land's Stride</name>
+				<source type="string">Ranger</source>
+				<text type="formattedtext">
+					<p>Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard. In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the <i>entangle </i>spell.</p>
+				</text>
+			</id-00017>
 		</featurelist>
 		<flaws type="string">I love my trophy collection and constantly show it off. Unforunately most people don't like seeing cut up pieces of demons.</flaws>
 		<gender type="string">Male</gender>
@@ -365,7 +406,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">40</total>
+			<total type="number">50</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Acceptance: I know my place and my duty and will fulfill it. Someone has to (any).</ideals>
@@ -901,6 +942,43 @@
 				<name type="string">Hezrou Teeth</name>
 				<weight type="number">0.1</weight>
 			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">128 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Greater Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00029>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -916,7 +994,7 @@
 				<name type="string">Draconic</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">8</level>
 		<name type="string">Virren</name>
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -981,7 +1059,7 @@
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -1586,7 +1664,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1798,7 +1876,7 @@
 				<type type="number">0</type>
 			</id-00005>
 			<id-00007>
-				<ammo type="number">8</ammo>
+				<ammo type="number">16</ammo>
 				<attackbonus type="number">2</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
@@ -1806,6 +1884,7 @@
 						<bonus type="number">2</bonus>
 						<dice type="dice">d10</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
