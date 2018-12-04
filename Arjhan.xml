@@ -111,7 +111,7 @@
 			<load type="number">200.3</load>
 			<max type="number">570</max>
 		</encumbrance>
-		<exp type="number">945</exp>
+		<exp type="number">997</exp>
 		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
@@ -490,12 +490,13 @@
 		<flaws type="string">I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">7 ft</height>
+		<hero type="number">0</hero>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">74</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">14</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization.</ideals>
 		<initiative>
@@ -1184,14 +1185,12 @@
 			<id-00038>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1900 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 slashing plus 1d8 radiant</damage>
 				<description type="formattedtext">
-					<p>This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the sun blade.</p>
-					<p>You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.</p>
-					<p>The sword's luminous blade emits bright light in a 15--foot radius and dim light for an additional 15 feet.</p>
+					<p><b>When you activate the holy aura of the weapon: </b>You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.The sword's luminous blade emits bright light in a 15--foot radius and dim light for an additional 15 feet.</p>
 					<p>The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
@@ -1220,6 +1219,7 @@
 		<level type="number">9</level>
 		<name type="string">Arjhan</name>
 		<notes type="string">did you pay 48 gold?</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm driven by a wanderlust that led me away from home.I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</personalitytraits>
@@ -1878,6 +1878,30 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid Coast Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Holy Sword; DMG: 1d8 radiant; ATK: 2</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00018@Incarnate-5eExpansion">Sneak Attack</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Holy Sword</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00021>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2051,7 +2075,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2261,13 +2285,15 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
+						<dice type="dice">d10</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 					<id-00002>
-						<bonus type="number">0</bonus>
+						<bonus type="number">2</bonus>
 						<dice type="dice">d8</dice>
+						<statmult type="number">1</statmult>
 						<type type="string">radiant</type>
 					</id-00002>
 				</damagelist>

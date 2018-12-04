@@ -64,7 +64,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -126,10 +126,10 @@
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">93.011</load>
+			<load type="number">92.511</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">982</exp>
+		<exp type="number">1034</exp>
 		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
@@ -625,6 +625,16 @@
 					<p>You can't use this feature again until you finish a short or long rest.</p>
 				</text>
 			</id-00016>
+			<id-00017>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Font of Inspiration</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
+				</text>
+			</id-00017>
 			<id-00018>
 				<locked type="number">1</locked>
 				<name type="string">Perpetual Student</name>
@@ -1008,22 +1018,33 @@
 					<p>If you loose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.</p>
 				</text>
 			</id-00020>
+			<id-00021>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Bardic Inspiration (now d8)</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>The Bardic Inspiration die increases to a d8.</p>
+				</text>
+			</id-00021>
 		</featurelist>
 		<flaws type="string">I never forget an insult, and I bide my time for revenge.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5' 9 ft</height>
+		<hero type="number">0</hero>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">68</total>
-			<wounds type="number">0</wounds>
+			<total type="number">76</total>
+			<wounds type="number">30</wounds>
 		</hp>
 		<ideals type="string">By studying the mistakes of our elders, we might prevent the mistakes of our children.\nWhen people follow orders blindly, they embrace a kind of tyranny.</ideals>
 		<initiative>
-			<misc type="number">1</misc>
+			<misc type="number">2</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -1079,43 +1100,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00003>
-			<id-00004>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1420,8 +1404,9 @@
 				<name type="string">Infernal</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">9</level>
+		<level type="number">10</level>
 		<name type="string">Wander</name>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">18</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I change my attitude and personality to blend in with the people around me.\nI cannot resist an opportunity to mock my opponent with a quip or joke, even during combat.</personalitytraits>
@@ -1468,7 +1453,7 @@
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
@@ -1496,14 +1481,14 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -1539,7 +1524,8 @@
 						<heallist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d6</dice>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -1677,12 +1663,12 @@
 						<apply type="string">roll</apply>
 						<durmod type="number">10</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Bardic Inspiration; ATK: 1d6; SAVE: 1d6; CHECK: 1d6</label>
+						<label type="string">Bardic Inspiration; ATK: 1d8; SAVE: 1d8; CHECK: 1d8</label>
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.probard.features.id-00013@Incarnate-5eExpansion">Bardic Inspiration</link>
@@ -1844,7 +1830,7 @@
 				<actions>
 					<id-00001>
 						<apply type="string">roll</apply>
-						<label type="string">DMG: 2d6 psychic</label>
+						<label type="string">DMG: 3d6 psychic</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -2310,6 +2296,31 @@
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Druid, Sorcerer, Warlock, Wizard</source>
 			</id-00022>
+			<id-00023>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmhvbGQtcG9ydGFs/play/"><b>Syrinscape </b></link>: Hold Door - Wizard Spells E</linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Om9wZW5jbG9zZQ/play/"><b>Syrinscape </b></link>: Opening/closing - Wizard Spells E
+					<h>Description</h>
+					<p>Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access. A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked. If you choose a target that is held shut with arcane lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally. When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Knock</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00023>
 			<id-00024>
 				<actions>
 					<id-00001>
@@ -2823,7 +2834,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00010_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00005>
 				<locked type="number">0</locked>

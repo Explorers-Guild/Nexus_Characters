@@ -110,10 +110,10 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">86.781</load>
+			<load type="number">92.281</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">828</exp>
+		<exp type="number">880</exp>
 		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
@@ -293,12 +293,13 @@
 		<flaws type="string">I'm willing to try anything I think will be a good time.</flaws>
 		<gender type="string">Female</gender>
 		<height type="string">6' 4&#34;</height>
+		<hero type="number">0</hero>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">42</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">10</wounds>
 		</hp>
 		<ideals type="string">Fickle - My time is worth whoever is paying me. (Chaotic)</ideals>
 		<initiative>
@@ -306,7 +307,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
-		<inspiration type="number">1</inspiration>
+		<inspiration type="number">0</inspiration>
 		<inventorylist>
 			<id-00001>
 				<carried type="number">1</carried>
@@ -514,31 +515,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00016>
-			<id-00017>
-				<carried type="number">2</carried>
-				<cost type="string">25 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 piercing</damage>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Shortbow</name>
-				<properties type="string">Ammunition (range 80/320), two-handed</properties>
-				<subtype type="string">Simple Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00017>
-			<id-00018>
-				<carried type="number">2</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Shortbow</location>
-				<locked type="number">1</locked>
-				<name type="string">Arrows (20)</name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
-			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -813,42 +789,44 @@
 				<weight type="number">1</weight>
 			</id-00035>
 			<id-00036>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
+				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
+				<damage type="string">1d12 piercing</damage>
 				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
+					<p>You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
+				<name type="string">Ballista Bolt (Lance)</name>
+				<properties type="string">Reach, special</properties>
+				<subtype type="string">Martial Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">6</weight>
 			</id-00036>
+			<id-00037>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2300 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">2d8 radiant</damage>
+				<description type="formattedtext">
+					<p><b>When you activate the holy aura of the weapon: </b>You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.</p>
+					<p>The Bow shines with luminous bright light in a 15--foot radius and dim light for an additional 15 feet.</p>
+					<p>The light is sunlight. While the Bow persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.</p>
+					<p><b>Special: </b>The Holy Sunbow doesn't require ammunition however it can not use any other type of arrow's but the ones it creates. Also The Sunbow doesn't require martial or simple proficiency only attunement.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Holy SunBow</name>
+				<nonid_name type="string">Longbow</nonid_name>
+				<properties type="string">Ammunition. Special</properties>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<subtype type="string">Longbow</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00037>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -861,6 +839,7 @@
 		<level type="number">8</level>
 		<name type="string">Feldis Harlequin</name>
 		<notes type="string">Check mystery berries\n__- Poison = NW 5-5\n__- Regular = NW 5-51\n__- Sleep = C 5-6\n__- Ache = C 5-6</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I understand that sometimes a little bit of flirting goes a long way.\nSleazebag pervert is one bad comment away from a slap.</personalitytraits>
@@ -883,6 +862,9 @@
 			<id-00003>
 				<name type="string">Class</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">ATT</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -931,7 +913,7 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">2</max>
@@ -1256,7 +1238,7 @@
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature.</p>
 				</description>
@@ -1386,7 +1368,6 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">*Offhand</name>
 				<prepared type="number">0</prepared>
@@ -1402,7 +1383,6 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<name type="string">*Dodge</name>
 				<prepared type="number">0</prepared>
@@ -1456,7 +1436,6 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Musk</name>
@@ -1566,7 +1545,6 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Greater Healing</name>
@@ -1664,6 +1642,21 @@
 				<school type="string">Evocation</school>
 				<source type="string">Druid Mountain Circle, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00001>
+						<label type="string">ATK: 2 melee; DMG: 2 melee; IFT: TYPE(undead); DMG: 1d8 radiant melee</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">ATT</group>
+				<level type="number">0</level>
+				<name type="string">Holy Sunbow</name>
+				<prepared type="number">0</prepared>
+			</id-00026>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1848,7 +1841,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00011_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1959,28 +1952,6 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00002>
-			<id-00003>
-				<ammo type="number">0</ammo>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Shortbow</name>
-				<prof type="number">0</prof>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00017</recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00003>
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -2058,7 +2029,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">1</maxammo>
 				<name type="string">Dagger of Venom</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -2068,7 +2039,50 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00007>
+			<id-00008>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d12</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Lance</name>
+				<prof type="number">0</prof>
+				<properties type="string">Reach, special</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00036</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
+			<id-00009>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8,d8</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">radiant</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Holy SunBow</name>
+				<prof type="number">1</prof>
+				<properties type="string">Ammunition. Special</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00037</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00009>
 		</weaponlist>
-		<weight type="string">160</weight>
+		<weight type="string">160 lb</weight>
 	</character>
 </root>
