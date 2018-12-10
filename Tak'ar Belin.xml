@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">12</score>
@@ -45,6 +45,8 @@
 				<score type="number">10</score>
 			</wisdom>
 		</abilities>
+		<adventurelist>
+		</adventurelist>
 		<age type="string">112</age>
 		<alignment type="string">Chaotic neutral</alignment>
 		<background type="string">Mercenary</background>
@@ -58,8 +60,8 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">4</level>
+				<hdused type="number">0</hdused>
+				<level type="number">5</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">768</amount>
+				<amount type="number">2082</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -77,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">232</amount>
+				<amount type="number">224</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">321</amount>
+				<amount type="number">215</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -94,14 +96,14 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">4</armor>
-				<dexbonus type="string">max2</dexbonus>
+				<armor type="number">5</armor>
+				<dexbonus type="string">max3</dexbonus>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">18</total>
 			</ac>
 		</defenses>
 		<deity type="string">Valhalla</deity>
@@ -109,13 +111,13 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">103.8</load>
+			<load type="number">126.3</load>
 			<max type="number">180</max>
 			<total type="number">0</total>
 			<treasure type="number">0</treasure>
 		</encumbrance>
-		<exp type="number">486</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">583</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -157,6 +159,16 @@
 					<p>You choose additional favored terrain types at 6th and 10th level.</p>
 				</text>
 			</id-00003>
+			<id-00004>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.</p>
+				</text>
+			</id-00004>
 			<id-00005>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -276,8 +288,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">40</total>
-			<wounds type="number">8</wounds>
+			<total type="number">49</total>
+			<wounds type="number">19</wounds>
 		</hp>
 		<ideals type="string">Golden Soul - I fight for money, and nothing else. (Neutral)</ideals>
 		<initiative>
@@ -361,27 +373,21 @@
 				<weight type="number">0.2</weight>
 			</id-00004>
 			<id-00005>
-				<ac type="number">14</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">0</carried>
-				<cost type="string">50 GP</cost>
+				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.</p>
+					<p>A wine bottle half filled with Bone Spider Venom.</p>
+					<linklist>
+						<link class="" recordname=""></link>
+					</linklist>
+					<p>DC 18 constitution save or take 9(2d8) poison damage</p>
 				</description>
-				<dexbonus type="string">Yes (max 2)</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Scale Mail</name>
-				<nonid_name type="string">Scale Mail</nonid_name>
-				<nonidentified type="string">Some well-crafted scale mail armor.</nonidentified>
-				<rarity type="string">common</rarity>
-				<stealth type="string">Disadvantage</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Medium Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">45</weight>
+				<name type="string">1/2 wine bottle of Venom</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Alchemy</subtype>
+				<type type="string">Lore</type>
+				<weight type="number">1</weight>
 			</id-00005>
 			<id-00006>
 				<ac type="number">0</ac>
@@ -521,39 +527,17 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00014>
-			<id-00015>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">50 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Longbow</name>
-				<nonid_name type="string">Longbow</nonid_name>
-				<nonidentified type="string">A well oiled longbow.</nonidentified>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
-				<rarity type="string">Common</rarity>
-				<subtype type="string">Martial Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>-</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Longbow</location>
+				<location type="string">Longbow, +2</location>
 				<locked type="number">1</locked>
 				<name type="string">Arrows (20)</name>
 				<nonid_name type="string">Arrows (20)</nonid_name>
@@ -582,7 +566,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -617,7 +601,7 @@
 			<id-00019>
 				<ac type="number">14</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1,300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -656,7 +640,7 @@
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Cloak of Protection</name>
+				<name type="string">Cloak of Protection/save'</name>
 				<nonid_name type="string">Cloak</nonid_name>
 				<nonidentified type="string">Made of fine cloth, embroidered with silver and gold threads, there is clearly something special about this garment.</nonidentified>
 				<properties type="string">Magic</properties>
@@ -698,6 +682,114 @@
 				<type type="string">Ring</type>
 				<weight type="number">1</weight>
 			</id-00021>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">2</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1,495 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You have a +2 bonus to the attack rolls and damage rolls you make with this weapon.</p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Longbow, +2</name>
+				<nonid_name type="string">Ornate Longbow</nonid_name>
+				<nonidentified type="string">The attention to detail and the materials used as well as the ornate scrollwork that covers almost every surface, mark this weapon out as special.</nonidentified>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
+				<rarity type="string">Rare</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Weapon, +2</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Longbow</name>
+					</id-00002>
+				</spells>
+				<subtype type="string">Longbow</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00024>
+			<id-00026>
+				<ac type="number">15</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1350 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class.</p>
+					<p>Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.</p>
+					<p>Mithril is a light, flexible metal. A mithril chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithril version of the armor doesn't.</p>
+				</description>
+				<dexbonus type="string">Yes (max 3)</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Mithril Half Plate</name>
+				<strength type="string">-</strength>
+				<subtype type="string">Medium Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">20</weight>
+			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 sp</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Medium-sized Glass Bottle of Lamp Oil</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>Consuming this removes the poisoned condition.</p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Bottle of Antivenom</name>
+				<subtype type="string">Alchemy</subtype>
+				<type type="string">Gear</type>
+				<weight type="number">0</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">3</count>
+				<description type="formattedtext">
+					<p>This glass bottle contains a large spider suspended in amber liquid.</p>
+					<p>Upon drinking the Spider Wine, roll a DC 15 Constitution saving throw. On a success you are granted resistance to poison for 1 hour. On an 7 or lower, you are poisoned for 1 hour.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Spider Wine</name>
+				<rarity type="string">Rare (Contraband)</rarity>
+				<subtype type="string">Alcohol</subtype>
+				<type type="string">Sustance</type>
+				<weight type="number">0</weight>
+			</id-00029>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -710,14 +802,17 @@
 				<name type="string">Sylvan</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Tak'ar Belin</name>
 		<notes type="string">Incarnate</notes>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I like to show off, particularly if there's a chance to get a job offer in it.\nTo me, the whisper of steel and the clash of weapons is just as pleasing as any amount of gold.\nT</personalitytraits>
+		<personalitytraits type="string">I like to show off, particularly if there's a chance to get a job offer in it.\nTo me, the whisper of steel and the clash of weapons is just as pleasing as any amount of gold.\nI treat all my enemies with the respect that all dead earn.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00001>
+				<name type="string">Item</name>
+			</id-00001>
 			<id-00002>
 				<atkmod type="number">0</atkmod>
 				<atkprof type="number">1</atkprof>
@@ -729,8 +824,11 @@
 				<uses type="number">0</uses>
 			</id-00002>
 			<id-00004>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
+				<saveprof type="number">1</saveprof>
+				<stat type="string">wisdom</stat>
 			</id-00004>
 		</powergroup>
 		<powermeta>
@@ -771,11 +869,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
-				<used type="number">1</used>
+				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -885,6 +983,7 @@
 								<bonus type="number">0</bonus>
 								<dice type="dice">d8</dice>
 								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -978,6 +1077,7 @@
 						<link class="reference_classfeature" recordname="class.proranger.features.id-00055@Incarnate-5eExpansion">Fighting Style</link>
 					</linklist>
 				</description>
+				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Fighting Style - Archery</name>
@@ -995,13 +1095,309 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Cloak of Protection</name>
 				<prepared type="number">0</prepared>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<label type="string">RESIST: thunder</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<name type="string">Breastplate of Thunder Resistance</name>
+				<prepared type="number">0</prepared>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<label type="string">DISCHK: strength; DISSAV: strength</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<prepared type="number">0</prepared>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00010>
+			<id-00011>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of barley, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>You touch a keg of water which transforms into common beer.</p>
+					<linklist>
+						<link class="item" recordname="item.id-00090@Incarnate-5eExpansion">Small Keg of Superior Beer</link>
+					</linklist>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher and provide the required material component, you may choose a different type of liquid to transform the water into according to the table below:</p>
+					<table>
+						<tr>
+							<td>Spell Slot</td>
+							<td colspan="2">Liquid Type</td>
+							<td colspan="2">Material Component</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Assassin's Blood</td>
+							<td colspan="2">Exotic herbs worth at least 13 GP</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Alchemist's Fire</td>
+							<td colspan="2">Ground Demon Horn worth at least 15 GP</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Small Cask of Common Wine</td>
+							<td colspan="2">Cluster of grapes worth at least 3 GP</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2">Small Keg of Supreme Beer</td>
+							<td colspan="2">Pinch of fine barley worth at least 5 GP</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td colspan="2">Common Berserker Juice</td>
+							<td colspan="2">Ground Demon Horn worth at least 75 GP</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td colspan="2">Torpor</td>
+							<td colspan="2">Exotic herbs worth at least 50 GP</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td colspan="2">Greater Alchemist's Fire</td>
+							<td colspan="2">Ground Demon Horn worth at least 25 GP</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td colspan="2">Small Cask of Greater Wine</td>
+							<td colspan="2">Cluster of grapes worth at least 9 GP</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td colspan="2">Small Keg of Common Mead</td>
+							<td colspan="2">Honey worth at least 25 GP</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td colspan="2">Small Keg of Legendary Beer</td>
+							<td colspan="2">Pinch of fine barley worth at least 15 GP</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td colspan="2">Greater Berserker Juice</td>
+							<td colspan="2">Ground Demon Horn worth at least 150 GP</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td colspan="2">Superior Alchemist's Fire</td>
+							<td colspan="2">Ground Demon Horn worth at least 50 GP</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td colspan="2">Small Cask of Superior Wine</td>
+							<td colspan="2">Cluster of Grapes worth at least 20 GP</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td colspan="2">Small Keg of Celestial Beer</td>
+							<td colspan="2">Pinch of fine barley worth at least 25 GP</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td colspan="2">Small Keg of Greater Mead</td>
+							<td colspan="2">Honey worth at least 50 GP</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td colspan="2">Superior Berserker Juice</td>
+							<td colspan="2">Ground Demon Horn worth at least 300 GP</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td colspan="2">Truth Serum</td>
+							<td colspan="2">Exotic herbs worth at least 200 GP</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td colspan="2">Small Cast of Supreme Wine</td>
+							<td colspan="2">Cluster of grapes worth at least 50 GP</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td colspan="2">Small Keg of Superior Mead</td>
+							<td colspan="2">Honey worth at least 125 GP</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td colspan="2">Supreme Alchemist's Fire</td>
+							<td colspan="2">Ground Demon horn worth at least 100 GP</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td colspan="2">Supreme Berserker Juice</td>
+							<td colspan="2">Ground Balor Horn worth at least 600 GP</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td colspan="2">Midnight Tears</td>
+							<td colspan="2">Exotic Herbs worth at least 200 GP</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td colspan="2">Legendary Alchemist's Fire</td>
+							<td colspan="2">Ground Balor Horn worth at least 200 GP</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td colspan="2">Small Cask of Legendary Wine</td>
+							<td colspan="2">Cluster of grapes worth at least 250 GP</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td colspan="2">Small Keg of Supreme Mead</td>
+							<td colspan="2">Honey worth at least 250 GP</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td colspan="2">Legendary Berserker Juice</td>
+							<td colspan="2">Ground Pit Fiend Horn worth at least 1,250 GP</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td colspan="2">Infernal Alchemist's Fire</td>
+							<td colspan="2">Ground Balor Horn worth at least 400 GP</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td colspan="2">Small Cask of Celestial Wine</td>
+							<td colspan="2">Cluster of grapes worth at least 500 GP</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td colspan="2">Small Keg of Legendary Mead</td>
+							<td colspan="2">Honey worth at least 500 GP</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td colspan="2">Infernal Berserker Juice</td>
+							<td colspan="2">Ground Pit Fiend Horn worth at least 2,500 GP</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td colspan="2">Small Keg of Celestial Mead</td>
+							<td colspan="2">Honey worth at least 1,250 GP</td>
+						</tr>
+					</table>
+					<p>Note: if the quantity of liquid is different (keg to flask, etc.) then the container magically shrinks as the liquid contracts.</p>
+					<p>Convenient Links</p>
+					<p>Level 3</p>
+					<linklist>
+						<link class="item" recordname="item.id-00027@Incarnate-5eExpansion">Alchemist's Fire (Flask)</link>
+						<link class="item" recordname="item.id-00163@Incarnate-5eExpansion">Assassin's Blood (Ingested)</link>
+						<link class="item" recordname="item.id-00116@Incarnate-5eExpansion">Small Cask of Common Wine</link>
+						<link class="item" recordname="item.id-00091@Incarnate-5eExpansion">Small Keg of Supreme Beer</link>
+					</linklist>
+					<p>Level 4</p>
+					<linklist>
+						<link class="item" recordname="item.id-00821@Incarnate-5eExpansion">Common Berserker Juice</link>
+						<link class="item" recordname="item.id-00074@Incarnate-5eExpansion">Greater Alchemist's Fire (Flask)</link>
+						<link class="item" recordname="item.id-00117@Incarnate-5eExpansion">Small Cask of Greater Wine</link>
+						<link class="item" recordname="item.id-00264@Incarnate-5eExpansion">Small Keg of Common Mead</link>
+						<link class="item" recordname="item.id-00092@Incarnate-5eExpansion">Small Keg of Legendary Beer</link>
+					</linklist>
+					<p>Level 5</p>
+					<linklist>
+						<link class="item" recordname="item.id-00822@Incarnate-5eExpansion">Greater Berserker Juice</link>
+						<link class="item" recordname="item.id-00121@Incarnate-5eExpansion">Small Cask of Superior Wine</link>
+						<link class="item" recordname="item.id-00085@Incarnate-5eExpansion">Small Keg of Celestial Beer</link>
+						<link class="item" recordname="item.id-00266@Incarnate-5eExpansion">Small Keg of Greater Mead</link>
+						<link class="item" recordname="item.id-00080@Incarnate-5eExpansion">Superior Alchemist's Fire (Flask)</link>
+						<link class="item" recordname="item.id-00174@Incarnate-5eExpansion">Torpor (Ingested)</link>
+					</linklist>
+					<p>Level 6</p>
+					<linklist>
+						<link class="item" recordname="item.id-00124@Incarnate-5eExpansion">Small Cask of Supreme Wine</link>
+						<link class="item" recordname="item.id-00297@Incarnate-5eExpansion">Small Keg of Superior Mead</link>
+						<link class="item" recordname="item.id-00083@Incarnate-5eExpansion">Supreme Alchemist's Fire (Flask)</link>
+						<link class="item" recordname="item.id-00824@Incarnate-5eExpansion">Superior Berserker Juice</link>
+						<link class="item" recordname="item.id-00175@Incarnate-5eExpansion">Truth Serum (Ingested)</link>
+					</linklist>
+					<p>Level 7</p>
+					<linklist>
+						<link class="item" recordname="item.id-00084@Incarnate-5eExpansion">Legendary Alchemist's Fire (Flask)</link>
+						<link class="item" recordname="item.id-00169@Incarnate-5eExpansion">Midnight Tears (Ingested)</link>
+						<link class="item" recordname="item.id-00349@Incarnate-5eExpansion">Small Cask of Legendary Wine</link>
+						<link class="item" recordname="item.id-00350@Incarnate-5eExpansion">Small Keg of Supreme Mead</link>
+						<link class="item" recordname="item.id-00825@Incarnate-5eExpansion">Supreme Berserker Juice</link>
+					</linklist>
+					<p>Level 8</p>
+					<linklist>
+						<link class="item" recordname="item.id-00073@Incarnate-5eExpansion">Infernal Alchemist's Fire (Flask)</link>
+						<link class="item" recordname="item.id-00826@Incarnate-5eExpansion">Legendary Berserker Juice</link>
+						<link class="item" recordname="item.id-00130@Incarnate-5eExpansion">Small Cask of Celestial Wine</link>
+						<link class="item" recordname="item.id-00351@Incarnate-5eExpansion">Small Keg of Legendary Mead</link>
+					</linklist>
+					<p>Level 9</p>
+					<linklist>
+						<link class="item" recordname="item.id-00820@Incarnate-5eExpansion">Infernal Berserker Juice</link>
+						<link class="item" recordname="item.id-00298@Incarnate-5eExpansion">Small Keg of Celestial Mead</link>
+					</linklist>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Transmute Water</name>
+				<prepared type="number">0</prepared>
+				<range type="string">touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Cleric, Druid, Ranger</source>
+			</id-00011>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: daggers, scimitars, shortbows, whips</name>
@@ -1032,7 +1428,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -1067,7 +1463,7 @@
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1095,7 +1491,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1109,14 +1505,14 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1158,12 +1554,13 @@
 			<armor type="number">0</armor>
 			<base type="number">35</base>
 			<misc type="number">0</misc>
+			<special type="string">40 ft swim</special>
 			<temporary type="number">0</temporary>
 			<total type="number">35</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1264,29 +1661,29 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00002>
-			<id-00003>
-				<ammo type="number">7</ammo>
-				<attackbonus type="number">0</attackbonus>
+			<id-00006>
+				<attackbonus type="number">2</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
+						<bonus type="number">2</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Longbow</name>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Longbow, +2</name>
 				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed,</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00015</recordname>
+					<recordname>....inventorylist.id-00024</recordname>
 				</shortcut>
-				<type type="number">1</type>
-			</id-00003>
+				<type type="number">0</type>
+			</id-00006>
 		</weaponlist>
 		<weight type="string">180 lb</weight>
 	</character>
