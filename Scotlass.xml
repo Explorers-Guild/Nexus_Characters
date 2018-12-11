@@ -59,8 +59,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
-				<hdused type="number">4</hdused>
-				<level type="number">5</level>
+				<hdused type="number">0</hdused>
+				<level type="number">6</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,15 +70,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">179</amount>
+				<amount type="number">104</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">15</amount>
+				<amount type="number">34</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">9</amount>
+				<amount type="number">33</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -106,11 +106,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">136</load>
+			<load type="number">113</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">527</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">611</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -301,7 +301,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">65</total>
+			<total type="number">77</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -444,7 +444,7 @@
 			<id-00010>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">10</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -458,7 +458,7 @@
 			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">10</count>
+				<count type="number">5</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
@@ -629,7 +629,7 @@
 				<name type="string">Primordial</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Scotlass</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -641,7 +641,9 @@
 				<saveprof type="number">1</saveprof>
 			</id-00001>
 			<id-00002>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Powers</name>
+				<saveprof type="number">1</saveprof>
 			</id-00002>
 		</powergroup>
 		<powermeta>
@@ -921,6 +923,41 @@
 				<school type="string">Evocation</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
 			</id-00008>
+			<id-00009>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Fast Movement</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">ADVSAV: Strength</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00041@Incarnate-5eExpansion">Danger Sense</link>
+					</linklist>
+				</description>
+				<group type="string">Powers</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Aspect of the Beast</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00010>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1029,8 +1066,8 @@
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
-				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<stat type="string">strength</stat>
+				<total type="number">6</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1085,13 +1122,13 @@
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">30</base>
-			<misc type="number">0</misc>
+			<misc type="number">10</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">30</total>
+			<total type="number">40</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1114,7 +1151,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d4</dice>

@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">4</bonus>
-				<save type="number">7</save>
+				<save type="number">8</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">19</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">8</level>
+				<level type="number">9</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1450</amount>
+				<amount type="number">1610</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -108,11 +108,11 @@
 			<encumbered type="number">190</encumbered>
 			<encumberedheavy type="number">380</encumberedheavy>
 			<liftpushdrag type="number">1140</liftpushdrag>
-			<load type="number">196.8</load>
+			<load type="number">200.3</load>
 			<max type="number">570</max>
 		</encumbrance>
-		<exp type="number">815</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">997</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -461,7 +461,7 @@
 			<id-00010>
 				<level type="number">6</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement- +2 to STR</name>
+				<name type="string">Ability Score Improvement- +2</name>
 				<source type="string">Fighter</source>
 				<text type="formattedtext">
 					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
@@ -477,16 +477,26 @@
 					<p>Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">9</level>
+				<locked type="number">1</locked>
+				<name type="string">Indomitable</name>
+				<text type="formattedtext">
+					<p>Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.</p>
+					<p>You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">I remember every insult I've received and nurse a silent resentment toward anyone who's ever wronged me.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">7 ft</height>
+		<hero type="number">0</hero>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">68</total>
-			<wounds type="number">0</wounds>
+			<total type="number">74</total>
+			<wounds type="number">14</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization.</ideals>
 		<initiative>
@@ -1135,6 +1145,65 @@
 				<type type="string">Ring</type>
 				<weight type="number">1</weight>
 			</id-00036>
+			<id-00037>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">128 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Greater Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00037>
+			<id-00038>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1900 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing plus 1d8 radiant</damage>
+				<description type="formattedtext">
+					<p><b>When you activate the holy aura of the weapon: </b>You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.The sword's luminous blade emits bright light in a 15--foot radius and dim light for an additional 15 feet.</p>
+					<p>The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Holy Sun Blade</name>
+				<nonid_name type="string">Longsword</nonid_name>
+				<nonidentified type="string">A sharp longsword.</nonidentified>
+				<properties type="string">Versatile (1d10)</properties>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<subtype type="string">(longsword)</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00038>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1147,9 +1216,10 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">8</level>
+		<level type="number">9</level>
 		<name type="string">Arjhan</name>
 		<notes type="string">did you pay 48 gold?</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm driven by a wanderlust that led me away from home.I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</personalitytraits>
@@ -1214,7 +1284,7 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -1768,8 +1838,72 @@
 				<name type="string">Ring of Regeneration</name>
 				<prepared type="number">0</prepared>
 			</id-00018>
+			<id-00019>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (gold dust worth at least 25 gp, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.</p>
+					<p>While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.</p>
+				</description>
+				<duration type="string">Until dispelled</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Arcane Lock</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00019>
+			<id-00020>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Misty Step</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid Coast Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Holy Sword; DMG: 1d8 radiant; ATK: 2</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00018@Incarnate-5eExpansion">Sneak Attack</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Holy Sword</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00021>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: One type of musical instrument</name>
@@ -1831,7 +1965,7 @@
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1859,7 +1993,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">7</total>
+				<total type="number">8</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1873,7 +2007,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1915,7 +2049,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
@@ -1929,7 +2063,7 @@
 						<link class="encounter" recordname="encounter.id-00019@Incarnate-5eExpansion">Rules for Using Smith's Tools</link>
 					</linklist>
 				</text>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1941,7 +2075,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2145,6 +2279,35 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d10</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d8</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">radiant</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Holy Sun Blade</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00038</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
 		</weaponlist>
 		<weight type="string">250</weight>
 	</character>
