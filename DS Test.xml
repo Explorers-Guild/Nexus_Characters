@@ -338,7 +338,136 @@
 				<max type="number">0</max>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">preparation</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<stat type="string">wisdom</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>As a Dragonslayer when you choose your elemental specialization you can eat the element you are trained in and recover 1d8 + your Wisdom modifier. Also recover one spell slot. It cost one Dragonslayer Magic Point.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Eating the elements</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00001>
+			<id-00002>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 3rd level, your magic allows you to harness the elemental magic. Your access to this power is represented by a number of Dragonslayer magic points. You earn two levels per dragonslayer level. Once you use a magic point it will be unavailable until you finish a short or long rest.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Dragonslayer Magic Point</name>
+				<prepared type="number">12</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">DMG: 1d6 cold, melee, magic</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Given your Dragonslayer's Magic you surround your fists in the element given to you. Add 1d6 elemental damage to your unarmed strikes. This feature will cost you 2 Dragonslayer Magic points.This lasts for a minute.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Fist</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">AC: +1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Your Dragonslayer's elemental magic flows through your body allowing you to cover yourself in it. As a bonus action you may surround yourself with the element you wield for 10 minutes or until you use a bonus action to release your magic. When surrounded with your element you gain a +1 Bonus to your AC and any unarmed strike done towards you will hurt the attacker by 7 (2d6) of magic elemental damage. This feature will cost you 4 Dragonslayer Magic points.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Body</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">wisdom</atkstat>
+						<atktype type="string">ranged</atktype>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">cold, magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Your Dragonslayer magic starts building inside you allowing to breath the element of your magic in a 15 radius cone. This feature will cost you 4 Dragonslayer Magic points</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Elemental breath</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00005>
+			<id-00006>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>After reaching level 6 your unarmored strikes count as magical.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Magical Unarmored Strikes</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00006>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -528,6 +657,28 @@
 			</critrange>
 		</weapon>
 		<weaponlist>
+			<id-00001>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">melee, magic</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Draconic punch</name>
+				<prof type="number">1</prof>
+				<properties type="string">melee, magical</properties>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00001>
 		</weaponlist>
 	</character>
 </root>
