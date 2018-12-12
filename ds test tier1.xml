@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">3</hdused>
 				<level type="number">4</level>
 				<name type="string">DragonSlayer</name>
 				<shortcut type="windowreference">
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2176</amount>
+				<amount type="number">2610</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">146</amount>
+				<amount type="number">529</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">158</amount>
+				<amount type="number">293</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -95,14 +95,14 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">3</armor>
-				<disstealth type="number">0</disstealth>
+				<armor type="number">9</armor>
+				<dexbonus type="string">no</dexbonus>
+				<disstealth type="number">1</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
-				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">17</total>
+				<total type="number">11</total>
 			</ac>
 			<special type="string">Resistance to Cold</special>
 		</defenses>
@@ -111,10 +111,10 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">104.3</load>
+			<load type="number">179.8</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">465</exp>
+		<exp type="number">532</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -274,7 +274,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">33</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">2</wounds>
 		</hp>
 		<ideals type="string">Honor. I don't steal from others in the trade. Redemption. There's a spark of good in everyone.</ideals>
 		<initiative>
@@ -309,18 +309,6 @@
 				<type type="string">Tools</type>
 				<weight type="number">1</weight>
 			</id-00001>
-			<id-00002>
-				<carried type="number">1</carried>
-				<cost type="string">5 cp</cost>
-				<count type="number">10</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Piton</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.25</weight>
-			</id-00002>
 			<id-00003>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
@@ -359,18 +347,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00005>
-			<id-00006>
-				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Hammer</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">3</weight>
-			</id-00006>
 			<id-00007>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
@@ -401,21 +377,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00008>
-			<id-00009>
-				<carried type="number">1</carried>
-				<cost type="string">2 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Crowbar</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
-			</id-00009>
 			<id-00010>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -428,6 +389,37 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00010>
+			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.</p>
+					<p>This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type. The potion of frost giant strength and the potion of stone giant strength have the same effect.</p>
+					<table>
+						<tr>
+							<td>Type of Giant</td>
+							<td>Strength</td>
+							<td>Rarity</td>
+						</tr>
+						<tr>
+							<td>Hill giant</td>
+							<td>21</td>
+							<td>Uncommon</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Hill Giant Strength</name>
+				<nonid_name type="string">100 GP</nonid_name>
+				<nonidentified type="string">This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00011>
 			<id-00012>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -449,6 +441,40 @@
 				<type type="string">Tools</type>
 				<weight type="number">0.2</weight>
 			</id-00012>
+			<id-00013>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">2,700 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This fine garment is made of black silk interwoven with faint silvery threads. While wearing it, you gain the following benefits:</p>
+					<list>
+						<li>You have resistance to poison damage.</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepoison@Incarnate-5eExpansion">Type Resistance (Poison)</link>
+					</linklist>
+					<list>
+						<li>You have a climbing speed equal to your walking speed.</li>
+						<li>You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</li>
+						<li>You can't be caught in webs of any sort and can move through webs as if they were difficult terrain.</li>
+						<li>You can use an action to cast the web spell (save DC 13).</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.web@Incarnate-5eExpansion">Web</link>
+					</linklist>
+					<p>The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Cloak of Arachnida</name>
+				<nonid_name type="string">Cloak</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">very rare (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">4</weight>
+			</id-00013>
 			<id-00014>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -563,7 +589,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This Keg of Beer has 10 portion for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw DC 14 or increase one Stage of Drunkenness.</p>
 					<linklist>
@@ -603,7 +629,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -666,7 +692,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -722,6 +748,56 @@
 				<type type="string">Ingredient</type>
 				<weight type="number">0.1</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">18</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5,400 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing this armor, you gain a +2 bonus to AC.</p>
+					<p>In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistanceradiant@Incarnate-5eExpansion">Type Resistance (Radiant)</link>
+					</linklist>
+				</description>
+				<dexbonus type="string">-</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Dwarven Plate of Radiant Resistance</name>
+				<nonid_name type="string">Plate Armor</nonid_name>
+				<nonidentified type="string">Some well-crafted plate armor.</nonidentified>
+				<rarity type="string">very rare</rarity>
+				<stealth type="string">Disadvantage</stealth>
+				<strength type="string">Str 15</strength>
+				<subtype type="string">Armor (plate)</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">65</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>CR 3 Drake</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Drake Heart</name>
+				<weight type="number">0</weight>
+			</id-00026>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Ore of Adarmantine</name>
+				<weight type="number">5</weight>
+			</id-00028>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -827,13 +903,13 @@
 			<id-00001>
 				<actions>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">4</cast>
 				<description type="formattedtext">
 					<p>Starting at 3rd level, your magic allows you to harness the elemental magic. Your access to this power is represented by a number of Dragonslayer magic points. You earn two levels per dragonslayer level. Once you use a magic point it will be unavailable until you finish a short or long rest.</p>
 				</description>
 				<locked type="number">1</locked>
 				<name type="string">Dragonslayer Magic Point</name>
-				<prepared type="number">6</prepared>
+				<prepared type="number">8</prepared>
 				<source type="string">DragonSlayer</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00001>
@@ -1070,6 +1146,58 @@
 				<ritual type="number">0</ritual>
 				<source type="string">5e Rule Coding</source>
 			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Bone Breaker; Prone</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Bone Breaker; DISATK</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00148@Incarnate-5eExpansion">Bone Breaker</link>
+					</linklist>
+				</description>
+				<group type="string">Powers</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bone Breaker</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Feat</source>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: poison</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Poison)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00011>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1260,7 +1388,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1285,7 +1413,7 @@
 			<critdicebonus>
 			</critdicebonus>
 			<critrange>
-				<melee type="number">19</melee>
+				<melee type="number">18</melee>
 				<ranged type="number">20</ranged>
 			</critrange>
 		</weapon>
