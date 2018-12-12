@@ -4,7 +4,7 @@
 		<abilities>
 			<charisma>
 				<bonus type="number">-1</bonus>
-				<save type="number">1</save>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">8</score>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Cleric</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1169</amount>
+				<amount type="number">3345</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">117</amount>
+				<amount type="number">263</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">108</amount>
+				<amount type="number">266</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -108,10 +108,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">99.78</load>
+			<load type="number">121.28</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">424</exp>
+		<exp type="number">589</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -237,6 +237,42 @@
 					<p>When you reach the 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Destroy Undead</name>
+				<source type="string">Cleric</source>
+				<text type="formattedtext">
+					<p>Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Destroy Undead table.</p>
+					<p><b>Destroy Undead</b></p>
+					<table>
+						<tr>
+							<td><b>Cleric Level</b></td>
+							<td><b>Destroys Undead of CR ...</b></td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>1/2 or lower</td>
+						</tr>
+						<tr>
+							<td>8th</td>
+							<td>1 or lower</td>
+						</tr>
+						<tr>
+							<td>11th</td>
+							<td>2 or lower</td>
+						</tr>
+						<tr>
+							<td>14th</td>
+							<td>3 or lower</td>
+						</tr>
+						<tr>
+							<td>17th</td>
+							<td>4 or lower</td>
+						</tr>
+					</table>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I will never fully trust anyone other than myself.</flaws>
 		<gender type="string">Male</gender>
@@ -245,7 +281,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Aspiration. I'm going to prove that I'm worthy of a better life.</ideals>
@@ -313,50 +349,13 @@
 				<type type="string">Armor</type>
 				<weight type="number">13</weight>
 			</id-00004>
-			<id-00005>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00005>
 			<id-00006>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
 				<carried type="number">1</carried>
-				<cost type="string"> 1050 GP</cost>
+				<cost type="string">1050 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
+				<damage type="string">1d8 piercing. 1d6 acid</damage>
 				<description type="formattedtext">
 					<p>-Made of thr remains of dryads</p>
 				</description>
@@ -396,7 +395,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -439,6 +438,44 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.05</weight>
 			</id-00009>
+			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Gloves of Swimming and Climbing</name>
+				<nonid_name type="string">Gloves</nonid_name>
+				<nonidentified type="string">A set of light weight leather gloves.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00010>
+			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>This Keg of Beer has 10 portion for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw DC 14 or increase one Stage of Drunkenness.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkenness</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Small Keg of Superior Rum</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Alcohol</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">10</weight>
+			</id-00011>
 			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">5 gp</cost>
@@ -515,6 +552,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00018>
 			<id-00019>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -624,9 +698,9 @@
 				<name type="string">Elvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Vaeris</name>
-		<perception type="number">15</perception>
+		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I bluntly say what other people are hinting at or hiding.</personalitytraits>
 		<powergroup>
@@ -696,10 +770,10 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -749,11 +823,12 @@
 						<type type="string">cast</type>
 					</id-00002>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, you can use your Channel Divinity to charm animals and plants.</p>
 					<p>As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30 feet of you must make a Wisdom saying throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate,</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Channel Divinity: Charm Animals And Plants</name>
 				<prepared type="number">1</prepared>
@@ -859,37 +934,62 @@
 				<name type="string">Spike Growth</name>
 				<prepared type="number">0</prepared>
 				<range type="string">150 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Cleric Nature Domain, Druid, Druid Arctic Circle, Druid Mountain Circle, Ranger</source>
 			</id-00005>
 			<id-00006>
 				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d4</dice>
+								<stat type="string">base</stat>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier.</p>
+					<p>This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Mass Healing Word</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric</source>
+			</id-00006>
+			<id-00007>
+				<actions>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p>
-					<list>
-						<li>Your voice booms up to three times as loud as normal for 1 minute.</li>
-						<li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li>
-						<li>You cause harmless tremors in the ground for 1 minute.</li>
-						<li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li>
-						<li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li>
-						<li>You alter the appearance of your eyes for 1 minute.</li>
-					</list>
-					<p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>
+					<p>Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</p>
 				</description>
-				<duration type="string">Up to 1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Standard actions</group>
+				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Thaumaturgy</name>
+				<name type="string">Dispel Magic</name>
 				<prepared type="number">0</prepared>
-				<range type="string">30 feet</range>
-				<school type="string">Transmutation</school>
-				<source type="string">Cleric</source>
-			</id-00006>
+				<range type="string">120 feet</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Cleric Trickery Domain, Druid, Eldritch Knight, Paladin, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00007>
 			<id-00008>
 				<actions>
 				</actions>
@@ -1016,62 +1116,56 @@
 				<name type="string">Prayer of Healing</name>
 				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Cleric</source>
 			</id-00012>
 			<id-00013>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">5</bonus>
-								<dice type="dice"></dice>
-							</id-00001>
-						</heallist>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a tiny strip of white cloth)</components>
-				<description type="formattedtext">
-					<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range.</p>
-					<p>Each target's hit point maximum and current hit points increase by 5 for the duration.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd.</p>
-				</description>
-				<duration type="string">8 hours</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Aid</name>
-				<prepared type="number">0</prepared>
-				<range type="string">30 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Abjuration</school>
-				<source type="string">Cleric, Paladin</source>
-			</id-00013>
-			<id-00014>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p>
-					<p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+					<p>Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</p>
 				</description>
-				<duration type="string">Concentration, up to 10 minutes</duration>
+				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Detect Magic</name>
+				<name type="string">Dispel Magic</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">1</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Bard, Cleric, Druid, Eldritch Knight, Eldritch Invocations, Paladin, Ranger, Sorcerer, Wizard, Arcane Trickster</source>
+				<range type="string">120 feet</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Cleric Trickery Domain, Druid, Eldritch Knight, Paladin, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">ADVSAV: wisdom; ADVSAV: death; NOTE: Receive Max Healing; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Beacon of Hope</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Cleric Life Domain</source>
 			</id-00014>
 			<id-00015>
 				<actions>
@@ -1095,7 +1189,7 @@
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects - Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p>
 					<p>When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</p>
@@ -1105,6 +1199,7 @@
 					<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
 					<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Channel Divinity</name>
 				<prepared type="number">1</prepared>
@@ -1373,7 +1468,7 @@
 				<source type="string">Cleric, Cleric Life Domain, Cleric War Domain</source>
 			</id-00026>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Disguise kit, thieves' tools</name>
@@ -1398,35 +1493,35 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1447,7 +1542,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1602,7 +1697,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
@@ -1645,6 +1740,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
+				<ammo type="number">3</ammo>
 				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1652,8 +1748,15 @@
 						<bonus type="number">1</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing,magic</type>
 					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">acid,magic</type>
+					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">40</maxammo>
@@ -1669,7 +1772,7 @@
 			<id-00005>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
