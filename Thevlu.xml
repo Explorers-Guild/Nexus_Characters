@@ -31,11 +31,11 @@
 				<score type="number">8</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">2</bonus>
-				<save type="number">5</save>
+				<bonus type="number">1</bonus>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">14</score>
+				<score type="number">13</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">2</bonus>
@@ -93,15 +93,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1935</amount>
+				<amount type="number">2358</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">117</amount>
+				<amount type="number">143</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">109</amount>
+				<amount type="number">129</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -127,14 +127,14 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">70</encumbered>
-			<encumberedheavy type="number">140</encumberedheavy>
-			<liftpushdrag type="number">420</liftpushdrag>
+			<encumbered type="number">65</encumbered>
+			<encumberedheavy type="number">130</encumberedheavy>
+			<liftpushdrag type="number">390</liftpushdrag>
 			<load type="number">89.77</load>
-			<max type="number">210</max>
+			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">599</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">627</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -401,9 +401,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">0</temporary>
+			<temporary type="number">62</temporary>
 			<total type="number">45</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">36</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -798,7 +798,7 @@
 				<name type="string">Primordial</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00003>
 			<id-00004>
 				<name type="string">Elvish</name>
@@ -883,7 +883,7 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -961,7 +961,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<h>Quick Links</h>
 					<linklist>
@@ -1001,6 +1001,16 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<label type="string">Restrained</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<label type="string">Grappled</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Octopus</group>
@@ -1130,14 +1140,13 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Polymorph Code</source>
 			</id-00006>
-			<id-00008>
+			<id-00007>
 				<actions>
 					<id-00001>
 						<heallist>
 							<id-00001>
 								<dice type="dice">d4</dice>
-								<stat type="string">wisdom</stat>
-								<statmult type="number">1</statmult>
+								<stat type="string">base</stat>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -1160,11 +1169,50 @@
 				<range type="string">60 feet</range>
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Druid</source>
+			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">wisdom</atkstat>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Restrained; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.</p>
+					<p>A creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.</p>
+					<p>When the spell ends, the conjured plants wilt away.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Entangle</name>
+				<prepared type="number">0</prepared>
+				<range type="string">90 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid</source>
 			</id-00008>
 			<id-00009>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<group type="string">Power</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
@@ -1175,60 +1223,123 @@
 			<id-00010>
 				<actions>
 					<id-00001>
-						<atkprof type="number">1</atkprof>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: constitution; (C)</label>
 						<order type="number">1</order>
-						<savedcbase type="string">ability</savedcbase>
-						<savedcprof type="number">1</savedcprof>
-						<savedcstat type="string">wisdom</savedcstat>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">wisdom</savetype>
-						<type type="string">cast</type>
+						<type type="string">effect</type>
 					</id-00001>
 					<id-00002>
-						<durmod type="number">24</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Charmed</label>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+							</id-00001>
+						</heallist>
+						<healtype type="string">temp</healtype>
 						<order type="number">2</order>
-						<type type="string">effect</type>
+						<type type="string">heal</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: strength; (C)</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: dexterity; (C)</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: charisma; (C)</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: intelligence; (C)</label>
+						<order type="number">6</order>
+						<type type="string">effect</type>
+					</id-00006>
+					<id-00007>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVCHK: wisdom; (C)</label>
+						<order type="number">7</order>
+						<type type="string">effect</type>
+					</id-00007>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a morsel of food)</components>
+				<components type="string">V, S, M (fur or a feather from a beast)</components>
 				<description type="formattedtext">
-					<p>This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spells ends.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.</p>
+					<p>You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.</p>
+					<p><b>Bear's Endurance. </b>The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</p>
+					<p><b>Bull's Strength. </b>The target has advantage on Strength checks, and his or her carrying capacity doubles.</p>
+					<p><b>Cat's Grace. </b>The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.</p>
+					<p><b>Eagle's Splendor. </b>The target has advantage on Charisma checks.</p>
+					<p><b>Fox's Cunning. </b>The target has advantage on Intelligence checks.</p>
+					<p><b>Owl's Wisdom. </b>The target has advantage on Wisdom checks.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
 				</description>
-				<duration type="string">24 hours</duration>
+				<duration type="string">Concentration, up to 1 hour.</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Animal Friendship</name>
+				<name type="string">Enhance Ability</name>
 				<prepared type="number">0</prepared>
-				<range type="string">30 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Enchantment</school>
-				<source type="string">Bard, Cleric Nature Domain, Druid, Ranger</source>
+				<range type="string">Touch</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Cleric, Druid, Sorcerer</source>
 			</id-00010>
 			<id-00011>
 				<actions>
+					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">strength</atkstat>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<stat type="string">strength</stat>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Restrained</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<durmod type="number">0</durmod>
+						<label type="string">Grappled</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion.</p>
-				</description>
-				<duration type="string">10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<group type="string">Octopus</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Speak with Animals</name>
+				<name type="string">Tentacle - Octopus</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">1</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Bard, Cleric Nature Domain, Druid, Eldritch Invocations, Ranger</source>
 			</id-00011>
 			<id-00013>
 				<actions>
@@ -1325,6 +1436,7 @@
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
+						<healtype type="string">temp</healtype>
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
@@ -1366,8 +1478,14 @@
 			<id-00020>
 				<actions>
 					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">wisdom</atkstat>
 						<atktype type="string">melee</atktype>
 						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">intelligence</savedcstat>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -1613,7 +1731,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">4</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1692,7 +1810,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
