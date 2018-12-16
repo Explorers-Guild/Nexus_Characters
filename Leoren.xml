@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">3</hdused>
-				<level type="number">5</level>
+				<hdused type="number">0</hdused>
+				<level type="number">6</level>
 				<name type="string">Rune Blade</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">282</amount>
+				<amount type="number">1830</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">58</amount>
+				<amount type="number">176</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">61</amount>
+				<amount type="number">182</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,11 +110,11 @@
 			<encumbered type="number">150</encumbered>
 			<encumberedheavy type="number">300</encumberedheavy>
 			<liftpushdrag type="number">900</liftpushdrag>
-			<load type="number">167</load>
+			<load type="number">171.5</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">528</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">624</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -133,6 +133,21 @@
 					</linklist>
 				</text>
 			</id-00001>
+			<id-00003>
+				<locked type="number">1</locked>
+				<name type="string">Medium Weapon Master</name>
+				<text type="formattedtext">
+					<h>Medium Weapon Master</h>
+					<p>You have learned to master fighting with balanced and lightweight weapons, making your attacks faster and more deadly. You gain the following benefits:</p>
+					<list>
+						<li>When wielding a melee weapon not designated as heavy, you increase your chances of scoring a critical hit by one point (19-20).</li>
+						<li>When you take the attack action with a melee weapon not designated as heavy, you can make one melee weapon attack as a bonus action.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Medium_Weapon_Master_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00003>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -250,14 +265,14 @@
 				</text>
 			</id-00009>
 		</featurelist>
-		<flaws type="string">I never forget an insult, and I bide my time for revenge.</flaws>
+		<flaws type="string">I never forget an insult, and I bide my time for revenge.     </flaws>
 		<gender type="string">male</gender>
 		<height type="string">6ft</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">39</total>
+			<total type="number">46</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Brotherhood - I never feel alone as long as I know my brothers (and/or sisters) are out there. (Any)</ideals>
@@ -672,6 +687,77 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2,700 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This fine garment is made of black silk interwoven with faint silvery threads. While wearing it, you gain the following benefits:</p>
+					<list>
+						<li>You have resistance to poison damage.</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepoison@Incarnate-5eExpansion">Type Resistance (Poison)</link>
+					</linklist>
+					<list>
+						<li>You have a climbing speed equal to your walking speed.</li>
+						<li>You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</li>
+						<li>You can't be caught in webs of any sort and can move through webs as if they were difficult terrain.</li>
+						<li>You can use an action to cast the web spell (save DC 13).</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.web@Incarnate-5eExpansion">Web</link>
+					</linklist>
+					<p>The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Cloak of Arachnida</name>
+				<nonid_name type="string">Cloak</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">very rare (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">4</weight>
+			</id-00025>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -684,7 +770,7 @@
 				<name type="string">Aquan</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Leoren</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -769,7 +855,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -800,6 +886,34 @@
 				<source type="string">Rune Blade</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00002>
 			<id-00003>
 				<actions>
 					<id-00001>
@@ -825,6 +939,34 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Monk - Class Ability</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00004>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -996,7 +1138,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1091,6 +1233,14 @@
 				<type type="string">subracial</type>
 			</id-00004>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">19</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
@@ -1116,7 +1266,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">1</ammo>
+				<ammo type="number">2</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
