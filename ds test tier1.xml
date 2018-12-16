@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">3873</amount>
+				<amount type="number">5421</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">579</amount>
+				<amount type="number">700</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">359</amount>
+				<amount type="number">477</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -111,11 +111,11 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">80.2</load>
+			<load type="number">81.7</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">610</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">706</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -323,7 +323,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">47</total>
-			<wounds type="number">17</wounds>
+			<wounds type="number">12</wounds>
 		</hp>
 		<ideals type="string">Honor. I don't steal from others in the trade. Redemption. There's a spark of good in everyone.</ideals>
 		<initiative>
@@ -495,7 +495,7 @@
 				<name type="string">Alchemist's Fire (Flask)</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
+				<weight type="number">0</weight>
 			</id-00009>
 			<id-00010>
 				<carried type="number">1</carried>
@@ -555,6 +555,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Dice Set</name>
 				<subtype type="string">Gaming Set</subtype>
@@ -675,6 +676,24 @@
 				<name type="string">Blink Dog</name>
 				<weight type="number">0</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2500 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing, 2d12 necrotic</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Unholy Trident</name>
+				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -707,6 +726,7 @@
 					<p>The lenses regain all expended charges daily at dawn.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Eyes of Charming</name>
 				<nonid_name type="string">Crystal Lenses</nonid_name>
@@ -720,7 +740,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">3</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -869,14 +889,52 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<p>CR 3 Drake</p>
 				</description>
+				<location type="string">backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Drake Heart</name>
 				<weight type="number">0</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00027>
 			<id-00028>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -897,6 +955,9 @@
 			<id-00002>
 				<name type="string">Elvish</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Draconic</name>
+			</id-00003>
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Vyserion &#34;Ds Tier1&#34;</name>
@@ -905,8 +966,10 @@
 		<personalitytraits type="string">I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.The first thing I do in a new place is note the locations of everything valuable-or where such things could be hidden.The best way to get me to do something is to tell me I can't do it.</personalitytraits>
 		<powergroup>
 			<id-00001>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
-				<name type="string">Spells</name>
+				<name type="string">Resistances</name>
+				<saveprof type="number">1</saveprof>
 			</id-00001>
 			<id-00002>
 				<name type="string">Powers</name>
@@ -994,14 +1057,14 @@
 			<id-00001>
 				<actions>
 				</actions>
-				<cast type="number">7</cast>
+				<cast type="number">8</cast>
 				<description type="formattedtext">
 					<p>Starting at 3rd level, your magic allows you to harness the elemental magic. Your access to this power is represented by a number of Dragonslayer magic points. You earn two levels per dragonslayer level. Once you use a magic point it will be unavailable until you finish a short or long rest.</p>
 				</description>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Dragonslayer Magic Point</name>
-				<prepared type="number">10</prepared>
+				<prepared type="number">12</prepared>
 				<source type="string">DragonSlayer</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00001>
@@ -1069,7 +1132,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Resistances</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Type Resistance (Cold)</name>
@@ -1209,7 +1272,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Resistances</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Type Resistance (Radiant)</name>
@@ -1232,7 +1295,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Resistances</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Type Resistance (Thunder)</name>
@@ -1284,7 +1347,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Resistances</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Type Resistance (Poison)</name>
@@ -1547,7 +1610,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1575,7 +1638,7 @@
 			<critdicebonus>
 			</critdicebonus>
 			<critrange>
-				<melee type="number">18</melee>
+				<melee type="number">17</melee>
 				<ranged type="number">20</ranged>
 			</critrange>
 		</weapon>
@@ -1602,6 +1665,60 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
+			<id-00002>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d12,d12</dice>
+						<type type="string">necrotic</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Unholy Trident</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d12,d12</dice>
+						<type type="string">necrotic</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Unholy Trident</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00003>
 		</weaponlist>
 		<weight type="string">110</weight>
 	</character>
