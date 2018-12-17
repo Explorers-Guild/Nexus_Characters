@@ -58,8 +58,8 @@
 			<id-00001>
 				<casterlevelinvmult type="number">3</casterlevelinvmult>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<hdused type="number">1</hdused>
+				<level type="number">4</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,7 +69,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">253</amount>
+				<amount type="number">289</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -77,7 +77,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">47</amount>
+				<amount type="number">93</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +85,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">44</amount>
+				<amount type="number">94</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,12 +108,24 @@
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">161.6</load>
+			<load type="number">136.35</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">356</exp>
+		<exp type="number">408</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Shield Master</name>
+				<text type="formattedtext">
+					<p>You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:</p>
+					<list>
+						<li>If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.</li>
+						<li>If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.</li>
+						<li>If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -437,6 +449,16 @@
 					</table>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">I may be slow to anger but once someone has made me angry it is almost impossible to calm me down. In the heat of the moment I often do things I would normally not do.</flaws>
 		<gender type="string">Male</gender>
@@ -445,8 +467,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
-			<wounds type="number">0</wounds>
+			<total type="number">36</total>
+			<wounds type="number">2</wounds>
 		</hp>
 		<ideals type="string">Discipline - I work hard and whatever I set out to do I accomplish. From the forge to life I excell at everything I try. (Any)</ideals>
 		<initiative>
@@ -819,10 +841,41 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00011@Incarnate-Syrinscape"><b>Syrinscape : Staff</b></link>
+					</linklist>
+					<h>Description</h>
+					<linklist>
+						<link class="npc" recordname="npc.giantconstrictorsnake@Incarnate-5eBattles">NPC: Giant Constrictor Snake</link>
+					</linklist>
+					<p>You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.</p>
+					<p>On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.</p>
+					<p>If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Staff of the Python</name>
+				<nonid_name type="string">Staff</nonid_name>
+				<nonidentified type="string">A magical staff.</nonidentified>
+				<properties type="string">Versatile (1d8)</properties>
+				<rarity type="string">uncommon (requires attunement by a cleric, druid, or warlock)</rarity>
+				<subtype type="string">Arcane Focus</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Elvish</name>
@@ -831,7 +884,7 @@
 				<name type="string">Dwarvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Vulluin</name>
 		<notes type="string">have Pseudodragon that has +10 hp do to training</notes>
 		<perception type="number">12</perception>
@@ -875,8 +928,8 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<used type="number">0</used>
@@ -1258,7 +1311,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1355,7 +1408,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d8</dice>
@@ -1375,7 +1428,8 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<carried type="number">1</carried>
+				<ammo type="number">1</ammo>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d8</dice>
@@ -1394,6 +1448,27 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Staff of the Python</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00022</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
 		</weaponlist>
 	</character>
 </root>
