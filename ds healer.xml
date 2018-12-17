@@ -45,6 +45,8 @@
 				<score type="number">16</score>
 			</wisdom>
 		</abilities>
+		<adventurelist>
+		</adventurelist>
 		<background type="string">Doctor</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -62,6 +64,31 @@
 				</shortcut>
 			</id-00001>
 		</classes>
+		<coins>
+			<slot1>
+				<amount type="number">15</amount>
+				<name type="string">GP</name>
+			</slot1>
+			<slot2>
+				<amount type="number">0</amount>
+				<name type="string">PP</name>
+			</slot2>
+			<slot3>
+				<amount type="number">0</amount>
+				<name type="string">CP</name>
+			</slot3>
+			<slot4>
+				<amount type="number">0</amount>
+				<name type="string">EP</name>
+			</slot4>
+			<slot5>
+				<amount type="number">0</amount>
+				<name type="string">SP</name>
+			</slot5>
+			<slot6>
+				<amount type="number">0</amount>
+			</slot6>
+		</coins>
 		<defenses>
 			<ac>
 				<armor type="number">3</armor>
@@ -73,8 +100,17 @@
 				<temporary type="number">0</temporary>
 				<total type="number">18</total>
 			</ac>
-			<special type="string">Resist piercing</special>
+			<special type="string">Resist melee (for the moment)</special>
 		</defenses>
+		<encumbrance>
+			<encumbered type="number">75</encumbered>
+			<encumberedheavy type="number">150</encumberedheavy>
+			<liftpushdrag type="number">450</liftpushdrag>
+			<load type="number">57.85</load>
+			<max type="number">225</max>
+		</encumbrance>
+		<exp type="number">41</exp>
+		<expneeded type="number">0</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -181,32 +217,306 @@
 				</text>
 			</id-00011>
 		</featurelist>
+		<height type="string">5,6</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">26</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">3</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
-		<languagelist>
+		<inventorylist>
 			<id-00001>
-				<name type="string">Choice</name>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">backpack</location>
+				<name type="string">Clothesdun</name>
+				<weight type="number">0</weight>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">3 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Even in a culture with many people who smell most strongly, there is some use for soap. Some people even believe that it can help prevent disease!</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Bar of Soap</name>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
 			</id-00002>
 			<id-00003>
-				<name type="string">Choice</name>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">3 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A small cloth tent that when pitched can fit 2 men.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Tent, 2-man</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This is a medical book that has specialized in one field:</p>
+					<linklist>
+						<link class="table" recordname="tables.id-01881@Incarnate-5eExpansion">Medical Book - Field</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Book, Medical</name>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">20 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00006@Incarnate-5eExpansion">Doctor's Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>A stethoscope, some splints, a bone saw, and a magnifying glass.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Doctor's Tools</name>
+				<rarity type="string">Very Rare</rarity>
+				<subtype type="string">Artisan's Tools</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">10</weight>
+			</id-00005>
+			<id-00006>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Clothes, Common</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00006>
+			<id-00007>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This tiny leather pouch is perfect for keeping your coins close at hand. Just watch out for someone trying to cut it off of your belt.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Coin Pouch - Small</name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
+			</id-00007>
+			<id-00008>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Bedroll</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">7</weight>
+			</id-00008>
+			<id-00009>
+				<carried type="number">1</carried>
+				<cost type="string">5 SP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Blanket</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00009>
+			<id-00010>
+				<carried type="number">1</carried>
+				<cost type="string">5 cp</cost>
+				<count type="number">10</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Piton</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.25</weight>
+			</id-00010>
+			<id-00011>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">10</count>
+				<description type="formattedtext">
+					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Rations (1 Day)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">2</weight>
+			</id-00011>
+			<id-00012>
+				<carried type="number">1</carried>
+				<cost type="string">2 sp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Waterskin</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00012>
+			<id-00013>
+				<carried type="number">1</carried>
+				<cost type="string">2 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Backpack</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00013>
+			<id-00014>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Hammer</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00014>
+			<id-00015>
+				<carried type="number">1</carried>
+				<cost type="string">1 cp</cost>
+				<count type="number">10</count>
+				<description type="formattedtext">
+					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Torch</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00015>
+			<id-00016>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Tinderbox</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00016>
+			<id-00017>
+				<carried type="number">1</carried>
+				<cost type="string">2 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Crowbar</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00017>
+			<id-00018>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Rope, Hempen (50 Feet)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">10</weight>
+			</id-00018>
+		</inventorylist>
+		<languagelist>
+			<id-00001>
+				<name type="string">Draconic</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Common</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">Ds healer</name>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
+		<powergroup>
+			<id-00001>
+				<name type="string">Dragon point</name>
+			</id-00001>
+		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
@@ -281,12 +591,24 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<level type="number">0</level>
 				<name type="string">Draconic Touch</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 			</id-00001>
 			<id-00002>
 				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Elemental Fist; HEAL: 1d6</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
 					<id-00003>
 						<heallist>
 							<id-00001>
@@ -303,12 +625,71 @@
 				<description type="formattedtext">
 					<p>Given your Dragonslayer's Magic you surround your fists in the element given to you. Add 1d6 elemental damage to your unarmed strikes. This feature will cost you 2 Dragonslayer Magic points.This lasts for a minute.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Elemental Fist (healing)</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 				<source type="string">DragonSlayer</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">2</cast>
+				<description type="formattedtext">
+					<p>Starting at 3rd level, your magic allows you to harness the elemental magic. Your access to this power is represented by a number of Dragonslayer magic points. You earn two levels per dragonslayer level. Once you use a magic point it will be unavailable until you finish a short or long rest.</p>
+				</description>
+				<group type="string">Dragon point</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dragonslayer Magic Point</name>
+				<prepared type="number">6</prepared>
+				<source type="string">DragonSlayer</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<stat type="string">wisdom</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>As a Dragonslayer when you choose your elemental specialization you can eat the element you are trained in and recover 1d8 + your Wisdom modifier. Also recover one dragonslayer magic point</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Eating the elements</name>
+				<prepared type="number">0</prepared>
+				<source type="string">DragonSlayer</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: bludgeoning, slashing</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Resistance</name>
+				<prepared type="number">0</prepared>
+			</id-00005>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -327,6 +708,7 @@
 			<class>reference_race</class>
 			<recordname>reference.racedata.human_variant@DD PHB Deluxe</recordname>
 		</racelink>
+		<senses type="string">Keen senses</senses>
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
@@ -346,9 +728,9 @@
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
-				<prof type="number">1</prof>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">1</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -451,10 +833,23 @@
 			<id-00018>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">5</total>
 			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string">Doctor's Tools</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00336@Incarnate-5eExpansion">Doctor's Tools</link>
+					</linklist>
+				</text>
+				<total type="number">3</total>
+			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -463,7 +858,9 @@
 			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
-		<token type="token"></token>
+		<temp>
+		</temp>
+		<token type="token">portrait_id-00014_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -486,5 +883,6 @@
 		</traitlist>
 		<weaponlist>
 		</weaponlist>
+		<weight type="string">100</weight>
 	</character>
 </root>
