@@ -47,7 +47,7 @@
 		</abilities>
 		<adventurelist>
 			<id-00001>
-				<name type="string">K&#228;s's kill log,... killed Orc; Ice mephit thingy; Winterwolf; some giantgoatlikethings; halfing priest and scout; </name>
+				<name type="string">K&#228;s's kill log,... killed Orc; Ice mephit thingy; Winterwolf; some giantgoatlikethings; halfing priest and scout;</name>
 			</id-00001>
 		</adventurelist>
 		<age type="string">23</age>
@@ -60,6 +60,8 @@
 		<bonds type="string">An injury to the unspoiled wilderness of my home is an injury to me.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">6</level>
@@ -72,15 +74,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">83</amount>
+				<amount type="number">2210</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">189</amount>
+				<amount type="number">368</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">183</amount>
+				<amount type="number">369</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -108,10 +110,10 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">36.1</load>
+			<load type="number">40.6</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">637</exp>
+		<exp type="number">699</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
@@ -676,6 +678,55 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">6</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">4</count>
+				<description type="formattedtext">
+					<p>CR 13 dragon</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Dragon Eyes</name>
+				<weight type="number">1</weight>
+			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -873,7 +924,7 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">5</cast>
 				<group type="string">Ki</group>
 				<level type="number">0</level>
 				<name type="string">Ki Points</name>
@@ -1004,6 +1055,7 @@
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
+						<durmod type="number">1</durmod>
 						<label type="string">Stunned</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
@@ -1232,7 +1284,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00009_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1255,7 +1307,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>

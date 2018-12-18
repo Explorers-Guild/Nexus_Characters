@@ -61,11 +61,11 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.druid@DD PHB Deluxe</recordname>
+					<recordname>reference.classdata.druid@DD Xanathar's Guide to Everything Players</recordname>
 				</shortcut>
 			</id-00001>
 			<id-00002>
@@ -83,15 +83,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">5046</amount>
+				<amount type="number">7173</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">769</amount>
+				<amount type="number">948</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">532</amount>
+				<amount type="number">718</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -124,11 +124,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">119.2</load>
+			<load type="number">119.6</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">674</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">736</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -378,6 +378,20 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Mighty Summoner</name>
+				<source type="string">Druid</source>
+				<specialization type="string">Circle of the Shepherd</specialization>
+				<text type="formattedtext">
+					<p>Starting at 6th level, beasts and fey that you conjure are more resilient than normal. Any beast or fey summoned or created by a spell that you cast gains the following benefits:</p>
+					<list>
+						<li>The creature appears with more hit points than normal: 2 extra hit points per Hit Die it has.</li>
+						<li>The damage from its natural weapons is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage.</li>
+					</list>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I took the vow not realizing its full implications.</flaws>
 		<gender type="string">Male</gender>
@@ -386,8 +400,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">39</total>
-			<wounds type="number">0</wounds>
+			<total type="number">45</total>
+			<wounds type="number">23</wounds>
 		</hp>
 		<ideals type="string">Honor - I swore my oath, and now I must live by its tenets. We are all in this together, for better or for worse. Everyone deserves to live. (Neutral)</ideals>
 		<initiative>
@@ -835,6 +849,39 @@
 				<type type="string">Gear</type>
 				<weight type="number">0</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">4,700 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing cold-forged iron silver</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>Wars with infernals and demons forced the creation of new types of weapons. men learned to forge in low temperature environments to change the nature of the iron so it could pierce the hot scales of demons. The process is not simple and certainly not cheap but to save your life it might be worth it.</p>
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.plantslayer@Incarnate-5eExpansion">Plant Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an Plant with it the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon &#34;Plant&#34; refers to any creature with the Plant type.</p>
+					<p>You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.</p>
+					<p>While the sword hovers, you can use a bonus action to cause it to fly up to 30 feet to another spot within 30 feet of you. As part of the same bonus action, you can cause the sword to attack one creature within 5 feet of it.</p>
+					<p>After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Dancing Silver Coated Cold-Forged Iron Javelin of Plant Slaying</name>
+				<nonid_name type="string">Javelin</nonid_name>
+				<nonidentified type="string">A strong javelin.</nonidentified>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00025>
 			<id-00026>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -934,48 +981,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00030>
-			<id-00031>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">150 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.magiccircle@Incarnate-5eExpansion">Magic Circle</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>3rd</td>
-							<td>Uncommon</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Magic Circle</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Scroll</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00031>
 			<id-00032>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1065,48 +1070,6 @@
 				<type type="string">Wand</type>
 				<weight type="number">1</weight>
 			</id-00034>
-			<id-00035>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">200 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Linked Spell</h>
-					<linklist>
-						<link class="power" recordname="spell.phantasmalkiller@Incarnate-5eExpansion">Phantasmal Killer</link>
-					</linklist>
-					<h>Description</h>
-					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
-					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
-					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
-					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
-					<p>Spell Scroll</p>
-					<table>
-						<tr>
-							<td>Spell Level</td>
-							<td>Rarity</td>
-							<td>Save DC</td>
-							<td>Attack Bonus</td>
-						</tr>
-						<tr>
-							<td>4th</td>
-							<td>Rare</td>
-							<td>15</td>
-							<td>+7</td>
-						</tr>
-					</table>
-					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Scroll of Phantasmal Killer</name>
-				<nonid_name type="string">Scroll</nonid_name>
-				<nonidentified type="string">Fine Scroll</nonidentified>
-				<rarity type="string">Rare</rarity>
-				<type type="string">Scroll</type>
-				<weight type="number">0.3</weight>
-			</id-00035>
 			<id-00036>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1149,7 +1112,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 gp</cost>
-				<count type="number">4</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<p>This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.</p>
 				</description>
@@ -1160,42 +1123,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00037>
-			<id-00038>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Cold to the touch</p>
-				</description>
-				<locked type="number">1</locked>
-				<name type="string">Coarl Drake Heart</name>
-				<weight type="number">0</weight>
-			</id-00038>
-			<id-00039>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Poisons</p>
-				</description>
-				<locked type="number">1</locked>
-				<name type="string">Coarl Drake Stinger </name>
-				<weight type="number">0</weight>
-			</id-00039>
-			<id-00040>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Has Camouflage underwater</p>
-				</description>
-				<locked type="number">1</locked>
-				<name type="string">Coral Drake scales</name>
-				<weight type="number">0</weight>
-			</id-00040>
 			<id-00041>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1295,8 +1222,9 @@
 				<name type="string">Sylvan</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Shi-f&#250;</name>
+		<notes type="string">4 days since lion statue</notes>
 		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">All I think about is saving lives, or lives that have been lost.I am cold and calculating in my every word and action, even when furious or frightened.</personalitytraits>
@@ -1356,15 +1284,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1506,7 +1434,7 @@
 						<type type="string">damage</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">6</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S, M (a bit of fur and a rod of amber, crystal, or glass)</components>
 				<description type="formattedtext">
@@ -1644,30 +1572,32 @@
 			<id-00008>
 				<actions>
 					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Shillelagh; ATK: [-STR], melee; ATK: [WIS], melee; DMG: [-STR], melee; DMG: [WIS], melee; DMGTYPE: magic</label>
+						<durmod type="number">0</durmod>
+						<label type="string">DMGO: 1d4 fire</label>
 						<order type="number">1</order>
-						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 bonus action</castingtime>
-				<components type="string">V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)</components>
 				<description type="formattedtext">
-					<p>The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.</p>
+					<p></p>
 				</description>
-				<duration type="string">1 minute</duration>
-				<group type="string">Spells</group>
+				<group type="string">Item</group>
 				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Shillelagh</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Druid</source>
 			</id-00008>
 			<id-00009>
 				<actions>
@@ -1842,6 +1772,54 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard</source>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10</dice>
+								<type type="string">piercing,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<type type="string">cold,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S, M (a drop of water or a piece of ice)</components>
+				<description type="formattedtext">
+					<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Ice Knife</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Sorcerer, Wizard</source>
+			</id-00014>
 			<id-00015>
 				<actions>
 					<id-00001>
@@ -1922,6 +1900,7 @@
 							<id-00001>
 								<dice type="dice"></dice>
 								<stat type="string">druid</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">2</order>
@@ -1956,6 +1935,46 @@
 				<specialization type="string">Circle of the Shepherd</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d6</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Healing Spirit (C)</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice).</p>
+					<p>Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore 1d6 hit points to that creature (no action required). The spirit can't heal constructs or undead.</p>
+					<p>As a bonus action on your turn, you can move the spirit up to 30 feet to a space you can see.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d6 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Healing Spirit</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00018>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2000,8 +2019,8 @@
 				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
-				<stat type="string">intelligence</stat>
-				<total type="number">5</total>
+				<stat type="string">wisdom</stat>
+				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -2151,7 +2170,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00009_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2224,7 +2243,7 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2244,6 +2263,25 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00002>
+			<id-00003>
+				<attackbonus type="number">0</attackbonus>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Dancing Silver Coated Cold-Forged Iron Javelin of Plant Slaying</name>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">1</carried>
@@ -2279,6 +2317,25 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Dancing Silver Coated Cold-Forged Iron Javelin of Plant Slaying</name>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">460</weight>
 	</character>
