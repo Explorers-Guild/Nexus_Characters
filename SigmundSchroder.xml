@@ -71,21 +71,21 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">600</amount>
+				<amount type="number">971</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
 				<amount type="number">0</amount>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">18</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">16</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,10 +109,10 @@
 			<encumbered type="number">100</encumbered>
 			<encumberedheavy type="number">200</encumberedheavy>
 			<liftpushdrag type="number">600</liftpushdrag>
-			<load type="number">160.1</load>
+			<load type="number">148.6</load>
 			<max type="number">300</max>
 		</encumbrance>
-		<exp type="number">749</exp>
+		<exp type="number">777</exp>
 		<expneeded type="number">800</expneeded>
 		<featlist>
 			<id-00003>
@@ -561,7 +561,7 @@
 			<id-00005>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">11</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -608,7 +608,7 @@
 			<id-00009>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">10</count>
+				<count type="number">5</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
@@ -650,7 +650,7 @@
 			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
@@ -658,22 +658,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00012>
-			<id-00013>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Picture of Ziggurat in 04,04</name>
-				<weight type="number">0</weight>
-			</id-00013>
-			<id-00015>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Picture of a barbarian eating a death elemental</name>
-				<weight type="number">0</weight>
-			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -695,6 +679,27 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the bless spell (no concentration required). This blue potion bubbles and steams as if boiling.</p>
+					<linklist>
+						<link class="power" recordname="spell.bless@Incarnate-5eExpansion">Bless</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Heroism</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">This blue potion bubbles and steams as if boiling.</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -723,11 +728,34 @@
 				<weight type="number">4</weight>
 			</id-00019>
 			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">877 gp</cost>
 				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<name type="string">Seal of Rank</name>
-				<weight type="number">0</weight>
+				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.dragonslayer@Incarnate-5eExpansion">Dragon Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, &#34;dragon&#34; refers to any creature with the dragon type, including dragon turtles and wyverns.</p>
+					<p><b>Vicious Notes</b></p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.viciousweapon@Incarnate-5eExpansion">Vicious</link>
+					</linklist>
+					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
+				</description>
+				<locked type="number">0</locked>
+				<name type="string">Longsword [Dragon Slayer] [Vicious], +1</name>
+				<properties type="string">Versatile (1d10)</properties>
+				<rarity type="string">rare</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
 			</id-00020>
 			<id-00021>
 				<ac type="number">18</ac>
@@ -812,6 +840,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">4</weight>
 			</id-00024>
+			<id-00025>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<locked type="number">1</locked>
+				<name type="string">Token of ????</name>
+				<weight type="number">0</weight>
+			</id-00025>
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -934,7 +969,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1414,7 +1449,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Warding Wind</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1439,7 +1474,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Jump</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1615,7 +1650,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00011_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1711,6 +1746,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1725,6 +1761,28 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00004>
+			<id-00005>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing, magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Longsword [Dragon Slayer] [Vicious], +1</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">148</weight>
 	</character>

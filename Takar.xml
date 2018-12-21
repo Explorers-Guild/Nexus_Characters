@@ -81,7 +81,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">8356</amount>
+				<amount type="number">8767</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -89,7 +89,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">706</amount>
+				<amount type="number">724</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -97,7 +97,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">687</amount>
+				<amount type="number">703</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -106,13 +106,14 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">0</armor>
+				<armor type="number">4</armor>
+				<dexbonus type="string">max2</dexbonus>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">13</total>
+				<total type="number">16</total>
 			</ac>
 		</defenses>
 		<deity type="string">Valhalla</deity>
@@ -120,13 +121,13 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">111.8</load>
+			<load type="number">112.8</load>
 			<max type="number">180</max>
 			<total type="number">0</total>
 			<treasure type="number">0</treasure>
 		</encumbrance>
-		<exp type="number">934</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">962</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -342,7 +343,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">85</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">46</wounds>
 		</hp>
 		<ideals type="string">Golden Soul - I fight for money, and nothing else. (Neutral)</ideals>
 		<initiative>
@@ -662,7 +663,7 @@
 			<id-00019>
 				<ac type="number">14</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1,300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -747,39 +748,23 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
+				<cost type="string">200 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Action Coding</h>
+					<p>This head spills nothing but insults at any it sees.</p>
+					<p>As a bonus action, you can point this head at a creature, at which point it will cast Vicious Mockery at the target.</p>
 					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+						<link class="power" recordname="spell.viciousmockery@Incarnate-5eExpansion">Vicious Mockery</link>
 					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Belt</location>
 				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
+				<name type="string">Shrunken Head of Vicious Mockery</name>
+				<nonid_name type="string">A Shrunken Head</nonid_name>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
 			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
@@ -862,6 +847,18 @@
 				<name type="string">Belt</name>
 				<weight type="number">0</weight>
 			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A token given to Tak'ar by Madam Buval. It's use, still a mystery. Perhaps it's purpose will become known from further journeis in Trosilax.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Flipping coin of ~Mystery~</name>
+				<weight type="number">0</weight>
+			</id-00026>
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -911,6 +908,43 @@
 				<type type="string">Sustance</type>
 				<weight type="number">0</weight>
 			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -994,7 +1028,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
@@ -1565,7 +1599,7 @@
 			<id-00013>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>At 7th level, as an action you have the ability to make such an incredible number of strikes in such a beautiful manner at such incredible speed that you truly have mastered the dance of death. You may use your action to attack each enemy within 5 feet of you, with separate attack rolls for each target. Once you have used this ability, you may not use it again until you complete a short or long rest.</p>
 				</description>
@@ -1610,7 +1644,7 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">hour</durunit>
-						<label type="string">IFT: CUSTOM(Hunter's Mark); DMG: 1d6</label>
+						<label type="string">IFT: CUSTOM(Hunter's Mark - Tak'ar); DMG: 1d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1618,7 +1652,7 @@
 					<id-00002>
 						<durmod type="number">1</durmod>
 						<durunit type="string">hour</durunit>
-						<label type="string">Hunter's Mark; (C)</label>
+						<label type="string">Hunter's Mark - Tak'ar; (C)</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
 					</id-00002>
@@ -1644,7 +1678,6 @@
 			<id-00016>
 				<actions>
 					<id-00001>
-						<apply type="string">roll</apply>
 						<durmod type="number">0</durmod>
 						<label type="string">DMG: 2d6</label>
 						<order type="number">1</order>
@@ -1652,7 +1685,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<description type="formattedtext">
 					<p>This weapon has 6 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from it have a save DC of 15 and a spell attack bonus of +7. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it: create or destroy water (1 charge), tidal wave (3 charges), black tentacles (4 charges), or conjure elemental (5 charges, water elemental only).</p>
 					<linklist>
@@ -1671,6 +1704,34 @@
 				<prepared type="number">6</prepared>
 				<usesperiod type="string">once</usesperiod>
 			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00017>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -1703,7 +1764,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -1738,7 +1799,7 @@
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1766,7 +1827,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1780,14 +1841,14 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1835,7 +1896,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
