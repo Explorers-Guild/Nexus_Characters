@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -58,18 +58,18 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">4</level>
+				<hdused type="number">0</hdused>
+				<level type="number">5</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.fighter@DD Xanathar's Guide to Everything Players</recordname>
+					<recordname>reference.classdata.fighter@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">832</amount>
+				<amount type="number">1351</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -77,7 +77,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">130</amount>
+				<amount type="number">294</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +85,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">133</amount>
+				<amount type="number">275</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,12 +108,19 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">115.7</load>
+			<load type="number">159.7</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">137</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">521</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Tough</name>
+				<text type="formattedtext">
+					<p>Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.</p>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -196,61 +203,54 @@
 				</text>
 			</id-00006>
 			<id-00007>
+				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Dragon Slayer</name>
+				<name type="string">Champion</name>
 				<source type="string">Fighter</source>
 				<text type="formattedtext">
-					<p>The crackling of lightning through the sky gives you a brief glimpse of wings flapping as the dragon turns for another pass. You ready your spear and just as it is about to open its great maw to breath another blast of doom your pitch your spear forward down its throat.</p>
-					<p>Dragon slaying is not for the light hearted, but for those bold, and possibly stupid enough to seek the profession they will find great appreciation from those they save.</p>
-					<h>Abilities</h>
+					<p>The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.</p>
+					<h>Features</h>
 					<linklist>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00039@Incarnate-5eExpansion">Level 3: Dragonslayer's Spear</link>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00040@Incarnate-5eExpansion">Level 7: Electrified Charge</link>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00041@Incarnate-5eExpansion">Level 10: Dragonslayer's Lightning</link>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00042@Incarnate-5eExpansion">Level 15: Electrified</link>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00043@Incarnate-5eExpansion">Level 18: Dragonslayer's Lightning</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.improvedcritical3@DD PHB Deluxe">Improved Critical</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.remarkableathlete7@DD PHB Deluxe">Remarkable Athlete</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.additionalfightingstyle10@DD PHB Deluxe">Additional Fighting Style</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.superiorcritical15@DD PHB Deluxe">Superior Critical</link>
+						<link class="reference_classfeature" recordname="reference.classdata.fighter.features.survivor18@DD PHB Deluxe">Survivor</link>
 					</linklist>
-					<h>Copy Left Notice</h>
-					<p>This content was inspired by a source under the GNU Public Use License. The original content is copy left and can be found</p>
-					<linklist>
-						<link class="referencemanualpage" recordname="referencemanual4.DandDwiki_PRO_00051@Incarnate-5eExpansion">here</link>
-					</linklist>
-					<p>All modifications are protected and all rights are reserved to the greatest extent permissible by law.</p>
 				</text>
 			</id-00007>
 			<id-00008>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Dragonslayer's Spear</name>
+				<name type="string">Improved Critical</name>
 				<source type="string">Fighter</source>
-				<specialization type="string">Dragon Slayer</specialization>
+				<specialization type="string">Champion</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<h>Item Coding</h>
-					<linklist>
-						<link class="item" recordname="item.id-00359@Incarnate-5eExpansion">Dragonslayer's Spear</link>
-					</linklist>
-					<h>Description</h>
-					<p>At 3rd Level, whenever you touch a spear it becomes a Dragonslayer Spear. A spear will only remain a Dragonslayer Spear for 1 round after leaving your hand.</p>
-					<p>You will use a Dragonslayer's Spear to perform the following abilities at higher levels:</p>
-					<linklist>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00040@Incarnate-5eExpansion">Level 7: Electrified Charge</link>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00041@Incarnate-5eExpansion">Level 10: Dragonslayer's Lightning</link>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00042@Incarnate-5eExpansion">Level 15: Electrified</link>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00043@Incarnate-5eExpansion">Level 18: Dragonslayer's Lightning</link>
-					</linklist>
+					<p>Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+					<p>The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I never forget an insult, and I bide my time for revenge.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'6&#34;</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
-			<deathsavesuccess type="number">3</deathsavesuccess>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">36</total>
-			<wounds type="number">28</wounds>
+			<total type="number">54</total>
+			<wounds type="number">10</wounds>
 		</hp>
 		<ideals type="string">I always try to help those in need, no matter what the personal cost.\nOur lot is to lay down our lives in defense of others.</ideals>
 		<initiative>
@@ -393,7 +393,7 @@
 			<id-00009>
 				<ac type="number">0</ac>
 				<bonus type="number">3</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1,510 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -423,7 +423,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 GP</cost>
-				<count type="number">2</count>
+				<count type="number">5</count>
 				<damage type="string">1d6 slashing</damage>
 				<description type="formattedtext">
 					<p>-</p>
@@ -556,38 +556,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00018>
-			<id-00019>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">5 GP</cost>
-				<count type="number">2</count>
-				<damage type="string">1d4 piercing 1d4 lightning</damage>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.dragonslayersspear@Incarnate-5eExpansion">Dragonslayer's Spear</link>
-					</linklist>
-					<h>Description</h>
-					<p>This heavy duty spear seems to be charged with a mystical lightning energy which discharges on impact.</p>
-					<p>On a hit, the target cannot take any reactions until the start of its next turn.</p>
-					<h>Link to Class Feature</h>
-					<linklist>
-						<link class="reference_classfeature" recordname="class.profighter.features.id-00039@Incarnate-5eExpansion">Dragonslayer's Spear</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Dragonslayer's Spear</name>
-				<nonid_name type="string">Dragonslayer's Spear</nonid_name>
-				<nonidentified type="string">This heavy duty spear seems to be charged with a mystical energy.\n(Please ask your GM to identify this item for you. Some of it is hidden due to the way FG is programmed to keep it from showing up in the general items section.)</nonidentified>
-				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
-				<rarity type="string">(requires attunement by a Dragonslayer fighter)</rarity>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">4</weight>
-			</id-00019>
 			<id-00020>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -632,6 +600,88 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00021>
+			<id-00022>
+				<carried type="number">2</carried>
+				<cost type="string">10 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing</damage>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Battleaxe</name>
+				<properties type="string">Versatile (1d10)</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00022>
+			<id-00023>
+				<carried type="number">2</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">5</count>
+				<damage type="string">1d6 piercing</damage>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Spear</name>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">15 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Longsword</name>
+				<nonid_name type="string">Longsword</nonid_name>
+				<nonidentified type="string">A sharp longsword.</nonidentified>
+				<properties type="string">Versatile (1d10)</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Martial Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">5</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Trident</name>
+				<nonid_name type="string">Trident</nonid_name>
+				<nonidentified type="string">Why have one spike when you can have three?</nonidentified>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<subtype type="string">Martial Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00025>
+			<id-00026>
+				<carried type="number">2</carried>
+				<cost type="string">2 sp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning</damage>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Quarterstaff</name>
+				<properties type="string">Versatile (1d8)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -647,7 +697,7 @@
 				<name type="string">Elvish</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Vok</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -735,26 +785,6 @@
 		</powermeta>
 		<powermode type="string">combat</powermode>
 		<powers>
-			<id-00001>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<label type="string">Dragonslayer's Spear; NOTE: cannot take a reaction until start of its turn</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<group type="string">Class</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Dragonslayer's Spear</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
@@ -872,21 +902,24 @@
 				<name type="string">Breath Weapon (Lightning)</name>
 				<prepared type="number">1</prepared>
 				<ritual type="number">0</ritual>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00005>
 			<id-00006>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
 				<group type="string">Class</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<source type="string">Fighter</source>
 				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00006>
 			<id-00007>
 				<actions>
@@ -916,15 +949,38 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: radiant</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Radiant)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00008>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
-			<id-00001>
+			<id-00003>
 				<name type="string">Weapon: Simple weapons, martial weapons</name>
-			</id-00001>
-			<id-00002>
+			</id-00003>
+			<id-00004>
 				<name type="string">Armor: All armor, shields</name>
-			</id-00002>
+			</id-00004>
 		</proficiencylist>
 		<race type="string">Dragonborn</race>
 		<racelink type="windowreference">
@@ -980,7 +1036,7 @@
 				<name type="string">Performance</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1001,7 +1057,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1015,7 +1071,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1050,7 +1106,7 @@
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1069,7 +1125,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00011_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1177,7 +1233,35 @@
 				<type type="string">racial</type>
 			</id-00003>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">19</melee>
+				<ranged type="number">19</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
+			<id-00001>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Battleaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00022</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00001>
 			<id-00002>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1211,7 +1295,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">2</maxammo>
+				<maxammo type="number">5</maxammo>
 				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -1225,23 +1309,19 @@
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
 						<type type="string">piercing</type>
 					</id-00001>
-					<id-00002>
-						<dice type="dice">d4</dice>
-						<type type="string">lightning</type>
-					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Dragonslayer's Spear</name>
+				<name type="string">Spear</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00019</recordname>
+					<recordname>....inventorylist.id-00023</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
@@ -1249,26 +1329,42 @@
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
 						<type type="string">piercing</type>
 					</id-00001>
-					<id-00002>
-						<dice type="dice">d4</dice>
-						<type type="string">lightning</type>
-					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">1</maxammo>
-				<name type="string">Dragonslayer's Spear</name>
+				<maxammo type="number">5</maxammo>
+				<name type="string">Spear</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00019</recordname>
+					<recordname>....inventorylist.id-00023</recordname>
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
+			<id-00006>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Longsword</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00024</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
 			<id-00007>
 				<carried type="number">1</carried>
 				<damagelist>
@@ -1278,9 +1374,75 @@
 						<type type="string">fire</type>
 					</id-00001>
 				</damagelist>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Torch</name>
 				<prof type="number">1</prof>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
 			</id-00007>
+			<id-00008>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Trident</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
+			<id-00009>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">5</maxammo>
+				<name type="string">Trident</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00025</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00009>
+			<id-00010>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Quarterstaff</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00026</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00010>
 		</weaponlist>
 		<weight type="string">175 lbs</weight>
 	</character>
