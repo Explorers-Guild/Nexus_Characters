@@ -69,7 +69,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">390</amount>
+				<amount type="number">1235</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -77,7 +77,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">143</amount>
+				<amount type="number">283</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +85,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">158</amount>
+				<amount type="number">285</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,10 +107,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">81.17</load>
+			<load type="number">111.67</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">643</exp>
+		<exp type="number">706</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -840,7 +840,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -890,6 +890,65 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00031>
+			<id-00032>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This thick blanket can keep you warm even during an average winter. (good for 0 degree weather as long as you are dry)</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Winter Blanket</name>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00032>
+			<id-00033>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This heavy coat comes with a hat, scarf, and mittens.</p>
+					<p>You can tolerate temperatures as low as -25 degrees Fahrenheit without any additional protection.</p>
+					<p>(These qualify as &#34;heavy cloathes&#34; therefore stacking with Boots of the Winterlands)</p>
+					<linklist>
+						<link class="item" recordname="item.id-00869@Incarnate-5eExpansion">Boots of the Winterlands</link>
+					</linklist>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Winter Coat</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">10</weight>
+			</id-00033>
+			<id-00035>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">600 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.</p>
+					<p>If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again.</p>
+					<p>Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.</p>
+					<p>Placing a bag of holding inside an extra-dimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one--way only and can't be reopened.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bag of Holding</name>
+				<nonid_name type="string">Large burlap bag.</nonid_name>
+				<nonidentified type="string">This large burlap bag is approximately 2 feet in diameter at its mouth and 4 feet deep.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">15</weight>
+			</id-00035>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -994,7 +1053,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Sneak Attack; DMG: 3d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1050,30 +1109,30 @@
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">9</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">9</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">10</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">10</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1222,7 +1281,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1271,7 +1330,7 @@
 		</weapon>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">8</ammo>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
