@@ -59,7 +59,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -262,6 +262,21 @@
 					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Evasion</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.evasion@Incarnate-5eExpansion">Evasion</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <i>ice storm </i>spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<gender type="string">Male</gender>
 		<height type="string">3 feet</height>
@@ -269,7 +284,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">33</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -958,7 +973,7 @@
 				<name type="string">Halfling</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Simon Silvertongue</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -968,9 +983,16 @@
 				<castertype type="string">memorization</castertype>
 				<name type="string">Effect</name>
 			</id-00001>
+			<id-00002>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00002>
 			<id-00003>
 				<name type="string">Effect</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Passive</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1046,14 +1068,14 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 3d6</label>
+						<label type="string">Sneak Attack; DMG: 4d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1073,6 +1095,31 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Rogue - Class Ability</source>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Evasion</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00010@Incarnate-5eExpansion">Evasion</link>
+					</linklist>
+				</description>
+				<group type="string">Passive</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Evasion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Monk - Class Ability</source>
+			</id-00002>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1281,7 +1328,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
