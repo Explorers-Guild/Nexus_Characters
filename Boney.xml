@@ -14,7 +14,7 @@
 				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">17</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
@@ -56,8 +56,8 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<hdused type="number">3</hdused>
+				<level type="number">4</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -67,7 +67,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">222</amount>
+				<amount type="number">613</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -75,7 +75,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">81</amount>
+				<amount type="number">731</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -83,7 +83,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">84</amount>
+				<amount type="number">681</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -92,7 +92,8 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">6</armor>
+				<armor type="number">8</armor>
+				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
@@ -105,11 +106,11 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">102.75</load>
+			<load type="number">183.25</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">394</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">496</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -122,6 +123,26 @@
 					</list>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Last Breath</name>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.lastbreath@Incarnate-5eExpansion">Last Breath</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisite: <b>NOT </b>Half-orc <b>NOT </b>Highlander Dwarf</p>
+					<p>Your determination and physical resolve grants you the ability to hold on just a little longer. You gain the following benefits:</p>
+					<list>
+						<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+						<li>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a short or long rest.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Last_Breath_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -250,13 +271,23 @@
 					</linklist>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
-			<wounds type="number">18</wounds>
+			<total type="number">46</total>
+			<wounds type="number">19</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -267,7 +298,7 @@
 			<id-00001>
 				<ac type="number">16</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">75 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -324,7 +355,7 @@
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">5 GP</cost>
 				<count type="number">2</count>
 				<damage type="string">1d6 slashing</damage>
@@ -503,7 +534,7 @@
 			<id-00015>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1,420 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d10 slashing silver</damage>
@@ -555,6 +586,148 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00017>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">128 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Greater Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Greater Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">18</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">951 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk.</p>
+					<p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p>
+					<p><b>Mithril Armor Notes</b></p>
+					<p>Mithril is a light, flexible metal. A mithril chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithril version of the armor doesn't.</p>
+				</description>
+				<dexbonus type="string">-</dexbonus>
+				<locked type="number">1</locked>
+				<name type="string">Mithril Plate Armor</name>
+				<rarity type="string">uncommon</rarity>
+				<stealth type="string">Disadvantage</stealth>
+				<strength type="string">Str 15</strength>
+				<subtype type="string">Heavy Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">65</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">331 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>Magic weapons are unmistakably finer in quality than their ordinary counterparts. You have a +1 bonus to the attack rolls and damage rolls you make with this weapon.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Seeker</name>
+				<nonid_name type="string">Refined Crossbow, Light</nonid_name>
+				<nonidentified type="string">The attention to detail and the materials used mark this weapon out as special.</nonidentified>
+				<properties type="string">Ammunition (range 80/320), loading, two-handed, magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Weapon, +1</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Crossbow, Light</name>
+					</id-00002>
+				</spells>
+				<subtype type="string">Crossbow, Light</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">5</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">12</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2,029 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>The most basic form of magic armor is a superb product of physical and magical craft. You have a +1 bonus to AC while wearing this armor.</p>
+					<p>A suit of +1 armor never rusts or deteriorates, and it magically resizes to fit its wearer.</p>
+					<p><b>Leather Notes</b></p>
+					<p>Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.</p>
+					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
+				</description>
+				<dexbonus type="string">Yes</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Leather Armor, +1</name>
+				<nonid_name type="string">Fine Leather Armor</nonid_name>
+				<nonidentified type="string">This suit of armor is finely wrought</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Rare</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Armor, +1</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Leather</name>
+					</id-00002>
+				</spells>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Leather</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">10</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -564,7 +737,7 @@
 				<name type="string">Primordial</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Boney</name>
 		<notes type="string">9 tickets</notes>
 		<perception type="number">12</perception>
@@ -770,6 +943,34 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00005>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -944,7 +1145,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -966,6 +1167,27 @@
 			</id-00002>
 		</traitlist>
 		<weaponlist>
+			<id-00001>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Seeker</name>
+				<prof type="number">1</prof>
+				<properties type="string">Ammunition (range 80/320), loading, two-handed, magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00021</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00001>
 			<id-00002>
 				<carried type="number">1</carried>
 				<damagelist>
@@ -987,7 +1209,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
@@ -1007,7 +1229,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d6</dice>
@@ -1016,7 +1238,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">1</maxammo>
 				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -1028,7 +1250,7 @@
 			</id-00004>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

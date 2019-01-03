@@ -5,32 +5,43 @@
 			<charisma>
 				<bonus type="number">-1</bonus>
 				<save type="number">-1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">8</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
 				<save type="number">5</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">17</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
 				<save type="number">2</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">14</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
 				<save type="number">-1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">8</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">3</bonus>
 				<save type="number">5</save>
+				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
 				<score type="number">10</score>
 			</wisdom>
 		</abilities>
@@ -43,9 +54,11 @@
 		</backgroundlink>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<hdused type="number">1</hdused>
+				<level type="number">4</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -55,22 +68,27 @@
 		</classes>
 		<coins>
 			<slot1>
+				<amount type="number">0</amount>
 				<name type="string">EP</name>
 			</slot1>
 			<slot2>
+				<amount type="number">0</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">10</amount>
+				<amount type="number">401</amount>
 				<name type="string">GP</name>
 			</slot3>
 			<slot4>
+				<amount type="number">597</amount>
 				<name type="string">SP</name>
 			</slot4>
 			<slot5>
+				<amount type="number">650</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
+				<amount type="number">0</amount>
 			</slot6>
 		</coins>
 		<defenses>
@@ -78,8 +96,10 @@
 				<armor type="number">6</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
+				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">2</shield>
+				<temporary type="number">0</temporary>
 				<total type="number">18</total>
 			</ac>
 		</defenses>
@@ -87,11 +107,11 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">145.5</load>
+			<load type="number">150.5</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">402</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -117,6 +137,26 @@
 					</linklist>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Last Breath</name>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.lastbreath@Incarnate-5eExpansion">Last Breath</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisite: <b>NOT </b>Half-orc <b>NOT </b>Highlander Dwarf</p>
+					<p>Your determination and physical resolve grants you the ability to hold on just a little longer. You gain the following benefits:</p>
+					<list>
+						<li>Increase your Constitution score by 1, to a maximum of 20.</li>
+						<li>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a short or long rest.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Last_Breath_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -255,15 +295,27 @@
 					</linklist>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
-			<wounds type="number">0</wounds>
+			<total type="number">46</total>
+			<wounds type="number">10</wounds>
 		</hp>
 		<initiative>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
 		<inventorylist>
@@ -333,7 +385,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
-				<count type="number">3</count>
+				<count type="number">2</count>
 				<damage type="string">1d6 piercing</damage>
 				<description type="formattedtext">
 					<p>-</p>
@@ -493,7 +545,7 @@
 			<id-00015>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">4,700 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing cold-forged iron silver</damage>
@@ -582,6 +634,80 @@
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing 1d4 lightning</damage>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.dragonslayersspear@Incarnate-5eExpansion">Dragonslayer's Spear</link>
+					</linklist>
+					<h>Description</h>
+					<p>This heavy duty spear seems to be charged with a mystical lightning energy which discharges on impact.</p>
+					<p>On a hit, the target cannot take any reactions until the start of its next turn.</p>
+					<h>Link to Class Feature</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00039@Incarnate-5eExpansion">Dragonslayer's Spear</link>
+					</linklist>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Dragonslayer's Spear</name>
+				<nonid_name type="string">Dragonslayer's Spear</nonid_name>
+				<nonidentified type="string">This heavy duty spear seems to be charged with a mystical energy.\n(Please ask your GM to identify this item for you. Some of it is hidden due to the way FG is programmed to keep it from showing up in the general items section.)</nonidentified>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<rarity type="string">(requires attunement by a Dragonslayer fighter)</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p><b>Immaculate </b>. This golden spear is impossible to flaw. It cannot be tarnished, stained, or broken. Any attempt to do so automatically fails. This weapon can only be destroyed, tarnished, stained, or broken by a wish spell.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Spear of Cleanliness</name>
+				<nonid_name type="string">Glowing Golden Spear</nonid_name>
+				<nonidentified type="string">This glowing golden spear has strange runes written on it. It is impossibly clean.</nonidentified>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2,700 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.</p>
+					<p>A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.</p>
+					<p><b>Strength (Very Rare) </b>. Your Strength score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">0</locked>
+				<name type="string">Magic Stone from a Forgotten Time (Strength)</name>
+				<nonid_name type="string">an old stone with strange writing in a forgotten language</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Very Rare (requires attunement)</rarity>
+				<subtype type="string">-</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00020>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -591,66 +717,91 @@
 				<name type="string">Choice</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Luky</name>
 		<perception type="number">12</perception>
+		<perceptionmodifier type="number">0</perceptionmodifier>
+		<powergroup>
+			<id-00001>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00001>
+		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">preparation</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -675,6 +826,7 @@
 					<h>Description</h>
 					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Second Wind</name>
 				<prepared type="number">0</prepared>
@@ -712,6 +864,7 @@
 					<p><b>Two-Weapon Fighting</b></p>
 					<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Fighting Style</name>
 				<prepared type="number">0</prepared>
@@ -726,12 +879,56 @@
 					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Fighter</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00003>
+						<apply type="string">action</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Plant Slayer; IFT:TYPE(plant);DMG:2d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00018@Incarnate-5eExpansion">Plant Slayer</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Plant Slayer</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00004>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -847,12 +1044,15 @@
 			</id-00018>
 		</skilllist>
 		<speed>
+			<armor type="number">0</armor>
 			<base type="number">30</base>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -884,6 +1084,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Club</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light</properties>
@@ -891,6 +1092,7 @@
 					<class>item</class>
 					<recordname>....inventorylist.id-00001</recordname>
 				</shortcut>
+				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
 				<carried type="number">1</carried>
@@ -902,6 +1104,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Spear</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
@@ -909,6 +1112,7 @@
 					<class>item</class>
 					<recordname>....inventorylist.id-00004</recordname>
 				</shortcut>
+				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
 				<carried type="number">1</carried>
@@ -920,6 +1124,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Spear</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
@@ -939,6 +1144,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -946,6 +1152,7 @@
 					<class>item</class>
 					<recordname>....inventorylist.id-00005</recordname>
 				</shortcut>
+				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
 				<carried type="number">1</carried>
@@ -957,6 +1164,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -967,24 +1175,19 @@
 				<type type="number">2</type>
 			</id-00005>
 			<id-00006>
-				<attackbonus type="number">0</attackbonus>
+				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">base</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">Lightning</type>
-					</id-00001>
 					<id-00002>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d6</dice>
+						<stat type="string">strength</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
+						<type type="string">piercing,silver</type>
 					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Dancing Silver Coated Cold-Forged Iron Javelin of Plant Slaying (Dragonslayer)</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 30/120)</properties>
@@ -995,7 +1198,7 @@
 				<type type="number">0</type>
 			</id-00006>
 			<id-00007>
-				<attackbonus type="number">0</attackbonus>
+				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1003,10 +1206,11 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
+						<type type="string">piercing,silver</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Dancing Silver Coated Cold-Forged Iron Javelin of Plant Slaying</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 30/120)</properties>
@@ -1016,6 +1220,109 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00007>
+			<id-00008>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<dice type="dice">d4</dice>
+						<type type="string">lightning</type>
+					</id-00002>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">** Dragonslayer's Spear **</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
+			<id-00009>
+				<ammo type="number">1</ammo>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<dice type="dice">d4</dice>
+						<type type="string">lightning</type>
+					</id-00002>
+				</damagelist>
+				<maxammo type="number">2</maxammo>
+				<name type="string">** Dragonslayer's Spear **</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00009>
+			<id-00010>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">lightning</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear of Cleanliness</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00010>
+			<id-00011>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">lightning</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear of Cleanliness</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00019</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00011>
 		</weaponlist>
 	</character>
 </root>
