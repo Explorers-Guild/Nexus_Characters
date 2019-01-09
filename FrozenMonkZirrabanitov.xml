@@ -83,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1728</amount>
+				<amount type="number">228</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -122,7 +122,7 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">110.6</load>
+			<load type="number">110.2</load>
 			<max type="number">120</max>
 		</encumbrance>
 		<exp type="number">1146</exp>
@@ -854,6 +854,48 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.detectthoughts@Incarnate-5eExpansion">Detect Thoughts</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>Uncommon</td>
+							<td>13</td>
+							<td>+5</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Detect Thoughts</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Simple Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1060,25 +1102,40 @@
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.</p>
-					<p>You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options:</p>
-					<list>
-						<li>&#34;Stream&#34; produces 1 gallon of water.</li>
-						<li>&#34;Fountain&#34; produces 5 gallons of water.</li>
-						<li>&#34;Geyser&#34; produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide.</li>
-					</list>
-					<p>As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds.</p>
-					<p>The object is either knocked over or pushed up to 15 feet away from you.</p>
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.teleportationcircle@Incarnate-5eExpansion">Teleportation Circle</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>Rare</td>
+							<td>17</td>
+							<td>+9</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Decanter of Endless Water</name>
-				<nonid_name type="string">Flash</nonid_name>
-				<nonidentified type="string">This stoppered flask sloshes when shaken, as if it contains water.</nonidentified>
-				<rarity type="string">uncommon</rarity>
-				<type type="string">Wondrous Item</type>
-				<weight type="number">2</weight>
+				<name type="string">Scroll of Teleportation Circle</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Pretty Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
 			</id-00030>
 			<id-00031>
 				<ac type="number">0</ac>
@@ -1097,6 +1154,24 @@
 				<name type="string">Deed to Guildhouse of the Fighting Quail</name>
 				<weight type="number">0</weight>
 			</id-00031>
+			<id-00032>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">400 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This clear, gelatinous oil sparkles with tiny, ultra-thin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Oil of Sharpness</name>
+				<nonid_name type="string">Shiny Potion</nonid_name>
+				<nonidentified type="string">This clear, gelatinous oil sparkles with tiny, ultra-thin silver shards.</nonidentified>
+				<rarity type="string">very rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00032>
 			<id-00033>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1256,6 +1331,28 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00035>
+			<id-00036>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.etherealness@Incarnate-5eExpansion">Etherealness</link>
+					</linklist>
+					<p>Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Oil of Etherealness</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">Beads of this cloudy gray oil form on the outside of its container and quickly evaporate.</nonidentified>
+				<rarity type="string">rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00036>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -2702,7 +2799,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
