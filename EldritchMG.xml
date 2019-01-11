@@ -92,7 +92,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2431</amount>
+				<amount type="number">3369</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -100,7 +100,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">283</amount>
+				<amount type="number">405</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -108,7 +108,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">294</amount>
+				<amount type="number">394</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -135,8 +135,8 @@
 			<load type="number">73.9</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">803</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">841</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -667,7 +667,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">50</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">5</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">5</misc>
@@ -1083,9 +1083,10 @@
 			</id-00004>
 		</languagelist>
 		<level type="number">8</level>
-		<name type="string">EldritchMG</name>
+		<name type="string">Eldritch</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
+		<powerdisplaymode type="string">summary</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -1109,7 +1110,7 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
@@ -1145,15 +1146,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1185,8 +1186,13 @@
 			<id-00001>
 				<actions>
 					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">charisma</atkstat>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -1278,7 +1284,7 @@
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">5</cast>
+				<cast type="number">3</cast>
 				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
@@ -1286,6 +1292,36 @@
 				<prepared type="number">5</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">base</savedcstat>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Horn blasting</name>
+				<prepared type="number">0</prepared>
+			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -1960,7 +1996,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -1981,6 +2017,14 @@
 				<type type="string">racial</type>
 			</id-00004>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">20</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<attackstat type="string">dexterity</attackstat>

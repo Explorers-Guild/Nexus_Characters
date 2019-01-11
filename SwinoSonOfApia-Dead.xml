@@ -113,7 +113,7 @@
 			<load type="number">5.58</load>
 			<max type="number">60</max>
 		</encumbrance>
-		<exp type="number">628</exp>
+		<exp type="number">680</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -475,11 +475,11 @@
 		<gender type="string">Male</gender>
 		<height type="string">6&#34;</height>
 		<hp>
-			<deathsavefail type="number">0</deathsavefail>
+			<deathsavefail type="number">3</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">2</temporary>
+			<temporary type="number">0</temporary>
 			<total type="number">39</total>
-			<wounds type="number">36</wounds>
+			<wounds type="number">39</wounds>
 		</hp>
 		<ideals type="string">Creativity - I don't even follow my own recipes, I just follow my gut instinct! (Chaotic)</ideals>
 		<initiative>
@@ -681,12 +681,16 @@
 			<id-00003>
 				<name type="string">Mikon</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Druidic</name>
+			</id-00004>
 		</languagelist>
 		<level type="number">6</level>
-		<name type="string">Swino son of Apia</name>
+		<name type="string">Swino son of Apia - Dead</name>
 		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I like to take my time and savor each moment.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -706,30 +710,21 @@
 			<id-00005>
 				<name type="string">Wildshape Ape</name>
 			</id-00005>
-			<id-00007>
-				<name type="string">Wildshape Giant Goat</name>
-			</id-00007>
-			<id-00008>
-				<name type="string">Wildshape Crocodile</name>
-			</id-00008>
-			<id-00009>
-				<name type="string">Wildshape Giant Sea Horse</name>
-			</id-00009>
-			<id-00010>
-				<name type="string">Wildshape Giant Wasp</name>
-			</id-00010>
+			<id-00006>
+				<name type="string">Giant Octopus</name>
+			</id-00006>
 			<id-00011>
 				<name type="string">Wildshape Reef Shark</name>
 			</id-00011>
-			<id-00012>
-				<name type="string">Wildshape Warhorse</name>
-			</id-00012>
 			<id-00013>
 				<name type="string">Wildshape Lion</name>
 			</id-00013>
 			<id-00014>
 				<name type="string">Wildshape Brown Bear</name>
 			</id-00014>
+			<id-00015>
+				<name type="string">Wildshape - Giant Octopus</name>
+			</id-00015>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -774,11 +769,11 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -805,7 +800,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1148,7 +1143,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Detect Poison and Disease</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
@@ -1458,7 +1453,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Thunderwave</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self (15-foot cube)</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1955,7 +1950,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Moonbeam</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<school type="string">Evocation</school>
 				<source type="string">Druid</source>
@@ -2404,6 +2399,52 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Cleric, Druid, Ranger, Sorcerer</source>
 			</id-00050>
+			<id-00051>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">grappled; restrained; NOTE: escape DC 16</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.giantoctopus@Incarnate-5eBattles">Giant Octopus</link>
+					</linklist>
+				</description>
+				<group type="string">Wildshape - Giant Octopus</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Tentacles - Giant Octopus</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Polymorph Code</source>
+			</id-00051>
 			<id-00052>
 				<actions>
 					<id-00001>
@@ -2547,6 +2588,14 @@
 						<order type="number">6</order>
 						<type type="string">damage</type>
 					</id-00006>
+					<id-00007>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">fiend</label>
+						<order type="number">7</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00007>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -2771,98 +2820,13 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00059>
-			<id-00063>
-				<actions>
-					<id-00001>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d4,d4</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">1</order>
-						<type type="string">damage</type>
-					</id-00001>
-					<id-00002>
-						<atkbase type="string">ability</atkbase>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<order type="number">2</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">13</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">strength</savetype>
-						<type type="string">cast</type>
-					</id-00002>
-					<id-00003>
-						<durmod type="number">0</durmod>
-						<label type="string">Prone</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantgoat@Incarnate-5eBattles">Giant Goat</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Goat</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Charge - Giant Goat</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00063>
-			<id-00064>
-				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">5</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">3</bonus>
-								<dice type="dice">d4,d4</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantgoat@Incarnate-5eBattles">Giant Goat</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Goat</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Ram - Giant Goat</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00064>
-			<id-00065>
+			<id-00060>
 				<actions>
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">3</bonus>
-								<dice type="dice">d10,d10,d10</dice>
+								<bonus type="number">8</bonus>
+								<dice type="dice">d10,d10,d10,d10,d10,d10,d10,d10</dice>
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
@@ -2873,7 +2837,7 @@
 					</id-00001>
 					<id-00002>
 						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 7; DEX: [-2DEX]; DEX: 1; CON: [-2CON]; CON: 2; AC: 0</label>
+						<label type="string">STR: [-2STR]; STR: 7; DEX: [-2DEX]; DEX: 3; CON: [-2CON]; CON: 3; AC: -1</label>
 						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -2882,323 +2846,60 @@
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantgoat@Incarnate-5eBattles">Giant Goat</link>
+						<link class="npc" recordname="npc.giantoctopus@Incarnate-5eBattles">Giant Octopus</link>
 					</linklist>
 				</description>
-				<group type="string">Wildshape Giant Goat</group>
+				<group type="string">Wildshape - Giant Octopus</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Transformation - Giant Goat</name>
+				<name type="string">Transformation - Giant Octopus</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
-			</id-00065>
-			<id-00066>
+				<source type="string">Polymorph Code</source>
+			</id-00060>
+			<id-00061>
 				<actions>
 					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">4</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Protection from Evil and Good; IMMUNE: charmed,frightened,possessed;(C)</label>
 						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
+						<type type="string">effect</type>
 					</id-00001>
 					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d10</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
-							</id-00001>
-						</damagelist>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">IF: TYPE(aberration, celestial, elemental, fey, fiend, undead); IFT: CUSTOM(Protection from Evil and Good);DISATK; (C)</label>
 						<order type="number">2</order>
-						<type type="string">damage</type>
+						<type type="string">effect</type>
 					</id-00002>
 					<id-00003>
-						<durmod type="number">0</durmod>
-						<label type="string">Grappled; Restrained; NOTE: escape DC 12</label>
+						<label type="string">fiend</label>
 						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.crocodile@Incarnate-5eBattles">Crocodile</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Crocodile</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Bite - Crocodile</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00066>
-			<id-00067>
-				<actions>
-					<id-00002>
-						<heallist>
-							<id-00001>
-								<bonus type="number">3</bonus>
-								<dice type="dice">d10,d10,d10</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00002>
-					<id-00003>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 5; DEX: [-2DEX]; DEX: 0; CON: [-2CON]; CON: 3; AC: 1</label>
-						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (holy water or powdered silver and iron, which the spell consumes)</components>
 				<description type="formattedtext">
+					<h>Sound</h>
 					<linklist>
-						<link class="npc" recordname="reference.npcdata.crocodile@Incarnate-5eBattles">Crocodile</link>
-					</linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnByb3RlY3Rpb24/play/"><b>Syrinscape </b></link>: Protection - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead. The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>
 				</description>
-				<group type="string">Wildshape Crocodile</group>
-				<level type="number">0</level>
+				<duration type="string">Concentration up to 10 minutes</duration>
+				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Transformation - Crocodile</name>
+				<name type="string">Protection from Evil and Good</name>
 				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
-			</id-00067>
-			<id-00068>
-				<actions>
-					<id-00001>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">1</order>
-						<type type="string">damage</type>
-					</id-00001>
-					<id-00002>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">11</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">2</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
-					</id-00002>
-					<id-00003>
-						<durmod type="number">0</durmod>
-						<label type="string">Prone</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantseahorse@Incarnate-5eBattles">Giant Sea Horse</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Sea Horse</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Charge - Giant Sea Horse</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00068>
-			<id-00069>
-				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">3</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">1</bonus>
-								<dice type="dice">d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantseahorse@Incarnate-5eBattles">Giant Sea Horse</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Sea Horse</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Ram - Giant Sea Horse</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00069>
-			<id-00070>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d10,d10,d10</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 2; DEX: [-2DEX]; DEX: 5; CON: [-2CON]; CON: 1; AC: 0</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantseahorse@Incarnate-5eBattles">Giant Sea Horse</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Sea Horse</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Transformation - Giant Sea Horse</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00070>
-			<id-00071>
-				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">4</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">3</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">11</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00003>
-					<id-00004>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6,d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">poison</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">4</order>
-						<type type="string">damage</type>
-					</id-00004>
-					<id-00005>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Note: Only if target is knocked unconscious; poisoned; paralyzed</label>
-						<order type="number">5</order>
-						<type type="string">effect</type>
-					</id-00005>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantwasp@Incarnate-5eBattles">Giant Wasp</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Wasp</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Sting - Giant Wasp</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00071>
-			<id-00072>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d8,d8,d8</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 0; DEX: [-2DEX]; DEX: 4; CON: [-2CON]; CON: 0; AC: -1</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.giantwasp@Incarnate-5eBattles">Giant Wasp</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Giant Wasp</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Transformation - Giant Wasp</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00072>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Paladin, Warlock, Wizard</source>
+			</id-00061>
 			<id-00073>
 				<actions>
 					<id-00001>
@@ -3274,114 +2975,6 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00074>
-			<id-00075>
-				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">6</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">1</order>
-						<savedcmod type="number">0</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">4</bonus>
-								<dice type="dice">d6,d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-5eBattles">Warhorse</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Warhorse</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Hooves - Warhorse</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00075>
-			<id-00076>
-				<actions>
-					<id-00001>
-						<atkmod type="number">0</atkmod>
-						<atkprof type="number">1</atkprof>
-						<order type="number">1</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">14</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savemagic type="number">0</savemagic>
-						<savetype type="string">strength</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">Prone</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-5eBattles">Warhorse</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Warhorse</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Trampling Charge - Warhorse</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00076>
-			<id-00077>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">3</bonus>
-								<dice type="dice">d10,d10,d10</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 8; DEX: [-2DEX]; DEX: 2; CON: [-2CON]; CON: 3; AC: -1</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="reference.npcdata.warhorse@Incarnate-5eBattles">Warhorse</link>
-					</linklist>
-				</description>
-				<group type="string">Wildshape Warhorse</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Transformation - Warhorse</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00077>
 			<id-00078>
 				<actions>
 					<id-00001>
@@ -3699,7 +3292,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Static Attraction</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -4330,7 +3923,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00002>
 				<locked type="number">1</locked>
