@@ -71,7 +71,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -81,7 +81,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">209</amount>
+				<amount type="number">428</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -89,7 +89,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">153</amount>
+				<amount type="number">223</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -97,7 +97,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">137</amount>
+				<amount type="number">199</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -120,11 +120,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">106.25</load>
+			<load type="number">102.25</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">514</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">608</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -483,6 +483,31 @@
 					<p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
 				</text>
 			</id-00017>
+			<id-00018>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.stunningstrike@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</text>
+			</id-00018>
+			<id-00019>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00019>
 		</featurelist>
 		<gender type="string">Female</gender>
 		<height type="string">6'1&#34;</height>
@@ -490,8 +515,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">43</total>
-			<wounds type="number">2</wounds>
+			<total type="number">51</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -502,7 +527,7 @@
 			<id-00001>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">393 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
@@ -786,54 +811,40 @@
 				<weight type="number">1</weight>
 			</id-00016>
 			<id-00017>
-				<carried type="number">2</carried>
-				<cost type="string">50 gp</cost>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<p>A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.</p>
+					<p>The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.</p>
+					<p>The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it.</p>
+					<p>When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.</p>
+					<linklist>
+						<link class="npc" recordname="npc.giantgoat@Incarnate-5eBattles">NPC: Giant Goat</link>
+					</linklist>
+					<p><b>Ivory Goats (Rare) </b>. These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:</p>
+					<list>
+						<li>The goat of traveling can become a Large goat with the same statistics as a riding horse. It has 24 charges, and each hour or portion thereof it spends in beast form costs 1 charge. While it has charges, you can use it as often as you wish. When it runs out of charges, it reverts to a figurine and can't be used again until 7 days have passed, when it regains all its charges.</li>
+					</list>
+					<linklist>
+						<link class="npc" recordname="npc.ridinghorse@Incarnate-5eBattles">Riding Horse</link>
+					</linklist>
+					<list>
+						<li>The goat of travail becomes a giant goat for up to 3 hours. Once it has been used, it can't be used again until 30 days have passed.</li>
+						<li>The goat of terror becomes a giant goat for up to 3 hours. The goat can't attack, but you can remove its horns and use them as weapons. One horn becomes a +1 lance, and the other becomes a +2 longsword. Removing a horn requires an action, and the weapons disappear and the horns return when the goat reverts to figurine form. In addition, the goat radiates a 30--foot--radius aura of terror while you are riding it. Any creature hostile to you that starts its turn in the aura must succeed on a DC 15 Wisdom saving throw or be frightened of the goat for 1 minute, or until the goat reverts to figurine form. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once it successfully saves against the effect, a creature is immune to the goat's aura for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed.</li>
+					</list>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Longbow</name>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
-				<subtype type="string">Martial Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
+				<name type="string">Figurine of Wondrous Power (Ivory Goats)</name>
+				<nonid_name type="string">Ivory Goats</nonid_name>
+				<nonidentified type="string">Three tiny statue goats made of ivory.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">6</weight>
 			</id-00017>
-			<id-00018>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">quiver</location>
-				<locked type="number">1</locked>
-				<name type="string">Arrows (20)</name>
-				<nonid_name type="string">Arrows (20)</nonid_name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">1</weight>
-			</id-00018>
-			<id-00019>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>A quiver can hold up to 20 arrows.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Quiver</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
-			</id-00019>
 			<id-00020>
 				<carried type="number">2</carried>
 				<cost type="string">3 gp</cost>
@@ -1002,25 +1013,6 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00029>
-			<id-00030>
-				<ac type="number">0</ac>
-				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<damage type="string">1d6 piercing</damage>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<istemplate type="number">0</istemplate>
-				<location type="string">carried</location>
-				<locked type="number">1</locked>
-				<name type="string">+1 Longspear</name>
-				<properties type="string">versatile (1d8), 10 ft. range</properties>
-				<rarity type="string">Uncommon</rarity>
-				<subtype type="string">Martial Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">6</weight>
-			</id-00030>
 			<id-00031>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1057,7 +1049,7 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Elegy</name>
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1096,7 +1088,7 @@
 				<savemod type="number">0</savemod>
 				<saveprof type="number">1</saveprof>
 				<savestat type="string">wisdom</savestat>
-				<uses type="number">0</uses>
+				<uses type="number">5</uses>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
 		</powergroup>
@@ -1139,7 +1131,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">2</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -1206,7 +1198,7 @@
 						<type type="string">cast</type>
 					</id-00003>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<castingtime type="string">Reaction</castingtime>
 				<description type="formattedtext">
 					<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack (20/60 ft.). When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p>
@@ -1352,10 +1344,69 @@
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Fey Ancestry; Advantage on saving throws vs. charmed, no magic sleep</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Elf: Fey Ancestry</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Racial</school>
+				<source type="string">Elf</source>
+				<type type="string">racial</type>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Stunning Strike; Stunned</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</description>
+				<group type="string">Monk Abilities</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Monk: Stunning Strike</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Class</school>
+				<source type="string">Monk</source>
+			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">wisdom</savetype>
 						<type type="string">cast</type>
@@ -1856,7 +1907,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Healing Word (B) (60)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -2114,7 +2165,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Faerie Fire (60) (C)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -2332,7 +2383,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
 					<p><b>Step of the Wind</b></p>
@@ -2507,7 +2558,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2566,7 +2617,7 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
+						<type type="string">piercing, magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
@@ -2587,7 +2638,7 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
@@ -2603,53 +2654,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00002>
-			<id-00003>
-				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">1</bonus>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">+1 Longspear</name>
-				<prof type="number">1</prof>
-				<properties type="string">versatile (1d8), 10 ft. range</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00030</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00003>
-			<id-00004>
-				<ammo type="number">0</ammo>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">dexterity</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Longbow</name>
-				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00017</recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00004>
 		</weaponlist>
 		<weight type="string">160</weight>
 	</character>

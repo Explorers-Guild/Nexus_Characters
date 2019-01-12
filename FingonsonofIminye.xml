@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -57,8 +57,10 @@
 		<bonds type="string">I love my city and will see its streets safe for anyone to walk down at any time.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">2</hdused>
 				<level type="number">3</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
@@ -69,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">32</amount>
+				<amount type="number">256</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -77,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">3</amount>
+				<amount type="number">73</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">1</amount>
+				<amount type="number">63</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,10 +110,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">76.85</load>
+			<load type="number">78.35</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">363</exp>
+		<exp type="number">457</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -329,6 +331,32 @@
 			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
+			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing, silver</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00010@Incarnate-Syrinscape"><b>Syrinscape </b></link>: Dagger</linklist>
+					<h>Description</h>
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Silver Dagger</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger.</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Simple Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00001>
 			<id-00002>
 				<carried type="number">1</carried>
 				<cost type="string">5 GP</cost>
@@ -597,13 +625,50 @@
 				<name type="string">Belt</name>
 				<weight type="number">0</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00019>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Aquan</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Elvish</name>
@@ -614,6 +679,7 @@
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm very sensitive about my weight.\nI never pass up a friendly wager.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -662,30 +728,39 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -717,7 +792,7 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-5eExpansion">Ki</link>
@@ -961,7 +1036,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1026,6 +1101,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
+				<ammo type="number">1</ammo>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1066,6 +1142,51 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Silver Dagger</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00001</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">1</maxammo>
+				<name type="string">Silver Dagger</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00001</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 		<weight type="string">199 lb</weight>
 	</character>
