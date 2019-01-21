@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">2</hdused>
 				<level type="number">4</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
@@ -76,11 +76,11 @@
 				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">59</amount>
+				<amount type="number">92</amount>
 				<name type="string">CP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">84</amount>
+				<amount type="number">17</amount>
 				<name type="string">GP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">60</amount>
+				<amount type="number">78</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -111,11 +111,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">147.31</load>
+			<load type="number">146.91</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">407</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">480</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -238,7 +238,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">27</total>
-			<wounds type="number">7</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. (Good)</ideals>
 		<initiative>
@@ -389,18 +389,29 @@
 				<weight type="number">10</weight>
 			</id-00010>
 			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">25 gp</cost>
+				<cost type="string">25 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks</p>
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00262@Incarnate-5eExpansion">Thieves' Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00064@Incarnate-5eExpansion">Rules for Using Thieves' Tools</link>
+					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Thieves' Tools</name>
-				<subtype type="string">Standard Tools</subtype>
-				<type type="string">Tools</type>
+				<subtype type="string">Tool</subtype>
+				<type type="string">Tool</type>
 				<weight type="number">1</weight>
 			</id-00011>
 			<id-00012>
@@ -422,15 +433,16 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">priceless</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>Trophy from an animal you killed.</p>
+					<p>Trophy from the hellhound he killed. (part of the outlander background)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Trophy, Hunting</name>
-				<weight type="number">5</weight>
+				<name type="string">Hellhound Tooth</name>
+				<weight type="number">0.1</weight>
 			</id-00013>
 			<id-00014>
 				<carried type="number">1</carried>
@@ -816,6 +828,87 @@
 				<name type="string">Small Cloth</name>
 				<weight type="number">0.2</weight>
 			</id-00040>
+			<id-00041>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00259@Incarnate-5eExpansion">Herbalism Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and 3 vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">Rules for Using Herbalism Kit</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Herbalism Kit</name>
+				<subtype type="string">Tool</subtype>
+				<type type="string">Tool</type>
+				<weight type="number">3</weight>
+			</id-00041>
+			<id-00042>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Eyes of the Eagle</name>
+				<nonid_name type="string">Crystal Lenses</nonid_name>
+				<nonidentified type="string">Two crystal lenses bound together with a little bit of wire.</nonidentified>
+				<rarity type="string">Uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00042>
+			<id-00043>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00043>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -837,6 +930,7 @@
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I watch over my friends as if they were a litter of newborn pups.\nI have a lesson for every situation, drawn from observing nature.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkmod type="number">0</atkmod>
@@ -1729,7 +1823,7 @@
 				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Tool: Thieves' tools</name>
+				<name type="string">Tool: Herbalism Kit, Thieves' tools</name>
 			</id-00003>
 			<id-00004>
 				<name type="string">Armor: Light armor</name>
@@ -1810,8 +1904,8 @@
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
-				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<stat type="string">constitution</stat>
+				<total type="number">3</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1871,10 +1965,40 @@
 			</id-00018>
 			<id-00019>
 				<misc type="number">0</misc>
+				<name type="string">Thieves' Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00262@Incarnate-5eExpansion">Thieves' Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00064@Incarnate-5eExpansion">Rules for Using Thieves' Tools</link>
+					</linklist>
+				</text>
 				<total type="number">6</total>
 			</id-00019>
+			<id-00020>
+				<misc type="number">0</misc>
+				<name type="string">Herbalism Kit</name>
+				<prof type="number">1</prof>
+				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00259@Incarnate-5eExpansion">Herbalism Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>This kit contains a variety of instruments such as clippers, mortar and pestle, and pouches and vials used by herbalists to create remedies and potions. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to identify or apply herbs. Also, proficiency with this kit is required to create antitoxin and potions of healing .</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">Rules for Using Herbalism Kit</link>
+					</linklist>
+				</text>
+				<total type="number">3</total>
+			</id-00020>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -1886,7 +2010,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2033,7 +2157,7 @@
 				<type type="number">2</type>
 			</id-00005>
 			<id-00006>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -2057,7 +2181,7 @@
 				<type type="number">1</type>
 			</id-00006>
 			<id-00009>
-				<ammo type="number">3</ammo>
+				<ammo type="number">4</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
