@@ -80,7 +80,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">52</amount>
+				<amount type="number">74</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -88,7 +88,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">50</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -96,7 +96,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">0</amount>
+				<amount type="number">36</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,21 +108,21 @@
 				<armor type="number">6</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
-				<misc type="number">1</misc>
+				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">2</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">19</total>
+				<total type="number">18</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">143.2</load>
+			<load type="number">143.7</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">337</exp>
+		<exp type="number">393</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -662,6 +662,43 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00018>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -685,9 +722,9 @@
 				<prepared type="number">3</prepared>
 				<stat type="string">charisma</stat>
 			</id-00001>
-			<id-00004>
-				<name type="string">Class Ability\n</name>
-			</id-00004>
+			<id-00002>
+				<name type="string">Race</name>
+			</id-00002>
 			<id-00005>
 				<name type="string">Class Ability</name>
 			</id-00005>
@@ -725,6 +762,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -751,7 +789,7 @@
 				<max type="number">0</max>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">preparation</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -794,7 +832,7 @@
 						<link class="reference_classfeature" recordname="class.propaladin.features.id-00016@Incarnate-5eExpansion">Divine Smite</link>
 					</linklist>
 				</description>
-				<group type="string">Class Ability\n</group>
+				<group type="string">Class Ability</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Divine Smite</name>
@@ -802,6 +840,47 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Paladin - Class Ability</source>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">constitution</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.</p>
+					<p>When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.</p>
+					<p>After you use your breath weapon, you can't use it again until you complete a short or long rest.</p>
+				</description>
+				<group type="string">Race</group>
+				<locked type="number">1</locked>
+				<name type="string">Breath Weapon</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Dragonborn</source>
+				<type type="string">racial</type>
+			</id-00002>
 			<id-00003>
 				<actions>
 					<id-00002>
@@ -1040,6 +1119,27 @@
 				<school type="string">Evocation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">RESIST: fire</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have resistance to the damage type associated with your draconic ancestry.</p>
+				</description>
+				<group type="string">Race</group>
+				<locked type="number">1</locked>
+				<name type="string">Damage Resistance FIRE</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Dragonborn</source>
+				<type type="string">racial</type>
+			</id-00010>
 			<id-00011>
 				<actions>
 					<id-00001>
@@ -1133,6 +1233,31 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Actions</school>
 			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Fighting Style Defense; AC:1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00055@Incarnate-5eExpansion">Fighting Style</link>
+					</linklist>
+				</description>
+				<group type="string">Class Ability</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style - Defense</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Fighter - Class Ability</source>
+			</id-00015>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1289,7 +1414,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1410,6 +1535,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1425,6 +1551,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1436,7 +1563,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">5</maxammo>
 				<name type="string">Javelin</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 30/120)</properties>

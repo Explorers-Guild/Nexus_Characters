@@ -108,7 +108,7 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">133.78</load>
+			<load type="number">134.78</load>
 			<max type="number">150</max>
 		</encumbrance>
 		<exp type="number">669</exp>
@@ -744,6 +744,29 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">10</weight>
 			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.bracersofarchery@Incarnate-5eExpansion">Bracers of Archery</link>
+					</linklist>
+					<h>Description</h>
+					<p>While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bracers of Archery</name>
+				<nonid_name type="string">Bracers</nonid_name>
+				<nonidentified type="string">Thin leather bracers.</nonidentified>
+				<rarity type="string">Uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -781,6 +804,9 @@
 			<id-00004>
 				<name type="string">Item</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Effect</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -883,6 +909,7 @@
 					<p>Starting at 2nd level, you can use your Channel Divinity to charm animals and plants.</p>
 					<p>As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30 feet of you must make a Wisdom saying throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate,</p>
 				</description>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Channel Divinity: Charm Animals And Plants</name>
@@ -1025,6 +1052,31 @@
 				<school type="string">Evocation</school>
 				<source type="string">Cleric</source>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Bracers of Archery; DMG: 2 ranged</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00871@Incarnate-5eExpansion">Bracers of Archery</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bracers of Archery</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00007>
 			<id-00008>
 				<actions>
 				</actions>
@@ -1186,6 +1238,7 @@
 					<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
 					<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
 				</description>
+				<group type="string">Effect</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Channel Divinity</name>
@@ -1761,7 +1814,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
