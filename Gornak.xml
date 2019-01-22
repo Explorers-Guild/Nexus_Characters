@@ -45,9 +45,10 @@
 				<score type="number">14</score>
 			</wisdom>
 		</abilities>
+		<background type="string">Acolyte</background>
 		<backgroundlink type="windowreference">
-			<class></class>
-			<recordname></recordname>
+			<class>reference_background</class>
+			<recordname>reference.backgrounddata.acolyte@DD PHB Deluxe</recordname>
 		</backgroundlink>
 		<classes>
 			<id-00003>
@@ -66,15 +67,19 @@
 		<coins>
 			<slot1>
 				<amount type="number">0</amount>
+				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">58</amount>
+				<name type="string">GP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">3</amount>
+				<name type="string">SP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">0</amount>
+				<amount type="number">2</amount>
+				<name type="string">CP</name>
 			</slot4>
 			<slot5>
 				<amount type="number">0</amount>
@@ -85,25 +90,25 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">7</armor>
+				<armor type="number">6</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">17</total>
+				<total type="number">16</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">170</encumbered>
 			<encumberedheavy type="number">340</encumberedheavy>
 			<liftpushdrag type="number">1020</liftpushdrag>
-			<load type="number">74</load>
+			<load type="number">120.5</load>
 			<max type="number">510</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">387</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -210,6 +215,15 @@
 					<p>Starting at 2nd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity. When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling.</p>
 				</text>
 			</id-00006>
+			<id-00007>
+				<locked type="number">1</locked>
+				<name type="string">Shelter of the Faithful</name>
+				<source type="string">Acolyte</source>
+				<text type="formattedtext">
+					<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p>
+					<p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>
+				</text>
+			</id-00007>
 		</featurelist>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
@@ -224,25 +238,35 @@
 			<total type="number">-1</total>
 		</initiative>
 		<inventorylist>
-			<id-00002>
-				<ac type="number">17</ac>
-				<bonus type="number">0</bonus>
+			<id-00001>
+				<ac type="number">16</ac>
 				<carried type="number">2</carried>
-				<cost type="string">200 gp</cost>
+				<cost type="string">75 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk.</p>
-					<p>This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.</p>
+					<p>Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.</p>
 				</description>
 				<dexbonus type="string">-</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Splint</name>
+				<name type="string">Chain Mail</name>
 				<stealth type="string">Disadvantage</stealth>
-				<strength type="string">Str 15</strength>
+				<strength type="string">Str 13</strength>
 				<subtype type="string">Heavy Armor</subtype>
 				<type type="string">Armor</type>
-				<weight type="number">60</weight>
+				<weight type="number">55</weight>
+			</id-00001>
+			<id-00002>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bedroll</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">7</weight>
 			</id-00002>
 			<id-00003>
 				<carried type="number">2</carried>
@@ -257,10 +281,112 @@
 				<type type="string">Weapon</type>
 				<weight type="number">10</weight>
 			</id-00003>
-			<id-00004>
+			<id-00005>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">10</count>
+				<description type="formattedtext">
+					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Rations (1 Day)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">2</weight>
+			</id-00005>
+			<id-00006>
+				<carried type="number">1</carried>
+				<cost type="string">1 cp</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Torch</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00006>
+			<id-00007>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Tinderbox</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00007>
+			<id-00008>
+				<carried type="number">1</carried>
+				<cost type="string">2 sp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Waterskin</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00008>
+			<id-00009>
+				<carried type="number">1</carried>
+				<cost type="string">2 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Mess Kit</name>
+				<subtype type="string">Equipment Kits</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00009>
+			<id-00010>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Rope, Hempen (50 Feet)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">10</weight>
+			</id-00010>
+			<id-00011>
+				<carried type="number">1</carried>
+				<cost type="string">2 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Backpack (Empty)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00011>
+			<id-00012>
+				<carried type="number">2</carried>
+				<cost type="string">15 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 bludgeoning</damage>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Warhammer</name>
+				<properties type="string">Versatile (1d10)</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00012>
+			<id-00013>
 				<carried type="number">2</carried>
 				<cost type="string">5 gp</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<damage type="string">1d6 slashing</damage>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
@@ -269,7 +395,44 @@
 				<subtype type="string">Simple Melee Weapons</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
-			</id-00004>
+			</id-00013>
+			<id-00014>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00014>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -278,20 +441,26 @@
 			<id-00002>
 				<name type="string">Giant</name>
 			</id-00002>
+			<id-00003>
+				<name type="string">Two of your choice</name>
+			</id-00003>
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">Gornak</name>
+		<notes type="string">Found ettin looking for slaves for collisuem</notes>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powergroup>
 			<id-00001>
 				<atkmod type="number">0</atkmod>
 				<atkprof type="number">1</atkprof>
+				<atkstat type="string">wisdom</atkstat>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">5</prepared>
 				<savemod type="number">0</savemod>
 				<saveprof type="number">1</saveprof>
+				<stat type="string">wisdom</stat>
 				<uses type="number">0</uses>
 			</id-00001>
 			<id-00003>
@@ -312,57 +481,75 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">2</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -532,6 +719,17 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">24</bonus>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -750,6 +948,13 @@
 			</id-00010>
 			<id-00012>
 				<actions>
+					<id-00001>
+						<apply type="string">action</apply>
+						<label type="string">Destructive Wrath</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1011,9 +1216,10 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Stone's Endurance</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<source type="string">Goliath</source>
 				<type type="string">racial</type>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00020>
 		</powers>
 		<profbonus type="number">2</profbonus>
@@ -1097,9 +1303,9 @@
 			<id-00009>
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">2</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -1118,9 +1324,9 @@
 			<id-00012>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">4</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1174,7 +1380,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1237,33 +1443,29 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
+						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
-						<type type="string">slashing</type>
+						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Handaxe</name>
+				<name type="string">Warhammer</name>
 				<prof type="number">1</prof>
-				<properties type="string">Light, thrown (range 20/60)</properties>
+				<properties type="string">Versatile (1d10)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00004</recordname>
+					<recordname>....inventorylist.id-00012</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
-				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
 						<type type="string">slashing</type>
@@ -1276,10 +1478,30 @@
 				<properties type="string">Light, thrown (range 20/60)</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00004</recordname>
+					<recordname>....inventorylist.id-00013</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
+			<id-00004>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00013</recordname>
 				</shortcut>
 				<type type="number">2</type>
-			</id-00003>
+			</id-00004>
 		</weaponlist>
 	</character>
 </root>
