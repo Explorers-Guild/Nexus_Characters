@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">13</score>
@@ -45,6 +45,8 @@
 				<score type="number">12</score>
 			</wisdom>
 		</abilities>
+		<adventurelist>
+		</adventurelist>
 		<age type="string">105</age>
 		<appearance type="string">Shiny black skin, thick bone white hair, deep set dull silver eyes</appearance>
 		<background type="string">Outlander: Bounty hunter</background>
@@ -59,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">6</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">354</amount>
+				<amount type="number">902</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -102,17 +104,16 @@
 				<temporary type="number">0</temporary>
 				<total type="number">15</total>
 			</ac>
-			<special type="string">13</special>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">105</load>
+			<load type="number">111</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">453</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">606</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -274,20 +275,42 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Ranger</source>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Favored Enemy</name>
+				<source type="string">Ranger</source>
+				<text type="formattedtext">
+					<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
+					<p>Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.</p>
+					<p>You have advantage on Wisdom(Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</p>
+					<p>When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.</p>
+					<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">There's no room for caution in a life lived to the fullest.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'9&#34;</height>
-		<hero type="number">0</hero>
+		<hero type="number">1</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
-			<wounds type="number">8</wounds>
+			<total type="number">46</total>
+			<wounds type="number">0</wounds>
 		</hp>
-		<ideals type="string">Change. Life is like the seasons, in constant change, and we must change with it.  Honor. If I dishonor myself, I dishonor my friends. </ideals>
+		<ideals type="string">Change. Life is like the seasons, in constant change, and we must change with it. Honor. If I dishonor myself, I dishonor my friends.</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
@@ -334,7 +357,7 @@
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">2</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2500 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 slashing</damage>
@@ -385,12 +408,29 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Gem</name>
 				<subtype type="string">Gemstone</subtype>
 				<type type="string">Treasure</type>
 				<weight type="number">0</weight>
 			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This sticky, adhesive fluid ignites when exposed to air. as an action, you can trow this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 2d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 12 Dexterity check to extinguish the flames.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Alchemist's Fire (Flask)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Fire Scorpian Jelly</type>
+				<weight type="number">1</weight>
+			</id-00005>
 			<id-00009>
 				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
@@ -525,7 +565,7 @@
 			<id-00021>
 				<carried type="number">2</carried>
 				<cost type="string">2 sp</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Belt</location>
 				<locked type="number">1</locked>
@@ -639,10 +679,10 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
-		<name type="string">Varjo Stalkkeri</name>
+		<level type="number">6</level>
+		<name type="string">Varjo Stalkkeri (Var-ho)</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">13</perception>
+		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I watch over my friends as if they were a litter of newborn pups.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -702,11 +742,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
+				<max type="number">4</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -844,6 +884,38 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Hide</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Standard Actions</group>
+				<level type="number">0</level>
+				<name type="string">Hide</name>
+				<prepared type="number">0</prepared>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Ready</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Standard Actions</group>
+				<level type="number">0</level>
+				<name type="string">Ready</name>
+				<prepared type="number">0</prepared>
+			</id-00005>
 			<id-00006>
 				<actions>
 				</actions>
@@ -885,7 +957,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">2</prepared>
 			</id-00009>
 			<id-00010>
 				<actions>
@@ -1226,7 +1298,7 @@
 				<prepared type="number">0</prepared>
 			</id-00027>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: One type of musical instrument</name>
@@ -1251,7 +1323,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -1265,7 +1337,7 @@
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1286,7 +1358,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1307,7 +1379,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -1356,7 +1428,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1382,7 +1454,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1473,7 +1545,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00003>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
