@@ -31,11 +31,11 @@
 				<score type="number">8</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">17</score>
+				<score type="number">19</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
@@ -54,11 +54,13 @@
 			<class>reference_background</class>
 			<recordname>reference.backgrounddata.criminal@DD PHB Deluxe</recordname>
 		</backgroundlink>
-		<bonds type="string">Something important was taken from me, and I aim to steal it back.</bonds>
+		<bonds type="string">Something important was taken from me, and I aim to steal it back. (A Tribal banner)</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">2</hdused>
 				<level type="number">3</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
@@ -69,14 +71,16 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">15</amount>
+				<amount type="number">27</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">20</amount>
+				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">0</amount>
+				<amount type="number">30</amount>
+				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
@@ -100,12 +104,14 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">85</encumbered>
-			<encumberedheavy type="number">170</encumberedheavy>
-			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">84.1</load>
-			<max type="number">255</max>
+			<encumbered type="number">95</encumbered>
+			<encumberedheavy type="number">190</encumberedheavy>
+			<liftpushdrag type="number">570</liftpushdrag>
+			<load type="number">85.6</load>
+			<max type="number">285</max>
 		</encumbrance>
+		<exp type="number">383</exp>
+		<expneeded type="number">0</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -232,7 +238,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">35</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">3</wounds>
 		</hp>
 		<ideals type="string">Freedom. Chains are meant to be broken, as are those who would forge them. (Chaotic)</ideals>
 		<initiative>
@@ -453,6 +459,65 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00015>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">2,700 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.</p>
+					<p>A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.</p>
+					<p><b>Strength (Very Rare) </b>. Your Strength score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">attuned</location>
+				<locked type="number">1</locked>
+				<name type="string">Magic Stone from a Forgotten Time (Strength) - added to strength</name>
+				<nonid_name type="string">an old stone with strange writing in a forgotten language</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Very Rare (requires attunement)</rarity>
+				<subtype type="string">Magical Stone</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00016>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00018>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -475,37 +540,46 @@
 			<id-00003>
 				<name type="string">Power</name>
 			</id-00003>
-			<id-00004>
-				<name type="string">Effect</name>
-			</id-00004>
+			<id-00006>
+				<name type="string">Potion</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
@@ -674,6 +748,30 @@
 				<ritual type="number">0</ritual>
 				<specialization type="string">Path of the Zealot</specialization>
 			</id-00005>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Potion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion: Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00008>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -721,7 +819,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>

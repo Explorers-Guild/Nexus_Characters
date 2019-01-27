@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
-				<save type="number">1</save>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">8</score>
@@ -57,8 +57,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<hdused type="number">2</hdused>
+				<level type="number">5</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -68,7 +68,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">612</amount>
+				<amount type="number">624</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -76,7 +76,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">214</amount>
+				<amount type="number">244</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -84,7 +84,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">165</amount>
+				<amount type="number">185</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -106,11 +106,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">142.32</load>
+			<load type="number">141.57</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">491</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">574</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -210,13 +210,22 @@
 					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
-			<wounds type="number">0</wounds>
+			<total type="number">30</total>
+			<wounds type="number">13</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -322,15 +331,41 @@
 				<weight type="number">10</weight>
 			</id-00006>
 			<id-00007>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">5 CP</cost>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Piton</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.25</weight>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00007>
 			<id-00008>
 				<carried type="number">1</carried>
@@ -587,64 +622,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00022>
-			<id-00023>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>When you drink this potion, you gain resistance to fire damage for 1 hour.</p>
-					<linklist>
-						<link class="power" recordname="spell.typeresistancefire@Incarnate-5eExpansion">Type Resistance (Fire)</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Fire Resistance</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The vial has a small fire burning within it... yes a fire burning in the middle of the liquid.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00023>
-			<id-00024>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00024>
 			<id-00025>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -685,9 +662,9 @@
 				<name type="string">Halfling</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Fahzel Fastfingers</name>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powermeta>
 			<pactmagicslots1>
@@ -789,7 +766,7 @@
 				<source type="string">Rogue</source>
 			</id-00001>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords</name>
@@ -816,35 +793,35 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -947,7 +924,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1020,7 +997,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">3</ammo>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>

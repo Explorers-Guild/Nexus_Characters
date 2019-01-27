@@ -60,7 +60,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">3</hdused>
 				<level type="number">4</level>
 				<name type="string">Cleric</name>
 				<shortcut type="windowreference">
@@ -70,19 +70,20 @@
 			</id-00001>
 			<id-00002>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">2</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.sorcerer@DD Xanathar's Guide to Everything Players</recordname>
+					<recordname>reference.classdata.sorcerer@D&#38;D Sword Coast Adventurer's Guide - Player's Guide</recordname>
 				</shortcut>
 			</id-00002>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">657</amount>
+				<amount type="number">669</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -90,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">107</amount>
+				<amount type="number">137</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -98,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">85</amount>
+				<amount type="number">105</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -120,10 +121,10 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">91</load>
+			<load type="number">93.5</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">693</exp>
+		<exp type="number">611</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
@@ -196,17 +197,31 @@
 				<locked type="number">1</locked>
 				<name type="string">Font of Magic</name>
 				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.sorcerypoints@Incarnate-5eExpansion">Font of Magic</link>
+					</linklist>
+					<h>Description</h>
 					<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
 					<p><b>Sorcery Points</b></p>
 					<p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00046@Incarnate-5eExpansion">The Sorcerer</link>
+					</linklist>
 					<p><b>Flexible Casting</b></p>
-					<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels. The created spell slots vanish at the end of a long rest.</p>
-					<p><b>Creating Spell Slots. </b>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
-					<p><b>Creating Spell Slots</b></p>
+					<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p>
+					<p><i>Creating Spell Slots. </i>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
+					<p>Any spell slot you create with this feature vanishes when you finish a long rest.</p>
+					<p><u>Creating Spell Slots</u></p>
 					<table>
 						<tr>
-							<td><b>Spell Slot Sorcery Level</b></td>
+							<td><b>Spell Slot</b></td>
+							<td><b>Sorcery</b></td>
+						</tr>
+						<tr>
+							<td><b>Level</b></td>
 							<td><b>Point Cost</b></td>
 						</tr>
 						<tr>
@@ -230,7 +245,7 @@
 							<td>7</td>
 						</tr>
 					</table>
-					<p>Converting a Spell Slot to Sorcery Points. As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
+					<p><i>Converting a Spell Slot to Sorcery Points. </i>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
 				</text>
 			</id-00003>
 			<id-00004>
@@ -388,7 +403,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">35</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">4</wounds>
 		</hp>
 		<ideals type="string">Freedom. The sea is freedom-the freedom to go anywhere and do anything.</ideals>
 		<initiative>
@@ -456,6 +471,33 @@
 				<type type="string">Armor</type>
 				<weight type="number">20</weight>
 			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1315 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing, magic</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.beastslayer@Incarnate-5eExpansion">Beast Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an undead with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;beast&#34; refers to any creature with the undead type.</p>
+					<p>You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Morningstar of Beast Slaying</name>
+				<nonidentified type="string">A pointy morningstar.</nonidentified>
+				<properties type="string">-</properties>
+				<subtype type="string">Martial Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00003>
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -664,44 +706,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00018>
-			<id-00020>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">3</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00020>
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -750,7 +754,7 @@
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">To me, a tavern brawl is a nice way to get to know a new city.</personalitytraits>
+		<personalitytraits type="string">To me, a tavern brawl is a nice way to get to know a new city.\nMoney is always the way to go.</personalitytraits>
 		<powergroup>
 			<id-00002>
 				<name type="string">Item</name>
@@ -1021,6 +1025,34 @@
 				<school type="string">Necromancy</school>
 				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00007>
 			<id-00008>
 				<actions>
 					<id-00001>
@@ -1086,30 +1118,63 @@
 			</id-00010>
 			<id-00011>
 				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Invisible; (C)</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (an eyelash encased in gum arabic)</components>
 				<description type="formattedtext">
-					<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.sorcerypoints@Incarnate-5eExpansion">Font of Magic</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
+					<p><b>Sorcery Points</b></p>
+					<p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00046@Incarnate-5eExpansion">The Sorcerer</link>
+					</linklist>
+					<p><b>Flexible Casting</b></p>
+					<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p>
+					<p><i>Creating Spell Slots. </i>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
+					<p>Any spell slot you create with this feature vanishes when you finish a long rest.</p>
+					<p><u>Creating Spell Slots</u></p>
+					<table>
+						<tr>
+							<td><b>Spell Slot</b></td>
+							<td><b>Sorcery</b></td>
+						</tr>
+						<tr>
+							<td><b>Level</b></td>
+							<td><b>Point Cost</b></td>
+						</tr>
+						<tr>
+							<td>1st</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>2nd</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>7</td>
+						</tr>
+					</table>
+					<p><i>Converting a Spell Slot to Sorcery Points. </i>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
 				</description>
-				<duration type="string">Concentration, up to 1 hour</duration>
-				<group type="string">Spells (Sorcerer)</group>
-				<level type="number">2</level>
+				<group type="string">Class</group>
 				<locked type="number">1</locked>
-				<name type="string">Invisibility</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<school type="string">Illusion</school>
-				<source type="string">Bard, Druid Grassland Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+				<name type="string">Font of Magic</name>
+				<prepared type="number">2</prepared>
+				<source type="string">Sorcerer</source>
+				<specializationchoice type="number">0</specializationchoice>
 			</id-00011>
 			<id-00013>
 				<actions>
@@ -1121,8 +1186,9 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
 								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">force</type>
 							</id-00001>
 						</damagelist>
@@ -1177,6 +1243,26 @@
 				<school type="string">Enchantment</school>
 				<source type="string">Cleric, Cleric Life Domain, Paladin</source>
 			</id-00014>
+			<id-00015>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you or a creature within 60 feet of you falls</castingtime>
+				<components type="string">V, M (a small feather or piece of down)</components>
+				<description type="formattedtext">
+					<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells (Sorcerer)</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Feather Fall</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00015>
 			<id-00016>
 				<actions>
 				</actions>
@@ -1237,6 +1323,17 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1298,15 +1395,6 @@
 				<school type="string">Necromancy</school>
 				<source type="string">Cleric</source>
 			</id-00021>
-			<id-00023>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<group type="string">Item</group>
-				<level type="number">0</level>
-				<name type="string">Potion of healing</name>
-				<prepared type="number">0</prepared>
-			</id-00023>
 			<id-00025>
 				<actions>
 					<id-00001>
@@ -1359,7 +1447,8 @@
 					<id-00001>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -1504,6 +1593,12 @@
 			</id-00031>
 			<id-00032>
 				<actions>
+					<id-00001>
+						<label type="string">(C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1657,7 +1752,7 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d8,d8,d8,d8</dice>
+								<dice type="dice">d8,d8,d8</dice>
 								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
@@ -1665,6 +1760,17 @@
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1903,7 +2009,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2054,6 +2160,28 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Morningstar of Beast Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">-</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00003</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
 			<id-00005>
 				<carried type="number">2</carried>
 				<damagelist>

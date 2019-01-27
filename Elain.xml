@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<hdused type="number">2</hdused>
+				<level type="number">5</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">143</amount>
+				<amount type="number">155</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">78</amount>
+				<amount type="number">108</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">75</amount>
+				<amount type="number">95</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">122.5</load>
+			<load type="number">123</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">463</exp>
+		<exp type="number">546</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -203,6 +203,15 @@
 					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00007>
+			<id-00008>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Fighter</source>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
+				</text>
+			</id-00008>
 		</featurelist>
 		<flaws type="string">Letting people done.</flaws>
 		<gender type="string">female (male)</gender>
@@ -212,8 +221,8 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<hdmod type="number">0</hdmod>
 			<temporary type="number">0</temporary>
-			<total type="number">36</total>
-			<wounds type="number">9</wounds>
+			<total type="number">45</total>
+			<wounds type="number">3</wounds>
 		</hp>
 		<ideals type="string">Freedom. Sincerity</ideals>
 		<initiative>
@@ -222,6 +231,43 @@
 			<total type="number">2</total>
 		</initiative>
 		<inventorylist>
+			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00001>
 			<id-00002>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -500,10 +546,10 @@
 				<name type="string">Celestial</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Elain</name>
 		<notes type="string">guy dress as a girl.</notes>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">If someone is in need of help i will be there.</personalitytraits>
 		<powergroup>
@@ -700,13 +746,14 @@
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
 				<group type="string">Class</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Fighter</source>
 			</id-00004>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Simple weapons, martial weapons</name>
@@ -731,35 +778,35 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
 				<prof type="number">1</prof>
 				<stat type="string">constitution</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
-				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<stat type="string">dexterity</stat>
+				<total type="number">5</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -852,6 +899,13 @@
 				<stat type="string">intelligence</stat>
 				<total type="number">0</total>
 			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string"> bewitching men with beauty </name>
+				<prof type="number">2</prof>
+				<stat type="string">constitution</stat>
+				<total type="number">9</total>
+			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
@@ -862,7 +916,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -944,7 +998,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">10</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
@@ -956,7 +1010,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
+				<maxammo type="number">7</maxammo>
 				<name type="string">Crossbow, Light</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
