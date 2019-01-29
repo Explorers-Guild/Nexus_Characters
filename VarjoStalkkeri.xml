@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">902</amount>
+				<amount type="number">1156</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">4</amount>
+				<amount type="number">9</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">51</amount>
+				<amount type="number">60</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">74</amount>
+				<amount type="number">137</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,10 +109,10 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">111</load>
+			<load type="number">107.5</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">606</exp>
+		<exp type="number">669</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -128,7 +128,7 @@
 			<id-00002>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Natural Explorer: Jungle</name>
+				<name type="string">Natural Explorer: Jungle, Desert</name>
 				<source type="string">Ranger</source>
 				<text type="formattedtext">
 					<p>You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.</p>
@@ -147,7 +147,7 @@
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Favored Enemy: Orcs; Drow</name>
+				<name type="string">Favored Enemy: Orcs; Drow, Undead</name>
 				<source type="string">Ranger</source>
 				<text type="formattedtext">
 					<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
@@ -308,13 +308,13 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">46</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">14</wounds>
 		</hp>
 		<ideals type="string">Change. Life is like the seasons, in constant change, and we must change with it. Honor. If I dishonor myself, I dishonor my friends.</ideals>
 		<initiative>
-			<misc type="number">0</misc>
+			<misc type="number">1</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -346,6 +346,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Healing</name>
 				<nonid_name type="string">Dull Potion</nonid_name>
@@ -431,6 +432,55 @@
 				<type type="string">Fire Scorpian Jelly</type>
 				<weight type="number">1</weight>
 			</id-00005>
+			<id-00006>
+				<carried type="number">1</carried>
+				<count type="number">25</count>
+				<location type="string">Pouch</location>
+				<name type="string">Powdered Corn Extract</name>
+			</id-00006>
+			<id-00007>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Pouch</location>
+				<name type="string">Twisted Loop of Parchment</name>
+			</id-00007>
+			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00008>
 			<id-00009>
 				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
@@ -562,6 +612,12 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00018>
+			<id-00019>
+				<carried type="number">2</carried>
+				<count type="number">1</count>
+				<name type="string">Owlbear Cloak</name>
+				<weight type="number">2</weight>
+			</id-00019>
 			<id-00021>
 				<carried type="number">2</carried>
 				<cost type="string">2 sp</cost>
@@ -653,20 +709,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00027>
-			<id-00028>
-				<carried type="number">1</carried>
-				<cost type="string">25 gp</cost>
-				<count type="number">2</count>
-				<damage type="string">1d6 slashing</damage>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Scimitar</name>
-				<properties type="string">Finesse, light</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00028>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -678,6 +720,9 @@
 			<id-00003>
 				<name type="string">Elvish</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Draconic</name>
+			</id-00004>
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Varjo Stalkkeri (Var-ho)</name>
@@ -778,7 +823,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -976,7 +1021,7 @@
 				<group type="string">Class Features</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Favored Enemy: Orcs; Drow</name>
+				<name type="string">Favored Enemy: Orcs; Drow; Undead</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00010>
@@ -1008,7 +1053,7 @@
 				<group type="string">Class Features</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Natural Explorer: Jungle</name>
+				<name type="string">Natural Explorer: Jungle; Desert</name>
 				<prepared type="number">0</prepared>
 			</id-00012>
 			<id-00013>
@@ -1207,7 +1252,7 @@
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
-						<label type="string">DODGE</label>
+						<label type="string">ADVSAV: dexterity;GRANTDISATK</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1228,6 +1273,27 @@
 				<ritual type="number">0</ritual>
 				<source type="string">5e Rule Coding</source>
 			</id-00021>
+			<id-00022>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (powdered corn extract and a twisted loop of parchment)</components>
+				<description type="formattedtext">
+					<p>You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the spell ends. The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space.</p>
+					<p>Attacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see out of it as if through a3-foot-by-5-foot window centered on the rope.</p>
+					<p>Anything inside the extradimensional space drops out when the spell ends.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Class Features</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Rope Trick</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00022>
 			<id-00023>
 				<actions>
 					<id-00001>
@@ -1281,6 +1347,33 @@
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">once</usesperiod>
 			</id-00024>
+			<id-00025>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Skill: 10 stealth</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (ashes from a burned leaf of mistletoe and a sprig of spruce)</components>
+				<description type="formattedtext">
+					<p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Pass without Trace</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric Trickery Domain, Druid, Druid Grassland Circle, Monk, Ranger</source>
+			</id-00025>
 			<id-00027>
 				<actions>
 					<id-00001>
@@ -1545,7 +1638,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00003>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1568,29 +1661,6 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00003>
-			<id-00004>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<stat type="string">dexterity</stat>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Scimitar</name>
-				<prof type="number">1</prof>
-				<properties type="string">Finesse, light</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00028</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00004>
 		</weaponlist>
 		<weight type="string">135lbs</weight>
 	</character>

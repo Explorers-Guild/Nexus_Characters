@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">0</amount>
+				<amount type="number">206</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">5</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">186</amount>
+				<amount type="number">195</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">183</amount>
+				<amount type="number">246</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,7 +112,7 @@
 			<load type="number">98.6</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">816</exp>
+		<exp type="number">862</exp>
 		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
@@ -310,7 +310,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">56</total>
-			<wounds type="number">43</wounds>
+			<wounds type="number">5</wounds>
 		</hp>
 		<ideals type="string">This is what I was made to do.\nI'm doing what I do so others can benefit.</ideals>
 		<initiative>
@@ -794,7 +794,7 @@
 			<id-00025>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">902 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d4 piercing</damage>
@@ -853,7 +853,7 @@
 		<name type="string">Herbal</name>
 		<notes type="string">Own a Pseudodragon with \n+10 to hp\nSame as wofie</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">14</perception>
+		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I will live to see the infernal houses fall. Demons have no place in our world.\nTraveling with Vok as lead to a hate for dragons.\nWith the death of desire and the training as a druid gives Herbal a bruning hate for the undead.</personalitytraits>
 		<powergroup>
@@ -924,7 +924,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
@@ -932,11 +932,11 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">3</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">2</max>
-				<used type="number">1</used>
+				<used type="number">2</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
@@ -985,6 +985,14 @@
 						<order type="number">2</order>
 						<type type="string">heal</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Spirit Totem</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">1</cast>
 				<description type="formattedtext">
@@ -1009,54 +1017,43 @@
 			<id-00002>
 				<actions>
 					<id-00001>
-						<atkprof type="number">1</atkprof>
+						<durmod type="number">1</durmod>
+						<label type="string">Poisoned</label>
 						<order type="number">1</order>
-						<savedcbase type="string">ability</savedcbase>
-						<savedcprof type="number">1</savedcprof>
-						<savedcstat type="string">wisdom</savedcstat>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">wisdom</savetype>
-						<type type="string">cast</type>
+						<type type="string">effect</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d8,d8</dice>
+								<dice type="dice">d10,d10</dice>
 								<statmult type="number">1</statmult>
-								<type type="string">necrotic</type>
+								<type type="string">poison</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
 						<type type="string">damage</type>
 					</id-00002>
 					<id-00003>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d12,d12</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">necrotic</type>
-							</id-00001>
-						</damagelist>
+						<atkprof type="number">1</atkprof>
 						<order type="number">3</order>
-						<type type="string">damage</type>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
 					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.</p>
-					<p>The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature.</p>
+					<p>That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.</p>
 				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
+				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Toll the Dead</name>
+				<name type="string">Dagger of Venom</name>
 				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<school type="string">Necromancy</school>
-				<source type="string">Cleric, Warlock, Wizard</source>
 			</id-00002>
 			<id-00003>
 				<actions>
@@ -1233,7 +1230,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Earth Tremor</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">10 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1322,8 +1319,12 @@
 			<id-00010>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
@@ -1355,7 +1356,7 @@
 				<level type="number">4</level>
 				<locked type="number">1</locked>
 				<name type="string">Ice Storm</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">300 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1448,8 +1449,8 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">3</bonus>
-								<dice type="dice">d10,d10,d10</dice>
+								<bonus type="number">10</bonus>
+								<dice type="dice">d10,d10,d10,d10,d10</dice>
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
@@ -1460,62 +1461,113 @@
 					</id-00001>
 					<id-00002>
 						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 4; DEX: [-2DEX]; DEX: 2; CON: [-2CON]; CON: 3; AC: -2</label>
+						<label type="string">STR: [-2STR]; STR: 7; DEX: [-2DEX]; DEX: 5; CON: [-2CON]; CON: 5;</label>
 						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00002>
 					<id-00003>
-						<atkprof type="number">1</atkprof>
-						<order type="number">5</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">12</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savetype type="string">strength</savetype>
-						<type type="string">cast</type>
-					</id-00003>
-					<id-00005>
 						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">4</atkmod>
+						<atkmod type="number">5</atkmod>
 						<atkprof type="number">1</atkprof>
 						<atktype type="string">melee</atktype>
 						<order type="number">3</order>
 						<savedcprof type="number">1</savedcprof>
 						<type type="string">cast</type>
-					</id-00005>
-					<id-00006>
+					</id-00003>
+					<id-00004>
 						<damagelist>
 							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d10</dice>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d6,d6</dice>
 								<statmult type="number">1</statmult>
-								<type type="string">slashing</type>
+								<type type="string">piercing</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">4</order>
 						<type type="string">damage</type>
-					</id-00006>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="npc" recordname="npc.axebeak@Incarnate-5eBattles">Axe Beak</link>
+						<link class="npc" recordname="npc.direwolf@Incarnate-5eBattles">Dire Wolf</link>
 					</linklist>
 				</description>
 				<group type="string">Wilds shape</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Transformation - Crocodile</name>
+				<name type="string">Transformation - Dire Wolf</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
+				<source type="string">Polymorph Code</source>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">RESIST: acid; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">RESIST: cold; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">RESIST: fire; (C)</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">RESIST: lightning; (C)</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">RESIST: thunder; (C)</label>
+						<order type="number">5</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnByb3RlY3Rpb24/play/"><b>Syrinscape </b></link>: Protection - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Protection from Energy</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Druid, Ranger, Sorcerer, Wizard</source>
+			</id-00014>
 			<id-00015>
 				<actions>
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">6</bonus>
-								<dice type="dice">d8,d8,d8</dice>
+								<bonus type="number">12</bonus>
+								<dice type="dice">d10,d10,d10,d10</dice>
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
@@ -1526,7 +1578,7 @@
 					</id-00001>
 					<id-00002>
 						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 4; DEX: [-2DEX]; DEX: 0; CON: [-2CON]; CON: 4;</label>
+						<label type="string">STR: []; STR: 9; DEX: [-2DEX]; DEX: 0; CON: [-2CON]; CON: 6;</label>
 						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1534,8 +1586,8 @@
 					<id-00003>
 						<damagelist>
 							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d4,d4</dice>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d6,d6</dice>
 								<statmult type="number">1</statmult>
 								<type type="string">slashing</type>
 							</id-00001>
@@ -1545,7 +1597,7 @@
 					</id-00003>
 					<id-00005>
 						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">3</atkmod>
+						<atkmod type="number">6</atkmod>
 						<atkprof type="number">1</atkprof>
 						<atktype type="string">melee</atktype>
 						<order type="number">3</order>
@@ -1557,8 +1609,8 @@
 					<id-00006>
 						<damagelist>
 							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d6</dice>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d8</dice>
 								<statmult type="number">1</statmult>
 								<type type="string">piercing</type>
 							</id-00001>
@@ -1615,61 +1667,70 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
-								<bonus type="number">3</bonus>
-								<dice type="dice">d10,d10,d10</dice>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d10,d10,d10,d10</dice>
 								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
 					<id-00002>
-						<label type="string">STR: [-2STR]; STR: 6; DEX: [-2DEX]; DEX: 3; CON: [-2CON]; CON: 3; AC: -2</label>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 6; DEX: [-2DEX]; DEX: 7; CON: [-2CON]; CON: 3;</label>
 						<order type="number">2</order>
+						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00002>
 					<id-00003>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
 						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
 						<order type="number">3</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">14</savedcmod>
 						<savedcprof type="number">1</savedcprof>
-						<savetype type="string">strength</savetype>
 						<type type="string">cast</type>
 					</id-00003>
 					<id-00004>
-						<label type="string">Prone</label>
-						<order type="number">4</order>
-						<type type="string">effect</type>
-					</id-00004>
-					<id-00005>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">6</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">5</order>
-						<savedcprof type="number">1</savedcprof>
-						<type type="string">cast</type>
-					</id-00005>
-					<id-00006>
 						<damagelist>
 							<id-00001>
-								<bonus type="number">4</bonus>
-								<dice type="dice">d6,d6</dice>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d6</dice>
 								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
+								<type type="string">piercing</type>
 							</id-00001>
 						</damagelist>
-						<order type="number">6</order>
+						<order type="number">4</order>
 						<type type="string">damage</type>
-					</id-00006>
+					</id-00004>
+					<id-00005>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">slashing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">5</order>
+						<type type="string">damage</type>
+					</id-00005>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.gianteagle@Incarnate-5eBattles">Giant Eagle</link>
+					</linklist>
+				</description>
 				<group type="string">Wilds shape</group>
 				<level type="number">0</level>
-				<name type="string">Transformation - Warhorse</name>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Giant Eagle</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Polymorph Code</source>
 			</id-00018>
 			<id-00019>
 				<actions>
@@ -1702,38 +1763,79 @@
 			<id-00020>
 				<actions>
 					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Conjure Animals; (C)</label>
+						<heallist>
+							<id-00001>
+								<bonus type="number">10</bonus>
+								<dice type="dice">d10,d10,d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
 						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 7; DEX: [-2DEX]; DEX: 5; CON: [-2CON]; CON: 4;</label>
+						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
-					</id-00001>
+					</id-00002>
+					<id-00003>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">3</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00003>
+					<id-00005>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00005>
+					<id-00006>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">5</order>
+						<type type="string">damage</type>
+					</id-00006>
+					<id-00007>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">slashing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">6</order>
+						<type type="string">damage</type>
+					</id-00007>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:</p>
 					<linklist>
-						<link class="table" recordname="tables.id-02413@Incarnate-5eExpansion">One beast of challenge rating 2 or lower</link>
-						<link class="table" recordname="tables.id-02414@Incarnate-5eExpansion">Two beasts of challenge rating 1 or lower</link>
-						<link class="table" recordname="tables.id-02415@Incarnate-5eExpansion">Four beasts of challenge rating 1/2 or lower</link>
-						<link class="table" recordname="tables.id-02416@Incarnate-5eExpansion">Eight beasts of challenge rating 1/4 or lower</link>
+						<link class="npc" recordname="npc.tiger@Incarnate-5eBattles">Tiger</link>
 					</linklist>
-					<p>Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the creatures' statistics.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.</p>
 				</description>
-				<duration type="string">Concentration, up to 1 hour</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
+				<group type="string">Wilds shape</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Conjure Animals</name>
-				<prepared type="number">1</prepared>
-				<range type="string">60 feet</range>
+				<name type="string">Transformation - Tiger</name>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Druid, Ranger</source>
+				<source type="string">Polymorph Code</source>
 			</id-00020>
 			<id-00021>
 				<actions>
@@ -1808,6 +1910,92 @@
 				<school type="string">Evocation</school>
 				<source type="string">Druid</source>
 			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d10,d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 14; DEX: [-2DEX]; DEX: 6; CON: [-2CON]; CON: 2;</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">3</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">11</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00003>
+					<id-00004>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">piercing</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">4</order>
+						<type type="string">damage</type>
+					</id-00004>
+					<id-00005>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">5</order>
+						<type type="string">damage</type>
+					</id-00005>
+					<id-00006>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">5</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">6</order>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00006>
+					<id-00007>
+						<label type="string">Web; restrained; NOTE escape DC 12, AC 10, hp 5, web is vulnerable to fire and immune to bludgeoning, poison, and psychic damage</label>
+						<order type="number">7</order>
+						<type type="string">effect</type>
+					</id-00007>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.giantspider@Incarnate-5eBattles">Giant Spider</link>
+					</linklist>
+				</description>
+				<group type="string">Wilds shape</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Giant Spider</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Polymorph Code</source>
+			</id-00022>
 			<id-00023>
 				<actions>
 					<id-00001>
@@ -1832,236 +2020,45 @@
 				<source type="string">Druid</source>
 				<specialization type="string">Circle of the Shepherd</specialization>
 			</id-00023>
-			<id-00024>
+			<id-00026>
 				<actions>
 					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d10,d10</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
 						<order type="number">1</order>
-						<type type="string">heal</type>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [STR]; STR: 5; DEX: [-2DEX]; DEX: 4; CON: [-2CON]; CON: 2; AC: -1</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
-					<id-00003>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">4</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">3</order>
-						<savedcprof type="number">1</savedcprof>
-						<type type="string">cast</type>
-					</id-00003>
-					<id-00004>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">4</order>
-						<type type="string">damage</type>
-					</id-00004>
-					<id-00005>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">4</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<order type="number">5</order>
-						<savedcprof type="number">1</savedcprof>
-						<type type="string">cast</type>
-					</id-00005>
-					<id-00006>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d8</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">bludgeoning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">6</order>
-						<type type="string">damage</type>
-					</id-00006>
-					<id-00007>
-						<label type="string">Grappled; NOTE: escape DC 14</label>
-						<order type="number">7</order>
-						<type type="string">effect</type>
-					</id-00007>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="npc" recordname="npc.constrictorsnake@Incarnate-5eBattles">Constrictor Snake</link>
-					</linklist>
-				</description>
-				<group type="string">Wilds shape</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Transformation - Constrictor Snake</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00024>
-			<id-00027>
-				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">2</bonus>
-								<dice type="dice">d8,d8</dice>
-								<statmult type="number">1</statmult>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">0</durmod>
-						<label type="string">STR: [-2STR]; STR: 2; DEX: [-2DEX]; DEX: 6; CON: [-2CON]; CON: 3; AC: -1</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00002>
-					<id-00003>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">3</atkmod>
-						<atkprof type="number">1</atkprof>
-						<atktype type="string">melee</atktype>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">3</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">11</savedcmod>
-						<savedcprof type="number">1</savedcprof>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00003>
-					<id-00004>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">1</bonus>
-								<dice type="dice">d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">piercing</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">4</order>
-						<type type="string">damage</type>
-					</id-00004>
-					<id-00005>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d6,d6</dice>
-								<statmult type="number">1</statmult>
-								<type type="string">poison</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">5</order>
-						<type type="string">damage</type>
-					</id-00005>
-					<id-00006>
 						<durmod type="number">1</durmod>
 						<durunit type="string">hour</durunit>
-						<label type="string">NOTE: Only if knocked unconscious by poison damage; poisoned; paralyzed</label>
-						<order type="number">6</order>
+						<label type="string">Polymorph; (C)</label>
+						<order type="number">2</order>
 						<type type="string">effect</type>
-					</id-00006>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a caterpillar cocoon)</components>
 				<description type="formattedtext">
+					<h>Common Transformations</h>
 					<linklist>
-						<link class="npc" recordname="npc.giantwolfspider@Incarnate-5eBattles">Giant Wolf Spider</link>
+						<link class="encounter" recordname="encounter.id-00061@Incarnate-5eExpansion">98 Wildshape/Polymorph</link>
 					</linklist>
-				</description>
-				<group type="string">Wilds shape</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Transformation - Giant Wolf Spider</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00027>
-			<id-00029>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Conjure Minor Elementals; (C)</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 minute</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:</p>
-					<linklist>
-						<link class="table" recordname="tables.id-02419@Incarnate-5eExpansion">One elemental of challenge rating 2 or lower</link>
-						<link class="" recordname="@Incarnate-5eExpansion">Two elementals of challenge rating 1 or lower</link>
-						<link class="table" recordname="tables.id-02420@Incarnate-5eExpansion">Four elementals of challenge rating 1/2 or lower</link>
-						<link class="table" recordname="tables.id-02421@Incarnate-5eExpansion">Eight elementals of challenge rating 1/4 or lower.</link>
-					</linklist>
-					<p>An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the creatures' statistics.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot.</p>
+					<h>Description</h>
+					<p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. The spell has no effect on a shapechanger or a creature with 0 hit points. The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). This Challenge Rating may not exceed 8.</p>
+					<p>The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech. The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 hour</duration>
 				<group type="string">Spells</group>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Conjure Minor Elementals</name>
-				<prepared type="number">0</prepared>
-				<range type="string">90 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Druid, Wizard</source>
-			</id-00029>
-			<id-00030>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Daylight 60 ft</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmxpZ2h0/play/"><b>Syrinscape </b></link>: Light bright - Wizard Spells E</linklist>
-					<h>Description</h>
-					<p>A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light. If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>
-				</description>
-				<duration type="string">1 hour</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Daylight</name>
+				<name type="string">Polymorph</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Cleric, Druid, Paladin, Ranger, Sorcerer</source>
-			</id-00030>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
+			</id-00026>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2081,17 +2078,17 @@
 		<race type="string">Half-Elf</race>
 		<racelink type="windowreference">
 			<class>reference_race</class>
-			<recordname>reference.racedata.half_elf_variant@D&#38;D Sword Coast Adventurer's Guide - Player's Guide</recordname>
+			<recordname>race.id-00007@Incarnate-5eExpansion</recordname>
 		</racelink>
-		<senses type="string">Darkvision 60</senses>
+		<senses type="string">Darkvision 60,</senses>
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
 				<name type="string">Perception</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">7</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -2173,9 +2170,9 @@
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">0</total>
+				<total type="number">3</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -2222,26 +2219,26 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
-			<id-00001>
+			<id-00003>
 				<locked type="number">1</locked>
 				<name type="string">Fey Ancestry</name>
-				<source type="string">Half-Elf-Variant</source>
+				<source type="string">Half-Elf</source>
 				<text type="formattedtext">
 					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00001>
-			<id-00002>
+			</id-00003>
+			<id-00004>
 				<locked type="number">1</locked>
-				<name type="string">Cantrip</name>
-				<source type="string">Studied</source>
+				<name type="string">Skill Versatility</name>
+				<source type="string">Half-Elf</source>
 				<text type="formattedtext">
-					<p>You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.</p>
+					<p>You gain proficiency in two skills of your choice.</p>
 				</text>
-				<type type="string">subracial</type>
-			</id-00002>
+				<type type="string">racial</type>
+			</id-00004>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
@@ -2314,7 +2311,7 @@
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2337,12 +2334,13 @@
 			<id-00005>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d4</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -2359,7 +2357,7 @@
 			</id-00005>
 			<id-00006>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2369,7 +2367,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">20</maxammo>
 				<name type="string">Shortbow</name>
 				<prof type="number">0</prof>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>

@@ -59,8 +59,8 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">5</hdused>
-				<level type="number">5</level>
+				<hdused type="number">3</hdused>
+				<level type="number">6</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,15 +70,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">650</amount>
+				<amount type="number">856</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">5</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">30</amount>
+				<amount type="number">39</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">20</amount>
+				<amount type="number">83</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,7 +112,7 @@
 			<load type="number">129.46</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">578</exp>
+		<exp type="number">641</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -285,6 +285,19 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Favored Enemy</name>
+				<source type="string">Ranger</source>
+				<text type="formattedtext">
+					<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
+					<p>Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.</p>
+					<p>You have advantage on Wisdom(Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</p>
+					<p>When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.</p>
+					<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I made a terrible mistake in battle that cost many lives-and I would do anything to keep that mistake secret.</flaws>
 		<hero type="number">1</hero>
@@ -293,8 +306,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">44</total>
-			<wounds type="number">8</wounds>
+			<total type="number">52</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nation. My city, nation, or people are all that matter. (Any)</ideals>
 		<initiative>
@@ -676,7 +689,7 @@
 				<name type="string">Celestial</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Malik</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
@@ -838,18 +851,6 @@
 				<prepared type="number">10</prepared>
 				<usesperiod type="string">once</usesperiod>
 			</id-00004>
-			<id-00005>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
-				</description>
-				<locked type="number">1</locked>
-				<name type="string">Extra Attack</name>
-				<prepared type="number">0</prepared>
-				<specializationchoice type="number">0</specializationchoice>
-			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -974,51 +975,11 @@
 			</id-00010>
 			<id-00011>
 				<actions>
-					<id-00001>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d8,d8,d8,d8</dice>
-								<type type="string">lightning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">1</order>
-						<type type="string">damage</type>
-					</id-00001>
-					<id-00002>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">2</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00002>
-					<id-00003>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d8,d8</dice>
-								<type type="string">lightning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">3</order>
-						<type type="string">damage</type>
-					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 bonus action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>The next time you make a ranged weapon attack during the spell's duration, the weapon's ammunition, or the weapon itself if it's a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal. The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon's normal damage.</p>
-					<p>Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one. The piece of ammunition or weapon then returns to its normal form.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the damage for both effects of the spell increases by 1d8 for each slot level above 3rd.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Lightning Arrow</name>
+				<group type="string">standard actions</group>
+				<level type="number">0</level>
 				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<school type="string">Transmutation</school>
-				<source type="string">Ranger</source>
 			</id-00011>
 			<id-00012>
 				<actions>
@@ -1296,6 +1257,41 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Cleric, Druid, Eldritch Knight, Eldritch Invocations, Paladin, Ranger, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Pass without Trace (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Pass without Trace (C); SKILL: 10 stealth</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (ashes from a burned leaf of mistletoe and a sprig of spruce)</components>
+				<description type="formattedtext">
+					<p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Pass without Trace (S) (C)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric Trickery Domain, Druid, Druid Grassland Circle, Monk, Ranger</source>
+			</id-00023>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1456,7 +1452,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 		</traitlist>
 		<weaponlist>
@@ -1525,7 +1521,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00005>
-				<ammo type="number">3</ammo>
+				<ammo type="number">2</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
