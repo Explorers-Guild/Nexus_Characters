@@ -92,6 +92,7 @@
 			</id-00001>
 		</adventurelist>
 		<age type="string">42</age>
+		<alignment type="string">Neutral</alignment>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -100,10 +101,12 @@
 		<bonds type="string">nothing is more important than family</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">2</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">5</level>
-				<name type="string">Ranger*</name>
+				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
 					<recordname>reference.classdata.rogue@DD PHB Deluxe</recordname>
@@ -112,15 +115,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">641</amount>
+				<amount type="number">721</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">172</amount>
+				<amount type="number">190</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">167</amount>
+				<amount type="number">200</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -148,10 +151,10 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">109.093</load>
+			<load type="number">108.593</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">507</exp>
+		<exp type="number">568</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
@@ -281,7 +284,7 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">2</temporary>
+			<temporary type="number">0</temporary>
 			<total type="number">33</total>
 			<wounds type="number">0</wounds>
 		</hp>
@@ -585,7 +588,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">4</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -929,6 +932,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Satchel</location>
 				<locked type="number">1</locked>
 				<name type="string">Greater Potion of Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -1082,7 +1086,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1135,7 +1139,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">0</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Sneak Attack; DMG: 3d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1263,6 +1267,34 @@
 				<group type="string">Active</group>
 				<name type="string">Ring of Lightning Resistance</name>
 			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00009>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1433,7 +1465,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00012_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

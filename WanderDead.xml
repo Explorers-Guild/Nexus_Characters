@@ -24,18 +24,18 @@
 				<score type="number">14</score>
 			</dexterity>
 			<intelligence>
-				<bonus type="number">0</bonus>
-				<save type="number">0</save>
-				<savemodifier type="number">0</savemodifier>
-				<saveprof type="number">0</saveprof>
-				<score type="number">10</score>
-			</intelligence>
-			<strength>
 				<bonus type="number">-1</bonus>
 				<save type="number">-1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
 				<score type="number">9</score>
+			</intelligence>
+			<strength>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">10</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
@@ -111,23 +111,22 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">5</armor>
-				<dexbonus type="string">max2</dexbonus>
-				<disstealth type="number">1</disstealth>
+				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">17</total>
+				<total type="number">12</total>
 			</ac>
 		</defenses>
 		<deity type="string">Purple fog</deity>
 		<encumbrance>
-			<encumbered type="number">45</encumbered>
-			<encumberedheavy type="number">90</encumberedheavy>
-			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">92.511</load>
-			<max type="number">135</max>
+			<encumbered type="number">50</encumbered>
+			<encumberedheavy type="number">100</encumberedheavy>
+			<liftpushdrag type="number">300</liftpushdrag>
+			<load type="number">39.011</load>
+			<max type="number">150</max>
 		</encumbrance>
 		<exp type="number">1034</exp>
 		<expneeded type="number">1000</expneeded>
@@ -1034,11 +1033,11 @@
 		<height type="string">5' 9 ft</height>
 		<hero type="number">0</hero>
 		<hp>
-			<deathsavefail type="number">0</deathsavefail>
+			<deathsavefail type="number">1</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">76</total>
-			<wounds type="number">30</wounds>
+			<wounds type="number">76</wounds>
 		</hp>
 		<ideals type="string">By studying the mistakes of our elders, we might prevent the mistakes of our children.\nWhen people follow orders blindly, they embrace a kind of tyranny.</ideals>
 		<initiative>
@@ -1047,25 +1046,6 @@
 			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
-			<id-00001>
-				<ac type="number">15</ac>
-				<carried type="number">2</carried>
-				<cost type="string">750 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class.</p>
-					<p>Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.</p>
-				</description>
-				<dexbonus type="string">Yes (max 2)</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Half Plate</name>
-				<stealth type="string">Disadvantage</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Medium Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">40</weight>
-			</id-00001>
 			<id-00002>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1082,89 +1062,6 @@
 				<type type="string">Tools</type>
 				<weight type="number">2</weight>
 			</id-00002>
-			<id-00003>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">15 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d8 slashing</damage>
-				<description type="formattedtext">
-					<p>A simple sythe, but in the hands of a death elemental it becomes something far more.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Death's Scythe</name>
-				<properties type="string">Versatile (1d10)</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00003>
-			<id-00005>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">1,130 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d12 slashing silver</damage>
-				<description type="formattedtext">
-					<p>-</p>
-					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
-					<h>Effect Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.viciousweapon@Incarnate-5eExpansion">Vicious Weapon</link>
-					</linklist>
-					<h>Description</h>
-					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Vicious Silver Coated Greataxe</name>
-				<nonid_name type="string">Greataxe</nonid_name>
-				<nonidentified type="string">A sharp greataxe.</nonidentified>
-				<properties type="string">Heavy two-handed</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">7</weight>
-			</id-00005>
-			<id-00006>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">128 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Description</h>
-					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Greater Healing</name>
-				<nonid_name type="string">Potion</nonid_name>
-				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
-				<properties type="string">Magic</properties>
-				<rarity type="string">Uncommon</rarity>
-				<spells>
-					<id-00001>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Potion of Greater Healing</name>
-					</id-00001>
-					<id-00002>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Potion</name>
-					</id-00002>
-				</spells>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00006>
 			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">15 GP</cost>
@@ -1219,29 +1116,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00018>
-			<id-00020>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">300 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.cloakofelvenkind@Incarnate-5eExpansion">Cloak of Elvenkind</link>
-					</linklist>
-					<h>Description</h>
-					<p>While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Cloak of Elvenkind</name>
-				<nonid_name type="string">Cloak</nonid_name>
-				<nonidentified type="string">-</nonidentified>
-				<rarity type="string">uncommon (requires attunement)</rarity>
-				<type type="string">Wondrous Item</type>
-				<weight type="number">3</weight>
-			</id-00020>
 			<id-00021>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -1405,7 +1279,7 @@
 			</id-00005>
 		</languagelist>
 		<level type="number">10</level>
-		<name type="string">Wander</name>
+		<name type="string">Wander (DEAD)</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">18</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1453,7 +1327,7 @@
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">2</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
@@ -1485,11 +1359,11 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1516,7 +1390,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1668,7 +1542,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.probard.features.id-00013@Incarnate-5eExpansion">Bardic Inspiration</link>
@@ -2296,31 +2170,6 @@
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Druid, Sorcerer, Warlock, Wizard</source>
 			</id-00022>
-			<id-00023>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmhvbGQtcG9ydGFs/play/"><b>Syrinscape </b></link>: Hold Door - Wizard Spells E</linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Om9wZW5jbG9zZQ/play/"><b>Syrinscape </b></link>: Opening/closing - Wizard Spells E
-					<h>Description</h>
-					<p>Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access. A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked. If you choose a target that is held shut with arcane lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally. When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Knock</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Bard, Sorcerer, Wizard</source>
-			</id-00023>
 			<id-00024>
 				<actions>
 					<id-00001>
@@ -2345,35 +2194,17 @@
 			</id-00024>
 			<id-00025>
 				<actions>
-					<id-00001>
-						<heallist>
-							<id-00001>
-								<bonus type="number">4</bonus>
-								<dice type="dice">d4</dice>
-							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
-						<order type="number">1</order>
-						<type type="string">heal</type>
-					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a small amount of alcohol or distilled spirits)</components>
 				<description type="formattedtext">
-					<p>Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.</p>
+					<p>You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</description>
-				<duration type="string">1 hour</duration>
 				<group type="string">Eldritch Invo</group>
-				<level type="number">1</level>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Fiendish Vigor</name>
+				<name type="string">Thirsting Blade</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<school type="string">Necromancy</school>
-				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
+				<ritual type="number">0</ritual>
 			</id-00025>
 			<id-00026>
 				<actions>
@@ -2578,7 +2409,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Misty Step</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
@@ -2639,7 +2470,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Counterspell</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<school type="string">Abjuration</school>
 				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
@@ -2655,11 +2486,31 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Once per turn when you hit a creature with your pact weapon, you can expend a warlock spell slot to deal an extra 1d8 force damage to the target, plus another 1d8 per level of the spell slot, and you can knock the target prone if it is Huge or smaller.</p>
+				</description>
 				<group type="string">Eldritch Invo</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">Eldritch Smite</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 			</id-00037>
+			<id-00039>
+				<actions>
+					<id-00001>
+						<label type="string">IFT: TYPE (undead); DMG: 1d8 radiant</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greataxe of the Sun</name>
+				<prepared type="number">0</prepared>
+			</id-00039>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2696,7 +2547,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">3</prof>
 				<stat type="string">strength</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -2710,7 +2561,7 @@
 				<name type="string">Arcana</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">1</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -2724,7 +2575,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">1</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -2759,7 +2610,7 @@
 				<name type="string">Religion</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">1</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">2</misc>
@@ -2787,7 +2638,7 @@
 				<name type="string">Investigation</name>
 				<prof type="number">3</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">1</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
@@ -2801,7 +2652,7 @@
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">3</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -2834,7 +2685,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00005>
 				<locked type="number">0</locked>
@@ -2922,7 +2773,7 @@
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2941,34 +2792,10 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
-			<id-00005>
-				<attackbonus type="number">1</attackbonus>
-				<attackstat type="string">charisma</attackstat>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">1</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">charisma</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">slashing, magic</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Death's Scythe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Versatile (1d10)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00003</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00005>
 			<id-00006>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">charisma</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2988,30 +2815,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00006>
-			<id-00007>
-				<attackbonus type="number">1</attackbonus>
-				<attackstat type="string">charisma</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">1</bonus>
-						<dice type="dice">d12</dice>
-						<stat type="string">charisma</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">slashing,silver,magic</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Vicious Silver Coated Greataxe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Heavy two-handed</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00005</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00007>
 		</weaponlist>
 		<weight type="string">125</weight>
 	</character>

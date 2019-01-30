@@ -79,10 +79,20 @@
 					<recordname>reference.classdata.sorcerer@D&#38;D Sword Coast Adventurer's Guide - Player's Guide</recordname>
 				</shortcut>
 			</id-00002>
+			<id-00003>
+				<hddie type="dice">d10</hddie>
+				<hdused type="number">0</hdused>
+				<level type="number">1</level>
+				<name type="string">Fighter</name>
+				<shortcut type="windowreference">
+					<class>reference_class</class>
+					<recordname>reference.classdata.fighter@DD PHB Deluxe</recordname>
+				</shortcut>
+			</id-00003>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2420</amount>
+				<amount type="number">3369</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -90,7 +100,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">209</amount>
+				<amount type="number">405</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -98,7 +108,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">232</amount>
+				<amount type="number">394</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -107,13 +117,14 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">2</armor>
-				<disstealth type="number">0</disstealth>
-				<misc type="number">0</misc>
+				<armor type="number">5</armor>
+				<dexbonus type="string">max2</dexbonus>
+				<disstealth type="number">1</disstealth>
+				<misc type="number">1</misc>
 				<prof type="number">1</prof>
 				<shield type="number">3</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">18</total>
+				<total type="number">21</total>
 			</ac>
 		</defenses>
 		<deity type="string">Eldritch Blast God</deity>
@@ -121,45 +132,34 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">51.9</load>
+			<load type="number">73.9</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">759</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">841</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
-				<name type="string">Reflexive</name>
+				<name type="string">Alert</name>
 				<text type="formattedtext">
-					<h>Reflexive</h>
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.reflexive@Incarnate-5eExpansion">Reflexive</link>
-					</linklist>
-					<h>Description</h>
-					<p><i>Prerequisites: Dexterity 13 or higher</i></p>
-					<p>Your reflexes are faster than even the flying arrow. You gain the following benefits:</p>
+					<p>Always on the lookout for danger, you gain the following benefits:</p>
 					<list>
 						<li>You gain a +5 bonus to initiative.</li>
-						<li>When you take the dodge action, you gain a +2 bonus to your AC until your next turn.</li>
-						<li>You can use one of the following options once. You regain the ability to do so when you finish a short rest or long rest.</li>
+						<li>You can't be surprised while you are conscious.</li>
+						<li>Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you.</li>
 					</list>
-					<p><b>Reflexive Dodge. </b>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
-					<p><b>Reflexive Evasion </b>. You can re-roll a Dexterity saving throw that you fail. If you do so, you must use the new roll.</p>
-					<linklist>
-						<link class="url" recordname="http://www.dandwiki.com/wiki/Reflexive_(5e_Feat)">Online copy</link>
-					</linklist>
 				</text>
 			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
+				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Guild Membership</name>
-				<source type="string">Guild Artisan</source>
+				<name type="string">Second Wind</name>
+				<source type="string">Fighter</source>
 				<text type="formattedtext">
-					<p>As an established and respected member of a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.</p>
-					<p>Guilds often wield tremendous political power. If you are accused of a crime, your guild w ill support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild's coffers. You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild's good graces.</p>
+					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.</p>
+					<p>Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 				</text>
 			</id-00001>
 			<id-00002>
@@ -269,14 +269,22 @@
 			<id-00006>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Warlock Starting Items</name>
-				<source type="string">Warlock</source>
-				<specializationchoice type="number">0</specializationchoice>
+				<name type="string">Fighting Style (Defense)</name>
+				<source type="string">Fighter</source>
 				<text type="formattedtext">
-					<p><b>Click the shield below to open you choices for warlock starting items.</b></p>
-					<linklist>
-						<link class="reference_weapontable" recordname="lists.startingequipment.warlock@Incarnate-5eExpansion">Warlock Starting Equipment Options</link>
-					</linklist>
+					<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+					<p><b>Archery</b></p>
+					<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+					<p><b>Defense</b></p>
+					<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+					<p><b>Dueling</b></p>
+					<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+					<p><b>Great Weapon Fighting</b></p>
+					<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+					<p><b>Protection</b></p>
+					<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+					<p><b>Two-Weapon Fighting</b></p>
+					<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
 				</text>
 			</id-00006>
 			<id-00007>
@@ -565,7 +573,7 @@
 			<id-00011>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritchcasting</name>
+				<name type="string">Eldritch Casting</name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -658,13 +666,13 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">43</total>
-			<wounds type="number">0</wounds>
+			<total type="number">50</total>
+			<wounds type="number">5</wounds>
 		</hp>
 		<initiative>
-			<misc type="number">0</misc>
+			<misc type="number">5</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">8</total>
 		</initiative>
 		<inspiration type="number">0</inspiration>
 		<inventorylist>
@@ -700,6 +708,41 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>Once the glass shatters everything in 30ft circle area must make a DC 13 Dexterity saving throw, taking 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+					<p>This potion's orange liquid flickers, and smoke fills the top of the container and wafts out whenever it is opened.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Modified Bomb</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">Smoke floats above the flickering orange liquid in this vial.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Fire Breath</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00003>
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -808,7 +851,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">200 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Description</h>
 					<linklist>
@@ -878,47 +921,32 @@
 				<name type="string">Really Good Quality Badger Pelt</name>
 				<weight type="number">1</weight>
 			</id-00017>
-			<id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<locked type="number">1</locked>
+				<name type="string">Token of ????</name>
+				<weight type="number">0</weight>
+			</id-00019>
+			<id-00020>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.bracersofarchery@Incarnate-5eExpansion">Bracers of Archery</link>
-					</linklist>
-					<h>Description</h>
-					<p>While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.</p>
+					<p>These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other.</p>
+					<p>The lenses regain all expended charges daily at dawn.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Bracers of Archery</name>
-				<nonid_name type="string">Bracers</nonid_name>
-				<nonidentified type="string">Thin leather bracers.</nonidentified>
+				<name type="string">Eyes of Charming</name>
+				<nonid_name type="string">Crystal Lenses</nonid_name>
+				<nonidentified type="string">Two crystal lenses bound together with a little bit of wire.</nonidentified>
 				<rarity type="string">uncommon (requires attunement)</rarity>
 				<type type="string">Wondrous Item</type>
-				<weight type="number">1</weight>
-			</id-00018>
-			<id-00019>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">15 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d8 slashing</damage>
-				<description type="formattedtext">
-					<p>A simple sythe, but in the hands of a death elemental it becomes something far more.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Death's Scythe</name>
-				<properties type="string">Versatile (1d10)</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00019>
+				<weight type="number">0</weight>
+			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">3</bonus>
@@ -949,24 +977,24 @@
 				<weight type="number">6</weight>
 			</id-00021>
 			<id-00022>
-				<ac type="number">12</ac>
+				<ac type="number">15</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
-				<cost type="string">45 gp</cost>
+				<cost type="string">750 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.</p>
-					<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>
+					<p>Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class.</p>
+					<p>Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.</p>
 				</description>
-				<dexbonus type="string">Yes</dexbonus>
+				<dexbonus type="string">Yes (max 2)</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Studded Leather</name>
-				<stealth type="string">-</stealth>
+				<name type="string">Half Plate</name>
+				<stealth type="string">Disadvantage</stealth>
 				<strength type="string">-</strength>
-				<subtype type="string">Light Armor</subtype>
+				<subtype type="string">Medium Armor</subtype>
 				<type type="string">Armor</type>
-				<weight type="number">13</weight>
+				<weight type="number">40</weight>
 			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
@@ -991,6 +1019,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00023>
+			<id-00024>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<locked type="number">1</locked>
+				<name type="string">Book of mind-control magic</name>
+				<weight type="number">0</weight>
+			</id-00024>
 			<id-00025>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1009,28 +1044,32 @@
 				<type type="string">Artifact</type>
 				<weight type="number">0.5</weight>
 			</id-00025>
-			<id-00026>
+			<id-00027>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<locked type="number">1</locked>
+				<name type="string">Book of dangerous potion additives</name>
+				<weight type="number">0</weight>
+			</id-00027>
+			<id-00028>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">900 GP</cost>
+				<carried type="number">1</carried>
+				<cost type="string">500 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.</p>
-					<p>While wearing the cloak in an area of dim light or darkness, you can use your action to cast polymorph on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.</p>
-					<linklist>
-						<link class="power" recordname="spell.polymorph@Incarnate-5eExpansion">Polymorph</link>
-					</linklist>
+					<p>You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30--foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.</p>
+					<p>Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Cloak of the Bat</name>
-				<nonid_name type="string">Cloak</nonid_name>
+				<name type="string">Horn of Blasting</name>
+				<nonid_name type="string">Horn</nonid_name>
 				<nonidentified type="string">-</nonidentified>
-				<rarity type="string">rare (requires attunement)</rarity>
+				<rarity type="string">rare</rarity>
 				<type type="string">Wondrous Item</type>
-				<weight type="number">3</weight>
-			</id-00026>
+				<weight type="number">2</weight>
+			</id-00028>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1043,10 +1082,11 @@
 				<name type="string">Infernal</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">7</level>
-		<name type="string">EldritchMG</name>
+		<level type="number">8</level>
+		<name type="string">Eldritch</name>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
+		<powerdisplaymode type="string">summary</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -1070,7 +1110,7 @@
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
@@ -1106,15 +1146,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">2</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1141,13 +1181,18 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
 					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">charisma</atkstat>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -1211,102 +1256,71 @@
 				<group type="string">Eldritch Feature</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Blessing</name>
+				<name type="string">Dark one Blessing</name>
 				<prepared type="number">0</prepared>
 				<source type="string">Warlock</source>
 				<specialization type="string">The Fiend</specialization>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Misty Step</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Self</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid Coast Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00003>
 			<id-00004>
 				<actions>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">3</cast>
 				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch points</name>
+				<name type="string">Sorcery points</name>
 				<prepared type="number">5</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">ADVCHK: constitution; (C)</label>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
-						<type type="string">effect</type>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">base</savedcstat>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
-						<heallist>
+						<damagelist>
 							<id-00001>
-								<dice type="dice">d6,d6</dice>
+								<dice type="dice">d6,d6,d6,d6,d6</dice>
 								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
 							</id-00001>
-						</heallist>
-						<healtype type="string">temp</healtype>
+						</damagelist>
 						<order type="number">2</order>
-						<type type="string">heal</type>
+						<type type="string">damage</type>
 					</id-00002>
-					<id-00003>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">ADVCHK: strength; (C)</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
-					<id-00004>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">ADVCHK: dexterity; (C)</label>
-						<order type="number">4</order>
-						<type type="string">effect</type>
-					</id-00004>
-					<id-00005>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">ADVCHK: charisma; (C)</label>
-						<order type="number">5</order>
-						<type type="string">effect</type>
-					</id-00005>
-					<id-00006>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">ADVCHK: intelligence; (C)</label>
-						<order type="number">6</order>
-						<type type="string">effect</type>
-					</id-00006>
-					<id-00007>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">ADVCHK: wisdom; (C)</label>
-						<order type="number">7</order>
-						<type type="string">effect</type>
-					</id-00007>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (fur or a feather from a beast)</components>
-				<description type="formattedtext">
-					<p>You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.</p>
-					<p><b>Bear's Endurance. </b>The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</p>
-					<p><b>Bull's Strength. </b>The target has advantage on Strength checks, and his or her carrying capacity doubles.</p>
-					<p><b>Cat's Grace. </b>The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.</p>
-					<p><b>Eagle's Splendor. </b>The target has advantage on Charisma checks.</p>
-					<p><b>Fox's Cunning. </b>The target has advantage on Intelligence checks.</p>
-					<p><b>Owl's Wisdom. </b>The target has advantage on Wisdom checks.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 hour.</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Eldritch Enhance Ability</name>
+				<level type="number">0</level>
+				<name type="string">Horn blasting</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Bard, Cleric, Druid, Sorcerer</source>
 			</id-00005>
 			<id-00006>
 				<actions>
@@ -1383,8 +1397,8 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Sleep</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Sleep</name>
+				<prepared type="number">1</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -1456,8 +1470,8 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Hex</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Hex</name>
+				<prepared type="number">1</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -1529,7 +1543,7 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Blink</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
@@ -1549,50 +1563,11 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">See Invisibility</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<school type="string">Divination</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
 			</id-00013>
-			<id-00015>
-				<actions>
-					<id-00004>
-						<durmod type="number">1</durmod>
-						<durunit type="string">day</durunit>
-						<label type="string">Reflexive - Initiative Increase; INIT: 5</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00004>
-					<id-00005>
-						<durmod type="number">1</durmod>
-						<label type="string">Reflexive - Increased Dodge; AC: 2</label>
-						<order type="number">2</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00005>
-					<id-00006>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Reflexive Dodge: RESIST: all</label>
-						<order type="number">3</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00006>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00186@Incarnate-5eExpansion">Reflexive</link>
-					</linklist>
-				</description>
-				<group type="string">Eldritch Evocation</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Reflexive</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00015>
 			<id-00016>
 				<actions>
 				</actions>
@@ -1632,8 +1607,8 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Shield</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Shield</name>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<school type="string">Abjuration</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
@@ -1668,8 +1643,8 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Magic Missile</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Magic Missile</name>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1690,7 +1665,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Mage Hand</name>
+				<name type="string">Mage Hand</name>
 				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
 				<school type="string">Conjuration</school>
@@ -1714,7 +1689,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Message</name>
+				<name type="string">Message</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
@@ -1743,7 +1718,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Prestidigitation</name>
+				<name type="string">Prestidigitation</name>
 				<prepared type="number">0</prepared>
 				<range type="string">10 feet</range>
 				<school type="string">Transmutation</school>
@@ -1769,7 +1744,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Light</name>
+				<name type="string">Light</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<school type="string">Evocation</school>
@@ -1795,9 +1770,10 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Friends</name>
+				<name type="string">Friends</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00026>
@@ -1836,8 +1812,8 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Command</name>
-				<prepared type="number">0</prepared>
+				<name type="string">Command</name>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -1855,6 +1831,12 @@
 			<id-00003>
 				<name type="string">Armor: Light armor</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Armor: Light armor, medium armor, shields</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Weapon: Simple weapons, martial weapons</name>
+			</id-00005>
 		</proficiencylist>
 		<race type="string">Human-Variant</race>
 		<racelink type="windowreference">
@@ -1929,9 +1911,9 @@
 			<id-00010>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1950,9 +1932,9 @@
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1971,9 +1953,9 @@
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
-				<prof type="number">0</prof>
+				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -2014,7 +1996,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00003>
 				<locked type="number">1</locked>
@@ -2035,6 +2017,14 @@
 				<type type="string">racial</type>
 			</id-00004>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">20</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<attackstat type="string">dexterity</attackstat>
@@ -2078,29 +2068,6 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00002>
-			<id-00003>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Eldritch Scythe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Versatile (1d10)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00019</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00003>
 		</weaponlist>
 		<weight type="string">155</weight>
 	</character>

@@ -116,24 +116,25 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">87.41</load>
+			<load type="number">91.41</load>
 			<max type="number">150</max>
 		</encumbrance>
 		<exp type="number">679</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
-			<id-00001>
+			<id-00002>
 				<locked type="number">1</locked>
-				<name type="string">Sharpshooter</name>
+				<name type="string">Elven Accuracy</name>
+				<prerequisite type="string">Elf or half-elf</prerequisite>
 				<text type="formattedtext">
-					<p>You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:</p>
+					<p><i>Prerequisite: Elf or half-elf</i></p>
+					<p>The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits:</p>
 					<list>
-						<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
-						<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
-						<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
+						<li>Increase your Dexterity, Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+						<li>Whenever you have advantage on an attack roll using Dexterity, Intelligence, Wisdom, or Charisma, you can reroll one of the dice once.</li>
 					</list>
 				</text>
-			</id-00001>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -392,6 +393,29 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.bracersofarchery@Incarnate-5eExpansion">Bracers of Archery</link>
+					</linklist>
+					<h>Description</h>
+					<p>While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bracers of Archery</name>
+				<nonid_name type="string">Bracers</nonid_name>
+				<nonidentified type="string">Thin leather bracers.</nonidentified>
+				<rarity type="string">uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00003>
 			<id-00004>
 				<carried type="number">2</carried>
 				<cost type="string">50 gp</cost>
@@ -748,7 +772,7 @@
 				<description type="formattedtext">
 					<p>This stoppered flask is filled with hezrou stench. When unstopped or broken, anyone within 10 feet must make a DC 14 Constitution saving throw or be poisoned until the start of its next turn.</p>
 				</description>
-				<locked type="number">0</locked>
+				<locked type="number">1</locked>
 				<name type="string">Hezrou Stench Bomb!</name>
 				<weight type="number">1</weight>
 			</id-00027>
@@ -771,17 +795,39 @@
 				<type type="string">Wand</type>
 				<weight type="number">1</weight>
 			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.</p>
+					<p>While wearing the cloak in an area of dim light or darkness, you can use your action to cast polymorph on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.</p>
+					<linklist>
+						<link class="power" recordname="spell.polymorph@Incarnate-5eExpansion">Polymorph</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Cloak of the Bat</name>
+				<nonid_name type="string">Cloak</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">3</weight>
+			</id-00029>
 		</inventorylist>
 		<languagelist>
-			<id-00001>
-				<name type="string">Common</name>
-			</id-00001>
 			<id-00002>
 				<name type="string">Dwarvish</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Elvish</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Common </name>
+			</id-00004>
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Arias Lo&#239;c</name>
@@ -1037,112 +1083,143 @@
 				<name type="string">Weapon: Simple weapons, martial weapons</name>
 			</id-00006>
 		</proficiencylist>
-		<race type="string">Human-Variant</race>
+		<race type="string">Wood Elf</race>
 		<racelink type="windowreference">
 			<class>reference_race</class>
-			<recordname>reference.racedata.human_variant@DD PHB Deluxe</recordname>
+			<recordname>reference.racedata.elf@DD PHB Deluxe</recordname>
 		</racelink>
+		<senses type="string">Darkvision 60,</senses>
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
+				<misc type="number">0</misc>
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">5</total>
 			</id-00001>
 			<id-00002>
+				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00002>
 			<id-00003>
+				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
+				<misc type="number">0</misc>
 				<name type="string">Nature</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00004>
 			<id-00005>
+				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00005>
 			<id-00006>
+				<misc type="number">0</misc>
 				<name type="string">Survival</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00006>
 			<id-00007>
+				<misc type="number">0</misc>
 				<name type="string">Performance</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">2</total>
 			</id-00007>
 			<id-00008>
+				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">7</total>
 			</id-00008>
 			<id-00009>
+				<misc type="number">0</misc>
 				<name type="string">Religion</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00009>
 			<id-00010>
+				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
+				<prof type="number">0</prof>
 				<stat type="string">strength</stat>
 				<total type="number">0</total>
 			</id-00010>
 			<id-00011>
+				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">7</total>
 			</id-00011>
 			<id-00012>
+				<misc type="number">0</misc>
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">5</total>
 			</id-00012>
 			<id-00013>
+				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
+				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">2</total>
 			</id-00013>
 			<id-00014>
+				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
 				<total type="number">5</total>
 			</id-00014>
 			<id-00015>
+				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00015>
 			<id-00016>
+				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
 				<total type="number">10</total>
 			</id-00016>
 			<id-00017>
+				<misc type="number">0</misc>
 				<name type="string">History</name>
+				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
 				<total type="number">-1</total>
 			</id-00017>
 			<id-00018>
+				<misc type="number">0</misc>
 				<name type="string">Animal Handling</name>
+				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
 				<total type="number">2</total>
 			</id-00018>
 			<id-00019>
 				<locked type="number">1</locked>
+				<misc type="number">0</misc>
 				<name type="string">Thieves' Tools</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
@@ -1161,6 +1238,7 @@
 			</id-00019>
 			<id-00020>
 				<locked type="number">1</locked>
+				<misc type="number">0</misc>
 				<name type="string">Poisoner's Kit</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
@@ -1179,6 +1257,7 @@
 			</id-00020>
 			<id-00021>
 				<locked type="number">1</locked>
+				<misc type="number">0</misc>
 				<name type="string">Disguise Kit</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
@@ -1196,6 +1275,7 @@
 				<total type="number">7</total>
 			</id-00021>
 			<id-00022>
+				<misc type="number">0</misc>
 				<name type="string">Alchemist's Supplies</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
@@ -1211,33 +1291,60 @@
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
-			<base type="number">30</base>
+			<base type="number">35</base>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">30</total>
+			<total type="number">35</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00010_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
-			<id-00001>
+			<id-00004>
 				<locked type="number">1</locked>
-				<name type="string">Skills</name>
-				<source type="string">Human-Variant</source>
+				<name type="string">Keen Senses</name>
+				<source type="string">Elf</source>
 				<text type="formattedtext">
-					<p>You gain proficiency in one skill of your choice.</p>
+					<p>You have proficiency in the Perception skill.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00001>
-			<id-00002>
+			</id-00004>
+			<id-00005>
 				<locked type="number">1</locked>
-				<name type="string">Feat</name>
-				<source type="string">Human-Variant</source>
+				<name type="string">Trance</name>
+				<source type="string">Elf</source>
 				<text type="formattedtext">
-					<p>You gain one feat of your choice.</p>
+					<p>Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is &#34;trance.&#34;) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</p>
 				</text>
 				<type type="string">racial</type>
-			</id-00002>
+			</id-00005>
+			<id-00008>
+				<locked type="number">1</locked>
+				<name type="string">Fey Ancestry</name>
+				<source type="string">Elf</source>
+				<text type="formattedtext">
+					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00008>
+			<id-00009>
+				<locked type="number">1</locked>
+				<name type="string">Mask of the Wild</name>
+				<source type="string">Wood Elf</source>
+				<text type="formattedtext">
+					<p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00009>
+			<id-00010>
+				<locked type="number">1</locked>
+				<name type="string">Elf Weapon Training</name>
+				<source type="string">Wood Elf</source>
+				<text type="formattedtext">
+					<p>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
+				</text>
+				<type type="string">subracial</type>
+			</id-00010>
 		</traitlist>
 		<weaponlist>
 			<id-00001>

@@ -83,15 +83,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1940</amount>
+				<amount type="number">2351</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">311</amount>
+				<amount type="number">327</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">305</amount>
+				<amount type="number">323</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -123,11 +123,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">149.65</load>
+			<load type="number">153.65</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">928</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">956</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -977,9 +977,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">0</temporary>
+			<temporary type="number">10</temporary>
 			<total type="number">56</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">27</wounds>
 		</hp>
 		<ideals type="string">Nothing should fetter the infinite possibility inherent in all existence.\nI'm going to prove that I'm worthy of a better life.</ideals>
 		<initiative>
@@ -1168,6 +1168,18 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00009>
+			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Token of ????</name>
+				<weight type="number">0</weight>
+			</id-00010>
 			<id-00011>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
@@ -1287,6 +1299,24 @@
 				<name type="string">Minotuar Bone</name>
 				<weight type="number">1</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2500 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing, 2d12 necrotic</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Unholy Trident</name>
+				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1571,7 +1601,7 @@
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">2</max>
-				<used type="number">2</used>
+				<used type="number">1</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
@@ -2263,22 +2293,26 @@
 							<id-00001>
 								<bonus type="number">5</bonus>
 								<dice type="dice"></dice>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
+						<healtargeting type="string">self</healtargeting>
 						<healtype type="string">temp</healtype>
 						<order type="number">1</order>
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<description type="formattedtext">
 					<p>Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.</p>
 					<p>You can use this feature three times, and you regain all expended uses of it when you finish a long rest.</p>
 				</description>
 				<group type="string">Race/Class/Items</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Fighting Spirit</name>
 				<prepared type="number">3</prepared>
+				<ritual type="number">0</ritual>
 				<source type="string">Fighter</source>
 				<specialization type="string">Samurai</specialization>
 				<specializationchoice type="number">0</specializationchoice>
@@ -2617,7 +2651,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00010_token</token>
 		<traitlist>
 			<id-00002>
 				<locked type="number">0</locked>
@@ -2846,6 +2880,60 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00007>
+			<id-00008>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d12,d12</dice>
+						<type type="string">necrotic</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Unholy Trident</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
+			<id-00009>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d12,d12</dice>
+						<type type="string">necrotic</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Unholy Trident</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00009>
 		</weaponlist>
 		<weight type="string">135lb</weight>
 	</character>

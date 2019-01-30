@@ -59,7 +59,7 @@
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">2</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">2</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
@@ -71,7 +71,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">2</hdused>
 				<level type="number">2</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
@@ -82,7 +82,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">176</amount>
+				<amount type="number">303</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -90,7 +90,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">47</amount>
+				<amount type="number">118</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -98,7 +98,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">46</amount>
+				<amount type="number">113</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -122,11 +122,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">91.31</load>
+			<load type="number">92.81</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">137</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">490</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -387,19 +387,6 @@
 					<p>You can use a musical instrument (see &#34;Equipment&#34;) as a spellcasting focus for your bard spells.</p>
 				</text>
 			</id-00004>
-			<id-00005>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Bard Starting Items</name>
-				<source type="string">Bard</source>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p><b>Click the shield below to open you choices for bard starting items.</b></p>
-					<linklist>
-						<link class="reference_weapontable" recordname="lists.startingequipment.bard@Incarnate-5eExpansion">Bard Starting Equipment Options</link>
-					</linklist>
-				</text>
-			</id-00005>
 			<id-00006>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -898,7 +885,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">31</total>
-			<wounds type="number">8</wounds>
+			<wounds type="number">22</wounds>
 		</hp>
 		<ideals type="string">If the job is interesting, I'm in!\nEven though I might have done wrong in the past, I can do right in the present.</ideals>
 		<initiative>
@@ -1062,6 +1049,84 @@
 				<name type="string">Map of Runeus</name>
 				<weight type="number">0</weight>
 			</id-00009>
+			<id-00010>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.</p>
+					<p>You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options:</p>
+					<p>&#34;Stream&#34; produces 1 gallon of water.</p>
+					<p>&#34;Fountain&#34; produces 5 gallons of water.</p>
+					<p>&#34;Geyser&#34; produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide.</p>
+					<p></p>
+					<p>As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds.</p>
+					<p>The object is either knocked over or pushed up to 15 feet away from you.</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">tophat of endless snow</name>
+				<nonid_name type="string">Tophat</nonid_name>
+				<weight type="number">0</weight>
+			</id-00010>
+			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Found in a small container, this powder resembles very fine sand. It appears to be dust of disappearance, and an identify spell reveals it to be such. There is enough of it for one use.</p>
+					<p>When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating.</p>
+					<p>As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration spell can also end the effect on a creature.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Dust of Sneezing and Choking</name>
+				<nonid_name type="string">Bag of Dust</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00011>
+			<id-00012>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00012>
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1290,14 +1355,11 @@
 			<id-00005>
 				<name type="string">Class</name>
 			</id-00005>
-			<id-00006>
-				<name type="string">Item</name>
-			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">2</max>
-				<used type="number">2</used>
+				<used type="number">1</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
@@ -1333,7 +1395,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
-				<used type="number">3</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -1895,7 +1957,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<h>Quick Links</h>
 					<linklist>
@@ -2333,7 +2395,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2443,6 +2505,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
+				<ammo type="number">0</ammo>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -2461,7 +2524,7 @@
 					<class>item</class>
 					<recordname>....inventorylist.id-00020</recordname>
 				</shortcut>
-				<type type="number">2</type>
+				<type type="number">1</type>
 			</id-00003>
 			<id-00004>
 				<attackstat type="string">charisma</attackstat>

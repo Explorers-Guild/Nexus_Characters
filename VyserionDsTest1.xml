@@ -31,11 +31,11 @@
 				<score type="number">8</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<bonus type="number">4</bonus>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">17</score>
+				<score type="number">18</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">3</bonus>
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">8</level>
 				<name type="string">DragonSlayer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">5421</amount>
+				<amount type="number">8549</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">700</amount>
+				<amount type="number">1029</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">477</amount>
+				<amount type="number">831</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -95,55 +95,29 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">9</armor>
+				<armor type="number">10</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">19</total>
+				<total type="number">21</total>
 			</ac>
 			<special type="string">Resistance to Cold</special>
 		</defenses>
 		<deity type="string">Dragons</deity>
 		<encumbrance>
-			<encumbered type="number">85</encumbered>
-			<encumberedheavy type="number">170</encumberedheavy>
-			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">81.7</load>
-			<max type="number">255</max>
+			<encumbered type="number">90</encumbered>
+			<encumberedheavy type="number">180</encumberedheavy>
+			<liftpushdrag type="number">540</liftpushdrag>
+			<load type="number">78.2</load>
+			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">706</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">847</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
-				<locked type="number">1</locked>
-				<name type="string">Crippling Striker</name>
-				<text type="formattedtext">
-					<h>Crippling Striker</h>
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.cripplingstriker@Incarnate-5eExpansion">Crippling Striker</link>
-					</linklist>
-					<h>Description</h>
-					<p>Prerequisites: Strength 15 or higher</p>
-					<p>You can disable your enemies, or break them.</p>
-					<list>
-						<li>Increase your Strength score by 1, to a maximum of 20.</li>
-						<li>Your unarmed strikes score a critical hit on a 19-20. If they already do, increase critical hit range by 1.</li>
-						<li>Using your bonus action, you must Clearly Call a Targets limb before making the attack(s). The target must have the specified anatomy for this to have any effect. The effects last until either the end of a specified time limit or the creature heals at least 10 Hit Points.</li>
-					</list>
-					<p>Target <b>Arm </b>: It makes a Strength saving throw (DC 8+your Strength modifier+your proficiency), on a failed save they drop a held item. If both arms are disabled, it has disadvantage on attack rolls and it cannot add its Strength modifier to attack or damage rolls.</p>
-					<p>Target <b>Leg </b>: It makes a Dexterity saving throw (DC 8+your Strength modifier+your proficiency), on a fail their speed is reduced by half. If all legs are disabled it has a speed of 0, falls Prone, and cannot benefit from any buffs to movement speed.</p>
-					<p>Target <b>Head </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), if it fails it is Stunned for 1 round. This does not effect a creature wearing a helmet or some form of head protection.</p>
-					<p>Target <b>Torso </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), on a fail it has disadvantage on Strength and Constitution checks, saving throws, and attack rolls for 1 round.</p>
-					<linklist>
-						<link class="url" recordname="http://www.dandwiki.com/wiki/Crippling_Striker_(5e_Feat)">Online copy</link>
-					</linklist>
-				</text>
-			</id-00001>
-			<id-00002>
 				<locked type="number">1</locked>
 				<name type="string">Bone Breaker</name>
 				<text type="formattedtext">
@@ -153,6 +127,7 @@
 					</linklist>
 					<h>Description</h>
 					<p>You have trained hard to master unarmed combat.</p>
+					<p>Increase your Strength or Dexterity score by a +1 to a maximum of 20.</p>
 					<p>Your unarmed strikes score a critical hit on a 19-20. If they already do, they score a critical hit on an 18-20. If they already do, they score a critical hit on a 17-20.</p>
 					<p>When you score a critical hit with an unarmed strike, the target must make a Constitution saving throw (DC = 8 + your Strength or Dexterity modifier + your proficiency bonus). If they fail, choose one of the following effects:</p>
 					<list>
@@ -163,15 +138,36 @@
 						<link class="url" recordname="http://www.dandwiki.com/wiki/Bone_Breaker_(5e_Feat)">Online copy</link>
 					</linklist>
 				</text>
+			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Crippling Striker</name>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.cripplingstriker@Incarnate-5eExpansion">Crippling Striker</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Strength 15 or higher</p>
+					<p>You can disable your enemies, or break them.</p>
+					<list>
+						<li>Increase your Strength score by 1, to a maximum of 20.</li>
+						<li>Using your bonus action, you may Clearly Call a Targets limb before making an attack. The target must have the specified anatomy for this to have any effect. The effects last until either the end of a specified time limit or the creature heals at least 10 Hit Points. You may use Crippling Striker a number of times equal to your Strength modifier per long rest.</li>
+					</list>
+					<p>Target <b>Arm </b>: It makes a Strength saving throw (DC 8+your Strength modifier+your proficiency), on a failed save they drop a held item. If both arms are disabled, it has disadvantage on attack rolls and it cannot add its Strength modifier to attack or damage rolls.</p>
+					<p>Target <b>Leg </b>: It makes a Dexterity saving throw (DC 8+your Strength modifier+your proficiency), on a fail their speed is reduced by half. If all legs are disabled it has a speed of 0, falls Prone, and cannot benefit from any buffs to movement speed.</p>
+					<p>Target <b>Head </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), if it fails it is Stunned for 1 round. This does not effect a creature wearing a helmet or some form of head protection.</p>
+					<p>Target <b>Torso </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), on a fail it has disadvantage on Strength and Constitution checks, saving throws, for 1 round.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Crippling_Striker_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
 			</id-00002>
 			<id-00003>
 				<locked type="number">1</locked>
-				<name type="string">Improved Critical</name>
+				<name type="string">Tough</name>
 				<text type="formattedtext">
-					<p>Prerequisite strength or dexterity of 12 or higher.</p>
-					<p>Increase strength or dexterity by 1.</p>
-					<p>You now hit critically on a 19.</p>
-					<p>If they already do, they score a critical hit on an 18-20. If they already do, they score a critical hit on a 17-20.</p>
+					<p>Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.</p>
 				</text>
 			</id-00003>
 		</featlist>
@@ -219,7 +215,7 @@
 				<source type="string">DragonSlayer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>As a Dragonslayer when you choose your elemental specialization you can eat the element you are trained in and recover 1d8 + your Wisdom modifier. Also recover one spell slot. It cost one Dragonslayer Magic Point.</p>
+					<p>As a Dragonslayer when you choose your elemental specialization you can eat the element you are trained in and recover 1d8 + your Wisdom modifier.</p>
 				</text>
 			</id-00005>
 			<id-00006>
@@ -314,6 +310,21 @@
 					<p>After reaching level 6 your unarmored strikes count as magical.</p>
 				</text>
 			</id-00015>
+			<id-00016>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter the Ground</name>
+				<source type="string">DragonSlayer</source>
+				<text type="formattedtext">
+					<p>You may unleash your element into the ground causing it to boil with power around a 5 foot safe zone. The ground in a 20-foot radius centered you becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 3d6 elemental damage for every 5 feet it travels. The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it. This Dragonslayer Ability requires 6 Dragonslayer Magic Points and lasts for 1 minute.</p>
+				</text>
+			</id-00016>
+			<id-00017>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">DragonSlayer</source>
+			</id-00017>
 		</featurelist>
 		<flaws type="string">If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.</flaws>
 		<gender type="string">Male</gender>
@@ -322,8 +333,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">47</total>
-			<wounds type="number">12</wounds>
+			<total type="number">77</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Honor. I don't steal from others in the trade. Redemption. There's a spark of good in everyone.</ideals>
 		<initiative>
@@ -351,7 +362,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Thieves' Tools</name>
 				<subtype type="string">Tool</subtype>
@@ -362,13 +373,14 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<count type="number">5</count>
+				<count type="number">6</count>
 				<description type="formattedtext">
 					<p>This glass bottle contains a large spider suspended in amber liquid.</p>
 					<p>Upon drinking the Spider Wine, roll a DC 15 Constitution saving throw. On a success you are granted resistance to poison for 1 hour. On an 7 or lower, you are poisoned for 1 hour.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Spider Wine</name>
 				<rarity type="string">Rare (Contraband)</rarity>
@@ -384,7 +396,7 @@
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard</subtype>
@@ -396,7 +408,7 @@
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard</subtype>
@@ -443,6 +455,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">belt of Protection</location>
 				<locked type="number">1</locked>
 				<name type="string">Superior Potion of Healing</name>
 				<nonid_name type="string">Potion</nonid_name>
@@ -459,7 +472,7 @@
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Torch</name>
 				<subtype type="string">Standard</subtype>
@@ -474,7 +487,7 @@
 					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Tinderbox</name>
 				<subtype type="string">Standard</subtype>
@@ -491,6 +504,7 @@
 					<p>This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">belt of Protection</location>
 				<locked type="number">1</locked>
 				<name type="string">Alchemist's Fire (Flask)</name>
 				<subtype type="string">Standard</subtype>
@@ -502,7 +516,7 @@
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -532,6 +546,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">belt of Protection</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Hill Giant Strength</name>
 				<nonid_name type="string">100 GP</nonid_name>
@@ -599,7 +614,7 @@
 			<id-00014>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -621,7 +636,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Thunder Resistance</name>
 				<nonid_name type="string">Ring</nonid_name>
@@ -656,86 +671,44 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
-				<cost type="string">900 GP</cost>
+				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.cloakofprotection@Incarnate-5eExpansion">Belt of Protection</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to AC and saving throws while you wear this cloak.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Cloak of Displacement</name>
+				<name type="string">Belt of Protection</name>
 				<nonid_name type="string">Cloak</nonid_name>
 				<nonidentified type="string">-</nonidentified>
-				<rarity type="string">rare (requires attunement)</rarity>
+				<rarity type="string">uncommon (requires attunement)</rarity>
 				<type type="string">Wondrous Item</type>
 				<weight type="number">3</weight>
 			</id-00016>
 			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">25 GP</cost>
 				<count type="number">1</count>
-				<name type="string">Blink Dog</name>
+				<description type="formattedtext">
+					<p>A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from the point without undoing the anchor.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Climber's Kit</name>
+				<subtype type="string">Equipment Kits</subtype>
+				<type type="string">Adventuring Gear</type>
 				<weight type="number">0</weight>
 			</id-00017>
 			<id-00018>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">2500 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d8 piercing, 2d12 necrotic</damage>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Unholy Trident</name>
-				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
-				<subtype type="string">Martial Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">4</weight>
-			</id-00018>
-			<id-00019>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>This Keg of Beer has 10 portion for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw DC 14 or increase one Stage of Drunkenness.</p>
-					<linklist>
-						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkenness</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Small Keg of Superior Rum</name>
-				<rarity type="string">Rare</rarity>
-				<subtype type="string">Alcohol</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0</weight>
-			</id-00019>
-			<id-00020>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">300 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other.</p>
-					<p>The lenses regain all expended charges daily at dawn.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Eyes of Charming</name>
-				<nonid_name type="string">Crystal Lenses</nonid_name>
-				<nonidentified type="string">Two crystal lenses bound together with a little bit of wire.</nonidentified>
-				<rarity type="string">uncommon (requires attunement)</rarity>
-				<type type="string">Wondrous Item</type>
-				<weight type="number">0</weight>
-			</id-00020>
-			<id-00021>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -770,6 +743,65 @@
 				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
 				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This Keg of Beer has 10 portion for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw DC 14 or increase one Stage of Drunkenness.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkenness</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Small Keg of Superior Rum</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Alcohol</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0</weight>
+			</id-00019>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">belt of Protection</location>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
 				<weight type="number">0</weight>
 			</id-00021>
 			<id-00022>
@@ -789,7 +821,7 @@
 					<p>As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Restorative Ointment</name>
 				<nonid_name type="string">Glass jar</nonid_name>
@@ -827,7 +859,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">belt of Protection</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Healing</name>
 				<nonid_name type="string">Dull Potion</nonid_name>
@@ -851,7 +883,7 @@
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Angelic Feather</name>
 				<nonid_name type="string">Feather</nonid_name>
@@ -861,8 +893,8 @@
 			</id-00024>
 			<id-00025>
 				<ac type="number">18</ac>
-				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<bonus type="number">2</bonus>
+				<carried type="number">2</carried>
 				<cost type="string">5,400 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -889,52 +921,15 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<count type="number">2</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<p>CR 3 Drake</p>
 				</description>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Drake Heart</name>
 				<weight type="number">0</weight>
 			</id-00026>
-			<id-00027>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00027>
 			<id-00028>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -943,10 +938,63 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Ore of Adarmantine</name>
 				<weight type="number">0</weight>
 			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Cold to the touch</p>
+				</description>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Coarl Drake Heart</name>
+				<weight type="number">0</weight>
+			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Poisons</p>
+				</description>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Coarl Drake Stinger</name>
+				<weight type="number">0</weight>
+			</id-00030>
+			<id-00031>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Has Camouflage underwater</p>
+				</description>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Coral Drake scales</name>
+				<weight type="number">0</weight>
+			</id-00031>
+			<id-00032>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Dragon Heart</name>
+				<weight type="number">0</weight>
+			</id-00032>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -959,7 +1007,7 @@
 				<name type="string">Draconic</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">8</level>
 		<name type="string">Vyserion &#34;Ds Tier1&#34;</name>
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1057,14 +1105,14 @@
 			<id-00001>
 				<actions>
 				</actions>
-				<cast type="number">8</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>Starting at 3rd level, your magic allows you to harness the elemental magic. Your access to this power is represented by a number of Dragonslayer magic points. You earn two levels per dragonslayer level. Once you use a magic point it will be unavailable until you finish a short or long rest.</p>
 				</description>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Dragonslayer Magic Point</name>
-				<prepared type="number">12</prepared>
+				<prepared type="number">14</prepared>
 				<source type="string">DragonSlayer</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00001>
@@ -1100,7 +1148,7 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">DMG: 1d6 cold, melee, magic</label>
+						<label type="string">DMG: 1d6 cold, melee</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1114,6 +1162,7 @@
 				<locked type="number">1</locked>
 				<name type="string">Elemental Fist</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 				<source type="string">DragonSlayer</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00003>
@@ -1196,7 +1245,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Crippling Striker</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Feat</source>
 			</id-00005>
@@ -1379,7 +1428,7 @@
 								<bonus type="number">0</bonus>
 								<dice type="dice">d6,d6,d6</dice>
 								<statmult type="number">1</statmult>
-								<type type="string">cold, magic</type>
+								<type type="string">cold</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
@@ -1408,6 +1457,18 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">cold</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1417,9 +1478,87 @@
 				<locked type="number">1</locked>
 				<name type="string">Elemental Body</name>
 				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
 				<source type="string">DragonSlayer</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">cold,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Shatter the ground</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You may unleash your element into the ground causing it to boil with power around a 5 foot safe zone. The ground in a 20-foot radius centered you becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 3d6 elemental damage for every 5 feet it travels. The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it. This Dragonslayer Ability requires 6 Dragonslayer Magic Points and lasts for 1 minute.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter the Ground</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Dodge</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Potions</group>
+				<level type="number">0</level>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">8</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00409@Incarnate-5eExpansion">Superior Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Potions</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00016>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1473,7 +1612,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1586,6 +1725,7 @@
 				<total type="number">4</total>
 			</id-00019>
 			<id-00020>
+				<locked type="number">1</locked>
 				<misc type="number">0</misc>
 				<name type="string">Dice Set</name>
 				<prof type="number">1</prof>
@@ -1610,7 +1750,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1636,9 +1776,11 @@
 		</traitlist>
 		<weapon>
 			<critdicebonus>
+				<melee type="number">0</melee>
+				<ranged type="number">0</ranged>
 			</critdicebonus>
 			<critrange>
-				<melee type="number">17</melee>
+				<melee type="number">19</melee>
 				<ranged type="number">20</ranged>
 			</critrange>
 		</weapon>
@@ -1652,7 +1794,7 @@
 						<dice type="dice">d6</dice>
 						<stat type="string">strength</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">melee, bludgeoning</type>
+						<type type="string">melee, bludgeoning, magic</type>
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
@@ -1665,60 +1807,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
-			<id-00002>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-					<id-00002>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d12,d12</dice>
-						<type type="string">necrotic</type>
-					</id-00002>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Unholy Trident</name>
-				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00018</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00002>
-			<id-00003>
-				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-					<id-00002>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d12,d12</dice>
-						<type type="string">necrotic</type>
-					</id-00002>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Unholy Trident</name>
-				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 20/60), versatile (2d8), reach</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00018</recordname>
-				</shortcut>
-				<type type="number">2</type>
-			</id-00003>
 		</weaponlist>
 		<weight type="string">110</weight>
 	</character>
