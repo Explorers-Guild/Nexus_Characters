@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">284</amount>
+				<amount type="number">282</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -113,7 +113,7 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">142.99</load>
+			<load type="number">157.99</load>
 			<max type="number">240</max>
 		</encumbrance>
 		<exp type="number">362</exp>
@@ -424,6 +424,7 @@
 					<p>These special tools include the items needed to pursue a craft or trade. The table shows examples of the most common types of tools, each providing items related to a single craft. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Smith's Tools</name>
 				<subtype type="string">Artisan's Tools</subtype>
@@ -495,7 +496,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
@@ -517,6 +518,7 @@
 					<p>A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Pouch</name>
 				<subtype type="string">Standard</subtype>
@@ -565,6 +567,7 @@
 					<p>As an action, you can spend a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Bag (Small)</location>
 				<locked type="number">1</locked>
 				<name type="string">Caltrops (20)</name>
 				<subtype type="string">Standard</subtype>
@@ -756,6 +759,7 @@
 					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Crowbar</name>
 				<subtype type="string">Standard</subtype>
@@ -800,14 +804,64 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">7</weight>
 			</id-00034>
-			<id-00035>
+			<id-00036>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">1700 GP</cost>
 				<count type="number">1</count>
+				<damage type="string">1d8 bludgeoning, magic</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>Mithril weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
+					<p>If this reduces the weight to less than or equal to 3 pounds and is one handed then it gains the finesse property.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.dragonslayer@Incarnate-5eExpansion">Dragon Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, &#34;dragon&#34; refers to any creature with the dragon type, including dragon turtles and wyverns.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.viciousweapon@Incarnate-5eExpansion">Vicious</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
+				<name type="string">Vicious Mithril Greatclub of Dragon Slaying</name>
+				<nonidentified type="string">A sturdy greatclub.</nonidentified>
+				<properties type="string">Two-handed</properties>
+				<subtype type="string">Simple Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">5</weight>
+			</id-00036>
+			<id-00037>
+				<carried type="number">1</carried>
+				<cost type="string">2 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Pick, Miner's</name>
+				<subtype type="string">Standard Adventuring Gear</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">10</weight>
+			</id-00037>
+			<id-00038>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
 				<name type="string">Bag (Small)</name>
-				<weight type="number">0</weight>
-			</id-00035>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00038>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1226,7 +1280,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00010_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1407,7 +1461,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">50</maxammo>
 				<name type="string">Sling</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 30/120)</properties>
@@ -1417,6 +1471,27 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00006>
+			<id-00007>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Vicious Mithril Greatclub of Dragon Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00036</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00007>
 			<id-00010>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
