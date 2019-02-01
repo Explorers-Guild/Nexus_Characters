@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -103,15 +103,16 @@
 				<temporary type="number">0</temporary>
 				<total type="number">15</total>
 			</ac>
+			<special type="string">40</special>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">99.25</load>
+			<load type="number">100.85</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">652</exp>
+		<exp type="number">747</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 			<id-00001>
@@ -299,18 +300,34 @@
 					<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Sharpest of Shooters</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Sharpshooter</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.sharpestofshooters@Incarnate-5eExpansion">Sharpest of Shooters</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 7th level. You're one the best snipers around; you're both accurate and deadly. You may use your bonus action to take aim against a target. Until the end of the current round you have a +5 to ranged attacks</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I do not feel guilt or sorrow</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'9&#34;</height>
-		<hero type="number">2</hero>
+		<hero type="number">1</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">2</temporary>
-			<total type="number">40</total>
-			<wounds type="number">6</wounds>
+			<temporary type="number">0</temporary>
+			<total type="number">46</total>
+			<wounds type="number">42</wounds>
 		</hp>
 		<ideals type="string">Life Should be led in simplicity, without need for any luxury</ideals>
 		<initiative>
@@ -516,7 +533,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">2</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -562,7 +579,7 @@
 				<name type="string">Sapphire</name>
 				<subtype type="string">Gemstone</subtype>
 				<type type="string">Treasure</type>
-				<weight type="number">0</weight>
+				<weight type="number">0.1</weight>
 			</id-00011>
 			<id-00012>
 				<carried type="number">1</carried>
@@ -896,7 +913,7 @@
 				<name type="string">Orc</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Kallic Mithaldra</name>
 		<notes type="string">My home was destroyed and my Mentor was killed so I killed escaped by Orcs so now I am out to destroy all orcs.</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
@@ -915,6 +932,12 @@
 				<stat type="string">wisdom</stat>
 				<uses type="number">0</uses>
 			</id-00001>
+			<id-00002>
+				<name type="string">Class Features</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">javelin of lightning</name>
+			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -955,11 +978,11 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
-				<used type="number">1</used>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -1074,6 +1097,37 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Ranger</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">ADVSAV: poisoned; RESIST: poison</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnByb3RlY3Rpb24/play/"><b>Syrinscape </b></link>: Protection - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Protection from Poison</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Druid, Paladin, Ranger</source>
+			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1118,6 +1172,63 @@
 				<school type="string">Divination</school>
 				<source type="string">Ranger</source>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">ATK: 2 ranged</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Class Features</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style: Archery</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">dexterity</atkstat>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">javelin of lightning</group>
+				<level type="number">0</level>
+				<name type="string">JOL</name>
+				<prepared type="number">0</prepared>
+			</id-00007>
 			<id-00016>
 				<actions>
 					<id-00001>
@@ -1327,7 +1438,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1367,7 +1478,7 @@
 		</weapon>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">8</ammo>
+				<ammo type="number">14</ammo>
 				<attackbonus type="number">5</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1392,7 +1503,7 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1414,7 +1525,7 @@
 			</id-00002>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1436,7 +1547,7 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
