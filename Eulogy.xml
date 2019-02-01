@@ -17,11 +17,11 @@
 				<score type="number">14</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<bonus type="number">4</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">18</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
@@ -47,18 +47,22 @@
 		</abilities>
 		<adventurelist>
 		</adventurelist>
+		<age type="string">240</age>
+		<alignment type="string">Neutral</alignment>
+		<appearance type="string">Wild looking female wood elf with long black hair, a headress of skulls and leaves and twigs, wearing light leathers and furs.</appearance>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
 			<recordname>reference.backgrounddata.outlander@DD PHB Deluxe</recordname>
 		</backgroundlink>
+		<bonds type="string">Epitaph, Elegy, Golgari</bonds>
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -68,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">239</amount>
+				<amount type="number">279</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -76,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">70</amount>
+				<amount type="number">101</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -84,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">62</amount>
+				<amount type="number">81</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -99,17 +103,18 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
+		<deity type="string">Golgari, Nature, Rebirth, Blade, Honor</deity>
 		<encumbrance>
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">160.66</load>
+			<load type="number">158.26</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">394</exp>
+		<exp type="number">481</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -217,18 +222,48 @@
 					<p><b><i>Way of the Brush. </i></b>You gain proficiency with your choice of calligrapher's supplies or painter's supplies.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<p>(uses heal to compensate for damage dealt)</p>
+					<linklist>
+						<link class="power" recordname="spell.slowfall@Incarnate-5eExpansion">Slow Fall</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</text>
+			</id-00010>
 		</featurelist>
+		<flaws type="string">Society is filled with fear and greed\n\nCultivate and kill is our great legacy </flaws>
+		<gender type="string">Female</gender>
+		<height type="string">6'2&#34;</height>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
+			<total type="number">31</total>
 			<wounds type="number">0</wounds>
 		</hp>
+		<ideals type="string">I shall pave this road 'till glory sets my broken spirit free\nWith every blade that flowers we shall grow and drown\nIn love, our cruelest sea. </ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -250,17 +285,71 @@
 				<weight type="number">0</weight>
 			</id-00001>
 			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">2 SP</cost>
+				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
+				<damage type="string">1d6 piercing, magic</damage>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.javelinoflightning@Incarnate-5eExpansion">Javelin of Lightning</link>
+					</linklist>
+					<h>Description</h>
+					<p>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.</p>
+					<p>The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">carried (back)</location>
 				<locked type="number">1</locked>
-				<name type="string">Waterskin3</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">5</weight>
+				<name type="string">Javelin of Lightning</name>
+				<nonid_name type="string">Javelin</nonid_name>
+				<nonidentified type="string">A strong javelin</nonidentified>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Simple Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
 			</id-00002>
+			<id-00003>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">101 - 500 gp</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You have a bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">quiver</location>
+				<locked type="number">1</locked>
+				<name type="string">Arrow, +1</name>
+				<nonid_name type="string">Splendid Arrow</nonid_name>
+				<nonidentified type="string">Finely crafted ammunition.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Ammunition, +1</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Arrow</name>
+					</id-00002>
+				</spells>
+				<subtype type="string">Arrow</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0.05</weight>
+			</id-00003>
 			<id-00004>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -323,7 +412,7 @@
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">mess Kit</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard</subtype>
@@ -400,7 +489,7 @@
 					<p>A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to host up to four times the weight you can normally lift.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">sack</location>
 				<locked type="number">1</locked>
 				<name type="string">Block And Tackle</name>
 				<subtype type="string">Standard</subtype>
@@ -504,9 +593,9 @@
 					<p>-</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">clothes, Common</location>
 				<locked type="number">1</locked>
-				<name type="string">Flask Or Tankard</name>
+				<name type="string">Flask </name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
@@ -521,7 +610,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">sack</location>
 				<locked type="number">1</locked>
 				<name type="string">Grappling Hook</name>
 				<subtype type="string">Standard</subtype>
@@ -744,7 +833,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
-				<location type="string">carried</location>
+				<location type="string">carried (back)</location>
 				<locked type="number">1</locked>
 				<name type="string">Longbow</name>
 				<nonid_name type="string">Longbow</nonid_name>
@@ -788,14 +877,14 @@
 			<id-00036>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<istemplate type="number">0</istemplate>
-				<location type="string">carried</location>
+				<location type="string">carried (hands)</location>
 				<locked type="number">1</locked>
 				<name type="string">+1 Longspear</name>
 				<properties type="string">versatile (1d8), 10 ft. range</properties>
@@ -822,9 +911,9 @@
 			<id-00038>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -848,6 +937,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Healing</name>
 				<nonid_name type="string">Dull Potion</nonid_name>
@@ -859,19 +949,20 @@
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Elvish</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">One of your choice</name>
+				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Eulogy</name>
 		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
+		<personalitytraits type="string">She saw a civilization where grabbing onto wealth was the only guarentee of freedom peace and health. A doller-sign value system was held up as the truth. If you couldn't find a place it was going to find you. She saw the paranoid response and ones who were made examples. The ones that didn't fit in that way of living getting trampled. Sucess was obedience to a structured way of life. She could not ignore that structure while she was always in it's sight. </personalitytraits>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -882,9 +973,17 @@
 				<atkprof type="number">1</atkprof>
 				<name type="string">Ki Powers</name>
 				<saveprof type="number">1</saveprof>
-				<uses type="number">3</uses>
+				<uses type="number">4</uses>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
+			<id-00003>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Kensai Powers</name>
+				<saveprof type="number">1</saveprof>
+			</id-00003>
+			<id-00005>
+				<name type="string">Items</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -992,6 +1091,116 @@
 				<source type="string">Wood Elf</source>
 				<type type="string">subracial</type>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00002>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10</dice>
+								<stat type="string">dexterity</stat>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00002>
+						</heallist>
+						<order type="number">2</order>
+						<type type="string">heal</type>
+					</id-00002>
+					<id-00003>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atkstat type="string">dexterity</atkstat>
+						<atktype type="string">ranged</atktype>
+						<order type="number">3</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<type type="string">cast</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">Reaction</castingtime>
+				<description type="formattedtext">
+					<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack (20/60 ft.). When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p>
+					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</p>
+				</description>
+				<group type="string">Ki Powers</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Monk: Deflect Missiles (R)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Class</school>
+				<source type="string">Monk</source>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atktype type="string">ranged</atktype>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<bonus type="number">0</bonus>
+				<cast type="number">0</cast>
+				<cost type="string">101 - 500 gp</cost>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.</p>
+					<p>The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Javelin of Lightning (120)</name>
+				<nonid_name type="string">A Javelin</nonid_name>
+				<nonidentified type="string">Only the intricate tool work on the grip of this well balanced weapon alerts you to the possibility that it is something other than ordinary.</nonidentified>
+				<prepared type="number">1</prepared>
+				<properties type="string">Thrown (range 30/120), magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<ritual type="number">0</ritual>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Javelin of Lightning</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Javelin</name>
+					</id-00002>
+				</spells>
+				<subtype type="string">Javelin</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00004>
 			<id-00006>
 				<actions>
 				</actions>
@@ -1011,7 +1220,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Ki</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
@@ -1027,7 +1236,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">0</cast>
 				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
 					<p><b>Patient Defense</b></p>
@@ -1090,7 +1299,7 @@
 					<p><b><i>Kensei's Shot. </i></b>You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra 1d4 damage of the weapon's type. You retain this benefit until the end of the current turn.</p>
 					<p><b><i>Way of the Brush. </i></b>You gain proficiency with your choice of calligrapher's supplies or painter's supplies.</p>
 				</description>
-				<group type="string">Ki Powers</group>
+				<group type="string">Kensai Powers</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Path of the Kensei</name>
@@ -1098,6 +1307,106 @@
 				<ritual type="number">0</ritual>
 				<specialization type="string">Way of the Kensei</specialization>
 			</id-00009>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<cost type="string">50 - 100 gp</cost>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 2d4 + 2 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+					<p><b>Potion Notes</b></p>
+					<p>Drinking or administering a potion takes an action.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<prepared type="number">0</prepared>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Common</rarity>
+				<ritual type="number">0</ritual>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00002>
+							<id-00003>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00003>
+							<id-00004>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00004>
+							<id-00005>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">monk</stat>
+							</id-00005>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">Reaction</castingtime>
+				<description type="formattedtext">
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</description>
+				<group type="string">Ki Powers</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Monk: Slow Fall (R)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Class</school>
+				<source type="string">Monk</source>
+			</id-00012>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1141,13 +1450,13 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00005>
 			<id-00006>
 				<name type="string">Arcana</name>
@@ -1182,7 +1491,7 @@
 			<id-00012>
 				<name type="string">Sleight of Hand</name>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00012>
 			<id-00013>
 				<name type="string">Insight</name>
@@ -1224,7 +1533,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1294,8 +1603,31 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
+			<id-00002>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Javelin of Lightning</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00002</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00002>
 			<id-00003>
-				<ammo type="number">1</ammo>
+				<ammo type="number">5</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1338,6 +1670,55 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
+			<id-00005>
+				<ammo type="number">1</ammo>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">1</maxammo>
+				<name type="string">Javelin of Lightning</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 30/120)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00002</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
+			<id-00006>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Arrow, +1</name>
+				<prof type="number">1</prof>
+				<properties type="string">Magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00003</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
 		</weaponlist>
+		<weight type="string">170lb</weight>
 	</character>
 </root>
