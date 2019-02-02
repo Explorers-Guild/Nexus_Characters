@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,15 +72,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">55</amount>
+				<amount type="number">109</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">19</amount>
+				<amount type="number">39</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">31</amount>
+				<amount type="number">48</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -107,10 +107,10 @@
 			<encumbered type="number">45</encumbered>
 			<encumberedheavy type="number">90</encumberedheavy>
 			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">74.8</load>
+			<load type="number">77.8</load>
 			<max type="number">135</max>
 		</encumbrance>
-		<exp type="number">387</exp>
+		<exp type="number">477</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -211,6 +211,15 @@
 					<p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy an illusion spell into your spellbook is halved.</p>
 				</text>
 			</id-00006>
+			<id-00007>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Wizard</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00007>
 		</featurelist>
 		<flaws type="string">Now that I have returned to the world, I enjoy its delights a little to much.\nI am a tobacco fiend.</flaws>
 		<gender type="string">Male</gender>
@@ -219,8 +228,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">19</total>
-			<wounds type="number">7</wounds>
+			<total type="number">25</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Inquiry and curiosity are the pillars of progress.</ideals>
 		<initiative>
@@ -357,6 +366,7 @@
 					<p>Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Spellbook</name>
 				<subtype type="string">Standard</subtype>
@@ -430,48 +440,39 @@
 				<type type="string">Tool</type>
 				<weight type="number">1</weight>
 			</id-00014>
+			<id-00015>
+				<carried type="number">1</carried>
+				<count type="number">7</count>
+				<location type="string">Backpack</location>
+				<name type="string">Small Feather</name>
+				<weight type="number">0</weight>
+			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">100 GP</cost>
+				<cost type="string">400 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Greater healing</td>
-							<td>Uncommon</td>
-							<td>4d4 + 4</td>
-						</tr>
-					</table>
+					<p>This hollow metal tube measures about 1 foot long and weighs 1 pound. You can strike it as an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch on the object opens unless the sound can't reach the object.</p>
+					<p>If no locks or latches remain, the object itself opens.</p>
+					<p>The chime can be used ten times. After the tenth time, it cracks and becomes useless.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
-				<name type="string">Greater Potion of Healing</name>
-				<nonid_name type="string">Dim Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
+				<name type="string">Chime of Opening</name>
+				<nonid_name type="string">Metal Tube</nonid_name>
+				<nonidentified type="string">A hollow metal tube about 1 foot long</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">3</weight>
 			</id-00016>
 			<id-00017>
 				<carried type="number">1</carried>
-				<count type="number">15</count>
-				<name type="string">GP</name>
+				<count type="number">4</count>
+				<location type="string">Backpack</location>
+				<name type="string">Cured Leather</name>
 				<weight type="number">0</weight>
 			</id-00017>
 			<id-00018>
@@ -508,6 +509,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Illusory Script</name>
 				<nonid_name type="string">Scroll</nonid_name>
@@ -516,6 +518,58 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<count type="number">4</count>
+				<location type="string">Backpack</location>
+				<name type="string">Fleece</name>
+				<weight type="number">0</weight>
+			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<count type="number">2</count>
+				<location type="string">Backpack</location>
+				<name type="string">Lodestones</name>
+				<weight type="number">0</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -528,13 +582,12 @@
 				<name type="string">Gnomish</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Mirfal Benosel</name>
 		<notes type="string">Backstory:\nMirfal Benosel grew up in Baldur's Gate in a middle class merchant's family with his father(Ovir) and older sister(Birala), his mother died of a illness when Mirfel was just a baby. \n\nGrowing up Mirfal was interested in history, music and magic. His father encouraged this and hired Rehner Remmo, one of the best tutors in Baldurs Gate for an education. From Rehner he learned about the world, pratical skills and some instruments. Rehner did not know alot about magic but did teach Mirfal how to go about learning magic and it turned out Mirfal had a natural knack for it.\n\nRehner liked to form study groups for his most learned students and so when Mirfal was 12 Rehner formed a small group for Mirfal to study in. The group consisted of 6 students. One of which was Ava Anila from a Noble family. Mirfal fell in love with Ava. Mirfal did not get along with his study group but Ava was always very nice to Mirfal, she was nice to everybody. He tried to keep his feeling to himself, waiting to make something of himself before trying to court her. Mirfal waited too long, Ava married a guard named Baf Dheko. Heartbroken, Mirfal left Baldurs Gate at age 20 to live by himself.\n\nDuring Mirfals time in isolation, he studied. Sometimes his sister would visit him and bring supplies. Mirfal only returned to Baldurs Gate once to check up on Ava Dheko while using a disguise from a spell, she was very happy and had 2 children.\n\nAt age 35 Mirfal had enough of his life of seclution and decided to find an adventure. What adventures await him?</notes>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I feel tremendous empathy for all who suffer.\nI am utterly serene, even in the face of disaster.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -542,6 +595,14 @@
 				<prepared type="number">3</prepared>
 				<stat type="string">intelligence</stat>
 			</id-00001>
+			<id-00002>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Item</name>
+				<saveprof type="number">1</saveprof>
+			</id-00002>
+			<id-00003>
+				<name type="string">POTIONS</name>
+			</id-00003>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -582,10 +643,10 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -902,6 +963,34 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">POTIONS</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00011>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1055,7 +1144,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 		</traitlist>
 		<weaponlist>
