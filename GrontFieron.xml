@@ -49,7 +49,7 @@
 		</adventurelist>
 		<age type="string">15</age>
 		<alignment type="string">Chaotic Good</alignment>
-		<appearance type="string">White gray fur with black spots, Ebony skin</appearance>
+		<appearance type="string">White gray fur with black spots, Ebony skin, Gold eyes</appearance>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<hdused type="number">2</hdused>
+				<level type="number">4</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">74</amount>
+				<amount type="number">180</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">36</amount>
+				<amount type="number">30</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">37</amount>
+				<amount type="number">46</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -113,12 +113,24 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">280.84</load>
+			<load type="number">286.14</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">27</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">430</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Dual Wielder</name>
+				<text type="formattedtext">
+					<p>You master fighting with two weapons, gaining the following benefits:</p>
+					<list>
+						<li>You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.</li>
+						<li>You can use two-weapon fighting even when the onehanded melee weapons you are wielding aren't light.</li>
+						<li>You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -336,6 +348,16 @@
 					<p><b>Vow of Enmity. </b>As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge.</flaws>
 		<gender type="string">Male</gender>
@@ -344,8 +366,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">25</total>
-			<wounds type="number">19</wounds>
+			<total type="number">32</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. (Good)</ideals>
 		<initiative>
@@ -353,6 +375,7 @@
 			<temporary type="number">0</temporary>
 			<total type="number">0</total>
 		</initiative>
+		<inspiration type="number">0</inspiration>
 		<inventorylist>
 			<id-00001>
 				<carried type="number">1</carried>
@@ -836,12 +859,38 @@
 				<name type="string">Wolf pelt</name>
 				<weight type="number">1</weight>
 			</id-00036>
+			<id-00037>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 piercing</damage>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00010@Incarnate-Syrinscape"><b>Syrinscape </b></link>: Dagger</linklist>
+					<h>Description</h>
+					<p>-</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Dagger</name>
+				<nonid_name type="string">Dagger</nonid_name>
+				<nonidentified type="string">A finely crafted dagger.</nonidentified>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Simple Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1</weight>
+			</id-00037>
 			<id-00038>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">0</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -865,6 +914,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Greater Potion of Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -893,6 +943,51 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00039>
+			<id-00040>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Hammer, Sledge</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">4</weight>
+			</id-00040>
+			<id-00041>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">mimic tooth</name>
+				<weight type="number">0.1</weight>
+			</id-00041>
+			<id-00042>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 CP</cost>
+				<count type="number">10</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Chalk (1 Piece)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.01</weight>
+			</id-00042>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -905,9 +1000,9 @@
 				<name type="string">Common</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Gront Fieron</name>
-		<notes type="string">He is a Gnoll from the Stitch plain Helios Down, Gnolls from Helios Down live as long as Humans and have the corruption that there cousin have removed for thousands of years basically making them a very different race from the Gnolls of other plains/worlds. they can still kinda be bullys.\n\nGront was raised in one of the few cities that exist on Helios and is a warrior of justice that would adventure out to smite evil.\n\nGront is a paladin of the God of Stitch Smiles, also known as the Struggler for his rise to god hood was just a string of one event to another of beings trying to kill him or use him. &#34;note was a mortal at one point.&#34;\n\nThe God of Stitch Smiles is a white nine tailed humaniod fox with two black horns that rap back then forward agen with glowing lines that chan color with his mood, blue glowing eyes with black sclera, black claws, he has a stretchy cord that has no ends laced through black metal loops in his lips it does not hinder him even though it always appears taut and does not interact with any other matter then his own.\n He uselly is seen wearing a hooded cloak of some kind uselly ornate in nature colors are: Main colors: black, white, purples, grays Other colors: golds, reds, greens, white, black, grays, blues, purples, silvers, coppers.\nhe also has a ornate dagger that can not not be stolen that is fused to his being known as the dagger of power stealing one strike can temperarily steal a portion of the beings power and if the being is killed its power is permanetly giving to its owner, this blade is known as the Gods Bane Dagger its true name is only known to few. &#34;note this dagger can kill multiplainer/multivers beings&#34;\nThe God of Stitch Smiles cam roam about any plain he pleases as most beings have learned to not mess in his affairs but he uselly keeps to the Plains he rules/watches over. &#34;note this means he can go just about any where unless another being with enuff power to bar him from directly entering a plain or has come to a agreement not to interfere direcly with the plain in his physical form.&#34; &#34;note use this god like any normal god unless you want him to pop in for lore reasons or you want him to litteraly come if a clerics Divine intervention succeeds.&#34; &#34;this god is Chaotic Good&#34; &#34;i will flush this god out more later if needed.&#34;\n\nGront Faught/Killed: 3 Wolfs, 2 Dire Wolfs, 1 Winter wolfs</notes>
+		<notes type="string">He is a Gnoll from the Stitch plain Helios Down, Gnolls from Helios Down live as long as Humans and have the corruption that there cousin have removed for thousands of years basically making them a very different race from the Gnolls of other plains/worlds. they can still kinda be bullys.\n\nGront was raised in one of the few cities that exist on Helios and is a warrior of justice that would adventure out to smite evil.\n\nGront is a paladin of the God of Stitch Smiles, also known as the Struggler for his rise to god hood was just a string of one event to another of beings trying to kill him or use him. &#34;note was a mortal at one point.&#34;\n\nThe God of Stitch Smiles is a white nine tailed humaniod fox with two black horns that rap back then forward agen with glowing lines that chan color with his mood, blue glowing eyes with black sclera, black claws, he has a stretchy cord that has no ends laced through black metal loops in his lips it does not hinder him even though it always appears taut and does not interact with any other matter then his own.\n He uselly is seen wearing a hooded cloak of some kind uselly ornate in nature colors are: Main colors: black, white, purples, grays Other colors: golds, reds, greens, white, black, grays, blues, purples, silvers, coppers.\nhe also has a ornate dagger that can not not be stolen that is fused to his being known as the dagger of power stealing one strike can temperarily steal a portion of the beings power and if the being is killed its power is permanetly giving to its owner, this blade is known as the Gods Bane Dagger its true name is only known to few. &#34;note this dagger can kill multiplainer/multivers beings&#34;\nThe God of Stitch Smiles cam roam about any plain he pleases as most beings have learned to not mess in his affairs but he uselly keeps to the Plains he rules/watches over. &#34;note this means he can go just about any where unless another being with enuff power to bar him from directly entering a plain or has come to a agreement not to interfere direcly with the plain in his physical form.&#34; &#34;note use this god like any normal god unless you want him to pop in for lore reasons or you want him to litteraly come if a clerics Divine intervention succeeds.&#34; &#34;this god is Chaotic Good&#34; &#34;i will flush this god out more later if needed.&#34;\n\nGront Faught/Killed: 3 Wolfs, 2 Dire Wolfs, 1 Winter wolfs, 1 Doppleganger, 1 Living Painting, 1 Mimic, </notes>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I once ran twenty-five miles without stopping to warn to my clan of an approaching giant insect horde. I'd do it again if I had to.</personalitytraits>
@@ -935,68 +1030,92 @@
 				<stat type="string">charisma</stat>
 			</id-00005>
 			<id-00006>
-				<name type="string">Fighting Style</name>
+				<atkprof type="number">1</atkprof>
+				<name type="string">potions</name>
+				<saveprof type="number">1</saveprof>
 			</id-00006>
 			<id-00007>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 			</id-00007>
+			<id-00008>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Feat</name>
+				<saveprof type="number">1</saveprof>
+			</id-00008>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
-				<used type="number">3</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -1008,6 +1127,7 @@
 							<id-00001>
 								<bonus type="number">1</bonus>
 								<dice type="dice"></dice>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -1024,7 +1144,7 @@
 						<type type="string">heal</type>
 					</id-00003>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">15</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.propaladin.features.id-00021@Incarnate-5eExpansion">Lay on Hands</link>
@@ -1112,6 +1232,27 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Paladin - Class Ability</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p>
+					<p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Detect Magic</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Cleric, Druid, Eldritch Knight, Eldritch Invocations, Paladin, Ranger, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1234,27 +1375,6 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Fighter - Class Ability</source>
 			</id-00008>
-			<id-00009>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p>
-					<p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
-				</description>
-				<duration type="string">Concentration, up to 10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Detect Evil and Good</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Cleric, Paladin</source>
-			</id-00009>
 			<id-00010>
 				<actions>
 				</actions>
@@ -1275,35 +1395,6 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Cleric, Druid, Paladin</source>
 			</id-00010>
-			<id-00011>
-				<actions>
-					<id-00001>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">DMG: 1d4 radiant; (C)</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 bonus action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Divine Favor</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Cleric War Domain, Paladin</source>
-			</id-00011>
 			<id-00012>
 				<actions>
 					<id-00001>
@@ -1396,12 +1487,71 @@
 				<ritual type="number">0</ritual>
 				<school type="string">Actions</school>
 			</id-00015>
-			<id-00017>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">potions</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00016>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<stat type="string">base</stat>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Cure Wounds</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
+			</id-00018>
+			<id-00020>
 				<actions>
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">day</durunit>
-						<label type="string">Fighting Style Defense; AC:1</label>
+						<label type="string">Dual Wielder Defense; AC:1</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1410,17 +1560,17 @@
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
-						<link class="reference_classfeature" recordname="class.proranger.features.id-00055@Incarnate-5eExpansion">Fighting Style</link>
+						<link class="ref_ability" recordname="....featlist.id-00001">Dual Wielder</link>
 					</linklist>
 				</description>
-				<group type="string">Fighting Style</group>
+				<group type="string">Feat</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Fighting Style - Defense</name>
+				<name type="string">Dual Wielder</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Fighter - Class Ability</source>
-			</id-00017>
+			</id-00020>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1578,7 +1728,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00012_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1730,6 +1880,28 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00037</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 			<id-00006>
 				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
@@ -1752,6 +1924,28 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00006>
+			<id-00007>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Dagger</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00037</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00007>
 		</weaponlist>
 		<weight type="string">225</weight>
 	</character>

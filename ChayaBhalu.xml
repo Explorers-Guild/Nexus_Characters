@@ -14,7 +14,7 @@
 				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">12</score>
+				<score type="number">13</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
@@ -24,11 +24,11 @@
 				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
-				<bonus type="number">0</bonus>
-				<save type="number">0</save>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">10</score>
+				<score type="number">13</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">2</bonus>
@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">3</level>
+				<hdused type="number">0</hdused>
+				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">94</amount>
+				<amount type="number">100</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">87</amount>
+				<amount type="number">106</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">32</amount>
+				<amount type="number">46</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,8 +113,8 @@
 			<load type="number">75.5</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">390</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">416</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -215,6 +215,24 @@
 					<p>Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don't already know it.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<source type="string">Monk</source>
+				<text type="formattedtext">
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Monk</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge. There's no room for caution in a life lived to the fullest.</flaws>
 		<gender type="string">Male</gender>
@@ -223,8 +241,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
-			<wounds type="number">20</wounds>
+			<total type="number">27</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Honor. If I dishonor myself, I dishonor my whole clan. Glory. I must earn glory in battle, for myself and my clan.</ideals>
 		<initiative>
@@ -281,7 +299,7 @@
 			<id-00004>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<count type="number">1</count>
 				<damage type="string">1d4 bludgeoning</damage>
 				<description type="formattedtext">
@@ -472,7 +490,7 @@
 				<name type="string">Goblin</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Chaya Bhalu</name>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -570,6 +588,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -689,7 +708,7 @@
 			<id-00010>
 				<actions>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
 					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
@@ -1014,7 +1033,7 @@
 			<id-00024>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
 				<level type="number">0</level>
 				<name type="string">Item: Rations</name>
@@ -1084,7 +1103,7 @@
 				<name type="string">Arcana</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1098,7 +1117,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1126,7 +1145,7 @@
 				<name type="string">Religion</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1161,14 +1180,14 @@
 				<name type="string">Investigation</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">0</total>
+				<total type="number">1</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1187,7 +1206,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1253,7 +1272,7 @@
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
