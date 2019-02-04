@@ -59,7 +59,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">3</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">4</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
@@ -70,15 +70,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">106</amount>
+				<amount type="number">232</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">2</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">19</amount>
+				<amount type="number">33</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">14</amount>
+				<amount type="number">64</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,10 +108,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">48</load>
+			<load type="number">49</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">403</exp>
+		<exp type="number">455</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -250,7 +250,7 @@
 			<id-00008>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement - </name>
+				<name type="string">Ability Score Improvement -</name>
 				<source type="string">Druid</source>
 				<text type="formattedtext">
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
@@ -263,10 +263,10 @@
 		<hero type="number">0</hero>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
-			<deathsavesuccess type="number">0</deathsavesuccess>
+			<deathsavesuccess type="number">1</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">31</total>
-			<wounds type="number">2</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -530,6 +530,34 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00014>
+			<id-00016>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You have resistance to one damage type while wearing this ring.</p>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancelightning@Incarnate-5eExpansion">Type Resistance (Lightning)</link>
+					</linklist>
+					<table>
+						<tr>
+							<td>5</td>
+							<td>Lightning</td>
+							<td>Citrine</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Lightning Resistance</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A citrine ring.</nonidentified>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00016>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -567,7 +595,9 @@
 				<name type="string">Wild shape</name>
 			</id-00002>
 			<id-00004>
+				<atkprof type="number">1</atkprof>
 				<name type="string">Wild shape - lion</name>
+				<saveprof type="number">1</saveprof>
 			</id-00004>
 			<id-00005>
 				<name type="string">Wild shape - Warhorse</name>
@@ -615,11 +645,11 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -939,7 +969,7 @@
 			<id-00010>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<group type="string">Wild shape</group>
 				<level type="number">0</level>
 				<name type="string">Uses</name>
@@ -1368,7 +1398,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

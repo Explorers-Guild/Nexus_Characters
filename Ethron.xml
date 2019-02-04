@@ -4,7 +4,7 @@
 		<abilities>
 			<charisma>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -39,7 +39,7 @@
 			</strength>
 			<wisdom>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">13</score>
@@ -59,7 +59,7 @@
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">5</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,15 +69,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">74</amount>
+				<amount type="number">170</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">2</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">38</amount>
+				<amount type="number">52</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -85,7 +85,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">32</amount>
+				<amount type="number">82</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -104,15 +104,22 @@
 		</defenses>
 		<deity type="string">The feind</deity>
 		<encumbrance>
-			<encumbered type="number">45</encumbered>
-			<encumberedheavy type="number">90</encumberedheavy>
-			<liftpushdrag type="number">270</liftpushdrag>
-			<load type="number">30.9</load>
-			<max type="number">135</max>
+			<encumbered type="number">90</encumbered>
+			<encumberedheavy type="number">180</encumberedheavy>
+			<liftpushdrag type="number">540</liftpushdrag>
+			<load type="number">39.4</load>
+			<max type="number">270</max>
 		</encumbrance>
-		<exp type="number">390</exp>
+		<exp type="number">507</exp>
 		<expneeded type="number">0</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Tough</name>
+				<text type="formattedtext">
+					<p>Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.</p>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -124,19 +131,13 @@
 				</text>
 			</id-00001>
 			<id-00002>
-				<level type="number">1</level>
+				<level type="number">4</level>
 				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
 				<source type="string">Warlock</source>
+				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.</p>
-					<h>Features</h>
-					<linklist>
-						<link class="reference_classfeature" recordname="reference.classdata.warlock.features.expandedspelllist_fiend_1@DD PHB Deluxe">Expanded Spell List (Fiend)</link>
-						<link class="reference_classfeature" recordname="reference.classdata.warlock.features.darkone_sblessing1@DD PHB Deluxe">Dark One's Blessing</link>
-						<link class="reference_classfeature" recordname="reference.classdata.warlock.features.darkone_sownluck6@DD PHB Deluxe">Dark One's Own Luck</link>
-						<link class="reference_classfeature" recordname="reference.classdata.warlock.features.fiendishresilience10@DD PHB Deluxe">Fiendish Resilience</link>
-						<link class="reference_classfeature" recordname="reference.classdata.warlock.features.hurlthroughhell14@DD PHB Deluxe">Hurl Through Hell</link>
-					</linklist>
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00002>
 			<id-00003>
@@ -470,8 +471,8 @@
 			</id-00006>
 			<id-00007>
 				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Eldritch Invocations (Xanathar)</name>
+				<locked type="number">0</locked>
+				<name type="string">Eldritch  zInvocations (Xanathar)</name>
 				<source type="string">Warlock</source>
 				<text type="formattedtext">
 					<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p>
@@ -849,11 +850,13 @@
 		</featurelist>
 		<gender type="string">Male</gender>
 		<height type="string">2M</height>
+		<hero type="number">2</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">18</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -888,7 +891,7 @@
 				<damage type="string">1d6 piercing</damage>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Spear</name>
+				<name type="string">Spearf</name>
 				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
 				<subtype type="string">Simple Melee Weapons</subtype>
 				<type type="string">Weapon</type>
@@ -1007,8 +1010,13 @@
 				<weight type="number">0.06</weight>
 			</id-00010>
 			<id-00011>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">CP</name>
@@ -1084,10 +1092,153 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00013>
+			<id-00014>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>The crystal ball allows its possessor to ask it about a future event, but a curse on the device causes it to show the worst possible outcome.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Crystal Ball</name>
+				<nonid_name type="string">A ball of crystal</nonid_name>
+				<nonidentified type="string">This ball is strangely blackened</nonidentified>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0</weight>
+			</id-00014>
+			<id-00015>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Show to a creature, they must make a DC 10 Con save or be petrified.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Basilisk eye</name>
+				<weight type="number">0</weight>
+			</id-00015>
+			<id-00016>
+				<carried type="number">1</carried>
+				<cost type="string">?</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Holds knowlage of vision of Helios Down one of the original plain falling into the abyss, one where nothing happens, and one where the abyss plain is pulled into the current helios that is the current hystory.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Book of visions of Helios Down</name>
+				<rarity type="string">?</rarity>
+				<type type="string">book</type>
+				<weight type="number">1</weight>
+			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Once attuned to this item the user can ignore cover when making ranged attacks-by magically seeing around corners.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Hand Mirror</name>
+				<nonid_name type="string">Hand MIrror</nonid_name>
+				<nonidentified type="string">A seemingly ordinary hand mirror</nonidentified>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0</weight>
+			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">400 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Longsword +1</name>
+				<nonid_name type="string">Longsword</nonid_name>
+				<nonidentified type="string">A mysterious longsword</nonidentified>
+				<properties type="string">Versatile (1d10), magic</properties>
+				<subtype type="string">Martial Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">400 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Flying</name>
+				<nonid_name type="string">Shiny Potion</nonid_name>
+				<nonidentified type="string">This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</nonidentified>
+				<rarity type="string">Very Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<cost type="string">25 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Shortbow</name>
+				<properties type="string">Ammunition (range 80/320), two-handed</properties>
+				<subtype type="string">Simple Ranged Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00020>
+			<id-00021>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A quiver can hold up to 20 arrows.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Quiver</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 cp</cost>
+				<count type="number">20</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Arrow</name>
+				<subtype type="string">Ammunition</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.05</weight>
+			</id-00022>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
-				<name type="string">Two of your choice</name>
+				<name type="string">Infernal</name>
 			</id-00001>
 			<id-00002>
 				<name type="string">Common</name>
@@ -1096,30 +1247,42 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 			<id-00004>
-				<name type="string">Choice</name>
+				<name type="string">Dwarvish</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Draconic</name>
+			</id-00005>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">5</level>
 		<name type="string">Ethron</name>
-		<perception type="number">13</perception>
+		<notes type="string">Ku kal khan is not a good drinker \nSanvi goddes of vision - Difficulty hard\n</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
+		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powergroup>
 			<id-00001>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<stat type="string">charisma</stat>
+				<uses type="number">0</uses>
 			</id-00001>
 			<id-00002>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 			</id-00002>
 			<id-00003>
-				<name type="string">Effect</name>
+				<name type="string">SPEAR</name>
 			</id-00003>
 			<id-00004>
-				<name type="string">SpEAR</name>
+				<name type="string">Eldritch Invo</name>
 			</id-00004>
 			<id-00005>
-				<name type="string">SpeAR</name>
+				<name type="string">Class</name>
 			</id-00005>
 		</powergroup>
 		<powermeta>
@@ -1128,11 +1291,11 @@
 				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
-				<max type="number">2</max>
+				<max type="number">0</max>
 				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
@@ -1161,30 +1324,39 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots6>
 			<spellslots7>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots7>
 			<spellslots8>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots8>
 			<spellslots9>
 				<max type="number">0</max>
+				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">standard</powermode>
@@ -1201,7 +1373,10 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d10</dice>
+								<stat type="string">charisma</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">force</type>
 							</id-00001>
 						</damagelist>
@@ -1257,70 +1432,32 @@
 			</id-00002>
 			<id-00003>
 				<actions>
-					<id-00001>
-						<durmod type="number">10</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Fly; (C)</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a wing feather from any bird)</components>
 				<description type="formattedtext">
-					<p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p>
+					<p>When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.</p>
 				</description>
-				<duration type="string">Concentration, up to 10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
+				<group type="string">Eldritch Invo</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Fly</name>
+				<name type="string">Agonizing Blast</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Sorcerer, Warlock, Wizard</source>
 			</id-00003>
 			<id-00004>
 				<actions>
-					<id-00001>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d10,d10,d10</dice>
-								<type type="string">thunder</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
 				<description type="formattedtext">
-					<p>You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 300 feet away.</p>
-					<p>You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.</p>
-					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.</p>
+					<p>When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.</p>
+					<p></p>
 				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
+				<group type="string">Eldritch Invo</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Thunder Step</name>
+				<name type="string">Repelling Blast</name>
 				<prepared type="number">0</prepared>
-				<range type="string">90 feet</range>
-				<school type="string">Conjuration</school>
-				<source type="string">Sorcerer, Warlock, Wizard</source>
+				<ritual type="number">0</ritual>
 			</id-00004>
 			<id-00005>
 				<actions>
@@ -1334,7 +1471,9 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d6,d6</dice>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">necrotic</type>
 							</id-00001>
 						</damagelist>
@@ -1402,17 +1541,17 @@
 			<id-00007>
 				<actions>
 					<id-00001>
-						<atkprof type="number">1</atkprof>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
-						<savedcprof type="number">1</savedcprof>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d10</dice>
-								<type type="string">force</type>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
 						<order type="number">2</order>
@@ -1423,48 +1562,117 @@
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.</p>
-					<p>The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>
+					<p>You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">0</level>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Eldritch Blast</name>
+				<name type="string">Scorching Ray</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<school type="string">Evocation</school>
-				<source type="string">Warlock</source>
+				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00007>
 			<id-00008>
 				<actions>
 					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">charisma</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">warlock</stat>
+								<statmult type="number">1</statmult>
+							</id-00002>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
 						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
+						<type type="string">heal</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end)</components>
 				<description type="formattedtext">
-					<p>One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature must make a Constitution saving throw and is unaffected on a success.</p>
-					<p>The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move.</p>
-					<p>Otherwise, you can use your action to move the target, which must remain within the spell's range. When the spell ends, the target floats gently to the ground if it is still aloft.</p>
+					<p>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</p>
 				</description>
-				<duration type="string">Concentration, up to 10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
+				<group type="string">Class</group>
 				<locked type="number">1</locked>
-				<name type="string">Levitate</name>
+				<name type="string">Dark One's Blessing</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Warlock</source>
+				<specialization type="string">The Fiend</specialization>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<label type="string">Prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p>
+					<p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p>
+					<p><b>Approach. </b>The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p>
+					<p><b>Drop. </b>The target drops whatever it is holding and then ends its turn.</p>
+					<p><b>Flee. </b>The target spends its turn moving away from you by the fastest available means.</p>
+					<p><b>Grovel. </b>The target falls prone and then ends its turn.</p>
+					<p><b>Halt. </b>The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Command</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Transmutation</school>
-				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
-			</id-00008>
-			<id-00009>
+				<school type="string">Enchantment</school>
+				<source type="string">Cleric, Cleric Knowledge Domain, Warlock (Fiend), Paladin</source>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Vicious Weapon; DMG: 2d6, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00842@Incarnate-5eExpansion">Vicious Weapon</link>
+					</linklist>
+				</description>
+				<group type="string">SPEAR</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Weapon</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00010>
+			<id-00011>
 				<actions>
 					<id-00003>
 						<apply type="string">action</apply>
@@ -1499,41 +1707,167 @@
 						<link class="itemtemplate" recordname="itemtemplate.id-00006@Incarnate-5eExpansion">Giant Slayer</link>
 					</linklist>
 				</description>
-				<group type="string">SpeAR</group>
+				<group type="string">SPEAR</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Giant Slayer</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
-			</id-00009>
-			<id-00010>
+			</id-00011>
+			<id-00012>
 				<actions>
 					<id-00001>
-						<apply type="string">roll</apply>
-						<durmod type="number">1</durmod>
-						<label type="string">Vicious Weapon; DMG: 2d6, critical</label>
 						<order type="number">1</order>
-						<targeting type="string">self</targeting>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.</p>
+					<p>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Poison Spray</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00012>
+			<id-00013>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Invisible; (C)</label>
+						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (an eyelash encased in gum arabic)</components>
 				<description type="formattedtext">
+					<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Invisibility</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Druid Grassland Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
 					<linklist>
-						<link class="itemtemplate" recordname="itemtemplate.id-00842@Incarnate-5eExpansion">Vicious Weapon</link>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
 					</linklist>
 				</description>
-				<group type="string">SpEAR</group>
+				<group type="string">SPEAR</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Vicious Weapon</name>
+				<name type="string">Greater Potion of Healing</name>
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
-			</id-00010>
+			</id-00014>
+			<id-00015>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a vial of blood from a humanoid killed within the past 24 hours)</components>
+				<description type="formattedtext">
+					<p>You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.</p>
+					<table>
+						<tr>
+							<td><b>d6</b></td>
+							<td><b>Demons Summoned</b></td>
+						</tr>
+						<tr>
+							<td>1-2</td>
+							<td>Two demons of challenge rating 1 or lower</td>
+						</tr>
+						<tr>
+							<td>3-4</td>
+							<td>Four demons of challenge rating 1/2 or lower</td>
+						</tr>
+						<tr>
+							<td>5-6</td>
+							<td>Eight demons of challenge rating 1/4 or lower</td>
+						</tr>
+					</table>
+					<linklist>
+						<link class="table" recordname="tables.tab_summonlesserdemons@DD Xanathar's Guide to Everything Players"><b>Table: </b></link>Summon Demons</linklist>
+					<p>The DM chooses the demons, such as manes or dretches, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.</p>
+					<p>The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.</p>
+					<p>As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Summon Lesser Demons</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Warlock, Wizard</source>
+			</id-00015>
+			<id-00016>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can read all writing.</p>
+				</description>
+				<group type="string">Eldritch Invo</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Eyes of the Rune Keeper</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00016>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Weapon: Simple weapons</name>
@@ -1548,49 +1882,49 @@
 			<recordname>reference.racedata.half_elf@DD PHB Deluxe</recordname>
 		</racelink>
 		<senses type="string">Darkvision 60</senses>
-		<size type="string">Medium</size>
+		<size type="string">Large</size>
 		<skilllist>
 			<id-00001>
 				<misc type="number">0</misc>
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1686,7 +2020,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00009_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1710,13 +2044,14 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
-						<type type="string">piercing</type>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing, magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
@@ -1772,13 +2107,14 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
-						<type type="string">piercing</type>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing, magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
@@ -1792,6 +2128,50 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00004>
+			<id-00005>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Longsword +1</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10), magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Shortbow</name>
+				<prof type="number">1</prof>
+				<properties type="string">Ammunition (range 80/320), two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">1</type>
+			</id-00006>
 		</weaponlist>
 		<weight type="string">130KG</weight>
 	</character>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -18,9 +18,9 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">0</bonus>
-				<save type="number">0</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
-				<saveprof type="number">0</saveprof>
+				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
 			</dexterity>
 			<intelligence>
@@ -38,11 +38,11 @@
 				<score type="number">14</score>
 			</strength>
 			<wisdom>
-				<bonus type="number">1</bonus>
-				<save type="number">1</save>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">12</score>
+				<score type="number">10</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">7</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">758</amount>
+				<amount type="number">884</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">2</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">201</amount>
+				<amount type="number">215</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">204</amount>
+				<amount type="number">254</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,7 +96,8 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">0</armor>
+				<armor type="number">4</armor>
+				<dexbonus type="string">max2</dexbonus>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">2</misc>
 				<prof type="number">1</prof>
@@ -110,10 +111,10 @@
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">77.8</load>
+			<load type="number">101.05</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">589</exp>
+		<exp type="number">706</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
@@ -161,6 +162,18 @@
 					</linklist>
 				</text>
 			</id-00003>
+			<id-00004>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Arcane Alacrity</name>
+				<source type="string">Sorcerer</source>
+				<specialization type="string">Time Sorcery</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 6th level, when faced with danger, you manage to slow time just enough to narrowly avoid the brunt of it. You gain proficiency in Dexterity saving throws.</p>
+					<p>If you already have proficiency in Dexterity saving throws then you gain +1 to your Dexterity ability score.</p>
+				</text>
+			</id-00004>
 			<id-00005>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -310,11 +323,13 @@
 		<flaws type="string">I would rather lose honestly than lie to win.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">4'7&#34;</height>
+		<hero type="number">0</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
+			<total type="number">37</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Victory - I'll never make a bet unless I'm sure I can win. (Lawful)</ideals>
@@ -357,7 +372,7 @@
 				<istemplate type="number">0</istemplate>
 				<location type="string">Coin Pouch - Small</location>
 				<locked type="number">1</locked>
-				<name type="string">Playing Card Set</name>
+				<name type="string">Playing Card Set(-2)</name>
 				<subtype type="string">Gaming Set</subtype>
 				<type type="string">Tools</type>
 				<weight type="number">0.5</weight>
@@ -547,7 +562,7 @@
 			<id-00015>
 				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
-				<count type="number">10</count>
+				<count type="number">9</count>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
@@ -606,9 +621,20 @@
 				<type type="string">Tools</type>
 				<weight type="number">0.5</weight>
 			</id-00017>
+			<id-00018>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Half a Nothic eye</name>
+				<weight type="number">0</weight>
+			</id-00018>
 			<id-00019>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<name type="string">Wolf Pelt (Cloak)</name>
 				<weight type="number">3</weight>
@@ -622,7 +648,36 @@
 				<name type="string">Survival Manual (Green Yolks and Bacon)</name>
 				<weight type="number">0.5</weight>
 			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>On contact with this poison a creature must make a DC 12 Constitution saving throw. On a failure the target takes 2d6 poison damage and is blinded for 1d3 hours. On a successful save the damage is reduced by half and the target isn't blinded. Failure by 5 or more results in paralyzation while poisoned.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Scorpion Venom</name>
+				<nonid_name type="string">A small vial</nonid_name>
+				<nonidentified type="string">This vial contains a viscous straw colored liquid</nonidentified>
+				<subtype type="string">Poison</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
 			<id-00022>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A box, bound in black fabric and containing the eye of an Old Teller.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Old Teller's Eye</name>
+				<type type="string">Lore</type>
+				<weight type="number">0</weight>
+			</id-00022>
+			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -651,7 +706,6 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Greater Potion of Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -659,7 +713,27 @@
 				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
-			</id-00022>
+			</id-00023>
+			<id-00024>
+				<ac type="number">14</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1050 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.</p>
+					<p>Mithril is a light, flexible metal. A mithril chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithril version of the armor doesn't.</p>
+				</description>
+				<dexbonus type="string">Yes (max 2)</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Mithril Scale Mail Armor</name>
+				<nonid_name type="string">Scale Mail</nonid_name>
+				<nonidentified type="string">Some well-crafted scale mail armor.</nonidentified>
+				<subtype type="string">Medium Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">22.5</weight>
+			</id-00024>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -669,10 +743,11 @@
 				<name type="string">Dwarvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">7</level>
 		<name type="string">Dug of Barreldon</name>
 		<notes type="string">Adar of Almelon - Crow's Nest, Ebtevib | Wheel of Fortune</notes>
-		<perception type="number">11</perception>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
+		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I gambled big and lost. Never again.\nI would bet good coin on anything, even simple activities.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -688,6 +763,9 @@
 			<id-00003>
 				<name type="string">Class</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Item</name>
+			</id-00004>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -732,14 +810,14 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
+				<max type="number">1</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -763,7 +841,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -888,7 +966,10 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
 				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
 			</id-00004>
 			<id-00005>
 				<actions>
@@ -928,6 +1009,34 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00006>
 			<id-00007>
 				<actions>
 					<id-00001>
@@ -1028,7 +1137,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Sorcery Points</name>
-				<prepared type="number">5</prepared>
+				<prepared type="number">6</prepared>
 			</id-00010>
 			<id-00011>
 				<actions>
@@ -1123,6 +1232,7 @@
 						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkeness</link>
 					</linklist>
 				</description>
+				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Stages of Drunkeness</name>
@@ -1248,6 +1358,22 @@
 				<school type="string">Necromancy</school>
 				<source type="string">Sorcerer, Warlock, Wizard</source>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">DMG: [-STR]</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<name type="string">Offhand</name>
+				<prepared type="number">0</prepared>
+			</id-00018>
 			<id-00019>
 				<actions>
 					<id-00001>
@@ -1327,6 +1453,56 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Fly; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a wing feather from any bird)</components>
+				<description type="formattedtext">
+					<p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fly</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00021>
+			<id-00022>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Counterspell</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00022>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1356,7 +1532,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
@@ -1384,14 +1560,14 @@
 				<name type="string">Medicine</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1433,7 +1609,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">3</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1475,7 +1651,7 @@
 				<name type="string">Animal Handling</name>
 				<prof type="number">0</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00018>
 			<id-00019>
 				<name type="string">Stonecunning</name>
@@ -1532,7 +1708,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
