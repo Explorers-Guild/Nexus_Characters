@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">100</amount>
+				<amount type="number">344</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">106</amount>
+				<amount type="number">139</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">46</amount>
+				<amount type="number">73</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,12 +110,24 @@
 			<encumbered type="number">150</encumbered>
 			<encumberedheavy type="number">300</encumberedheavy>
 			<liftpushdrag type="number">900</liftpushdrag>
-			<load type="number">75.5</load>
+			<load type="number">77.5</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">416</exp>
+		<exp type="number">490</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Mobile</name>
+				<text type="formattedtext">
+					<p>You are exceptionally speedy and agile. You gain the following benefits:</p>
+					<list>
+						<li>Your speed increases by 10 feet.</li>
+						<li>When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn.</li>
+						<li>When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.</li>
+					</list>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -355,6 +367,29 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0.25</weight>
 			</id-00007>
+			<id-00008>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.mantleofspellresistance@Incarnate-5eExpansion">Mantle of Spell Resistance</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have advantage on saving throws against spells while you wear this cloak.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Mantle of Spell Resistance</name>
+				<nonid_name type="string">Cloak</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">2</weight>
+			</id-00008>
 			<id-00009>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -500,12 +535,18 @@
 			<id-00001>
 				<name type="string">Racial Abilities</name>
 			</id-00001>
+			<id-00002>
+				<name type="string">Standard Actions</name>
+			</id-00002>
 			<id-00003>
 				<name type="string">Background Feature</name>
 			</id-00003>
 			<id-00004>
 				<name type="string">Class Feature</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Clothing</name>
+			</id-00005>
 			<id-00006>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
@@ -691,6 +732,31 @@
 				<source type="string">Bugbear</source>
 				<type type="string">racial</type>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Standard Actions</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00006>
 			<id-00007>
 				<actions>
 				</actions>
@@ -705,10 +771,56 @@
 				<prepared type="number">0</prepared>
 				<source type="string">Outlander</source>
 			</id-00007>
-			<id-00010>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - check; ADVCHK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help - attack; ADVATK</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.</p>
+					<p>Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target beforre your next turn, the first attack roll is made with advantage.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Standard Actions</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Help</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00008>
+			<id-00009>
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</description>
+				<group type="string">Class Feature</group>
+				<locked type="number">1</locked>
+				<name type="string">Monk: Slow Fall</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Monk</source>
+			</id-00009>
+			<id-00010>
+				<actions>
+				</actions>
+				<cast type="number">2</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
 					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
@@ -799,7 +911,7 @@
 				<group type="string">Class Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Darkness (60) (C)</name>
+				<name type="string">SA: Darkness (60) (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
@@ -826,7 +938,7 @@
 				<group type="string">Class Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Darkvision (T)</name>
+				<name type="string">SA: Darkvision (T)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
@@ -861,7 +973,7 @@
 				<group type="string">Class Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Pass without Trace (S) (C)</name>
+				<name type="string">SA: Pass without Trace (S) (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
@@ -897,13 +1009,38 @@
 				<group type="string">Class Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Silence (120) (C)</name>
+				<name type="string">SA: Silence (120) (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Illusion</school>
 				<source type="string">Bard, Cleric, Druid Desert Circle, Monk, Ranger</source>
 			</id-00015>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Mantle of Spell Resistance; Magic Resistance</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00958@Incarnate-5eExpansion">Mantle of Spell Resistance</link>
+					</linklist>
+				</description>
+				<group type="string">Clothing</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Mantle of Spell Resistance</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00017>
 			<id-00018>
 				<actions>
 					<id-00001>
@@ -1200,13 +1337,13 @@
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">30</base>
-			<misc type="number">10</misc>
+			<misc type="number">20</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">40</total>
+			<total type="number">50</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

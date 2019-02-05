@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">13</score>
@@ -55,8 +55,8 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">2</hdused>
-				<level type="number">4</level>
+				<hdused type="number">0</hdused>
+				<level type="number">5</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -66,21 +66,21 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">154</amount>
+				<amount type="number">398</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
 				<amount type="number">0</amount>
 			</slot2>
 			<slot3>
-				<amount type="number">98</amount>
+				<amount type="number">131</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">60</amount>
+				<amount type="number">87</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -91,23 +91,44 @@
 			<ac>
 				<armor type="number">1</armor>
 				<disstealth type="number">0</disstealth>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">16</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">92.8</load>
+			<load type="number">88.6</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">429</exp>
+		<exp type="number">503</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Blademaster</name>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.blademaster@Incarnate-5eExpansion">Blademaster</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Dexterity or Strength 13 or higher.</p>
+					<p>You are one with the blade, performing feats of swordsmanship others find impossible. While wielding a weapon that deals Slashing damage and does not have the heavy property, you gain the following benefits:</p>
+					<list>
+						<li>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.</li>
+						<li>When you are hit by a ranged weapon attack, you can use your reaction to deflect the missile. When you do so, the damage you take is reduced by 1d10 + your character level + your Dexterity or Strength modifier. If you reduce the damage to 0 or less, you slice the projectile out of the air, destroying it.</li>
+						<li>You gain a +1 bonus to AC.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Blademaster_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -215,7 +236,7 @@
 			<id-00007>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Fighting Style</name>
+				<name type="string">Fighting Style(defense)</name>
 				<source type="string">Ranger</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -298,6 +319,16 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<hero type="number">2</hero>
 		<herodice type="string">d6</herodice>
@@ -305,8 +336,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">30</total>
-			<wounds type="number">10</wounds>
+			<total type="number">38</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -346,21 +377,26 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">15 GP</cost>
+				<cost type="string">50 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Skill Coding</h>
 					<linklist>
-						<link class="reference_skill" recordname="skill.id-00244@Incarnate-5eExpansion">Cartographer's Tools</link>
+						<link class="reference_skill" recordname="skill.id-00261@Incarnate-5eExpansion">Poisoner's Kit</link>
+					</linklist>
+					<h>Description</h>
+					<p>A poisoner's kit includes the 5 vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00063@Incarnate-5eExpansion">Rules for Using Poisoner's Kit</link>
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Cartographer's Tools</name>
-				<subtype type="string">Artisan's Tool</subtype>
+				<name type="string">Poisoner's Kit</name>
+				<subtype type="string">Tool</subtype>
 				<type type="string">Tool</type>
-				<weight type="number">6</weight>
+				<weight type="number">2</weight>
 			</id-00003>
 			<id-00004>
 				<ac type="number">0</ac>
@@ -373,7 +409,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Clothes, Common</name>
+				<name type="string">Clothes, Common,dark</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
@@ -409,28 +445,8 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00006>
-			<id-00007>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 SP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Skill Coding</h>
-					<linklist>
-						<link class="reference_skill" recordname="skill.id-00263@Incarnate-5eExpansion">Dice Set</link>
-					</linklist>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Dice Set</name>
-				<subtype type="string">Gaming Set</subtype>
-				<type type="string">Tool</type>
-				<weight type="number">0.2</weight>
-			</id-00007>
 			<id-00008>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -719,10 +735,10 @@
 				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">kandarin</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">14</perception>
+		<perception type="number">15</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powergroup>
 			<id-00001>
@@ -775,11 +791,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">3</max>
-				<used type="number">2</used>
+				<max type="number">4</max>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
@@ -813,6 +829,26 @@
 		</powermeta>
 		<powermode type="string">standard</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Lesser Restoration</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Druid, Paladin, Ranger</source>
+			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00001>
@@ -978,8 +1014,38 @@
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Paladin</source>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d4,d4</dice>
+								<type type="string">piercing,magic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)</components>
+				<description type="formattedtext">
+					<p>The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.</p>
+					<p>The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Spike Growth</name>
+				<prepared type="number">0</prepared>
+				<range type="string">150 feet</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger</source>
+			</id-00007>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Poisoners kit</name>
@@ -1003,25 +1069,25 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00001>
 			<id-00002>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<name type="string">Arcana</name>
@@ -1098,7 +1164,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1158,9 +1224,10 @@
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
+						<bonus type="number">2</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
