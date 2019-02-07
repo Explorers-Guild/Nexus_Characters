@@ -4,7 +4,7 @@
 		<abilities>
 			<charisma>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">114</amount>
+				<amount type="number">897</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +79,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">96</amount>
+				<amount type="number">156</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">61</amount>
+				<amount type="number">97</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,11 +108,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">45</load>
+			<load type="number">47</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">443</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">522</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -270,17 +270,37 @@
 					<p>At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Font of Inspiration</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Bardic Inspiration (now d8)</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>The Bardic Inspiration die increases to a d8.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'10&#34;</height>
-		<hero type="number">2</hero>
+		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
+			<total type="number">33</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I like seeing the smiles on people's faces when I perform. That's all that matters. Honesty. Art should reflect the soul; it should come from within and reveal who we really are.</ideals>
@@ -428,6 +448,7 @@
 				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<name type="string">Body</name>
+				<weight type="number">0</weight>
 			</id-00009>
 			<id-00010>
 				<ac type="number">0</ac>
@@ -723,6 +744,43 @@
 				<name type="string">Giant Snake Skin (poor)</name>
 				<weight type="number">30</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">4250 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing, magic</damage>
+				<description type="formattedtext">
+					<p>A rapier with a bejeweled, octopus-shaped hilt</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.beastslayer@Incarnate-5eExpansion">Beast Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an undead with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;beast&#34; refers to any creature with the undead type.</p>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.</p>
+					<p><b>Curse </b>. This ax is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the ax, keeping it within reach at all times. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear.</p>
+					<p>Whenever a hostile creature damages you while the ax is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to attack the creature nearest to you with the ax. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to attack the next nearest creature after you fell your current target. If you have multiple possible targets, you attack one at random. You are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Berserker Rapier of Beast Slaying</name>
+				<nonidentified type="string">ERROR</nonidentified>
+				<properties type="string">Finesse</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00028>
+			<id-00030>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Giant Poisonous Snake head</name>
+				<weight type="number">0</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -732,10 +790,10 @@
 				<name type="string">Elvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Vo'Bil Vicks</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">15</perception>
+		<perception type="number">17</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I love a good insult, even one directed at me.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -797,14 +855,14 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
 				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -846,7 +904,9 @@
 			<id-00002>
 				<actions>
 				</actions>
+				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Sealing Wax</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">once</usesperiod>
@@ -856,13 +916,17 @@
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Ink (1oz bottle)</name>
 				<prepared type="number">1</prepared>
+				<usesperiod type="string">once</usesperiod>
 			</id-00003>
 			<id-00004>
 				<actions>
 				</actions>
+				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Oil (Flask)</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">once</usesperiod>
@@ -890,9 +954,10 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Bardic Inspiration</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">2</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Bard - Class Ability</source>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00005>
 			<id-00006>
 				<actions>
@@ -946,7 +1011,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Cutting Words</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">2</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Bard - Class Ability</source>
 			</id-00007>
@@ -955,6 +1020,7 @@
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Lamp</name>
 				<prepared type="number">1</prepared>
 			</id-00008>
@@ -1481,7 +1547,9 @@
 			<id-00027>
 				<actions>
 				</actions>
+				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Perfume (Vial)</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">once</usesperiod>
@@ -1491,13 +1559,16 @@
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Soap</name>
 				<prepared type="number">1</prepared>
 			</id-00028>
 			<id-00029>
 				<actions>
 				</actions>
+				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Paper (One Sheet)</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">once</usesperiod>
@@ -1507,6 +1578,7 @@
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Consumables</group>
+				<level type="number">0</level>
 				<name type="string">Waterskin</name>
 				<prepared type="number">2</prepared>
 			</id-00030>
@@ -1556,8 +1628,87 @@
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Warlock</source>
 			</id-00032>
+			<id-00033>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">1</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Consumables</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+				<usesperiod type="string">once</usesperiod>
+			</id-00033>
+			<id-00034>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">1</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Consumables</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00034>
+			<id-00035>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a small crystal bead)</components>
+				<description type="formattedtext">
+					<p>A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.</p>
+					<p>Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.</p>
+					<p>Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.</p>
+				</description>
+				<duration type="string">8 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Leomund's Tiny Hut</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (10-foot-radius hemisphere)</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00035>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Disguise kit, Flute</name>
@@ -1585,35 +1736,35 @@
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">7</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Performance</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1634,7 +1785,7 @@
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1662,21 +1813,21 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1690,7 +1841,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1716,7 +1867,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1843,6 +1994,29 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Berserker Rapier of Beast Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00028</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
 		</weaponlist>
 		<weight type="string">150lbs</weight>
 	</character>
