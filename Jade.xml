@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">4</bonus>
-				<save type="number">7</save>
+				<save type="number">8</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">18</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">1</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">13</score>
@@ -58,9 +58,11 @@
 		<bonds type="string">I am the last of my tribe, and it is up to me to ensure their names enter legend.\nAn injury to the unspoiled wilderness of my home is an injury to me.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">7</level>
+				<level type="number">9</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -74,11 +76,11 @@
 				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">86</amount>
+				<amount type="number">197</amount>
 				<name type="string">CP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">917</amount>
+				<amount type="number">826</amount>
 				<name type="string">GP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">20</amount>
+				<amount type="number">102</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,11 +111,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">459.84</load>
+			<load type="number">149.58</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">781</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">910</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -129,8 +131,36 @@
 					</linklist>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Blowgun Expert</name>
+				<text type="formattedtext">
+					<h>Description</h>
+					<p>You have become an expert with the blowgun, learning how to use it silently, as well as knowing where to hit creatures to maximize the effectiveness of poisoned darts. You gain the following benefits:</p>
+					<list>
+						<li>You gain proficiency with blowguns if you are not already proficient.</li>
+						<li>You gain a +1 bonus to attack rolls with a blowgun.</li>
+						<li>Attacking with a blowgun at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+						<li>When you hit with a blowgun while hidden, your location is not revealed.</li>
+						<li>When you hit with a blowgun with a dart that has poisoned applied to it, the target has disadvantage on saving throws against the poison.</li>
+					</list>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Blowgun_Expert_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
+			<id-00001>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (lvl 8)</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00001>
 			<id-00002>
 				<locked type="number">1</locked>
 				<name type="string">Medical Profession</name>
@@ -300,15 +330,28 @@
 					<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <i>ice storm </i>spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">9</level>
+				<locked type="number">1</locked>
+				<name type="string">Supreme Sneak</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Thief</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I am too enamored of ale, wine, and other intoxicants.\nThere's no room for caution in a life lived to the fullest.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'5&#34;</height>
+		<hero type="number">3</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
+			<total type="number">57</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. (Good)</ideals>
@@ -321,8 +364,9 @@
 			<id-00001>
 				<carried type="number">1</carried>
 				<cost type="string">5 cp</cost>
-				<count type="number">1</count>
+				<count type="number">40</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack slot</location>
 				<locked type="number">1</locked>
 				<name type="string">Arrow</name>
 				<subtype type="string">Ammunition</subtype>
@@ -350,6 +394,7 @@
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Bell</name>
 				<subtype type="string">Standard</subtype>
@@ -357,10 +402,11 @@
 				<weight type="number">0.05</weight>
 			</id-00003>
 			<id-00004>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Hammer</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -375,6 +421,7 @@
 					<p>A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Lantern, Hooded</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -389,6 +436,7 @@
 					<p>Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. Each type of musical instrument requires a separate proficiency.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Pan Flute</name>
 				<subtype type="string">Musical Instrument</subtype>
@@ -398,8 +446,9 @@
 			<id-00007>
 				<carried type="number">1</carried>
 				<cost type="string">5 cp</cost>
-				<count type="number">1</count>
+				<count type="number">10</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Piton</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -408,25 +457,16 @@
 			</id-00007>
 			<id-00008>
 				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 piercing</damage>
-				<description type="formattedtext">
-					<p></p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Spear</name>
-				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
+				<count type="number">3</count>
+				<name type="string">Healing herbs</name>
+				<weight type="number">0</weight>
 			</id-00008>
 			<id-00009>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">String (10 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -434,13 +474,14 @@
 				<weight type="number">0.01</weight>
 			</id-00009>
 			<id-00010>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torchor anything else with abundant, exposed fueltakes an action. Lighting any other fire takes 1 minute.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Tinderbox</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -450,6 +491,7 @@
 			<id-00011>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Towel</name>
 				<weight type="number">0.5</weight>
@@ -465,8 +507,9 @@
 			<id-00013>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
-				<name type="string">Canteen (half full)</name>
+				<name type="string">Canteen (full)</name>
 				<weight type="number">1</weight>
 			</id-00013>
 			<id-00014>
@@ -475,6 +518,7 @@
 				<count type="number">1</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -493,6 +537,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger 2nd</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -511,6 +556,7 @@
 					<p>was found in Black Rucksack.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Fancy Clockwork Scabbard</name>
 				<type type="string">Scabbard</type>
@@ -521,7 +567,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -545,6 +591,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Bag (Small)</location>
 				<locked type="number">1</locked>
 				<name type="string">Greater Potion of Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -554,11 +601,12 @@
 				<weight type="number">0.5</weight>
 			</id-00017>
 			<id-00018>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 slashing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Handaxe</name>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -576,6 +624,7 @@
 					<p>Was fixed and is now used to hold large amounts of poison.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Jug holds 100 uses</name>
 				<rarity type="string">Common</rarity>
@@ -587,7 +636,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -611,6 +660,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Bag (Small)</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Healing</name>
 				<nonid_name type="string">Dull Potion</nonid_name>
@@ -622,11 +672,12 @@
 			<id-00021>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<p>A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Pouch</name>
 				<subtype type="string">Standard</subtype>
@@ -639,6 +690,7 @@
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Rapier</name>
 				<properties type="string">Finesse</properties>
@@ -651,6 +703,7 @@
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Waterskin</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -675,11 +728,12 @@
 			<id-00025>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">1</count>
+				<count type="number">5</count>
 				<description type="formattedtext">
 					<p>For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Candle</name>
 				<subtype type="string">Standard</subtype>
@@ -690,10 +744,11 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<p>You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 15 Constitution saving throw or take 3d6 poison damage and the poisoned for the next 1 hour. Once applied, the poison retains potency for 1 minute before draying.</p>
 				</description>
+				<location type="string">Bag (Small)</location>
 				<locked type="number">1</locked>
 				<name type="string">Fungus amugus (Vial)</name>
 				<weight type="number">1</weight>
@@ -701,7 +756,7 @@
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">600 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -711,6 +766,7 @@
 					<p>Placing a bag of holding inside an extra-dimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one--way only and can't be reopened.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black Rucksack</location>
 				<locked type="number">1</locked>
 				<name type="string">Hidden Black Bag of Holding</name>
 				<nonid_name type="string">Large burlap bag.</nonid_name>
@@ -724,11 +780,12 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<p>You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before draying.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Bag (Small)</location>
 				<locked type="number">1</locked>
 				<name type="string">Poison, Basic (Vial)</name>
 				<subtype type="string">Standard</subtype>
@@ -736,21 +793,28 @@
 				<weight type="number">0.1</weight>
 			</id-00028>
 			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
-				<damage type="string">1 piercing</damage>
+				<damage type="string">1 piercing, 1d4 necrotic</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
-				<name type="string">Blowgun</name>
-				<properties type="string">Ammunition (range 25/100), loading</properties>
+				<name type="string">Fellforged Blowgun of 2 shots</name>
+				<properties type="string">Ammunition (range 25/100), loading, 2 shots</properties>
 				<subtype type="string">Martial Ranged Weapons</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00029>
 			<id-00030>
 				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<count type="number">6</count>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Small Cloth</name>
 				<weight type="number">0.2</weight>
@@ -760,6 +824,7 @@
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Body</location>
 				<locked type="number">1</locked>
 				<name type="string">Clothes, Traveler's</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -776,6 +841,7 @@
 					<p>These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Head</location>
 				<locked type="number">1</locked>
 				<name type="string">Eyes of the Eagle</name>
 				<nonid_name type="string">Crystal Lenses</nonid_name>
@@ -790,14 +856,15 @@
 				<carried type="number">1</carried>
 				<cost type="string">550 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 slashing</damage>
+				<damage type="string">1d8 slashing, 1d4 fire</damage>
 				<description type="formattedtext">
 					<p>You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
 					<p>Mithril weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
 				</description>
+				<location type="string">Fancy Clockwork Scabbard</location>
 				<locked type="number">1</locked>
-				<name type="string">Mithril Longsword, +1 of Shame</name>
-				<properties type="string">Versatile (1d10), finesse, light</properties>
+				<name type="string">Mithril Longsword, +1 of Pride</name>
+				<properties type="string">Versatile (1d10), finesse, light, magic</properties>
 				<rarity type="string">uncommon</rarity>
 				<subtype type="string">Martial Weapons</subtype>
 				<type type="string">Weapon</type>
@@ -806,11 +873,12 @@
 			<id-00034>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Ankheg Carapace ac 14</name>
 				<weight type="number">50</weight>
@@ -818,11 +886,12 @@
 			<id-00035>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
+				<count type="number">5</count>
 				<description type="formattedtext">
 					<p>As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make this save.&#34;</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Ball Bearings (1,000)</name>
 				<subtype type="string">Standard</subtype>
@@ -830,13 +899,14 @@
 				<weight type="number">2</weight>
 			</id-00035>
 			<id-00036>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>A set of pulleys with a cable threaded through them and a hook to attach to objects, a block and tackle allows you to hoist up to four times the weight you can normally lift.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Block And Tackle</name>
 				<subtype type="string">Standard</subtype>
@@ -844,8 +914,9 @@
 				<weight type="number">5</weight>
 			</id-00036>
 			<id-00037>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Bottle of Rum</name>
 				<weight type="number">1</weight>
@@ -858,6 +929,7 @@
 					<p>A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself; when you do, you can't fall more than 25 feet from the point where you anchored yourself, and you can't climb more than 25 feet away from that point without undoing the anchor.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Climber's Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -865,13 +937,14 @@
 				<weight type="number">12</weight>
 			</id-00038>
 			<id-00039>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Crowbar</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -881,18 +954,20 @@
 			<id-00040>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>We need more test subjects! collect some more and bring them to our colloseum.</p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Duergar note</name>
 				<weight type="number">0.1</weight>
 			</id-00040>
 			<id-00041>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<carried type="number">0</carried>
+				<count type="number">139</count>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Empty (Flask)</name>
 				<weight type="number">0.1</weight>
@@ -900,19 +975,21 @@
 			<id-00042>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<carried type="number">0</carried>
+				<count type="number">4</count>
 				<description type="formattedtext">
 					<p>Necrotic metal can be use to make meduin or heavy aumor with necrotic resistance.</p>
 					<p>Or weapons with 1d6 necrotic damage.</p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Fellforged Metal</name>
 				<weight type="number">0</weight>
 			</id-00042>
 			<id-00043>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Gnoll Fang Helmet</name>
 				<weight type="number">1</weight>
@@ -922,6 +999,7 @@
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Grappling Hook</name>
 				<subtype type="string">Standard</subtype>
@@ -936,6 +1014,7 @@
 					<p>This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Healer's Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -961,6 +1040,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Herbalism Kit</name>
 				<subtype type="string">Tool</subtype>
@@ -968,13 +1048,14 @@
 				<weight type="number">3</weight>
 			</id-00046>
 			<id-00047>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Hunting Trap</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -984,13 +1065,14 @@
 			<id-00048>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 CP</cost>
-				<count type="number">1</count>
+				<count type="number">5</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Jug 8 pints</name>
 				<subtype type="string">Standard</subtype>
@@ -1000,11 +1082,12 @@
 			<id-00049>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Humanoids must succeed on a DC 10 Constitution saving throw to avoid becoming poisoned from the smell for 1 hour.</p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Jug of fungi decay</name>
 				<weight type="number">9</weight>
@@ -1012,35 +1095,39 @@
 			<id-00050>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>A creature that eats any of the fungus must make a DC 15 Constitution saving throw. On a failure, the character becomes poisoned. On a success, the character gains a +2 bonus on attack and damage rolls for 1 minute. Fungus</p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Jug of Fungus</name>
 				<weight type="number">9</weight>
 			</id-00050>
 			<id-00051>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<carried type="number">0</carried>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<p>has 8 flasks worth of oil.</p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Jug of oil 8 pints</name>
 				<weight type="number">9</weight>
 			</id-00051>
 			<id-00052>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Mammoth Pelt (fine) ac 13</name>
 				<weight type="number">120</weight>
 			</id-00052>
 			<id-00053>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Mammoth Tusk (Pistine)</name>
 				<weight type="number">10</weight>
@@ -1048,13 +1135,14 @@
 			<id-00054>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 sp</cost>
-				<count type="number">1</count>
+				<count type="number">40</count>
 				<description type="formattedtext">
 					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black Rucksack</location>
 				<locked type="number">1</locked>
 				<name type="string">Oil (Flask)</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -1080,6 +1168,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Poisoner's Kit</name>
 				<subtype type="string">Tool</subtype>
@@ -1089,11 +1178,12 @@
 			<id-00056>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">1</count>
+				<count type="number">10</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Rations (1 Day)</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -1103,7 +1193,7 @@
 			<id-00057>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">900 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1120,6 +1210,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Lightning Resistance</name>
 				<nonid_name type="string">Ring</nonid_name>
@@ -1131,24 +1222,26 @@
 			<id-00058>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>A rope ladder from a past adventure. has 2 Pitons on one end, Shaft of Oak can be use to make it a makeshift bridge that can span no larger then 30 feet.</p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope Ladder (30 Feet)</name>
 				<type type="string">Ladder</type>
 				<weight type="number">10</weight>
 			</id-00058>
 			<id-00059>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -1156,13 +1249,14 @@
 				<weight type="number">10</weight>
 			</id-00059>
 			<id-00060>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">1</count>
+				<count type="number">28</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Sack</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -1172,22 +1266,24 @@
 			<id-00061>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Used to make rope ladder a makeshift bridge.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Shaft of Oak</name>
 				<type type="string">Part</type>
 				<weight type="number">3</weight>
 			</id-00061>
 			<id-00062>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Shovel</name>
 				<subtype type="string">Standard</subtype>
@@ -1195,13 +1291,14 @@
 				<weight type="number">5</weight>
 			</id-00062>
 			<id-00063>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Spike, Iron (10)</name>
 				<subtype type="string">Standard</subtype>
@@ -1209,13 +1306,14 @@
 				<weight type="number">5</weight>
 			</id-00063>
 			<id-00064>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>An arcane focus is a special iteman orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar itemdesigned to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in chapter 10.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Staff</name>
 				<subtype type="string">Arcane Focus</subtype>
@@ -1225,12 +1323,13 @@
 			<id-00065>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">550 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Can be used to make any meduim armor</p>
 				</description>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Termite Queen Carapace</name>
 				<weight type="number">50</weight>
@@ -1254,6 +1353,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Thieves' Tools</name>
 				<subtype type="string">Tool</subtype>
@@ -1274,6 +1374,7 @@
 					<p>Poisons effects can be changed by the dm/gm to suit the game if current effects are deemed to powerful.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Jug holds 100 uses</location>
 				<locked type="number">1</locked>
 				<name type="string">Sylvan Brown oil poison 20 uses</name>
 				<nonidentified type="string">poisonous</nonidentified>
@@ -1288,6 +1389,7 @@
 					<p>A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Lantern, Bullseye</name>
 				<subtype type="string">Standard</subtype>
@@ -1304,6 +1406,7 @@
 				</description>
 				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Body</location>
 				<locked type="number">1</locked>
 				<name type="string">Leather</name>
 				<stealth type="string">-</stealth>
@@ -1313,17 +1416,19 @@
 				<weight type="number">10</weight>
 			</id-00069>
 			<id-00070>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Nothic claw</name>
 				<weight type="number">2</weight>
 			</id-00070>
 			<id-00071>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Pick, Miner's</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -1331,8 +1436,9 @@
 				<weight type="number">10</weight>
 			</id-00071>
 			<id-00072>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion vial full of Basilisk blood</name>
 				<weight type="number">1</weight>
@@ -1340,8 +1446,9 @@
 			<id-00073>
 				<carried type="number">1</carried>
 				<cost type="string">2 cp</cost>
-				<count type="number">1</count>
+				<count type="number">50</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Blowgun Needle</name>
 				<subtype type="string">Ammunition</subtype>
@@ -1351,11 +1458,12 @@
 			<id-00074>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
+				<count type="number">5</count>
 				<description type="formattedtext">
 					<p>As an action, you can spend a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
 				<locked type="number">1</locked>
 				<name type="string">Caltrops (20)</name>
 				<subtype type="string">Standard</subtype>
@@ -1372,6 +1480,7 @@
 					<p>While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Hand</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Free Action</name>
 				<nonid_name type="string">Ring</nonid_name>
@@ -1476,6 +1585,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Cape</location>
 				<locked type="number">1</locked>
 				<name type="string">Robe of Useful Items</name>
 				<nonid_name type="string">Robe covered in patches</nonid_name>
@@ -1488,12 +1598,13 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<p>On contact with this poison a creature must make a DC 12 Constitution saving throw. On a failure the target takes 2d6 poison damage and is blinded for 1d3 hours. On a successful save the damage is reduced by half and the target isn't blinded. Failure by 5 or more results in paralyzation while poisoned.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Bag (Small)</location>
 				<locked type="number">1</locked>
 				<name type="string">Scorpion Venom</name>
 				<nonid_name type="string">A small vial</nonid_name>
@@ -1513,6 +1624,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack slot</location>
 				<locked type="number">1</locked>
 				<name type="string">Shortbow</name>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>
@@ -1523,6 +1635,7 @@
 			<id-00079>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Neck</location>
 				<locked type="number">1</locked>
 				<name type="string">Trophy Necklace</name>
 				<weight type="number">0</weight>
@@ -1530,6 +1643,7 @@
 			<id-00080>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Trophy Necklace</location>
 				<locked type="number">1</locked>
 				<name type="string">Etten Tooth</name>
 				<weight type="number">0.2</weight>
@@ -1539,11 +1653,12 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">priceless</cost>
-				<count type="number">1</count>
+				<count type="number">7</count>
 				<description type="formattedtext">
 					<p>Trophy from the hellhound he killed. (part of the outlander background)</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Trophy Necklace</location>
 				<locked type="number">1</locked>
 				<name type="string">Hellhound Tooth</name>
 				<weight type="number">0.1</weight>
@@ -1555,6 +1670,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Trophy Necklace</location>
 				<locked type="number">1</locked>
 				<name type="string">Imp dust(Flask)</name>
 				<weight type="number">1</weight>
@@ -1562,6 +1678,7 @@
 			<id-00083>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Trophy Necklace</location>
 				<locked type="number">1</locked>
 				<name type="string">Owlbear Claws</name>
 				<weight type="number">0.15</weight>
@@ -1578,6 +1695,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Vandin's Dagger</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -1585,13 +1703,299 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00084>
+			<id-00085>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Bag (Small)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00085>
+			<id-00086>
+				<carried type="number">0</carried>
+				<count type="number">6</count>
+				<location type="string">Hidden Black Bag of Holding</location>
+				<name type="string">potion vials</name>
+				<weight type="number">0.1</weight>
+			</id-00086>
+			<id-00087>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Backpack slot</name>
+				<weight type="number">0</weight>
+			</id-00087>
+			<id-00088>
+				<carried type="number">1</carried>
+				<cost type="string">50 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Bag (Small)</location>
+				<locked type="number">1</locked>
+				<name type="string">Antitoxin (Vial)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00088>
+			<id-00089>
+				<carried type="number">1</carried>
+				<cost type="string">25 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section).</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Book of Jades Medical and Poison notes</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00089>
+			<id-00090>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Trophy Necklace</location>
+				<name type="string">Nightmare ash in a flask</name>
+				<weight type="number">1</weight>
+			</id-00090>
+			<id-00091>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">550 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d10 slashing, 1d4 fire</damage>
+				<description type="formattedtext">
+					<p>You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+					<p>Mithril weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
+				</description>
+				<location type="string">Fancy Clockwork Scabbard</location>
+				<locked type="number">1</locked>
+				<name type="string">Mithril Longsword, +1 of Pride(1d10)</name>
+				<properties type="string">Versatile (1d10), finesse, light</properties>
+				<rarity type="string">uncommon</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0</weight>
+			</id-00091>
+			<id-00092>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.enlargereduce@Incarnate-5eExpansion">Enlarge/Reduce</link>
+					</linklist>
+					<p>When you drink this potion, you gain the &#34;enlarge&#34; effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts.</p>
+					<p>Shaking the bottle fails to interrupt this process.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Growth</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00092>
+			<id-00093>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Found in a small container, this powder resembles very fine sand. It appears to be dust of disappearance, and an identify spell reveals it to be such. There is enough of it for one use.</p>
+					<p>When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating.</p>
+					<p>As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration spell can also end the effect on a creature.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Dust of Sneezing and Choking</name>
+				<nonid_name type="string">Bag of Dust</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00093>
+			<id-00095>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 piercing</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Long Spear</name>
+				<properties type="string">Thrown (range 20/60), Finesse, reach</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00095>
+			<id-00096>
+				<carried type="number">1</carried>
+				<cost type="string">2 CP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink Pen</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.02</weight>
+			</id-00096>
+			<id-00097>
+				<carried type="number">1</carried>
+				<cost type="string">10 GP</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Ink (1-ounce Bottle)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.06</weight>
+			</id-00097>
+			<id-00098>
+				<carried type="number">1</carried>
+				<count type="number">5</count>
+				<location type="string">Trophy Necklace</location>
+				<name type="string">Hellhound Claws</name>
+				<weight type="number">0.1</weight>
+			</id-00098>
+			<id-00099>
+				<carried type="number">0</carried>
+				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
+				<name type="string">Sack of Nightmare ash</name>
+				<weight type="number">10</weight>
+			</id-00099>
+			<id-00100>
+				<carried type="number">0</carried>
+				<count type="number">1</count>
+				<location type="string">Hidden Black Bag of Holding</location>
+				<name type="string">sack of Fellforged dust</name>
+				<weight type="number">0</weight>
+			</id-00100>
+			<id-00101>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Letter of invitation from fay</name>
+				<weight type="number">0</weight>
+			</id-00101>
+			<id-00102>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Book of Nature From the Fay</name>
+				<weight type="number">1</weight>
+			</id-00102>
+			<id-00103>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">600 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing this helm, you can use an action to cast the comprehend languages spell from it at will.</p>
+					<linklist>
+						<link class="power" recordname="spell.comprehendlanguages@Incarnate-5eExpansion">Comprehend Languages</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Helm of Comprehending Languages</name>
+				<nonid_name type="string">Helm</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">3</weight>
+			</id-00103>
+			<id-00104>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.enlargereduce@Incarnate-5eExpansion">Enlarge/Reduce</link>
+					</linklist>
+					<p>When you drink this potion, you gain the &#34;reduce&#34; effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Diminution</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00104>
+			<id-00105>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">150 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.protectionfromenergy@Incarnate-5eExpansion">Protection from Energy</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>Uncommon</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Protection from Energy</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00105>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Undercommon</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Deep Speech</name>
@@ -1600,10 +2004,11 @@
 				<name type="string">Theives Cant</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">9</level>
 		<name type="string">Jade Snowpaw</name>
-		<notes type="string">Current Obsession: Magic item\nCurrent Major Obsession: Location Underdark or equivalet of it.\nTabaxi Quirk: You are a font of random trivia from the lore and stories you have discovered.\n\nhas lived a life in the wilds with his wandering tribe, in his teenage years they hade a run in with a warzone area wile trying to avoide it they sadly ran into one of the warbands of the invading forces and all of his tripe was wiped out but him.\n\nJade has been on two other advenures before getting to the nexus he had been on two other adventures.\n\nOn his first adventure he found his jug soon after he and his party were attacked by hell hounds that they defeated.\n\nOn his second adventure him and his party has to cross a chasm using a rope ladder that hobgoblins were using to cross it, after killing and looting the hobgoblins the party went down the road and found two caves.\n\none of them was a crystal cave that leads leads to the underdark his obsession at the time was a location seeing the wonders of this cave only for a short while it has caused a major obsession with the underdark.\n\nthe other cave was a short cut to the destination of tha party where he found the poison mushrooms he used to make a simple oil based poison, in the cave they fought off two trees an after finished the job.\n\nJade left the party at some point after study of what he can find about the underdark, he went back to the cave while stealthing he saw a party run into a portal not realizing they where running from monsters he went to have a closer look and then realized he had to choice but to follow that party into the portal to live.\n\nnow after living in the nexus and having most of his gold spent living and finding out about his new strange predicament he is ready to go back out investigating the larger existence of everything .\nNotes:\nhas faught/killed countless goblinoids, a warblessed goblin, 1 Mammoth, 3 living trees, 2 Ankhegs, 1 Etten, 2 Imps, 3 Hellhounds, 1 Nightmare, 2 Blights, counless Gnolls, 1 Gnoll fang, 1 Gnoll slasher, 1 Owlbear, countless Termits, 6 Giant Termites, 1 giant Termite Queen , 3 Spawn of Arbeyach, 2 Fellforged, 1 Arch-Devil Ia'Affrat the Insatiable on his shit list, \n\nDuergar note:\nWe need more test subjects! collect some more and bring them to our colloseum.\n\nThe city of Tavii will rise up and overcome the overlanders and their coloseum will flow with the blood of the overlanders\n\nknows of poison ahuad fruit blue\nThe Ahuad is a shrub growing about 7 inches high. It has broad leaves that have complex stems holding multiple leaves. Each leaf has 6 lobes with bumpy edges.\n\nEating all of the fruit of the Ahuad inflicts 4 d6 poison damage . Unless otherwise preserved, the fruit will spoil after 10 days (the more powerful the fruit the harder it is to preserve).\n\nmix with alchohol it paralyzes.\n\nplaces: Trosilax\n\nBeings known: pale one, fluffy one, red one, horned one, winged one, smoked one\n\npeople : gont the dwarf, Drysdalynn, Armash son of Iorturim of Clan Thuuccuc dragon born wants pigment, Madembravel halfling, giz goblin, Polla Dwarf Blacksmith, E11Ken Robot, Hadrick human,</notes>
-		<perception type="number">17</perception>
+		<notes type="string">Current Obsession: Magic item\nCurrent Major Obsession: Location Underdark or equivalet of it.\nTabaxi Quirk: You are a font of random trivia from the lore and stories you have discovered.\n\nhas lived a life in the wilds with his wandering tribe, in his teenage years they hade a run in with a warzone area wile trying to avoide it they sadly ran into one of the warbands of the invading forces and all of his tripe was wiped out but him.\n\nJade has been on two other advenures before getting to the nexus he had been on two other adventures.\n\nOn his first adventure he found his jug soon after he and his party were attacked by hell hounds that they defeated.\n\nOn his second adventure him and his party has to cross a chasm using a rope ladder that hobgoblins were using to cross it, after killing and looting the hobgoblins the party went down the road and found two caves.\n\none of them was a crystal cave that leads leads to the underdark his obsession at the time was a location seeing the wonders of this cave only for a short while it has caused a major obsession with the underdark.\n\nthe other cave was a short cut to the destination of tha party where he found the poison mushrooms he used to make a simple oil based poison, in the cave they fought off two trees an after finished the job.\n\nJade left the party at some point after study of what he can find about the underdark, he went back to the cave while stealthing he saw a party run into a portal not realizing they where running from monsters he went to have a closer look and then realized he had to choice but to follow that party into the portal to live.\n\nnow after living in the nexus and having most of his gold spent living and finding out about his new strange predicament he is ready to go back out investigating the larger existence of everything .\nNotes:\nhas faught/killed countless goblinoids, a warblessed goblin, 1 Mammoth, 3 living trees, 2 Ankhegs, 1 Etten, 5 Imps, 6 Hellhounds, 1 Nightmare same one 3 times named Fenrir, 2 Blights, counless Gnolls, 1 Gnoll fang, 1 Gnoll slasher, 1 Owlbear, countless Termits, 6 Giant Termites, 1 giant Termite Queen , 3 Spawn of Arbeyach, 5 Fellforged, 1 Arch-Devil Ia'Affrat the Insatiable on his shit list, 1 shadow devil, 1 bone devil, 1 Fext, 2 Skeletons, 3 Minitor Skeletons, 2 Ghouls, 2 bulezau\n\nDuergar note:\nWe need more test subjects! collect some more and bring them to our colloseum.\n\nThe city of Tavii will rise up and overcome the overlanders and their coloseum will flow with the blood of the overlanders\n\nknows of poison ahuad fruit blue\nThe Ahuad is a shrub growing about 7 inches high. It has broad leaves that have complex stems holding multiple leaves. Each leaf has 6 lobes with bumpy edges.\n\nEating all of the fruit of the Ahuad inflicts 4 d6 poison damage . Unless otherwise preserved, the fruit will spoil after 10 days (the more powerful the fruit the harder it is to preserve).\n\nmix with alchohol it paralyzes.\n\nWorlds: Trosilax places: Loxwick\n\nBeings known: pale one on they're shit list, fluffy one, horned one, winged one, smoked one on they're shit list, Sardior the Ruby One, lord of the hunt, Snow Queen, River king, Queen of Witches, Bear King, Queen of night and magic, Moonlit king, \n\npeople : gont the dwarf, Drysdalynn, Armash son of Iorturim of Clan Thuuccuc dragon born wants pigment, Madembravel halfling, giz goblin, Polla Dwarf Blacksmith wants a flame dragon killed, E11Ken Robot, Hadrick human,\n\ninvited to the fay court\n\n3 hell hounds teeth/claws roll 19</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
+		<perception type="number">19</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I watch over my friends as if they were a litter of newborn pups.\nI have a lesson for every situation, drawn from observing nature.</personalitytraits>
 		<powergroup>
@@ -2398,7 +2803,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">0</durmod>
-						<label type="string">Sneak Attack; DMG: 4d6</label>
+						<label type="string">Sneak Attack; DMG: 5d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -2512,7 +2917,7 @@
 				<school type="string">Actions</school>
 			</id-00027>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords</name>
@@ -2537,21 +2942,21 @@
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -2579,7 +2984,7 @@
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -2593,7 +2998,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">8</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -2614,7 +3019,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">8</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -2642,7 +3047,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">10</total>
+				<total type="number">12</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -2663,21 +3068,21 @@
 				<name type="string">Thieves' Tools</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">10</total>
+				<total type="number">12</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
 				<name type="string">Poisoner's Kit</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00020>
 			<id-00021>
 				<misc type="number">0</misc>
 				<name type="string">Herbalism Kit</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00021>
 		</skilllist>
 		<speed>
@@ -2690,7 +3095,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token"></token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2723,45 +3128,47 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
+						<stat type="string">dexterity</stat>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Spear</name>
+				<name type="string">Long Spear</name>
 				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<properties type="string">Thrown (range 20/60), Finesse, reach</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00008</recordname>
+					<recordname>....inventorylist.id-00095</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
+						<stat type="string">dexterity</stat>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Spear</name>
+				<maxammo type="number">1</maxammo>
+				<name type="string">Long Spear</name>
 				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<properties type="string">Thrown (range 20/60), Finesse, reach</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00008</recordname>
+					<recordname>....inventorylist.id-00095</recordname>
 				</shortcut>
 				<type type="number">2</type>
 			</id-00002>
@@ -2801,7 +3208,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">1</maxammo>
 				<name type="string">Dagger</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -2847,7 +3254,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">1</maxammo>
 				<name type="string">Dagger 2nd</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -2859,7 +3266,7 @@
 			</id-00006>
 			<id-00007>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2881,7 +3288,7 @@
 			</id-00007>
 			<id-00008>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2891,7 +3298,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">1</maxammo>
 				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light, thrown (range 20/60)</properties>
@@ -2925,19 +3332,27 @@
 				<type type="number">0</type>
 			</id-00009>
 			<id-00010>
-				<attackbonus type="number">0</attackbonus>
+				<ammo type="number">14</ammo>
+				<attackbonus type="number">1</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">1</bonus>
+						<bonus type="number">2</bonus>
 						<dice type="dice"></dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">necrotic</type>
+					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Blowgun</name>
+				<maxammo type="number">50</maxammo>
+				<name type="string">Fellforged Blowgun of 2 shots</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 25/100), loading</properties>
 				<shortcut type="windowreference">
@@ -2955,12 +3370,19 @@
 						<bonus type="number">1</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">dexterity</stat>
-						<type type="string">slashing</type>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing, magic</type>
 					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">fire</type>
+					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Mithril Longsword, +1 of Shame</name>
+				<name type="string">Mithril Longsword, +1 of Pride</name>
 				<prof type="number">1</prof>
 				<properties type="string">Versatile (1d10), finesse, light</properties>
 				<shortcut type="windowreference">
@@ -2981,7 +3403,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">40</maxammo>
 				<name type="string">Shortbow</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>
@@ -3027,7 +3449,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">1</maxammo>
 				<name type="string">Vandin's Dagger</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -3081,7 +3503,7 @@
 				<type type="number">1</type>
 			</id-00017>
 			<id-00018>
-				<ammo type="number">3</ammo>
+				<ammo type="number">0</ammo>
 				<carried type="number">1</carried>
 				<maxammo type="number">50</maxammo>
 				<name type="string">Poisoned Blowdarts</name>
@@ -3094,7 +3516,7 @@
 			</id-00018>
 			<id-00019>
 				<carried type="number">1</carried>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">40</maxammo>
 				<name type="string">Oil</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
@@ -3114,6 +3536,36 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00020>
+			<id-00021>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d10</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing, magic</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">fire</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Mithril Longsword, +1 of Pride(1d10)</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10), finesse, light</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00091</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00021>
 		</weaponlist>
 		<weight type="string">175Ibs</weight>
 	</character>

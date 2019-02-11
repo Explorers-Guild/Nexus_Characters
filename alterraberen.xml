@@ -17,11 +17,11 @@
 				<score type="number">10</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">2</bonus>
-				<save type="number">5</save>
+				<bonus type="number">3</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">14</score>
+				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">1</bonus>
@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<hdused type="number">2</hdused>
+				<level type="number">8</level>
 				<name type="string">Bard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,7 +72,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">265</amount>
+				<amount type="number">580</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -80,7 +80,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">170</amount>
+				<amount type="number">25</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">178</amount>
+				<amount type="number">27</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -97,24 +97,24 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">1</armor>
+				<armor type="number">2</armor>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">13</total>
+				<total type="number">15</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">75.03</load>
+			<load type="number">82.4</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">672</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">801</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -273,7 +273,7 @@
 			<id-00010>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Expertise</name>
+				<name type="string">Expertise - Insight, Persuation</name>
 				<source type="string">Bard</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -281,6 +281,16 @@
 					<p>At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - 2 DEX</name>
+				<source type="string">Bard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00011>
 			<id-00012>
 				<level type="number">5</level>
 				<locked type="number">1</locked>
@@ -327,18 +337,20 @@
 		<flaws type="string">I cannot manage money to save my life.</flaws>
 		<gender type="string">Female</gender>
 		<height type="string">5'8&#34;</height>
+		<hero type="number">0</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">33</total>
+			<total type="number">43</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Virtue - I am the sword of virtue for those in need! (Good)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">2</total>
+			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -352,7 +364,7 @@
 					<p>This wooden training sword is great for the standard farmer who wants to practice with a sword. It lets you practice your swings without cutting off your hand or foot. For those who rarely if ever hit yourself... you will want a better weapon.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Back</location>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Wooden Training Sword</name>
 				<rarity type="string">Common</rarity>
@@ -532,16 +544,25 @@
 				<weight type="number">1</weight>
 			</id-00012>
 			<id-00013>
-				<carried type="number">1</carried>
-				<cost type="string">2 CP</cost>
+				<ac type="number">12</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">45 GP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>
+				</description>
+				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Coin Pouch - Small</location>
+				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">Ink Pen</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.02</weight>
+				<name type="string">Studded Leather Armor</name>
+				<nonid_name type="string">Studded Leather Armor</nonid_name>
+				<nonidentified type="string">Some well-crafted studded leather armor.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Light Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">13</weight>
 			</id-00013>
 			<id-00014>
 				<carried type="number">1</carried>
@@ -583,16 +604,21 @@
 				<weight type="number">0.03</weight>
 			</id-00016>
 			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">10 GP</cost>
+				<cost type="string">2 CP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Coin Pouch - Small</location>
 				<locked type="number">1</locked>
-				<name type="string">Ink (1-ounce Bottle)</name>
+				<name type="string">Ink Pen</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
-				<weight type="number">0.06</weight>
+				<weight type="number">0.1</weight>
 			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
@@ -641,27 +667,21 @@
 				<weight type="number">1</weight>
 			</id-00019>
 			<id-00020>
-				<ac type="number">11</ac>
+				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
+					<p></p>
 				</description>
-				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
+				<location type="string">Coin Pouch - Small</location>
 				<locked type="number">1</locked>
-				<name type="string">Leather</name>
-				<nonid_name type="string">Leather Armor</nonid_name>
-				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
-				<rarity type="string">common</rarity>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Light Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">10</weight>
+				<name type="string">Ink (1-ounce Bottle)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.1</weight>
 			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
@@ -832,7 +852,7 @@
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -841,9 +861,84 @@
 						<link class="" recordname="">Recieved november 22, 2018. Spoils December 3rd, 2018.</link>
 					</linklist>
 				</description>
+				<location type="string">*</location>
 				<name type="string">Ebbalup</name>
 				<weight type="number">0.25</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">600 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Stone of Good Luck (Luckstone)</name>
+				<nonid_name type="string">an old stone with strange writing in a forgotten language</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Uncommon (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">800 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing, 1d6 fire, 1d6 cold</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Cold-Flame Longsword</name>
+				<properties type="string">Versatile (1d10)</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -859,9 +954,10 @@
 				<name type="string">Sylvan</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">8</level>
 		<name type="string">Alterra Beren</name>
 		<notes type="string">Alterra hails from from a sub-plane, from which countless material planes can be accessed, and where contact with the gods is easiest. She was once a citizen of this plane, content with doing what the gods asked of her. During one of these assignments, she was saved by a bystander, who ended up shouldering the ill effect of her failure. She kept in contact with this being, to be sure the evil he held would not be released. Apon hearing he had gone missing, she stepped down from service, desending to the material plane, trying to get information on what had happened to him, and becoming a fighter for those who needed help. Or those she thinks need help.\n\nDungeon - elvendungeon1</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I sing dance and generally tend to be happy. This is an experience and I should enjoy every moment of it.\nI leave marks for myself wherever I go, as messages to myself when I return. Their meaning is known only by me.</personalitytraits>
@@ -931,19 +1027,19 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
-				<used type="number">0</used>
+				<max type="number">2</max>
+				<used type="number">1</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
@@ -1021,6 +1117,12 @@
 						<order type="number">3</order>
 						<type type="string">effect</type>
 					</id-00003>
+					<id-00004>
+						<apply type="string">roll</apply>
+						<label type="string">SAVE: -1d6</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1186,34 +1288,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
 			</id-00007>
-			<id-00008>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Unconscious</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a pinch of fine sand, rose petals, or a cricket)</components>
-				<description type="formattedtext">
-					<p>This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren't affected by this spell.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.</p>
-				</description>
-				<duration type="string">1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Sleep</name>
-				<prepared type="number">0</prepared>
-				<range type="string">90 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Enchantment</school>
-				<source type="string">Bard, Sorcerer, Wizard</source>
-			</id-00008>
 			<id-00009>
 				<actions>
 					<id-00001>
@@ -1335,6 +1409,14 @@
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Desperate Inspiration '~'; ATK: 1d8; SAVE: 1d8; CHECK: 1d8</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1345,7 +1427,7 @@
 				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Bardic Inspiration</name>
+				<name type="string">*Inspired Verse</name>
 				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
@@ -1453,7 +1535,6 @@
 						<durunit type="string">minute</durunit>
 						<label type="string">Hideous Laughter; prone; incapacitated; (C)</label>
 						<order type="number">2</order>
-						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
@@ -1557,7 +1638,7 @@
 				<group type="string">Class</group>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Beacon of Hope</name>
+				<name type="string">Beacon of Hope (3)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
@@ -1577,7 +1658,7 @@
 				<group type="string">Class</group>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Revivify</name>
+				<name type="string">Revivify (3)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
@@ -1604,6 +1685,124 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Druid, Ranger</source>
 			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<label type="string">Luckstone; CHECK: 1; SAVE: 1</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Dodge</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.</p>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Luckstone</name>
+				<prepared type="number">0</prepared>
+			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Charmed; Compulsion; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving to try to end the effect. A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Compulsion</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard</source>
+			</id-00024>
+			<id-00025>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a short piece of fine copper wire)</components>
+				<description type="formattedtext">
+					<p>You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message. You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Sending</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Unlimited</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Wizard</source>
+			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Thunderwave</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (15-foot cube)</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
+			</id-00026>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1684,7 +1883,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1705,7 +1904,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1740,7 +1939,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">3</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1757,6 +1956,7 @@
 				<total type="number">2</total>
 			</id-00018>
 			<id-00019>
+				<misc type="number">0</misc>
 				<name type="string">Thieves' Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
@@ -1771,7 +1971,7 @@
 						<link class="encounter" recordname="encounter.id-00064@Incarnate-5eExpansion">Rules for Using Thieves' Tools</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1783,7 +1983,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1963,6 +2163,38 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00006>
+			<id-00007>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<type type="string">fire</type>
+					</id-00002>
+					<id-00003>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<type type="string">cold</type>
+					</id-00003>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">ColdFlame Longsword</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00029</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00007>
 		</weaponlist>
 		<weight type="string">123 lb</weight>
 	</character>
