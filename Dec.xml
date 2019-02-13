@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<bonus type="number">3</bonus>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">15</score>
+				<score type="number">16</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
@@ -31,11 +31,11 @@
 				<score type="number">9</score>
 			</intelligence>
 			<strength>
-				<bonus type="number">2</bonus>
-				<save type="number">2</save>
+				<bonus type="number">3</bonus>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">15</score>
+				<score type="number">16</score>
 			</strength>
 			<wisdom>
 				<bonus type="number">0</bonus>
@@ -48,7 +48,7 @@
 		<adventurelist>
 		</adventurelist>
 		<age type="string">28</age>
-		<alignment type="string">Chaotic Good</alignment>
+		<alignment type="string">Neutral Good</alignment>
 		<appearance type="string">Dark grey/blue skin, small grey horns, red hair, cocky grin, red tattoos.</appearance>
 		<background type="string">Soldier</background>
 		<backgroundlink type="windowreference">
@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">1</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -75,7 +75,7 @@
 				<amount type="number">0</amount>
 			</slot1>
 			<slot2>
-				<amount type="number">380</amount>
+				<amount type="number">360</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
@@ -106,13 +106,13 @@
 			</ac>
 		</defenses>
 		<encumbrance>
-			<encumbered type="number">75</encumbered>
-			<encumberedheavy type="number">150</encumberedheavy>
-			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">136.5</load>
-			<max type="number">225</max>
+			<encumbered type="number">80</encumbered>
+			<encumberedheavy type="number">160</encumberedheavy>
+			<liftpushdrag type="number">480</liftpushdrag>
+			<load type="number">181.5</load>
+			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">384</exp>
+		<exp type="number">405</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -318,16 +318,27 @@
 					</linklist>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (+1 to Strength and Charisma)</name>
+				<source type="string">Paladin</source>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">I'd rather eat my armor than admit when I'm wrong.</flaws>
 		<gender type="string">Female</gender>
 		<height type="string">6ft</height>
+		<hero type="number">3</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
-			<wounds type="number">16</wounds>
+			<total type="number">36</total>
+			<wounds type="number">2</wounds>
 		</hp>
 		<ideals type="string">Those in power aren't doing enough good. I could do a better job.</ideals>
 		<initiative>
@@ -561,6 +572,39 @@
 				<name type="string">Scrap of banner (Tied around horn)</name>
 				<weight type="number">0.5</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">2</ac>
+				<carried type="number">1</carried>
+				<cost type="string">10 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
+				</description>
+				<dexbonus type="string">-</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Shield</name>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Shield</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">6</weight>
+			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">3</count>
+				<description type="formattedtext">
+					<p>3 for shield</p>
+					<p>5 for leather armor</p>
+					<p>10 for half plate</p>
+					<p>15 for full plate</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Adult Black Dragon Scales</name>
+				<weight type="number">13</weight>
+			</id-00018>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -570,9 +614,10 @@
 				<name type="string">Infernal</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Dec</name>
 		<notes type="string">Dec grew up in the small city of Sioksea. Her family practically owned the city, controlling most large scale criminal activity. Her older sister Thend became a warlock like their mother, using her demonic gift to increase their power over the city.\n\nThen Dec was born. Hearing about Tieflings named after values like Patience and Faith her mother called her second daughter 'Decimate'. Dec wasn't having any of it and her prolonged rebellious phase included running away to join the military. She worked her way up to Officer before having a falling out with the higher ups over what they said was her behaviour but Dec suspects was probably her connections to Sioksea.</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I can stare down a hell hound without flinching.</personalitytraits>
@@ -628,7 +673,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
-				<used type="number">3</used>
+				<used type="number">2</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -722,13 +767,73 @@
 				<source type="string">Paladin</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Hellish Rebuke</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Warlock</source>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<label type="string">RESIST: fire</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have resistance to fire damage.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Hellish Resistance</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Tiefling</source>
+				<type type="string">racial</type>
+			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00002>
 						<heallist>
 							<id-00001>
-								<bonus type="number">1</bonus>
+								<bonus type="number">10</bonus>
 								<dice type="dice"></dice>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -845,7 +950,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Command</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -877,7 +982,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Cure Wounds</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1065,7 +1170,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Protection from Evil and Good</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
@@ -1100,6 +1205,14 @@
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Shield of Faith; (C)</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 bonus action</castingtime>
@@ -1152,6 +1265,17 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00004>
+					<id-00005>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">5</order>
+						<type type="string">damage</type>
+					</id-00005>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1187,7 +1311,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Sanctuary</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Abjuration</school>
@@ -1292,7 +1416,7 @@
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1320,7 +1444,7 @@
 				<name type="string">Performance</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1341,7 +1465,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1362,14 +1486,14 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1415,7 +1539,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1504,7 +1628,7 @@
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>

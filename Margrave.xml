@@ -57,7 +57,7 @@
 		<bonds type="string">I started my training alone from texts I obtained by my own means.</bonds>
 		<classes>
 			<id-00001>
-				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterlevelinvmult type="number">3</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
@@ -65,7 +65,7 @@
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
-					<recordname>reference.classdata.rogue@DD 5E Basic Rules - Player</recordname>
+					<recordname>reference.classdata.rogue@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00001>
 		</classes>
@@ -109,10 +109,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">84.91</load>
+			<load type="number">84.71</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">477</exp>
+		<exp type="number">511</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 			<id-00001>
@@ -206,56 +206,49 @@
 			<id-00007>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Thief</name>
+				<name type="string">Arcane Trickster</name>
 				<source type="string">Rogue</source>
 				<text type="formattedtext">
-					<p>You hone your skills in the larcenous arts. Burglars, bandits, cut-purses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.</p>
+					<p>Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.</p>
 					<h>Features</h>
 					<linklist>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00013@Incarnate-5eExpansion">Fast Hands</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00016@Incarnate-5eExpansion">Second-Story Work</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00020@Incarnate-5eExpansion">Supreme Sneak</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00024@Incarnate-5eExpansion">Use Magic Device</link>
-						<link class="reference_classfeature" recordname="class.prorogue.features.id-00021@Incarnate-5eExpansion">Thief's Reflexes</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.spellcasting3@DD PHB Deluxe">Spellcasting</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.magehandlegerdemain3@DD PHB Deluxe">Mage Hand Legerdemain</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.magicalambush9@DD PHB Deluxe">Magical Ambush</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.versatiletrickster13@DD PHB Deluxe">Versatile Trickster</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.spellthief17@DD PHB Deluxe">Spell Thief</link>
 					</linklist>
 				</text>
 			</id-00007>
 			<id-00008>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Fast Hands</name>
+				<name type="string">Mage Hand Legerdemain</name>
 				<source type="string">Rogue</source>
-				<specialization type="string">Thief</specialization>
-				<specializationchoice type="number">0</specializationchoice>
+				<specialization type="string">Arcane Trickster</specialization>
 				<text type="formattedtext">
-					<p>Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open lock, or take the Use an Object action.</p>
+					<p>Starting at 3rd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:</p>
+					<list>
+						<li>You can stow one object the hand is holding in a container worn or carried by another creature.</li>
+						<li>You can retrieve an object in a container worn or carried by another creature.</li>
+						<li>You can use thieves' tools to pick locks and disarm traps at range.</li>
+					</list>
+					<p>You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check.</p>
+					<p>In addition, you can use the bonus action granted by your Cunning Action to control the hand.</p>
 				</text>
 			</id-00008>
 			<id-00009>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Second-Story Work</name>
-				<source type="string">Rogue</source>
-				<specialization type="string">Thief</specialization>
-				<specializationchoice type="number">0</specializationchoice>
-				<text type="formattedtext">
-					<p>When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.</p>
-					<p>In addition when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</p>
-				</text>
-			</id-00009>
-			<id-00010>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
 				<name type="string">Spellcasting</name>
 				<source type="string">Rogue</source>
 				<specialization type="string">Arcane Trickster</specialization>
-				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
 					<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list. Cantrips. You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level.</p>
 					<linklist>
 						<link class="reference_colindex" recordname="reference.spelllists.arcanetrickster@DD PHB Deluxe">Arcane Trickster Spells</link>
 					</linklist>
-					<p><b>Spell Slots. </b>The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+					<p><b>Spell Slots. </b>The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
 					<p>For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
 					<p><b>Spells Known of 1st-Level and Higher. </b>You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.</p>
 					<p>The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
@@ -439,26 +432,29 @@
 						</tr>
 					</table>
 				</text>
-			</id-00010>
-			<id-00011>
+			</id-00009>
+			<id-00010>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
 				<name type="string">Ability Score Improvement</name>
 				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
-					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
-			</id-00011>
+			</id-00010>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">7'6&#34;</height>
+		<hero type="number">3</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
-			<wounds type="number">3</wounds>
+			<total type="number">45</total>
+			<wounds type="number">32</wounds>
 		</hp>
 		<ideals type="string">Responsibility - My power is a gift not to be taken lightly, and I should avoid seeking out unnecessary conflict. (Lawful)</ideals>
 		<initiative>
@@ -534,7 +530,7 @@
 				<name type="string">Dice Set</name>
 				<subtype type="string">Gaming Set</subtype>
 				<type type="string">Tool</type>
-				<weight type="number">0.2</weight>
+				<weight type="number">0</weight>
 			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
@@ -884,7 +880,7 @@
 				<name type="string">Aquan</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common</name>
+				<name type="string">Elvish</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Orc</name>
@@ -893,28 +889,37 @@
 				<name type="string">Common</name>
 			</id-00004>
 			<id-00005>
-				<name type="string">Choice</name>
+				<name type="string">Infernal</name>
 			</id-00005>
 		</languagelist>
 		<level type="number">4</level>
 		<name type="string">Margrave</name>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I rarely speak above a whisper, for fear that I might attract attention to myself. Who knows when someone will connect me to my past life?\nI'm completely devoted to the job, even at the cost of my family and friends.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
-			<id-00001>
-				<castertype type="string">memorization</castertype>
-				<name type="string">Spells</name>
-			</id-00001>
 			<id-00002>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells (Rogue)</name>
 				<stat type="string">intelligence</stat>
 			</id-00002>
 			<id-00003>
-				<name type="string">Item</name>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells (Rogue)</name>
+				<stat type="string">intelligence</stat>
 			</id-00003>
+			<id-00004>
+				<name type="string">Class</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Item</name>
+			</id-00005>
+			<id-00006>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -954,8 +959,8 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">0</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -990,7 +995,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1012,7 +1017,7 @@
 						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Item</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Healing</name>
@@ -1037,7 +1042,7 @@
 						<link class="reference_classfeature" recordname="class.prorogue.features.id-00018@Incarnate-5eExpansion">Sneak Attack</link>
 					</linklist>
 				</description>
-				<group type="string">Spells (Rogue)</group>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Sneak Attack</name>
@@ -1123,6 +1128,105 @@
 				<school type="string">Illusion</school>
 				<source type="string">Bard, Eldritch Knight, Monk, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00008>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a twig from a tree that has been struck by lightning)</components>
+				<description type="formattedtext">
+					<p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has total cover from you.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Witch Bolt</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Charmed</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Charm Person</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Cleric Trickery Domain, Druid, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00012>
+			<id-00013>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you or a creature within 60 feet of you falls</castingtime>
+				<components type="string">V, M (a small feather or piece of down)</components>
+				<description type="formattedtext">
+					<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Feather Fall</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00013>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1311,7 +1415,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00012_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1367,7 +1471,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">1</carried>
 				<damagelist>
@@ -1384,8 +1488,8 @@
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>
 				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00008</recordname>
+					<class></class>
+					<recordname></recordname>
 				</shortcut>
 				<type type="number">1</type>
 			</id-00002>
