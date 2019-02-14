@@ -60,7 +60,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">3</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">4</level>
 				<name type="string">Cleric</name>
 				<shortcut type="windowreference">
@@ -72,7 +72,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">2</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
@@ -83,11 +83,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">669</amount>
+				<amount type="number">540</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">3</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -99,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">105</amount>
+				<amount type="number">138</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,23 +108,24 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">4</armor>
-				<dexbonus type="string">max2</dexbonus>
+				<armor type="number">7</armor>
+				<dexbonus type="string">no</dexbonus>
+				<disstealth type="number">1</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">93.5</load>
+			<load type="number">153.5</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">611</exp>
+		<exp type="number">664</exp>
 		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
@@ -396,14 +397,14 @@
 		</featurelist>
 		<flaws type="string">I can't help but pocket loose coins and other trinkets I come across.\nMy pride will probably lead to my destruction.\nI enjoy a fight alittle to much at times</flaws>
 		<gender type="string">Male</gender>
-		<height type="string">6'9</height>
+		<height type="string">7'2</height>
 		<hero type="number">1</hero>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">35</total>
-			<wounds type="number">4</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Freedom. The sea is freedom-the freedom to go anywhere and do anything.</ideals>
 		<initiative>
@@ -445,7 +446,7 @@
 			<id-00002>
 				<ac type="number">14</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1,300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -657,6 +658,28 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00013>
+			<id-00014>
+				<ac type="number">17</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.</p>
+				</description>
+				<dexbonus type="string">-</dexbonus>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Splint Armor</name>
+				<nonid_name type="string">Splint armor</nonid_name>
+				<nonidentified type="string">Some well-crafted splint armor.</nonidentified>
+				<stealth type="string">Disadvantage</stealth>
+				<strength type="string">Str 15</strength>
+				<subtype type="string">Heavy Armor</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">60</weight>
+			</id-00014>
 			<id-00015>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -829,11 +852,11 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1170,12 +1193,56 @@
 					<p><i>Converting a Spell Slot to Sorcery Points. </i>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>
 				</description>
 				<group type="string">Class</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Font of Magic</name>
 				<prepared type="number">2</prepared>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00003>
+						<apply type="string">action</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Beast Slayer; IFT:TYPE(beast);DMG:2d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00020@Incarnate-5eExpansion">Beast Slayer</link>
+					</linklist>
+				</description>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Beast Slayer</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00012>
 			<id-00013>
 				<actions>
 					<id-00001>
@@ -1283,6 +1350,33 @@
 				<school type="string">Abjuration</school>
 				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
 			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">IFT: TYPE(aberration, celestial, elemental, fey, fiend, undead); GRANTDISATK; IMMUNE: charmed,frightened,possessed; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (holy water or powdered silver and iron, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p>
+					<p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>
+				</description>
+				<duration type="string">Concentration up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Protection from Evil and Good</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Cleric, Eldritch Knight, Paladin, Warlock, Wizard, Arcane Trickster</source>
+			</id-00017>
 			<id-00019>
 				<actions>
 				</actions>
@@ -1369,7 +1463,7 @@
 					<id-00004>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d10,d10,d10,d10</dice>
+								<dice type="dice">d10,d10,d10,d10,d10</dice>
 								<statmult type="number">1</statmult>
 								<type type="string">necrotic</type>
 							</id-00001>
@@ -1744,8 +1838,11 @@
 			<id-00040>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
 					</id-00001>
@@ -1833,26 +1930,6 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00041>
-			<id-00043>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a yew leaf)</components>
-				<description type="formattedtext">
-					<p>For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
-				</description>
-				<duration type="string">Concentration, up to 10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Detect Poison and Disease</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">1</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Cleric, Druid, Paladin, Ranger</source>
-			</id-00043>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2009,7 +2086,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2162,7 +2239,7 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
