@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2262</amount>
+				<amount type="number">2200</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -99,7 +99,7 @@
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
-				<shield type="number">3</shield>
+				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
 				<total type="number">17</total>
 			</ac>
@@ -109,7 +109,7 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">135.28</load>
+			<load type="number">114.28</load>
 			<max type="number">150</max>
 		</encumbrance>
 		<exp type="number">764</exp>
@@ -205,7 +205,7 @@
 			<id-00006>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Channel Divinity</name>
+				<name type="string">Channel Divinity (1/2 cr destroy)</name>
 				<source type="string">Cleric</source>
 				<text type="formattedtext">
 					<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects - Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p>
@@ -343,6 +343,32 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1.5</weight>
 			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">1825 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.flametongue@Incarnate-5eExpansion">Flame Tongue</link>
+					</linklist>
+					<h>Description</h>
+					<p>You can use a bonus action to speak this magic weapon's command word, causing flames to erupt from the blade. These flames shed bright light in a 40--foot radius and dim light for an additional 40 feet.</p>
+					<p>While the weapon is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Flame Tongue Rapier</name>
+				<nonidentified type="string">A pointy rapier.</nonidentified>
+				<properties type="string">Finesse</properties>
+				<subtype type="string">Martial Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00004>
 			<id-00005>
 				<ac type="number">12</ac>
 				<bonus type="number">1</bonus>
@@ -466,24 +492,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.02</weight>
 			</id-00012>
-			<id-00013>
-				<ac type="number">2</ac>
-				<carried type="number">1</carried>
-				<cost type="string">10 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
-				</description>
-				<dexbonus type="string">-</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Shield</name>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Shield</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">6</weight>
-			</id-00013>
 			<id-00014>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
@@ -579,7 +587,7 @@
 			<id-00020>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">10</count>
+				<count type="number">5</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -593,7 +601,7 @@
 			<id-00021>
 				<carried type="number">2</carried>
 				<cost type="string">1 cp</cost>
-				<count type="number">10</count>
+				<count type="number">3</count>
 				<description type="formattedtext">
 					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
 				</description>
@@ -750,7 +758,7 @@
 					<p>You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.</p>
 				</description>
 				<locked type="number">1</locked>
-				<name type="string">Fey Longbow [Flame Tongue]</name>
+				<name type="string">Fey Longbow</name>
 				<properties type="string">Ammunition (range 150/600), heavy, two-handed, magic</properties>
 				<rarity type="string">Very Rare</rarity>
 				<subtype type="string">Martial Ranged Weapons</subtype>
@@ -1934,7 +1942,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2049,9 +2057,39 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6,d6</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">fire,magic</type>
+					</id-00002>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Flame Tongue Rapier</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00004</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
 			<id-00005>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2066,15 +2104,10 @@
 						<statmult type="number">1</statmult>
 						<type type="string">acid,magic</type>
 					</id-00002>
-					<id-00003>
-						<dice type="dice">d6,d6</dice>
-						<statmult type="number">1</statmult>
-						<type type="string">fire,magic</type>
-					</id-00003>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">40</maxammo>
-				<name type="string">Fey Longbow [Flame Tongue]</name>
+				<name type="string">Fey Longbow</name>
 				<prof type="number">1</prof>
 				<properties type="string">Ammunition (range 150/600), heavy, two-handed, magic</properties>
 				<shortcut type="windowreference">
