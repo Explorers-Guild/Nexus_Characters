@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">1</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">12</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">364</amount>
+				<amount type="number">513</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">12</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">52</amount>
+				<amount type="number">89</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">41</amount>
+				<amount type="number">57</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,11 +109,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">84.71</load>
+			<load type="number">94.21</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">511</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">556</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -443,6 +443,15 @@
 					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge.</flaws>
 		<gender type="string">Male</gender>
@@ -453,8 +462,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
-			<wounds type="number">32</wounds>
+			<total type="number">52</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Responsibility - My power is a gift not to be taken lightly, and I should avoid seeking out unnecessary conflict. (Lawful)</ideals>
 		<initiative>
@@ -849,6 +858,30 @@
 				<type type="string">Tool</type>
 				<weight type="number">1</weight>
 			</id-00024>
+			<id-00025>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Crossbow Bolts (20)</name>
+				<subtype type="string">Ammunition</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1.5</weight>
+			</id-00025>
+			<id-00026>
+				<carried type="number">2</carried>
+				<cost type="string">25 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Crossbow, Light</name>
+				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
+				<subtype type="string">Simple Ranged Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">5</weight>
+			</id-00026>
 			<id-00027>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -874,6 +907,29 @@
 				<type type="string">Ring</type>
 				<weight type="number">1</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<bonus type="number">2</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">3500 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 slashing</damage>
+				<description type="formattedtext">
+					<p>You have advantage to resist being disarmed with this weapon.</p>
+					<p>You gain a +2 bonus to attack and damage rolls made with this weapon. When you hit a creature which has an innate swimming speed with this weapon, that creature takes an extra 2d6 slashing damage.</p>
+					<p></p>
+					<p>This weapon has 6 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from it have a save DC of 15 and a spell attack bonus of +7. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it: create or destroy water (1 charge), tidal wave (3 charges), black tentacles (4 charges), or conjure elemental (5 charges, water elemental only).</p>
+					<p></p>
+					<p>Proficiency with a rapier allows you to add your proficiency bonus to the attack roll for any attack you make with it.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Cutlass of the Kraken</name>
+				<properties type="string">Finesse, Light, Special, magic</properties>
+				<rarity type="string">rare (requires attunement)</rarity>
+				<subtype type="string">Martial Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00028>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -892,10 +948,10 @@
 				<name type="string">Infernal</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Margrave</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">13</perception>
+		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I rarely speak above a whisper, for fear that I might attract attention to myself. Who knows when someone will connect me to my past life?\nI'm completely devoted to the job, even at the cost of my family and friends.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -960,7 +1016,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -995,7 +1051,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1030,7 +1086,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Sneak Attack; DMG: 3d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1228,7 +1284,7 @@
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00013>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Dice Set</name>
@@ -1256,14 +1312,14 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
@@ -1284,7 +1340,7 @@
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1319,7 +1375,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1340,14 +1396,14 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
 				<name type="string">Deception</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00014>
 			<id-00015>
 				<misc type="number">0</misc>
@@ -1361,7 +1417,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1388,7 +1444,7 @@
 						<link class="item" recordname="item.id-00263@Incarnate-5eExpansion">Dice Set</link>
 					</linklist>
 				</text>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
@@ -1403,7 +1459,7 @@
 					<h>Description</h>
 					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
 				</text>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00020>
 		</skilllist>
 		<speed>
@@ -1415,7 +1471,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00012_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1540,6 +1596,48 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Crossbow, Light</name>
+				<prof type="number">1</prof>
+				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00026</recordname>
+				</shortcut>
+				<type type="number">1</type>
+			</id-00005>
+			<id-00006>
+				<attackbonus type="number">2</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">dexterity</stat>
+						<type type="string">slashing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Cutlass of the Kraken</name>
+				<properties type="string">Finesse, Light, Special, magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00028</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
 		</weaponlist>
 		<weight type="string">290 Pounds</weight>
 	</character>

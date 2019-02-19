@@ -10,11 +10,11 @@
 				<score type="number">10</score>
 			</charisma>
 			<constitution>
-				<bonus type="number">4</bonus>
-				<save type="number">7</save>
+				<bonus type="number">5</bonus>
+				<save type="number">8</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">18</score>
+				<score type="number">20</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">0</bonus>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,18 +71,19 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">0</amount>
+				<amount type="number">12</amount>
+				<name type="string">PP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">1381</amount>
+				<amount type="number">1519</amount>
 				<name type="string">GP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">17</amount>
+				<amount type="number">33</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">137</amount>
+				<amount type="number">174</amount>
 				<name type="string">CP</name>
 			</slot4>
 			<slot5>
@@ -94,24 +95,24 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">6</armor>
+				<armor type="number">8</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">18</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">168.5</load>
+			<load type="number">158</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">518</exp>
+		<exp type="number">629</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -223,15 +224,27 @@
 					<p>The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (lvl 6)</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score by 20 using this feature.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">Once I start drinking, it's hard for me to stop.</flaws>
 		<gender type="string">male</gender>
 		<height type="string">6ft</height>
+		<hero type="number">1</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">54</total>
+			<total type="number">70</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Freedom. The sea is freedom-the freedom to go anywhere and do anything. (Chaotic)</ideals>
@@ -264,23 +277,24 @@
 				<weight type="number">3</weight>
 			</id-00002>
 			<id-00003>
-				<ac type="number">16</ac>
+				<ac type="number">18</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
-				<cost type="string">75 gp</cost>
+				<cost type="string">1,500 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk.</p>
-					<p>Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.</p>
+					<p>Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</p>
 				</description>
 				<dexbonus type="string">-</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Chain Mail</name>
+				<name type="string">Plate (Helmed Horror style)</name>
 				<stealth type="string">Disadvantage</stealth>
-				<strength type="string">Str 13</strength>
+				<strength type="string">Str 15</strength>
 				<subtype type="string">Heavy Armor</subtype>
 				<type type="string">Armor</type>
-				<weight type="number">55</weight>
+				<weight type="number">65</weight>
 			</id-00003>
 			<id-00004>
 				<ac type="number">0</ac>
@@ -301,20 +315,29 @@
 				<weight type="number">10</weight>
 			</id-00004>
 			<id-00005>
-				<carried type="number">2</carried>
-				<cost type="string">25 gp</cost>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="power" recordname="spell.gaseousform@Incarnate-5eExpansion">Gaseous Form</link>
+					</linklist>
+					<p>When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Crossbow, Light</name>
-				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
-				<subtype type="string">Simple Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">5</weight>
+				<name type="string">Potion of Gaseous Form</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">This potion's container seems to hold fog that moves and pours like water.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
 			</id-00005>
 			<id-00006>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -413,17 +436,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00013>
-			<id-00014>
-				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Crossbow Bolts (20)</name>
-				<subtype type="string">Ammunition</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1.5</weight>
-			</id-00014>
 			<id-00015>
 				<carried type="number">2</carried>
 				<cost type="string">20 gp</cost>
@@ -453,7 +465,7 @@
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">4,120 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d10 slashing silver</damage>
@@ -517,7 +529,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -593,7 +605,7 @@
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1,000 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -610,6 +622,50 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">7</weight>
 			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">2 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>Drink up and see who tips over. This small keg has enough for a two-person competition. (Needs to be refilled between each use. Average price of refilling with <i>Common Beer </i>is 1 GP)</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00033@Incarnate-5eExpansion">Rules for Using Keg of Ale</link>
+					</linklist>
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00002@Incarnate-5eExpansion">Keg of Ale</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Keg of Ale</name>
+				<subtype type="string">Gaming Set</subtype>
+				<type type="string">Tool</type>
+				<weight type="number">10</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This Cask has 10 portions for a medium creature. Upon drinking a portion the creature must make a Constitution saving throw of DC 16 or increase one Stage of Drunkenness.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00066@Incarnate-5eExpansion">Stages of Drunkenness</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Small Keg of Common Mead</name>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Alcohol</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">7</weight>
+			</id-00025>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -619,9 +675,10 @@
 				<name type="string">Elvish</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Polk Master of ALE</name>
-		<notes type="string">nexus text</notes>
+		<notes type="string">Won every Drinking event at last winter festival.</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I work hard so that I can play hard when the work is done.</personalitytraits>
@@ -1058,7 +1115,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1096,6 +1153,7 @@
 					<id-00001>
 						<dice type="dice">d6,d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
@@ -1103,40 +1161,20 @@
 				<maxammo type="number">0</maxammo>
 				<name type="string">Maul</name>
 				<prof type="number">1</prof>
-				<properties type="string">Heavy, two-handed</properties>
+				<properties type="string">Heavy, two-handed, Reroll 2</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00004</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
-			<id-00002>
-				<ammo type="number">2</ammo>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Crossbow, Light</name>
-				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 80/320), loading, two-handed</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00005</recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00002>
 			<id-00003>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d10</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
@@ -1144,7 +1182,7 @@
 				<maxammo type="number">0</maxammo>
 				<name type="string">Halberd</name>
 				<prof type="number">1</prof>
-				<properties type="string">Heavy, reach, two-handed</properties>
+				<properties type="string">Heavy, reach, two-handed, Reroll 2</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00015</recordname>
@@ -1167,7 +1205,7 @@
 				<maxammo type="number">0</maxammo>
 				<name type="string">Glaive butt</name>
 				<prof type="number">1</prof>
-				<properties type="string">Light</properties>
+				<properties type="string">Light, Reroll 2</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00016</recordname>
@@ -1176,7 +1214,7 @@
 			</id-00004>
 			<id-00005>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -1190,7 +1228,7 @@
 				<maxammo type="number">0</maxammo>
 				<name type="string">Silver Coated Mithral Glaive of Sharpness of Construct Slaying</name>
 				<prof type="number">1</prof>
-				<properties type="string">Heavy reach two-handed, magic</properties>
+				<properties type="string">Heavy reach two-handed, magic, Reroll 2</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00017</recordname>
@@ -1218,7 +1256,7 @@
 				<type type="number">0</type>
 			</id-00006>
 			<id-00007>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
