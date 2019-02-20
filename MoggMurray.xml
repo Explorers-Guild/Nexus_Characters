@@ -49,6 +49,7 @@
 		</adventurelist>
 		<age type="string">23</age>
 		<alignment type="string">Lawful Evil</alignment>
+		<appearance type="string">A scraggly goblin in patchwork robes who reeks of rot and decay, particularly of the fungus and mold variety.</appearance>
 		<background type="string">Golgari Agent</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -75,11 +76,11 @@
 				<name type="string">SP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">17</amount>
+				<amount type="number">2</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">1143</amount>
+				<amount type="number">1043</amount>
 				<name type="string">GP</name>
 			</slot3>
 			<slot4>
@@ -112,7 +113,7 @@
 			<load type="number">73.81</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">544</exp>
+		<exp type="number">570</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -267,7 +268,7 @@
 		<flaws type="string">I don't bother to couch my opinions in flattering words.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">3'2</height>
-		<hero type="number">0</hero>
+		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
@@ -740,11 +741,11 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -998,34 +999,32 @@
 			<id-00009>
 				<actions>
 					<id-00001>
-						<heallist>
+						<damagelist>
 							<id-00001>
-								<bonus type="number">4</bonus>
-								<dice type="dice">d4</dice>
+								<dice type="dice">d4,d4,d4,d4</dice>
+								<type type="string">slashing,magic</type>
 							</id-00001>
-						</heallist>
-						<healtargeting type="string">self</healtargeting>
-						<healtype type="string">temp</healtype>
+						</damagelist>
 						<order type="number">1</order>
-						<type type="string">heal</type>
+						<type type="string">damage</type>
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a small amount of alcohol or distilled spirits)</components>
+				<components type="string">V, S, M (a sliver of glass)</components>
 				<description type="formattedtext">
-					<p>Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.</p>
+					<p>You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell's area for the first time on a turn or starts its turn there.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd.</p>
 				</description>
-				<duration type="string">1 hour</duration>
+				<duration type="string">Concentration, up to 1 minute</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">False Life</name>
+				<name type="string">Cloud of Daggers</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<school type="string">Necromancy</school>
-				<source type="string">Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
+				<range type="string">60 feet</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00009>
 			<id-00010>
 				<actions>
@@ -1061,101 +1060,47 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
 			</id-00010>
-			<id-00011>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You make yourself-including your clothing, armor, weapons, and other belongings on your person-look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.</p>
-					<p>The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.</p>
-					<p>To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.</p>
-				</description>
-				<duration type="string">1 hour</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Disguise Self</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Illusion</school>
-				<source type="string">Bard, Cleric Trickery Domain, Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
-			</id-00011>
 			<id-00012>
 				<actions>
-					<id-00001>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">constitution</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Blinded; NOTE: End of Round Save</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
-					<id-00003>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Deafened; NOTE: End of Round Save</label>
-						<order type="number">3</order>
-						<type type="string">effect</type>
-					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
+				<castingtime type="string">1 action or 8 hours</castingtime>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
+					<p>This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.</p>
+					<p>If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.</p>
+					<p>You can exclude one or more areas of any size within the spell's area from being affected.</p>
+					<p>If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested.</p>
 				</description>
-				<duration type="string">1 minute</duration>
+				<duration type="string">Instantaneous</duration>
 				<group type="string">Spells</group>
-				<level type="number">2</level>
+				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Blindness/Deafness</name>
-				<prepared type="number">1</prepared>
-				<range type="string">30 feet</range>
+				<name type="string">Plant Growth</name>
+				<prepared type="number">0</prepared>
+				<range type="string">150 feet</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Necromancy</school>
-				<source type="string">Bard, Cleric, Eldritch Knight, Warlock (Fiend), Sorcerer, Wizard, Arcane Trickster</source>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Cleric Nature Domain, Druid, Druid Forest Circle, Warlock (Archfey), Ranger</source>
 			</id-00012>
 			<id-00013>
 				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">NOTE: Deals half damage with Strength attacks; NOTE: Save on end of round; (C)</label>
-						<order type="number">2</order>
-						<type type="string">effect</type>
-					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
+				<components type="string">V, S, M (a drop of bitumen and a spider)</components>
 				<description type="formattedtext">
-					<p>A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.</p>
-					<p>At the end of each of the target's turns, it can make a Constitution saving throw against the spell. On a success, the spell ends.</p>
+					<p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.</p>
 				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
+				<duration type="string">Concentration, up to 1 hour</duration>
 				<group type="string">Spells</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Ray of Enfeeblement</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Necromancy</school>
-				<source type="string">Eldritch Knight, Warlock, Wizard, Arcane Trickster</source>
+				<name type="string">Spider Climb</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid Forest Circle, Druid Mountain Circle, Druid Underdark Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00013>
 			<id-00014>
 				<actions>
@@ -1257,90 +1202,12 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Aganazzar's Scorcher</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00016>
-			<id-00017>
-				<actions>
-					<id-00001>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d4,d4,d4,d4</dice>
-								<type type="string">slashing,magic</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">1</order>
-						<type type="string">damage</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a sliver of glass)</components>
-				<description type="formattedtext">
-					<p>You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell's area for the first time on a turn or starts its turn there.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Cloud of Daggers</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<school type="string">Conjuration</school>
-				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
-			</id-00017>
-			<id-00018>
-				<actions>
-					<id-00001>
-						<atktype type="string">ranged</atktype>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d10</dice>
-								<type type="string">piercing,magic</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-					<id-00003>
-						<damagelist>
-							<id-00001>
-								<dice type="dice">d6,d6</dice>
-								<type type="string">cold,magic</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">3</order>
-						<type type="string">damage</type>
-					</id-00003>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">S, M (a drop of water or a piece of ice)</components>
-				<description type="formattedtext">
-					<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>
-					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Ice Knife</name>
-				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Druid, Sorcerer, Wizard</source>
-			</id-00018>
 			<id-00019>
 				<actions>
 				</actions>
@@ -1355,50 +1222,11 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Feather Fall</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00019>
-			<id-00020>
-				<actions>
-					<id-00001>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">1</order>
-						<savemagic type="number">1</savemagic>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
-								<type type="string">lightning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a bit of fur and a rod of amber, crystal, or glass)</components>
-				<description type="formattedtext">
-					<p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren't being worn or carried.</p>
-					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Lightning Bolt</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self (100-foot line)</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Evocation</school>
-				<source type="string">Sorcerer, Wizard</source>
-			</id-00020>
 			<id-00021>
 				<actions>
 					<id-00001>
@@ -1437,33 +1265,6 @@
 				<school type="string">Evocation</school>
 				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Monk, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00021>
-			<id-00022>
-				<actions>
-					<id-00001>
-						<durmod type="number">1</durmod>
-						<durunit type="string">hour</durunit>
-						<label type="string">Invisible; (C)</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (an eyelash encased in gum arabic)</components>
-				<description type="formattedtext">
-					<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>
-					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 hour</duration>
-				<group type="string">Spells</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Invisibility</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<school type="string">Illusion</school>
-				<source type="string">Bard, Druid Grassland Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
-			</id-00022>
 			<id-00023>
 				<actions>
 				</actions>
@@ -1471,6 +1272,7 @@
 				<description type="formattedtext">
 					<p>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can't use it again until you finish a short or long rest.</p>
 				</description>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Fury of the Small</name>
 				<prepared type="number">0</prepared>
@@ -1485,6 +1287,7 @@
 					<p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
 				</description>
 				<group type="string">Disengage or hide</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Nimble Escape</name>
 				<prepared type="number">0</prepared>
@@ -1667,7 +1470,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1736,6 +1539,6 @@
 				<type type="number">2</type>
 			</id-00002>
 		</weaponlist>
-		<weight type="string">50</weight>
+		<weight type="string">35</weight>
 	</character>
 </root>
