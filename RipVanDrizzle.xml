@@ -17,18 +17,18 @@
 				<score type="number">14</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">2</bonus>
-				<save type="number">2</save>
+				<bonus type="number">3</bonus>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">15</score>
+				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
-				<bonus type="number">2</bonus>
-				<save type="number">5</save>
+				<bonus type="number">3</bonus>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">15</score>
+				<score type="number">16</score>
 			</intelligence>
 			<strength>
 				<bonus type="number">1</bonus>
@@ -66,7 +66,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">8</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -76,15 +76,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">673</amount>
+				<amount type="number">1790</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">12</amount>
+				<amount type="number">21</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">202</amount>
+				<amount type="number">271</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -92,7 +92,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">190</amount>
+				<amount type="number">324</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -106,18 +106,18 @@
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">12</total>
+				<total type="number">13</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">100.2</load>
+			<load type="number">98.9</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">659</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">840</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -311,23 +311,33 @@
 					<p>Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effects from the cantrip.</p>
 				</text>
 			</id-00012>
+			<id-00013>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (lvl 8)</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I would rather lose honestly than lie to win.</flaws>
 		<gender type="string">Male</gender>
-		<hero type="number">3</hero>
+		<hero type="number">0</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
-			<wounds type="number">3</wounds>
+			<total type="number">50</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Generosity - My gift is for all to enjoy! (Good)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">2</total>
+			<total type="number">3</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
@@ -588,41 +598,43 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">300 GP</cost>
+				<cost type="string">200 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.</p>
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.hallucinatoryterrain@Incarnate-5eExpansion">Hallucinatory Terrain</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
 					<table>
 						<tr>
-							<td><b>Gem</b></td>
-							<td><b>Summoned Elemental</b></td>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
 						</tr>
 						<tr>
-							<td>Blue sapphire</td>
-							<td>Air elemental</td>
-						</tr>
-						<tr>
-							<td>Yellow diamond</td>
-							<td>Earth elemental</td>
-						</tr>
-						<tr>
-							<td>Red corundum</td>
-							<td>Fire elemental</td>
-						</tr>
-						<tr>
-							<td>Emerald</td>
-							<td>Water elemental.</td>
+							<td>4th</td>
+							<td>Rare</td>
+							<td>15</td>
+							<td>+7</td>
 						</tr>
 					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Elemental Gem Emerald</name>
-				<nonid_name type="string">A gem</nonid_name>
-				<nonidentified type="string">-</nonidentified>
-				<rarity type="string">Uncommon</rarity>
-				<type type="string">Wondrous Item</type>
-				<weight type="number">0.1</weight>
+				<name type="string">Scroll of Hallucinatory Terrain</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Fine Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
 			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
@@ -687,12 +699,12 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">200 GP</cost>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
-						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
 					</linklist>
 					<h>Description</h>
 					<p>You regain hit points when you drink this potion.</p>
@@ -705,59 +717,21 @@
 							<td>HP Regained</td>
 						</tr>
 						<tr>
-							<td>Superior healing</td>
-							<td>Rare</td>
-							<td>8d4 + 8</td>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
 						</tr>
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Superior Potion of Healing</name>
-				<nonid_name type="string">Potion</nonid_name>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
 				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Rare</rarity>
+				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00020>
-			<id-00021>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">216 gp</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<h>Description</h>
-					<p>When you drink this potion, you gain resistance to fire damage for 1 hour.</p>
-					<p><b>Potion Notes</b></p>
-					<p>Drinking or administering a potion takes an action.</p>
-				</description>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Fire Resistance</name>
-				<nonid_name type="string">Potion</nonid_name>
-				<nonidentified type="string">This vial contains a liquid with a slightly red tinge to it.</nonidentified>
-				<properties type="string">Magic</properties>
-				<rarity type="string">Uncommon</rarity>
-				<spells>
-					<id-00001>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Potion of Fire Resistance</name>
-					</id-00001>
-					<id-00002>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Potion</name>
-					</id-00002>
-				</spells>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00021>
 			<id-00022>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -781,7 +755,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">4</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -872,7 +846,7 @@
 			<id-00028>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">101 - 500 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
@@ -934,7 +908,7 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">8</level>
 		<name type="string">Rip Van Drizzle</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">13</perception>
@@ -991,18 +965,18 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -1293,6 +1267,7 @@
 				<name type="string">Greater Magic Missile</name>
 				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00007>
@@ -1342,7 +1317,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Sleep</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">90 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
@@ -1486,8 +1461,14 @@
 			<id-00014>
 				<actions>
 					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">intelligence</savedcstat>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
@@ -1495,7 +1476,9 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -1588,7 +1571,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">See Invisibility</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<school type="string">Divination</school>
 				<source type="string">Bard, Sorcerer, Wizard</source>
@@ -1816,6 +1799,137 @@
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00024>
+			<id-00025>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Invisible; (C)</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Invisibility</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Druid Underdark Circle, Eldritch Knight, Warlock (Archfey), Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8,d8,d8,d8,d8</dice>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs. If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it. If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Blight</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00026>
+			<id-00028>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a bit of fur and a rod of amber, crystal, or glass)</components>
+				<description type="formattedtext">
+					<p>A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren't being worn or carried.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Lightning Bolt</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Self (100-foot line)</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00028>
+			<id-00029>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a caterpillar cocoon)</components>
+				<description type="formattedtext">
+					<p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw. This spell can't affect a target that has 0 hit points.</p>
+					<p>The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.</p>
+					<p>The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knocked unconscious.</p>
+					<p>The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech. The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Polymorph</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Bard, Cleric Trickery Domain, Druid, Eldritch Knight, Eldritch Invocations, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00029>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1853,14 +1967,14 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Arcana</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1874,7 +1988,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
@@ -1902,14 +2016,14 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
 				<name type="string">Religion</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -1937,21 +2051,21 @@
 				<name type="string">Investigation</name>
 				<prof type="number">0</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
 				<name type="string">History</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00017>
 			<id-00018>
 				<misc type="number">0</misc>
@@ -1970,7 +2084,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2027,6 +2141,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
@@ -2043,7 +2158,7 @@
 			</id-00001>
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

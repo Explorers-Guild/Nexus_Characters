@@ -61,8 +61,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<hdused type="number">2</hdused>
+				<level type="number">7</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,19 +72,19 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">115</amount>
+				<amount type="number">249</amount>
 				<name type="string">SP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">2</amount>
+				<amount type="number">11</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">1043</amount>
+				<amount type="number">2360</amount>
 				<name type="string">GP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">106</amount>
+				<amount type="number">174</amount>
 				<name type="string">CP</name>
 			</slot4>
 			<slot5>
@@ -110,10 +110,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">73.81</load>
+			<load type="number">74.81</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">570</exp>
+		<exp type="number">743</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -264,17 +264,32 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Undead Thralls</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Necromancy</specialization>
+				<text type="formattedtext">
+					<p>At 6th level, you add the animate dead spell to your spellbook if it is not there already. When you cast animate dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.</p>
+					<p>Whenever you create an undead using a necromancy spell, it has additional benefits:</p>
+					<list>
+						<li>The creature's hit point maximum is increased by an amount equal to your wizard level.</li>
+						<li>The creature adds your proficiency bonus to its weapon damage rolls.</li>
+					</list>
+				</text>
+			</id-00009>
 		</featurelist>
 		<flaws type="string">I don't bother to couch my opinions in flattering words.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">3'2</height>
-		<hero type="number">3</hero>
+		<hero type="number">0</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">37</total>
+			<total type="number">51</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Interdependence. We are all part of nature's web.</ideals>
@@ -631,7 +646,26 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">2</weight>
 			</id-00020>
-			<id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">600 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While holding this wand, you gain a bonus to spell attack rolls determined by the wand's rarity. In addition, you ignore half cover when making a spell attack.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Wand of the War Mage, +1</name>
+				<nonid_name type="string">Wand</nonid_name>
+				<nonidentified type="string">A magical wand.</nonidentified>
+				<rarity type="string">Uncommon (requires attunement by a spellcaster)</rarity>
+				<subtype type="string">Arcane Focus</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00022>
+			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
@@ -667,7 +701,7 @@
 				<rarity type="string">Uncommon</rarity>
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
-			</id-00021>
+			</id-00023>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -680,7 +714,7 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">7</level>
 		<name type="string">Mogg Murray</name>
 		<notes type="string">Killed several gnolls and buried them somewhere\nhelped dwarven allies reclaim the everforge\nKilled Krake spawn and helped valona merfolk lady, also aided in killing several deep ones</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
@@ -741,14 +775,14 @@
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
-				<used type="number">1</used>
+				<max type="number">3</max>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
+				<max type="number">1</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -772,6 +806,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">preparation</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1060,6 +1095,28 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Eldritch Knight, Wizard, Arcane Trickster</source>
 			</id-00010>
+			<id-00011>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S, M (a small crystal bead)</components>
+				<description type="formattedtext">
+					<p>A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.</p>
+					<p>Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.</p>
+					<p>Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.</p>
+				</description>
+				<duration type="string">8 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Leomund's Tiny Hut</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self (10-foot-radius hemisphere)</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00011>
 			<id-00012>
 				<actions>
 				</actions>
@@ -1097,7 +1154,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Spider Climb</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<school type="string">Transmutation</school>
 				<source type="string">Druid Forest Circle, Druid Mountain Circle, Druid Underdark Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
@@ -1202,12 +1259,67 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Aganazzar's Scorcher</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00016>
+			<id-00017>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration)</components>
+				<description type="formattedtext">
+					<p>You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead.</p>
+					<p>The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead.</p>
+				</description>
+				<duration type="string">10 days</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Gentle Repose</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Cleric, Eldritch Knight, Wizard, Arcane Trickster</source>
+			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Charmed</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You attempt to charm a creature you can see within range. It must make a Wisdom saving throw, and it does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature is friendly to you. When the spell ends, the creature knows it was charmed by you.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Charm Monster</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Enchantment</school>
+				<source type="string">Bard, Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00018>
 			<id-00019>
 				<actions>
 				</actions>
@@ -1227,11 +1339,39 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00019>
+			<id-00020>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a vial of blood from a humanoid killed within the past 24 hours)</components>
+				<description type="formattedtext">
+					<p>You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be one of challenge rating 5 or lower, such as a shadow demon or a barlgura. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.</p>
+					<p>Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.</p>
+					<p>At the end of each of the demon's turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for 1d6 rounds if it still has hit points.</p>
+					<p>As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends.</p>
+					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Summon Greater Demon</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Warlock, Wizard</source>
+			</id-00020>
 			<id-00021>
 				<actions>
 					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
@@ -1239,7 +1379,9 @@
 					<id-00002>
 						<damagelist>
 							<id-00001>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -1311,8 +1453,9 @@
 				<level type="number">3</level>
 				<locked type="number">1</locked>
 				<name type="string">Animate Dead</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Necromancy</school>
 				<source type="string">Cleric, Eldritch Knight, Wizard, Arcane Trickster</source>
 			</id-00025>

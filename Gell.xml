@@ -11,7 +11,7 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -59,8 +59,8 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d12</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<hdused type="number">2</hdused>
+				<level type="number">5</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,15 +70,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">89</amount>
+				<amount type="number">1406</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">9</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">14</amount>
+				<amount type="number">83</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +86,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">11</amount>
+				<amount type="number">145</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -108,12 +108,19 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">155</load>
+			<load type="number">174</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">335</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">516</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Savage Attacker</name>
+				<text type="formattedtext">
+					<p>Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total.</p>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -251,18 +258,48 @@
 					<p>The healer of the tribe tries to keep all of the tribes-men's wounds cured. At level 3, when this path is chosen, you gain the ability to heal people directly and without a dice roll. Once per long rest you may touch 1 creature (not undead and not construct) healing it by a sum equal to 3x your barbarian level.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00009>
+			<id-00010>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Fast Movement</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 5th level, you speed increases by 10 feet while you aren't wearing heavy armor.</p>
+				</text>
+			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I am slow to trust members of other races, tribes, and societies.</flaws>
 		<gender type="string">male</gender>
 		<height type="string">7'4&#34;</height>
-		<hero type="number">3</hero>
+		<hero type="number">1</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
-			<wounds type="number">4</wounds>
+			<total type="number">50</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization. (Neutral)</ideals>
 		<initiative>
@@ -519,7 +556,7 @@
 			<id-00016>
 				<ac type="number">0</ac>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">101 - 500 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d12 slashing</damage>
@@ -554,6 +591,61 @@
 				<type type="string">Weapon</type>
 				<weight type="number">7</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2505 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d10 piercing, magic</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<p>Adamantine weapons were designed to be unbreakable. This strange allow puts up with so much abuse, that their wielders can let loose. They can swing harder at inanimate objects without fearing destroying their blades, and so they do. You get an automatic critical against any inanimate object when using an adamantine weapon.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.dragonslayer@Incarnate-5eExpansion">Dragon Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, &#34;dragon&#34; refers to any creature with the dragon type, including dragon turtles and wyverns.</p>
+					<p>You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.viciousweapon@Incarnate-5eExpansion">Vicious</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Adamantine Pike of Dragon Slaying</name>
+				<nonidentified type="string">A pointy pike.</nonidentified>
+				<properties type="string">Heavy, reach, two-handed</properties>
+				<subtype type="string">Martial Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">18</weight>
+			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">8,100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.</p>
+					<p>A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.</p>
+					<p><b>Mastery (Legendary) </b>. Your proficiency bonus increases by 1 while this pale green prism orbits your head.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Magic Stone from a Forgotten Time (Mastery)</name>
+				<nonid_name type="string">an old stone with strange writing in a forgotten language</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Legendary (requires attunement)</rarity>
+				<subtype type="string">Magical Stone</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00018>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -566,11 +658,11 @@
 				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">5</level>
 		<name type="string">Gell</name>
 		<notes type="string">Forester</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">11</perception>
+		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -739,8 +831,33 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Barbarian - Class Ability</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00004>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: One type of musical instrument</name>
@@ -765,28 +882,28 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -807,7 +924,7 @@
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -897,7 +1014,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -974,6 +1091,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1076,6 +1194,28 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00007>
+			<id-00008>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d10</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Vicious Adamantine Pike of Dragon Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Heavy, reach, two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00017</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
 		</weaponlist>
 		<weight type="string">283</weight>
 	</character>
