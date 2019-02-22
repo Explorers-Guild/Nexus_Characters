@@ -80,7 +80,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">433</amount>
+				<amount type="number">423</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -119,7 +119,7 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">143.7</load>
+			<load type="number">147.7</load>
 			<max type="number">255</max>
 		</encumbrance>
 		<exp type="number">546</exp>
@@ -262,7 +262,7 @@
 			<id-00006>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Divine Smite</name>
+				<name type="string">Divine Smite (plus 1d8 if undead or fiend)</name>
 				<source type="string">Paladin</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -545,6 +545,19 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00005>
+			<id-00006>
+				<carried type="number">2</carried>
+				<cost type="string">5 gp</cost>
+				<count type="number">2</count>
+				<damage type="string">1d6 slashing</damage>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Handaxe</name>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00006>
 			<id-00007>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -869,6 +882,12 @@
 			<id-00006>
 				<name type="string">Standard Actions</name>
 			</id-00006>
+			<id-00007>
+				<name type="string"> Paladin Spells</name>
+			</id-00007>
+			<id-00008>
+				<name type="string">Paladin Spells</name>
+			</id-00008>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -908,11 +927,11 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">5</max>
+				<max type="number">4</max>
 				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">2</used>
 			</spellslots2>
 			<spellslots3>
@@ -944,7 +963,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1219,31 +1238,25 @@
 			</id-00007>
 			<id-00008>
 				<actions>
-					<id-00001>
-						<durmod type="number">10</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">IFT: TYPE(aberration, celestial, elemental, fey, fiend, undead); GRANTDISATK; IMMUNE: charmed,frightened,possessed; (C)</label>
-						<order type="number">1</order>
-						<type type="string">effect</type>
-					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (holy water or powdered silver and iron, which the spell consumes)</components>
+				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p>
-					<p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>
+					<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p>
+					<p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p>
+					<p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
 				</description>
-				<duration type="string">Concentration up to 10 minutes</duration>
+				<duration type="string">1 minute</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Protection from Evil and Good</name>
-				<prepared type="number">1</prepared>
-				<range type="string">Touch</range>
+				<name type="string">Mage Hand</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Abjuration</school>
-				<source type="string">Cleric, Eldritch Knight, Paladin, Warlock, Wizard, Arcane Trickster</source>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00008>
 			<id-00009>
 				<actions>
@@ -1273,6 +1286,7 @@
 				<name type="string">Magic Missile</name>
 				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00009>
@@ -1479,6 +1493,98 @@
 				<prepared type="number">3</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00019>
+			<id-00020>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>This spell allows you to move at an incredible pace.</p>
+					<p>When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Expeditious Retreat</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<stat type="string">base</stat>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Paladin Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Cure Wounds</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
+			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">DMG: 2d6 thunder; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<order type="number">2</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+					<id-00003>
+						<label type="string">Prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder that is audible within 300 feet of you, and the attack deals an extra 2d6 thunder damage to the target. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Paladin Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Thunderous Smite</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Paladin</source>
+			</id-00022>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1635,7 +1741,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1794,6 +1900,50 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00006</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Handaxe</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00006</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 	</character>
 </root>
