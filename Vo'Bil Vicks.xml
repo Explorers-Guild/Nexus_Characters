@@ -112,7 +112,7 @@
 			<load type="number">48</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">621</exp>
+		<exp type="number">653</exp>
 		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
@@ -332,7 +332,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">44</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">9</wounds>
 		</hp>
 		<ideals type="string">People. I like seeing the smiles on people's faces when I perform. That's all that matters. Honesty. Art should reflect the soul; it should come from within and reveal who we really are.</ideals>
 		<initiative>
@@ -904,6 +904,9 @@
 			<id-00005>
 				<name type="string">Standard Actions</name>
 			</id-00005>
+			<id-00006>
+				<name type="string">Vicious Rapier of Monstrosity Slaying</name>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -944,11 +947,11 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
@@ -1852,7 +1855,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">radiant</type>
 							</id-00001>
 						</damagelist>
@@ -1992,6 +1996,74 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Druid, Sorcerer, Wizard</source>
 			</id-00040>
+			<id-00042>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Vicious Weapon; DMG: 2d6, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00842@Incarnate-5eExpansion">Vicious Weapon</link>
+					</linklist>
+				</description>
+				<group type="string">Vicious Rapier of Monstrosity Slaying</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Weapon</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00042>
+			<id-00043>
+				<actions>
+					<id-00003>
+						<apply type="string">action</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Monstrosity Slayer; IFT:TYPE(monstrosity);DMG:2d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00016@Incarnate-5eExpansion">Monstrosity Slayer</link>
+					</linklist>
+				</description>
+				<group type="string">Vicious Rapier of Monstrosity Slaying</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Monstrosity Slayer</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00043>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2152,7 +2224,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

@@ -102,7 +102,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">10</level>
+				<level type="number">11</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -112,7 +112,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">8916</amount>
+				<amount type="number">5319</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -128,7 +128,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">719</amount>
+				<amount type="number">714</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -157,8 +157,8 @@
 			<total type="number">0</total>
 			<treasure type="number">0</treasure>
 		</encumbrance>
-		<exp type="number">1073</exp>
-		<expneeded type="number">1100</expneeded>
+		<exp type="number">1105</exp>
+		<expneeded type="number">1200</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -183,7 +183,7 @@
 			<id-00003>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Natural Explorer - Desert, Forest</name>
+				<name type="string">Natural Explorer - Desert, Forest, Swamp</name>
 				<source type="string">Ranger</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -376,18 +376,45 @@
 					<p>Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.</p>
 				</text>
 			</id-00015>
+			<id-00016>
+				<level type="number">11</level>
+				<locked type="number">1</locked>
+				<name type="string">Dance of Battle (3rd ATK)</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Blade Dancer</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 11th level you may make one more attack per attack action. This is in addition to any extra attacks from other Ranger sources.</p>
+				</text>
+			</id-00016>
+			<id-00017>
+				<level type="number">11</level>
+				<locked type="number">1</locked>
+				<name type="string">Bladedancer's Evasion</name>
+				<source type="string">Ranger</source>
+				<specialization type="string">Blade Dancer</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.bladedancersevasion@Incarnate-5eExpansion">Bladedancer's Evasion</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 11th level, you can acrobatically dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. You must be dual wielding for evasion to work.</p>
+				</text>
+			</id-00017>
 		</featurelist>
 		<flaws type="string">I would send an innocent to face his death if it means I will win the fight.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">6'</height>
-		<hero type="number">0</hero>
+		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">94</total>
-			<wounds type="number">0</wounds>
+			<total type="number">103</total>
+			<wounds type="number">11</wounds>
 		</hp>
 		<ideals type="string">Golden Soul - I fight for money, and nothing else. (Neutral)</ideals>
 		<initiative>
@@ -902,7 +929,7 @@
 				<description type="formattedtext">
 					<p>A token given to Tak'ar by Madam Buval. It's use, still a mystery. Perhaps it's purpose will become known from further journeis in Trosilax.</p>
 				</description>
-				<location type="string">*</location>
+				<location type="string">*MentalTrophy</location>
 				<locked type="number">1</locked>
 				<name type="string">Flipping coin of ~Demolish-Stealth~</name>
 				<weight type="number">0</weight>
@@ -962,7 +989,7 @@
 			<id-00030>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
-				<location type="string">Backpack</location>
+				<location type="string">*</location>
 				<name type="string">Trophy - Otyugh' severed arm</name>
 				<weight type="number">3</weight>
 			</id-00030>
@@ -1018,7 +1045,7 @@
 				<name type="string">Deep Speech</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">10</level>
+		<level type="number">11</level>
 		<name type="string">Tak'ar Belin</name>
 		<notes type="string">Incarnate\n\nCurrently soul-bound to Zaeriez</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
@@ -1040,6 +1067,12 @@
 				<stat type="string">constitution</stat>
 				<uses type="number">0</uses>
 			</id-00002>
+			<id-00003>
+				<atkprof type="number">1</atkprof>
+				<name type="string">ATT</name>
+				<prepared type="number">2</prepared>
+				<saveprof type="number">1</saveprof>
+			</id-00003>
 			<id-00004>
 				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
@@ -1087,14 +1120,14 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -1257,26 +1290,6 @@
 				<school type="string">Divination</school>
 				<source type="string">Cleric, Druid, Paladin, Ranger</source>
 			</id-00004>
-			<id-00005>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM's discretion.</p>
-				</description>
-				<duration type="string">10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Speak with Animals</name>
-				<prepared type="number">1</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">1</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Bard, Druid, Ranger</source>
-			</id-00005>
 			<id-00006>
 				<actions>
 					<id-00001>
@@ -1311,7 +1324,7 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Item</group>
+				<group type="string">ATT</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Cloak of Protection</name>
@@ -1327,7 +1340,7 @@
 					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
-				<group type="string">Item</group>
+				<group type="string">ATT</group>
 				<level type="number">0</level>
 				<name type="string">Breastplate of Thunder Resistance</name>
 				<prepared type="number">0</prepared>
@@ -1343,7 +1356,7 @@
 					</id-00001>
 					<id-00002>
 						<durmod type="number">1</durmod>
-						<label type="string">GRANTADVATK</label>
+						<label type="string">ADVATK</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
 					</id-00002>
@@ -1354,10 +1367,17 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00003>
+					<id-00004>
+						<apply type="string">roll</apply>
+						<label type="string">DISSAV</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<level type="number">0</level>
-				<name type="string">*Dodge</name>
+				<locked type="number">1</locked>
+				<name type="string">*Player Actions</name>
 				<prepared type="number">0</prepared>
 			</id-00009>
 			<id-00010>
@@ -1744,7 +1764,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">10</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>This weapon has 6 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from it have a save DC of 15 and a spell attack bonus of +7. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it: create or destroy water (1 charge), tidal wave (3 charges), black tentacles (4 charges), or conjure elemental (5 charges, water elemental only).</p>
 					<linklist>
@@ -1760,7 +1780,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Cutlass of the Krake</name>
-				<prepared type="number">12</prepared>
+				<prepared type="number">6</prepared>
 				<usesperiod type="string">once</usesperiod>
 			</id-00016>
 			<id-00017>
@@ -1791,6 +1811,15 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00017>
+			<id-00018>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<name type="string">Cutlass of the Krake (O)</name>
+				<prepared type="number">6</prepared>
+			</id-00018>
 			<id-00019>
 				<actions>
 					<id-00001>
@@ -1802,9 +1831,100 @@
 				</actions>
 				<cast type="number">0</cast>
 				<level type="number">0</level>
-				<name type="string">Crits</name>
+				<locked type="number">1</locked>
+				<name type="string">*Crits</name>
 				<prepared type="number">0</prepared>
 			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<group type="string">Item</group>
+				<name type="string">Thunder Horn</name>
+				<prepared type="number">0</prepared>
+			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Bladedancer's Evasion; Evasion</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00022@Incarnate-5eExpansion">Bladedancer's Evasion</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Bladedancer's Evasion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Ranger - Class Ability</source>
+			</id-00021>
+			<id-00022>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a short reed or piece of straw)</components>
+				<description type="formattedtext">
+					<p>This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.</p>
+				</description>
+				<duration type="string">24 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Water Breathing</name>
+				<prepared type="number">1</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
+			</id-00022>
+			<id-00023>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Lesser Restoration</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Druid, Paladin, Ranger</source>
+			</id-00023>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -1976,7 +2096,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2129,7 +2249,7 @@
 				<type type="number">0</type>
 			</id-00004>
 			<id-00006>
-				<ammo type="number">0</ammo>
+				<ammo type="number">6</ammo>
 				<attackbonus type="number">2</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
