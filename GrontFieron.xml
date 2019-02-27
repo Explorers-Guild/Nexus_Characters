@@ -69,18 +69,30 @@
 					<recordname>reference.classdata.paladin@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00001>
+			<id-00002>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
+				<hddie type="dice">d10</hddie>
+				<hdused type="number">0</hdused>
+				<level type="number">1</level>
+				<name type="string">Fighter</name>
+				<shortcut type="windowreference">
+					<class>reference_class</class>
+					<recordname>reference.classdata.fighter@DD PHB Deluxe</recordname>
+				</shortcut>
+			</id-00002>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1987</amount>
+				<amount type="number">2745</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">26</amount>
+				<amount type="number">112</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">290</amount>
+				<amount type="number">502</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -88,7 +100,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">198</amount>
+				<amount type="number">237</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -103,9 +115,9 @@
 				<disstealth type="number">1</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
-				<shield type="number">2</shield>
+				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">20</total>
+				<total type="number">18</total>
 			</ac>
 		</defenses>
 		<deity type="string">God of Stitched Smiles</deity>
@@ -113,11 +125,12 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">483.54</load>
+			<load type="number">357.92</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">962</exp>
-		<expneeded type="number">1000</expneeded>
+		<exp type="number">1086</exp>
+		<expneeded type="number">1100</expneeded>
+		<faction type="string">White Jade Elixer</faction>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -405,6 +418,80 @@
 					<p>By 7th level, your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction. This movement doesn't provoke opportunity attacks.</p>
 				</text>
 			</id-00016>
+			<id-00017>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>
+					<p><b>Archery</b></p>
+					<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstylearchery@Incarnate-5eExpansion">Fighting Style - Archery</link>
+					</linklist>
+					<p><b>Defense</b></p>
+					<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstyledefense@Incarnate-5eExpansion">Fighting Style - Defense</link>
+					</linklist>
+					<p><b>Dueling</b></p>
+					<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstyledueling@Incarnate-5eExpansion">Fighting Style - Dueling</link>
+					</linklist>
+					<p><b>Great Weapon Fighting</b></p>
+					<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can re-roll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+					<p><b>Protection</b></p>
+					<p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstyleprotection@Incarnate-5eExpansion">Fighting Style - Protection</link>
+					</linklist>
+					<p><b>Two-Weapon Fighting</b></p>
+					<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+				</text>
+			</id-00017>
+			<id-00018>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Second Wind</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.secondwind@Incarnate-5eExpansion">Second Wind</link>
+					</linklist>
+					<h>Description</h>
+					<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+				</text>
+			</id-00018>
+			<id-00019>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighter Starting Items</name>
+				<source type="string">Fighter</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p><b>Click the shield below to open you choices for fighter starting items.</b></p>
+					<linklist>
+						<link class="reference_weapontable" recordname="lists.startingequipment.fighter@Incarnate-5eExpansion">Fighter Starting Equipment Options</link>
+					</linklist>
+					<p>Note: You only get these if your 1st level is in Fighter.</p>
+					<p><b>Summary</b></p>
+					<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+					<list>
+						<li>You get either 1) chainmail OR 2) leather armor, a longbow, 20 arrows and a quiver.</li>
+						<li>You get your choice of 1) a martial weapon and a shield OR 2) two martial weapons.</li>
+						<li>Your choice of 1) a light crossbow, 20 bolts and a quiver OR 2) two handaxes.</li>
+						<li>Your choice of an Explorer's Pack OR a Dungeoneer's Pack.</li>
+					</list>
+				</text>
+			</id-00019>
+			<id-00020>
+				<name type="string">Two-Weapon Fighting</name>
+			</id-00020>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge.</flaws>
 		<gender type="string">Male</gender>
@@ -415,8 +502,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">67</total>
-			<wounds type="number">0</wounds>
+			<total type="number">74</total>
+			<wounds type="number">16</wounds>
 		</hp>
 		<ideals type="string">Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. (Good)</ideals>
 		<initiative>
@@ -1033,12 +1120,12 @@
 			<id-00041>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">2</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<location type="string">Backpack</location>
+				<location type="string">Gronts Nexus room</location>
 				<locked type="number">1</locked>
 				<name type="string">mimic tooth</name>
 				<weight type="number">0.1</weight>
@@ -1061,7 +1148,7 @@
 				<weight type="number">0.01</weight>
 			</id-00042>
 			<id-00043>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">?</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1076,7 +1163,7 @@
 			<id-00044>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">200 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1119,7 +1206,7 @@
 			<id-00045>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">200 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1162,7 +1249,7 @@
 			<id-00046>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">5</count>
 				<description type="formattedtext">
 					<p>3 for shield</p>
@@ -1178,7 +1265,7 @@
 			<id-00047>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Necrotic metal can be use to make meduin or heavy aumor with necrotic resistance.</p>
@@ -1198,7 +1285,7 @@
 				<weight type="number">0.1</weight>
 			</id-00048>
 			<id-00049>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<location type="string">Gronts Nexus room</location>
 				<name type="string">Glowing mushroom</name>
@@ -1207,7 +1294,7 @@
 			<id-00050>
 				<ac type="number">0</ac>
 				<bonus type="number">2</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">3500 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 slashing</damage>
@@ -1231,7 +1318,7 @@
 			<id-00051>
 				<ac type="number">0</ac>
 				<bonus type="number">2</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">10 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1251,13 +1338,13 @@
 				<weight type="number">6</weight>
 			</id-00051>
 			<id-00052>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<name type="string">Gronts Nexus room</name>
 				<weight type="number">0</weight>
 			</id-00052>
 			<id-00053>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Gronts Nexus room</location>
@@ -1297,8 +1384,19 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00054>
+			<id-00055>
+				<carried type="number">2</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A White and Gold Armband With a high military rank on it</p>
+				</description>
+				<location type="string">Body</location>
+				<locked type="number">1</locked>
+				<name type="string">Armband of the White Jade Elixer</name>
+				<weight type="number">0</weight>
+			</id-00055>
 			<id-00056>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">10</count>
 				<location type="string">Gronts Nexus room</location>
 				<name type="string">scrap brass pile</name>
@@ -1335,6 +1433,128 @@
 				<name type="string">Head</name>
 				<weight type="number">0</weight>
 			</id-00058>
+			<id-00059>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 gp</cost>
+				<count type="number">6</count>
+				<description type="formattedtext">
+					<p>This gemstone is transparent blue-white to medium blue in color.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Blue Sapphire</name>
+				<subtype type="string">Gemstones (100 Gp)</subtype>
+				<type type="string">Treasure</type>
+				<weight type="number">0.03</weight>
+			</id-00059>
+			<id-00060>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">5 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Chest with fluffy ones symbol</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">25</weight>
+			</id-00060>
+			<id-00061>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Dragon Eel Hide</name>
+				<weight type="number">50</weight>
+			</id-00061>
+			<id-00062>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Dragons Eel Tooth</name>
+				<weight type="number">1</weight>
+			</id-00062>
+			<id-00063>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">400 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This bag superficially resembles a bag of holding but is a feeding orifice for a gigantic extra-dimensional creature. Turning the bag inside out closes the orifice.</p>
+					<p>The extra-dimensional creature attached to the bag can sense whatever is placed inside the bag. Animal or vegetable matter placed wholly in the bag is devoured and lost forever. When part of a living creature is placed in the bag, as happens when someone reaches inside it, there is a 50 percent chance that the creature is pulled inside the bag. A creature inside the bag can use its action to try to escape with a successful DC 15 Strength check.</p>
+					<p>Another creature can use its action to reach into the bag to pull a creature out, doing so with a successful</p>
+					<p>DC 20 Strength check (provided it isn't pulled inside the bag first). Any creature that starts its turn inside the bag is devoured, its body destroyed.</p>
+					<p>Inanimate objects can be stored in the bag, which can hold a cubic foot of such material. However, once each day, the bag swallows any objects inside it and spits them out into another plane of existence. The GM determines the time and plane.</p>
+					<p>If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Bag of Devouring inside out atm</name>
+				<nonid_name type="string">Large burlap bag.</nonid_name>
+				<nonidentified type="string">This large burlap bag is approximately 2 feet in diameter at its mouth and 4 feet deep.</nonidentified>
+				<rarity type="string">Very Rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">15</weight>
+			</id-00063>
+			<id-00064>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes.</p>
+					<p>The affected creature then gains the effect of a freedom of movement spell for 8 hours.</p>
+					<p>Alternatively, the oil can be poured on the ground as an action, where it covers a 10--foot square, duplicating the effect of the grease spell in that area for 8 hours.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Oil of Slipperiness</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">This sticky black unguent is thick and heavy in the container, but it flows quickly when poured.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00064>
+			<id-00065>
+				<ac type="number">0</ac>
+				<bonus type="number">2</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">4210 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d12 piercing, cold-forged iron, magic</damage>
+				<description type="formattedtext">
+					<p>You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.</p>
+					<p>Wars with fiends and demons forced the creation of new types of weapons. Men learned to forge in low temperature environments to change the nature of the iron so it could pierce the hot scales of demons. The process is not simple, and certainly not cheap, but to save your life it might be worth it.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.feyslayer@Incarnate-5eExpansion">Fey Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an fey with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;fey&#34; refers to any creature with the fey type.</p>
+					<p>You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.flametongue@Incarnate-5eExpansion">Flame Tongue</link>
+					</linklist>
+					<h>Description</h>
+					<p>You can use a bonus action to speak this magic weapon's command word, causing flames to erupt from the blade. These flames shed bright light in a 40--foot radius and dim light for an additional 40 feet.</p>
+					<p>While the weapon is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Flame Tongue Cold Forged Iron Lance of Fey Slaying</name>
+				<nonidentified type="string">A pointy lance.</nonidentified>
+				<properties type="string">Reach, special</properties>
+				<subtype type="string">Martial Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">6</weight>
+			</id-00065>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1347,9 +1567,9 @@
 				<name type="string">Common</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">9</level>
+		<level type="number">10</level>
 		<name type="string">Gront Fieron</name>
-		<notes type="string">He is a Gnoll from the Stitch plain Helios Down, Gnolls from Helios Down live as long as Humans and have the corruption that there cousin have removed for thousands of years basically making them a very different race from the Gnolls of other plains/worlds. they can still kinda be bullys.\n\nGront was raised in one of the few cities that exist on Helios and is a warrior of justice that would adventure out to smite evil. (this city is in a jungle area.)\n\nGront is a paladin of the God of Stitch Smiles, also known as the Struggler for his rise to god hood was just a string of one event to another of beings trying to kill him or use him. &#34;note was a mortal at one point.&#34;\n\nhe was sent as eyes and ears for his god.\n\nThe God of Stitch Smiles is a white nine tailed humaniod fox with two black horns that rap back then forward agen with glowing lines that chan color with his mood, blue glowing eyes with black sclera, black claws, he has a stretchy cord that has no ends laced through black metal loops in his lips it does not hinder him even though it always appears taut and does not interact with any other matter then his own.\n He uselly is seen wearing a hooded cloak of some kind uselly ornate in nature colors are: Main colors: black, white, purples, grays Other colors: golds, reds, greens, white, black, grays, blues, purples, silvers, coppers.\nhe also has a ornate dagger that can not not be stolen that is fused to his being known as the dagger of power stealing one strike can temperarily steal a portion of the beings power and if the being is killed its power is permanetly giving to its owner, this blade is known as the Gods Bane Dagger its true name is only known to few. &#34;note this dagger can kill multiplainer/multivers beings&#34;\nThe God of Stitch Smiles cam roam about any plain he pleases as most beings have learned to not mess in his affairs but he uselly keeps to the Plains he rules/watches over. &#34;note this means he can go just about any where unless another being with enuff power to bar him from directly entering a plain or has come to a agreement not to interfere direcly with the plain in his physical form.&#34; &#34;note use this god like any normal god unless you want him to pop in for lore reasons or you want him to litteraly come if a clerics Divine intervention succeeds.&#34; &#34;this god is Chaotic Good&#34; &#34;i will flush this god out more later if needed.&#34;\n\nGront Faught/Killed: 3 Wolfs, 2 Dire Wolfs, 1 Winter wolfs, 1 Doppleganger, 1 Living Painting, 1 Mimic, 1 Baby basilisk, 1 Lamia, 2 Werejackle, to many humans, fext 1 time, 4 skeletons, to many deep ones, 1 coral drake, 1 Shambling mound, 2 bone crabs, 1 giant viper, 2 vipers, 2 Otyugh, 2 lich hounds, gext 1 time, 1 helmed horror, 2 rock reptile, 2 Kracken spawn, 3 hell hound, 1 animated Sword, 2 Fire snake, 1 Anubian, 1 Firegriest, 1 Azer, 1 Nightmare, 1 azer lord, 1 Crimson drake,\n1 Cambion, 1 Golem Hoard\n\nencountered: Earth-Myrmidon,2 Water-Myrmidon, Fire-Myrmidon, Air-Myrmidon\n\nGront knows what things he faught or encountered smell like\n\nknown gods: God of Stitched Smiles, sanvi destiny knoledge and vision,\nknown gods?: ruby one something done to him by the fluffy one.\n\npeople known: \nValona, undead zaeriezd\n\nnotes found:\nVANE, My spies have assured me both first born daughters will be at the wedding. We will meet you at the sacred sight the night before the Witchers Moon.Soon the world will see first hand the true power and hunger of the Dark One.Your dark and devouted servant,TILEAN\n\nsomething about the tower on the mountain\n\nshield</notes>
+		<notes type="string">He is a Gnoll from the Stitch plain Helios Down, Gnolls from Helios Down live as long as Humans and have the corruption that there cousin have removed for thousands of years basically making them a very different race from the Gnolls of other plains/worlds. they can still kinda be bullys.\n\nGront was raised in one of the few cities that exist on Helios and is a warrior of justice that would adventure out to smite evil. (this city is in a jungle area.)\n\nGront is a paladin of the God of Stitch Smiles, also known as the Struggler for his rise to god hood was just a string of one event to another of beings trying to kill him or use him. &#34;note was a mortal at one point.&#34;\n\nhe was sent as eyes and ears for his god.\n\nThe God of Stitch Smiles is a white nine tailed humaniod fox with two black horns that rap back then forward agen with glowing lines that chan color with his mood, blue glowing eyes with black sclera, black claws, he has a stretchy cord that has no ends laced through black metal loops in his lips it does not hinder him even though it always appears taut and does not interact with any other matter then his own.\n He uselly is seen wearing a hooded cloak of some kind uselly ornate in nature colors are: Main colors: black, white, purples, grays Other colors: golds, reds, greens, white, black, grays, blues, purples, silvers, coppers.\nhe also has a ornate dagger that can not not be stolen that is fused to his being known as the dagger of power stealing one strike can temperarily steal a portion of the beings power and if the being is killed its power is permanetly giving to its owner, this blade is known as the Gods Bane Dagger its true name is only known to few. &#34;note this dagger can kill multiplainer/multivers beings&#34;\nThe God of Stitch Smiles cam roam about any plain he pleases as most beings have learned to not mess in his affairs but he uselly keeps to the Plains he rules/watches over. &#34;note this means he can go just about any where unless another being with enuff power to bar him from directly entering a plain or has come to a agreement not to interfere direcly with the plain in his physical form.&#34; &#34;note use this god like any normal god unless you want him to pop in for lore reasons or you want him to litteraly come if a clerics Divine intervention succeeds.&#34; &#34;this god is Chaotic Good&#34; &#34;i will flush this god out more later if needed.&#34;\n\nGront Faught/Killed: 3 Wolfs, 2 Dire Wolfs, 1 Winter wolfs, 1 Doppleganger, 1 Living Painting, 1 Mimic, 1 Baby basilisk, 1 Lamia, 2 Werejackle, to many humans, fext 1 time, 4 skeletons, to many deep ones, 1 coral drake, 1 Shambling mound, 2 bone crabs, 1 giant viper, 2 vipers, 2 Otyugh, 2 lich hounds, gext 1 time, 1 helmed horror, 2 rock reptile, 2 Kracken spawn, 3 hell hound, 1 animated Sword, 2 Fire snake, 1 Anubian, 1 Firegriest, 1 Azer, 1 Nightmare Fenrir, 1 azer lord, 1 Crimson drake, 1 Cambion, 2 Golem Hoard, 1 Bone Naga, 3 Minotaur Skeletons, 1 stone golem, 1 Dragon Eel\n\nWhite jade Elixers Watch list: Kruger\nWhite jade Elixers hunt list: Fenrir\n\n\nencountered: Earth-Myrmidon, Water-Myrmidon, Fire-Myrmidon, Air-Myrmidon, Efreeti, Merregon, Magmin, Salamander, Gynosphinx, Leviathan,\n\nGront knows what things he faught or encountered smell like\n\nknown gods: God of Stitched Smiles, sanvi destiny knoledge and vision,\nknown gods?: ruby one something done to him by the fluffy one.\n\npeople known: \nValona, undead zaeriezd\n\nnotes found:\nVANE, My spies have assured me both first born daughters will be at the wedding. We will meet you at the sacred sight the night before the Witchers Moon.Soon the world will see first hand the true power and hunger of the Dark One.Your dark and devouted servant,TILEAN\n\nsomething about the tower on the mountain\n\nshield</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1511,7 +1731,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Lay on Hands</name>
-				<prepared type="number">35</prepared>
+				<prepared type="number">45</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Paladin - Class Ability</source>
 			</id-00001>
@@ -2115,6 +2335,56 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
 			</id-00022>
+			<id-00023>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p>
+					<p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Detect Evil and Good</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<school type="string">Divination</school>
+				<source type="string">Cleric, Paladin</source>
+			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10</dice>
+								<stat type="string">fighter</stat>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.profighter.features.id-00035@Incarnate-5eExpansion">Second Wind</link>
+					</linklist>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Second Wind</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Fighter - Class Ability</source>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00024>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2127,6 +2397,12 @@
 			<id-00003>
 				<name type="string">Tool: One type of musical instrument</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Armor: Light armor, medium armor, shields</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Weapon: Simple weapons, martial weapons</name>
+			</id-00005>
 		</proficiencylist>
 		<race type="string">Civilized Gnolls</race>
 		<racelink type="windowreference">
@@ -2263,18 +2539,24 @@
 				<total type="number">0</total>
 			</id-00018>
 			<id-00019>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<name type="string">Intimidation smaller or weaker</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">10</total>
+				<total type="number">12</total>
 			</id-00019>
+			<id-00020>
+				<misc type="number">2</misc>
+				<name type="string">Persuasion Bigger or Stronger</name>
+				<prof type="number">2</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">12</total>
+			</id-00020>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">30</base>
 			<misc type="number">0</misc>
-			<special type="string">10</special>
 			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
@@ -2367,11 +2649,13 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">strength</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d8</dice>
+						<stat type="string">strength</stat>
 						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
@@ -2456,18 +2740,20 @@
 			</id-00005>
 			<id-00006>
 				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">strength</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d6</dice>
+						<stat type="string">strength</stat>
 						<statmult type="number">1</statmult>
 						<type type="string">slashing,magic</type>
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Scimitar +1a</name>
+				<name type="string">Scimitar +1</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light</properties>
 				<shortcut type="windowreference">
@@ -2521,12 +2807,14 @@
 			</id-00008>
 			<id-00009>
 				<attackbonus type="number">2</attackbonus>
-				<carried type="number">1</carried>
+				<attackstat type="string">strength</attackstat>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>
 						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
+						<stat type="string">strength</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing,magic</type>
 					</id-00001>
 				</damagelist>
@@ -2541,6 +2829,28 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00009>
+			<id-00010>
+				<attackbonus type="number">2</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d12</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Flame Tongue Cold Forged Iron Lance of Fey Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Reach, special</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00065</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00010>
 		</weaponlist>
 		<weight type="string">225</weight>
 	</character>

@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -61,25 +61,37 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">5</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
 					<recordname>reference.classdata.monk@DD PHB Deluxe</recordname>
 				</shortcut>
 			</id-00001>
+			<id-00002>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
+				<hddie type="dice">d8</hddie>
+				<hdused type="number">0</hdused>
+				<level type="number">1</level>
+				<name type="string">Rogue</name>
+				<shortcut type="windowreference">
+					<class>reference_class</class>
+					<recordname>reference.classdata.rogue@DD Xanathar's Guide to Everything Players</recordname>
+				</shortcut>
+			</id-00002>
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">344</amount>
+				<amount type="number">798</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">86</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">139</amount>
+				<amount type="number">185</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">73</amount>
+				<amount type="number">299</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,11 +122,11 @@
 			<encumbered type="number">150</encumbered>
 			<encumberedheavy type="number">300</encumberedheavy>
 			<liftpushdrag type="number">900</liftpushdrag>
-			<load type="number">77.5</load>
+			<load type="number">85</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">490</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">665</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -245,16 +257,107 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.stunningstrike@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00012>
+			<id-00013>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Expertise</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
+				</text>
+			</id-00013>
+			<id-00014>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Rogue Starting Items</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p><b>Click the shield below to open you choices for rogue starting items.</b></p>
+					<linklist>
+						<link class="reference_weapontable" recordname="lists.startingequipment.rogue@Incarnate-5eExpansion">Rogue Starting Equipment Options</link>
+					</linklist>
+					<p>Note: You only get these if your 1st level is in Rogue</p>
+					<p><b>Summary</b></p>
+					<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+					<list>
+						<li>You get either a rapier or a shortsword.</li>
+						<li>You get either 1) a shortbow, 20 arrows, and a quiver OR 2) a shortsword.</li>
+						<li>You get either a burgler's pack, dungeoneer's pack, or an explorer's pack.</li>
+						<li>You get leather armor, two daggers, and thieves tools.</li>
+					</list>
+				</text>
+			</id-00014>
+			<id-00015>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Thieves' Cant</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes 4 times longer to convey such a message than it does to speak the same idea plainly.</p>
+					<p>In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</p>
+				</text>
+			</id-00015>
+			<id-00016>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Sneak Attack</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.sneakattack@Incarnate-5eExpansion">Sneak Attack</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
+					<p>You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
+					<p>The amount of extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00045@Incarnate-5eExpansion">The Rogue</link>
+					</linklist>
+				</text>
+			</id-00016>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge. There's no room for caution in a life lived to the fullest.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">7'9&#34;</height>
+		<hero type="number">0</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
-			<wounds type="number">0</wounds>
+			<total type="number">39</total>
+			<wounds type="number">7</wounds>
 		</hp>
 		<ideals type="string">Honor. If I dishonor myself, I dishonor my whole clan. Glory. I must earn glory in battle, for myself and my clan.</ideals>
 		<initiative>
@@ -320,6 +423,7 @@
 				<effect type="string">DMG: [DEX] bludgeoning</effect>
 				<effectlist>
 				</effectlist>
+				<location type="string">Hands</location>
 				<locked type="number">1</locked>
 				<name type="string">Unarmed Strike (Monk)</name>
 				<type type="string">Weapon</type>
@@ -360,6 +464,7 @@
 				<count type="number">10</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Leather Bandolier</location>
 				<locked type="number">1</locked>
 				<name type="string">Dart</name>
 				<properties type="string">Finesse, thrown (range 20/60)</properties>
@@ -382,6 +487,7 @@
 					<p>You have advantage on saving throws against spells while you wear this cloak.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Chest</location>
 				<locked type="number">1</locked>
 				<name type="string">Mantle of Spell Resistance</name>
 				<nonid_name type="string">Cloak</nonid_name>
@@ -419,6 +525,12 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">10</weight>
 			</id-00010>
+			<id-00011>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Body</name>
+				<weight type="number">0</weight>
+			</id-00011>
 			<id-00012>
 				<carried type="number">1</carried>
 				<cost type="string">2 gp</cost>
@@ -431,6 +543,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
 			</id-00012>
+			<id-00013>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Body</location>
+				<name type="string">Waist</name>
+				<weight type="number">0</weight>
+			</id-00013>
 			<id-00014>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -448,6 +567,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00014>
+			<id-00015>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Body</location>
+				<name type="string">Chest</name>
+				<weight type="number">0</weight>
+			</id-00015>
 			<id-00016>
 				<carried type="number">1</carried>
 				<cost type="string">2 sp</cost>
@@ -463,7 +589,7 @@
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 bludgeoning</damage>
@@ -471,6 +597,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Dragon pole</name>
 				<properties type="string">Versatile (1d8)</properties>
@@ -481,7 +608,7 @@
 			<id-00018>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
-				<location type="string">Body</location>
+				<location type="string">Waist</location>
 				<name type="string">Rope Belt</name>
 				<weight type="number">0</weight>
 			</id-00018>
@@ -506,6 +633,7 @@
 				<count type="number">3</count>
 				<damage type="string">1d4 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Leather Bandolier</location>
 				<locked type="number">1</locked>
 				<name type="string">Dagger</name>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
@@ -513,6 +641,140 @@
 				<type type="string">Weapon</type>
 				<weight type="number">1</weight>
 			</id-00020>
+			<id-00021>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Body</location>
+				<name type="string">Hands</name>
+				<weight type="number">0</weight>
+			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1500 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning</damage>
+				<description type="formattedtext">
+					<p><b>Electrified Notes</b></p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.electrified@Incarnate-5eExpansion">Electrified</link>
+					</linklist>
+					<p>You can use a bonus action to speak this magic weapon's command word, causing its runes to sparkle with yellow light. The sparkling casts dim light for 15 feet.</p>
+					<p>While the runes are sparkling, it deals an extra 1d6 lightning damage to any target it hits. The target cannot take any reactions until the beginning of your next turn. The sparkling last until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.</p>
+					<p><b>Silver Weapon Notes</b></p>
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver, but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+				</description>
+				<location type="string">Hands</location>
+				<locked type="number">1</locked>
+				<name type="string">Silver Dragon pole [Electrified]</name>
+				<properties type="string">Versatile (1d8)</properties>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00022>
+			<id-00023>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Chest</location>
+				<name type="string">Leather Bandolier</name>
+				<weight type="number">0</weight>
+			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Superior healing</td>
+							<td>Rare</td>
+							<td>8d4 + 8</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Rope Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Found in a small container, this powder resembles very fine sand. It appears to be dust of disappearance, and an identify spell reveals it to be such. There is enough of it for one use.</p>
+					<p>When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating.</p>
+					<p>As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration spell can also end the effect on a creature.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Dust of Sneezing and Choking</name>
+				<nonid_name type="string">Bag of Dust</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">2</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">4301 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d4 slashing, magic</damage>
+				<description type="formattedtext">
+					<p>-</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.aberrationslayer@Incarnate-5eExpansion">Aberration Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an aberration with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;aberration&#34; refers to any creature with the aberration type.</p>
+					<p>You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.swordoflifestealing@Incarnate-5eExpansion">Sword of Life Stealing</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Hands</location>
+				<locked type="number">1</locked>
+				<name type="string">Life Stealing Sickle of Aberration Slaying</name>
+				<nonidentified type="string">A sharp sickle.</nonidentified>
+				<properties type="string">Light</properties>
+				<subtype type="string">Simple Melee Weapon</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -525,8 +787,9 @@
 				<name type="string">Goblin</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">6</level>
 		<name type="string">Chaya Bhalu</name>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I watch over my friends as if they were a litter of newborn pups.</personalitytraits>
@@ -541,19 +804,36 @@
 			<id-00003>
 				<name type="string">Background Feature</name>
 			</id-00003>
-			<id-00004>
-				<name type="string">Class Feature</name>
-			</id-00004>
 			<id-00005>
 				<name type="string">Clothing</name>
 			</id-00005>
 			<id-00006>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
+				<saveprof type="number">1</saveprof>
 			</id-00006>
 			<id-00007>
 				<name type="string">Consumables</name>
 			</id-00007>
+			<id-00008>
+				<name type="string">Silver Dragon pole [Electrified]</name>
+			</id-00008>
+			<id-00009>
+				<name type="string">Monk Feature</name>
+			</id-00009>
+			<id-00010>
+				<name type="string">Monk Feature</name>
+			</id-00010>
+			<id-00011>
+				<name type="string">Life Stealing Sickle of Aberration Slaying</name>
+			</id-00011>
+			<id-00012>
+				<name type="string">Rogue Features</name>
+			</id-00012>
+			<id-00013>
+				<name type="string">Rogue Features</name>
+			</id-00013>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -647,7 +927,7 @@
 					<p><b>Step of the Wind</b></p>
 					<p>You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
 				</description>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Step of the Wind (B)</name>
@@ -701,7 +981,7 @@
 					<p><b>Patient Defense</b></p>
 					<p>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</p>
 				</description>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Patient Defense (B)</name>
@@ -811,7 +1091,8 @@
 				<description type="formattedtext">
 					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
 				</description>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Slow Fall</name>
 				<prepared type="number">0</prepared>
@@ -820,7 +1101,7 @@
 			<id-00010>
 				<actions>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
 					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
@@ -832,7 +1113,7 @@
 					<p><b>Step of the Wind</b></p>
 					<p>You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
 				</description>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Ki</name>
@@ -878,7 +1159,7 @@
 					<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack (20/60 ft.). When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p>
 					<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</p>
 				</description>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Deflect Missiles (R)</name>
@@ -908,7 +1189,7 @@
 					<p>If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</p>
 				</description>
 				<duration type="string">Concentration, up to 10 minutes</duration>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">SA: Darkness (60) (C)</name>
@@ -935,7 +1216,7 @@
 					<p>You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.</p>
 				</description>
 				<duration type="string">8 hours</duration>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">SA: Darkvision (T)</name>
@@ -970,7 +1251,7 @@
 					<p>A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 hour</duration>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">SA: Pass without Trace (S) (C)</name>
@@ -1006,7 +1287,7 @@
 					<p>Casting a spell that includes a verbal component is impossible there.</p>
 				</description>
 				<duration type="string">Concentration, up to 10 minutes</duration>
-				<group type="string">Class Feature</group>
+				<group type="string">Monk Feature</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">SA: Silence (120) (C)</name>
@@ -1117,6 +1398,66 @@
 				<usesperiod type="string">once</usesperiod>
 				<weight type="number">2</weight>
 			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Electrified; DMG: 1d6 lightning</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00027@Incarnate-5eExpansion">Electrified</link>
+					</linklist>
+				</description>
+				<group type="string">Silver Dragon pole [Electrified]</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Electrified</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Stunning Strike; stunned</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.promonk.features.id-00034@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+				</description>
+				<group type="string">Monk Feature</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Monk - Class Ability</source>
+			</id-00021>
 			<id-00023>
 				<actions>
 					<id-00001>
@@ -1186,8 +1527,129 @@
 				<name type="string">Item: Waterskin</name>
 				<prepared type="number">10</prepared>
 			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00003>
+						<apply type="string">action</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Aberration Slayer; IFT:TYPE(aberration);DMG:2d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00007@Incarnate-5eExpansion">Aberration Slayer</link>
+					</linklist>
+				</description>
+				<group type="string">Life Stealing Sickle of Aberration Slaying</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Aberration Slayer</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00026>
+			<id-00027>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">IFT: TYPE(aberration, beast, celestials, dragon, elemental, fey, fiend, giant, humanoid, mison, monstrosity, ooze, plant, swarm); DMG:3d6 necrotic, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00838@Incarnate-5eExpansion">Sword of Life Stealing</link>
+					</linklist>
+				</description>
+				<group type="string">Life Stealing Sickle of Aberration Slaying</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sword of Life Stealing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00027>
+			<id-00029>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Sneak Attack; DMG: 1d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00018@Incarnate-5eExpansion">Sneak Attack</link>
+					</linklist>
+				</description>
+				<group type="string">Rogue Features</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Sneak Attack</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Rogue - Class Ability</source>
+			</id-00029>
+			<id-00031>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">8</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00409@Incarnate-5eExpansion">Superior Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Consumables</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00031>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Flute</name>
@@ -1198,6 +1660,12 @@
 			<id-00003>
 				<name type="string">Tool: Leatherworker&#146;s tools</name>
 			</id-00003>
+			<id-00004>
+				<name type="string">Armor: Light armor</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Tool: Thieves' tools</name>
+			</id-00005>
 		</proficiencylist>
 		<race type="string">Bugbear</race>
 		<racelink type="windowreference">
@@ -1219,21 +1687,21 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">9</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1273,9 +1741,9 @@
 			<id-00010>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">9</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1296,7 +1764,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1315,9 +1783,9 @@
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Investigation</name>
-				<prof type="number">0</prof>
+				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">1</total>
+				<total type="number">4</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1343,7 +1811,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1384,6 +1852,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -1392,6 +1861,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d4</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1411,13 +1881,11 @@
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
-						<stat type="string">dexterity</stat>
+					<id-00002>
+						<dice type="dice">d6</dice>
 						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
-					</id-00001>
+					</id-00002>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
@@ -1432,7 +1900,7 @@
 			<id-00003>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1499,6 +1967,52 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">bludgeoning, silver</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Silver Dragon pole [Electrified]</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00022</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
+			<id-00007>
+				<attackbonus type="number">2</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing,magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Life Stealing Sickle of Aberration Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Light</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00026</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00007>
 		</weaponlist>
 		<weight type="string">221lbs</weight>
 	</character>
