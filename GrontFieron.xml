@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">9</level>
+				<level type="number">10</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -84,11 +84,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2745</amount>
+				<amount type="number">2939</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">112</amount>
+				<amount type="number">123</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -125,11 +125,11 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">357.92</load>
+			<load type="number">310.74</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">1086</exp>
-		<expneeded type="number">1100</expneeded>
+		<exp type="number">1136</exp>
+		<expneeded type="number">1200</expneeded>
 		<faction type="string">White Jade Elixer</faction>
 		<featlist>
 			<id-00001>
@@ -492,6 +492,22 @@
 			<id-00020>
 				<name type="string">Two-Weapon Fighting</name>
 			</id-00020>
+			<id-00021>
+				<level type="number">10</level>
+				<locked type="number">1</locked>
+				<name type="string">Aura of Courage</name>
+				<source type="string">Paladin</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.auraofcourage@Incarnate-5eExpansion">Aura of Courage</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p>
+					<p>At 18th level, the range of this aura increases to 30 feet.</p>
+				</text>
+			</id-00021>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge.</flaws>
 		<gender type="string">Male</gender>
@@ -502,8 +518,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">74</total>
-			<wounds type="number">16</wounds>
+			<total type="number">81</total>
+			<wounds type="number">49</wounds>
 		</hp>
 		<ideals type="string">Greater Good. It is each person's responsibility to make the most happiness for the whole tribe. (Good)</ideals>
 		<initiative>
@@ -529,14 +545,14 @@
 				<weight type="number">4</weight>
 			</id-00001>
 			<id-00002>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>When you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
+				<location type="string">Gronts Nexus room</location>
 				<locked type="number">1</locked>
 				<name type="string">Hunting Trap</name>
 				<subtype type="string">Standard</subtype>
@@ -862,7 +878,7 @@
 				<weight type="number">10</weight>
 			</id-00024>
 			<id-00025>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">9</count>
 				<isidentified type="number">1</isidentified>
@@ -979,13 +995,13 @@
 			<id-00034>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">?</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Cloak made of the hide of a Fair Brander a flying creature that looks like a Giant Bat and is red.</p>
 				</description>
-				<location type="string">Backpack</location>
+				<location type="string">Body</location>
 				<locked type="number">1</locked>
 				<name type="string">Helios Fair Brander Cloak</name>
 				<type type="string">Cloak</type>
@@ -1436,13 +1452,14 @@
 			<id-00059>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">100 gp</cost>
 				<count type="number">6</count>
 				<description type="formattedtext">
 					<p>This gemstone is transparent blue-white to medium blue in color.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Gronts Nexus room</location>
 				<locked type="number">1</locked>
 				<name type="string">Blue Sapphire</name>
 				<subtype type="string">Gemstones (100 Gp)</subtype>
@@ -1452,13 +1469,14 @@
 			<id-00060>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Gronts Nexus room</location>
 				<locked type="number">1</locked>
 				<name type="string">Chest with fluffy ones symbol</name>
 				<subtype type="string">Standard</subtype>
@@ -1466,14 +1484,16 @@
 				<weight type="number">25</weight>
 			</id-00060>
 			<id-00061>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Gronts Nexus room</location>
 				<name type="string">Dragon Eel Hide</name>
 				<weight type="number">50</weight>
 			</id-00061>
 			<id-00062>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Gronts Nexus room</location>
 				<name type="string">Dragons Eel Tooth</name>
 				<weight type="number">1</weight>
 			</id-00062>
@@ -1492,6 +1512,7 @@
 					<p>If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Bag of Devouring inside out atm</name>
 				<nonid_name type="string">Large burlap bag.</nonid_name>
@@ -1503,7 +1524,7 @@
 			<id-00064>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1512,6 +1533,7 @@
 					<p>Alternatively, the oil can be poured on the ground as an action, where it covers a 10--foot square, duplicating the effect of the grease spell in that area for 8 hours.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Gronts Nexus room</location>
 				<locked type="number">1</locked>
 				<name type="string">Oil of Slipperiness</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -1555,6 +1577,13 @@
 				<type type="string">Weapon</type>
 				<weight type="number">6</weight>
 			</id-00065>
+			<id-00066>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Gronts Nexus room</location>
+				<name type="string">Giant ape hide</name>
+				<weight type="number">50</weight>
+			</id-00066>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1567,9 +1596,9 @@
 				<name type="string">Common</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">10</level>
+		<level type="number">11</level>
 		<name type="string">Gront Fieron</name>
-		<notes type="string">He is a Gnoll from the Stitch plain Helios Down, Gnolls from Helios Down live as long as Humans and have the corruption that there cousin have removed for thousands of years basically making them a very different race from the Gnolls of other plains/worlds. they can still kinda be bullys.\n\nGront was raised in one of the few cities that exist on Helios and is a warrior of justice that would adventure out to smite evil. (this city is in a jungle area.)\n\nGront is a paladin of the God of Stitch Smiles, also known as the Struggler for his rise to god hood was just a string of one event to another of beings trying to kill him or use him. &#34;note was a mortal at one point.&#34;\n\nhe was sent as eyes and ears for his god.\n\nThe God of Stitch Smiles is a white nine tailed humaniod fox with two black horns that rap back then forward agen with glowing lines that chan color with his mood, blue glowing eyes with black sclera, black claws, he has a stretchy cord that has no ends laced through black metal loops in his lips it does not hinder him even though it always appears taut and does not interact with any other matter then his own.\n He uselly is seen wearing a hooded cloak of some kind uselly ornate in nature colors are: Main colors: black, white, purples, grays Other colors: golds, reds, greens, white, black, grays, blues, purples, silvers, coppers.\nhe also has a ornate dagger that can not not be stolen that is fused to his being known as the dagger of power stealing one strike can temperarily steal a portion of the beings power and if the being is killed its power is permanetly giving to its owner, this blade is known as the Gods Bane Dagger its true name is only known to few. &#34;note this dagger can kill multiplainer/multivers beings&#34;\nThe God of Stitch Smiles cam roam about any plain he pleases as most beings have learned to not mess in his affairs but he uselly keeps to the Plains he rules/watches over. &#34;note this means he can go just about any where unless another being with enuff power to bar him from directly entering a plain or has come to a agreement not to interfere direcly with the plain in his physical form.&#34; &#34;note use this god like any normal god unless you want him to pop in for lore reasons or you want him to litteraly come if a clerics Divine intervention succeeds.&#34; &#34;this god is Chaotic Good&#34; &#34;i will flush this god out more later if needed.&#34;\n\nGront Faught/Killed: 3 Wolfs, 2 Dire Wolfs, 1 Winter wolfs, 1 Doppleganger, 1 Living Painting, 1 Mimic, 1 Baby basilisk, 1 Lamia, 2 Werejackle, to many humans, fext 1 time, 4 skeletons, to many deep ones, 1 coral drake, 1 Shambling mound, 2 bone crabs, 1 giant viper, 2 vipers, 2 Otyugh, 2 lich hounds, gext 1 time, 1 helmed horror, 2 rock reptile, 2 Kracken spawn, 3 hell hound, 1 animated Sword, 2 Fire snake, 1 Anubian, 1 Firegriest, 1 Azer, 1 Nightmare Fenrir, 1 azer lord, 1 Crimson drake, 1 Cambion, 2 Golem Hoard, 1 Bone Naga, 3 Minotaur Skeletons, 1 stone golem, 1 Dragon Eel\n\nWhite jade Elixers Watch list: Kruger\nWhite jade Elixers hunt list: Fenrir\n\n\nencountered: Earth-Myrmidon, Water-Myrmidon, Fire-Myrmidon, Air-Myrmidon, Efreeti, Merregon, Magmin, Salamander, Gynosphinx, Leviathan,\n\nGront knows what things he faught or encountered smell like\n\nknown gods: God of Stitched Smiles, sanvi destiny knoledge and vision,\nknown gods?: ruby one something done to him by the fluffy one.\n\npeople known: \nValona, undead zaeriezd\n\nnotes found:\nVANE, My spies have assured me both first born daughters will be at the wedding. We will meet you at the sacred sight the night before the Witchers Moon.Soon the world will see first hand the true power and hunger of the Dark One.Your dark and devouted servant,TILEAN\n\nsomething about the tower on the mountain\n\nshield</notes>
+		<notes type="string">He is a Gnoll from the Stitch plain Helios Down, Gnolls from Helios Down live as long as Humans and have the corruption that there cousin have removed for thousands of years basically making them a very different race from the Gnolls of other plains/worlds. they can still kinda be bullys.\n\nGront was raised in one of the few cities that exist on Helios and is a warrior of justice that would adventure out to smite evil. (this city is in a jungle area.)\n\nGront is a paladin of the God of Stitch Smiles, also known as the Struggler for his rise to god hood was just a string of one event to another of beings trying to kill him or use him. &#34;note was a mortal at one point.&#34;\n\nhe was sent as eyes and ears for his god.\n\nThe God of Stitch Smiles is a white nine tailed humaniod fox with two black horns that rap back then forward agen with glowing lines that chan color with his mood, blue glowing eyes with black sclera, black claws, he has a stretchy cord that has no ends laced through black metal loops in his lips it does not hinder him even though it always appears taut and does not interact with any other matter then his own.\n He uselly is seen wearing a hooded cloak of some kind uselly ornate in nature colors are: Main colors: black, white, purples, grays Other colors: golds, reds, greens, white, black, grays, blues, purples, silvers, coppers.\nhe also has a ornate dagger that can not not be stolen that is fused to his being known as the dagger of power stealing one strike can temperarily steal a portion of the beings power and if the being is killed its power is permanetly giving to its owner, this blade is known as the Gods Bane Dagger its true name is only known to few. &#34;note this dagger can kill multiplainer/multivers beings&#34;\nThe God of Stitch Smiles cam roam about any plain he pleases as most beings have learned to not mess in his affairs but he uselly keeps to the Plains he rules/watches over. &#34;note this means he can go just about any where unless another being with enuff power to bar him from directly entering a plain or has come to a agreement not to interfere direcly with the plain in his physical form.&#34; &#34;note use this god like any normal god unless you want him to pop in for lore reasons or you want him to litteraly come if a clerics Divine intervention succeeds.&#34; &#34;this god is Chaotic Good&#34; &#34;i will flush this god out more later if needed.&#34;\n\nGront Faught/Killed: 3 Wolfs, 2 Dire Wolfs, 1 Winter wolfs, 1 Doppleganger, 1 Living Painting, 1 Mimic, 1 Baby basilisk, 1 Lamia, 2 Werejackle, to many humans, fext 1 time, 4 skeletons, to many deep ones, 1 coral drake, 1 Shambling mound, 2 bone crabs, 1 giant viper, 2 vipers, 2 Otyugh, 2 lich hounds, gext 1 time, 1 helmed horror, 2 rock reptile, 2 Kracken spawn, 3 hell hound, 1 animated Sword, 2 Fire snake, 1 Anubian, 1 Firegriest, 1 Azer, 1 Nightmare Fenrir, 1 azer lord, 1 Crimson drake, 1 Cambion, 2 Golem Hoard, 1 Bone Naga, 3 Minotaur Skeletons, 1 stone golem, 1 Dragon Eel, 3 orcs,2 Giant apes, 3 ogre, 3 Goblins, 2 hobgoblins\n\nWhite jade Elixers Watch list: Kruger\nWhite jade Elixers hunt list: Fenrir\n\n\nencountered: Earth-Myrmidon, Water-Myrmidon, Fire-Myrmidon, Air-Myrmidon, Efreeti, Merregon, Magmin, Salamander, Gynosphinx, Leviathan,\n\nGront knows what things he faught or encountered smell like\n\nknown gods: God of Stitched Smiles, sanvi destiny knoledge and vision,\nknown gods?: ruby one something done to him by the fluffy one.\n\npeople known: \nValona, undead zaeriezd\n\nnotes found:\nVANE, My spies have assured me both first born daughters will be at the wedding. We will meet you at the sacred sight the night before the Witchers Moon.Soon the world will see first hand the true power and hunger of the Dark One.Your dark and devouted servant,TILEAN\n\nsomething about the tower on the mountain\n\nshield</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1660,15 +1689,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">2</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1981,26 +2010,6 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Paladin - Class Ability</source>
 			</id-00009>
-			<id-00010>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
-				</description>
-				<duration type="string">Instantaneous</duration>
-				<group type="string">Spells (Level 2)</group>
-				<level type="number">2</level>
-				<locked type="number">1</locked>
-				<name type="string">Lesser Restoration</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Touch</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Abjuration</school>
-				<source type="string">Bard, Cleric, Cleric Life Domain, Druid, Paladin, Ranger</source>
-			</id-00010>
 			<id-00011>
 				<actions>
 					<id-00001>
@@ -2339,21 +2348,25 @@
 				<actions>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
+				<castingtime type="string">10 minutes</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
-					<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p>
-					<p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>
+					<p>You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose, such as a warhorse, a pony, a camel, an elk, or a mastiff. (Your DM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p>
+					<p>Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.</p>
+					<p>When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.</p>
+					<p>While your steed is within 1 mile of you, you can communicate with each other telepathically.</p>
+					<p>You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.</p>
 				</description>
-				<duration type="string">Concentration, up to 10 minutes</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells (Level 2)</group>
+				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Detect Evil and Good</name>
+				<name type="string">Find Steed</name>
 				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<school type="string">Divination</school>
-				<source type="string">Cleric, Paladin</source>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Paladin</source>
 			</id-00023>
 			<id-00024>
 				<actions>
@@ -2385,6 +2398,26 @@
 				<source type="string">Fighter - Class Ability</source>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00024>
+			<id-00025>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (diamonds worth 300 gp, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Revivify</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Cleric, Cleric Life Domain, Paladin</source>
+			</id-00025>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2562,7 +2595,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2831,7 +2864,7 @@
 			</id-00009>
 			<id-00010>
 				<attackbonus type="number">2</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>
