@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">2</bonus>
-				<save type="number">4</save>
+				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
-				<save type="number">2</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -70,11 +70,11 @@
 				</shortcut>
 			</id-00001>
 			<id-00002>
-				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">2</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -84,15 +84,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">681</amount>
+				<amount type="number">719</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">5</amount>
+				<amount type="number">10</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">157</amount>
+				<amount type="number">205</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -100,7 +100,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">125</amount>
+				<amount type="number">157</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -124,11 +124,11 @@
 			<encumbered type="number">75</encumbered>
 			<encumberedheavy type="number">150</encumberedheavy>
 			<liftpushdrag type="number">450</liftpushdrag>
-			<load type="number">193.27</load>
+			<load type="number">206.77</load>
 			<max type="number">225</max>
 		</encumbrance>
-		<exp type="number">490</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">537</exp>
+		<expneeded type="number">600</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -328,6 +328,59 @@
 					<p>In addition when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Spellcasting</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>By the time you reach the 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does.</p>
+					<linklist>
+						<link class="reference_colindex" recordname="lists.spells.ranger@Incarnate-5eExpansion">Ranger Spells</link>
+					</linklist>
+					<p>The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+					<p>For example, if you know the 1st-level spell <i>animal friendship </i>and have a 1st-level and 2nd-level spell slot available, you can cast <i>animal friendship </i>using either slot.</p>
+					<p><b>Spells Known of 1st Level and Higher</b></p>
+					<p>You know two 1st-level spells of your choice from the ranger spell list.</p>
+					<p>The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00043@Incarnate-5eExpansion">The Ranger</link>
+					</linklist>
+					<p>Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.</p>
+					<p><b>Spellcasting Ability</b></p>
+					<p>Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.</p>
+					<p><b>Spell save DC </b>= 8 + your proficiency bonus + your Wisdom modifier</p>
+					<p><b>Spell attack modifier </b>= your proficiency bonus + your Wisdom modifier</p>
+				</text>
+			</id-00014>
+			<id-00015>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a fighting Style option more than once, even if you later get to choose again.</p>
+					<p><b>Archery</b></p>
+					<p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstylearchery@Incarnate-5eExpansion">Fighting Style - Archery</link>
+					</linklist>
+					<p><b>Defense</b></p>
+					<p>While you are wearing armor, you gain a +1 bonus to AC.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstyledefense@Incarnate-5eExpansion">Fighting Style - Defense</link>
+					</linklist>
+					<p><b>Dueling</b></p>
+					<p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2bonus to damage rolls with that weapon.</p>
+					<linklist>
+						<link class="power" recordname="spell.fightingstyledueling@Incarnate-5eExpansion">Fighting Style - Dueling</link>
+					</linklist>
+					<p><b>Two-Weapon Fighting</b></p>
+					<p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+				</text>
+			</id-00015>
 		</featurelist>
 		<flaws type="string">I speak with my axe, when the time calls for it, I don't yet understand men of other races aren't as interested in females that show off there strength.</flaws>
 		<gender type="string">Female</gender>
@@ -338,8 +391,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
-			<wounds type="number">0</wounds>
+			<total type="number">39</total>
+			<wounds type="number">19</wounds>
 		</hp>
 		<ideals type="string">A enemy unseen is a enemy that can kill you be the hunter not the hunted.</ideals>
 		<initiative>
@@ -360,6 +413,7 @@
 					<p>These rugged, thick, patched clothes are meant to protect your skin from the challenges of the woods. From snagging thorns to rips and tears these clothes were made to last... and if not that be patched.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Body</location>
 				<locked type="number">1</locked>
 				<name type="string">Clothes, Work</name>
 				<subtype type="string">Standard</subtype>
@@ -460,6 +514,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Body</location>
 				<locked type="number">1</locked>
 				<name type="string">Thick Gloves</name>
 				<rarity type="string">Uncommon</rarity>
@@ -561,6 +616,11 @@
 				<type type="string">Tool</type>
 				<weight type="number">1</weight>
 			</id-00012>
+			<id-00013>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Body</name>
+			</id-00013>
 			<id-00014>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -615,6 +675,13 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.25</weight>
 			</id-00016>
+			<id-00017>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
+				<name type="string">Crocodile Hide</name>
+				<weight type="number">50</weight>
+			</id-00017>
 			<id-00018>
 				<attune type="number">0</attune>
 				<carried type="number">0</carried>
@@ -682,15 +749,16 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
 				<locked type="number">1</locked>
-				<name type="string">Backpack</name>
+				<name type="string">Backpack 2</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">5</weight>
@@ -966,10 +1034,11 @@
 			</id-00037>
 			<id-00038>
 				<attune type="number">0</attune>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Bedroll</name>
 				<subtype type="string">Standard Adventuring Gear</subtype>
@@ -1044,7 +1113,7 @@
 				<attune type="number">0</attune>
 				<carried type="number">0</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">5</count>
+				<count type="number">12</count>
 				<damage type="string">1d6 piercing</damage>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Black and Gold paterned Bag of Holding</location>
@@ -1168,6 +1237,7 @@
 				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<location type="string">Body</location>
 				<name type="string">Trophy Necklace</name>
 				<weight type="number">0</weight>
 			</id-00051>
@@ -1175,7 +1245,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">100 GP</cost>
 				<count type="number">2</count>
 				<description type="formattedtext">
@@ -1201,6 +1271,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Greater Potion of Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -1211,8 +1282,9 @@
 			</id-00052>
 			<id-00053>
 				<attune type="number">0</attune>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">1</count>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
 				<name type="string">business documents</name>
 				<weight type="number">0</weight>
 			</id-00053>
@@ -1220,7 +1292,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">2</count>
 				<damage type="string">1d6 piercing, silver</damage>
@@ -1245,6 +1317,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
+				<location type="string">Backpack Slot</location>
 				<locked type="number">1</locked>
 				<name type="string">Silver arrow</name>
 				<weight type="number">0.05</weight>
@@ -1253,7 +1326,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">200 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1273,6 +1346,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Frost Giant Strength</name>
 				<nonid_name type="string">Potion</nonid_name>
@@ -1285,13 +1359,14 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>Great for carrying stuff around and the like.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Large Burlap Bag</name>
 				<nonid_name type="string">Large burlap bag.</nonid_name>
@@ -1304,7 +1379,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1701 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing, cold-forged iron, magic</damage>
@@ -1326,6 +1401,7 @@
 					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Black and Gold paterned Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Vicious Cold Forged Iron Spear of Dragon Slaying</name>
 				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
@@ -1333,6 +1409,40 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00058>
+			<id-00059>
+				<carried type="number">1</carried>
+				<count type="number">10</count>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Trophy Necklace</location>
+				<locked type="number">1</locked>
+				<name type="string">Crocodile teeth</name>
+				<weight type="number">0.05</weight>
+			</id-00059>
+			<id-00060>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.restorativeointment@Incarnate-5eExpansion">Restorative Ointment</link>
+					</linklist>
+					<h>Description</h>
+					<p>This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe.</p>
+					<p>The jar and its contents weigh 1/2 pound.</p>
+					<p>As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Restorative Ointment</name>
+				<nonid_name type="string">Glass jar</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0.5</weight>
+			</id-00060>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1351,9 +1461,9 @@
 				<name type="string">Infernal</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Jenuel Flayer</name>
-		<notes type="string">A friend of Gront Fieron who went missing during his trail of age.\n\neven though Helios down gnolls are generally half a foot bigger then gnolls from other worlds she is large for her race.\n\nHer family is known for they're skill with bow.\n\nShe did scouting work for the city of Vab'alovobe reporting in threats and changes in the jungles and deserts around the city.\n\nfought/killed: lots of Gnolls, 1 Gnoll Fange, 3 skeletons, 3 zombies, 1 wight, 1 Hound of the Night, \n\nencountered: 1 weretiger, 4 Giant toads, 1 cockatrice, 1 monolith warior, 1 dryad\n\nremembers creatures and they're smells\n\n</notes>
+		<notes type="string">A friend of Gront Fieron who went missing during his trail of age.\n\neven though Helios down gnolls are generally half a foot bigger then gnolls from other worlds she is large for her race.\n\nHer family is known for they're skill with bow.\n\nShe did scouting work for the city of Vab'alovobe reporting in threats and changes in the jungles and deserts around the city.\n\nfought/killed: lots of Gnolls, 1 Gnoll Fange, 3 skeletons, 3 zombies, 1 wight, 1 Hound of the Night, 1 crocodile, bunch of lizard man, \n\nencountered: 1 weretiger, 4 Giant toads, 1 cockatrice, 1 monolith warior, 1 dryad\n\nremembers creatures and they're smells\n\n</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1368,6 +1478,11 @@
 				<saveprof type="number">1</saveprof>
 				<uses type="number">0</uses>
 			</id-00001>
+			<id-00002>
+				<castertype type="string">memorization</castertype>
+				<name type="string">Spells</name>
+				<stat type="string">wisdom</stat>
+			</id-00002>
 			<id-00003>
 				<name type="string">Class</name>
 			</id-00003>
@@ -1410,7 +1525,7 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">0</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
@@ -1448,6 +1563,31 @@
 		</powermeta>
 		<powermode type="string">standard</powermode>
 		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Fighting Style - Archer; ATK: 2 ranged</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.proranger.features.id-00055@Incarnate-5eExpansion">Fighting Style</link>
+					</linklist>
+				</description>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Fighting Style - Archery</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Fighter - Class Ability</source>
+			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00002>
@@ -1501,7 +1641,7 @@
 				<source type="string">Rogue - Class Ability</source>
 			</id-00005>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Felling Axe</name>
@@ -1542,49 +1682,49 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">6</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -1619,7 +1759,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1661,35 +1801,35 @@
 				<name type="string">Felling Ax</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00019>
 			<id-00020>
 				<misc type="number">0</misc>
 				<name type="string">Felling Ax</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00020>
 			<id-00021>
 				<misc type="number">0</misc>
 				<name type="string">Thieves' Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00021>
 			<id-00022>
 				<misc type="number">5</misc>
 				<name type="string">Intimidation Smaller/weaker</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">10</total>
+				<total type="number">12</total>
 			</id-00022>
 			<id-00023>
 				<misc type="number">5</misc>
 				<name type="string">Persuasion bigger/stronger</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">10</total>
+				<total type="number">12</total>
 			</id-00023>
 		</skilllist>
 		<speed>
@@ -1701,7 +1841,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00010_token</token>
+		<token type="token">portrait_id-00012_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1792,6 +1932,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d4</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1832,7 +1973,7 @@
 				<type type="number">2</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">0</ammo>
+				<ammo type="number">3</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1928,7 +2069,7 @@
 			</id-00007>
 			<id-00008>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2020,7 +2161,7 @@
 			</id-00011>
 			<id-00012>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2043,7 +2184,7 @@
 			</id-00012>
 			<id-00013>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
@@ -2066,7 +2207,7 @@
 			</id-00013>
 			<id-00014>
 				<attackbonus type="number">1</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
