@@ -11,8 +11,8 @@
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
-				<save type="number">5</save>
-				<savemodifier type="number">0</savemodifier>
+				<save type="number">6</save>
+				<savemodifier type="number">1</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
 			</constitution>
@@ -32,8 +32,8 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">3</bonus>
-				<save type="number">6</save>
-				<savemodifier type="number">0</savemodifier>
+				<save type="number">7</save>
+				<savemodifier type="number">1</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
 			</strength>
@@ -50,6 +50,7 @@
 		<age type="string">31</age>
 		<alignment type="string">chaotic neutral</alignment>
 		<appearance type="string">fairly unscarred for a barbarian. hard to read his face for emotions.</appearance>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -58,9 +59,11 @@
 		<bonds type="string">I will bring terrible wrath down on the evildoers who destroyed my homeland.</bonds>
 		<classes>
 			<id-00001>
+				<casterlevelinvmult type="number">0</casterlevelinvmult>
+				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
-				<hdused type="number">2</hdused>
-				<level type="number">5</level>
+				<hdused type="number">0</hdused>
+				<level type="number">6</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,15 +73,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1406</amount>
+				<amount type="number">1902</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">9</amount>
+				<amount type="number">14</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">83</amount>
+				<amount type="number">189</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +89,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">145</amount>
+				<amount type="number">242</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,6 +99,7 @@
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
@@ -108,11 +112,11 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">174</load>
+			<load type="number">176.5</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">516</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">606</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -288,17 +292,33 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Giver of Life</name>
+				<source type="string">Barbarian</source>
+				<specialization type="string">Path of the Healer</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.giveroflife@Incarnate-5eExpansion">Giver of Life</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting a level 6 you can use a bonus action to touch a creature, not including undead or constructs, granting it 2x your barbarian level in temporary hit points. You may use this feature once per short rest. The temporary hit points expire after 1 hour.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<flaws type="string">I am slow to trust members of other races, tribes, and societies.</flaws>
 		<gender type="string">male</gender>
 		<height type="string">7'4&#34;</height>
-		<hero type="number">1</hero>
+		<hero type="number">2</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">50</total>
+			<total type="number">59</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Nature. The natural world is more important than all the constructs of civilization. (Neutral)</ideals>
@@ -308,49 +328,8 @@
 			<total type="number">1</total>
 		</initiative>
 		<inventorylist>
-			<id-00001>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d12 piercing</damage>
-				<description type="formattedtext">
-					<p>You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Lance</name>
-				<nonid_name type="string">Lance</nonid_name>
-				<nonidentified type="string">A pointy lance.</nonidentified>
-				<properties type="string">Reach, special</properties>
-				<subtype type="string">Martial Melee Weapon</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">6</weight>
-			</id-00001>
-			<id-00002>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">5 GP</cost>
-				<count type="number">2</count>
-				<damage type="string">1d6 slashing</damage>
-				<description type="formattedtext">
-					<p>-</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Handaxe</name>
-				<nonid_name type="string">Handaxe</nonid_name>
-				<nonidentified type="string">A sharp stout handaxe.</nonidentified>
-				<properties type="string">Light, thrown (range 20/60)</properties>
-				<subtype type="string">Simple Melee Weapon</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00002>
 			<id-00003>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -362,6 +341,7 @@
 				<weight type="number">10</weight>
 			</id-00003>
 			<id-00004>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -376,6 +356,7 @@
 				<weight type="number">7</weight>
 			</id-00004>
 			<id-00005>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -388,6 +369,7 @@
 			</id-00005>
 			<id-00006>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
@@ -403,6 +385,7 @@
 				<weight type="number">5</weight>
 			</id-00006>
 			<id-00007>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">1</count>
@@ -418,6 +401,7 @@
 			</id-00007>
 			<id-00008>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
@@ -433,6 +417,7 @@
 				<weight type="number">2</weight>
 			</id-00008>
 			<id-00009>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -447,6 +432,7 @@
 				<weight type="number">1</weight>
 			</id-00009>
 			<id-00010>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
@@ -462,6 +448,7 @@
 			</id-00010>
 			<id-00011>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
@@ -483,6 +470,7 @@
 			</id-00011>
 			<id-00012>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 GP</cost>
@@ -508,6 +496,7 @@
 			</id-00012>
 			<id-00013>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 GP</cost>
@@ -524,6 +513,7 @@
 			</id-00013>
 			<id-00014>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
@@ -540,6 +530,7 @@
 			</id-00014>
 			<id-00015>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">5</count>
@@ -555,6 +546,7 @@
 			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">101 - 500 gp</cost>
@@ -593,8 +585,9 @@
 			</id-00016>
 			<id-00017>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2505 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d10 piercing, magic</damage>
@@ -627,6 +620,7 @@
 			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
+				<attune type="number">1</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">8,100 GP</cost>
@@ -646,6 +640,82 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">1</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">194 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d10 slashing</damage>
+				<description type="formattedtext">
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver, but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Silver Glaive</name>
+				<properties type="string">Heavy, reach, two-handed</properties>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">6</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">2</count>
+				<damage type="string">1d6 piercing, silver</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Spear, Silvered</name>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -658,19 +728,30 @@
 				<name type="string">Orc</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Gell</name>
 		<notes type="string">Forester</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm always picking things up, absently fiddling with them, and sometimes accidentally breaking them.</personalitytraits>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
 			</id-00001>
+			<id-00002>
+				<name type="string">Potions</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Class Ability</name>
+			</id-00003>
+			<id-00004>
+				<name type="string">Action</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">Effect</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -746,7 +827,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">preparation</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -770,11 +851,11 @@
 						<link class="reference_racialtrait" recordname="race.id-00008.traits.id-00008@Incarnate-5eExpansion">Relentless Endurance</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Class Ability</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Relentless Endurance</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00001>
@@ -797,11 +878,11 @@
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00028@Incarnate-5eExpansion">Rage</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Class Ability</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Rage</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Barbarian - Class Ability</source>
 			</id-00002>
@@ -823,7 +904,7 @@
 						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00029@Incarnate-5eExpansion">Reckless Attack</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Class Ability</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Reckless Attack</name>
@@ -848,7 +929,7 @@
 						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
 					</linklist>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Action</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Dodge</name>
@@ -856,6 +937,120 @@
 				<ritual type="number">0</ritual>
 				<source type="string">5e Rule Coding</source>
 			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Potions</group>
+				<level type="number">0</level>
+				<name type="string">Healing potion</name>
+				<prepared type="number">0</prepared>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Potions</group>
+				<level type="number">0</level>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00003>
+						<heallist>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">barbarian</stat>
+								<statmult type="number">2</statmult>
+							</id-00002>
+						</heallist>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Quick Links</h>
+					<linklist>
+						<link class="reference_class" recordname="class.probarbarian@Incarnate-5eExpansion">Barbarian</link>
+						<link class="reference_classability" recordname="class.probarbarian.abilities.id-00003@Incarnate-5eExpansion">Path of the Healer</link>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00010@Incarnate-5eExpansion">Giver of Life</link>
+					</linklist>
+				</description>
+				<group type="string">Class Ability</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Giver of Life</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Barbarian - Class Ability</source>
+			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">barbarian</stat>
+							</id-00001>
+							<id-00002>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">barbarian</stat>
+							</id-00002>
+							<id-00003>
+								<bonus type="number">0</bonus>
+								<dice type="dice"></dice>
+								<stat type="string">barbarian</stat>
+							</id-00003>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Quick Links</h>
+					<linklist>
+						<link class="reference_class" recordname="class.probarbarian@Incarnate-5eExpansion">Barbarian</link>
+						<link class="reference_classability" recordname="class.probarbarian.abilities.id-00003@Incarnate-5eExpansion">Path of the Healer</link>
+						<link class="reference_classfeature" recordname="class.probarbarian.features.id-00009@Incarnate-5eExpansion">Healer</link>
+					</linklist>
+				</description>
+				<group type="string">Class Ability</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Healer - Barbarian</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Barbarian - Class Ability</source>
+			</id-00008>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -878,32 +1073,32 @@
 		<size type="string">Medium</size>
 		<skilllist>
 			<id-00001>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00002>
 			<id-00003>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -920,11 +1115,11 @@
 				<total type="number">1</total>
 			</id-00006>
 			<id-00007>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1008,13 +1203,12 @@
 			<armor type="number">0</armor>
 			<base type="number">30</base>
 			<misc type="number">0</misc>
-			<special type="string">15,14,13,12,10,8</special>
 			<temporary type="number">0</temporary>
 			<total type="number">30</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00011_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1050,76 +1244,19 @@
 			</id-00003>
 		</traitlist>
 		<weaponlist>
-			<id-00001>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d12</dice>
-						<stat type="string">base</stat>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Lance</name>
-				<prof type="number">1</prof>
-				<properties type="string">Reach, special</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00001</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00001>
-			<id-00002>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Handaxe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00002</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00002>
-			<id-00003>
-				<ammo type="number">0</ammo>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d6</dice>
-						<stat type="string">base</stat>
-						<type type="string">slashing</type>
-					</id-00001>
-				</damagelist>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">2</maxammo>
-				<name type="string">Handaxe</name>
-				<prof type="number">1</prof>
-				<properties type="string">Light, thrown (range 20/60)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00002</recordname>
-				</shortcut>
-				<type type="number">2</type>
-			</id-00003>
 			<id-00004>
+				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
+						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Javelin</name>
@@ -1133,14 +1270,18 @@
 			</id-00004>
 			<id-00005>
 				<ammo type="number">0</ammo>
+				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
+						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">4</maxammo>
 				<name type="string">Javelin</name>
@@ -1153,14 +1294,18 @@
 				<type type="number">2</type>
 			</id-00005>
 			<id-00006>
+				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
+						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Staff</name>
@@ -1173,16 +1318,18 @@
 				<type type="number">0</type>
 			</id-00006>
 			<id-00007>
-				<attackbonus type="number">1</attackbonus>
+				<attackbonus type="number">2</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d12</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing,magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Greataxe, +1</name>
@@ -1195,16 +1342,18 @@
 				<type type="number">0</type>
 			</id-00007>
 			<id-00008>
-				<attackbonus type="number">1</attackbonus>
+				<attackbonus type="number">2</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d10</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing,magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Vicious Adamantine Pike of Dragon Slaying</name>
@@ -1216,6 +1365,75 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00008>
+			<id-00009>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d10</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Silver Glaive</name>
+				<prof type="number">1</prof>
+				<properties type="string">Heavy, reach, two-handed</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00009>
+			<id-00010>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear, Silvered</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00021</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00010>
+			<id-00011>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear, Silvered</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00021</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00011>
 		</weaponlist>
 		<weight type="string">283</weight>
 	</character>

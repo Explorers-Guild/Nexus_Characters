@@ -49,6 +49,7 @@
 		</adventurelist>
 		<age type="string">105</age>
 		<appearance type="string">purple hair, green eyes, meduim built,</appearance>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Sage</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -60,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Cleric</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -70,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">617</amount>
+				<amount type="number">1113</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">4</amount>
+				<amount type="number">9</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">184</amount>
+				<amount type="number">290</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -86,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">135</amount>
+				<amount type="number">232</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,12 +97,13 @@
 		<defenses>
 			<ac>
 				<armor type="number">3</armor>
+				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">16</total>
+				<total type="number">13</total>
 			</ac>
 			<special type="string">12</special>
 		</defenses>
@@ -109,11 +111,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">85.56</load>
+			<load type="number">93.86</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">582</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">672</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -320,6 +322,32 @@
 					</table>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Channel Divinity (2 times)</name>
+				<source type="string">Cleric</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p>
+					<p>When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</p>
+					<p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.</p>
+					<p>Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.</p>
+					<p><b>Channel Divinity: Turn Undead</b></p>
+					<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
+					<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Thunderbolt Strike</name>
+				<source type="string">Cleric</source>
+				<specialization type="string">Tempest Domain</specialization>
+				<text type="formattedtext">
+					<p>At 6th level, when you deal lightning damage to a Large or smaller creature, you can also push it up to 10 feet away from you.</p>
+				</text>
+			</id-00012>
 		</featurelist>
 		<gender type="string">female5</gender>
 		<height type="string">5 foot 3</height>
@@ -329,7 +357,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">32</total>
+			<total type="number">38</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -340,6 +368,7 @@
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">10 GP</cost>
@@ -360,6 +389,7 @@
 				<weight type="number">2</weight>
 			</id-00001>
 			<id-00002>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">50 gp</cost>
 				<count type="number">1</count>
@@ -373,6 +403,7 @@
 			</id-00002>
 			<id-00003>
 				<ac type="number">11</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
@@ -396,6 +427,7 @@
 			</id-00003>
 			<id-00004>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">2</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
@@ -416,6 +448,7 @@
 				<weight type="number">6</weight>
 			</id-00004>
 			<id-00005>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -427,6 +460,7 @@
 				<weight type="number">10</weight>
 			</id-00005>
 			<id-00006>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -441,6 +475,7 @@
 				<weight type="number">7</weight>
 			</id-00006>
 			<id-00007>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -453,6 +488,7 @@
 			</id-00007>
 			<id-00008>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
@@ -468,6 +504,7 @@
 				<weight type="number">5</weight>
 			</id-00008>
 			<id-00009>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">1</count>
@@ -483,6 +520,7 @@
 			</id-00009>
 			<id-00010>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
@@ -498,6 +536,7 @@
 				<weight type="number">2</weight>
 			</id-00010>
 			<id-00011>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -512,6 +551,7 @@
 				<weight type="number">1</weight>
 			</id-00011>
 			<id-00012>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
@@ -527,6 +567,7 @@
 			</id-00012>
 			<id-00013>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 GP</cost>
@@ -542,6 +583,7 @@
 				<weight type="number">1</weight>
 			</id-00013>
 			<id-00014>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
@@ -553,6 +595,7 @@
 				<weight type="number">0.06</weight>
 			</id-00014>
 			<id-00015>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
@@ -564,6 +607,7 @@
 			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">-</cost>
@@ -578,7 +622,8 @@
 				<weight type="number">0.2</weight>
 			</id-00016>
 			<id-00017>
-				<carried type="number">1</carried>
+				<attune type="number">0</attune>
+				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -589,6 +634,7 @@
 				<weight type="number">3</weight>
 			</id-00017>
 			<id-00018>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 cp</cost>
 				<count type="number">20</count>
@@ -601,6 +647,7 @@
 			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -617,6 +664,7 @@
 			</id-00019>
 			<id-00020>
 				<ac type="number">0</ac>
+				<attune type="number">1</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">300 GP</cost>
@@ -648,6 +696,7 @@
 			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">900 GP</cost>
@@ -671,6 +720,7 @@
 			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
@@ -692,6 +742,7 @@
 			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 gp</cost>
@@ -709,6 +760,7 @@
 			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 GP</cost>
@@ -749,8 +801,47 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00024>
+			<id-00025>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00025>
 			<id-00026>
 				<ac type="number">13</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
@@ -768,6 +859,7 @@
 			</id-00026>
 			<id-00027>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
@@ -803,6 +895,59 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00027>
+			<id-00028>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">2</count>
+				<damage type="string">1d6 piercing, silver</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Spear, Silvered</name>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of hostile creatures that are ethereal, invisible, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.</p>
+					<p>The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Wand of Enemy Detection</name>
+				<nonid_name type="string">Wand</nonid_name>
+				<nonidentified type="string">A magical wand.</nonidentified>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<subtype type="string">Arcane Focus</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">16</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Silver arrow</name>
+				<weight type="number">0.05</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -822,7 +967,7 @@
 			<id-00006>
 			</id-00006>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">willow</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">15</perception>
@@ -910,7 +1055,7 @@
 				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
@@ -1364,8 +1509,10 @@
 					<id-00001>
 						<heallist>
 							<id-00001>
+								<bonus type="number">0</bonus>
 								<dice type="dice">d8</dice>
 								<stat type="string">base</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 						</heallist>
 						<order type="number">1</order>
@@ -1473,7 +1620,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Invisibility</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Touch</range>
 				<school type="string">Illusion</school>
 				<source type="string">Bard, Druid Grassland Circle, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
@@ -1504,7 +1651,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Magic Missile</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -1512,10 +1659,50 @@
 			</id-00019>
 			<id-00020>
 				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">cold</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnJheS1vZi1mcm9zdA/play/">Frost Ray - Wizard Spells E</link>
+					</linklist>
+					<h>Description</h>
+					<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. A creature immune to cold damage is immune to this speed reduction. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ray of Frost</name>
 				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Wizard</source>
 			</id-00020>
 			<id-00021>
 				<actions>
@@ -1543,7 +1730,7 @@
 						<type type="string">damage</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S, M (a tiny ball of bat guano and sulfur)</components>
 				<description type="formattedtext">
@@ -1564,6 +1751,89 @@
 				<source type="string">Sorcerer, Wizard</source>
 				<usesperiod type="string">once</usesperiod>
 			</id-00021>
+			<id-00022>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6Om1hZ2UtaGFuZC1h/play/"><b>Syrinscape </b></link>: Magical hand - Wizard Spells E</linklist>
+					<h>Description</h>
+					<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
+				</description>
+				<duration type="string">1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Mage Hand</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, M (a holy symbol)</components>
+				<description type="formattedtext">
+					<p>You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.</p>
+					<p>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Word of Radiance</name>
+				<prepared type="number">0</prepared>
+				<range type="string">5 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric</source>
+			</id-00023>
+			<id-00024>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (burning incense)</components>
+				<description type="formattedtext">
+					<p>You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The spell fails if the corpse was the target of this spell within the last 10 days.</p>
+					<p>Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn't return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.</p>
+				</description>
+				<duration type="string">10 minutes</duration>
+				<group type="string">Item</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Speak with Dead</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<school type="string">Necromancy</school>
+				<source type="string">Cleric</source>
+			</id-00024>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1718,7 +1988,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00012_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1779,6 +2049,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Shortsword</name>
@@ -1791,7 +2062,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">6</ammo>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1802,6 +2073,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">20</maxammo>
 				<name type="string">Longbow</name>
@@ -1824,6 +2096,7 @@
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Staff of the Python</name>
@@ -1835,6 +2108,52 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear, Silvered</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00028</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear, Silvered</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00028</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 	</character>
 </root>

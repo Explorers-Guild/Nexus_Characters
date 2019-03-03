@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
-				<save type="number">2</save>
+				<save type="number">3</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -57,7 +57,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">4</level>
+				<level type="number">7</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -65,17 +65,18 @@
 				</shortcut>
 			</id-00001>
 		</classes>
+		<coinother type="string">570.22 gp, Efficient Quiver</coinother>
 		<coins>
 			<slot1>
-				<amount type="number">334</amount>
+				<amount type="number">1015</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">4</amount>
+				<amount type="number">9</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">51</amount>
+				<amount type="number">208</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -83,7 +84,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">74</amount>
+				<amount type="number">199</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -104,11 +105,11 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">82.15</load>
+			<load type="number">87.45</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">453</exp>
-		<expneeded type="number">500</expneeded>
+		<exp type="number">701</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -255,15 +256,56 @@
 					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Uncanny Dodge [rogue 5]</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.uncannydodge@Incarnate-5eExpansion">Uncanny Dodge</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+				</text>
+			</id-00011>
+			<id-00012>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Expertise (Acrobatics, Insight) [rogue 6]</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>
+					<p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>
+				</text>
+			</id-00012>
+			<id-00013>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Evasion</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.evasion@Incarnate-5eExpansion">Evasion</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <i>ice storm </i>spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<gender type="string">Female</gender>
-		<hero type="number">0</hero>
+		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">27</total>
+			<total type="number">45</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -274,6 +316,7 @@
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">10 GP</cost>
@@ -293,27 +336,11 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00001>
-			<id-00002>
-				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>A quiver can hold up to 20 arrows.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Quiver</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">1</weight>
-			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 CP</cost>
 				<count type="number">20</count>
 				<description type="formattedtext">
@@ -330,6 +357,7 @@
 			</id-00003>
 			<id-00004>
 				<ac type="number">11</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">10 GP</cost>
@@ -353,8 +381,9 @@
 			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">25 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -379,6 +408,7 @@
 			</id-00005>
 			<id-00006>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
@@ -395,6 +425,7 @@
 				<weight type="number">5</weight>
 			</id-00006>
 			<id-00007>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -410,6 +441,7 @@
 				<weight type="number">7</weight>
 			</id-00007>
 			<id-00008>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -423,6 +455,7 @@
 			</id-00008>
 			<id-00009>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">2 GP</cost>
@@ -438,6 +471,7 @@
 				<weight type="number">5</weight>
 			</id-00009>
 			<id-00010>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">2</count>
@@ -454,6 +488,7 @@
 			</id-00010>
 			<id-00011>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
@@ -470,6 +505,7 @@
 				<weight type="number">2</weight>
 			</id-00011>
 			<id-00012>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -485,6 +521,7 @@
 				<weight type="number">1</weight>
 			</id-00012>
 			<id-00013>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
@@ -501,6 +538,7 @@
 			</id-00013>
 			<id-00014>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
@@ -518,8 +556,9 @@
 			</id-00014>
 			<id-00015>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -535,6 +574,7 @@
 			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 CP</cost>
@@ -551,6 +591,7 @@
 			</id-00016>
 			<id-00017>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
@@ -568,6 +609,7 @@
 			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
@@ -584,6 +626,7 @@
 			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 GP</cost>
@@ -601,6 +644,7 @@
 			</id-00019>
 			<id-00020>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2 CP</cost>
@@ -618,6 +662,7 @@
 			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 GP</cost>
@@ -635,6 +680,7 @@
 			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -652,6 +698,7 @@
 			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">2 GP</cost>
@@ -668,8 +715,9 @@
 			</id-00023>
 			<id-00024>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">5</count>
 				<description type="formattedtext">
@@ -685,6 +733,7 @@
 			</id-00024>
 			<id-00025>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
@@ -708,6 +757,7 @@
 			</id-00025>
 			<id-00026>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">25 GP</cost>
@@ -725,6 +775,7 @@
 			</id-00026>
 			<id-00027>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 SP</cost>
@@ -741,6 +792,7 @@
 				<weight type="number">0.1</weight>
 			</id-00027>
 			<id-00028>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">1 sp</cost>
 				<count type="number">1</count>
@@ -754,6 +806,7 @@
 				<weight type="number">0</weight>
 			</id-00028>
 			<id-00029>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">50 gp</cost>
 				<count type="number">1</count>
@@ -768,8 +821,9 @@
 			</id-00029>
 			<id-00030>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">4</count>
 				<description type="formattedtext">
@@ -784,8 +838,47 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0.1</weight>
 			</id-00030>
+			<id-00031>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00031>
 			<id-00032>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">2 SP</cost>
@@ -804,8 +897,9 @@
 			</id-00032>
 			<id-00033>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">priceless</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -826,8 +920,29 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00033>
+			<id-00034>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">2</count>
+				<damage type="string">1d6 piercing, silver</damage>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<location type="string">Efficient Quiver</location>
+				<locked type="number">1</locked>
+				<name type="string">Spear, Silvered</name>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00034>
 			<id-00035>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
@@ -866,6 +981,7 @@
 			</id-00035>
 			<id-00036>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">300 GP</cost>
@@ -885,6 +1001,7 @@
 			</id-00036>
 			<id-00037>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 gp</cost>
@@ -901,13 +1018,27 @@
 				<type type="string">Treasure</type>
 				<weight type="number">0</weight>
 			</id-00037>
+			<id-00038>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">16</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<location type="string">Efficient Quiver</location>
+				<locked type="number">1</locked>
+				<name type="string">Silver arrow</name>
+				<weight type="number">0.05</weight>
+			</id-00038>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Sylvan</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Elvish</name>
@@ -916,17 +1047,30 @@
 				<name type="string">Mikon</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">7</level>
 		<name type="string">Caelynn</name>
 		<notes type="string">Bryn Caelynn Selevarun\n\nBG Skills: Athletics, Medicine\nRace Skills: Perception\nClass Skills: Acrobatics, Insight, Investigation, Stealth\nExpertise: Perception, Stealth\nArchetype Skills: Nature, Survival\n\nBG Languages: \nRace Languages: Common, Elven\n\nsharpshooter*\nskulker*\nsnap shooter\nalert*\nobservant*\nkeen mind*\nlinguist*\nmobile*\ndead shot\nmarksman\nhorde breaker/hunter\nnatural hider?\nreflexive?\nrichochet master?\ntrained sight?\ndoctor?\narchery champion?\n</notes>
-		<pc_label_hero type="string">Hero Point</pc_label_hero>
-		<perception type="number">17</perception>
+		<pc_label_hero type="string">Hero Poi/ont</pc_label_hero>
+		<perception type="number">19</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
+			<id-00001>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Comments</name>
+				<saveprof type="number">1</saveprof>
+			</id-00001>
 			<id-00002>
 				<name type="string">Active</name>
 			</id-00002>
+			<id-00003>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Spells</name>
+				<saveprof type="number">1</saveprof>
+			</id-00003>
+			<id-00005>
+				<name type="string">Items</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1009,7 +1153,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 2d6</label>
+						<label type="string">Sneak Attack; DMG: 4d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1029,8 +1173,574 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Rogue - Class Ability</source>
 			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Fey Ancestry; Advantage on saving throws vs. charmed, no magic sleep</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+				</description>
+				<group type="string">Comments</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Elf: Fey Ancestry</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Racial</school>
+				<source type="string">Elf</source>
+				<type type="string">racial</type>
+			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Mask of the Wild; Hide when lightly obscurred</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+				</description>
+				<group type="string">Comments</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Elf: Mask of the Wild</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Racial</school>
+				<source type="string">Wood Elf</source>
+				<type type="string">subracial</type>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Dodge</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">Action</castingtime>
+				<description type="formattedtext">
+					<p>When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated (as explained in the appendix) or if your speed drops to 0.</p>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Action: Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Actions</school>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<apply type="string">action</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Help; ADVCHK: all; ADVATK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">Action</castingtime>
+				<description type="formattedtext">
+					<p>You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, pjrovided that it makes the check before the start of your next turn.</p>
+					<p>Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.</p>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Action: Help</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Actions</school>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Hide</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">Action</castingtime>
+				<description type="formattedtext">
+					<p>When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules in chapter 7 for hiding. If you succeed, you gain certain benefits, as described in the &#34;Unseen Attackers and Targets&#34; section later in this chapter.</p>
+				</description>
+				<group type="string">Comments</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Action: Hide</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Action</school>
+			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Ready</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">Action</castingtime>
+				<description type="formattedtext">
+					<p>Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn so that you can act later in the round using your reaction. For more information see &#34;Actions in Combat, Ch 9&#34;</p>
+				</description>
+				<group type="string">Comments</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Action: Ready</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Actions</school>
+			</id-00007>
+			<id-00008>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.</p>
+				</description>
+				<group type="string">Comments</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Rogue: Skirmisher (R)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<specialization type="string">Scout</specialization>
+			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">Survivalist; SKILL: [PRF] nature, survival</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>When you choose this archetype at 3rd level, you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.</p>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Rogue: Survivalist</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<specialization type="string">Scout</specialization>
+			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<apply type="string">action</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; DMG: 10</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">action</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; ATK: -5</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; No long range disatvantage; ignore 1/2 and 3/4 cover</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:</p>
+					<list>
+						<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+						<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
+						<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
+					</list>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Feat: Sharpshooter</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00010>
+			<id-00011>
+				<actions>
+					<id-00001>
+						<label type="string">In a tree</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Comments</group>
+				<level type="number">0</level>
+				<name type="string">In a tree</name>
+				<prepared type="number">0</prepared>
+			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Evasion</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Rogue: Evasion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Class</school>
+				<source type="string">Rogue</source>
+			</id-00012>
+			<id-00013>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<cost type="string">5 gp</cost>
+				<description type="formattedtext">
+					<p>This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Healer's Kit</name>
+				<prepared type="number">10</prepared>
+				<ritual type="number">0</ritual>
+				<subtype type="string">Equipment Kits</subtype>
+				<type type="string">Adventuring Gear</type>
+				<usesperiod type="string">once</usesperiod>
+				<weight type="number">3</weight>
+			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<apply type="string">action</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Crowbar; ADVCHK: strength</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<cost type="string">2 gp</cost>
+				<description type="formattedtext">
+					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Crowbar</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<dice type="dice"></dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Torch; Bright light to 20' dim light to 40'</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<atkbase type="string">ability</atkbase>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">0</atkprof>
+						<atkstat type="string">strength</atkstat>
+						<atktype type="string">melee</atktype>
+						<order type="number">3</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<cost type="string">1 cp</cost>
+				<description type="formattedtext">
+					<p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Torch</name>
+				<prepared type="number">2</prepared>
+				<ritual type="number">0</ritual>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<usesperiod type="string">once</usesperiod>
+				<weight type="number">1</weight>
+			</id-00015>
+			<id-00016>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<cost type="string">50 - 100 gp</cost>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 2d4 + 2 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+					<p><b>Potion Notes</b></p>
+					<p>Drinking or administering a potion takes an action.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<prepared type="number">2</prepared>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Common</rarity>
+				<ritual type="number">0</ritual>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<usesperiod type="string">once</usesperiod>
+				<weight type="number">0.5</weight>
+			</id-00016>
+			<id-00017>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<cost type="string">101 - 500 gp</cost>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+					<p><b>Potion Notes</b></p>
+					<p>Drinking or administering a potion takes an action.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Potion of Greater Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<prepared type="number">1</prepared>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon</rarity>
+				<ritual type="number">0</ritual>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Greater Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<usesperiod type="string">once</usesperiod>
+				<weight type="number">0.5</weight>
+			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">8</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">1</cast>
+				<cost type="string">501 - 5,000 gp</cost>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 8d4 + 8 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+					<p><b>Potion Notes</b></p>
+					<p>Drinking or administering a potion takes an action.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Potion of Superior Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<prepared type="number">1</prepared>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Rare</rarity>
+				<ritual type="number">0</ritual>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Superior Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<usesperiod type="string">once</usesperiod>
+				<weight type="number">0.5</weight>
+			</id-00018>
+			<id-00019>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">20</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4,d4,d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">1</cast>
+				<cost type="string">5,001 - 50,000 gp</cost>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>You regain 10d4 + 20 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</p>
+					<p><b>Potion Notes</b></p>
+					<p>Drinking or administering a potion takes an action.</p>
+				</description>
+				<group type="string">Items</group>
+				<isidentified type="number">1</isidentified>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Item: Potion of Supreme Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
+				<prepared type="number">1</prepared>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Very Rare</rarity>
+				<ritual type="number">0</ritual>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion of Supreme Healing</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Potion</name>
+					</id-00002>
+				</spells>
+				<type type="string">Potion</type>
+				<usesperiod type="string">once</usesperiod>
+				<weight type="number">0.5</weight>
+			</id-00019>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords</name>
@@ -1055,21 +1765,21 @@
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
-				<prof type="number">2</prof>
+				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<total type="number">6</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1088,16 +1798,16 @@
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
-				<prof type="number">2</prof>
+				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">3</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1109,9 +1819,9 @@
 			<id-00009>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">9</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -1130,9 +1840,9 @@
 			<id-00012>
 				<misc type="number">0</misc>
 				<name type="string">Insight</name>
-				<prof type="number">1</prof>
+				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">5</total>
+				<total type="number">9</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1153,14 +1863,14 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1186,7 +1896,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">tokens/host/BrynCaelynn_token_0001.png</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1234,6 +1944,18 @@
 				<type type="string">subracial</type>
 			</id-00005>
 		</traitlist>
+		<weapon>
+			<critdicebonus>
+				<melee type="number">0</melee>
+				<ranged type="number">0</ranged>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">20</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+			<dualwielder type="number">0</dualwielder>
+			<twoweaponfighting type="number">0</twoweaponfighting>
+		</weapon>
 		<weaponlist>
 			<id-00001>
 				<attackstat type="string">dexterity</attackstat>
@@ -1245,6 +1967,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Shortsword</name>
@@ -1265,6 +1988,7 @@
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">20</maxammo>
 				<name type="string">Sling</name>
@@ -1277,6 +2001,7 @@
 				<type type="number">1</type>
 			</id-00002>
 			<id-00003>
+				<ammo type="number">2</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1285,6 +2010,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">20</maxammo>
 				<name type="string">Longbow</name>
@@ -1296,6 +2022,52 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00003>
+			<id-00004>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear, Silvered</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00034</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00004>
+			<id-00005>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,silver</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Spear, Silvered</name>
+				<prof type="number">1</prof>
+				<properties type="string">Thrown (range 20/60), versatile (1d8), Silvered</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00034</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00005>
 		</weaponlist>
 	</character>
 </root>

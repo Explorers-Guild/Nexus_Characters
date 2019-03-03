@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">2</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">15</score>
@@ -61,7 +61,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -73,7 +73,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -83,7 +83,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">798</amount>
+				<amount type="number">893</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -91,7 +91,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">185</amount>
+				<amount type="number">233</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -99,7 +99,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">299</amount>
+				<amount type="number">324</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -122,11 +122,11 @@
 			<encumbered type="number">150</encumbered>
 			<encumberedheavy type="number">300</encumberedheavy>
 			<liftpushdrag type="number">900</liftpushdrag>
-			<load type="number">85</load>
+			<load type="number">85.5</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">665</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">823</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -346,6 +346,73 @@
 					</linklist>
 				</text>
 			</id-00016>
+			<id-00017>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Cunning Action</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+				</text>
+			</id-00017>
+			<id-00018>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Assassin</name>
+				<source type="string">Rogue</source>
+				<text type="formattedtext">
+					<p>You focus your training on the grim art of death. Those who adhere to this archetype are diverse: hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Stealth, poison, and disguise help you eliminate your foes with deadly efficiency.</p>
+					<h>Features</h>
+					<linklist>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.bonusproficiencies3@DD PHB Deluxe">Bonus Proficiencies</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.assassinate3@DD PHB Deluxe">Assassinate</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.infiltrationexpertise9@DD PHB Deluxe">Infiltration Expertise</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.impostor13@DD PHB Deluxe">Impostor</link>
+						<link class="reference_classfeature" recordname="reference.classdata.rogue.features.deathstrike17@DD PHB Deluxe">Death Strike</link>
+					</linklist>
+				</text>
+			</id-00018>
+			<id-00019>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Bonus Proficiencies</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Assassin</specialization>
+				<text type="formattedtext">
+					<p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.</p>
+				</text>
+			</id-00019>
+			<id-00020>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Assassinate</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Assassin</specialization>
+				<text type="formattedtext">
+					<p>Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</p>
+				</text>
+			</id-00020>
+			<id-00021>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki-Empowered Strikes</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+				</text>
+			</id-00021>
+			<id-00022>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Shadow Step</name>
+				<source type="string">Monk</source>
+				<specialization type="string">Way of Shadow</specialization>
+				<text type="formattedtext">
+					<p>At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
+				</text>
+			</id-00022>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge. There's no room for caution in a life lived to the fullest.</flaws>
 		<gender type="string">Male</gender>
@@ -356,8 +423,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">39</total>
-			<wounds type="number">7</wounds>
+			<total type="number">57</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Honor. If I dishonor myself, I dishonor my whole clan. Glory. I must earn glory in battle, for myself and my clan.</ideals>
 		<initiative>
@@ -651,7 +718,7 @@
 			<id-00022>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1500 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 bludgeoning</damage>
@@ -775,6 +842,43 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -787,7 +891,7 @@
 				<name type="string">Goblin</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">9</level>
 		<name type="string">Chaya Bhalu</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
@@ -1117,7 +1221,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Ki</name>
-				<prepared type="number">2</prepared>
+				<prepared type="number">5</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
@@ -1525,7 +1629,7 @@
 				<group type="string">Consumables</group>
 				<level type="number">0</level>
 				<name type="string">Item: Waterskin</name>
-				<prepared type="number">10</prepared>
+				<prepared type="number">1</prepared>
 			</id-00025>
 			<id-00026>
 				<actions>
@@ -1649,7 +1753,7 @@
 				<source type="string">Item - Action Code</source>
 			</id-00031>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Flute</name>
@@ -1687,21 +1791,21 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
@@ -1743,7 +1847,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00010>
 			<id-00011>
 				<misc type="number">0</misc>
@@ -1764,7 +1868,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -1785,7 +1889,7 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1811,7 +1915,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1852,7 +1956,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">0</ammo>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -1865,6 +1969,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">10</maxammo>
 				<name type="string">Dart</name>
@@ -1887,6 +1992,7 @@
 						<type type="string">bludgeoning</type>
 					</id-00002>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Unarmed Strike (Monk)</name>
@@ -1910,6 +2016,7 @@
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Dragon pole</name>
@@ -1933,6 +2040,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Dagger</name>
@@ -1956,6 +2064,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">3</maxammo>
 				<name type="string">Dagger</name>
@@ -1970,7 +2079,7 @@
 			<id-00006>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1980,6 +2089,7 @@
 						<type type="string">bludgeoning, silver</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Silver Dragon pole [Electrified]</name>
@@ -1993,15 +2103,17 @@
 			</id-00006>
 			<id-00007>
 				<attackbonus type="number">2</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing,magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Life Stealing Sickle of Aberration Slaying</name>
