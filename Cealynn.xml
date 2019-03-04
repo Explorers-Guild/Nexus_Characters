@@ -45,7 +45,10 @@
 				<score type="number">16</score>
 			</wisdom>
 		</abilities>
+		<adventurelist>
+		</adventurelist>
 		<alignment type="string">Neutral</alignment>
+		<attunedCount type="number">1</attunedCount>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -65,18 +68,18 @@
 				</shortcut>
 			</id-00001>
 		</classes>
-		<coinother type="string">570.22 gp, Efficient Quiver</coinother>
+		<coinother type="string">2203.14 gp, Efficient Quiver, Vicious Longbow of Warning [Undead Slaying], Ring of Psychic Resistance</coinother>
 		<coins>
 			<slot1>
-				<amount type="number">1015</amount>
+				<amount type="number">1964</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">9</amount>
+				<amount type="number">22</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">208</amount>
+				<amount type="number">514</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -84,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">199</amount>
+				<amount type="number">320</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -105,11 +108,11 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">87.45</load>
+			<load type="number">83.15</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">701</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">793</exp>
+		<expneeded type="number">800</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -299,7 +302,7 @@
 			</id-00013>
 		</featurelist>
 		<gender type="string">Female</gender>
-		<hero type="number">3</hero>
+		<hero type="number">0</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
@@ -336,6 +339,37 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00001>
+			<id-00002>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">4,345 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.</p>
+					<p><b>Undead Slayer Notes</b></p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.undeadslayer@Incarnate-5eExpansion">Undead Slayer</link>
+					</linklist>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an undead with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;undead&#34; refers to any creature with the undead type.</p>
+					<p><b>Vicious Weapon Notes</b></p>
+					<linklist>
+						<link class="imagewindow" recordname="reference.imagedata.img_vicious_weapon_jpg@*"><b>Image: </b></link>Vicious Weapon</linklist>
+					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 7 damage of the weapon's type.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Longbow of Warning [Undead Slayer]</name>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed, magic</properties>
+				<rarity type="string">Rare</rarity>
+				<subtype type="string">Martial Ranged Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -807,7 +841,7 @@
 			</id-00028>
 			<id-00029>
 				<attune type="number">0</attune>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">50 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
@@ -823,7 +857,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">4</count>
 				<description type="formattedtext">
@@ -844,7 +878,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -868,6 +902,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Satchel</location>
 				<locked type="number">1</locked>
 				<name type="string">Greater Potion of Healing</name>
 				<nonid_name type="string">Dim Potion</nonid_name>
@@ -924,7 +959,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">2</count>
 				<damage type="string">1d6 piercing, silver</damage>
@@ -942,42 +977,32 @@
 			</id-00034>
 			<id-00035>
 				<ac type="number">0</ac>
-				<attune type="number">0</attune>
+				<attune type="number">1</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">2</count>
+				<carried type="number">2</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Action Coding</h>
+					<p>You have resistance to one damage type while wearing this ring.</p>
 					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+						<link class="power" recordname="spell.typeresistancepsychic@Incarnate-5eExpansion">Type Resistance (Psychic)</link>
 					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
 					<table>
 						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
+							<td>8</td>
+							<td>Psychic</td>
+							<td>Jade</td>
 						</tr>
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Satchel</location>
 				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
+				<name type="string">Ring of Psychic Resistance</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A jade ring.</nonidentified>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
 			</id-00035>
 			<id-00036>
 				<ac type="number">0</ac>
@@ -1022,7 +1047,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<count type="number">16</count>
 				<description type="formattedtext">
 					<p></p>
@@ -1049,11 +1074,10 @@
 		</languagelist>
 		<level type="number">7</level>
 		<name type="string">Caelynn</name>
-		<notes type="string">Bryn Caelynn Selevarun\n\nBG Skills: Athletics, Medicine\nRace Skills: Perception\nClass Skills: Acrobatics, Insight, Investigation, Stealth\nExpertise: Perception, Stealth\nArchetype Skills: Nature, Survival\n\nBG Languages: \nRace Languages: Common, Elven\n\nsharpshooter*\nskulker*\nsnap shooter\nalert*\nobservant*\nkeen mind*\nlinguist*\nmobile*\ndead shot\nmarksman\nhorde breaker/hunter\nnatural hider?\nreflexive?\nrichochet master?\ntrained sight?\ndoctor?\narchery champion?\n</notes>
+		<notes type="string">Bryn Caelynn Selevarun\n\nBG Skills: Athletics, Medicine\nRace Skills: Perception\nClass Skills: Acrobatics, Insight, Investigation, Stealth\nExpertise: Perception, Stealth; Acrobatics, Insight\nArchetype Skills: Nature, Survival\n\nBG Languages: \nRace Languages: Common, Elven\n\nsharpshooter*\nskulker*\nsnap shooter\nalert*\nobservant*\nkeen mind*\nlinguist*\nmobile*\ndead shot\nmarksman\nhorde breaker/hunter\nnatural hider?\nreflexive?\nrichochet master?\ntrained sight?\ndoctor?\narchery champion?\n</notes>
 		<pc_label_hero type="string">Hero Poi/ont</pc_label_hero>
 		<perception type="number">19</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -1063,11 +1087,6 @@
 			<id-00002>
 				<name type="string">Active</name>
 			</id-00002>
-			<id-00003>
-				<atkprof type="number">1</atkprof>
-				<name type="string">Spells</name>
-				<saveprof type="number">1</saveprof>
-			</id-00003>
 			<id-00005>
 				<name type="string">Items</name>
 			</id-00005>
@@ -1316,6 +1335,12 @@
 			</id-00007>
 			<id-00008>
 				<actions>
+					<id-00001>
+						<label type="string">Skirmisher; move half speed when enemy ends adjacent</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1541,7 +1566,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<cost type="string">50 - 100 gp</cost>
 				<description type="formattedtext">
 					<h>Description</h>
@@ -1609,7 +1634,7 @@
 				<name type="string">Item: Potion of Greater Healing</name>
 				<nonid_name type="string">Potion</nonid_name>
 				<nonidentified type="string">A vial of red liquid that shimmers when agitated.</nonidentified>
-				<prepared type="number">1</prepared>
+				<prepared type="number">2</prepared>
 				<properties type="string">Magic</properties>
 				<rarity type="string">Uncommon</rarity>
 				<ritual type="number">0</ritual>
@@ -1739,6 +1764,77 @@
 				<usesperiod type="string">once</usesperiod>
 				<weight type="number">0.5</weight>
 			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<label type="string">Warning; cannot be surprised (30' radius); wake for encounter; ADVINIT</label>
+						<order type="number">4</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Undead Slayer; IFT:TYPE(undead);DMG:2d6</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+					<id-00004>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">15</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+					<id-00005>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">prone</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00005>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00010@Incarnate-5eExpansion">Undead Slayer</link>
+					</linklist>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Longbow of Warning: Undead Slayer</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00020>
+			<id-00021>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: psychic</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Active</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Ring Of Resistance (Psychic)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00021>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1985,6 +2081,7 @@
 					<id-00001>
 						<dice type="dice">d4</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
@@ -2002,11 +2099,12 @@
 			</id-00002>
 			<id-00003>
 				<ammo type="number">2</ammo>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -2024,7 +2122,7 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2047,7 +2145,7 @@
 			</id-00004>
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -2068,6 +2166,30 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
+			<id-00006>
+				<ammo type="number">0</ammo>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">base</stat>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">20</maxammo>
+				<name type="string">Vicious Longbow of Warning [Undead Slayer]</name>
+				<prof type="number">1</prof>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed, magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00002</recordname>
+				</shortcut>
+				<type type="number">1</type>
+			</id-00006>
 		</weaponlist>
 	</character>
 </root>
