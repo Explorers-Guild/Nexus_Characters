@@ -57,7 +57,7 @@
 				<casterlevelinvmult type="number">2</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">2</level>
 				<name type="string">Paladin</name>
 				<shortcut type="windowreference">
@@ -70,7 +70,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -80,15 +80,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1221</amount>
+				<amount type="number">2734</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">90</amount>
+				<amount type="number">21</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">147</amount>
+				<amount type="number">370</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -96,7 +96,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">336</amount>
+				<amount type="number">340</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -119,10 +119,10 @@
 			<encumbered type="number">85</encumbered>
 			<encumberedheavy type="number">170</encumberedheavy>
 			<liftpushdrag type="number">510</liftpushdrag>
-			<load type="number">149.5</load>
+			<load type="number">154</load>
 			<max type="number">255</max>
 		</encumbrance>
-		<exp type="number">721</exp>
+		<exp type="number">805</exp>
 		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
@@ -448,14 +448,14 @@
 				</text>
 			</id-00013>
 		</featurelist>
-		<hero type="number">2</hero>
+		<hero type="number">1</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">55</total>
-			<wounds type="number">7</wounds>
+			<total type="number">62</total>
+			<wounds type="number">25</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -853,6 +853,29 @@
 				<type type="string">Armor</type>
 				<weight type="number">6</weight>
 			</id-00021>
+			<id-00022>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st--level version of the spell. You can increase the spell slot level by one for each additional charge you expend.</p>
+					<linklist>
+						<link class="power" recordname="spell.magicmissile@Incarnate-5eExpansion">Magic Missile</link>
+					</linklist>
+					<p>The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Wand of Magic Missiles</name>
+				<nonid_name type="string">Wand</nonid_name>
+				<nonidentified type="string">A magical wand.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Arcane Focus</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00022>
 			<id-00023>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -878,7 +901,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">200 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -952,6 +975,24 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">255 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 slashing</damage>
+				<description type="formattedtext">
+					<p>There are creatures that lurk in the night. These strange creatures are said to be able to change shape. It is also said that they are resistant to most damage. The best way to cut through their pelts is with silver, but the silver must be carefully applied by a master smith so that the weapon stays sharp.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Silver Scimitar</name>
+				<properties type="string">Finesse, light</properties>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -964,7 +1005,7 @@
 				<name type="string">Goblin</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Pyrosadic</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">13</perception>
@@ -1011,6 +1052,9 @@
 			<id-00009>
 				<name type="string">Spells ring of spell storing</name>
 			</id-00009>
+			<id-00010>
+				<name type="string">Item</name>
+			</id-00010>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1051,18 +1095,18 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">4</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots3>
 			<spellslots4>
-				<max type="number">0</max>
+				<max type="number">1</max>
 				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
@@ -1086,7 +1130,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1202,7 +1246,7 @@
 						<type type="string">heal</type>
 					</id-00003>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">9</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.propaladin.features.id-00021@Incarnate-5eExpansion">Lay on Hands</link>
@@ -1212,7 +1256,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Lay on Hands</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">10</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Paladin - Class Ability</source>
 			</id-00003>
@@ -1227,7 +1271,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d10</dice>
+								<dice type="dice">d10,d10</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -1619,7 +1664,7 @@
 			<id-00019>
 				<actions>
 				</actions>
-				<cast type="number">4</cast>
+				<cast type="number">5</cast>
 				<group type="string">Sorcery points</group>
 				<level type="number">0</level>
 				<name type="string">Sorcery points</name>
@@ -1724,6 +1769,26 @@
 				<school type="string">Evocation</school>
 				<source type="string">Paladin</source>
 			</id-00022>
+			<id-00023>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Counterspell</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00023>
 			<id-00024>
 				<actions>
 					<id-00001>
@@ -1753,12 +1818,87 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Druid Grassland Circle, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00024>
+			<id-00025>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Booming Blade; If target moves takes 1d8 thunder</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<apply type="string">roll</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">DMG: 1d8 thunder</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, M (a weapon)</components>
+				<description type="formattedtext">
+					<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 thunder damage, and the spell ends.</p>
+					<p>This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Booming Blade (5)</name>
+				<prepared type="number">0</prepared>
+				<range type="string">5 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Sorcerer, Warlock, Wizard</source>
+			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">8</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00409@Incarnate-5eExpansion">Superior Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Potion</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00026>
 			<id-00027>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<group type="string">Spells ring of spell storing</group>
 				<level type="number">0</level>
+				<locked type="number">1</locked>
 				<name type="string">mirrior image</name>
 				<prepared type="number">2</prepared>
 				<usesperiod type="string">once</usesperiod>
@@ -1773,6 +1913,15 @@
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">once</usesperiod>
 			</id-00028>
+			<id-00029>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Item</group>
+				<level type="number">0</level>
+				<name type="string">wand of magic missle</name>
+				<prepared type="number">7</prepared>
+			</id-00029>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1929,7 +2078,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00005_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2031,6 +2180,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Morningstar</name>
@@ -2054,6 +2204,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Javelin</name>
@@ -2066,7 +2217,7 @@
 				<type type="number">0</type>
 			</id-00002>
 			<id-00003>
-				<ammo type="number">0</ammo>
+				<ammo type="number">2</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -2077,6 +2228,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">5</maxammo>
 				<name type="string">Javelin</name>
@@ -2099,6 +2251,7 @@
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Handaxe</name>
@@ -2121,6 +2274,7 @@
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Handaxe</name>
@@ -2132,6 +2286,29 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
+			<id-00006>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Silver Scimitar</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, light</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00026</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00006>
 		</weaponlist>
 	</character>
 </root>
