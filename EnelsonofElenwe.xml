@@ -59,7 +59,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -69,11 +69,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">239</amount>
+				<amount type="number">512</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">6</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -85,7 +85,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">62</amount>
+				<amount type="number">95</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -106,10 +106,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">90.15</load>
+			<load type="number">95.5</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">394</exp>
+		<exp type="number">427</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 			<id-00001>
@@ -131,6 +131,18 @@
 					</linklist>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Sharpshooter</name>
+				<text type="formattedtext">
+					<p>You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:</p>
+					<list>
+						<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+						<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
+						<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
+					</list>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -209,6 +221,16 @@
 					<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
 				</text>
 			</id-00005>
+			<id-00006>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00006>
 			<id-00007>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
@@ -334,8 +356,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">28</total>
-			<wounds type="number">10</wounds>
+			<total type="number">36</total>
+			<wounds type="number">25</wounds>
 		</hp>
 		<ideals type="string">Brutal Practicality - Bury a fish or bury a man, just get the job done. (Evil)</ideals>
 		<initiative>
@@ -526,7 +548,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
-				<count type="number">25</count>
+				<count type="number">122</count>
 				<description type="formattedtext">
 					<p>-</p>
 				</description>
@@ -763,29 +785,62 @@
 				<name type="string">Shrunken Head - Zacklewere</name>
 				<weight type="number">1</weight>
 			</id-00023>
+			<id-00024>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00024>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
 				<name type="string">Infernal</name>
 			</id-00001>
 			<id-00002>
-				<name type="string">Common </name>
+				<name type="string">Common</name>
 			</id-00002>
 			<id-00003>
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Enel son of Elenwe</name>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I search for the truth. No distance is to great.\nI speak with an accent nobody recognizes.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
-			<id-00001>
-				<castertype type="string">memorization</castertype>
-				<name type="string">Spells</name>
-				<stat type="string">wisdom</stat>
-			</id-00001>
 			<id-00002>
 				<name type="string">Passive</name>
 			</id-00002>
@@ -867,7 +922,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -919,6 +973,29 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Ranger - Class Ability</source>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<label type="string">Sharpshooter; ATK: -5, ranged; DMG: 10, ranged</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:</p>
+					<list>
+						<li>Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+						<li>Your ranged weapon attacks ignore half cover and three-quarters cover.</li>
+						<li>Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a - 5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.</li>
+					</list>
+				</description>
+				<group type="string">Abilities</group>
+				<locked type="number">1</locked>
+				<name type="string">Sharpshooter</name>
+				<prepared type="number">0</prepared>
+			</id-00003>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -1073,7 +1150,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1191,7 +1268,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>

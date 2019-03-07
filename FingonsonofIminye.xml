@@ -3,11 +3,11 @@
 	<character>
 		<abilities>
 			<charisma>
-				<bonus type="number">1</bonus>
-				<save type="number">1</save>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">13</score>
+				<score type="number">11</score>
 			</charisma>
 			<constitution>
 				<bonus type="number">2</bonus>
@@ -38,11 +38,11 @@
 				<score type="number">8</score>
 			</strength>
 			<wisdom>
-				<bonus type="number">0</bonus>
-				<save type="number">0</save>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">11</score>
+				<score type="number">13</score>
 			</wisdom>
 		</abilities>
 		<adventurelist>
@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">2</hdused>
-				<level type="number">3</level>
+				<hdused type="number">1</hdused>
+				<level type="number">4</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,11 +71,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">256</amount>
+				<amount type="number">534</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">6</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">63</amount>
+				<amount type="number">96</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -102,7 +102,7 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">13</total>
+				<total type="number">14</total>
 			</ac>
 		</defenses>
 		<deity type="string">Eternal</deity>
@@ -110,12 +110,25 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">78.35</load>
+			<load type="number">78.85</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">457</exp>
+		<exp type="number">490</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Frozen Fists</name>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.frozenfists@Incarnate-5eExpansion">Frozen Fists</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: an Intelligence of 13 or higher</p>
+					<p>You may use a bonus action to start absorbing heat through your hands. While absorbing, your Unarmed Strikes deal an additional 1d4 cold damage slowing your target by 10 feet for one round. This effect stacks with similar effects such as Ray of Frost, but not with itself. This absorption lasts 1 hour or until you use a bonus action to stop the effect.</p>
+				</text>
+			</id-00001>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -304,15 +317,41 @@
 				<text type="formattedtext">
 					<p>These are feats I plan on taking</p>
 					<linklist>
-						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00160@Incarnate-5eExpansion">Fiery Fist</link>
+						<link class="reference_feat" recordname="feat.id-00007@Incarnate-5eExpansion">Energized Fists</link>
+						<link class="reference_feat" recordname="feat.id-00006@Incarnate-5eExpansion">Frozen Fists</link>
 						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00163@Incarnate-5eExpansion">Furious Fists</link>
 						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00148@Incarnate-5eExpansion">Bone Breaker</link>
 						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00150@Incarnate-5eExpansion">Crippling Striker</link>
 						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00170@Incarnate-5eExpansion">Last Breath</link>
-						<link class="" recordname="">mobile</link>
 					</linklist>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement - frozen fists</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00012>
+			<id-00013>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Slow Fall</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<p>(uses heal to compensate for damage dealt)</p>
+					<linklist>
+						<link class="power" recordname="spell.slowfall@Incarnate-5eExpansion">Slow Fall</link>
+					</linklist>
+					<h>Description</h>
+					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+				</text>
+			</id-00013>
 		</featurelist>
 		<flaws type="string">I fight and risk my life because the feeling of invincibility is a heady drug.</flaws>
 		<gender type="string">Male</gender>
@@ -321,8 +360,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">24</total>
-			<wounds type="number">0</wounds>
+			<total type="number">31</total>
+			<wounds type="number">4</wounds>
 		</hp>
 		<ideals type="string">Kindness - Service with a smile is everyone's right. (Good)</ideals>
 		<initiative>
@@ -662,6 +701,43 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -674,9 +750,9 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Fingon son of Iminye</name>
-		<perception type="number">12</perception>
+		<perception type="number">13</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm very sensitive about my weight.\nI never pass up a friendly wager.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -763,7 +839,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -792,7 +868,7 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">4</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-5eExpansion">Ki</link>
@@ -802,7 +878,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Ki</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
@@ -901,6 +977,35 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Frozen Fists; DMG: 1d4 cold</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Frozen Fists; NOTE: slow 10</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Frozen Fists</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Feat</source>
+			</id-00006>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -926,7 +1031,7 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00001>
 			<id-00002>
 				<name type="string">Athletics</name>
@@ -938,7 +1043,7 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">2</total>
 			</id-00003>
 			<id-00004>
 				<name type="string">Arcana</name>
@@ -948,7 +1053,7 @@
 			<id-00005>
 				<name type="string">Persuasion</name>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00005>
 			<id-00006>
 				<name type="string">Nature</name>
@@ -958,15 +1063,17 @@
 			<id-00007>
 				<name type="string">Medicine</name>
 				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
 			</id-00007>
 			<id-00008>
 				<name type="string">Survival</name>
 				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
 			</id-00008>
 			<id-00009>
 				<name type="string">Performance</name>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00009>
 			<id-00010>
 				<name type="string">Acrobatics</name>
@@ -987,11 +1094,12 @@
 			<id-00013>
 				<name type="string">Insight</name>
 				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
 			</id-00013>
 			<id-00014>
 				<name type="string">Deception</name>
 				<stat type="string">charisma</stat>
-				<total type="number">1</total>
+				<total type="number">0</total>
 			</id-00014>
 			<id-00015>
 				<name type="string">Investigation</name>
@@ -1012,6 +1120,7 @@
 			<id-00018>
 				<name type="string">Animal Handling</name>
 				<stat type="string">wisdom</stat>
+				<total type="number">1</total>
 			</id-00018>
 			<id-00019>
 				<name type="string">Keg of Ale</name>
@@ -1036,7 +1145,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1101,7 +1210,7 @@
 				<type type="number">0</type>
 			</id-00001>
 			<id-00002>
-				<ammo type="number">1</ammo>
+				<ammo type="number">0</ammo>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1145,7 +1254,7 @@
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1167,7 +1276,7 @@
 			<id-00005>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>

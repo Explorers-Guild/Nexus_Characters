@@ -48,7 +48,7 @@
 		<adventurelist>
 		</adventurelist>
 		<age type="string">36</age>
-		<alignment type="string">NG</alignment>
+		<alignment type="string">CN</alignment>
 		<background type="string">Adventurer</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -71,11 +71,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">277</amount>
+				<amount type="number">315</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">8</amount>
+				<amount type="number">14</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">279</amount>
+				<amount type="number">312</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,7 +112,7 @@
 			<load type="number">98.6</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">915</exp>
+		<exp type="number">948</exp>
 		<expneeded type="number">800</expneeded>
 		<featlist>
 		</featlist>
@@ -308,9 +308,9 @@
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
-			<temporary type="number">43</temporary>
+			<temporary type="number">0</temporary>
 			<total type="number">63</total>
-			<wounds type="number">2</wounds>
+			<wounds type="number">9</wounds>
 		</hp>
 		<ideals type="string">This is what I was made to do.\nI'm doing what I do so others can benefit.</ideals>
 		<initiative>
@@ -604,6 +604,7 @@
 				<dexbonus type="string">Yes</dexbonus>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Leather Armor</name>
 				<nonid_name type="string">Leather Armor</nonid_name>
@@ -824,6 +825,7 @@
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
 				<name type="string">Shortbow</name>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>
@@ -897,6 +899,9 @@
 				<name type="string">03Green bear</name>
 				<saveprof type="number">1</saveprof>
 			</id-00008>
+			<id-00009>
+				<name type="string">03Warhorse</name>
+			</id-00009>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -937,7 +942,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
@@ -945,11 +950,11 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">2</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">1</max>
@@ -1208,6 +1213,26 @@
 				<school type="string">Divination</school>
 				<source type="string">Bard, Druid, Ranger</source>
 			</id-00006>
+			<id-00007>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Lesser Restoration</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Abjuration</school>
+				<source type="string">Bard, Cleric, Druid, Paladin, Ranger</source>
+			</id-00007>
 			<id-00008>
 				<actions>
 					<id-00001>
@@ -1416,6 +1441,26 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Ranger</source>
 			</id-00012>
+			<id-00013>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a short reed or piece of straw)</components>
+				<description type="formattedtext">
+					<p>This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.</p>
+				</description>
+				<duration type="string">24 hours</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Water Breathing</name>
+				<prepared type="number">1</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Ranger, Sorcerer, Wizard</source>
+			</id-00013>
 			<id-00014>
 				<actions>
 					<id-00001>
@@ -1475,6 +1520,44 @@
 				<school type="string">Abjuration</school>
 				<source type="string">Cleric, Druid, Ranger, Sorcerer, Wizard</source>
 			</id-00014>
+			<id-00015>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8,d8,d8,d8,d8</dice>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs. If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it. If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Blight</name>
+				<prepared type="number">0</prepared>
+				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Druid, Sorcerer, Warlock, Wizard</source>
+			</id-00015>
 			<id-00016>
 				<actions>
 				</actions>
@@ -1505,6 +1588,37 @@
 				<name type="string">Uses of Wild Shape</name>
 				<prepared type="number">2</prepared>
 			</id-00017>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">base</stat>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Mass Cure Wounds</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric, Druid</source>
+			</id-00018>
 			<id-00019>
 				<actions>
 					<id-00001>
@@ -1533,6 +1647,34 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00019>
+			<id-00020>
+				<actions>
+					<id-00001>
+						<durmod type="number">10</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Wall of Stone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a small block of granite)</components>
+				<description type="formattedtext">
+					<p>A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot- by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall. The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp. If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenelations, battlements, and so on. The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion. If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.</p>
+				</description>
+				<duration type="string">Concentration, up to 10 minutes</duration>
+				<group type="string">Spells</group>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Wall of Stone</name>
+				<prepared type="number">1</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Druid, Sorcerer, Wizard</source>
+			</id-00020>
 			<id-00021>
 				<actions>
 					<id-00001>
@@ -1606,6 +1748,42 @@
 				<school type="string">Evocation</school>
 				<source type="string">Druid</source>
 			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Conjure Minor Elementals; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:</p>
+					<linklist>
+						<link class="table" recordname="tables.id-02419@Incarnate-5eExpansion">One elemental of challenge rating 2 or lower</link>
+						<link class="table" recordname="tables.id-00202@Incarnate-5eExpansion">Two elementals of challenge rating 1 or lower</link>
+						<link class="table" recordname="tables.id-02420@Incarnate-5eExpansion">Four elementals of challenge rating 1/2 or lower</link>
+						<link class="table" recordname="tables.id-02421@Incarnate-5eExpansion">Eight elementals of challenge rating 1/4 or lower.</link>
+					</linklist>
+					<p>An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the creatures' statistics.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Conjure Minor Elementals</name>
+				<prepared type="number">0</prepared>
+				<range type="string">90 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Wizard</source>
+			</id-00022>
 			<id-00023>
 				<actions>
 					<id-00001>
@@ -1630,6 +1808,117 @@
 				<source type="string">Druid</source>
 				<specialization type="string">Circle of the Shepherd</specialization>
 			</id-00023>
+			<id-00024>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">3</bonus>
+								<dice type="dice">d10,d10,d10</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">STR: [-2STR]; STR: 8; DEX: [-2DEX]; DEX: 2; CON: [-2CON]; CON: 3; AC: -1</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.warhorse@Incarnate-5eBattles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">03Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Transformation - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Polymorph Code</source>
+			</id-00024>
+			<id-00025>
+				<actions>
+					<id-00001>
+						<atkmod type="number">0</atkmod>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">14</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">strength</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Prone</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.warhorse@Incarnate-5eBattles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">03Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Trampling Charge - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Polymorph Code</source>
+			</id-00025>
+			<id-00026>
+				<actions>
+					<id-00001>
+						<atkbase type="string">fixed</atkbase>
+						<atkmod type="number">6</atkmod>
+						<atkprof type="number">1</atkprof>
+						<atktype type="string">melee</atktype>
+						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">bludgeoning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="npc" recordname="npc.warhorse@Incarnate-5eBattles">Warhorse</link>
+					</linklist>
+				</description>
+				<group type="string">03Warhorse</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Hooves - Warhorse</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Polymorph Code</source>
+			</id-00026>
 			<id-00027>
 				<actions>
 					<id-00001>
@@ -2086,47 +2375,6 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid, Sorcerer, Wizard</source>
 			</id-00039>
-			<id-00040>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.</p>
-					<p>If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.</p>
-					<p>If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>
-				</description>
-				<duration type="string">1 hour</duration>
-				<group type="string">Spells</group>
-				<level type="number">3</level>
-				<locked type="number">1</locked>
-				<name type="string">Daylight</name>
-				<prepared type="number">1</prepared>
-				<range type="string">60 feet</range>
-				<school type="string">Evocation</school>
-				<source type="string">Cleric, Cleric Light Domain, Druid, Druid Grassland Circle, Paladin, Ranger, Sorcerer</source>
-			</id-00040>
-			<id-00041>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
-				<description type="formattedtext">
-					<p>You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered. You can use this transportation ability once per round for the duration. You must end each turn outside a tree.</p>
-				</description>
-				<duration type="string">Concentration, up to 1 minute</duration>
-				<group type="string">Spells</group>
-				<level type="number">5</level>
-				<locked type="number">1</locked>
-				<name type="string">Tree Stride</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Conjuration</school>
-				<source type="string">Cleric Nature Domain, Druid, Druid Forest Circle, Ranger</source>
-			</id-00041>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2287,7 +2535,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00003>
 				<locked type="number">1</locked>
