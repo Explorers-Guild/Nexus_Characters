@@ -63,8 +63,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">1</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<hdused type="number">2</hdused>
+				<level type="number">6</level>
 				<name type="string">Warlock</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -74,7 +74,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">315</amount>
+				<amount type="number">654</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -82,7 +82,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">124</amount>
+				<amount type="number">119</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -90,7 +90,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">82</amount>
+				<amount type="number">92</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -113,11 +113,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">78.325</load>
+			<load type="number">92.325</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">540</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">631</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -844,6 +844,20 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00011>
+			<id-00012>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Accursed Specter</name>
+				<source type="string">Warlock</source>
+				<specialization type="string">Hexblade</specialization>
+				<text type="formattedtext">
+					<p>Starting at 6th level, you can curse the soul of a person you slay, temporarily binding it to your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a specter, the statistics for which are in the <i>Monster Manual. </i>When the specter appears, it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack rolls equal to your Charisma modifier (minimum of +0).</p>
+					<p>The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife.</p>
+					<p>Once you bind a specter with this feature, you can't use the feature again until you finish a long rest.</p>
+					<linklist>
+						<link class="npc" recordname="reference.npcdata.specter@*"><b>NPC: </b></link>Specter</linklist>
+				</text>
+			</id-00012>
 		</featurelist>
 		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
@@ -851,14 +865,15 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
-			<wounds type="number">27</wounds>
+			<total type="number">45</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
 			<total type="number">2</total>
 		</initiative>
+		<inspiration type="number">1</inspiration>
 		<inventorylist>
 			<id-00001>
 				<carried type="number">1</carried>
@@ -1064,6 +1079,12 @@
 				<type type="string">Armor</type>
 				<weight type="number">40</weight>
 			</id-00015>
+			<id-00016>
+				<carried type="number">1</carried>
+				<count type="number">3</count>
+				<name type="string">Pouch filled with glass dust</name>
+				<weight type="number">0</weight>
+			</id-00016>
 			<id-00017>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -1112,6 +1133,34 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0</weight>
 			</id-00018>
+			<id-00019>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">4</count>
+				<description type="formattedtext">
+					<p>As an action, you can spend a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Caltrops (20)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">2</weight>
+			</id-00019>
+			<id-00020>
+				<carried type="number">1</carried>
+				<cost type="string">1 sp</cost>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">flask of napalm</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00020>
 			<id-00021>
 				<carried type="number">0</carried>
 				<cost type="string">15 gp</cost>
@@ -1131,7 +1180,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">0</carried>
 				<cost type="string">50 GP</cost>
-				<count type="number">1</count>
+				<count type="number">0</count>
 				<damage type="string">1d8 piercing</damage>
 				<description type="formattedtext">
 					<p>-</p>
@@ -1149,6 +1198,12 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0</weight>
 			</id-00022>
+			<id-00023>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Pouch of edoking fruit (10)</name>
+				<weight type="number">0</weight>
+			</id-00023>
 			<id-00025>
 				<ac type="number">2</ac>
 				<carried type="number">2</carried>
@@ -1167,6 +1222,53 @@
 				<type type="string">Armor</type>
 				<weight type="number">0</weight>
 			</id-00025>
+			<id-00026>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.</p>
+					<p>A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.</p>
+					<p><b>Reserve (Rare) </b>. This vibrant purple prism stores spells cast into it, holding them until you use them.</p>
+					<p>The stone can store up to 3 levels worth of spells at a time. When found, it contains 1d4 - 1 levels of stored spells chosen by the GM.</p>
+					<p>Any creature can cast a spell of 1st through 3rd level into the stone by touching it as the spell is cast.</p>
+					<p>The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.</p>
+					<p>While this stone orbits your head, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Magic Stone from a Forgotten Time (Reserve)</name>
+				<nonid_name type="string">an old stone with strange writing in a forgotten language</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<subtype type="string">Magical Stone</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00026>
+			<id-00027>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">10</count>
+				<description type="formattedtext">
+					<p>Name</p>
+					<p>Edoking (E do king)</p>
+					<p>Appearance</p>
+					<p>The Edoking is a vine which normally spreads out 7 ft. from its root. It has been known to climb medium bushes . It has broad leaves that come straight from the twig. Each leaf has 5 lobes with smooth edges.</p>
+					<p>Fruit</p>
+					<p>The Edoking has 51 round fruit the size of a grape . The orange fruit has a thin sticky skin filled with a tender white flesh with a very slight bitter taste and a very slight sour aftertaste.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00174">Edoking - Plant</link>
+					</linklist>
+				</description>
+				<location type="string">pouch filled with glass dust</location>
+				<locked type="number">1</locked>
+				<name type="string">Edoking Fruit</name>
+				<nonidentified type="string">Eating all of the fruit of the Edoking is the same as eating 5 rations . Unless otherwise preserved, the fruit will spoil after 6 days (the more powerful the fruit the harder it is to preserve).</nonidentified>
+				<weight type="number">0</weight>
+			</id-00027>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1176,12 +1278,11 @@
 				<name type="string">Infernal</name>
 			</id-00002>
 		</languagelist>
-		<level type="number">5</level>
+		<level type="number">6</level>
 		<name type="string">Pride</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<castertype type="string">memorization</castertype>
@@ -1269,6 +1370,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1309,7 +1411,7 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Warlock</source>
 			</id-00001>
-			<id-00002>
+			<id-00003>
 				<actions>
 					<id-00001>
 						<order type="number">1</order>
@@ -1320,37 +1422,29 @@
 					<id-00002>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Cause Fear; Frightened</label>
+						<label type="string">Frightened; (C)</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
 					</id-00002>
-					<id-00003>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Cause Fear (C)</label>
-						<order type="number">3</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
-				<components type="string">V</components>
+				<components type="string">V, S, M (a white feather or the heart of a hen)</components>
 				<description type="formattedtext">
-					<p>You awaken the sense of mortality in one creature you can see within range. A construct or an undead is immune to this effect. The target must succeed on a Wisdom saving throw or become frightened of you until the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
-					<p><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>
+					<p>You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.</p>
+					<p>While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature.</p>
 				</description>
 				<duration type="string">Concentration, up to 1 minute</duration>
 				<group type="string">Spells</group>
-				<level type="number">1</level>
+				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Cause Fear (60) (C)</name>
+				<name type="string">Fear</name>
 				<prepared type="number">0</prepared>
-				<range type="string">60 feet</range>
+				<range type="string">Self (30-foot cone)</range>
 				<ritual type="number">0</ritual>
-				<school type="string">Necromancy</school>
-				<source type="string">Warlock, Wizard</source>
-			</id-00002>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00003>
 			<id-00004>
 				<actions>
 				</actions>
@@ -1506,6 +1600,39 @@
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
 			</id-00008>
+			<id-00009>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Incapacitated; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">S, M (a glowing stick of incense or a crystal vial filled with phosphorescent material)</components>
+				<description type="formattedtext">
+					<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
+					<p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Hypnotic Pattern</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<school type="string">Illusion</school>
+				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00009>
 			<id-00010>
 				<actions>
 					<id-00001>
@@ -1570,6 +1697,14 @@
 						<savetype type="string">intelligence</savetype>
 						<type type="string">cast</type>
 					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Enemies Abound; (C)</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1585,6 +1720,7 @@
 				<name type="string">Enemies Abound</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Enchantment</school>
 				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
 			</id-00011>
@@ -1617,6 +1753,7 @@
 					<p>You have resistance to fire damage.</p>
 				</description>
 				<group type="string">Race</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Hellish Resistance</name>
 				<prepared type="number">0</prepared>
@@ -1716,6 +1853,14 @@
 						<order type="number">3</order>
 						<type type="string">damage</type>
 					</id-00003>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Hunger of Hadar; (C)</label>
+						<order type="number">4</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1737,6 +1882,14 @@
 			</id-00016>
 			<id-00017>
 				<actions>
+					<id-00001>
+						<apply type="string">single</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">DMG: 3d8 force</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1813,11 +1966,11 @@
 				<total type="number">-1</total>
 			</id-00004>
 			<id-00005>
-				<misc type="number">-1</misc>
+				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">0</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
@@ -1920,7 +2073,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
