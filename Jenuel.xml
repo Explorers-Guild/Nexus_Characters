@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -75,7 +75,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d10</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -85,15 +85,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2513</amount>
+				<amount type="number">390</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">50</amount>
+				<amount type="number">76</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">675</amount>
+				<amount type="number">690</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -101,7 +101,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">336</amount>
+				<amount type="number">343</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -126,11 +126,11 @@
 			<encumbered type="number">150</encumbered>
 			<encumberedheavy type="number">300</encumberedheavy>
 			<liftpushdrag type="number">900</liftpushdrag>
-			<load type="number">384.31</load>
+			<load type="number">384.81</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">858</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">972</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -168,6 +168,25 @@
 					</linklist>
 				</text>
 			</id-00002>
+			<id-00003>
+				<locked type="number">1</locked>
+				<name type="string">Marksman</name>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.marksman@Incarnate-5eExpansion">Marksman</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Dexterity 13 or higher</p>
+					<p>You are a master archer. Carefully firing an arrow or bolt is second nature to you. Now you seek different challenges, strange shots that have bizarre effects. They are difficult to do, but can be quite rewarding on a hit.</p>
+					<p><b>Stunning Strike </b>-Before you make an attack with a ranged weapon that you are proficient with, you may use a bonus action to take a -8 penalty on that attack roll to attempt to stun the target. If the attack hits, you stun the creature until the start of your next turn.</p>
+					<p><b>Prone Hit </b>-Before you make an attack with a ranged weapon that you are proficient with, you may use a bonus action to take a -5 penalty on that attack roll to attempt to knock the target over. If the attack hits, you knock the Large sized or smaller creature prone.</p>
+					<p><b>Dazzling Shot - </b>Before you make an attack with a ranged weapon that you are proficient with, you may use a bonus action to take a -3 penalty on that attack roll to make your target have disadvantage on its next attack.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Marksman_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00003>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -256,7 +275,7 @@
 			<id-00007>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Natural Explorer: Forest</name>
+				<name type="string">Natural Explorer: Forest, mountains</name>
 				<source type="string">Ranger</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -556,6 +575,20 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.</p>
 				</text>
 			</id-00023>
+			<id-00024>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Favored Enemy Dragons</name>
+				<source type="string">Ranger</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
+					<p>Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.</p>
+					<p>You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</p>
+					<p>When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.</p>
+					<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
+				</text>
+			</id-00024>
 		</featurelist>
 		<flaws type="string">I speak with my axe, when the time calls for it, I don't yet understand men of other races aren't as interested in females that show off there strength.</flaws>
 		<gender type="string">Female</gender>
@@ -566,7 +599,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">60</total>
+			<total type="number">67</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">A enemy unseen is a enemy that can kill you be the hunter not the hunted.</ideals>
@@ -1021,7 +1054,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<cost type="string">50 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
@@ -1030,7 +1063,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
-				<location type="string">Backpack Slot</location>
+				<location type="string">Black and Gold Paterned Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Longbow</name>
 				<nonid_name type="string">Longbow</nonid_name>
@@ -1630,6 +1663,7 @@
 			</id-00062>
 			<id-00063>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">0</carried>
 				<cost type="string">2 GP</cost>
@@ -1646,6 +1680,7 @@
 				<weight type="number">10</weight>
 			</id-00063>
 			<id-00064>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
 				<location type="string">Backpack</location>
@@ -1663,8 +1698,14 @@
 				<weight type="number">5</weight>
 			</id-00065>
 			<id-00066>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
@@ -1677,7 +1718,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -1739,6 +1780,7 @@
 				<weight type="number">0.02</weight>
 			</id-00069>
 			<id-00070>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">50 gp</cost>
 				<count type="number">1</count>
@@ -1756,6 +1798,7 @@
 				<weight type="number">18</weight>
 			</id-00070>
 			<id-00071>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 cp</cost>
 				<count type="number">60</count>
@@ -1779,16 +1822,16 @@
 			</id-00072>
 			<id-00073>
 				<ac type="number">0</ac>
-				<attune type="number">0</attune>
+				<attune type="number">1</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">2,700 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Body</location>
+				<location type="string">Attunement</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Regeneration</name>
 				<nonid_name type="string">Ring</nonid_name>
@@ -1799,7 +1842,7 @@
 			</id-00073>
 			<id-00074>
 				<ac type="number">0</ac>
-				<attune type="number">0</attune>
+				<attune type="number">1</attune>
 				<bonus type="number">1</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">? GP</cost>
@@ -1835,7 +1878,7 @@
 					<p>Fellforged Metal</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
+				<location type="string">Attunement</location>
 				<locked type="number">0</locked>
 				<name type="string">Memory Of Apocalypse</name>
 				<properties type="string">Ammunition (range 250/600), heavy, two-handed,</properties>
@@ -1845,6 +1888,7 @@
 				<weight type="number">6</weight>
 			</id-00074>
 			<id-00075>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">3</count>
@@ -1861,6 +1905,7 @@
 			</id-00075>
 			<id-00076>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">600 GP</cost>
@@ -1883,8 +1928,9 @@
 			</id-00076>
 			<id-00077>
 				<ac type="number">0</ac>
+				<attune type="number">1</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1892,7 +1938,7 @@
 					<p>However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Body</location>
+				<location type="string">Attunement</location>
 				<locked type="number">1</locked>
 				<name type="string">Slippers of Spider Climbing</name>
 				<nonid_name type="string">Light weight shoes</nonid_name>
@@ -1913,7 +1959,7 @@
 				<attune type="number">0</attune>
 				<carried type="number">0</carried>
 				<count type="number">1</count>
-				<name type="string">Jenuels room</name>
+				<name type="string">Jenuels roomSay lucky but I don't feel luckyI have ability that basically does that agreeNaked persuasion will rule and have general state need is not as good as an idea think it is the stone giant is technically bigger than me persuasion is bigger or stronger not just weaker meeting any creature that is bigger than the effect still appliesThe site reading wrongOkay tell the student direct persuasion will thenNoteBut still the guys canOkay Jan I'm actually what yes I have the coding for you know was actually going to say the activation word forTheEffect rightIt's memory of apocalypse that would be the around the handle area if you if you seen a compound bow from the store and you fully know what it looks like the kind of prison exactly it doesn't exactly look like that but that's it's built pretty much similarly that much much bigger slip affect I think I am going stunning strike shotIt is already applied to -8It's from Mark's men and I get that from being the spell was archer all I have everything encoded on things likeI actually did I use my phone's actions stuff oh nothing I'll rule us yet I'll roll it again without advantage all actually5-1-8I still hits so didn't matter that would probably just be a javelinJavelin not using the spears the one thing no sneak attack and all I need to remove the damage because my ring will do that after I finish I have a ring of regeneration the damage on the would be gone by nowStone giantWhat ice that said to eat andYet evenOf crap I got I got to attack the next time my current I have extra attack I forgot about that so next comes my time whatHello yeah I get extra taxYet fifth level soI'm not can it not going to mess with that now</name>
 				<weight type="number">0</weight>
 			</id-00079>
 			<id-00080>
@@ -1952,6 +1998,7 @@
 			</id-00082>
 			<id-00083>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">0</carried>
 				<cost type="string">150 GP</cost>
@@ -1995,6 +2042,7 @@
 			</id-00083>
 			<id-00084>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">0</carried>
 				<cost type="string">200 GP</cost>
@@ -2037,13 +2085,15 @@
 				<weight type="number">0.3</weight>
 			</id-00084>
 			<id-00085>
+				<attune type="number">0</attune>
 				<carried type="number">0</carried>
 				<count type="number">20</count>
 				<location type="string">Black and Blue Bag of Holding</location>
-				<name type="string">Spear Heads </name>
+				<name type="string">Spear Heads</name>
 				<weight type="number">1</weight>
 			</id-00085>
 			<id-00086>
+				<attune type="number">0</attune>
 				<carried type="number">0</carried>
 				<count type="number">50</count>
 				<location type="string">Black and Blue Bag of Holding</location>
@@ -2052,9 +2102,10 @@
 			</id-00086>
 			<id-00087>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
+				<carried type="number">0</carried>
+				<count type="number">86</count>
 				<description type="formattedtext">
 					<p>Name</p>
 					<p>Edoking (E do king)</p>
@@ -2067,11 +2118,13 @@
 						<link class="" recordname="">Eating all of the fruit of the Edoking is the same as eating 5 rations . Unless otherwise preserved, the fruit will spoil after 6 days (the more powerful the fruit the harder it is to preserve).</link>
 					</linklist>
 				</description>
+				<location type="string">Jenuels room</location>
 				<locked type="number">1</locked>
-				<name type="string">Edoking Fruit</name>
+				<name type="string">Edoking Fruit seeds</name>
 				<weight type="number">0</weight>
 			</id-00087>
 			<id-00088>
+				<attune type="number">0</attune>
 				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<location type="string">Black and Blue Bag of Holding</location>
@@ -2079,13 +2132,15 @@
 				<weight type="number">50</weight>
 			</id-00088>
 			<id-00089>
+				<attune type="number">0</attune>
 				<carried type="number">0</carried>
 				<count type="number">1</count>
 				<location type="string">Black and Blue Bag of Holding</location>
-				<name type="string">Wyvern Tail </name>
+				<name type="string">Wyvern Tail</name>
 				<weight type="number">5</weight>
 			</id-00089>
 			<id-00090>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<count type="number">10</count>
 				<location type="string">Trophy Necklace</location>
@@ -2093,12 +2148,103 @@
 				<weight type="number">0.5</weight>
 			</id-00090>
 			<id-00091>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<count type="number">10</count>
 				<location type="string">Trophy Necklace</location>
 				<name type="string">Troll tooth</name>
 				<weight type="number">0.5</weight>
 			</id-00091>
+			<id-00092>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Body</location>
+				<name type="string">Attunement</name>
+				<weight type="number">0</weight>
+			</id-00092>
+			<id-00093>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">4,349 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 piercing</damage>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>Magic weapons are unmistakably finer in quality than their ordinary counterparts. You have a +1 bonus to the attack rolls and damage rolls you make with this weapon.</p>
+					<p><b>Beast Slayer Notes</b></p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.beastslayer@Incarnate-5eExpansion">Beast Slayer</link>
+					</linklist>
+					<p>When you hit an undead with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;beast&#34; refers to any creature with the undead type.</p>
+				</description>
+				<location type="string">Backpack Slot</location>
+				<locked type="number">1</locked>
+				<name type="string">Composite Longbow [Beast Slayer], +1</name>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed, magic</properties>
+				<rarity type="string">rare</rarity>
+				<subtype type="string">Longbow</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
+			</id-00093>
+			<id-00094>
+				<attune type="number">0</attune>
+				<carried type="number">0</carried>
+				<cost type="string">5 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Black and Blue Bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Barrel</name>
+				<subtype type="string">Standard Adventuring Gear</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">20</weight>
+			</id-00094>
+			<id-00096>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Superior healing</td>
+							<td>Rare</td>
+							<td>8d4 + 8</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00096>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -2117,9 +2263,9 @@
 				<name type="string">Infernal</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">8</level>
+		<level type="number">9</level>
 		<name type="string">Jenuel Flayer</name>
-		<notes type="string">A friend of Gront Fieron who went missing during his trail of age.\n\neven though Helios down gnolls are generally half a foot bigger then gnolls from other worlds she is large for her race.\n\nHer family is known for they're skill with bow.\n\nher hight was restored to 9' by the wereowls.\n\nShe did scouting work for the city of Vab'alovobe reporting in threats and changes in the jungles and deserts around the city.\n\nfought/killed: lots of Gnolls, many Gnoll Fange, many gnoll pack lord, 3 skeletons, 3 zombies, 1 wight, 1 Hound of the Night, 1 crocodile, bunch of lizard man, multiple Clocwork hounds, multiple Clocwork watchman, 1 Clocwork beatle, Multiple Clocwork Huntsman, 1 Clocwork Myrmidon, Multiple Clocwork hounds, 1 Clocwork Abomination, 4 wolfs, 8 goblins, 1 trex, 1 chimera, 6 Hippogriffs, 3 Giant hyena, 2 Chimara, 1 tricaratops, \n\nencountered: 1 weretiger, 4 Giant toads, 1 cockatrice, 1 monolith warior, 1 dryad\n\nremembers creatures and they're smells\n\nPeople known: Rusfield Pierson weretiger child, Brian werebear child\n\na debt owed: with the wereowls restoring the hight my hight i seek to repay them\n\nYilon son of Pladek of clan Strakeln wants the gnome that took over the evil dwarves dead.\n\nAhuad (A hu ad)\n\n6200gp for gronts armor and jenuels compound bow</notes>
+		<notes type="string">A friend of Gront Fieron who went missing during his trail of age.\n\neven though Helios down gnolls are generally half a foot bigger then gnolls from other worlds she is large for her race.\n\nHer family is known for they're skill with bow.\n\nher hight was restored to 9' by the wereowls.\n\nShe did scouting work for the city of Vab'alovobe reporting in threats and changes in the jungles and deserts around the city.\n\nfought/killed: lots of Gnolls, many Gnoll Fange, many gnoll pack lord, 3 skeletons, 3 zombies, 1 wight, 1 Hound of the Night, 1 crocodile, bunch of lizard man, multiple Clocwork hounds, multiple Clocwork watchman, 1 Clocwork beatle, Multiple Clocwork Huntsman, 1 Clocwork Myrmidon, Multiple Clocwork hounds, 1 Clocwork Abomination, 4 wolfs, 8 goblins, 1 trex, 1 chimera, 6 Hippogriffs, 3 Giant hyena, 2 Chimara, 1 Tricaratops, 1 Stone giant, 5 Berserkers\n\nencountered: 1 weretiger, 4 Giant toads, 1 cockatrice, 1 monolith warior, 1 dryad, Copper Dragon, Were Creatures,\n\nremembers creatures and they're smells\n\nPeople known: Rusfield Pierson weretiger child, Brian werebear child, thug jimbow\n\na debt owed: with the wereowls restoring the hight my hight i seek to repay them\n\nYilon son of Pladek of clan Strakeln wants the gnome that took over the evil dwarves dead.\n\nAhuad (A hu ad)\n\n6200gp for gronts armor and jenuels compound bow</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">11</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -2407,6 +2553,67 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Feat</source>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Marksman - stunning strike; ATK: -8</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<label type="string">Marksman - stunning strike; Stunned</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00004>
+					<id-00006>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Marksman - prone hit; ATK: -5</label>
+						<order type="number">4</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00006>
+					<id-00008>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Marksman - prone hit; Prone</label>
+						<order type="number">6</order>
+						<type type="string">effect</type>
+					</id-00008>
+					<id-00010>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Marksman - Dazzling Shot; ATK: -3</label>
+						<order type="number">7</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00010>
+					<id-00011>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Marksman - Dazzling Shot; DISATK</label>
+						<order type="number">8</order>
+						<type type="string">effect</type>
+					</id-00011>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_feat" recordname="feat.DandDwiki_PRO_00172@Incarnate-5eExpansion">Marksman</link>
+					</linklist>
+				</description>
+				<group type="string">Feat</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Marksman</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Feat</source>
+			</id-00008>
 			<id-00009>
 				<actions>
 					<id-00001>
@@ -2504,7 +2711,10 @@
 						<atkbase type="string">fixed</atkbase>
 						<atkprof type="number">1</atkprof>
 						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">13</savedcmod>
 						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
 					</id-00001>
 				</actions>
@@ -2580,7 +2790,7 @@
 				<prepared type="number">0</prepared>
 			</id-00016>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Felling Axe</name>
@@ -2621,49 +2831,49 @@
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00004>
 			<id-00005>
 				<misc type="number">0</misc>
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00005>
 			<id-00006>
 				<misc type="number">0</misc>
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00008>
 			<id-00009>
 				<misc type="number">0</misc>
@@ -2698,7 +2908,7 @@
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00013>
 			<id-00014>
 				<misc type="number">0</misc>
@@ -2740,49 +2950,49 @@
 				<name type="string">Felling Ax</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00020>
 			<id-00021>
 				<misc type="number">0</misc>
 				<name type="string">Thieves' Tools</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00021>
 			<id-00022>
 				<misc type="number">0</misc>
 				<name type="string">Intimidation Smaller/weaker</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00022>
 			<id-00023>
 				<misc type="number">0</misc>
 				<name type="string">Persuasion bigger/stronger</name>
 				<prof type="number">2</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00023>
 			<id-00024>
 				<misc type="number">0</misc>
 				<name type="string">Nature Forest</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">6</total>
+				<total type="number">8</total>
 			</id-00024>
 			<id-00025>
 				<misc type="number">0</misc>
 				<name type="string">Survival Forest</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">7</total>
+				<total type="number">9</total>
 			</id-00025>
 			<id-00026>
 				<misc type="number">0</misc>
 				<name type="string">Felling Ax</name>
 				<prof type="number">2</prof>
 				<stat type="string">strength</stat>
-				<total type="number">8</total>
+				<total type="number">10</total>
 			</id-00026>
 		</skilllist>
 		<speed>
@@ -2794,7 +3004,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2928,12 +3138,13 @@
 			<id-00004>
 				<ammo type="number">0</ammo>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -2987,7 +3198,7 @@
 				</damagelist>
 				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">3</maxammo>
+				<maxammo type="number">5</maxammo>
 				<name type="string">M Spear</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
@@ -3068,7 +3279,7 @@
 				<type type="number">0</type>
 			</id-00009>
 			<id-00010>
-				<ammo type="number">0</ammo>
+				<ammo type="number">3</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -3081,7 +3292,7 @@
 				</damagelist>
 				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">17</maxammo>
+				<maxammo type="number">25</maxammo>
 				<name type="string">M Javelin</name>
 				<prof type="number">1</prof>
 				<properties type="string">Thrown (range 30/120)</properties>
@@ -3150,7 +3361,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
-				<handling type="number">0</handling>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Vicious Cold Forged Iron Spear of Dragon Slaying</name>
@@ -3163,6 +3374,7 @@
 				<type type="number">0</type>
 			</id-00013>
 			<id-00014>
+				<ammo type="number">0</ammo>
 				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -3196,6 +3408,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">60</maxammo>
 				<name type="string">Crossbow, Heavy</name>
@@ -3230,23 +3443,50 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00016>
+			<id-00017>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing,magic</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">10</maxammo>
+				<name type="string">Composite Longbow [Beast Slayer], +1</name>
+				<prof type="number">1</prof>
+				<properties type="string">Ammunition (range 150/600), heavy, two-handed, magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00093</recordname>
+				</shortcut>
+				<type type="number">1</type>
+			</id-00017>
 			<id-00018>
 				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">1</bonus>
 						<dice type="dice">d10</dice>
-						<stat type="string">base</stat>
+						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">piercing,magic </type>
+						<type type="string">piercing,magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Memory Of Apocalypse</name>
 				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 250/600), heavy, two-handed, Versatile (1d12)</properties>
+				<properties type="string">Ammunition (range 250/600), heavy, two-handed,</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
 					<recordname>....inventorylist.id-00074</recordname>
@@ -3254,10 +3494,15 @@
 				<type type="number">1</type>
 			</id-00018>
 			<id-00019>
+				<attackbonus type="number">0</attackbonus>
 				<carried type="number">1</carried>
+				<damagelist>
+				</damagelist>
+				<handling type="number">0</handling>
 				<maxammo type="number">16</maxammo>
-				<name type="string">L Silver Arrow</name>
+				<name type="string">c Silver Arrow</name>
 				<prof type="number">1</prof>
+				<properties type="string">Ammunition (range 150/600),</properties>
 				<shortcut type="windowreference">
 					<class></class>
 					<recordname></recordname>

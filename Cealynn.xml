@@ -18,14 +18,14 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">6</save>
+				<save type="number">7</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">16</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">0</bonus>
-				<save type="number">3</save>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">10</score>
@@ -48,19 +48,20 @@
 		<adventurelist>
 		</adventurelist>
 		<alignment type="string">Neutral</alignment>
-		<attunedCount type="number">1</attunedCount>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
 			<recordname>reference.backgrounddata.outlander@DD PHB Deluxe</recordname>
 		</backgroundlink>
+		<bonds type="string">Nothing is more important than family, and family is defined by more than blood.</bonds>
 		<classes>
 			<id-00001>
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">7</level>
+				<level type="number">9</level>
 				<name type="string">Ranger</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -68,18 +69,18 @@
 				</shortcut>
 			</id-00001>
 		</classes>
-		<coinother type="string">2203.14 gp, Efficient Quiver, Vicious Longbow of Warning [Undead Slaying], Ring of Psychic Resistance</coinother>
+		<coinother type="string">1449.14 gp, Efficient Quiver, Vicious Longbow of Warning [Undead Slaying], Ring of Psychic Resistance, Glamoured Studded Leather +1 (purchased)\n5545 GV</coinother>
 		<coins>
 			<slot1>
-				<amount type="number">1964</amount>
+				<amount type="number">1569</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">22</amount>
+				<amount type="number">48</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">514</amount>
+				<amount type="number">529</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">320</amount>
+				<amount type="number">327</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,23 +97,24 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">1</armor>
+				<armor type="number">3</armor>
+				<disstealth type="number">0</disstealth>
 				<misc type="number">0</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">14</total>
+				<total type="number">16</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">83.15</load>
+			<load type="number">85.65</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">793</exp>
-		<expneeded type="number">800</expneeded>
+		<exp type="number">907</exp>
+		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -126,6 +128,20 @@
 					</list>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Skulker</name>
+				<prerequisite type="string">Dexterity 13 or higher</prerequisite>
+				<text type="formattedtext">
+					<p><i>Prerequisite: Dexterity 13 or higher</i></p>
+					<p>You are expert at slinking through shadows. You gain the following benefits:</p>
+					<list>
+						<li>You can try to hide when you are lightly obscured from the creature from which you are hiding.</li>
+						<li>When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.</li>
+						<li>Dim light doesn't impose disadvantage on your Wisdom (Perception) checks relying on sight.</li>
+					</list>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -288,7 +304,7 @@
 			<id-00013>
 				<level type="number">7</level>
 				<locked type="number">1</locked>
-				<name type="string">Evasion</name>
+				<name type="string">Evasion [rogue 7]</name>
 				<source type="string">Rogue</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -300,17 +316,40 @@
 					<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <i>ice storm </i>spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">8</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement (Feat: Skulker) [rogue 8]</name>
+				<source type="string">Rogue</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th and 19th levels, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00014>
+			<id-00016>
+				<level type="number">9</level>
+				<locked type="number">1</locked>
+				<name type="string">Superior Mobility [scout 9]</name>
+				<source type="string">Rogue</source>
+				<specialization type="string">Scout</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 9th level, your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.</p>
+				</text>
+			</id-00016>
 		</featurelist>
+		<flaws type="string">Avoids settlements whenver possible\nSlow to trust outsiders</flaws>
 		<gender type="string">Female</gender>
-		<hero type="number">0</hero>
+		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
+			<total type="number">57</total>
 			<wounds type="number">0</wounds>
 		</hp>
+		<ideals type="string">Live and let live</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
@@ -343,7 +382,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">4,345 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 piercing</damage>
@@ -376,7 +415,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">0</carried>
 				<cost type="string">5 CP</cost>
-				<count type="number">20</count>
+				<count type="number">60</count>
 				<description type="formattedtext">
 					<p>-</p>
 				</description>
@@ -389,30 +428,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0.05</weight>
 			</id-00003>
-			<id-00004>
-				<ac type="number">11</ac>
-				<attune type="number">0</attune>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">10 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>
-				</description>
-				<dexbonus type="string">Yes</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<istemplate type="number">0</istemplate>
-				<locked type="number">1</locked>
-				<name type="string">Leather Armor</name>
-				<nonid_name type="string">Leather Armor</nonid_name>
-				<nonidentified type="string">Some well-crafted leather armor.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<stealth type="string">-</stealth>
-				<strength type="string">-</strength>
-				<subtype type="string">Light Armor</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">10</weight>
-			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -617,6 +632,7 @@
 					<p></p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Neck</location>
 				<locked type="number">1</locked>
 				<name type="string">Signal Whistle</name>
 				<subtype type="string">Standard</subtype>
@@ -670,6 +686,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Healer's Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -840,18 +857,33 @@
 				<weight type="number">0</weight>
 			</id-00028>
 			<id-00029>
+				<ac type="number">12</ac>
 				<attune type="number">0</attune>
-				<carried type="number">1</carried>
-				<cost type="string">50 gp</cost>
+				<bonus type="number">1</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">800 gp</cost>
 				<count type="number">1</count>
-				<damage type="string">1d8 piercing</damage>
-				<isidentified type="number">1</isidentified>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>The most basic form of magic armor is a superb product of physical and magical craft. You have a +1 bonus to AC while wearing this armor.</p>
+					<p>A suit of +1 armor never rusts or deteriorates, and it magically resizes to fit its wearer.</p>
+					<p><b>Studded Leather Notes</b></p>
+					<p>Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.</p>
+					<p>Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</p>
+					<p><b>Glamored Notes</b></p>
+					<h>Glamored</h>
+					<p>While wearing this armor, you gain a +1 bonus to AC.</p>
+					<p>You can also use a bonus action to speak the armor's command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or remove the armor.</p>
+				</description>
+				<dexbonus type="string">Yes</dexbonus>
 				<locked type="number">1</locked>
-				<name type="string">Longbow</name>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
-				<subtype type="string">Martial Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
+				<name type="string">Studded Leather Armor [Glamored], +1</name>
+				<rarity type="string">Rare</rarity>
+				<stealth type="string">-</stealth>
+				<strength type="string">-</strength>
+				<subtype type="string">Studded Leather</subtype>
+				<type type="string">Armor</type>
+				<weight type="number">13</weight>
 			</id-00029>
 			<id-00030>
 				<ac type="number">0</ac>
@@ -922,6 +954,7 @@
 					<p>A small table knife. Perfect for cutting up fruit or meat into bite sized pieces.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Knife (table)</name>
 				<nonid_name type="string">Knife (table)</nonid_name>
@@ -996,6 +1029,7 @@
 					</table>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Finger</location>
 				<locked type="number">1</locked>
 				<name type="string">Ring of Psychic Resistance</name>
 				<nonid_name type="string">Ring</nonid_name>
@@ -1057,6 +1091,65 @@
 				<name type="string">Silver arrow</name>
 				<weight type="number">0.05</weight>
 			</id-00038>
+			<id-00039>
+				<ac type="number">0</ac>
+				<attune type="number">1</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Finger</location>
+				<locked type="number">1</locked>
+				<name type="string">Ring of Feather Falling</name>
+				<nonid_name type="string">Ring</nonid_name>
+				<nonidentified type="string">A sapphire ring.</nonidentified>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<type type="string">Ring</type>
+				<weight type="number">1</weight>
+			</id-00039>
+			<id-00040>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Superior healing</td>
+							<td>Rare</td>
+							<td>8d4 + 8</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Satchel</location>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00040>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1072,12 +1165,14 @@
 				<name type="string">Mikon</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">9</level>
 		<name type="string">Caelynn</name>
-		<notes type="string">Bryn Caelynn Selevarun\n\nBG Skills: Athletics, Medicine\nRace Skills: Perception\nClass Skills: Acrobatics, Insight, Investigation, Stealth\nExpertise: Perception, Stealth; Acrobatics, Insight\nArchetype Skills: Nature, Survival\n\nBG Languages: \nRace Languages: Common, Elven\n\nsharpshooter*\nskulker*\nsnap shooter\nalert*\nobservant*\nkeen mind*\nlinguist*\nmobile*\ndead shot\nmarksman\nhorde breaker/hunter\nnatural hider?\nreflexive?\nrichochet master?\ntrained sight?\ndoctor?\narchery champion?\n</notes>
+		<notes type="string">Bryn Caelynn Selevarun\n\nBG Skills: Athletics, Medicine\nRace Skills: Perception\nClass Skills: Acrobatics, Insight, Investigation, Stealth\nExpertise: Perception, Stealth; Acrobatics, Insight\nArchetype Skills: Nature, Survival\n\nBG Languages: Sylvan, Mikon\nRace Languages: Common, Elven\n\nsharpshooter*\nskulker*\nsnap shooter\nalert*\nobservant*\nkeen mind*\nlinguist*\nmobile*\ndead shot\nmarksman\nhorde breaker/hunter\nnatural hider?\nreflexive?\nrichochet master?\ntrained sight?\ndoctor?\narchery champion?\n</notes>
 		<pc_label_hero type="string">Hero Poi/ont</pc_label_hero>
-		<perception type="number">19</perception>
+		<perception type="number">21</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
+		<personalitytraits type="string">I'm more comfortable in natural environments than surrounded by people (Settlements make me uncomfortable, and I don't like staying in one place any longer than I must.)\nI am uncomfortable indoors and much prefer the open air.\nPeople's words mean less to me than their actions.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<atkprof type="number">1</atkprof>
@@ -1619,7 +1714,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<cost type="string">101 - 500 gp</cost>
 				<description type="formattedtext">
 					<h>Description</h>
@@ -1836,7 +1931,7 @@
 				<source type="string">5e Rule Coding</source>
 			</id-00021>
 		</powers>
-		<profbonus type="number">3</profbonus>
+		<profbonus type="number">4</profbonus>
 		<proficiencylist>
 			<id-00002>
 				<name type="string">Weapon: Simple weapons, hand crossbows, longswords, rapiers, shortswords</name>
@@ -1861,21 +1956,21 @@
 				<name type="string">Perception</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00001>
 			<id-00002>
 				<misc type="number">0</misc>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00002>
 			<id-00003>
 				<misc type="number">0</misc>
 				<name type="string">Survival</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00003>
 			<id-00004>
 				<misc type="number">0</misc>
@@ -1896,14 +1991,14 @@
 				<name type="string">Nature</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00006>
 			<id-00007>
 				<misc type="number">0</misc>
 				<name type="string">Medicine</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">6</total>
+				<total type="number">7</total>
 			</id-00007>
 			<id-00008>
 				<misc type="number">0</misc>
@@ -1917,7 +2012,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -1938,7 +2033,7 @@
 				<name type="string">Insight</name>
 				<prof type="number">2</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00012>
 			<id-00013>
 				<misc type="number">0</misc>
@@ -1959,14 +2054,14 @@
 				<name type="string">Investigation</name>
 				<prof type="number">1</prof>
 				<stat type="string">intelligence</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00015>
 			<id-00016>
 				<misc type="number">0</misc>
 				<name type="string">Stealth</name>
 				<prof type="number">2</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">9</total>
+				<total type="number">11</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -1986,9 +2081,9 @@
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">35</base>
-			<misc type="number">0</misc>
+			<misc type="number">10</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">35</total>
+			<total type="number">45</total>
 		</speed>
 		<temp>
 		</temp>
@@ -2097,29 +2192,6 @@
 				</shortcut>
 				<type type="number">1</type>
 			</id-00002>
-			<id-00003>
-				<ammo type="number">2</ammo>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<dice type="dice">d8</dice>
-						<stat type="string">base</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
-					</id-00001>
-				</damagelist>
-				<handling type="number">1</handling>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">20</maxammo>
-				<name type="string">Longbow</name>
-				<prof type="number">1</prof>
-				<properties type="string">Ammunition (range 150/600), heavy, two-handed</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00029</recordname>
-				</shortcut>
-				<type type="number">1</type>
-			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">0</carried>
@@ -2178,7 +2250,7 @@
 						<type type="string">piercing,magic</type>
 					</id-00001>
 				</damagelist>
-				<handling type="number">0</handling>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">20</maxammo>
 				<name type="string">Vicious Longbow of Warning [Undead Slayer]</name>

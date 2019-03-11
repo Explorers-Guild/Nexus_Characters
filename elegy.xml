@@ -48,6 +48,7 @@
 		<adventurelist>
 		</adventurelist>
 		<age type="string">200</age>
+		<attunedCount type="number">1</attunedCount>
 		<background type="string">Golgari Agent</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -71,7 +72,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">5</level>
+				<level type="number">6</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -81,15 +82,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">428</amount>
+				<amount type="number">805</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">26</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">223</amount>
+				<amount type="number">238</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -97,11 +98,12 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">199</amount>
+				<amount type="number">206</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
-				<amount type="number">0</amount>
+				<amount type="number">3824</amount>
+				<name type="string">GV</name>
 			</slot6>
 		</coins>
 		<defenses>
@@ -120,11 +122,11 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">102.25</load>
+			<load type="number">107.75</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">608</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">722</exp>
+		<expneeded type="number">700</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -508,14 +510,37 @@
 					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 				</text>
 			</id-00019>
+			<id-00020>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Wholeness of Body</name>
+				<source type="string">Monk</source>
+				<specialization type="string">Way of the Open Hand</specialization>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</p>
+				</text>
+			</id-00020>
+			<id-00021>
+				<level type="number">6</level>
+				<locked type="number">1</locked>
+				<name type="string">Ki-Empowered Strikes</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+				</text>
+			</id-00021>
 		</featurelist>
 		<gender type="string">Female</gender>
 		<height type="string">6'1&#34;</height>
+		<hero type="number">3</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">51</total>
+			<total type="number">59</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<initiative>
@@ -526,6 +551,7 @@
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">393 gp</cost>
@@ -544,6 +570,7 @@
 				<weight type="number">2</weight>
 			</id-00001>
 			<id-00002>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
@@ -560,8 +587,9 @@
 			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -622,6 +650,7 @@
 				<weight type="number">0.5</weight>
 			</id-00003>
 			<id-00004>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">3</count>
@@ -634,6 +663,7 @@
 				<weight type="number">5</weight>
 			</id-00004>
 			<id-00005>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
@@ -649,6 +679,7 @@
 				<weight type="number">1</weight>
 			</id-00005>
 			<id-00006>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -661,6 +692,7 @@
 				<weight type="number">3</weight>
 			</id-00006>
 			<id-00007>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
@@ -676,6 +708,7 @@
 				<weight type="number">5</weight>
 			</id-00007>
 			<id-00008>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">3</count>
@@ -691,6 +724,7 @@
 				<weight type="number">1</weight>
 			</id-00008>
 			<id-00009>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">2 GP</cost>
 				<count type="number">1</count>
@@ -703,6 +737,7 @@
 				<weight type="number">5</weight>
 			</id-00009>
 			<id-00010>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">10</count>
@@ -718,6 +753,7 @@
 				<weight type="number">2</weight>
 			</id-00010>
 			<id-00011>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -731,6 +767,7 @@
 			</id-00011>
 			<id-00012>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 CP</cost>
@@ -747,6 +784,7 @@
 				<weight type="number">0.25</weight>
 			</id-00012>
 			<id-00013>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -762,6 +800,7 @@
 				<weight type="number">7</weight>
 			</id-00013>
 			<id-00014>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -778,6 +817,7 @@
 			</id-00014>
 			<id-00015>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 GP</cost>
@@ -795,6 +835,7 @@
 			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">30 gp</cost>
@@ -812,6 +853,7 @@
 			</id-00016>
 			<id-00017>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">900 GP</cost>
@@ -845,7 +887,76 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">6</weight>
 			</id-00017>
+			<id-00018>
+				<ac type="number">0</ac>
+				<attune type="number">1</attune>
+				<bonus type="number">2</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">6500 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning</damage>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="imagewindow" recordname="reference.imagedata.img_staff_of_thunder_and_lightning_jpg@*"><b>Image: </b></link>Staff of Thunder and Lightning</linklist>
+					<p>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.</p>
+					<p><b><i>Lightning. </i></b>When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 lightning damage.</p>
+					<p><b><i>Thunder. </i></b>When you hit with a melee attack using the staff, you can cause the staff to emit a crack of thunder, audible out to 300 feet. The target you hit must succeed on a DC 17 Constitution saving throw or become stunned until the end of your next turn.</p>
+					<p><b><i>Lightning Strike. </i></b>You can use an action to cause a bolt of lightning to leap from the staff 's tip in a line that is 5 feet wide and 120 feet long. Each creature in that line must make a DC 17 Dexterity saving throw, taking 9d6 lightning damage on a failed save, or half as much damage on a successful one.</p>
+					<p><b><i>Thunderclap. </i></b>You can use an action to cause the staff to issue a deafening thunderclap, audible out to 600 feet. Each creature within 60 feet of you (not including you) must make a DC 17 Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 1 minute. On a successful save, a creature takes half damage and isn't deafened.</p>
+					<p><b><i>Thunder and Lightning. </i></b>You can use an action to use the Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">carried</location>
+				<locked type="number">1</locked>
+				<name type="string">Staff of Thunder and Lightning</name>
+				<nonid_name type="string">Quarterstaff</nonid_name>
+				<nonidentified type="string">A wooden, intricately carved staff, painted in metallic silver with a head that continually crackles and sparks.</nonidentified>
+				<properties type="string">Versatile (1d8), magic</properties>
+				<rarity type="string">Very Rare (Requires Attunement)</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Staff of Thunder and Lightning</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Quarterstaff</name>
+					</id-00002>
+				</spells>
+				<subtype type="string">Weapon</subtype>
+				<type type="string">Staff</type>
+				<weight type="number">4</weight>
+			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed you while you wear the pendant.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">worn(neck)</location>
+				<locked type="number">1</locked>
+				<name type="string">Periapt of Health</name>
+				<nonid_name type="string">Pendant</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Magical Amulet</subtype>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00019>
 			<id-00020>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">3 gp</cost>
 				<count type="number">1</count>
@@ -859,6 +970,7 @@
 			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">-</cost>
@@ -874,6 +986,7 @@
 				<weight type="number">1</weight>
 			</id-00021>
 			<id-00022>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
@@ -885,6 +998,7 @@
 				<weight type="number">3</weight>
 			</id-00022>
 			<id-00023>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
@@ -900,6 +1014,7 @@
 				<weight type="number">0.25</weight>
 			</id-00023>
 			<id-00024>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">1</count>
@@ -915,7 +1030,8 @@
 				<weight type="number">0.5</weight>
 			</id-00024>
 			<id-00025>
-				<carried type="number">1</carried>
+				<attune type="number">0</attune>
+				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -927,6 +1043,7 @@
 				<weight type="number">3</weight>
 			</id-00025>
 			<id-00026>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
@@ -942,6 +1059,7 @@
 				<weight type="number">2</weight>
 			</id-00026>
 			<id-00027>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">50 gp</cost>
 				<count type="number">1</count>
@@ -958,6 +1076,7 @@
 			</id-00027>
 			<id-00028>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
@@ -975,6 +1094,7 @@
 			</id-00028>
 			<id-00029>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2,001 gp</cost>
@@ -1013,8 +1133,47 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">33 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Healing</td>
+							<td>Common</td>
+							<td>2d4 + 2</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<nonid_name type="string">Dull Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Common</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00030>
 			<id-00031>
 				<ac type="number">0</ac>
+				<attune type="number">1</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">2,700 gp</cost>
@@ -1049,8 +1208,9 @@
 				<name type="string">Giant</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Elegy</name>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">16</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<powergroup>
@@ -1067,6 +1227,11 @@
 				<uses type="number">3</uses>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00001>
+			<id-00002>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Racial</name>
+				<saveprof type="number">1</saveprof>
+			</id-00002>
 			<id-00003>
 				<atkmod type="number">0</atkmod>
 				<atkprof type="number">1</atkprof>
@@ -1088,9 +1253,14 @@
 				<savemod type="number">0</savemod>
 				<saveprof type="number">1</saveprof>
 				<savestat type="string">wisdom</savestat>
-				<uses type="number">5</uses>
+				<uses type="number">6</uses>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00004>
+			<id-00005>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Items</name>
+				<saveprof type="number">1</saveprof>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1166,7 +1336,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">preparation</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1208,7 +1378,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Deflect Missiles (R)</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
@@ -1358,7 +1528,7 @@
 				<description type="formattedtext">
 					<p>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Racial</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Elf: Fey Ancestry</name>
@@ -1455,9 +1625,12 @@
 			<id-00008>
 				<actions>
 					<id-00001>
+						<atkmod type="number">0</atkmod>
 						<atkprof type="number">1</atkprof>
 						<order type="number">1</order>
+						<savedcmod type="number">0</savedcmod>
 						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">0</savemagic>
 						<savetype type="string">dexterity</savetype>
 						<type type="string">cast</type>
 					</id-00001>
@@ -1465,7 +1638,8 @@
 						<damagelist>
 							<id-00001>
 								<bonus type="number">0</bonus>
-								<dice type="dice">d8</dice>
+								<dice type="dice">d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">radiant</type>
 							</id-00001>
 						</damagelist>
@@ -2165,12 +2339,31 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Faerie Fire (60) (C)</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric Light Domain, Druid, Warlock (Archfey)</source>
 			</id-00026>
+			<id-00027>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<stat type="string">monk</stat>
+								<statmult type="number">3</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Monk Abilities</group>
+				<level type="number">0</level>
+				<name type="string">Wholeness of Body</name>
+				<prepared type="number">1</prepared>
+			</id-00027>
 			<id-00028>
 				<actions>
 					<id-00001>
@@ -2253,6 +2446,43 @@
 				<school type="string">Necromancy</school>
 				<source type="string">Cleric</source>
 			</id-00030>
+			<id-00031>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">1</prepared>
+				<usesperiod type="string">once</usesperiod>
+			</id-00031>
+			<id-00032>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<label type="string">DMG: 2d6 lightning;</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<name type="string">Lightning</name>
+				<prepared type="number">1</prepared>
+			</id-00032>
 			<id-00033>
 				<actions>
 					<id-00001>
@@ -2293,7 +2523,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Ray of Sickness (60)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Necromancy</school>
@@ -2348,6 +2578,61 @@
 				<school type="string">Conjuration</school>
 				<source type="string">Druid</source>
 			</id-00034>
+			<id-00035>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">17</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Thunder; Stunned</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<name type="string">Thunder</name>
+				<prepared type="number">1</prepared>
+			</id-00035>
+			<id-00036>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">17</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">lightning</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<name type="string">Lightning Strike</name>
+				<prepared type="number">1</prepared>
+			</id-00036>
 			<id-00037>
 				<actions>
 					<id-00001>
@@ -2368,11 +2653,21 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Patient Defense (B)</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00037>
+			<id-00038>
+				<actions>
+					<id-00003>
+						<order type="number">1</order>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<level type="number">0</level>
+				<prepared type="number">0</prepared>
+			</id-00038>
 			<id-00039>
 				<actions>
 					<id-00001>
@@ -2393,11 +2688,56 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Monk: Step of the Wind (B)</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 				<school type="string">Class</school>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00039>
+			<id-00040>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">fixed</savedcbase>
+						<savedcmod type="number">17</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">10</durmod>
+						<label type="string">Thunderclap; Deafened</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<name type="string">Thunderclap</name>
+				<prepared type="number">50</prepared>
+			</id-00040>
+			<id-00041>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<name type="string">Thunder &#38; Lightning</name>
+				<prepared type="number">1</prepared>
+			</id-00041>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2551,14 +2891,14 @@
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
-			<base type="number">45</base>
-			<misc type="number">0</misc>
+			<base type="number">35</base>
+			<misc type="number">15</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
+			<total type="number">50</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2620,6 +2960,7 @@
 						<type type="string">piercing, magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Shortsword, +1</name>
@@ -2644,6 +2985,7 @@
 						<type type="string">bludgeoning</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Unarmed Strike (Monk)</name>
@@ -2654,6 +2996,31 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00002>
+			<id-00003>
+				<attackbonus type="number">2</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">bludgeoning,magic</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Staff of Thunder and Lightning</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8), magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00003>
 		</weaponlist>
 		<weight type="string">160</weight>
 	</character>
