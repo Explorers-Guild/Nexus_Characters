@@ -113,7 +113,7 @@
 			<load type="number">85.65</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">907</exp>
+		<exp type="number">931</exp>
 		<expneeded type="number">1000</expneeded>
 		<featlist>
 			<id-00001>
@@ -396,10 +396,12 @@
 					</linklist>
 					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 					<p>When you hit an undead with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;undead&#34; refers to any creature with the undead type.</p>
-					<p><b>Vicious Weapon Notes</b></p>
+					<h>Action Coding</h>
 					<linklist>
-						<link class="imagewindow" recordname="reference.imagedata.img_vicious_weapon_jpg@*"><b>Image: </b></link>Vicious Weapon</linklist>
-					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 7 damage of the weapon's type.</p>
+						<link class="power" recordname="spell.viciousweapon@Incarnate-5eExpansion">Vicious</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
 				</description>
 				<locked type="number">1</locked>
 				<name type="string">Vicious Longbow of Warning [Undead Slayer]</name>
@@ -1267,7 +1269,7 @@
 					<id-00001>
 						<apply type="string">roll</apply>
 						<durmod type="number">1</durmod>
-						<label type="string">Sneak Attack; DMG: 4d6</label>
+						<label type="string">Sneak Attack; DMG: 5d6</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1930,6 +1932,60 @@
 				<ritual type="number">0</ritual>
 				<source type="string">5e Rule Coding</source>
 			</id-00021>
+			<id-00022>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">8</bonus>
+								<dice type="dice">d4,d4,d4,d4,d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00409@Incarnate-5eExpansion">Superior Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<prepared type="number">1</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+				<usesperiod type="string">once</usesperiod>
+			</id-00022>
+			<id-00023>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Vicious Weapon; DMG: 2d6, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00842@Incarnate-5eExpansion">Vicious Weapon</link>
+					</linklist>
+				</description>
+				<group type="string">Items</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Weapon</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00023>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2239,7 +2295,7 @@
 				<type type="number">2</type>
 			</id-00005>
 			<id-00006>
-				<ammo type="number">0</ammo>
+				<ammo type="number">7</ammo>
 				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>

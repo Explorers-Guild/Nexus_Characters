@@ -55,6 +55,7 @@
 		</adventurelist>
 		<age type="string">9</age>
 		<alignment type="string">chaotic neutral</alignment>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Apothecary</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -67,7 +68,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">9</level>
+				<level type="number">10</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -77,11 +78,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">3454</amount>
+				<amount type="number">1397</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">52</amount>
+				<amount type="number">178</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
@@ -89,7 +90,7 @@
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">47</amount>
+				<amount type="number">256</amount>
 				<name type="string">PP</name>
 			</slot4>
 			<slot5>
@@ -114,11 +115,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">34.08</load>
+			<load type="number">33.08</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">1044</exp>
-		<expneeded type="number">1000</expneeded>
+		<exp type="number">1075</exp>
+		<expneeded type="number">1100</expneeded>
 		<featlist>
 			<id-00002>
 				<locked type="number">1</locked>
@@ -310,17 +311,27 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">10</level>
+				<locked type="number">1</locked>
+				<name type="string">Inured to Undeath</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Necromancy</specialization>
+				<text type="formattedtext">
+					<p>Beginning at 10th level, you have resistance to necrotic damage, and your hit point maximum can't be reduced. You have spent so much time dealing with undead and the forces that animate them that you have become inured to some of their worst effects.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I am only interested in the ailments my patients suffer from, not the people themselves.</flaws>
 		<gender type="string">m</gender>
 		<height type="string">4'9</height>
-		<hero type="number">1</hero>
+		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">38</total>
+			<total type="number">42</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Research - In order to treat patients effectively, we must understand the maladies afflicting them. (Any)</ideals>
@@ -465,21 +476,11 @@
 				<weight type="number">0</weight>
 			</id-00007>
 			<id-00008>
-				<ac type="number">0</ac>
 				<attune type="number">0</attune>
-				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">50 GP</cost>
 				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Spellbook</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">3</weight>
+				<name type="string">rare chock blue ink made of shappire gems</name>
+				<weight type="number">0</weight>
 			</id-00008>
 			<id-00009>
 				<attune type="number">0</attune>
@@ -707,7 +708,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">3</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -745,7 +746,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">0</count>
 				<description type="formattedtext">
 					<h>Lore</h>
 					<p>Derived from crazy colored paste found in a dungeon (with a 27 Herbalism kit)</p>
@@ -828,7 +829,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -946,34 +947,6 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00025>
-			<id-00026>
-				<ac type="number">2</ac>
-				<attune type="number">0</attune>
-				<bonus type="number">2</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">4010 GP</cost>
-				<count type="number">1</count>
-				<description type="formattedtext">
-					<p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
-					<p>Mithril is a light, flexible metal. A mithril chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithril version of the armor doesn't.</p>
-					<h>Armor of Resistance</h>
-					<p><b>Action Coding</b></p>
-					<linklist>
-						<link class="power" recordname="spell.typeresistancepsychic@Incarnate-5eExpansion">Type Resistance (Psychic)</link>
-					</linklist>
-					<p><b>Description</b></p>
-					<p>You have resistance to one type of damage while you wear this armor.</p>
-				</description>
-				<dexbonus type="string">-</dexbonus>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Mithril Shield of Psychic Resistance</name>
-				<nonid_name type="string">ERROR</nonid_name>
-				<nonidentified type="string">ERROR</nonidentified>
-				<subtype type="string">Shield</subtype>
-				<type type="string">Armor</type>
-				<weight type="number">3</weight>
-			</id-00026>
 			<id-00027>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -1044,6 +1017,48 @@
 				<type type="string">Ring</type>
 				<weight type="number">1</weight>
 			</id-00028>
+			<id-00029>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">50 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.</p>
+					<p>Following Spells:</p>
+					<p>1-st level: detect magic, mage armor, magic missile, shield</p>
+					<p>2-nd level: misty step, suggestion</p>
+					<p>3-rd level: counterspell, fireball, fly</p>
+					<p>4-th level: greater lnvisibility, ice storm</p>
+					<p>5-th level: cone of cold</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Zahiil's Spellbook</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">3</weight>
+			</id-00029>
+			<id-00030>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect.</p>
+					<p>When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Boots of Speed</name>
+				<nonid_name type="string">Boots</nonid_name>
+				<nonidentified type="string">Medium weight boots.</nonidentified>
+				<rarity type="string">Rare (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">2</weight>
+			</id-00030>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1056,7 +1071,7 @@
 				<name type="string">Gnomish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">9</level>
+		<level type="number">10</level>
 		<name type="string">Cit D. Frostmoon</name>
 		<notes type="string">Demons i know Barigura, Bouda, Cambion, Tanarukk\nOffical notice of the Theiflings to Pride</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
@@ -1071,6 +1086,9 @@
 				<prepared type="number">1</prepared>
 				<stat type="string">intelligence</stat>
 			</id-00001>
+			<id-00002>
+				<name type="string">Class/Race</name>
+			</id-00002>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1111,22 +1129,22 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots4>
 			<spellslots5>
-				<max type="number">1</max>
+				<max type="number">2</max>
 				<used type="number">0</used>
 			</spellslots5>
 			<spellslots6>
@@ -1146,32 +1164,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
 		<powers>
-			<id-00001>
-				<actions>
-					<id-00004>
-						<durmod type="number">1</durmod>
-						<durunit type="string">minute</durunit>
-						<label type="string">Heartstone; (C)</label>
-						<order type="number">1</order>
-						<targeting type="string">self</targeting>
-						<type type="string">effect</type>
-					</id-00004>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<linklist>
-						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
-					</linklist>
-				</description>
-				<group type="string">Spells</group>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Heartstone</name>
-				<prepared type="number">0</prepared>
-				<ritual type="number">0</ritual>
-			</id-00001>
 			<id-00002>
 				<actions>
 					<id-00005>
@@ -1564,7 +1557,7 @@
 				<description type="formattedtext">
 					<p></p>
 				</description>
-				<group type="string">Spells</group>
+				<group type="string">Class/Race</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Type Resistance (Fire)</name>
@@ -1709,7 +1702,7 @@
 				<level type="number">2</level>
 				<locked type="number">1</locked>
 				<name type="string">Shatter</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -2218,6 +2211,179 @@
 				<source type="string">Item - Action Code</source>
 				<usesperiod type="string">once</usesperiod>
 			</id-00034>
+			<id-00035>
+				<actions>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Heartstone; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="item" recordname="item.id-00044@Incarnate-5eExpansion">Heartstone</link>
+					</linklist>
+				</description>
+				<group type="string">Class/Race</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Heartstone</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+			</id-00035>
+			<id-00037>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.</p>
+					<p>The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Toll the Dead</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Cleric, Warlock, Wizard</source>
+			</id-00037>
+			<id-00038>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: necrotic</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Beginning at 10th level, you have resistance to necrotic damage, and your hit point maximum can't be reduced. You have spent so much time dealing with undead and the forces that animate them that you have become inured to some of their worst effects.</p>
+				</description>
+				<group type="string">Class/Race</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Inured to Undeath</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Necromancy</specialization>
+			</id-00038>
+			<id-00039>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 minute</castingtime>
+				<components type="string">V, M (rare chalks and inks infused with precious gems with 50 gp, which the spell consumes)</components>
+				<description type="formattedtext">
+					<p>As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.</p>
+					<p>Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence-a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the DM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.</p>
+					<p>You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Spells</group>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Teleportation Circle</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Sorcerer, Wizard</source>
+			</id-00039>
+			<id-00040>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</castingtime>
+				<components type="string">S</components>
+				<description type="formattedtext">
+					<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Counterspell</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Abjuration</school>
+				<source type="string">Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00040>
+			<id-00041>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a tiny ball of bat guano and sulfur)</components>
+				<description type="formattedtext">
+					<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+					<p>The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Fireball</name>
+				<prepared type="number">1</prepared>
+				<range type="string">150 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric Light Domain, Eldritch Knight, Warlock (Fiend), Monk, Sorcerer, Wizard, Arcane Trickster</source>
+			</id-00041>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2390,7 +2556,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
