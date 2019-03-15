@@ -59,6 +59,7 @@
 			<id-00001>
 				<casterlevelinvmult type="number">3</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
+				<hdbonusWS type="number">0</hdbonusWS>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">6</level>
@@ -71,11 +72,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1462</amount>
+				<amount type="number">1617</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">25</amount>
+				<amount type="number">47</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -87,7 +88,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">178</amount>
+				<amount type="number">193</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,7 +113,7 @@
 			<load type="number">95.21</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">661</exp>
+		<exp type="number">695</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
@@ -1199,34 +1200,21 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00003>
-			<id-00004>
-				<actions>
-					<id-00001>
-						<order type="number">1</order>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-				</actions>
-				<cast type="number">0</cast>
-				<description type="formattedtext">
-					<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
-				</description>
-				<locked type="number">1</locked>
-				<name type="string">Evasion</name>
-				<prepared type="number">0</prepared>
-				<specializationchoice type="number">0</specializationchoice>
-			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
 						<damagelist>
 							<id-00001>
-								<dice type="dice">d10</dice>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d10,d10</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -1582,7 +1570,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1761,5 +1749,8 @@
 			</id-00006>
 		</weaponlist>
 		<weight type="string">290 Pounds</weight>
+		<wildshapes>
+			<shifted type="number">0</shifted>
+		</wildshapes>
 	</character>
 </root>

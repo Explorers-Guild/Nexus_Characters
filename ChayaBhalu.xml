@@ -60,9 +60,10 @@
 			<id-00001>
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
+				<hdbonusWS type="number">0</hdbonusWS>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -72,6 +73,7 @@
 			<id-00002>
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
+				<hdbonusWS type="number">0</hdbonusWS>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">4</level>
@@ -84,11 +86,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">426</amount>
+				<amount type="number">581</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">22</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -100,7 +102,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">490</amount>
+				<amount type="number">505</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -123,11 +125,11 @@
 			<encumbered type="number">150</encumbered>
 			<encumberedheavy type="number">300</encumberedheavy>
 			<liftpushdrag type="number">900</liftpushdrag>
-			<load type="number">66</load>
+			<load type="number">79</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">1091</exp>
-		<expneeded type="number">1000</expneeded>
+		<exp type="number">1125</exp>
+		<expneeded type="number">1200</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -414,6 +416,31 @@
 					<p>At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
 				</text>
 			</id-00022>
+			<id-00023>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Evasion</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.evasion@Incarnate-5eExpansion">Evasion</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a <i>fireball </i>spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+				</text>
+			</id-00023>
+			<id-00024>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Stillness of Mind</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>
+				</text>
+			</id-00024>
 		</featurelist>
 		<flaws type="string">Violence is my answer to almost any challenge. There's no room for caution in a life lived to the fullest.</flaws>
 		<gender type="string">Male</gender>
@@ -424,8 +451,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">63</total>
-			<wounds type="number">23</wounds>
+			<total type="number">70</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Honor. If I dishonor myself, I dishonor my whole clan. Glory. I must earn glory in battle, for myself and my clan.</ideals>
 		<initiative>
@@ -501,19 +528,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0</weight>
 			</id-00004>
-			<id-00005>
-				<attune type="number">0</attune>
-				<carried type="number">0</carried>
-				<cost type="string">2 gp</cost>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<locked type="number">1</locked>
-				<name type="string">Clothes, Traveler's</name>
-				<subtype type="string">Standard</subtype>
-				<type type="string">Adventuring Gear</type>
-				<weight type="number">4</weight>
-			</id-00005>
 			<id-00006>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -592,11 +606,11 @@
 			</id-00009>
 			<id-00010>
 				<attune type="number">0</attune>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
+				<location type="string">Rope Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Rope, Hempen (50 Feet)</name>
 				<subtype type="string">Standard</subtype>
@@ -779,7 +793,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">200 GP</cost>
-				<count type="number">2</count>
+				<count type="number">4</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -1047,7 +1061,7 @@
 				<cost type="string">1000 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>This body suit obscures it's wearer when moving through dark spaces. It has also been enchanted to provide the wearer with a +1 to it's AC.</p>
+					<p>This body suit obscures it's wearer when moving through dark spaces, the wearer has advantage on stealth rolls in Dark Spaces. It has also been enchanted to provide the wearer with a +1 to it's AC.</p>
 				</description>
 				<dexbonus type="string">Yes (max 2)</dexbonus>
 				<isidentified type="number">1</isidentified>
@@ -1060,6 +1074,27 @@
 				<type type="string">Clothing</type>
 				<weight type="number">15</weight>
 			</id-00035>
+			<id-00036>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<p>Found in a small container, this powder resembles very fine sand. It appears to be dust of disappearance, and an identify spell reveals it to be such. There is enough of it for one use.</p>
+					<p>When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating.</p>
+					<p>As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration spell can also end the effect on a creature.</p>
+				</description>
+				<isidentified type="number">0</isidentified>
+				<location type="string">Component Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Dust of Disappearance</name>
+				<nonid_name type="string">Dust of Disappearance</nonid_name>
+				<nonidentified type="string">Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00036>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1072,7 +1107,7 @@
 				<name type="string">Goblin</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">10</level>
+		<level type="number">11</level>
 		<name type="string">Chaya Bhalu</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
@@ -1194,7 +1229,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
+		<powermode type="string">combat</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1933,6 +1968,31 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00027>
+			<id-00028>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">Evasion</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="reference_classfeature" recordname="class.prorogue.features.id-00010@Incarnate-5eExpansion">Evasion</link>
+					</linklist>
+				</description>
+				<group type="string">Monk Feature</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Evasion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Monk - Class Ability</source>
+			</id-00028>
 			<id-00029>
 				<actions>
 					<id-00001>
@@ -1999,7 +2059,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<h>Item Coding</h>
 					<linklist>
@@ -2010,7 +2070,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Superior Potion of Healing</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00031>
@@ -2041,6 +2101,12 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<label type="string">Obscured; ADVSKILL: stealth</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Clothing</group>
@@ -2218,7 +2284,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00006_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2432,5 +2498,8 @@
 			</id-00007>
 		</weaponlist>
 		<weight type="string">221lbs</weight>
+		<wildshapes>
+			<shifted type="number">0</shifted>
+		</wildshapes>
 	</character>
 </root>
