@@ -92,7 +92,8 @@
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
-				<amount type="number">0</amount>
+				<amount type="number">200</amount>
+				<name type="string">GV</name>
 			</slot6>
 		</coins>
 		<defenses>
@@ -111,7 +112,7 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">162.26</load>
+			<load type="number">160.26</load>
 			<max type="number">180</max>
 		</encumbrance>
 		<exp type="number">635</exp>
@@ -306,7 +307,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">45</total>
-			<wounds type="number">1</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">I shall pave this road 'till glory sets my broken spirit free\nWith every blade that flowers we shall grow and drown\nIn love, our cruelest sea.</ideals>
 		<initiative>
@@ -335,35 +336,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0</weight>
 			</id-00001>
-			<id-00002>
-				<ac type="number">0</ac>
-				<attune type="number">0</attune>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">300 GP</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 piercing, magic</damage>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.javelinoflightning@Incarnate-5eExpansion">Javelin of Lightning</link>
-					</linklist>
-					<h>Description</h>
-					<p>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.</p>
-					<p>The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</p>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<location type="string">carried (back)</location>
-				<locked type="number">1</locked>
-				<name type="string">Javelin of Lightning</name>
-				<nonid_name type="string">Javelin</nonid_name>
-				<nonidentified type="string">A strong javelin</nonidentified>
-				<properties type="string">Thrown (range 30/120)</properties>
-				<rarity type="string">Uncommon</rarity>
-				<subtype type="string">Simple Melee Weapon</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -1319,71 +1291,6 @@
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
 			</id-00003>
-			<id-00004>
-				<actions>
-					<id-00001>
-						<atkbase type="string">fixed</atkbase>
-						<atkmod type="number">0</atkmod>
-						<atktype type="string">ranged</atktype>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">1</order>
-						<savedcbase type="string">fixed</savedcbase>
-						<savedcmod type="number">13</savedcmod>
-						<savetype type="string">dexterity</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6,d6,d6</dice>
-								<type type="string">lightning</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
-				</actions>
-				<bonus type="number">0</bonus>
-				<cast type="number">0</cast>
-				<cost type="string">101 - 500 gp</cost>
-				<damage type="string">1d6 piercing</damage>
-				<description type="formattedtext">
-					<h>Description</h>
-					<p>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.</p>
-					<p>The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</p>
-				</description>
-				<group type="string">Items</group>
-				<isidentified type="number">1</isidentified>
-				<level type="number">0</level>
-				<locked type="number">1</locked>
-				<name type="string">Item: Javelin of Lightning (120)</name>
-				<nonid_name type="string">A Javelin</nonid_name>
-				<nonidentified type="string">Only the intricate tool work on the grip of this well balanced weapon alerts you to the possibility that it is something other than ordinary.</nonidentified>
-				<prepared type="number">1</prepared>
-				<properties type="string">Thrown (range 30/120), magic</properties>
-				<rarity type="string">Uncommon</rarity>
-				<ritual type="number">0</ritual>
-				<spells>
-					<id-00001>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Javelin of Lightning</name>
-					</id-00001>
-					<id-00002>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Javelin</name>
-					</id-00002>
-				</spells>
-				<subtype type="string">Javelin</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">2</weight>
-			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1402,7 +1309,7 @@
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
 				</description>
@@ -1418,7 +1325,7 @@
 			<id-00006>
 				<actions>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table. You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
 					<p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p>
@@ -1849,7 +1756,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00009_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1920,31 +1827,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
-			<id-00002>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<stat type="string">dexterity</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing,magic</type>
-					</id-00001>
-				</damagelist>
-				<handling type="number">0</handling>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Javelin of Lightning</name>
-				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 30/120)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00002</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00002>
 			<id-00003>
 				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
@@ -1993,32 +1875,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
-			<id-00005>
-				<ammo type="number">0</ammo>
-				<attackbonus type="number">0</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
-						<stat type="string">dexterity</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">piercing,magic</type>
-					</id-00001>
-				</damagelist>
-				<handling type="number">0</handling>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">1</maxammo>
-				<name type="string">Javelin of Lightning</name>
-				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 30/120)</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00002</recordname>
-				</shortcut>
-				<type type="number">2</type>
-			</id-00005>
 			<id-00006>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -2047,7 +1903,7 @@
 			<id-00007>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
