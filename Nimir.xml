@@ -120,21 +120,22 @@
 				</shortcut>
 			</id-00001>
 		</classes>
+		<coinother type="string">GV 3193</coinother>
 		<coins>
 			<slot1>
-				<amount type="number">2146</amount>
+				<amount type="number">2203</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">396</amount>
+				<amount type="number">446</amount>
 				<name type="string">SP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">399</amount>
+				<amount type="number">407</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
-				<amount type="number">11</amount>
+				<amount type="number">13</amount>
 				<name type="string">PP</name>
 			</slot4>
 			<slot5>
@@ -164,7 +165,7 @@
 			<load type="number">83.601</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">816</exp>
+		<exp type="number">874</exp>
 		<expneeded type="number">900</expneeded>
 		<featlist>
 			<id-00001>
@@ -553,7 +554,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Ring of Fire Resistance</name>
+				<name type="string">Ring of Fire Resistance (attuned)</name>
 				<nonid_name type="string">Ring</nonid_name>
 				<nonidentified type="string">A garnet ring.</nonidentified>
 				<rarity type="string">rare (requires attunement)</rarity>
@@ -825,7 +826,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">Ring of Athena - Prestige 1</name>
+				<name type="string">Ring of Athena - Prestige 1 (attuned)</name>
 				<nonid_name type="string">Ring of the Maiden</nonid_name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
@@ -890,9 +891,13 @@
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
+				<atkmod type="number">0</atkmod>
 				<atkprof type="number">1</atkprof>
 				<name type="string">Feats</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
 				<saveprof type="number">1</saveprof>
+				<uses type="number">0</uses>
 			</id-00001>
 			<id-00004>
 				<name type="string">Items</name>
@@ -987,7 +992,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1096,7 +1101,9 @@
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Items</group>
+				<level type="number">0</level>
 				<name type="string">Ring of Fire Resistance</name>
+				<prepared type="number">0</prepared>
 			</id-00005>
 			<id-00006>
 				<actions>
@@ -1243,10 +1250,35 @@
 				</actions>
 				<cast type="number">0</cast>
 				<group type="string">Active: Class Abilities</group>
+				<level type="number">0</level>
 				<name type="string">Evasion</name>
+				<prepared type="number">0</prepared>
 			</id-00011>
-			<id-00014>
+			<id-00013>
 				<actions>
+					<id-00001>
+						<apply type="string">action</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; DMG: 10</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">action</apply>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; ATK: -5</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<durmod type="number">0</durmod>
+						<label type="string">Sharpshooter; No long range disatvantage; ignore 1/2 and 3/4 cover</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -1258,10 +1290,12 @@
 					</list>
 				</description>
 				<group type="string">Feats</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Sharpshooter</name>
+				<name type="string">Feat: Sharpshooter</name>
 				<prepared type="number">0</prepared>
-			</id-00014>
+				<ritual type="number">0</ritual>
+			</id-00013>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1429,7 +1463,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00010_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

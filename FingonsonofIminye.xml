@@ -18,7 +18,7 @@
 			</constitution>
 			<dexterity>
 				<bonus type="number">3</bonus>
-				<save type="number">5</save>
+				<save type="number">6</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">17</score>
@@ -32,7 +32,7 @@
 			</intelligence>
 			<strength>
 				<bonus type="number">-1</bonus>
-				<save type="number">1</save>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
 				<score type="number">8</score>
@@ -60,8 +60,8 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
-				<level type="number">4</level>
+				<hdused type="number">0</hdused>
+				<level type="number">5</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -71,15 +71,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">534</amount>
+				<amount type="number">591</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">6</amount>
+				<amount type="number">8</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">73</amount>
+				<amount type="number">81</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">96</amount>
+				<amount type="number">146</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -110,10 +110,10 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">78.85</load>
+			<load type="number">82.85</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">490</exp>
+		<exp type="number">548</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 			<id-00001>
@@ -352,6 +352,31 @@
 					<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.stunningstrike@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</text>
+			</id-00014>
+			<id-00015>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Extra Attack</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+				</text>
+			</id-00015>
 		</featurelist>
 		<flaws type="string">I fight and risk my life because the feeling of invincibility is a heady drug.</flaws>
 		<gender type="string">Male</gender>
@@ -360,8 +385,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">31</total>
-			<wounds type="number">4</wounds>
+			<total type="number">38</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Kindness - Service with a smile is everyone's right. (Good)</ideals>
 		<initiative>
@@ -738,6 +763,28 @@
 				<type type="string">Potion</type>
 				<weight type="number">0.5</weight>
 			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">900 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.</p>
+					<p>One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.</p>
+					<p>The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably.</p>
+					<p>When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.</p>
+					<p>The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Folding Boat</name>
+				<nonid_name type="string">Folding Boat</nonid_name>
+				<nonidentified type="string">A small wooden box 12 inches by 6 by 6.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">4</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -750,9 +797,9 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">4</level>
+		<level type="number">5</level>
 		<name type="string">Fingon son of Iminye</name>
-		<perception type="number">13</perception>
+		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">I'm very sensitive about my weight.\nI never pass up a friendly wager.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
@@ -868,7 +915,7 @@
 			<id-00002>
 				<actions>
 				</actions>
-				<cast type="number">4</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-5eExpansion">Ki</link>
@@ -878,7 +925,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Ki</name>
-				<prepared type="number">4</prepared>
+				<prepared type="number">5</prepared>
 				<ritual type="number">0</ritual>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
@@ -1006,8 +1053,36 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Feat</source>
 			</id-00006>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<label type="string">Stunned</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.stunningstrike@Incarnate-5eExpansion">Stunning Strike</link>
+					</linklist>
+					<h>Description</h>
+					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Stunning Strike</name>
+				<prepared type="number">0</prepared>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00008>
 		</powers>
-		<profbonus type="number">2</profbonus>
+		<profbonus type="number">3</profbonus>
 		<proficiencylist>
 			<id-00001>
 				<name type="string">Tool: Keg of Ale</name>
@@ -1031,19 +1106,19 @@
 				<name type="string">Perception</name>
 				<prof type="number">1</prof>
 				<stat type="string">wisdom</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00001>
 			<id-00002>
 				<name type="string">Athletics</name>
 				<prof type="number">1</prof>
 				<stat type="string">strength</stat>
-				<total type="number">1</total>
+				<total type="number">2</total>
 			</id-00002>
 			<id-00003>
 				<name type="string">Intimidation</name>
 				<prof type="number">1</prof>
 				<stat type="string">charisma</stat>
-				<total type="number">2</total>
+				<total type="number">3</total>
 			</id-00003>
 			<id-00004>
 				<name type="string">Arcana</name>
@@ -1079,7 +1154,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00010>
 			<id-00011>
 				<name type="string">Religion</name>
@@ -1110,7 +1185,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">1</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">5</total>
+				<total type="number">6</total>
 			</id-00016>
 			<id-00017>
 				<name type="string">History</name>
@@ -1133,7 +1208,7 @@
 						<link class="encounter" recordname="encounter.id-00033@Incarnate-5eExpansion">Rules for Using Keg of Ale</link>
 					</linklist>
 				</text>
-				<total type="number">4</total>
+				<total type="number">5</total>
 			</id-00019>
 		</skilllist>
 		<speed>
@@ -1145,7 +1220,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1264,6 +1339,7 @@
 					</id-00001>
 				</damagelist>
 				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
 				<name type="string">Silver Dagger</name>
 				<prof type="number">1</prof>
 				<properties type="string">Finesse, light, thrown (range 20/60)</properties>
