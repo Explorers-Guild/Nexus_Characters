@@ -54,7 +54,7 @@
 		</adventurelist>
 		<age type="string">32</age>
 		<alignment type="string">neutral good</alignment>
-		<attunedCount type="number">1</attunedCount>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Craftsman</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -67,7 +67,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">9</level>
+				<level type="number">10</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -77,15 +77,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1137</amount>
+				<amount type="number">2160</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">64</amount>
+				<amount type="number">168</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">508</amount>
+				<amount type="number">565</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -93,7 +93,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">510</amount>
+				<amount type="number">578</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -114,11 +114,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">107.4</load>
+			<load type="number">107.7</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">1034</exp>
-		<expneeded type="number">1100</expneeded>
+		<exp type="number">1713</exp>
+		<expneeded type="number">1800</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -322,17 +322,27 @@
 					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
 				</text>
 			</id-00013>
+			<id-00014>
+				<level type="number">10</level>
+				<locked type="number">1</locked>
+				<name type="string">Empowered Evocation</name>
+				<source type="string">Wizard</source>
+				<specialization type="string">School of Evocation</specialization>
+				<text type="formattedtext">
+					<p>Beginning at 10th level, you can add your Intelligence modifier to the damage roll of any wizard evocation spell you cast. The damage bonus applies to one damage roll of a spell, not multiple rolls.</p>
+				</text>
+			</id-00014>
 		</featurelist>
 		<flaws type="string">I would rather lose honestly than lie to win.</flaws>
 		<gender type="string">Male</gender>
-		<hero type="number">1</hero>
+		<hero type="number">2</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">56</total>
-			<wounds type="number">0</wounds>
+			<total type="number">62</total>
+			<wounds type="number">7</wounds>
 		</hp>
 		<ideals type="string">Generosity - My gift is for all to enjoy! (Good)</ideals>
 		<initiative>
@@ -700,10 +710,11 @@
 			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -737,6 +748,7 @@
 			</id-00021>
 			<id-00022>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">200 GP</cost>
@@ -802,7 +814,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -985,15 +997,49 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00030>
-			<id-00032>
+			<id-00031>
+				<ac type="number">0</ac>
 				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">150 GP</cost>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.windwall@Incarnate-5eExpansion">Wind Wall</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>Uncommon</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
-				<name type="string">GP</name>
-				<weight type="number">0</weight>
-			</id-00032>
+				<name type="string">Scroll of Wind Wall</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00031>
 			<id-00033>
 				<ac type="number">0</ac>
 				<attune type="number">1</attune>
@@ -1083,9 +1129,9 @@
 				<name type="string">Elvish</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">9</level>
+		<level type="number">10</level>
 		<name type="string">Rip Van Drizzle</name>
-		<notes type="string">fellforged short sword being crafted by the were bears already paid.</notes>
+		<notes type="string">fought the black cloth</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1141,7 +1187,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
@@ -1149,15 +1195,15 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots4>
 			<spellslots5>
-				<max type="number">1</max>
-				<used type="number">0</used>
+				<max type="number">2</max>
+				<used type="number">2</used>
 			</spellslots5>
 			<spellslots6>
 				<max type="number">0</max>
@@ -1193,6 +1239,7 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d10,d10</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
@@ -1236,6 +1283,7 @@
 				<name type="string">Mage Hand</name>
 				<prepared type="number">0</prepared>
 				<range type="string">30 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Conjuration</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00002>
@@ -1295,6 +1343,8 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">acid</type>
 							</id-00001>
 						</damagelist>
@@ -1305,6 +1355,8 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">cold</type>
 							</id-00001>
 						</damagelist>
@@ -1315,6 +1367,8 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -1325,6 +1379,8 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">lightning</type>
 							</id-00001>
 						</damagelist>
@@ -1335,6 +1391,8 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">poison</type>
 							</id-00001>
 						</damagelist>
@@ -1345,6 +1403,8 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -1428,6 +1488,7 @@
 							<id-00002>
 								<bonus type="number">1</bonus>
 								<dice type="dice">d6</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 								<type type="string">force</type>
 							</id-00002>
@@ -1525,6 +1586,7 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d6,d6</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 								<type type="string">bludgeoning</type>
 							</id-00001>
@@ -1661,6 +1723,7 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
@@ -1734,7 +1797,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Comprehend Languages</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">1</ritual>
 				<school type="string">Divination</school>
@@ -1888,6 +1951,8 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d8,d8,d8</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -1929,6 +1994,7 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<stat type="string">intelligence</stat>
 								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
@@ -1973,6 +2039,8 @@
 							<id-00001>
 								<bonus type="number">0</bonus>
 								<dice type="dice">d12,d12,d12,d12,d12</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">fire</type>
 							</id-00001>
 						</damagelist>
@@ -2104,6 +2172,8 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
 								<type type="string">lightning</type>
 							</id-00001>
 						</damagelist>
@@ -2161,7 +2231,7 @@
 			<id-00030>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">4</cast>
 				<description type="formattedtext">
 					<h>Destruction Master</h>
 					<p>You have mastered the art of causing the most damage with everything you do. When you choose this feat pick either melee, range, or spell.</p>
@@ -2176,6 +2246,53 @@
 				<name type="string">Destruction Master</name>
 				<prepared type="number">4</prepared>
 			</id-00030>
+			<id-00031>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8</dice>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">necrotic</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.</p>
+					<p>The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Toll the Dead</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Necromancy</school>
+				<source type="string">Cleric, Warlock, Wizard</source>
+			</id-00031>
 			<id-00032>
 				<actions>
 				</actions>
@@ -2236,6 +2353,79 @@
 				<school type="string">Abjuration</school>
 				<source type="string">Cleric, Eldritch Knight, Paladin, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
 			</id-00033>
+			<id-00034>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10,d10,d10</dice>
+								<stat type="string">intelligence</stat>
+								<statmult type="number">1</statmult>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a sunburst pendant worth at least 100 gp)</components>
+				<description type="formattedtext">
+					<p>The light of dawn shines down on a location you specify within range. Until the spell ends, a 30-foot-radius, 40-foot-high cylinder of bright light glimmers there. This light is sunlight.</p>
+					<p>When the cylinder appears, each creature in it must make a Constitution saving throw, taking 4d10 radiant damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw whenever it ends its turn in the cylinder.</p>
+					<p>If you're within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Dawn</name>
+				<prepared type="number">1</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric, Wizard</source>
+			</id-00034>
+			<id-00036>
+				<actions>
+					<id-00001>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<type type="string">force</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">1</order>
+						<type type="string">damage</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V</components>
+				<description type="formattedtext">
+					<p>You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as &#34; 200 feet straight downward&#34; or &#34;upward to the northwest at a 45-degree angle, 300 feet.&#34;</p>
+					<p>You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.</p>
+					<p>If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Dimension Door</name>
+				<prepared type="number">1</prepared>
+				<range type="string">500 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Bard, Cleric Trickery Domain, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00036>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2385,12 +2575,13 @@
 			<armor type="number">0</armor>
 			<base type="number">35</base>
 			<misc type="number">0</misc>
+			<special type="string">spells ignore 1/2 cover\nadv initiative\nno suprise within 30'of me</special>
 			<temporary type="number">0</temporary>
 			<total type="number">35</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00012_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2524,7 +2715,8 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">dexterity</stat>
-						<type type="string">slashing</type>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing, silver</type>
 					</id-00001>
 				</damagelist>
 				<handling type="number">0</handling>

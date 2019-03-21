@@ -48,7 +48,7 @@
 		<adventurelist>
 		</adventurelist>
 		<age type="string">10</age>
-		<alignment type="string">Chaotic Good</alignment>
+		<alignment type="string">Good / Mentaly Chaotic good</alignment>
 		<appearance type="string">A large fluffy white fox with blue eyes</appearance>
 		<background type="string">Child of the Divine</background>
 		<backgroundlink type="windowreference">
@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">3</hdused>
 				<level type="number">3</level>
 				<name type="string">Rogue</name>
 				<shortcut type="windowreference">
@@ -73,7 +73,7 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">1</hdused>
 				<level type="number">1</level>
 				<name type="string">Sorcerer</name>
 				<shortcut type="windowreference">
@@ -124,10 +124,10 @@
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">126.26</load>
+			<load type="number">132.26</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">470</exp>
+		<exp type="number">425</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -345,7 +345,7 @@
 		</featurelist>
 		<flaws type="string">I'm a silly fluff ball and can be distracted by interesting things.</flaws>
 		<gender type="string">Male</gender>
-		<height type="string">4'1&#34;</height>
+		<height type="string">4'1&#34;-6'3&#34;</height>
 		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
@@ -409,12 +409,12 @@
 			</id-00002>
 			<id-00003>
 				<attune type="number">0</attune>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 slashing</damage>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Nexus room</location>
+				<location type="string">Belt</location>
 				<locked type="number">1</locked>
 				<name type="string">Scimitar</name>
 				<properties type="string">Finesse, light</properties>
@@ -1080,6 +1080,14 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">3</weight>
 			</id-00042>
+			<id-00043>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Saddlebags</location>
+				<name type="string">snows meds</name>
+				<weight type="number">3</weight>
+			</id-00043>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1114,9 +1122,6 @@
 				<stat type="string">charisma</stat>
 				<uses type="number">0</uses>
 			</id-00001>
-			<id-00002>
-				<name type="string">Effect</name>
-			</id-00002>
 			<id-00003>
 				<name type="string">Class</name>
 			</id-00003>
@@ -1432,6 +1437,22 @@
 				<name type="string">Dodge</name>
 				<prepared type="number">0</prepared>
 			</id-00009>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<durmod type="number">0</durmod>
+						<label type="string">VULN: silver; IMMUNE: bludgeoning, piercing, slashing, !magic, !silver</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Class</group>
+				<level type="number">0</level>
+				<name type="string">Lycanthropes</name>
+				<prepared type="number">0</prepared>
+			</id-00010>
 			<id-00011>
 				<actions>
 					<id-00001>
@@ -1624,12 +1645,13 @@
 			<armor type="number">0</armor>
 			<base type="number">50</base>
 			<misc type="number">0</misc>
+			<special type="string">Hybrid: 40ft</special>
 			<temporary type="number">0</temporary>
 			<total type="number">50</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1721,12 +1743,18 @@
 				</text>
 				<type type="string">subracial</type>
 			</id-00008>
+			<id-00009>
+				<name type="string">Werefox</name>
+			</id-00009>
+			<id-00010>
+				<name type="string">Shape changer</name>
+			</id-00010>
 		</traitlist>
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">0</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1778,7 +1806,7 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d4</dice>
+						<dice type="dice">d8</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
 						<type type="string">slashing,</type>
@@ -1798,12 +1826,14 @@
 			</id-00003>
 			<id-00004>
 				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d10</dice>
-						<stat type="string">base</stat>
+						<dice type="dice">d6,d6</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
@@ -1891,11 +1921,13 @@
 				<type type="number">1</type>
 			</id-00007>
 			<id-00008>
+				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
-						<dice type="dice">d4</dice>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
 						<statmult type="number">1</statmult>
 						<type type="string">slashing,</type>
 					</id-00001>
