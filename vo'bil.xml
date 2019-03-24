@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1023</amount>
+				<amount type="number">1564</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">241</amount>
+				<amount type="number">245</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,7 +112,7 @@
 			<load type="number">74</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">1113</exp>
+		<exp type="number">1151</exp>
 		<expneeded type="number">1300</expneeded>
 		<featlist>
 		</featlist>
@@ -335,14 +335,14 @@
 		<flaws type="string">I have trouble keeping my true feelings hidden. My sharp tongue lands me in trouble.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">5'10&#34;</height>
-		<hero type="number">1</hero>
+		<hero type="number">3</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">56</total>
-			<wounds type="number">10</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">People. I like seeing the smiles on people's faces when I perform. That's all that matters. Honesty. Art should reflect the soul; it should come from within and reveal who we really are.</ideals>
 		<initiative>
@@ -974,19 +974,19 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">2</max>
-				<used type="number">1</used>
+				<used type="number">0</used>
 			</spellslots4>
 			<spellslots5>
 				<max type="number">0</max>
@@ -1117,7 +1117,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<h>Quick Links</h>
 					<linklist>
@@ -1344,11 +1344,18 @@
 					<id-00002>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">Hideous Laughter; prone; incapacitated; (C)</label>
+						<label type="string">Hideous Laughter; (C)</label>
 						<order type="number">2</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00002>
+					<id-00003>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Hideous Laughter; prone; incapacitated;</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
 				</actions>
 				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
@@ -1430,8 +1437,10 @@
 			<id-00017>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<onmissdamage type="string">half</onmissdamage>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">constitution</savetype>
 						<type type="string">cast</type>
@@ -1440,6 +1449,7 @@
 						<damagelist>
 							<id-00001>
 								<dice type="dice">d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
 								<type type="string">thunder</type>
 							</id-00001>
 						</damagelist>
@@ -1720,6 +1730,7 @@
 				<name type="string">Message</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
 				<school type="string">Transmutation</school>
 				<source type="string">Bard, Eldritch Knight, Sorcerer, Wizard, Arcane Trickster</source>
 			</id-00031>
@@ -1828,6 +1839,47 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Eldritch Knight, Wizard, Arcane Trickster</source>
 			</id-00035>
+			<id-00036>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a chip of mica)</components>
+				<description type="formattedtext">
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.</p>
+					<p>A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels. </b>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter - 4</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Cleric Tempest Domain, Eldritch Knight, Monk, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00036>
 			<id-00037>
 				<actions>
 					<id-00001>
@@ -2077,6 +2129,44 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00043>
+			<id-00044>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d8,d8,d8,d8</dice>
+								<statmult type="number">1</statmult>
+								<type type="string">thunder</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a chip of mica)</components>
+				<description type="formattedtext">
+					<p>A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+					<p><b>At Higher Levels </b>: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Shatter - 3</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<school type="string">Evocation</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00044>
 			<id-00045>
 				<actions>
 					<id-00003>
@@ -2308,7 +2398,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>

@@ -71,7 +71,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1233</amount>
+				<amount type="number">1774</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -87,7 +87,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">201</amount>
+				<amount type="number">205</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -109,11 +109,11 @@
 			<encumbered type="number">65</encumbered>
 			<encumberedheavy type="number">130</encumberedheavy>
 			<liftpushdrag type="number">390</liftpushdrag>
-			<load type="number">83.53</load>
+			<load type="number">73.53</load>
 			<max type="number">195</max>
 		</encumbrance>
-		<exp type="number">675</exp>
-		<expneeded type="number">600</expneeded>
+		<exp type="number">738</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -181,17 +181,17 @@
 				<text type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
-						<link class="power" recordname="spell.garrote@Incarnate-5eExpansion">Garrote</link>
+						<link class="power" recordname="....powers.id-00001">Garrote</link>
 					</linklist>
 					<h>Description</h>
 					<p>Starting at 3rd level, Whenever you make a melee attack with a weapon with the &#34;hook&#34; property you inflict a bleed effect that does 1 slashing damage at the start of each of the target's turns for one minute.</p>
-					<p>You can only inflict bleed once per turn. It takes a DC 15 medicine check to cure one bleed. This DC increases by 2 for each additional stack but cannot exceed 30.</p>
+					<p>You can only inflict bleed once per turn, to a maximum of 10 to one target. It takes a DC 15 medicine check to cure one bleed. This DC increases by 2 for each additional stack but cannot exceed 30.</p>
 				</text>
 			</id-00004>
 			<id-00005>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement - 1 DEX, 1 CON</name>
+				<name type="string">ASI 4 - 1 DEX, 1 CON</name>
 				<source type="string">Rogue</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -203,7 +203,7 @@
 				<name type="string">Head Collector</name>
 				<source type="string">Headhunter</source>
 				<text type="formattedtext">
-					<p>You may spend a short rest shrinking a head of a fallen victim. This decreases its size to 1/10 of normal and semi-preserves it, but takes your full attention and energy (you do not gain the benefits of the short rest).</p>
+					<p>You may spend a short rest shrinking a head of a fallen victim. This decreases its size to 1/10, and its weight to 1/5 of normal and semi-preserves it, but takes your full attention and energy (you do not gain the benefits of the short rest).</p>
 					<p>You have expertise at intimdating anyone related to a head you have and use as part of the intimidation. (Please roleplay it out including a story of their groveling, begging, screams, etc. as is relevant to the situation)</p>
 				</text>
 			</id-00006>
@@ -279,6 +279,8 @@
 		<flaws type="string">I care only for my own authority.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">6'2&#34;</height>
+		<hero type="number">2</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
@@ -378,6 +380,7 @@
 							<td>10</td>
 						</tr>
 					</table>
+					<p>This decreases its size to 1/10, and its weight to 1/5 of normal and semi-preserves it, but takes your full attention and energy (you do not gain the benefits of the short rest).</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
@@ -650,40 +653,15 @@
 					<p>This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-- use effect. The GM chooses the kind of token or determines it randomly.</p>
 					<table>
 						<tr>
-							<td>d100</td>
-							<td>Feather Token</td>
-						</tr>
-						<tr>
-							<td>01-20</td>
-							<td>Anchor</td>
-						</tr>
-						<tr>
-							<td>51-65</td>
-							<td>Swan boat</td>
-						</tr>
-						<tr>
-							<td>21-35</td>
-							<td>Bird</td>
+							<td><b>d100</b></td>
+							<td><b>Feather Token</b></td>
 						</tr>
 						<tr>
 							<td>66-90</td>
 							<td>Tree</td>
 						</tr>
-						<tr>
-							<td>36-50</td>
-							<td>Fan</td>
-						</tr>
-						<tr>
-							<td>91-00</td>
-							<td>Whip</td>
-						</tr>
 					</table>
-					<p><b>Anchor </b>. You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.</p>
-					<p><b>Bird </b>. You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one--hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.</p>
-					<p><b>Fan </b>. If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.</p>
-					<p><b>Swan Boat </b>. You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50--foot--long, 20--foot-- wide boat shaped like a swan takes its place. The boat is self--propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty--two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.</p>
 					<p><b>Tree </b>. You must be outdoors to use this token. You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5--foot--diameter trunk, and its branches at the top spread out in a 20--foot radius.</p>
-					<p><b>Whip </b>. You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage. As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Coin Pouch - Small</location>
@@ -817,14 +795,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00026>
-			<id-00027>
-				<carried type="number">1</carried>
-				<count type="number">1</count>
-				<isidentified type="number">1</isidentified>
-				<location type="string">Backpack</location>
-				<name type="string">Head - Goblin</name>
-				<weight type="number">10</weight>
-			</id-00027>
 			<id-00028>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -919,7 +889,7 @@
 				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>A hunk of flesh from a Flesh Golem</p>
+					<p>A hunk of flesh from a Flesh Golem. Due to it's makeup, salts don't seem affect it, nor does it decay.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
@@ -934,7 +904,7 @@
 				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>A fine contract, marked in blood and written in Infernal. It details a pact with the recipient stating they will be bound by word to serve as adviser for the contract holder. Though it is in their best interests to prolong the life of it's holder, they are not required to protect them from harm. If the contract holder should be killed, that who is bound will be left without power until another holder takes their place.</p>
+					<p>A fine contract, marked in blood and written in Infernal. It details a pact with the recipient stating they will be bound by word to serve as adviser for the contract holder. Though it is in their best interests to prolong the life of it's holder, they are not required to protect them from harm. If the contract holder should be killed, that which is bound will be left without power until another holder takes their place.</p>
 					<p>Bound party ~</p>
 				</description>
 				<location type="string">Coin Pouch - Small</location>
@@ -985,7 +955,7 @@
 				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>The head of a Mummy</p>
+					<p>The head of a Mummy. It's already pretty dry, so I don't think it will get any smaller.</p>
 				</description>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
@@ -1002,14 +972,16 @@
 				<weight type="number">0</weight>
 			</id-00036>
 			<id-00037>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<p>A regular quill for writing. It looks to have been dipped in a red liquid.</p>
+					<p>A regular quill for writing. It looks to have been dipped in a red liquid that has browned with age.</p>
 				</description>
 				<location type="string">Coin Pouch - Small</location>
 				<locked type="number">1</locked>
-				<name type="string">Red tipped Quill</name>
+				<name type="string">Red-brown tipped Quill</name>
 				<rarity type="string">Common</rarity>
 				<type type="string">Adventuing Gear</type>
 				<weight type="number">0</weight>
@@ -1028,7 +1000,8 @@
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Amyth</name>
-		<notes type="string">Hooked Handaxe: Bought MS.4\nMake a Pact with the Flameskull 0905\nLift stone, Pull string, Pop Stone, Pull lever\n\nTarget - Race - Client -\nGalahadon - Sprite - 'Foresters'\n[DEAD] ??? - Half-Orc - Grendel\n</notes>
+		<notes type="string">Hooked Handaxe: Bought MS.4\nMake a Pact with the Flameskull 0905\nLift stone, Pull string, Pop Stone, Pull lever\n\nTarget - Race - Client -\nGalahadon - Sprite - 'Foresters'\n[DEAD] ??? - Half-Orc - Grendel\n\nDino Heads - 500 per -</notes>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">14</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">When work needs doing, I do the work. When a head needs taking, I do the taking.\nI am always ready to fight.</personalitytraits>
@@ -1185,6 +1158,33 @@
 				<source type="string">Crystal Elf (Vitreur)</source>
 				<type type="string">subracial</type>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">4</bonus>
+								<dice type="dice">d4,d4,d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00392@Incarnate-5eExpansion">Greater Potion of Healing</link>
+					</linklist>
+				</description>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1248,6 +1248,18 @@
 				<prepared type="number">0</prepared>
 				<ritual type="number">0</ritual>
 			</id-00007>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">Stunned</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<name type="string">*Misc</name>
+			</id-00008>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1510,6 +1522,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">2</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Dagger</name>
@@ -1535,6 +1548,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">2</maxammo>
 				<name type="string">Dagger</name>
@@ -1558,6 +1572,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Rapier</name>
@@ -1582,6 +1597,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Hooked Shortsword</name>
