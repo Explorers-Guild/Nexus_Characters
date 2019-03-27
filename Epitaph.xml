@@ -61,7 +61,7 @@
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">1</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">6</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
@@ -74,7 +74,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">1</level>
+				<level type="number">2</level>
 				<name type="string">Cleric</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -84,26 +84,27 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2240</amount>
+				<amount type="number">2394</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">19</amount>
+				<amount type="number">30</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">4</amount>
+				<amount type="number">149</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">2</amount>
+				<amount type="number">6</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
-				<amount type="number">0</amount>
+				<amount type="number">3495</amount>
+				<name type="string">GV</name>
 			</slot6>
 		</coins>
 		<defenses>
@@ -122,10 +123,10 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">134.813</load>
+			<load type="number">136.913</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">938</exp>
+		<exp type="number">1120</exp>
 		<expneeded type="number">1100</expneeded>
 		<featlist>
 		</featlist>
@@ -401,17 +402,47 @@
 					<p>When you choose this domain at 1st level, you gain the light cantrip if you don't already know it.</p>
 				</text>
 			</id-00019>
+			<id-00020>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Channel Divinity</name>
+				<source type="string">Cleric</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p>
+					<p>When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</p>
+					<p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.</p>
+					<p>Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.</p>
+					<p><b>Channel Divinity: Turn Undead</b></p>
+					<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
+					<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+					<linklist>
+						<link class="power" recordname="spell.channeldivinityturnundead@Incarnate-5eExpansion">Channel Divinity: Turn Undead</link>
+					</linklist>
+				</text>
+			</id-00020>
+			<id-00021>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Channel Divinity: Radiance of the Dawn</name>
+				<source type="string">Cleric</source>
+				<specialization type="string">Light Domain</specialization>
+				<text type="formattedtext">
+					<p>Starting at 2nd level, you can use your Channel Divinity so harness sunlight, banishing darkness and dealing additional damage to your foes.</p>
+					<p>As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected.</p>
+				</text>
+			</id-00021>
 		</featurelist>
 		<flaws type="string">I've spent so long in the temple that I have little practical experience dealing with people in the outside world.\n\nI am suspicious of strangers and expect the worst of them. I am slow to trust members of other races, tribes, and societies.\n\nI judge others harshly, and myself even more severely.\n\nI harbor dark, bloodthirsty thoughts that my isolation and meditation failed to quell.\n\nViolence is my answer to almost any challenge.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">6'5&#34; , 2m (with antlers</height>
-		<hero type="number">3</hero>
+		<hero type="number">1</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">52</total>
+			<total type="number">59</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings. (Any)\n\nFaith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)\n\nTradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)\n\nSuspicious. I must be careful, for I have no way of telling friend from foe here. (Any)\n\nChange. Life is like the seasons, in constant change, and we must change with it. (Chaotic)\n\nGlory. I must earn glory in battle, for myself and my clan. (Any)</ideals>
@@ -423,6 +454,7 @@
 		<inspiration type="number">0</inspiration>
 		<inventorylist>
 			<id-00001>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">1</count>
@@ -438,6 +470,7 @@
 				<weight type="number">1</weight>
 			</id-00001>
 			<id-00002>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
@@ -450,6 +483,7 @@
 				<weight type="number">1</weight>
 			</id-00002>
 			<id-00003>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
@@ -462,6 +496,7 @@
 				<weight type="number">5</weight>
 			</id-00003>
 			<id-00004>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">5 cp</cost>
 				<count type="number">1</count>
@@ -477,6 +512,7 @@
 				<weight type="number">0.1</weight>
 			</id-00004>
 			<id-00005>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">4</count>
@@ -489,6 +525,7 @@
 				<weight type="number">0.05</weight>
 			</id-00005>
 			<id-00006>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
@@ -501,6 +538,7 @@
 				<weight type="number">7</weight>
 			</id-00006>
 			<id-00007>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">10</count>
@@ -516,6 +554,7 @@
 				<weight type="number">2</weight>
 			</id-00007>
 			<id-00008>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">2</count>
@@ -531,13 +570,50 @@
 				<weight type="number">1</weight>
 			</id-00008>
 			<id-00009>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
 				<count type="number">1</count>
-				<location type="string">sack</location>
-				<name type="string">Bag of Black Sawdust</name>
-				<weight type="number">0</weight>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.deathward@Incarnate-5eExpansion">Death Ward</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>Rare</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Death Ward</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Fine Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
 			</id-00009>
 			<id-00010>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">3</count>
@@ -550,6 +626,7 @@
 				<weight type="number">5</weight>
 			</id-00010>
 			<id-00011>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 sp</cost>
 				<count type="number">1</count>
@@ -565,6 +642,7 @@
 				<weight type="number">1</weight>
 			</id-00011>
 			<id-00012>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">4</count>
@@ -581,6 +659,7 @@
 			</id-00012>
 			<id-00013>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">-</cost>
@@ -597,6 +676,7 @@
 			</id-00013>
 			<id-00014>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">100 GP</cost>
@@ -634,6 +714,7 @@
 				<weight type="number">0.5</weight>
 			</id-00014>
 			<id-00015>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
@@ -649,6 +730,7 @@
 				<weight type="number">3</weight>
 			</id-00015>
 			<id-00016>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">3 gp</cost>
 				<count type="number">1</count>
@@ -663,7 +745,41 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">2</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description/Effect</h>
+					<p>Tobacco-like smoked drug, -1 to Intelligence checks and +2 to Strength checks for the next 1d6 hours.</p>
+				</description>
+				<flavor type="string">Tobacco-like smoked drug, -1 to Intelligence checks and +2 to Strength checks for the next 1d6 hours.</flavor>
+				<isidentified type="number">1</isidentified>
+				<location type="string">bag</location>
+				<locked type="number">1</locked>
+				<name type="string">Devilweed (Wyssin) (5 uses)</name>
+				<nonid_name type="string">Plant</nonid_name>
+				<notes type="formattedtext">
+					<h>Location</h>
+					<p>Plains</p>
+					<h>Description/Effect</h>
+					<p>Tobacco-like smoked drug, -1 to Intelligence checks and +2 to Strength checks for the next 1d6 hours.</p>
+				</notes>
+				<rarity type="string">Common</rarity>
+				<subtype type="string">Plant</subtype>
+				<text type="formattedtext">
+					<h>Location</h>
+					<p>Plains</p>
+					<h>Description/Effect</h>
+					<p>Tobacco-like smoked drug, -1 to Intelligence checks and +2 to Strength checks for the next 1d6 hours.</p>
+				</text>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0</weight>
+			</id-00017>
 			<id-00018>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 gp</cost>
 				<count type="number">2</count>
@@ -677,6 +793,7 @@
 			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 gp</cost>
@@ -695,6 +812,7 @@
 				<weight type="number">2</weight>
 			</id-00019>
 			<id-00020>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
@@ -709,6 +827,7 @@
 				<weight type="number">3</weight>
 			</id-00020>
 			<id-00021>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">25 gp</cost>
 				<count type="number">1</count>
@@ -723,6 +842,7 @@
 				<weight type="number">2</weight>
 			</id-00021>
 			<id-00022>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">2 gp</cost>
 				<count type="number">2</count>
@@ -737,6 +857,7 @@
 				<weight type="number">1</weight>
 			</id-00022>
 			<id-00023>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 gp</cost>
 				<count type="number">1</count>
@@ -752,6 +873,7 @@
 				<weight type="number">1</weight>
 			</id-00023>
 			<id-00024>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
@@ -762,6 +884,7 @@
 			</id-00024>
 			<id-00025>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -776,6 +899,7 @@
 			</id-00025>
 			<id-00026>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">30gp</cost>
@@ -791,6 +915,7 @@
 			</id-00026>
 			<id-00027>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
@@ -809,6 +934,7 @@
 				<weight type="number">0</weight>
 			</id-00027>
 			<id-00028>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">10 gp</cost>
 				<count type="number">1</count>
@@ -823,6 +949,7 @@
 				<weight type="number">2</weight>
 			</id-00028>
 			<id-00029>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">2</count>
@@ -836,6 +963,7 @@
 			</id-00029>
 			<id-00030>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">128 gp</cost>
@@ -873,10 +1001,11 @@
 			</id-00030>
 			<id-00031>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">33 GP</cost>
-				<count type="number">3</count>
+				<count type="number">4</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -911,6 +1040,7 @@
 			</id-00031>
 			<id-00032>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 - 100 gp</cost>
@@ -948,6 +1078,7 @@
 				<weight type="number">0.01</weight>
 			</id-00032>
 			<id-00033>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 cp</cost>
 				<count type="number">3</count>
@@ -961,6 +1092,7 @@
 			</id-00033>
 			<id-00034>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">10 gp</cost>
@@ -978,6 +1110,7 @@
 			</id-00034>
 			<id-00035>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">300 GP</cost>
@@ -1001,20 +1134,51 @@
 				<weight type="number">3</weight>
 			</id-00035>
 			<id-00036>
-				<carried type="number">2</carried>
-				<cost type="string">5 cp</cost>
-				<count type="number">10</count>
-				<damage type="string">1d4 piercing</damage>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.masscurewounds@Incarnate-5eExpansion">Mass Cure Wounds</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>5th</td>
+							<td>Rare</td>
+							<td>17</td>
+							<td>+9</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">Pouch</location>
+				<location type="string">backpack (Empty)</location>
 				<locked type="number">1</locked>
-				<name type="string">Dart</name>
-				<properties type="string">Finesse, thrown (range 20/60)</properties>
-				<subtype type="string">Simple Ranged Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">0.25</weight>
+				<name type="string">Scroll of Mass Cure Wounds</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Pretty Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
 			</id-00036>
 			<id-00037>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<cost type="string">5 sp</cost>
 				<count type="number">1</count>
@@ -1031,6 +1195,7 @@
 			</id-00037>
 			<id-00038>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">2,887 gp</cost>
@@ -1072,6 +1237,7 @@
 			</id-00038>
 			<id-00039>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">200 GP</cost>
@@ -1095,6 +1261,7 @@
 			</id-00039>
 			<id-00040>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">236 gp</cost>
@@ -1136,6 +1303,7 @@
 			</id-00040>
 			<id-00041>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">300 GP</cost>
@@ -1170,43 +1338,66 @@
 			</id-00041>
 			<id-00042>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">11,156 gp</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
-					<h>Description</h>
-					<p>This clear, gelatinous oil sparkles with tiny, ultra thin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls.</p>
-					<p><b>Oil Notes</b></p>
-					<p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash the oil in this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
+					<h>Location</h>
+					<p>Forests</p>
+					<h>Description/Effect</h>
+					<p>A tall, slightly thorny plant with a large, white, sweet-smelling flower and a strong root system. When boiled in salt water, the roots can be used as a combat stimulant. When a creature drinks the infusion, at the beginning of their next turn they gain a +1 bonus to Armor Class if they are wearing no armor or light armor, which lasts for 3d10 minutes. This herb has no effect when used again on the creature until the creature completes a short rest.</p>
 				</description>
-				<istemplate type="number">0</istemplate>
-				<location type="string">bag</location>
+				<flavor type="string">A tall, slightly thorny plant with a large, white, sweet-smelling flower and a strong root system. When boiled in salt water, the roots can be used as a combat stimulant. When a creature drinks the infusion, at the beginning of their next turn they gain a +1 bonus to Armor Class if they are wearing no armor or light armor, which lasts for 3d10 minutes. This herb has no effect when used again on the creature until the creature completes a short rest.</flavor>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack (Empty)</location>
 				<locked type="number">1</locked>
-				<name type="string">Oil of Sharpness</name>
-				<nonid_name type="string">Flask of Oil</nonid_name>
-				<nonidentified type="string">The liquid in this flask is clear and gelatinous and sparkles with tiny, ultra thin silver shards.</nonidentified>
-				<properties type="string">Magic</properties>
-				<rarity type="string">Very Rare</rarity>
-				<spells>
-					<id-00001>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Oil of Sharpness</name>
-					</id-00001>
-					<id-00002>
-						<link type="windowreference">
-							<class></class>
-							<recordname></recordname>
-						</link>
-						<name type="string">Oil</name>
-					</id-00002>
-				</spells>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
+				<name type="string">Aeglos</name>
+				<nonid_name type="string">Plant</nonid_name>
+				<notes type="formattedtext">
+					<h>Location</h>
+					<p>Forests</p>
+					<h>Description/Effect</h>
+					<p>A tall, slightly thorny plant with a large, white, sweet-smelling flower and a strong root system. When boiled in salt water, the roots can be used as a combat stimulant. When a creature drinks the infusion, at the beginning of their next turn they gain a +1 bonus to Armor Class if they are wearing no armor or light armor, which lasts for 3d10 minutes. This herb has no effect when used again on the creature until the creature completes a short rest.</p>
+				</notes>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Plant</subtype>
+				<text type="formattedtext">
+					<h>Location</h>
+					<p>Forests</p>
+					<h>Description/Effect</h>
+					<p>A tall, slightly thorny plant with a large, white, sweet-smelling flower and a strong root system. When boiled in salt water, the roots can be used as a combat stimulant. When a creature drinks the infusion, at the beginning of their next turn they gain a +1 bonus to Armor Class if they are wearing no armor or light armor, which lasts for 3d10 minutes. This herb has no effect when used again on the creature until the creature completes a short rest.</p>
+				</text>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0</weight>
 			</id-00042>
+			<id-00043>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">368 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 bludgeoning, 1d4 radiant</damage>
+				<description type="formattedtext">
+					<p>Enemies have disadvantage on any saves from an attack that would allow you to disarm them when wielding this weapon. This can be utilized as a monk weapon.</p>
+					<p><b>Weapon Notes</b></p>
+					<p>Magic weapons are unmistakably finer in quality than their ordinary counterparts. You have a +1 bonus to the attack rolls and damage rolls you make with this weapon.</p>
+					<p><b>Bright-Forged Notes</b></p>
+					<p>1d4 - raidiant damage</p>
+					<p><b>Mithril Weapon Notes</b></p>
+					<p>Mithril weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
+					<p>If this reduces the weight to less than or equal to 3 pounds and is one handed then it gains the finesse property.</p>
+				</description>
+				<location type="string">carried</location>
+				<locked type="number">1</locked>
+				<name type="string">Mithril Three-sectioned Staff [Bright-Forged], +1</name>
+				<properties type="string">Special, Two-Handed</properties>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Martial Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00043>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1219,7 +1410,7 @@
 				<name type="string">Goblin</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">7</level>
+		<level type="number">8</level>
 		<name type="string">Epitaph</name>
 		<notes type="string">Orphaned on the night of his birth. Carried to (city or towm) by his sister, Hope (Sperae). Raised as an urchin until 5, then chased from city by litch-mob. Survived in northern wilderness alone for a few weeks. Captured by Orcs. Rescued by Aarakocra Druid/Monk. Becomes diciple of Aarakocra Druid/Monk (Greyfeather). Spends some time training/studying in Feywild w/ Eladrin (Mithrendane, Autum City, Monks of the Citidel Arcanum). Elf Monks find him unworthy. Returns to Greyfeather to protect the Feywild Portal from undead. Undead horde attacks, Master dies, Vicious is only survivor. Elf Monks close the portal. Vicious heads south to look for his sister and make a life for himself.</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
@@ -1257,7 +1448,7 @@
 				<atkprof type="number">1</atkprof>
 				<name type="string">Light Cleric</name>
 				<saveprof type="number">1</saveprof>
-				<uses type="number">3</uses>
+				<uses type="number">0</uses>
 			</id-00005>
 		</powergroup>
 		<powermeta>
@@ -1298,7 +1489,7 @@
 				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
-				<max type="number">2</max>
+				<max type="number">3</max>
 				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
@@ -1721,6 +1912,39 @@
 				<source type="string">Cleric</source>
 				<specialization type="string">Light Domain</specialization>
 			</id-00013>
+			<id-00014>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savemagic type="number">0</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10</dice>
+								<stat type="string">cleric</stat>
+								<statmult type="number">1</statmult>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Light Cleric</group>
+				<level type="number">0</level>
+				<name type="string">Radiance of the Dawn</name>
+				<prepared type="number">1</prepared>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00014>
 			<id-00015>
 				<actions>
 					<id-00001>
@@ -2537,6 +2761,32 @@
 				<school type="string">Evocation</school>
 				<source type="string">Bard, Cleric Light Domain, Druid, Warlock (Archfey)</source>
 			</id-00036>
+			<id-00037>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Turned</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<atkprof type="number">1</atkprof>
+						<order type="number">2</order>
+						<savedcbase type="string">ability</savedcbase>
+						<savedcprof type="number">1</savedcprof>
+						<savedcstat type="string">wisdom</savedcstat>
+						<savetype type="string">wisdom</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<group type="string">Light Cleric</group>
+				<level type="number">0</level>
+				<name type="string">Turn Undead</name>
+				<prepared type="number">1</prepared>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00037>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2732,6 +2982,7 @@
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Handaxe</name>
@@ -2756,6 +3007,7 @@
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">1</maxammo>
 				<name type="string">Handaxe</name>
@@ -2780,6 +3032,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Spear</name>
@@ -2805,6 +3058,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">1</maxammo>
 				<name type="string">Spear</name>
@@ -2817,7 +3071,7 @@
 				<type type="number">2</type>
 			</id-00004>
 			<id-00005>
-				<ammo type="number">2</ammo>
+				<ammo type="number">5</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -2854,6 +3108,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Dagger</name>
@@ -2878,6 +3133,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">2</maxammo>
 				<name type="string">Dagger</name>
@@ -2902,6 +3158,7 @@
 						<type type="string">bludgeoning magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Unarmed Strike (Monk)</name>
@@ -2925,6 +3182,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Shortsword</name>
@@ -2937,28 +3195,34 @@
 				<type type="number">0</type>
 			</id-00009>
 			<id-00010>
-				<attackbonus type="number">0</attackbonus>
+				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
+						<type type="string">bludgeoning</type>
 					</id-00001>
+					<id-00002>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">radiant</type>
+					</id-00002>
 				</damagelist>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">10</maxammo>
-				<name type="string">Dart</name>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Mithril Three-sectioned Staff [Bright-Forged], +1</name>
 				<prof type="number">1</prof>
-				<properties type="string">Finesse, thrown (range 20/60)</properties>
+				<properties type="string">Special, Two-Handed</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00036</recordname>
+					<recordname>....inventorylist.id-00043</recordname>
 				</shortcut>
-				<type type="number">2</type>
+				<type type="number">0</type>
 			</id-00010>
 			<id-00011>
 				<attackbonus type="number">1</attackbonus>
@@ -2973,6 +3237,7 @@
 						<type type="string">piercing,magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Dagger of Venom</name>
@@ -2997,6 +3262,7 @@
 						<type type="string">piercing,magic</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Dagger of Venom</name>

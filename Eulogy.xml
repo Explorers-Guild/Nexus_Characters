@@ -50,6 +50,7 @@
 		<age type="string">240</age>
 		<alignment type="string">Neutral</alignment>
 		<appearance type="string">Wild looking female wood elf with long black hair, a headress of skulls and leaves and twigs, wearing light leathers and furs.</appearance>
+		<attunedCount type="number">1</attunedCount>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -72,15 +73,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">515</amount>
+				<amount type="number">512</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">12</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">217</amount>
+				<amount type="number">221</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -88,23 +89,23 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">150</amount>
+				<amount type="number">296</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
-				<amount type="number">200</amount>
+				<amount type="number">1274</amount>
 				<name type="string">GV</name>
 			</slot6>
 		</coins>
 		<defenses>
 			<ac>
 				<armor type="number">0</armor>
-				<misc type="number">0</misc>
+				<misc type="number">2</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<stat2 type="string">wisdom</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">17</total>
+				<total type="number">19</total>
 			</ac>
 		</defenses>
 		<deity type="string">Golgari, Nature, Rebirth, Blade, Honor</deity>
@@ -112,11 +113,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">160.26</load>
+			<load type="number">181.76</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">635</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">866</exp>
+		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -212,7 +213,7 @@
 			<id-00008>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Path of the Kensei (Longspear, Longbow)</name>
+				<name type="string">Path of the Kensei (Katana, Longbow, Battleaxe)</name>
 				<source type="string">Monk</source>
 				<specialization type="string">Way of the Kensei</specialization>
 				<text type="formattedtext">
@@ -300,7 +301,7 @@
 		<flaws type="string">Society is filled with fear and greed\n\nCultivate and kill is our great legacy</flaws>
 		<gender type="string">Female</gender>
 		<height type="string">6'2&#34;</height>
-		<hero type="number">3</hero>
+		<hero type="number">0</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
@@ -336,6 +337,21 @@
 				<type type="string">Weapon</type>
 				<weight type="number">0</weight>
 			</id-00001>
+			<id-00002>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<cost type="string">5 cp</cost>
+				<count type="number">10</count>
+				<damage type="string">1d4 piercing</damage>
+				<isidentified type="number">1</isidentified>
+				<location type="string">pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Dart</name>
+				<properties type="string">Finesse, thrown (range 20/60)</properties>
+				<subtype type="string">Simple Ranged Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">0.25</weight>
+			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -381,7 +397,7 @@
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Hammer</name>
 				<subtype type="string">Standard</subtype>
@@ -397,7 +413,7 @@
 					<p>Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Crowbar</name>
 				<subtype type="string">Standard</subtype>
@@ -506,7 +522,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Mess Kit</name>
 				<subtype type="string">Equipment Kits</subtype>
@@ -669,7 +685,7 @@
 					<p>When you use your action to set it, this trap forms a saw-toothed steal ring that snaps shut when a creature steps on a pressure plate in the center. the trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. each failed check deals 1 piercing damage to the trapped creature.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Hunting Trap</name>
 				<subtype type="string">Standard</subtype>
@@ -687,7 +703,7 @@
 					<p>These metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Manacles</name>
 				<subtype type="string">Standard</subtype>
@@ -962,7 +978,7 @@
 				<cost type="string">1 cp</cost>
 				<count type="number">1</count>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Sack</name>
 				<subtype type="string">Standard</subtype>
@@ -1082,6 +1098,93 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00040>
+			<id-00041>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">600 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.</p>
+					<p>If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again.</p>
+					<p>Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.</p>
+					<p>Placing a bag of holding inside an extra-dimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one--way only and can't be reopened.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack</location>
+				<locked type="number">1</locked>
+				<name type="string">Bag of Holding</name>
+				<nonid_name type="string">Large burlap bag.</nonid_name>
+				<nonidentified type="string">This large burlap bag is approximately 2 feet in diameter at its mouth and 4 feet deep.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">15</weight>
+			</id-00041>
+			<id-00042>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">1</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">827 gp</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing, 1d4 radiant</damage>
+				<description type="formattedtext">
+					<p><b>Bright-Forged Notes</b></p>
+					<p>1d4 - radiant damage</p>
+					<p><b>Weapon Notes</b></p>
+					<p>Magic weapons are unmistakably finer in quality than their ordinary counterparts. You have a +1 bonus to the attack rolls and damage rolls you make with this weapon.</p>
+					<p><b>Mithril Weapon Notes</b></p>
+					<p>Mithril weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
+					<p>If this reduces the weight to less than or equal to 3 pounds and is one handed then it gains the finesse property.</p>
+				</description>
+				<location type="string">carried (back, sheathe)</location>
+				<locked type="number">1</locked>
+				<name type="string">Mithril Katana [Bright-Forged], +1</name>
+				<properties type="string">Finesse, Versatile (1d10)</properties>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Martial Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">3</weight>
+			</id-00042>
+			<id-00043>
+				<ac type="number">0</ac>
+				<attune type="number">1</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">501 - 5,000 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">worn (arms)19</location>
+				<locked type="number">1</locked>
+				<name type="string">Bracers of Defense</name>
+				<nonid_name type="string">Bracers</nonid_name>
+				<nonidentified type="string">These filigreed metal bracers have clearly been expertly made by a craftsman of superb skill.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Rare (Requires Attunement)</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Bracers of Defense</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Bracers</name>
+					</id-00002>
+				</spells>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00043>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1254,13 +1357,17 @@
 								<bonus type="number">0</bonus>
 								<dice type="dice">d10</dice>
 								<stat type="string">dexterity</stat>
+								<statmult type="number">1</statmult>
 							</id-00001>
 							<id-00002>
 								<bonus type="number">0</bonus>
 								<dice type="dice"></dice>
 								<stat type="string">monk</stat>
+								<statmult type="number">1</statmult>
 							</id-00002>
 						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<healtype type="string">temp</healtype>
 						<order type="number">2</order>
 						<type type="string">heal</type>
 					</id-00002>
@@ -1756,7 +1863,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00009_token</token>
+		<token type="token">portrait_id-00004_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1827,8 +1934,33 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
+			<id-00002>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">piercing</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">10</maxammo>
+				<name type="string">Dart</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, thrown (range 20/60)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00002</recordname>
+				</shortcut>
+				<type type="number">2</type>
+			</id-00002>
 			<id-00003>
-				<ammo type="number">0</ammo>
+				<ammo type="number">14</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1863,7 +1995,7 @@
 						<type type="string">piercing, magic</type>
 					</id-00001>
 				</damagelist>
-				<handling type="number">0</handling>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">+1 Longspear</name>
@@ -1875,6 +2007,37 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00004>
+			<id-00005>
+				<attackbonus type="number">1</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing</type>
+					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">radiant</type>
+					</id-00002>
+				</damagelist>
+				<handling type="number">1</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Mithril Katana [Bright-Forged], +1</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse, Versatile (1d10)</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00042</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00005>
 			<id-00006>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
@@ -1907,8 +2070,9 @@
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
-						<dice type="dice">d8</dice>
+						<dice type="dice">d10</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
