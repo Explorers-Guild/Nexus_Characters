@@ -10,11 +10,11 @@
 				<score type="number">14</score>
 			</charisma>
 			<constitution>
-				<bonus type="number">1</bonus>
-				<save type="number">1</save>
+				<bonus type="number">2</bonus>
+				<save type="number">2</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">13</score>
+				<score type="number">14</score>
 			</constitution>
 			<dexterity>
 				<bonus type="number">0</bonus>
@@ -42,7 +42,7 @@
 				<save type="number">5</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">1</saveprof>
-				<score type="number">16</score>
+				<score type="number">17</score>
 			</wisdom>
 		</abilities>
 		<age type="string">450</age>
@@ -58,7 +58,7 @@
 				<hdbonusWS type="number">0</hdbonusWS>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Druid</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -68,11 +68,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1436</amount>
+				<amount type="number">1815</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">31</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -106,10 +106,10 @@
 			<encumbered type="number">55</encumbered>
 			<encumberedheavy type="number">110</encumberedheavy>
 			<liftpushdrag type="number">330</liftpushdrag>
-			<load type="number">92.7</load>
+			<load type="number">97.2</load>
 			<max type="number">165</max>
 		</encumbrance>
-		<exp type="number">389</exp>
+		<exp type="number">439</exp>
 		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
@@ -290,6 +290,16 @@
 					<p>You regain all expended dice when you finish a long rest.</p>
 				</text>
 			</id-00008>
+			<id-00009>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Druid</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00009>
 		</featurelist>
 		<height type="string">4'2&#34;</height>
 		<hero type="number">3</hero>
@@ -298,8 +308,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
-			<wounds type="number">15</wounds>
+			<total type="number">27</total>
+			<wounds type="number">7</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -630,6 +640,101 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.1</weight>
 			</id-00018>
+			<id-00019>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1000 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>1/4&#34; diameter cut and polished Sapphire gemstone</p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Sapphire Blue, Small</name>
+				<subtype type="string">Gem</subtype>
+				<type type="string">Treasure</type>
+				<weight type="number">0</weight>
+			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">2</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">4200 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 bludgeoning, cold-forged iron, magic</damage>
+				<description type="formattedtext">
+					<p>This quarterstaff allows the weilder to speak with rats (as <i>speak with animals </i>) and summon one swarm of rats (as <i>conjure animals </i>) once per day.</p>
+					<linklist>
+						<link class="reference_spell" recordname="reference.spelldata.conjureanimals@DD5E SRD Data"><b>Spell: </b></link>Conjure Animals</linklist>
+						<link class="reference_spell" recordname="reference.spelldata.speakwithanimals@DD5E SRD Data"><b>Spell: </b></link>Speak with Animals
+					<p>Wars with fiends and demons forced the creation of new types of weapons. Men learned to forge in low temperature environments to change the nature of the iron so it could pierce the hot scales of demons. The process is not simple, and certainly not cheap, but to save your life it might be worth it.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.plantslayer@Incarnate-5eExpansion">Plant Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an plant with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;plant&#34; refers to any creature with the plant type.</p>
+					<p>You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.frostbrand@Incarnate-5eExpansion">Frost Brand</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.</p>
+					<p>In freezing temperatures, the blade sheds bright light in a 10--foot radius and dim light for an additional 10 feet.</p>
+					<p>When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Frost Brand Cold Forged Iron Quarterstaff of Plant Slaying</name>
+				<nonidentified type="string">This quarterstaff is made of dark walnut and is carved with rats and moons.</nonidentified>
+				<properties type="string">Versatile (1d8), magic</properties>
+				<subtype type="string">Simple Melee Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">4</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Superior healing</td>
+							<td>Rare</td>
+							<td>8d4 + 8</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -645,7 +750,7 @@
 				<name type="string">Druidic</name>
 			</id-00004>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">ABAB</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">15</perception>
@@ -748,11 +853,11 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">4</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">1</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -783,7 +888,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -947,6 +1052,43 @@
 				<range type="string">10 feet</range>
 				<ritual type="number">0</ritual>
 			</id-00006>
+			<id-00007>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d12</dice>
+								<type type="string">poison</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.</p>
+					<p>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+				</description>
+				<duration type="string">Instantaneous</duration>
+				<group type="string">Spells</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Poison Spray</name>
+				<prepared type="number">0</prepared>
+				<range type="string">10 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Druid, Eldritch Knight, Sorcerer, Warlock, Wizard, Arcane Trickster</source>
+			</id-00007>
 			<id-00008>
 				<actions>
 					<id-00001>
@@ -1015,12 +1157,12 @@
 					<id-00001>
 						<durmod type="number">8</durmod>
 						<durunit type="string">hour</durunit>
-						<label type="string">Affinity Spores; Telapathy</label>
+						<label type="string">Affinity Spores; Telepathy</label>
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">6</cast>
 				<castingtime type="string">1 action</castingtime>
 				<description type="formattedtext">
 					<p>You may as an action, expel up to 5 affinity spores in a 10-foot radius. These spores will enable creatures that accept an affinity spore can communicate telepathically with one another up to a mile away. This spore lasts until the creature is no longer a willing host, or the Eukaryote is knocked unconscious.</p>
@@ -1030,7 +1172,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Affinity Spores</name>
-				<prepared type="number">5</prepared>
+				<prepared type="number">6</prepared>
 				<range type="string">10 foot radius</range>
 				<ritual type="number">0</ritual>
 				<source type="string">Thomas Niemitalo</source>
@@ -1057,7 +1199,7 @@
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">1 action</castingtime>
 				<description type="formattedtext">
 					<p>As an action, you can discharge tranquilizing spores at one creature you can see within 15 feet of you. The target must succeed on a Constitution saving throw equal to 8 + your proficiency modifier + you Constitution modifier or be unconscious for 1 minute or until it takes damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You regain use of this trait once you have completed a short or long rest.</p>
@@ -1073,6 +1215,46 @@
 				<source type="string">Thomas Niemitalo</source>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00011>
+			<id-00012>
+				<actions>
+					<id-00001>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<dice type="dice">d10,d10</dice>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)</components>
+				<description type="formattedtext">
+					<p>A silvery beam of pale light shines down in a 5-foot radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one.</p>
+					<p>A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can't assume a different form until it leaves the spell's light.</p>
+					<p>On each of your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction.</p>
+					<p><b>At Higher Levels. </b>when you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Spells</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Moonbeam</name>
+				<prepared type="number">0</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Druid</source>
+			</id-00012>
 			<id-00013>
 				<actions>
 					<id-00001>
@@ -1097,7 +1279,7 @@
 						<type type="string">heal</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">3</cast>
 				<description type="formattedtext">
 					<p>At 2nd level, you become imbued with the blessings of the Summer Court. You are a font of energy that offers respite from injuries. You have a pool of fey energy represented by a number of d6s equal to your druid level.</p>
 					<p>As a bonus action, you can choose one creature you can see within 120 feet of you and spend a number of those dice equal to half your druid level or less. Roll the spent dice and add them together. The target regains a number of hit points equal to the total. The target also gains 1 temporary hit point per die spent.</p>
@@ -1107,7 +1289,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Druid: Balm of the Summer Court (B) (120)</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">6</prepared>
 				<ritual type="number">0</ritual>
 				<specialization type="string">Circle of Dreams</specialization>
 			</id-00013>
@@ -1430,7 +1612,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00002_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1516,6 +1698,29 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00001>
+			<id-00002>
+				<attackbonus type="number">2</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">2</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<type type="string">bludgeoning,magic</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Frost Brand Cold Forged Iron Quarterstaff of Plant Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d8), magic</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00020</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00002>
 		</weaponlist>
 		<weight type="string">75lbs</weight>
 		<wildshapes>

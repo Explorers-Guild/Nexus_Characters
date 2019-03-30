@@ -50,7 +50,7 @@
 		<age type="string">240</age>
 		<alignment type="string">Neutral</alignment>
 		<appearance type="string">Wild looking female wood elf with long black hair, a headress of skulls and leaves and twigs, wearing light leathers and furs.</appearance>
-		<attunedCount type="number">1</attunedCount>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Outlander</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -63,7 +63,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d8</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">6</level>
+				<level type="number">7</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -73,11 +73,11 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">512</amount>
+				<amount type="number">891</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">12</amount>
+				<amount type="number">43</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
@@ -113,10 +113,10 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">181.76</load>
+			<load type="number">182.26</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">866</exp>
+		<exp type="number">916</exp>
 		<expneeded type="number">900</expneeded>
 		<featlist>
 		</featlist>
@@ -213,7 +213,7 @@
 			<id-00008>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Path of the Kensei (Katana, Longbow, Battleaxe)</name>
+				<name type="string">Path of the Kensei (Katana, Longbow, Longspear)</name>
 				<source type="string">Monk</source>
 				<specialization type="string">Way of the Kensei</specialization>
 				<text type="formattedtext">
@@ -297,6 +297,31 @@
 					<p><b><i>Deft Strike. </i></b>When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns.</p>
 				</text>
 			</id-00014>
+			<id-00015>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Evasion</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.evasion@Incarnate-5eExpansion">Evasion</link>
+					</linklist>
+					<h>Description</h>
+					<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a <i>fireball </i>spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+				</text>
+			</id-00015>
+			<id-00016>
+				<level type="number">7</level>
+				<locked type="number">1</locked>
+				<name type="string">Stillness of Mind</name>
+				<source type="string">Monk</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>
+				</text>
+			</id-00016>
 		</featurelist>
 		<flaws type="string">Society is filled with fear and greed\n\nCultivate and kill is our great legacy</flaws>
 		<gender type="string">Female</gender>
@@ -307,8 +332,8 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">45</total>
-			<wounds type="number">0</wounds>
+			<total type="number">52</total>
+			<wounds type="number">23</wounds>
 		</hp>
 		<ideals type="string">I shall pave this road 'till glory sets my broken spirit free\nWith every blade that flowers we shall grow and drown\nIn love, our cruelest sea.</ideals>
 		<initiative>
@@ -1089,7 +1114,7 @@
 					<p>If this reduces the weight to less than or equal to 3 pounds and is one handed then it gains the finesse property.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">backpack</location>
+				<location type="string">bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Mithril Battleaxe</name>
 				<nonidentified type="string">ERROR</nonidentified>
@@ -1159,7 +1184,7 @@
 					<p>While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<location type="string">worn (arms)19</location>
+				<location type="string">worn (arms)</location>
 				<locked type="number">1</locked>
 				<name type="string">Bracers of Defense</name>
 				<nonid_name type="string">Bracers</nonid_name>
@@ -1185,6 +1210,63 @@
 				<type type="string">Wondrous Item</type>
 				<weight type="number">1</weight>
 			</id-00043>
+			<id-00044>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">90,000 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>2&#34; diameter cut and polished Opal gemstone</p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<location type="string">bag of Holding</location>
+				<locked type="number">1</locked>
+				<name type="string">Opal Black, Very Large</name>
+				<subtype type="string">Gem</subtype>
+				<type type="string">Treasure</type>
+				<weight type="number">0</weight>
+			</id-00044>
+			<id-00045>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofsuperiorhealing@Incarnate-5eExpansion">Potion of Superior Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Superior healing</td>
+							<td>Rare</td>
+							<td>8d4 + 8</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Superior Potion of Healing</name>
+				<nonid_name type="string">Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00045>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1197,7 +1279,7 @@
 				<name type="string">Infernal</name>
 			</id-00003>
 		</languagelist>
-		<level type="number">6</level>
+		<level type="number">7</level>
 		<name type="string">Eulogy</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">16</perception>
@@ -1213,7 +1295,7 @@
 				<atkprof type="number">1</atkprof>
 				<name type="string">Ki Powers</name>
 				<saveprof type="number">1</saveprof>
-				<uses type="number">6</uses>
+				<uses type="number">8</uses>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00002>
 			<id-00003>
@@ -1398,6 +1480,29 @@
 				<school type="string">Class</school>
 				<source type="string">Monk</source>
 			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00002>
+						<durmod type="number">0</durmod>
+						<label type="string">Evasion</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+				</description>
+				<group type="string">Kensai Powers</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Monk: Evasion</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<school type="string">Class</school>
+				<source type="string">Monk</source>
+			</id-00004>
 			<id-00005>
 				<actions>
 					<id-00001>
@@ -1416,7 +1521,7 @@
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
 				</description>
@@ -1464,7 +1569,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">5</cast>
 				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
 					<p><b>Patient Defense</b></p>
@@ -1488,7 +1593,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">Bonus action</castingtime>
 				<description type="formattedtext">
 					<p><b>Step of the Wind</b></p>
@@ -1960,7 +2065,7 @@
 				<type type="number">2</type>
 			</id-00002>
 			<id-00003>
-				<ammo type="number">14</ammo>
+				<ammo type="number">4</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -2017,7 +2122,7 @@
 						<dice type="dice">d8</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">slashing</type>
+						<type type="string">slashing, magic</type>
 					</id-00001>
 					<id-00002>
 						<bonus type="number">0</bonus>
