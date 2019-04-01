@@ -62,7 +62,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hdbonusWS type="number">0</hdbonusWS>
 				<hddie type="dice">d8</hddie>
-				<hdused type="number">2</hdused>
+				<hdused type="number">0</hdused>
 				<level type="number">7</level>
 				<name type="string">Monk</name>
 				<shortcut type="windowreference">
@@ -86,7 +86,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">5751</amount>
+				<amount type="number">5785</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -94,7 +94,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">248</amount>
+				<amount type="number">268</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -102,7 +102,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">629</amount>
+				<amount type="number">637</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -128,8 +128,8 @@
 			<load type="number">93.5</load>
 			<max type="number">450</max>
 		</encumbrance>
-		<exp type="number">1940</exp>
-		<expneeded type="number">1200</expneeded>
+		<exp type="number">2057</exp>
+		<expneeded type="number">2100</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -452,7 +452,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">70</total>
-			<wounds type="number">34</wounds>
+			<wounds type="number">8</wounds>
 		</hp>
 		<ideals type="string">Honor. If I dishonor myself, I dishonor my whole clan. Glory. I must earn glory in battle, for myself and my clan.</ideals>
 		<initiative>
@@ -1213,6 +1213,16 @@
 			<id-00003>
 				<name type="string">Background Feature</name>
 			</id-00003>
+			<id-00004>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Boon</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<stat type="string">wisdom</stat>
+				<uses type="number">0</uses>
+			</id-00004>
 			<id-00005>
 				<name type="string">Clothing</name>
 			</id-00005>
@@ -2148,7 +2158,7 @@
 						<type type="string">heal</type>
 					</id-00001>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<h>Item Coding</h>
 					<linklist>
@@ -2212,9 +2222,47 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
+				<cast type="number">0</cast>
 				<group type="string">Clothing</group>
+				<level type="number">0</level>
 				<name type="string">Ring of Protection</name>
+				<prepared type="number">0</prepared>
 			</id-00035>
+			<id-00037>
+				<actions>
+					<id-00001>
+						<order type="number">1</order>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">DMG: 2d6; (C)</label>
+						<order type="number">2</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>Choose one creature you can see within range, and choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target must succeed on a Constitution saving throw or be affected by the spell for its duration. The first time each turn the affected target takes damage of the chosen type, the target takes an extra 2d6 damage of that type. Moreover, the target loses any resistance to that damage type until the spell ends.</p>
+					<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 minute</duration>
+				<group type="string">Boon</group>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Bane</name>
+				<prepared type="number">1</prepared>
+				<range type="string">90 feet</range>
+				<school type="string">Transmutation</school>
+				<source type="string">Druid, Warlock, Wizard</source>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00037>
 		</powers>
 		<profbonus type="number">4</profbonus>
 		<proficiencylist>
@@ -2385,7 +2433,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00006_token</token>
+		<token type="token">portrait_id-00008_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -2426,7 +2474,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
-				<ammo type="number">1</ammo>
+				<ammo type="number">2</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>

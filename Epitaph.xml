@@ -49,7 +49,8 @@
 		</adventurelist>
 		<age type="string">Mid 20s</age>
 		<alignment type="string">Neutral Good</alignment>
-		<appearance type="string">Scary Illidan-looking Antler Devil. Purple/Red/Pink/Orange dusk-colored skin, gnarled and scarred</appearance>
+		<appearance type="string">is a large. lean, onyx-skinned Tiefling, with large bat-like wings. He is particularly ugly, with completely black eyes and feral features...fangs, black claws, and obsidian antlers. He wears dark robes and harem pants, but is usually shirtless. His body is covered in tattos and scars and burns which all look like ash. He carries a backback full of survival/cleric gear, and carries many weapons, prefering a three-sectioned staff.</appearance>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Far Traveler</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -84,7 +85,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">2394</amount>
+				<amount type="number">15572</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -92,7 +93,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">149</amount>
+				<amount type="number">169</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -123,11 +124,11 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">136.913</load>
+			<load type="number">137.913</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">1120</exp>
-		<expneeded type="number">1100</expneeded>
+		<exp type="number">1178</exp>
+		<expneeded type="number">1300</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -443,7 +444,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">59</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">39</wounds>
 		</hp>
 		<ideals type="string">Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings. (Any)\n\nFaith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)\n\nTradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)\n\nSuspicious. I must be careful, for I have no way of telling friend from foe here. (Any)\n\nChange. Life is like the seasons, in constant change, and we must change with it. (Chaotic)\n\nGlory. I must earn glory in battle, for myself and my clan. (Any)</ideals>
 		<initiative>
@@ -571,6 +572,7 @@
 			</id-00008>
 			<id-00009>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">200 GP</cost>
@@ -811,21 +813,6 @@
 				<type type="string">Weapon</type>
 				<weight type="number">2</weight>
 			</id-00019>
-			<id-00020>
-				<attune type="number">0</attune>
-				<carried type="number">1</carried>
-				<cost type="string">1 gp</cost>
-				<count type="number">1</count>
-				<damage type="string">1d6 piercing</damage>
-				<isidentified type="number">1</isidentified>
-				<location type="string">carried</location>
-				<locked type="number">1</locked>
-				<name type="string">Spear</name>
-				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
-				<subtype type="string">Simple Melee Weapons</subtype>
-				<type type="string">Weapon</type>
-				<weight type="number">3</weight>
-			</id-00020>
 			<id-00021>
 				<attune type="number">0</attune>
 				<carried type="number">2</carried>
@@ -833,7 +820,7 @@
 				<count type="number">1</count>
 				<damage type="string">1d6 piercing</damage>
 				<isidentified type="number">1</isidentified>
-				<location type="string">carried</location>
+				<location type="string">backpack (Empty)</location>
 				<locked type="number">1</locked>
 				<name type="string">Shortbow</name>
 				<properties type="string">Ammunition (range 80/320), two-handed</properties>
@@ -1371,12 +1358,75 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0</weight>
 			</id-00042>
-			<id-00043>
+			<id-00044>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2,500 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>1/4&#34; diameter cut and polished Diamond gemstone</p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<location type="string">sack</location>
+				<locked type="number">1</locked>
+				<name type="string">Diamond Brown, Small</name>
+				<subtype type="string">Gem</subtype>
+				<type type="string">Treasure</type>
+				<weight type="number">0</weight>
+			</id-00044>
+			<id-00045>
+				<ac type="number">0</ac>
+				<attune type="number">1</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">500 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<linklist>
+						<link class="imagewindow" recordname="reference.imagedata.img_staff_of_the_python_jpg@*"><b>Image: </b></link>Staff of the Python</linklist>
+						<link class="npc" recordname="reference.npcdata.giantconstrictorsnake@*"><b>NPC: </b></link>Giant Constrictor Snake
+					<p>You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake (see the Monster Manual for statistics) under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.</p>
+					<p>On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.</p>
+					<p>If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.</p>
+					<p><b>Staff Notes</b></p>
+					<p>An arcane focus is a special item-an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item-designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in chapter 10.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">backpack (Empty)</location>
+				<locked type="number">1</locked>
+				<name type="string">Staff of the Python</name>
+				<nonid_name type="string">Staff</nonid_name>
+				<nonidentified type="string">One end of this white wooden staff has been intricately carved into the head of a snake.</nonidentified>
+				<properties type="string">Magic</properties>
+				<rarity type="string">Uncommon (Requires Attunement By A Cleric, Druid, Or Warlock)</rarity>
+				<spells>
+					<id-00001>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Staff of the Python</name>
+					</id-00001>
+					<id-00002>
+						<link type="windowreference">
+							<class></class>
+							<recordname></recordname>
+						</link>
+						<name type="string">Staff</name>
+					</id-00002>
+				</spells>
+				<type type="string">Staff</type>
+				<weight type="number">4</weight>
+			</id-00045>
+			<id-00046>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">368 gp</cost>
+				<carried type="number">2</carried>
+				<cost type="string">3,162 gp</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 bludgeoning, 1d4 radiant</damage>
 				<description type="formattedtext">
@@ -1388,16 +1438,28 @@
 					<p><b>Mithril Weapon Notes</b></p>
 					<p>Mithril weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
 					<p>If this reduces the weight to less than or equal to 3 pounds and is one handed then it gains the finesse property.</p>
+					<p><b>Undead Slayer Notes</b></p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.undeadslayer@Incarnate-5eExpansion">Undead Slayer</link>
+					</linklist>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an undead with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;undead&#34; refers to any creature with the undead type.</p>
+					<p></p>
+					<linklist>
+						<link class="power" recordname="spell.id-00031@5E Effects Coding - Spells">Guiding Bolt (120)</link>
+					</linklist>
+					<p>-Recharges on kill</p>
 				</description>
 				<location type="string">carried</location>
 				<locked type="number">1</locked>
-				<name type="string">Mithril Three-sectioned Staff [Bright-Forged], +1</name>
+				<name type="string">+1 Bright-Forged Mithril Three-sectioned Kusari-gama Staff of Guiding Bolts and Undead Slaying</name>
 				<properties type="string">Special, Two-Handed</properties>
-				<rarity type="string">Uncommon</rarity>
+				<rarity type="string">Rare</rarity>
 				<subtype type="string">Martial Melee Weapons</subtype>
 				<type type="string">Weapon</type>
 				<weight type="number">4</weight>
-			</id-00043>
+			</id-00046>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1450,6 +1512,16 @@
 				<saveprof type="number">1</saveprof>
 				<uses type="number">0</uses>
 			</id-00005>
+			<id-00006>
+				<atkmod type="number">0</atkmod>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Boon</name>
+				<prepared type="number">0</prepared>
+				<savemod type="number">0</savemod>
+				<saveprof type="number">1</saveprof>
+				<stat type="string">wisdom</stat>
+				<uses type="number">0</uses>
+			</id-00006>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1490,7 +1562,7 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">1</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">0</max>
@@ -1761,7 +1833,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Potion of Greater Healing</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">3</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Item - Action Code</source>
 			</id-00008>
@@ -1855,7 +1927,7 @@
 						<type type="string">effect</type>
 					</id-00002>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00034@Incarnate-5eExpansion">Stunning Strike</link>
@@ -1895,7 +1967,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">2</cast>
 				<castingtime type="string">Reaction</castingtime>
 				<description type="formattedtext">
 					<p>Also at 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this feature.</p>
@@ -2226,7 +2298,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Detect Evil and Good (S) (C)</name>
-				<prepared type="number">0</prepared>
+				<prepared type="number">1</prepared>
 				<range type="string">Self</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Divination</school>
@@ -2329,7 +2401,7 @@
 				<level type="number">1</level>
 				<locked type="number">1</locked>
 				<name type="string">Guiding Bolt (120)</name>
-				<prepared type="number">1</prepared>
+				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
 				<school type="string">Evocation</school>
@@ -2787,6 +2859,107 @@
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00037>
+			<id-00038>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">DMG: 2d8 radiant; (C)</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<onmissdamage type="string">half</onmissdamage>
+						<order type="number">2</order>
+						<savetype type="string">constitution</savetype>
+						<type type="string">cast</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8,d8,d8,d8</dice>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+					<id-00004>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">Blinded</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 bonus action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>You imbue a weapon you touch with holy power. Until the spell ends, the weapon emits bright light in a 30- foot radius and dim light for an additional 30 feet. In addition, weapon attacks made with it deal an extra 2d8 radiant damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.</p>
+					<p>As a bonus action on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of you must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage, and it is blinded for 1 minute. On a successful save, a creature takes half as much damage and isn't blinded. At the end of each of its turns, a blinded creature can make a Constitution saving throw, ending the effect on itself on a success.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Boon</group>
+				<level type="number">5</level>
+				<locked type="number">1</locked>
+				<name type="string">Holy Weapon</name>
+				<prepared type="number">1</prepared>
+				<range type="string">Touch</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric, Paladin</source>
+			</id-00038>
+			<id-00039>
+				<actions>
+					<id-00001>
+						<atktype type="string">ranged</atktype>
+						<order type="number">1</order>
+						<savemagic type="number">1</savemagic>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d6,d6,d6,d6</dice>
+								<type type="string">radiant</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">2</order>
+						<type type="string">damage</type>
+					</id-00002>
+					<id-00003>
+						<apply type="string">action</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Guiding Bolt; GRANTADVATK</label>
+						<order type="number">3</order>
+						<type type="string">effect</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S</components>
+				<description type="formattedtext">
+					<p>A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</p>
+					<p>At Higher Levels.</p>
+					<p>When you cast this spell using a spell slot of 2nd level or higher, the damage increases by1d6 for each slot level above 1st.</p>
+				</description>
+				<duration type="string">1 round</duration>
+				<group type="string">Item</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Guiding Bolt (Weapon) (120)</name>
+				<prepared type="number">3</prepared>
+				<range type="string">120 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Evocation</school>
+				<source type="string">Cleric</source>
+				<usesperiod type="string">once</usesperiod>
+			</id-00039>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -2947,7 +3120,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -3020,55 +3193,64 @@
 				<type type="number">2</type>
 			</id-00002>
 			<id-00003>
-				<attackbonus type="number">0</attackbonus>
+				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
-						<dice type="dice">d6</dice>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d8</dice>
 						<stat type="string">dexterity</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
+						<type type="string">bludgeoning, magic</type>
 					</id-00001>
+					<id-00002>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">radiant</type>
+					</id-00002>
 				</damagelist>
-				<handling type="number">0</handling>
+				<handling type="number">1</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Spear</name>
+				<name type="string">+1 Bright-Forged Mithril Three-sectioned Staff [Undead Slayer],</name>
 				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<properties type="string">Special, Two-Handed</properties>
 				<shortcut type="windowreference">
 					<class>item</class>
-					<recordname>....inventorylist.id-00020</recordname>
+					<recordname>....inventorylist.id-00046</recordname>
 				</shortcut>
 				<type type="number">0</type>
 			</id-00003>
 			<id-00004>
-				<ammo type="number">0</ammo>
-				<attackbonus type="number">0</attackbonus>
+				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
-						<bonus type="number">0</bonus>
+						<bonus type="number">1</bonus>
 						<dice type="dice">d6</dice>
-						<stat type="string">dexterity</stat>
+						<stat type="string">base</stat>
 						<statmult type="number">1</statmult>
-						<type type="string">piercing</type>
+						<type type="string">slashing, magic</type>
 					</id-00001>
+					<id-00002>
+						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
+						<type type="string">radiant</type>
+					</id-00002>
 				</damagelist>
-				<handling type="number">0</handling>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">1</maxammo>
-				<name type="string">Spear</name>
+				<handling type="number">1</handling>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Kusari-gama</name>
 				<prof type="number">1</prof>
-				<properties type="string">Thrown (range 20/60), versatile (1d8)</properties>
+				<properties type="string">Two-Handed, Special, Reach</properties>
 				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00020</recordname>
+					<class></class>
+					<recordname></recordname>
 				</shortcut>
-				<type type="number">2</type>
+				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
 				<ammo type="number">5</ammo>
@@ -3194,36 +3376,6 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00009>
-			<id-00010>
-				<attackbonus type="number">1</attackbonus>
-				<attackstat type="string">dexterity</attackstat>
-				<carried type="number">1</carried>
-				<damagelist>
-					<id-00001>
-						<bonus type="number">1</bonus>
-						<dice type="dice">d8</dice>
-						<stat type="string">dexterity</stat>
-						<statmult type="number">1</statmult>
-						<type type="string">bludgeoning</type>
-					</id-00001>
-					<id-00002>
-						<dice type="dice">d4</dice>
-						<statmult type="number">1</statmult>
-						<type type="string">radiant</type>
-					</id-00002>
-				</damagelist>
-				<handling type="number">1</handling>
-				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
-				<name type="string">Mithril Three-sectioned Staff [Bright-Forged], +1</name>
-				<prof type="number">1</prof>
-				<properties type="string">Special, Two-Handed</properties>
-				<shortcut type="windowreference">
-					<class>item</class>
-					<recordname>....inventorylist.id-00043</recordname>
-				</shortcut>
-				<type type="number">0</type>
-			</id-00010>
 			<id-00011>
 				<attackbonus type="number">1</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
