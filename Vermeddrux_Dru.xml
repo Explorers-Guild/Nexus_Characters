@@ -17,11 +17,11 @@
 				<score type="number">14</score>
 			</constitution>
 			<dexterity>
-				<bonus type="number">3</bonus>
-				<save type="number">3</save>
+				<bonus type="number">4</bonus>
+				<save type="number">4</save>
 				<savemodifier type="number">0</savemodifier>
 				<saveprof type="number">0</saveprof>
-				<score type="number">17</score>
+				<score type="number">19</score>
 			</dexterity>
 			<intelligence>
 				<bonus type="number">-1</bonus>
@@ -70,7 +70,7 @@
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
-				<level type="number">3</level>
+				<level type="number">4</level>
 				<name type="string">Barbarian</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -80,15 +80,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">68</amount>
+				<amount type="number">447</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">1</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">55</amount>
+				<amount type="number">135</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -96,7 +96,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">30</amount>
+				<amount type="number">168</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -112,21 +112,31 @@
 				<shield type="number">0</shield>
 				<stat2 type="string">constitution</stat2>
 				<temporary type="number">0</temporary>
-				<total type="number">15</total>
+				<total type="number">16</total>
 			</ac>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">50</encumbered>
 			<encumberedheavy type="number">100</encumberedheavy>
 			<liftpushdrag type="number">300</liftpushdrag>
-			<load type="number">80.1</load>
+			<load type="number">81.6</load>
 			<max type="number">150</max>
 		</encumbrance>
-		<exp type="number">50</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">417</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
+			<id-00001>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Barbarian</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00001>
 			<id-00009>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
@@ -244,27 +254,27 @@
 		<flaws type="string">I still suffer nightmares and visions of the moment my life crubled to pieces.</flaws>
 		<gender type="string">Male</gender>
 		<height type="string">2'6''</height>
-		<hero type="number">3</hero>
+		<hero type="number">0</hero>
 		<herodice type="string">d6</herodice>
 		<hp>
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">34</total>
-			<wounds type="number">25</wounds>
+			<total type="number">43</total>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Revenge - I will make amends for what has been done to me, however I can. (Chaotic)</ideals>
 		<initiative>
 			<misc type="number">0</misc>
 			<temporary type="number">0</temporary>
-			<total type="number">3</total>
+			<total type="number">4</total>
 		</initiative>
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">1</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1602 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d4 piercing, magic</damage>
@@ -549,6 +559,34 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">1</weight>
 			</id-00016>
+			<id-00017>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">415 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d8 slashing</damage>
+				<description type="formattedtext">
+					<p>ERROR</p>
+					<p>Mithril weapons are light weight and strong. (reduce their weight by half of the normal weight)</p>
+					<p>If this reduces the weight to less than or equal to 3 pounds and is one handed then it gains the finesse property.</p>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.viciousweapon@Incarnate-5eExpansion">Vicious</link>
+					</linklist>
+					<h>Description</h>
+					<p>When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Mithril Longsword</name>
+				<nonidentified type="string">ERROR</nonidentified>
+				<properties type="string">Versatile (1d10), finesse</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">1.5</weight>
+			</id-00017>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -567,7 +605,7 @@
 				<name type="string">Giant</name>
 			</id-00006>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Vermeddrux &#34;Dru&#34;</name>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">13</perception>
@@ -659,7 +697,7 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">combat</powermode>
+		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -714,6 +752,31 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Barbarian - Class Ability</source>
 			</id-00002>
+			<id-00003>
+				<actions>
+					<id-00001>
+						<apply type="string">roll</apply>
+						<durmod type="number">1</durmod>
+						<label type="string">Vicious Weapon; DMG: 2d6, critical</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<linklist>
+						<link class="itemtemplate" recordname="itemtemplate.id-00842@Incarnate-5eExpansion">Vicious Weapon</link>
+					</linklist>
+				</description>
+				<group type="string">Class Feature</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Vicious Weapon</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00003>
 			<id-00004>
 				<actions>
 					<id-00001>
@@ -868,7 +931,7 @@
 				<name type="string">Acrobatics</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00009>
 			<id-00010>
 				<misc type="number">0</misc>
@@ -882,7 +945,7 @@
 				<name type="string">Sleight of Hand</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00011>
 			<id-00012>
 				<misc type="number">0</misc>
@@ -917,7 +980,7 @@
 				<name type="string">Stealth</name>
 				<prof type="number">0</prof>
 				<stat type="string">dexterity</stat>
-				<total type="number">3</total>
+				<total type="number">4</total>
 			</id-00016>
 			<id-00017>
 				<misc type="number">0</misc>
@@ -943,7 +1006,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00007_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1011,7 +1074,7 @@
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>
-				<handling type="number">0</handling>
+				<handling type="number">2</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Shortsword</name>
@@ -1140,6 +1203,31 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00007>
+			<id-00008>
+				<attackbonus type="number">0</attackbonus>
+				<attackstat type="string">dexterity</attackstat>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d8</dice>
+						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<handling type="number">0</handling>
+				<isidentified type="number">1</isidentified>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Vicious Mithril Longsword</name>
+				<prof type="number">1</prof>
+				<properties type="string">Versatile (1d10), finesse</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00017</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00008>
 		</weaponlist>
 		<weight type="string">25lbs</weight>
 	</character>

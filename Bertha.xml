@@ -58,7 +58,7 @@
 		<classes>
 			<id-00001>
 				<hddie type="dice">d10</hddie>
-				<hdused type="number">0</hdused>
+				<hdused type="number">3</hdused>
 				<level type="number">3</level>
 				<name type="string">Fighter</name>
 				<shortcut type="windowreference">
@@ -97,11 +97,11 @@
 				<armor type="number">6</armor>
 				<dexbonus type="string">no</dexbonus>
 				<disstealth type="number">1</disstealth>
-				<misc type="number">0</misc>
+				<misc type="number">1</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">18</total>
+				<total type="number">17</total>
 			</ac>
 		</defenses>
 		<encumbrance>
@@ -111,8 +111,8 @@
 			<load type="number">139.6</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">0</exp>
-		<expneeded type="number">0</expneeded>
+		<exp type="number">358</exp>
+		<expneeded type="number">400</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
@@ -335,7 +335,11 @@
 		<flaws type="string">I've gone behind my Liege's back on something, and would do anything to prevent them from finding out.</flaws>
 		<gender type="string">Female</gender>
 		<height type="string">6'10&#34;</height>
+		<hero type="number">3</hero>
+		<herodice type="string">d6</herodice>
 		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">31</total>
 			<wounds type="number">0</wounds>
@@ -649,13 +653,18 @@
 		</languagelist>
 		<level type="number">3</level>
 		<name type="string">Bertha daughter of Malger</name>
+		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
 		<personalitytraits type="string">Though a skilled fighter, I do not relish combat, and will always accept an enemy's surrender.\nI enjoy being strong and able to protect others.</personalitytraits>
+		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
 				<name type="string">Nobel Guard</name>
 			</id-00001>
+			<id-00002>
+				<name type="string">Effect</name>
+			</id-00002>
 			<id-00003>
 				<name type="string">Combat Stance</name>
 			</id-00003>
@@ -665,40 +674,67 @@
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots1>
 			<pactmagicslots2>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots2>
 			<pactmagicslots3>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots3>
 			<pactmagicslots4>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots4>
 			<pactmagicslots5>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots5>
 			<pactmagicslots6>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots6>
 			<pactmagicslots7>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots7>
 			<pactmagicslots8>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots8>
 			<pactmagicslots9>
+				<max type="number">0</max>
+				<used type="number">0</used>
 			</pactmagicslots9>
 			<spellslots1>
+				<max type="number">0</max>
 			</spellslots1>
 			<spellslots2>
+				<max type="number">0</max>
 			</spellslots2>
 			<spellslots3>
+				<max type="number">0</max>
 			</spellslots3>
 			<spellslots4>
+				<max type="number">0</max>
 			</spellslots4>
 			<spellslots5>
+				<max type="number">0</max>
 			</spellslots5>
 			<spellslots6>
+				<max type="number">0</max>
 			</spellslots6>
 			<spellslots7>
+				<max type="number">0</max>
 			</spellslots7>
 			<spellslots8>
+				<max type="number">0</max>
 			</spellslots8>
 			<spellslots9>
+				<max type="number">0</max>
 			</spellslots9>
 		</powermeta>
 		<powermode type="string">combat</powermode>
@@ -714,6 +750,7 @@
 					</linklist>
 				</description>
 				<group type="string">Nobel Guard</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Bodyguard</name>
 				<prepared type="number">0</prepared>
@@ -820,18 +857,45 @@
 			<id-00005>
 				<actions>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<p>Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.</p>
 					<p>Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>
 				</description>
 				<group type="string">Fighter</group>
+				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Action Surge</name>
 				<prepared type="number">1</prepared>
 				<source type="string">Fighter</source>
 				<specializationchoice type="number">0</specializationchoice>
+				<usesperiod type="string">enc</usesperiod>
 			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<label type="string">DODGE</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You focus entirely on avoiding attacks. Until the end of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</p>
+					<linklist>
+						<link class="referencemanualpage" recordname="referencemanual2.SRD_PRO_00071@Incarnate-5eExpansion">Actions in Combat</link>
+					</linklist>
+				</description>
+				<group type="string">Fighter</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dodge</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00006>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -955,7 +1019,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token"></token>
+		<token type="token">portrait_id-00001_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1000,6 +1064,7 @@
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Battleaxe</name>
@@ -1020,6 +1085,7 @@
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
 				<maxammo type="number">0</maxammo>
 				<name type="string">Handaxe</name>
@@ -1040,8 +1106,9 @@
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
+				<handling type="number">0</handling>
 				<isidentified type="number">1</isidentified>
-				<maxammo type="number">0</maxammo>
+				<maxammo type="number">2</maxammo>
 				<name type="string">Handaxe</name>
 				<prof type="number">1</prof>
 				<properties type="string">Light, thrown (range 20/60)</properties>
