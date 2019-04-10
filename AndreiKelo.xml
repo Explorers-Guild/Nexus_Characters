@@ -65,6 +65,8 @@
 					<linklist>
 						<link class="item" recordname="treasureparcels.id-00304.itemlist.id-00001">Vinuk [Stimulant]</link>
 						<link class="item" recordname="treasureparcels.id-00305.itemlist.id-00001">Butterspice Weed [Halfling narcotic, -2 Dex Save]</link>
+						<link class="item" recordname="treasureparcels.id-00309.itemlist.id-00001">Luhix [Power through Pain]</link>
+						<link class="" recordname="">Detoxleaf [Mental Remedy]</link>
 					</linklist>
 				</magicitem>
 				<name type="string">Plant files</name>
@@ -114,6 +116,7 @@
 		<age type="string">20 (??)</age>
 		<alignment type="string">Chaotic Neutral</alignment>
 		<appearance type="string">Brownish-red hair, fair skin, grey eyes. His joints sometimes click while he moves. He wears something akin to a butler, fitted to suit a more rugged environment (long whiteish shirt, black vest, long black pants, traveling boots, leather gloves), and takes offence to someone trying to remove or pull aside the lower layers.</appearance>
+		<attunedCount type="number">0</attunedCount>
 		<background type="string">Assassin</background>
 		<backgroundlink type="windowreference">
 			<class>reference_background</class>
@@ -136,7 +139,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">72</amount>
+				<amount type="number">265</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -176,10 +179,10 @@
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">69.61</load>
+			<load type="number">70.86</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">416</exp>
+		<exp type="number">492</exp>
 		<expneeded type="number">500</expneeded>
 		<featlist>
 		</featlist>
@@ -386,7 +389,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">23</total>
-			<wounds type="number">17</wounds>
+			<wounds type="number">12</wounds>
 		</hp>
 		<ideals type="string">Aspiration - I work hard to be the best there is at my craft. (Any)</ideals>
 		<initiative>
@@ -397,6 +400,7 @@
 		<inventorylist>
 			<id-00001>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">50 GP</cost>
@@ -407,7 +411,7 @@
 						<link class="reference_skill" recordname="skill.id-00261@Incarnate-5eExpansion">Poisoner's Kit</link>
 					</linklist>
 					<h>Description</h>
-					<p>A poisoner's kit includes the 5 vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.</p>
+					<p>A poisoner's kit disguised as a tea preparation kit, includes the 5 vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.</p>
 					<linklist>
 						<link class="encounter" recordname="encounter.id-00063@Incarnate-5eExpansion">Rules for Using Poisoner's Kit</link>
 					</linklist>
@@ -416,30 +420,33 @@
 				<istemplate type="number">0</istemplate>
 				<location type="string">Belt</location>
 				<locked type="number">1</locked>
-				<name type="string">Tea-maker's Kit</name>
+				<name type="string">Tea-maker's kit</name>
 				<subtype type="string">Tool</subtype>
 				<type type="string">Tool</type>
 				<weight type="number">2</weight>
 			</id-00001>
 			<id-00002>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
 					<p>These dark clothes are great for sneaking through shadows and dark allys.</p>
+					<p>Designed to look like a more adventure readied butler outfit, including vest, bowtie and cufflinks.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
 				<locked type="number">1</locked>
 				<name type="string">Clothes, Dark Common</name>
-				<rarity type="string">Common</rarity>
+				<rarity type="string">Uncommon</rarity>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
 			</id-00002>
 			<id-00003>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2-spiced ginger cookies</cost>
@@ -460,6 +467,7 @@
 			</id-00003>
 			<id-00004>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
@@ -478,6 +486,7 @@
 			</id-00004>
 			<id-00005>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">5 CP</cost>
@@ -499,6 +508,7 @@
 				<weight type="number">0.25</weight>
 			</id-00005>
 			<id-00006>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -511,6 +521,7 @@
 				<weight type="number">10</weight>
 			</id-00006>
 			<id-00007>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 GP</cost>
 				<count type="number">1</count>
@@ -526,6 +537,7 @@
 				<weight type="number">7</weight>
 			</id-00007>
 			<id-00008>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -539,6 +551,7 @@
 			</id-00008>
 			<id-00009>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">2 GP</cost>
@@ -554,6 +567,7 @@
 				<weight type="number">5</weight>
 			</id-00009>
 			<id-00010>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">1 CP</cost>
 				<count type="number">10</count>
@@ -570,6 +584,7 @@
 			</id-00010>
 			<id-00011>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
@@ -586,6 +601,7 @@
 				<weight type="number">2</weight>
 			</id-00011>
 			<id-00012>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">2 SP</cost>
 				<count type="number">1</count>
@@ -601,6 +617,7 @@
 				<weight type="number">1</weight>
 			</id-00012>
 			<id-00013>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<cost type="string">5 SP</cost>
 				<count type="number">1</count>
@@ -617,6 +634,7 @@
 			</id-00013>
 			<id-00014>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">2</carried>
 				<cost type="string">10 GP</cost>
@@ -638,8 +656,9 @@
 			</id-00014>
 			<id-00015>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -656,6 +675,7 @@
 			</id-00015>
 			<id-00016>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">100 GP</cost>
@@ -692,6 +712,7 @@
 				<weight type="number">0.5</weight>
 			</id-00016>
 			<id-00017>
+				<attune type="number">0</attune>
 				<carried type="number">2</carried>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -701,9 +722,22 @@
 				<name type="string">*Body</name>
 				<rarity type="string">Very Rare</rarity>
 				<type type="string">Lore</type>
+				<weight type="number">0</weight>
 			</id-00017>
+			<id-00018>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>The eye of a goat in perfect condition.</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Pristine goat eye</name>
+				<weight type="number">0</weight>
+			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -738,6 +772,7 @@
 			</id-00019>
 			<id-00020>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
@@ -770,6 +805,103 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0</weight>
 			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Location</h>
+					<p>Forests and Underdark/Caves</p>
+					<h>Description/Effect</h>
+					<p>Wound-powder drug, made from stalks of Abyssal plants. Initial +1 bonus to all ability scores along with intense pain for 1d8 minutes. Second use grants a +2 bonus to all ability scores and excruciating pain that causes disadvantage on checks and saves of all kinds for 2d8 minutes. Third use causes the possibility of addiction (DC 20 Constitution Save) and a -3 to all ability scores and pain that renders the user incapable of doing anything and lowers movement speed to 1 foot for 3d8 hours. As long as the user is addicted and does not have access to more Luhix, they will take a -5 penalty to all checks and movement speed will be halved as they are too lethargic to do anything of importance.</p>
+				</description>
+				<flavor type="string">Wound-powder drug, made from stalks of Abyssal plants. Initial +1 bonus to all ability scores along with intense pain for 1d8 minutes. Second use grants a +2 bonus to all ability scores and excruciating pain that causes disadvantage on checks and saves of all kinds for 2d8 minutes. Third use causes the possibility of addiction (DC 20 Constitution Save) and a -3 to all ability scores and pain that renders the user incapable of doing anything and lowers movement speed to 1 foot for 3d8 hours. As long as the user is addicted and does not have access to more Luhix, they will take a -5 penalty to all checks and movement speed will be halved as they are too lethargic to do anything of importance.</flavor>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Herb Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Luhix</name>
+				<nonid_name type="string">Plant</nonid_name>
+				<notes type="formattedtext">
+					<h>Location</h>
+					<p>Forests and Underdark/Caves</p>
+					<h>Description/Effect</h>
+					<p>Wound-powder drug, made from stalks of Abyssal plants. Initial +1 bonus to all ability scores along with intense pain for 1d8 minutes. Second use grants a +2 bonus to all ability scores and excruciating pain that causes disadvantage on checks and saves of all kinds for 2d8 minutes. Third use causes the possibility of addiction (DC 20 Constitution Save) and a -3 to all ability scores and pain that renders the user incapable of doing anything and lowers movement speed to 1 foot for 3d8 hours. As long as the user is addicted and does not have access to more Luhix, they will take a -5 penalty to all checks and movement speed will be halved as they are too lethargic to do anything of importance.</p>
+				</notes>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Plant</subtype>
+				<text type="formattedtext">
+					<h>Location</h>
+					<p>Forests and Underdark/Caves</p>
+					<h>Description/Effect</h>
+					<p>Wound-powder drug, made from stalks of Abyssal plants. Initial +1 bonus to all ability scores along with intense pain for 1d8 minutes. Second use grants a +2 bonus to all ability scores and excruciating pain that causes disadvantage on checks and saves of all kinds for 2d8 minutes. Third use causes the possibility of addiction (DC 20 Constitution Save) and a -3 to all ability scores and pain that renders the user incapable of doing anything and lowers movement speed to 1 foot for 3d8 hours. As long as the user is addicted and does not have access to more Luhix, they will take a -5 penalty to all checks and movement speed will be halved as they are too lethargic to do anything of importance.</p>
+				</text>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0</weight>
+			</id-00021>
+			<id-00022>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<cost type="string">1 GP</cost>
+				<count type="number">5</count>
+				<description type="formattedtext">
+					<p>A leaf that, when ingested, remedies mental ailments. The taste, however, is <i>extremely </i>sour, causing most to throw-up immediately.</p>
+				</description>
+				<location type="string">Herb Pouch</location>
+				<locked type="number">1</locked>
+				<name type="string">Box of Detoxleaf</name>
+				<rarity type="string">Uncommon</rarity>
+				<subtype type="string">Plant</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0</weight>
+			</id-00022>
+			<id-00023>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Herb Pouch</name>
+				<weight type="number">0</weight>
+			</id-00023>
+			<id-00024>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<cost type="string">1 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Knife (Small)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">0.25</weight>
+			</id-00024>
+			<id-00025>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<cost type="string">5 sp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Belt</location>
+				<locked type="number">1</locked>
+				<name type="string">Clay Pouch</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">1</weight>
+			</id-00025>
+			<id-00026>
+				<attune type="number">0</attune>
+				<carried type="number">2</carried>
+				<count type="number">1</count>
+				<name type="string">Stone-poison gland</name>
+				<weight type="number">0</weight>
+			</id-00026>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -895,7 +1027,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -947,7 +1078,7 @@
 						<type type="string">damage</type>
 					</id-00002>
 				</actions>
-				<cast type="number">1</cast>
+				<cast type="number">0</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V, S</components>
 				<description type="formattedtext">
@@ -1034,7 +1165,7 @@
 			<id-00005>
 				<actions>
 				</actions>
-				<cast type="number">2</cast>
+				<cast type="number">1</cast>
 				<description type="formattedtext">
 					<linklist>
 						<link class="reference_classfeature" recordname="class.promonk.features.id-00024@Incarnate-5eExpansion">Ki</link>
@@ -1044,7 +1175,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">Ki</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">4</prepared>
 				<ritual type="number">0</ritual>
 				<source type="string">Monk - Class Ability</source>
 				<usesperiod type="string">enc</usesperiod>
@@ -1231,6 +1362,12 @@
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
+					<id-00002>
+						<label type="string">Darkvision 60ft</label>
+						<order type="number">3</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00002>
 					<id-00003>
 						<heallist>
 							<id-00001>
@@ -1242,6 +1379,11 @@
 						<order type="number">2</order>
 						<type type="string">heal</type>
 					</id-00003>
+					<id-00004>
+						<label type="string">Stealthed 18</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00004>
 				</actions>
 				<cast type="number">0</cast>
 				<level type="number">0</level>
@@ -1272,6 +1414,7 @@
 						<durmod type="number">1</durmod>
 						<label type="string">Dodge</label>
 						<order type="number">1</order>
+						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
@@ -1510,7 +1653,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00004_token</token>
+		<token type="token">portrait_id-00013_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1582,6 +1725,7 @@
 		</traitlist>
 		<weaponlist>
 			<id-00001>
+				<ammo type="number">1</ammo>
 				<attackbonus type="number">0</attackbonus>
 				<attackstat type="string">dexterity</attackstat>
 				<carried type="number">2</carried>
@@ -1590,6 +1734,7 @@
 						<bonus type="number">0</bonus>
 						<dice type="dice">d4</dice>
 						<stat type="string">dexterity</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing</type>
 					</id-00001>
 				</damagelist>

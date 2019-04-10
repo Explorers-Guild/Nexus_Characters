@@ -62,8 +62,8 @@
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
 				<hddie type="dice">d6</hddie>
-				<hdused type="number">2</hdused>
-				<level type="number">3</level>
+				<hdused type="number">0</hdused>
+				<level type="number">4</level>
 				<name type="string">Wizard</name>
 				<shortcut type="windowreference">
 					<class>reference_class</class>
@@ -73,7 +73,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">10341</amount>
+				<amount type="number">10021</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -112,11 +112,11 @@
 			<encumbered type="number">40</encumbered>
 			<encumberedheavy type="number">80</encumberedheavy>
 			<liftpushdrag type="number">240</liftpushdrag>
-			<load type="number">34.74</load>
+			<load type="number">59.64</load>
 			<max type="number">120</max>
 		</encumbrance>
-		<exp type="number">383</exp>
-		<expneeded type="number">400</expneeded>
+		<exp type="number">459</exp>
+		<expneeded type="number">500</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -128,6 +128,25 @@
 					<p>If you come across a spell in written form, such as a magical spell scroll or a wizard's spellbook, you might be able to add it to your ritual book. The spell must be on the spell list for the class you chose, the spell's level can be no higher than half your level (rounded up), and it must have the ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it.</p>
 				</text>
 			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Wild Speech</name>
+				<text type="formattedtext">
+					<h>Wild Speech</h>
+					<p>Prerequisites: Intelligence, Wisdom, or Charisma 13 or higher</p>
+					<p>You speak with the tongue of men and beasts.</p>
+					<p>Benefit:</p>
+					<list>
+						<li>Even when in a form in which you cannot naturally speak (such as an animal), you are able to speak normally in any language you know. This allows you to cast spells with verbal components, speak command words, and activate spell completion and spell trigger items.</li>
+						<li>This does not give you the ability to cast spells requiring somatic or material components unless you are also able to provide them in your current form.</li>
+						<li>You gain the ability to cast Speak with Animals at will, ignoring somatic components.</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.speakwithanimals@Incarnate-5eExpansion">Speak with Animals</link>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Wild_Speech_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00002>
 		</featlist>
 		<featurelist>
 			<id-00001>
@@ -297,6 +316,16 @@
 					<p>You cannot see the weave of the universe as of yet, but you have learned how to use your powers in the physical world. Starting at the 2nd level, as an action, you can sew people or objects to other people, objects, walls, or the ground. The objects and creatures must be within 30 feet of you and each other. The ties last for one minute. The targets make a Dexterity saving throw against your spell save DC or are restrained. If you choose to target two creatures, only one needs to succeed on the saving throw. At the end of the restrained creature's turn they may make a strength saving throw against your spell save DC to escape. You can use this feature a number of times equal to your spellcasting modifier (minimum of 1).</p>
 				</text>
 			</id-00010>
+			<id-00011>
+				<level type="number">4</level>
+				<locked type="number">1</locked>
+				<name type="string">Ability Score Improvement</name>
+				<source type="string">Wizard</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+				</text>
+			</id-00011>
 		</featurelist>
 		<flaws type="string">I'm always worried people are not properly clothed.</flaws>
 		<gender type="string">Male</gender>
@@ -307,7 +336,7 @@
 			<deathsavefail type="number">0</deathsavefail>
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
-			<total type="number">21</total>
+			<total type="number">26</total>
 			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Honest work for honest pay</ideals>
@@ -330,7 +359,7 @@
 				<isidentified type="number">1</isidentified>
 				<location type="string">Body</location>
 				<locked type="number">1</locked>
-				<name type="string">Clothes, Common</name>
+				<name type="string">Clothes, CommonOhAt least Whisman is consistent he said he would turn them in the bedrolls at that point was just pop the eye out for you with five-minute break because Levi has to stop the dog's house will my character is experiencing the joys of being Dr. Doolittle in a setting that is its movies well at least my character actually gave the goats a chance I know I'm just saying my character gave him a chance because</name>
 				<subtype type="string">Standard</subtype>
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">3</weight>
@@ -906,6 +935,7 @@
 				<weight type="number">0.3</weight>
 			</id-00030>
 			<id-00031>
+				<attune type="number">0</attune>
 				<carried type="number">1</carried>
 				<count type="number">3</count>
 				<location type="string">Belt</location>
@@ -913,9 +943,10 @@
 				<weight type="number">3</weight>
 			</id-00031>
 			<id-00032>
+				<attune type="number">0</attune>
 				<carried type="number">0</carried>
 				<cost type="string">101 - 500 gp</cost>
-				<count type="number">1</count>
+				<count type="number">2</count>
 				<description type="formattedtext">
 					<h>Description</h>
 					<linklist>
@@ -956,7 +987,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">300 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -987,6 +1018,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus room</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Dominate Person</name>
 				<nonid_name type="string">Scroll</nonid_name>
@@ -999,7 +1031,7 @@
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">5 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1015,6 +1047,7 @@
 				</description>
 				<isidentified type="number">1</isidentified>
 				<istemplate type="number">0</istemplate>
+				<location type="string">Bag of Holding</location>
 				<locked type="number">1</locked>
 				<name type="string">Leatherworker's Tools</name>
 				<subtype type="string">Artisan's Tool</subtype>
@@ -1023,8 +1056,9 @@
 			</id-00034>
 			<id-00035>
 				<ac type="number">0</ac>
+				<attune type="number">0</attune>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">150 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -1055,6 +1089,7 @@
 					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
 				</description>
 				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus room</location>
 				<locked type="number">1</locked>
 				<name type="string">Scroll of Slow</name>
 				<nonid_name type="string">Scroll</nonid_name>
@@ -1063,6 +1098,298 @@
 				<type type="string">Scroll</type>
 				<weight type="number">0.3</weight>
 			</id-00035>
+			<id-00036>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.blight@Incarnate-5eExpansion">Blight</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>Rare</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus room</location>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Blight</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Fine Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00036>
+			<id-00037>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">2</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.dimensiondoor@Incarnate-5eExpansion">Dimension Door</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>Rare</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus room</location>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Dimension Door</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Fine Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00037>
+			<id-00038>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>A White and Gold Armband With a high military rank on it</p>
+				</description>
+				<locked type="number">1</locked>
+				<name type="string">Armband of the White Jade Elixer</name>
+				<weight type="number">0</weight>
+			</id-00038>
+			<id-00039>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">300 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Attuned</location>
+				<locked type="number">1</locked>
+				<name type="string">Goggles of Night</name>
+				<nonid_name type="string">Crystal Lenses</nonid_name>
+				<nonidentified type="string">Two crystal lenses bound together with a little bit of wire.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">0.5</weight>
+			</id-00039>
+			<id-00040>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">150 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.protectionfromenergy@Incarnate-5eExpansion">Protection from Energy</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>Uncommon</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus room</location>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Protection from Energy</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00040>
+			<id-00041>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">200 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.confusion@Incarnate-5eExpansion">Confusion</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>4th</td>
+							<td>Rare</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus room</location>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Confusion</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Fine Scroll</nonidentified>
+				<rarity type="string">Rare</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00041>
+			<id-00042>
+				<ac type="number">0</ac>
+				<attune type="number">0</attune>
+				<bonus type="number">0</bonus>
+				<carried type="number">0</carried>
+				<cost type="string">150 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Linked Spell</h>
+					<linklist>
+						<link class="power" recordname="spell.haste@Incarnate-5eExpansion">Haste</link>
+					</linklist>
+					<h>Description</h>
+					<p>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components.</p>
+					<p>Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.</p>
+					<p>If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.</p>
+					<p>The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.</p>
+					<p>Spell Scroll</p>
+					<table>
+						<tr>
+							<td>Spell Level</td>
+							<td>Rarity</td>
+							<td>Save DC</td>
+							<td>Attack Bonus</td>
+						</tr>
+						<tr>
+							<td>3rd</td>
+							<td>Uncommon</td>
+							<td>15</td>
+							<td>+7</td>
+						</tr>
+					</table>
+					<p>A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<location type="string">Nexus room</location>
+				<locked type="number">1</locked>
+				<name type="string">Scroll of Haste</name>
+				<nonid_name type="string">Scroll</nonid_name>
+				<nonidentified type="string">Scroll</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Scroll</type>
+				<weight type="number">0.3</weight>
+			</id-00042>
+			<id-00043>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Body</location>
+				<name type="string">Attuned</name>
+				<weight type="number">0</weight>
+			</id-00043>
+			<id-00044>
+				<attune type="number">0</attune>
+				<carried type="number">0</carried>
+				<count type="number">1</count>
+				<location type="string">Bag of Holding</location>
+				<name type="string">Brass brazier</name>
+				<weight type="number">1</weight>
+			</id-00044>
+			<id-00045>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<location type="string">Bag of Holding</location>
+				<name type="string">Pristine Wolf Pelt Bedroll</name>
+				<weight type="number">10</weight>
+			</id-00045>
+			<id-00046>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">2</count>
+				<location type="string">Bag of Holding</location>
+				<name type="string">Fine Goat bedrolls</name>
+				<weight type="number">10</weight>
+			</id-00046>
+			<id-00047>
+				<attune type="number">0</attune>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Black Robes</name>
+				<weight type="number">0</weight>
+			</id-00047>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -1075,9 +1402,9 @@
 				<name type="string">Elvish</name>
 			</id-00005>
 		</languagelist>
-		<level type="number">3</level>
+		<level type="number">4</level>
 		<name type="string">Wiz'Men John Weaver</name>
-		<notes type="string">Wiz'men grew up in the family business of being a Seamstress but as time went on he was able to see the magic weave more and more.\nwhen he was 5 he caused a fire by pulling a string in the weave and thais how his family found out he was a spell caster.\nthankfully there was a local wizard that was willing to teach him and the more he leand from the family business and the wizard the stronger he became.\n\nEncountered: gold Dragon\n\nFaught\\killed: 1 greay Ooze, many shadows, one Wraith, 4 Zombies, Elemental Locus, \n</notes>
+		<notes type="string">Would that get both of themOkayREA now what traces for utilityOkay I'm going to use my last paradise thatThat on he was able to see the magic weave more and more.\nwhen he was 5 he caused a fire by pulling a string in the weave and thais how his family found out he was a spell caster.\nthankfully there was a local wizard that was willing to teach him and the more he leand from the family business and the wizard the stronger he became.\n\nLikes: sour food\n\nEncountered: gold Dragon\n\nFaught\\killed: 1 greay Ooze, many shadows, one Wraith, 4 Zombies, Elemental Locus, 4 Clockatrice, a few Kobolds, 1 winged kobold,\n</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -1092,16 +1419,6 @@
 			<id-00002>
 				<name type="string">Standard Actions:</name>
 			</id-00002>
-			<id-00003>
-				<atkmod type="number">0</atkmod>
-				<atkprof type="number">1</atkprof>
-				<name type="string">class</name>
-				<prepared type="number">0</prepared>
-				<savemod type="number">0</savemod>
-				<saveprof type="number">1</saveprof>
-				<stat type="string">intelligence</stat>
-				<uses type="number">0</uses>
-			</id-00003>
 			<id-00004>
 				<atkmod type="number">0</atkmod>
 				<atkprof type="number">1</atkprof>
@@ -1112,6 +1429,9 @@
 				<stat type="string">intelligence</stat>
 				<uses type="number">0</uses>
 			</id-00004>
+			<id-00005>
+				<name type="string">Class</name>
+			</id-00005>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1152,11 +1472,11 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">0</used>
+				<used type="number">3</used>
 			</spellslots1>
 			<spellslots2>
-				<max type="number">2</max>
-				<used type="number">0</used>
+				<max type="number">3</max>
+				<used type="number">3</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">0</max>
@@ -1191,41 +1511,23 @@
 		<powers>
 			<id-00001>
 				<actions>
-					<id-00001>
-						<onmissdamage type="string">half</onmissdamage>
-						<order type="number">1</order>
-						<savetype type="string">intelligence</savetype>
-						<type type="string">cast</type>
-					</id-00001>
-					<id-00002>
-						<damagelist>
-							<id-00001>
-								<bonus type="number">0</bonus>
-								<dice type="dice">d6,d6,d6,d6,d6,d6,d6,d6</dice>
-								<type type="string">psychic</type>
-							</id-00001>
-						</damagelist>
-						<order type="number">2</order>
-						<type type="string">damage</type>
-					</id-00002>
 				</actions>
 				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S</components>
+				<castingtime type="string">1 hour</castingtime>
+				<components type="string">V, S, M (10 GP worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier)</components>
 				<description type="formattedtext">
-					<p>You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes 8d6 psychic damage on a failed save, or half as much damage on a successful one.</p>
-					<p>After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a d6 and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+					<p>You gain the service of a familiar, a spirit that takes an animal form you choose: <b>bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel </b>. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast. Your familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal. When the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again. While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses. As an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you. You can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature. Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll.</p>
 				</description>
 				<duration type="string">Instantaneous</duration>
-				<group type="string">Boon</group>
-				<level type="number">5</level>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Synaptic Static</name>
+				<name type="string">Find Familiar</name>
 				<prepared type="number">0</prepared>
-				<range type="string">120 feet</range>
-				<ritual type="number">0</ritual>
-				<school type="string">Enchantment</school>
-				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+				<range type="string">10 feet</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Wizard</source>
 			</id-00001>
 			<id-00002>
 				<actions>
@@ -1285,8 +1587,10 @@
 			<id-00004>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<atktype type="string">ranged</atktype>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<type type="string">cast</type>
 					</id-00001>
 					<id-00002>
@@ -1433,6 +1737,32 @@
 				<school type="string">Evocation</school>
 				<source type="string">Sorcerer, Wizard</source>
 			</id-00008>
+			<id-00009>
+				<actions>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a pinch of soot and salt)</components>
+				<description type="formattedtext">
+					<h>Sound</h>
+					<linklist>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNvbXByZWhlbmQtbGFuZ3VhZ2Vz/play/">Syrinscape: Comprehension - Wizard Spells E</link>
+						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnJlYWQtbWFnaWM/play/">Syrinscape: Reading magic - Wizard Spells E</link>
+					</linklist>
+					<h>Description</h>
+					<p>For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>
+				</description>
+				<duration type="string">1 hour</duration>
+				<group type="string">Spells</group>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Comprehend Languages</name>
+				<prepared type="number">0</prepared>
+				<range type="string">Self</range>
+				<ritual type="number">1</ritual>
+				<school type="string">Divination</school>
+				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
+			</id-00009>
 			<id-00010>
 				<actions>
 					<id-00001>
@@ -1596,7 +1926,7 @@
 						<link class="reference_classfeature" recordname="class.prowizard.features.id-00057@Incarnate-5eExpansion">Starting the Stitch</link>
 					</linklist>
 				</description>
-				<group type="string">class</group>
+				<group type="string">Class</group>
 				<level type="number">0</level>
 				<locked type="number">0</locked>
 				<name type="string">Starting the Stitch</name>
@@ -1604,32 +1934,6 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Wizard - Class Ability</source>
 			</id-00018>
-			<id-00021>
-				<actions>
-				</actions>
-				<cast type="number">0</cast>
-				<castingtime type="string">1 action</castingtime>
-				<components type="string">V, S, M (a pinch of soot and salt)</components>
-				<description type="formattedtext">
-					<h>Sound</h>
-					<linklist>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OmNvbXByZWhlbmQtbGFuZ3VhZ2Vz/play/">Syrinscape: Comprehension - Wizard Spells E</link>
-						<link class="url" recordname="syrinscape-fantasy:elements/ZXpyZW4tbWFsZS13aXphcmQ6OnJlYWQtbWFnaWM/play/">Syrinscape: Reading magic - Wizard Spells E</link>
-					</linklist>
-					<h>Description</h>
-					<p>For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>
-				</description>
-				<duration type="string">1 hour</duration>
-				<group type="string">Spells</group>
-				<level type="number">1</level>
-				<locked type="number">1</locked>
-				<name type="string">Comprehend Languages</name>
-				<prepared type="number">0</prepared>
-				<range type="string">Self</range>
-				<ritual type="number">1</ritual>
-				<school type="string">Divination</school>
-				<source type="string">Bard, Sorcerer, Warlock, Wizard</source>
-			</id-00021>
 		</powers>
 		<profbonus type="number">2</profbonus>
 		<proficiencylist>
@@ -1811,7 +2115,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00001_token</token>
+		<token type="token">portrait_id-00002_token</token>
 		<traitlist>
 			<id-00003>
 				<locked type="number">1</locked>
