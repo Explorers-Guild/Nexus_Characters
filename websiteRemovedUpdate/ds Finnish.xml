@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root version="3.3" release="8|CoreRPG:4">
+	<character>
+		<abilities>
+			<charisma>
+				<bonus type="number">-1</bonus>
+				<save type="number">-1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">8</score>
+			</charisma>
+			<constitution>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">13</score>
+			</constitution>
+			<dexterity>
+				<bonus type="number">1</bonus>
+				<save type="number">1</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">12</score>
+			</dexterity>
+			<intelligence>
+				<bonus type="number">0</bonus>
+				<save type="number">0</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">0</saveprof>
+				<score type="number">11</score>
+			</intelligence>
+			<strength>
+				<bonus type="number">3</bonus>
+				<save type="number">5</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">1</saveprof>
+				<score type="number">17</score>
+			</strength>
+			<wisdom>
+				<bonus type="number">3</bonus>
+				<save type="number">5</save>
+				<savemodifier type="number">0</savemodifier>
+				<saveprof type="number">1</saveprof>
+				<score type="number">16</score>
+			</wisdom>
+		</abilities>
+		<adventurelist>
+		</adventurelist>
+		<age type="string">18</age>
+		<alignment type="string">Chaotic good</alignment>
+		<background type="string">Urban Bounty Hunter</background>
+		<backgroundlink type="windowreference">
+			<class>reference_background</class>
+			<recordname>reference.backgrounddata.urbanbountyhunter@D&#38;D Sword Coast Adventurer's Guide - Player's Guide</recordname>
+		</backgroundlink>
+		<bonds type="string">Someone I loved died because of I mistake I made. That will never happen again.</bonds>
+		<classes>
+			<id-00001>
+				<hddie type="dice">d10</hddie>
+				<hdused type="number">0</hdused>
+				<level type="number">3</level>
+				<name type="string">DragonSlayer</name>
+				<shortcut type="windowreference">
+					<class>reference_class</class>
+					<recordname>class.id-00001@Dragonslayer class</recordname>
+				</shortcut>
+			</id-00001>
+		</classes>
+		<coins>
+			<slot1>
+				<amount type="number">0</amount>
+				<name type="string">PP</name>
+			</slot1>
+			<slot2>
+				<amount type="number">0</amount>
+				<name type="string">EP</name>
+			</slot2>
+			<slot3>
+				<amount type="number">56</amount>
+				<name type="string">GP</name>
+			</slot3>
+			<slot4>
+				<amount type="number">50</amount>
+				<name type="string">SP</name>
+			</slot4>
+			<slot5>
+				<amount type="number">46</amount>
+				<name type="string">CP</name>
+			</slot5>
+			<slot6>
+				<amount type="number">0</amount>
+			</slot6>
+		</coins>
+		<defenses>
+			<ac>
+				<armor type="number">3</armor>
+				<disstealth type="number">0</disstealth>
+				<misc type="number">0</misc>
+				<prof type="number">1</prof>
+				<shield type="number">0</shield>
+				<stat2 type="string">wisdom</stat2>
+				<temporary type="number">0</temporary>
+				<total type="number">17</total>
+			</ac>
+			<special type="string">Elemental Resistance</special>
+		</defenses>
+		<deity type="string">Dragons</deity>
+		<encumbrance>
+			<encumbered type="number">85</encumbered>
+			<encumberedheavy type="number">170</encumberedheavy>
+			<liftpushdrag type="number">510</liftpushdrag>
+			<load type="number">5.2</load>
+			<max type="number">255</max>
+		</encumbrance>
+		<exp type="number">352</exp>
+		<expneeded type="number">400</expneeded>
+		<featlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Crippling Striker</name>
+				<text type="formattedtext">
+					<h>Crippling Striker</h>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.cripplingstriker@Incarnate-5eExpansion">Crippling Striker</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Strength 15 or higher</p>
+					<p>You can disable your enemies, or break them.</p>
+					<list>
+						<li>Increase your Strength score by 1, to a maximum of 20.</li>
+						<li>Your unarmed strikes score a critical hit on a 19-20. If they already do, increase critical hit range by 1.</li>
+						<li>Using your bonus action, you must Clearly Call a Targets limb before making the attack(s). The target must have the specified anatomy for this to have any effect. The effects last until either the end of a specified time limit or the creature heals at least 10 Hit Points.</li>
+					</list>
+					<p>Target <b>Arm </b>: It makes a Strength saving throw (DC 8+your Strength modifier+your proficiency), on a failed save they drop a held item. If both arms are disabled, it has disadvantage on attack rolls and it cannot add its Strength modifier to attack or damage rolls.</p>
+					<p>Target <b>Leg </b>: It makes a Dexterity saving throw (DC 8+your Strength modifier+your proficiency), on a fail their speed is reduced by half. If all legs are disabled it has a speed of 0, falls Prone, and cannot benefit from any buffs to movement speed.</p>
+					<p>Target <b>Head </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), if it fails it is Stunned for 1 round. This does not effect a creature wearing a helmet or some form of head protection.</p>
+					<p>Target <b>Torso </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), on a fail it has disadvantage on Strength and Constitution checks, saving throws, and attack rolls for 1 round.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Crippling_Striker_(5e_Feat)">Online copy</link>
+					</linklist>
+				</text>
+			</id-00001>
+		</featlist>
+		<featurelist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Ear to the Ground</name>
+				<source type="string">Urban Bounty Hunter</source>
+				<text type="formattedtext">
+					<p>You are in frequent contact with people in the segment of society that your chosen quarries move through. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area.</p>
+				</text>
+			</id-00001>
+			<id-00002>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Keen senses</name>
+				<source type="string">DragonSlayer</source>
+			</id-00002>
+			<id-00003>
+				<locked type="number">1</locked>
+				<name type="string">DragonSlayer of Acid</name>
+				<source type="string">DragonSlayer</source>
+				<text type="formattedtext">
+					<p>Your powers awaken withing you revealing the training you had with your teacher. Dragonslayer magic flows on you and poison starts to been created on your body but does not harm you.</p>
+				</text>
+			</id-00003>
+			<id-00004>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Resistance</name>
+				<source type="string">DragonSlayer</source>
+				<text type="formattedtext">
+					<p>You are resistance to damaga dealt to you of your same magical element. This feature upgrades to inmunity at level 12.</p>
+				</text>
+			</id-00004>
+			<id-00005>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Dragonslayer Magic Point</name>
+				<source type="string">DragonSlayer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Starting at 3rd level, your magic allows you to harness the elemental magic. Your access to this power is represented by a number of Dragonslayer magic points. You earn two levels per dragonslayer level. Once you use a magic point it will be unavailable until you finish a short or long rest.</p>
+				</text>
+			</id-00005>
+			<id-00006>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Fist</name>
+				<source type="string">DragonSlayer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Given your Dragonslayer's Magic you surround your fists in the element given to you. Add 1d6 elemental damage to your unarmed strikes. This feature will cost you 2 Dragonslayer Magic points.This lasts for a minute.</p>
+				</text>
+			</id-00006>
+			<id-00007>
+				<level type="number">3</level>
+				<locked type="number">1</locked>
+				<name type="string">Elemental healer fist</name>
+				<source type="string">DragonSlayer</source>
+			</id-00007>
+			<id-00008>
+				<level type="number">1</level>
+				<locked type="number">1</locked>
+				<name type="string">Draconic Resilience</name>
+				<source type="string">DragonSlayer</source>
+				<specializationchoice type="number">0</specializationchoice>
+				<text type="formattedtext">
+					<p>Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + Dexterity modifier.</p>
+				</text>
+			</id-00008>
+		</featurelist>
+		<flaws type="string">If there's a plan, I'll forget it. If I don't forget it, I'll ignore it.</flaws>
+		<gender type="string">Female</gender>
+		<height type="string">5.6 ft</height>
+		<hp>
+			<deathsavefail type="number">0</deathsavefail>
+			<deathsavesuccess type="number">0</deathsavesuccess>
+			<temporary type="number">0</temporary>
+			<total type="number">26</total>
+			<wounds type="number">14</wounds>
+		</hp>
+		<ideals type="string">Redemption. There's a spark of good in everyone. Freedom. Chains are meant to be broken, as are those who would forge them. </ideals>
+		<initiative>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
+			<total type="number">1</total>
+		</initiative>
+		<inventorylist>
+			<id-00001>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">25 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00262@Incarnate-5eExpansion">Thieves' Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00064@Incarnate-5eExpansion">Rules for Using Thieves' Tools</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Thieves' Tools</name>
+				<subtype type="string">Tool</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">1</weight>
+			</id-00001>
+			<id-00002>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">1 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Skill Coding</h>
+					<linklist>
+						<link class="reference_skill" recordname="skill.id-00263@Incarnate-5eExpansion">Dice Set</link>
+						<link class="encounter" recordname="encounter.id-00032@Incarnate-5eExpansion">Rules for Using Dice Set</link>
+					</linklist>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Dice Set</name>
+				<subtype type="string">Gaming Set</subtype>
+				<type type="string">Tools</type>
+				<weight type="number">0.2</weight>
+			</id-00002>
+			<id-00003>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<name type="string">Clothes</name>
+				<weight type="number">0</weight>
+			</id-00003>
+			<id-00004>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">2,700 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This fine garment is made of black silk interwoven with faint silvery threads. While wearing it, you gain the following benefits:</p>
+					<list>
+						<li>You have resistance to poison damage.</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.typeresistancepoison@Incarnate-5eExpansion">Type Resistance (Poison)</link>
+					</linklist>
+					<list>
+						<li>You have a climbing speed equal to your walking speed.</li>
+						<li>You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</li>
+						<li>You can't be caught in webs of any sort and can move through webs as if they were difficult terrain.</li>
+						<li>You can use an action to cast the web spell (save DC 13).</li>
+					</list>
+					<linklist>
+						<link class="power" recordname="spell.web@Incarnate-5eExpansion">Web</link>
+					</linklist>
+					<p>The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Cloak of Arachnida</name>
+				<nonid_name type="string">Cloak</nonid_name>
+				<nonidentified type="string">-</nonidentified>
+				<rarity type="string">very rare (requires attunement)</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">4</weight>
+			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>This glass bottle contains a large spider suspended in amber liquid.</p>
+					<p>Upon drinking the Spider Wine, roll a DC 15 Constitution saving throw. On a success you are granted resistance to poison for 1 hour. On an 7 or lower, you are poisoned for 1 hour.</p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Spider Wine</name>
+				<rarity type="string">Rare (Contraband)</rarity>
+				<subtype type="string">Alcohol</subtype>
+				<type type="string">Sustance</type>
+				<weight type="number">0</weight>
+			</id-00005>
+		</inventorylist>
+		<languagelist>
+			<id-00001>
+				<name type="string">Common</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Draconic</name>
+			</id-00002>
+		</languagelist>
+		<level type="number">3</level>
+		<name type="string">Finn</name>
+		<perception type="number">15</perception>
+		<perceptionmodifier type="number">0</perceptionmodifier>
+		<personalitytraits type="string">I don't pay attention to the risks in a situation. Never tell me the odds.The best way to get me to do something is to tell me I can't do it.</personalitytraits>
+		<powergroup>
+			<id-00002>
+				<name type="string">Feats</name>
+			</id-00002>
+			<id-00003>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Resistances</name>
+				<saveprof type="number">1</saveprof>
+			</id-00003>
+			<id-00004>
+				<name type="string">Effect</name>
+			</id-00004>
+			<id-00005>
+				<name type="string">DragonPoint</name>
+			</id-00005>
+		</powergroup>
+		<powermeta>
+			<pactmagicslots1>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots1>
+			<pactmagicslots2>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots2>
+			<pactmagicslots3>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots3>
+			<pactmagicslots4>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots4>
+			<pactmagicslots5>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots5>
+			<pactmagicslots6>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots6>
+			<pactmagicslots7>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots7>
+			<pactmagicslots8>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots8>
+			<pactmagicslots9>
+				<max type="number">0</max>
+				<used type="number">0</used>
+			</pactmagicslots9>
+			<spellslots1>
+				<max type="number">0</max>
+			</spellslots1>
+			<spellslots2>
+				<max type="number">0</max>
+			</spellslots2>
+			<spellslots3>
+				<max type="number">0</max>
+			</spellslots3>
+			<spellslots4>
+				<max type="number">0</max>
+			</spellslots4>
+			<spellslots5>
+				<max type="number">0</max>
+			</spellslots5>
+			<spellslots6>
+				<max type="number">0</max>
+			</spellslots6>
+			<spellslots7>
+				<max type="number">0</max>
+			</spellslots7>
+			<spellslots8>
+				<max type="number">0</max>
+			</spellslots8>
+			<spellslots9>
+				<max type="number">0</max>
+			</spellslots9>
+		</powermeta>
+		<powermode type="string">standard</powermode>
+		<powers>
+			<id-00001>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d8</dice>
+								<stat type="string">wisdom</stat>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</heallist>
+						<healtargeting type="string">self</healtargeting>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>As a Dragonslayer when you choose your elemental specialization you can eat the element you are trained in and recover 1d8 + your Wisdom modifier. Also recover one dragonslayer magic point</p>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Eating the elements</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00001>
+			<id-00002>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">minute</durunit>
+						<label type="string">DMG: 1d6 acid</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>Given your Dragonslayer's Magic you surround your fists in the element given to you. Add 1d6 elemental damage to your unarmed strikes. This feature will cost you 2 Dragonslayer Magic points.This lasts for a minute.</p>
+				</description>
+				<group type="string">Effect</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Fist</name>
+				<prepared type="number">0</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00002>
+			<id-00003>
+				<actions>
+				</actions>
+				<cast type="number">2</cast>
+				<description type="formattedtext">
+					<p>Starting at 3rd level, your magic allows you to harness the elemental magic. Your access to this power is represented by a number of Dragonslayer magic points. You earn two levels per dragonslayer level. Once you use a magic point it will be unavailable until you finish a short or long rest.</p>
+				</description>
+				<group type="string">DragonPoint</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Dragonslayer Magic Point</name>
+				<prepared type="number">6</prepared>
+				<specializationchoice type="number">0</specializationchoice>
+			</id-00003>
+			<id-00004>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: acid</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p>You are resistance to damaga dealt to you of your same magical element. This feature upgrades to inmunity at level 12.</p>
+				</description>
+				<group type="string">Resistances</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Elemental Resistance</name>
+				<prepared type="number">0</prepared>
+			</id-00004>
+			<id-00005>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: thunder</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Resistances</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Thunder)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00005>
+			<id-00006>
+				<actions>
+					<id-00001>
+						<label type="string">Prone</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Stunned</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00004>
+						<atkprof type="number">1</atkprof>
+						<order type="number">3</order>
+						<savedcmod type="number">14</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savetype type="string">base</savetype>
+						<type type="string">cast</type>
+					</id-00004>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Crippling Striker</h>
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.cripplingstriker@Incarnate-5eExpansion">Crippling Striker</link>
+					</linklist>
+					<h>Description</h>
+					<p>Prerequisites: Strength 15 or higher</p>
+					<p>You can disable your enemies, or break them.</p>
+					<list>
+						<li>Increase your Strength score by 1, to a maximum of 20.</li>
+						<li>Your unarmed strikes score a critical hit on a 19-20. If they already do, increase critical hit range by 1.</li>
+						<li>Using your bonus action, you must Clearly Call a Targets limb before making the attack(s). The target must have the specified anatomy for this to have any effect. The effects last until either the end of a specified time limit or the creature heals at least 10 Hit Points.</li>
+					</list>
+					<p>Target <b>Arm </b>: It makes a Strength saving throw (DC 8+your Strength modifier+your proficiency), on a failed save they drop a held item. If both arms are disabled, it has disadvantage on attack rolls and it cannot add its Strength modifier to attack or damage rolls.</p>
+					<p>Target <b>Leg </b>: It makes a Dexterity saving throw (DC 8+your Strength modifier+your proficiency), on a fail their speed is reduced by half. If all legs are disabled it has a speed of 0, falls Prone, and cannot benefit from any buffs to movement speed.</p>
+					<p>Target <b>Head </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), if it fails it is Stunned for 1 round. This does not effect a creature wearing a helmet or some form of head protection.</p>
+					<p>Target <b>Torso </b>: It makes a Constitution saving throw (DC 8+your Strength modifier+your proficiency), on a fail it has disadvantage on Strength and Constitution checks, saving throws, and attack rolls for 1 round.</p>
+					<linklist>
+						<link class="url" recordname="http://www.dandwiki.com/wiki/Crippling_Striker_(5e_Feat)">Online copy</link>
+					</linklist>
+				</description>
+				<group type="string">Feats</group>
+				<locked type="number">1</locked>
+				<name type="string">Crippling Striker</name>
+				<prepared type="number">0</prepared>
+			</id-00006>
+			<id-00008>
+				<actions>
+					<id-00001>
+						<durmod type="number">1</durmod>
+						<durunit type="string">day</durunit>
+						<label type="string">RESIST: poison</label>
+						<order type="number">1</order>
+						<targeting type="string">self</targeting>
+						<type type="string">effect</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<group type="string">Resistances</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Type Resistance (Poison)</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">5e Rule Coding</source>
+			</id-00008>
+			<id-00010>
+				<actions>
+					<id-00001>
+						<atkprof type="number">1</atkprof>
+						<order type="number">1</order>
+						<savedcmod type="number">3</savedcmod>
+						<savedcprof type="number">1</savedcprof>
+						<savemagic type="number">1</savemagic>
+						<savetype type="string">dexterity</savetype>
+						<type type="string">cast</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<durunit type="string">hour</durunit>
+						<label type="string">Web; Restrained; (C)</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">0</bonus>
+								<dice type="dice">d4,d4</dice>
+								<type type="string">fire</type>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+				</actions>
+				<cast type="number">0</cast>
+				<castingtime type="string">1 action</castingtime>
+				<components type="string">V, S, M (a bit of spiderweb)</components>
+				<description type="formattedtext">
+					<p>You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20- foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area. If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet. Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free. A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained. The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.</p>
+				</description>
+				<duration type="string">Concentration, up to 1 hour</duration>
+				<group type="string">Resistances</group>
+				<level type="number">2</level>
+				<locked type="number">1</locked>
+				<name type="string">Web</name>
+				<prepared type="number">0</prepared>
+				<range type="string">60 feet</range>
+				<ritual type="number">0</ritual>
+				<school type="string">Conjuration</school>
+				<source type="string">Sorcerer, Wizard</source>
+			</id-00010>
+		</powers>
+		<profbonus type="number">2</profbonus>
+		<proficiencylist>
+			<id-00001>
+				<name type="string">Tool: Choose two from among one type of gaming set, one musical instrument, and thieves' tools</name>
+			</id-00001>
+			<id-00002>
+				<name type="string">Weapon: Simple weapons</name>
+			</id-00002>
+			<id-00003>
+				<name type="string">Armor: Light Armor, Shields</name>
+			</id-00003>
+		</proficiencylist>
+		<race type="string">Human-Variant</race>
+		<racelink type="windowreference">
+			<class>reference_race</class>
+			<recordname>reference.racedata.human_variant@DD PHB Deluxe</recordname>
+		</racelink>
+		<senses type="string">Keen senses</senses>
+		<size type="string">Medium</size>
+		<skilllist>
+			<id-00001>
+				<misc type="number">0</misc>
+				<name type="string">Perception</name>
+				<prof type="number">1</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">5</total>
+			</id-00001>
+			<id-00002>
+				<misc type="number">0</misc>
+				<name type="string">Insight</name>
+				<prof type="number">1</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">5</total>
+			</id-00002>
+			<id-00003>
+				<misc type="number">0</misc>
+				<name type="string">Persuasion</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">-1</total>
+			</id-00003>
+			<id-00004>
+				<misc type="number">0</misc>
+				<name type="string">Animal Handling</name>
+				<prof type="number">1</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">5</total>
+			</id-00004>
+			<id-00005>
+				<misc type="number">0</misc>
+				<name type="string">Stealth</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">3</total>
+			</id-00005>
+			<id-00006>
+				<misc type="number">0</misc>
+				<name type="string">Survival</name>
+				<prof type="number">1</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">5</total>
+			</id-00006>
+			<id-00007>
+				<misc type="number">0</misc>
+				<name type="string">Arcana</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00007>
+			<id-00008>
+				<misc type="number">0</misc>
+				<name type="string">Nature</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00008>
+			<id-00009>
+				<misc type="number">0</misc>
+				<name type="string">Medicine</name>
+				<prof type="number">0</prof>
+				<stat type="string">wisdom</stat>
+				<total type="number">3</total>
+			</id-00009>
+			<id-00010>
+				<misc type="number">0</misc>
+				<name type="string">Performance</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">-1</total>
+			</id-00010>
+			<id-00011>
+				<misc type="number">0</misc>
+				<name type="string">Acrobatics</name>
+				<prof type="number">0</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">1</total>
+			</id-00011>
+			<id-00012>
+				<misc type="number">0</misc>
+				<name type="string">Religion</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00012>
+			<id-00013>
+				<misc type="number">0</misc>
+				<name type="string">Athletics</name>
+				<prof type="number">1</prof>
+				<stat type="string">strength</stat>
+				<total type="number">5</total>
+			</id-00013>
+			<id-00014>
+				<misc type="number">0</misc>
+				<name type="string">Sleight of Hand</name>
+				<prof type="number">0</prof>
+				<stat type="string">dexterity</stat>
+				<total type="number">1</total>
+			</id-00014>
+			<id-00015>
+				<misc type="number">0</misc>
+				<name type="string">Intimidation</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">-1</total>
+			</id-00015>
+			<id-00016>
+				<misc type="number">0</misc>
+				<name type="string">Deception</name>
+				<prof type="number">0</prof>
+				<stat type="string">charisma</stat>
+				<total type="number">-1</total>
+			</id-00016>
+			<id-00017>
+				<misc type="number">0</misc>
+				<name type="string">Investigation</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00017>
+			<id-00018>
+				<misc type="number">0</misc>
+				<name type="string">History</name>
+				<prof type="number">0</prof>
+				<stat type="string">intelligence</stat>
+				<total type="number">0</total>
+			</id-00018>
+			<id-00019>
+				<misc type="number">0</misc>
+				<name type="string">Thieves' Tools</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00262@Incarnate-5eExpansion">Thieves' Tools</link>
+					</linklist>
+					<h>Description</h>
+					<p>This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</p>
+					<linklist>
+						<link class="encounter" recordname="encounter.id-00064@Incarnate-5eExpansion">Rules for Using Thieves' Tools</link>
+					</linklist>
+				</text>
+				<total type="number">3</total>
+			</id-00019>
+			<id-00020>
+				<misc type="number">0</misc>
+				<name type="string">Dice Set</name>
+				<prof type="number">1</prof>
+				<stat type="string">dexterity</stat>
+				<text type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00263@Incarnate-5eExpansion">Dice Set</link>
+						<link class="encounter" recordname="encounter.id-00032@Incarnate-5eExpansion">Rules for Using Dice Set</link>
+					</linklist>
+				</text>
+				<total type="number">3</total>
+			</id-00020>
+		</skilllist>
+		<speed>
+			<armor type="number">0</armor>
+			<base type="number">30</base>
+			<misc type="number">0</misc>
+			<temporary type="number">0</temporary>
+			<total type="number">30</total>
+		</speed>
+		<temp>
+		</temp>
+		<token type="token">portrait_id-00002_token</token>
+		<traitlist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<name type="string">Skills</name>
+				<source type="string">Human-Variant</source>
+				<text type="formattedtext">
+					<p>You gain proficiency in one skill of your choice.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00001>
+			<id-00002>
+				<locked type="number">1</locked>
+				<name type="string">Feat</name>
+				<source type="string">Human-Variant</source>
+				<text type="formattedtext">
+					<p>You gain one feat of your choice.</p>
+				</text>
+				<type type="string">racial</type>
+			</id-00002>
+		</traitlist>
+		<weapon>
+			<critdicebonus>
+			</critdicebonus>
+			<critrange>
+				<melee type="number">19</melee>
+				<ranged type="number">20</ranged>
+			</critrange>
+		</weapon>
+		<weaponlist>
+			<id-00001>
+				<attackbonus type="number">0</attackbonus>
+				<carried type="number">1</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">0</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<maxammo type="number">0</maxammo>
+				<name type="string">Draconic punch</name>
+				<prof type="number">1</prof>
+				<properties type="string">melee</properties>
+				<shortcut type="windowreference">
+					<class></class>
+					<recordname></recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00001>
+		</weaponlist>
+		<weight type="string">90</weight>
+	</character>
+</root>
