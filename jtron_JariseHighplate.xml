@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<root version="3.3" release="8|CoreRPG:3">
+<root version="3.3" release="8|CoreRPG:4">
 	<character>
 		<abilities>
 			<charisma>
@@ -46,6 +46,28 @@
 			</wisdom>
 		</abilities>
 		<adventurelist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<magicitem type="formattedtext">
+					<linklist>
+						<link class="item" recordname="....inventorylist.id-00017">Helm of Teleportation - 900GV</link>
+					</linklist>
+				</magicitem>
+				<name type="string">00 GV</name>
+				<totalgold type="string">900</totalgold>
+			</id-00001>
+			<id-00002>
+				<date type="string">04/25 9pm UTC</date>
+				<dmname type="string">Vorew</dmname>
+				<earngold type="string">910</earngold>
+				<earnxp type="string">3605</earnxp>
+				<name type="string">04/25 9pm UTC The Throne of Bone</name>
+				<startgold type="string">900</startgold>
+				<startxp type="string">14034</startxp>
+				<text type="formattedtext">
+					<p>A man named Grigsby wanted help with some wolves on his farm. We track them north, towards a cave. Further in, we find a door with a riddling dwarven face. Beyond it, a room of armors that attacked us. Another riddle room, adorned with dragons. The final had a hole, which we decended cautiously. Flesh Golems guard the next room. Next, a dragon statue, turned to flesh by gems.</p>
+				</text>
+			</id-00002>
 		</adventurelist>
 		<age type="string">40</age>
 		<alignment type="string">Chaotic Neutral</alignment>
@@ -59,6 +81,7 @@
 			<id-00001>
 				<casterlevelinvmult type="number">0</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
+				<hdbonusWS type="number">0</hdbonusWS>
 				<hddie type="dice">d12</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">6</level>
@@ -71,7 +94,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">215</amount>
+				<amount type="number">185</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,14 +102,14 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">155</amount>
+				<amount type="number">146</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
 				<amount type="number">0</amount>
 			</slot4>
 			<slot5>
-				<amount type="number">146</amount>
+				<amount type="number">144</amount>
 				<name type="string">CP</name>
 			</slot5>
 			<slot6>
@@ -104,17 +127,16 @@
 				<temporary type="number">0</temporary>
 				<total type="number">14</total>
 			</ac>
-			<special type="string">Of Hades</special>
 		</defenses>
 		<encumbrance>
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">95.2</load>
+			<load type="number">79.2</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">634</exp>
-		<expneeded type="number">700</expneeded>
+		<exp type="number">17639</exp>
+		<expneeded type="number">23000</expneeded>
 		<featlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -130,6 +152,7 @@
 				</text>
 			</id-00001>
 			<id-00002>
+				<locked type="number">1</locked>
 				<name type="string">Mild Telekenetic</name>
 				<text type="formattedtext">
 					<p>You can apply the force of 1 pound to an object up to 15 feet away from you. This ability lasts for 10 minutes. You must finish a short or long rest before you can use this feature again.</p>
@@ -273,7 +296,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">59</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">27</wounds>
 		</hp>
 		<ideals type="string">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</ideals>
 		<initiative>
@@ -298,7 +321,7 @@
 			<id-00002>
 				<carried type="number">1</carried>
 				<cost type="string">5 sp</cost>
-				<count type="number">10</count>
+				<count type="number">8</count>
 				<description type="formattedtext">
 					<p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.</p>
 				</description>
@@ -522,7 +545,7 @@
 					</linklist>
 				</description>
 				<isidentified type="number">1</isidentified>
-				<locked type="number">0</locked>
+				<locked type="number">1</locked>
 				<name type="string">Helm of Teleportation</name>
 				<nonid_name type="string">Bronze Helm</nonid_name>
 				<nonidentified type="string">Taken from a young red dragon.</nonidentified>
@@ -532,24 +555,35 @@
 			</id-00017>
 			<id-00018>
 				<ac type="number">0</ac>
-				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
-				<cost type="string">1GP</cost>
-				<count type="number">11</count>
+				<bonus type="number">1</bonus>
+				<carried type="number">2</carried>
+				<cost type="string">910 GP</cost>
+				<count type="number">1</count>
+				<damage type="string">1d6 slashing</damage>
 				<description type="formattedtext">
-					<p>same as 1 ration.</p>
-					<p>Constitution saving throw of 14 or date 1d4 poison damage</p>
+					<h>Effect Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.celestialslayer@Incarnate-5eExpansion">Celestial Slayer</link>
+					</linklist>
+					<h>Description</h>
+					<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+					<p>When you hit an Celestial with it, the creature takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, &#34;Celestial&#34; refers to any creature with the Celestial type.</p>
 				</description>
-				<isidentified type="number">0</isidentified>
+				<isidentified type="number">1</isidentified>
+				<istemplate type="number">0</istemplate>
 				<locked type="number">1</locked>
-				<name type="string">rotten snake meat</name>
-				<nonid_name type="string">Rotten snake meat</nonid_name>
-				<weight type="number">1</weight>
+				<name type="string">Shortsword of Celestial Slaying</name>
+				<nonid_name type="string">Shortsword</nonid_name>
+				<nonidentified type="string">For when you want something longer than a dagger but shorter than a longsword the shortsword is for you.</nonidentified>
+				<properties type="string">Finesse, light, magical</properties>
+				<subtype type="string">Martial Weapons</subtype>
+				<type type="string">Weapon</type>
+				<weight type="number">2</weight>
 			</id-00018>
 			<id-00019>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<cost type="string">1,000 GV</cost>
 				<count type="number">1</count>
 				<damage type="string">1d8 necrotic, magic</damage>
@@ -605,10 +639,10 @@
 		</languagelist>
 		<level type="number">6</level>
 		<name type="string">Jarise Highplate</name>
-		<notes type="string">Log of Meals --\nRotten Snake meat - *\nDeath Elemental - 1d6 necrotic\nGoblin - *, Well Marinated\nDemon - Wisdom dropped by three and gained mild telekenetic feat, Char-Grilled\nMagma Mephit - 2d8 fire, Spicy\nGiant Wolf Spider - 2d6 poison, Crunchy, Tangy\nOgre - Chewy, Gritty\nPanther - Tender</notes>
+		<notes type="string">Log of Meals --\nRotten Snake meat - Emetic, Wine-like\nDeath Elemental - 1d6 necrotic\nGoblin - *, Well Marinated\nDemon - Wisdom dropped by three and gained mild telekenetic feat, Char-Grilled\nMagma Mephit - 2d8 fire, Spicy\nGiant Wolf Spider - 2d6 poison, Crunchy, Tangy\nOgre - Chewy, Gritty\nPanther - Tender\n*NEW*\nWolf - Hearty\nFlesh Golem - Also Emetic, Chewy</notes>
 		<perception type="number">12</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
-		<personalitytraits type="string">I enjoy being strong and like breaking things.\nI have a crude sense of humor.</personalitytraits>
+		<personalitytraits type="string">I enjoy being strong and I like breaking things.\nI have a crude sense of humor.</personalitytraits>
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
@@ -728,13 +762,13 @@
 					<id-00001>
 						<durmod type="number">1</durmod>
 						<durunit type="string">minute</durunit>
-						<label type="string">ADVCHK: strength; ADVSAV: strength; DMG: 2 melee; RESIST: bludgeoning, piercing, slashing; Immune to frightened and charmed</label>
+						<label type="string">ADVCHK: strength; ADVSAV: strength; DMG: 2 melee; RESIST: bludgeoning, piercing, slashing; IMMUNE: frightened, charmed</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">3</cast>
 				<description type="formattedtext">
 					<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p>
 					<list>
@@ -750,7 +784,7 @@
 				<level type="number">0</level>
 				<locked type="number">1</locked>
 				<name type="string">*Rage</name>
-				<prepared type="number">3</prepared>
+				<prepared type="number">4</prepared>
 				<source type="string">Barbarian</source>
 			</id-00002>
 			<id-00003>
@@ -799,7 +833,7 @@
 				<actions>
 					<id-00001>
 						<apply type="string">roll</apply>
-						<label type="string">DMG: [-STR]</label>
+						<label type="string">Offhand; DMG: [-STR]</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -850,6 +884,32 @@
 			</id-00006>
 			<id-00007>
 				<actions>
+					<id-00001>
+						<label type="string">Flanking; ADVATK</label>
+						<order type="number">1</order>
+						<type type="string">effect</type>
+					</id-00001>
+					<id-00002>
+						<durmod type="number">1</durmod>
+						<label type="string">Dodge</label>
+						<order type="number">2</order>
+						<type type="string">effect</type>
+					</id-00002>
+					<id-00003>
+						<damagelist>
+							<id-00001>
+								<bonus type="number">1</bonus>
+								<statmult type="number">1</statmult>
+							</id-00001>
+						</damagelist>
+						<order type="number">3</order>
+						<type type="string">damage</type>
+					</id-00003>
+					<id-00005>
+						<label type="string">Spare</label>
+						<order type="number">4</order>
+						<type type="string">effect</type>
+					</id-00005>
 				</actions>
 				<cast type="number">0</cast>
 				<description type="formattedtext">
@@ -857,8 +917,8 @@
 				</description>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Mild Telekenetic</name>
-				<prepared type="number">1</prepared>
+				<name type="string">Misc</name>
+				<prepared type="number">0</prepared>
 				<usesperiod type="string">enc</usesperiod>
 			</id-00007>
 			<id-00008>
@@ -874,7 +934,7 @@
 						<type type="string">damage</type>
 					</id-00001>
 				</actions>
-				<cast type="number">0</cast>
+				<cast type="number">1</cast>
 				<castingtime type="string">1 action</castingtime>
 				<components type="string">V</components>
 				<description type="formattedtext">
@@ -953,6 +1013,13 @@
 				<source type="string">Bard, Sorcerer, Wizard</source>
 				<usesperiod type="string">once</usesperiod>
 			</id-00008>
+			<id-00009>
+				<actions>
+				</actions>
+				<name type="string">Mild Telekenesis</name>
+				<prepared type="number">1</prepared>
+				<usesperiod type="string">enc</usesperiod>
+			</id-00009>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1109,19 +1176,22 @@
 				<name type="string">Artificer's Lore(History)</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<p>Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</p>
+				</text>
 				<total type="number">6</total>
 			</id-00019>
 		</skilllist>
 		<speed>
 			<armor type="number">0</armor>
 			<base type="number">25</base>
-			<misc type="number">10</misc>
-			<temporary type="number">0</temporary>
+			<misc type="number">0</misc>
+			<temporary type="number">10</temporary>
 			<total type="number">35</total>
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00008_token</token>
+		<token type="token">portrait_id-00003_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1170,6 +1240,7 @@
 					<id-00001>
 						<dice type="dice">d8</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">slashing</type>
 					</id-00001>
 				</damagelist>
@@ -1243,6 +1314,7 @@
 				<type type="number">0</type>
 			</id-00004>
 			<id-00005>
+				<ammo type="number">0</ammo>
 				<carried type="number">2</carried>
 				<damagelist>
 					<id-00001>
@@ -1261,9 +1333,23 @@
 				</shortcut>
 				<type type="number">2</type>
 			</id-00005>
+			<id-00006>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<name type="string">-Punch</name>
+				<prof type="number">1</prof>
+				<properties type="string">light</properties>
+			</id-00006>
 			<id-00007>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1285,7 +1371,7 @@
 			</id-00007>
 			<id-00008>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">1</carried>
+				<carried type="number">0</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1317,7 +1403,7 @@
 					</id-00001>
 				</damagelist>
 				<maxammo type="number">0</maxammo>
-				<name type="string">Bite</name>
+				<name type="string">-Bite</name>
 				<prof type="number">1</prof>
 				<shortcut type="windowreference">
 					<class></class>
@@ -1325,7 +1411,58 @@
 				</shortcut>
 				<type type="number">0</type>
 			</id-00009>
+			<id-00010>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d10</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing</type>
+					</id-00001>
+				</damagelist>
+				<name type="string">Battleaxe 2h</name>
+				<prof type="number">1</prof>
+			</id-00010>
+			<id-00011>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<dice type="dice">d4</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">bludgeoning</type>
+					</id-00001>
+				</damagelist>
+				<name type="string">-Headbutt</name>
+				<prof type="number">1</prof>
+			</id-00011>
+			<id-00012>
+				<attackbonus type="number">1</attackbonus>
+				<carried type="number">2</carried>
+				<damagelist>
+					<id-00001>
+						<bonus type="number">1</bonus>
+						<dice type="dice">d6</dice>
+						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
+						<type type="string">slashing, magic</type>
+					</id-00001>
+				</damagelist>
+				<isidentified type="number">1</isidentified>
+				<name type="string">Shortsword of Celestial Slaying</name>
+				<prof type="number">1</prof>
+				<properties type="string">Finesse light</properties>
+				<shortcut type="windowreference">
+					<class>item</class>
+					<recordname>....inventorylist.id-00018</recordname>
+				</shortcut>
+				<type type="number">0</type>
+			</id-00012>
 		</weaponlist>
 		<weight type="string">180lb</weight>
+		<wildshapes>
+			<shifted type="number">0</shifted>
+		</wildshapes>
 	</character>
 </root>

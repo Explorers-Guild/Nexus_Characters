@@ -181,10 +181,10 @@
 			<encumbered type="number">60</encumbered>
 			<encumberedheavy type="number">120</encumberedheavy>
 			<liftpushdrag type="number">360</liftpushdrag>
-			<load type="number">90.72</load>
+			<load type="number">89.72</load>
 			<max type="number">180</max>
 		</encumbrance>
-		<exp type="number">9555</exp>
+		<exp type="number">13160</exp>
 		<expneeded type="number">14000</expneeded>
 		<featlist>
 		</featlist>
@@ -355,7 +355,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">27</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">4</wounds>
 		</hp>
 		<initiative>
 			<misc type="number">0</misc>
@@ -615,44 +615,6 @@
 				<type type="string">Adventuring Gear</type>
 				<weight type="number">0.25</weight>
 			</id-00019>
-			<id-00020>
-				<ac type="number">0</ac>
-				<attune type="number">0</attune>
-				<bonus type="number">0</bonus>
-				<carried type="number">2</carried>
-				<cost type="string">33 GP</cost>
-				<count type="number">2</count>
-				<description type="formattedtext">
-					<h>Action Coding</h>
-					<linklist>
-						<link class="power" recordname="spell.potionofhealing@Incarnate-5eExpansion">Potion of Healing</link>
-					</linklist>
-					<h>Description</h>
-					<p>You regain hit points when you drink this potion.</p>
-					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
-					<h>Potions of Healing</h>
-					<table>
-						<tr>
-							<td>Potion of .</td>
-							<td>Rarity</td>
-							<td>HP Regained</td>
-						</tr>
-						<tr>
-							<td>Healing</td>
-							<td>Common</td>
-							<td>2d4 + 2</td>
-						</tr>
-					</table>
-				</description>
-				<isidentified type="number">1</isidentified>
-				<locked type="number">1</locked>
-				<name type="string">Potion of Healing</name>
-				<nonid_name type="string">Dull Potion</nonid_name>
-				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
-				<rarity type="string">Common</rarity>
-				<type type="string">Potion</type>
-				<weight type="number">0.5</weight>
-			</id-00020>
 			<id-00021>
 				<ac type="number">0</ac>
 				<attune type="number">0</attune>
@@ -961,6 +923,11 @@
 			<id-00006>
 				<name type="string">Class Features</name>
 			</id-00006>
+			<id-00007>
+				<atkprof type="number">1</atkprof>
+				<name type="string">Consumables</name>
+				<saveprof type="number">1</saveprof>
+			</id-00007>
 		</powergroup>
 		<powermeta>
 			<pactmagicslots1>
@@ -1001,15 +968,15 @@
 			</pactmagicslots9>
 			<spellslots1>
 				<max type="number">4</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots1>
 			<spellslots2>
 				<max type="number">3</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots2>
 			<spellslots3>
 				<max type="number">2</max>
-				<used type="number">2</used>
+				<used type="number">0</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">0</max>
@@ -1036,7 +1003,6 @@
 				<used type="number">0</used>
 			</spellslots9>
 		</powermeta>
-		<powermode type="string">standard</powermode>
 		<powers>
 			<id-00001>
 				<actions>
@@ -1483,6 +1449,34 @@
 				<ritual type="number">0</ritual>
 				<source type="string">Sorcerer - Class Ability</source>
 			</id-00016>
+			<id-00018>
+				<actions>
+					<id-00001>
+						<heallist>
+							<id-00001>
+								<bonus type="number">2</bonus>
+								<dice type="dice">d4,d4</dice>
+							</id-00001>
+						</heallist>
+						<order type="number">1</order>
+						<type type="string">heal</type>
+					</id-00001>
+				</actions>
+				<cast type="number">0</cast>
+				<description type="formattedtext">
+					<h>Item Coding</h>
+					<linklist>
+						<link class="item" recordname="item.id-00394@Incarnate-5eExpansion">Potion of Healing</link>
+					</linklist>
+				</description>
+				<group type="string">Consumables</group>
+				<level type="number">0</level>
+				<locked type="number">1</locked>
+				<name type="string">Potion of Healing</name>
+				<prepared type="number">0</prepared>
+				<ritual type="number">0</ritual>
+				<source type="string">Item - Action Code</source>
+			</id-00018>
 		</powers>
 		<profbonus type="number">3</profbonus>
 		<proficiencylist>
@@ -1634,7 +1628,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00003_token</token>
+		<token type="token">portrait_id-00005_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1706,7 +1700,7 @@
 				<type type="number">2</type>
 			</id-00002>
 			<id-00003>
-				<ammo type="number">6</ammo>
+				<ammo type="number">12</ammo>
 				<attackbonus type="number">1</attackbonus>
 				<carried type="number">2</carried>
 				<damagelist>
@@ -1801,17 +1795,19 @@
 			</id-00006>
 			<id-00007>
 				<attackbonus type="number">2</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">2</bonus>
 						<dice type="dice">d6</dice>
 						<stat type="string">base</stat>
+						<statmult type="number">1</statmult>
 						<type type="string">piercing,magic</type>
 					</id-00001>
 					<id-00002>
 						<bonus type="number">0</bonus>
 						<dice type="dice">d4</dice>
+						<statmult type="number">1</statmult>
 						<type type="string">thunder,magic</type>
 					</id-00002>
 				</damagelist>
