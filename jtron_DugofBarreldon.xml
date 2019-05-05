@@ -46,6 +46,33 @@
 			</wisdom>
 		</abilities>
 		<adventurelist>
+			<id-00001>
+				<locked type="number">1</locked>
+				<magicitem type="formattedtext">
+					<linklist>
+						<link class="item" recordname="....inventorylist.id-00025">Chilled Handaxe - +100GP</link>
+						<link class="item" recordname="....inventorylist.id-00024">Mithril Scale Mail Armor - 1050GP</link>
+					</linklist>
+				</magicitem>
+				<name type="string">00 GV</name>
+				<startgold type="string">1150</startgold>
+			</id-00001>
+			<id-00002>
+				<date type="string">05/2 11:30pm UTC</date>
+				<dmname type="string">Vorew</dmname>
+				<earnxp type="string">6000</earnxp>
+				<locked type="number">1</locked>
+				<name type="string">05/2 11:30pm UTC The Rift</name>
+				<startgold type="string">1150</startgold>
+				<startxp type="string">34807</startxp>
+				<text type="formattedtext">
+					<p>A wanted poster for Jink, a tiefling thief, came across our path. He stole something of value, and fled to an <i>very </i>warm cave. We found fiends within, presumably guarding a blackened golem. After the defeat of said golem, we opened a portal to who-knows-where. To be told, another time.</p>
+				</text>
+				<totalxp type="string">40807</totalxp>
+			</id-00002>
+			<id-00003>
+				<name type="string">_Useful Links</name>
+			</id-00003>
 		</adventurelist>
 		<age type="string">35</age>
 		<alignment type="string">Neutral</alignment>
@@ -59,6 +86,7 @@
 			<id-00001>
 				<casterlevelinvmult type="number">1</casterlevelinvmult>
 				<casterpactmagic type="number">0</casterpactmagic>
+				<hdbonusWS type="number">0</hdbonusWS>
 				<hddie type="dice">d6</hddie>
 				<hdused type="number">0</hdused>
 				<level type="number">8</level>
@@ -71,7 +99,7 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">1642</amount>
+				<amount type="number">1653</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
@@ -79,7 +107,7 @@
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">254</amount>
+				<amount type="number">257</amount>
 				<name type="string">CP</name>
 			</slot3>
 			<slot4>
@@ -87,7 +115,7 @@
 				<name type="string">EP</name>
 			</slot4>
 			<slot5>
-				<amount type="number">466</amount>
+				<amount type="number">460</amount>
 				<name type="string">SP</name>
 			</slot5>
 			<slot6>
@@ -96,13 +124,14 @@
 		</coins>
 		<defenses>
 			<ac>
-				<armor type="number">0</armor>
+				<armor type="number">4</armor>
+				<dexbonus type="string">max2</dexbonus>
 				<disstealth type="number">0</disstealth>
 				<misc type="number">2</misc>
 				<prof type="number">1</prof>
 				<shield type="number">0</shield>
 				<temporary type="number">0</temporary>
-				<total type="number">12</total>
+				<total type="number">16</total>
 			</ac>
 			<special type="string">ADV vs spells 4th lvl or below</special>
 		</defenses>
@@ -110,18 +139,18 @@
 			<encumbered type="number">70</encumbered>
 			<encumberedheavy type="number">140</encumberedheavy>
 			<liftpushdrag type="number">420</liftpushdrag>
-			<load type="number">101.55</load>
+			<load type="number">106.05</load>
 			<max type="number">210</max>
 		</encumbrance>
-		<exp type="number">807</exp>
-		<expneeded type="number">900</expneeded>
+		<exp type="number">40807</exp>
+		<expneeded type="number">48000</expneeded>
 		<featlist>
 		</featlist>
 		<featurelist>
 			<id-00001>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement - 1 STR, 1 INT</name>
+				<name type="string">ASI 1 - 1 STR, 1 INT</name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -223,7 +252,7 @@
 					</linklist>
 					<h>Description</h>
 					<p>At 1st level, you gain the ability to warp time ever so slightly to give you advantage in and out of battle. Add your proficiency bonus to your initiative rolls and half your proficiency bonus, rounded down, to all other Dexterity ability checks.</p>
-					<p>Additionally, and when you aren't wearing heavy armor, your AC equals 12 + your Dexterity modifier.</p>
+					<p>Additionally, when you aren't wearing heavy armor, your AC equals 12 + your Dexterity modifier.</p>
 				</text>
 			</id-00006>
 			<id-00007>
@@ -321,7 +350,7 @@
 			<id-00009>
 				<level type="number">8</level>
 				<locked type="number">1</locked>
-				<name type="string">Ability Score Improvement - 2 CHA</name>
+				<name type="string">ASI 2 - 2 CHA</name>
 				<source type="string">Sorcerer</source>
 				<specializationchoice type="number">0</specializationchoice>
 				<text type="formattedtext">
@@ -339,7 +368,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">42</total>
-			<wounds type="number">0</wounds>
+			<wounds type="number">15</wounds>
 		</hp>
 		<ideals type="string">Victory - I'll never make a bet unless I'm sure I can win. (Lawful)</ideals>
 		<initiative>
@@ -423,6 +452,22 @@
 				<type type="string">Tools</type>
 				<weight type="number">0.2</weight>
 			</id-00004>
+			<id-00005>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">2 SP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<p></p>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Waterskin (full)</name>
+				<subtype type="string">Standard</subtype>
+				<type type="string">Adventuring Gear</type>
+				<weight type="number">5</weight>
+			</id-00005>
 			<id-00006>
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
@@ -630,6 +675,9 @@
 			<id-00020>
 				<carried type="number">1</carried>
 				<count type="number">1</count>
+				<description type="formattedtext">
+					<p>The story of a Halfling named Sam trying to find the perfect side-dish for century eggs, pig oysters and ocean pork shavings.</p>
+				</description>
 				<isidentified type="number">1</isidentified>
 				<location type="string">Backpack</location>
 				<locked type="number">1</locked>
@@ -670,7 +718,7 @@
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
 				<cost type="string">200 GP</cost>
-				<count type="number">2</count>
+				<count type="number">1</count>
 				<description type="formattedtext">
 					<h>Action Coding</h>
 					<linklist>
@@ -705,7 +753,7 @@
 			<id-00024>
 				<ac type="number">14</ac>
 				<bonus type="number">0</bonus>
-				<carried type="number">1</carried>
+				<carried type="number">2</carried>
 				<cost type="string">1050 GP</cost>
 				<count type="number">1</count>
 				<description type="formattedtext">
@@ -726,7 +774,7 @@
 				<ac type="number">0</ac>
 				<bonus type="number">0</bonus>
 				<carried type="number">1</carried>
-				<cost type="string">5 GP</cost>
+				<cost type="string">100 GP</cost>
 				<count type="number">1</count>
 				<damage type="string">1d6 slashing, 1d4 cold</damage>
 				<description type="formattedtext">
@@ -754,7 +802,7 @@
 		</languagelist>
 		<level type="number">8</level>
 		<name type="string">Dug of Barreldon</name>
-		<notes type="string">Adar of Almelon - Crow's Nest, Ebtevib | Wheel of Fortune</notes>
+		<notes type="string">Adar of Almelon - Crow's Nest, Ebtevib | Wheel of Fortune\n\nA/W - 31\nL/S - 5* - not counting Common\nTl - 8</notes>
 		<pc_label_hero type="string">Hero Point</pc_label_hero>
 		<perception type="number">10</perception>
 		<perceptionmodifier type="number">0</perceptionmodifier>
@@ -762,8 +810,10 @@
 		<powerdisplaymode type="string">action</powerdisplaymode>
 		<powergroup>
 			<id-00001>
+				<atkprof type="number">1</atkprof>
 				<castertype type="string">memorization</castertype>
 				<name type="string">Spells</name>
+				<saveprof type="number">1</saveprof>
 				<stat type="string">charisma</stat>
 			</id-00001>
 			<id-00002>
@@ -823,7 +873,7 @@
 			</spellslots2>
 			<spellslots3>
 				<max type="number">3</max>
-				<used type="number">0</used>
+				<used type="number">2</used>
 			</spellslots3>
 			<spellslots4>
 				<max type="number">2</max>
@@ -1115,7 +1165,7 @@
 				<group type="string">Spells</group>
 				<level type="number">1</level>
 				<locked type="number">1</locked>
-				<name type="string">Mage Armor</name>
+				<name type="string">Mage Armor (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
@@ -1212,25 +1262,25 @@
 				<actions>
 					<id-00001>
 						<durmod type="number">0</durmod>
-						<label type="string">Stage 1 - Tipsy; SKILL: -5 insight</label>
+						<label type="string">Tipsy; SKILL: -5 insight</label>
 						<order type="number">1</order>
 						<type type="string">effect</type>
 					</id-00001>
 					<id-00002>
 						<durmod type="number">0</durmod>
-						<label type="string">Stage 2 - Confusion; SKILL: -5 deception</label>
+						<label type="string">Confused; SKILL: -5 deception</label>
 						<order type="number">2</order>
 						<type type="string">effect</type>
 					</id-00002>
 					<id-00003>
 						<durmod type="number">0</durmod>
-						<label type="string">Stage 3 - Intoxicated; Intoxicated</label>
+						<label type="string">Intoxicated</label>
 						<order type="number">3</order>
 						<type type="string">effect</type>
 					</id-00003>
 					<id-00004>
 						<durmod type="number">0</durmod>
-						<label type="string">Stage 4 - Unconscious; Unconscious</label>
+						<label type="string">Unconscious</label>
 						<order type="number">4</order>
 						<type type="string">effect</type>
 					</id-00004>
@@ -1306,7 +1356,7 @@
 				<group type="string">Spells</group>
 				<level type="number">2</level>
 				<locked type="number">1</locked>
-				<name type="string">Levitate</name>
+				<name type="string">Levitate (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">60 feet</range>
 				<ritual type="number">0</ritual>
@@ -1318,7 +1368,7 @@
 					<id-00005>
 						<durmod type="number">1</durmod>
 						<durunit type="string">day</durunit>
-						<label type="string">Chill Touch Caster</label>
+						<label type="string">Grave Touch - Dug</label>
 						<order type="number">1</order>
 						<targeting type="string">self</targeting>
 						<type type="string">effect</type>
@@ -1347,7 +1397,7 @@
 					</id-00007>
 					<id-00008>
 						<durmod type="number">1</durmod>
-						<label type="string">NOTE: cannot heal; IF: TYPE(undead); IFT: CUSTOM(Chill Touch Caster); DISATK</label>
+						<label type="string">NOTE: cannot heal; IF: TYPE(undead); IFT: CUSTOM(Grave Touch - Dug); DISATK</label>
 						<order type="number">4</order>
 						<type type="string">effect</type>
 					</id-00008>
@@ -1366,7 +1416,7 @@
 				<group type="string">Spells</group>
 				<level type="number">0</level>
 				<locked type="number">1</locked>
-				<name type="string">Chill Touch</name>
+				<name type="string">Grave Touch</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
@@ -1428,7 +1478,7 @@
 				<group type="string">Spells</group>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Sleet Storm</name>
+				<name type="string">Sleet Storm (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">150 feet</range>
 				<ritual type="number">0</ritual>
@@ -1438,7 +1488,9 @@
 			<id-00020>
 				<actions>
 					<id-00001>
+						<atkprof type="number">1</atkprof>
 						<order type="number">1</order>
+						<savedcprof type="number">1</savedcprof>
 						<savemagic type="number">1</savemagic>
 						<savetype type="string">wisdom</savetype>
 						<type type="string">cast</type>
@@ -1461,7 +1513,7 @@
 				<group type="string">Spells</group>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Slow</name>
+				<name type="string">Slow (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">120 feet</range>
 				<ritual type="number">0</ritual>
@@ -1490,7 +1542,7 @@
 				<group type="string">Spells</group>
 				<level type="number">3</level>
 				<locked type="number">1</locked>
-				<name type="string">Fly</name>
+				<name type="string">Fly (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">Touch</range>
 				<ritual type="number">0</ritual>
@@ -1575,7 +1627,7 @@
 				<group type="string">Spells</group>
 				<level type="number">4</level>
 				<locked type="number">1</locked>
-				<name type="string">Ice Storm</name>
+				<name type="string">Ice Storm (C)</name>
 				<prepared type="number">0</prepared>
 				<range type="string">300 feet</range>
 				<ritual type="number">0</ritual>
@@ -1621,6 +1673,9 @@
 			<id-00004>
 				<name type="string">Weapon: Daggers, darts, slings, quarterstaffs, light crossbows</name>
 			</id-00004>
+			<id-00005>
+				<name type="string">Trained: Scale armor</name>
+			</id-00005>
 		</proficiencylist>
 		<race type="string">Rune Dwarf</race>
 		<racelink type="windowreference">
@@ -1757,9 +1812,13 @@
 				<total type="number">0</total>
 			</id-00018>
 			<id-00019>
+				<locked type="number">1</locked>
 				<name type="string">Stonecunning</name>
 				<prof type="number">2</prof>
 				<stat type="string">intelligence</stat>
+				<text type="formattedtext">
+					<p>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.</p>
+				</text>
 				<total type="number">8</total>
 			</id-00019>
 			<id-00020>
@@ -1811,7 +1870,7 @@
 		</speed>
 		<temp>
 		</temp>
-		<token type="token">portrait_id-00010_token</token>
+		<token type="token">portrait_id-00007_token</token>
 		<traitlist>
 			<id-00001>
 				<locked type="number">1</locked>
@@ -1827,7 +1886,7 @@
 				<name type="string">Stonecunning</name>
 				<source type="string">Dwarf</source>
 				<text type="formattedtext">
-					<p>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+					<p>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.</p>
 				</text>
 				<type type="string">racial</type>
 			</id-00002>
@@ -1867,7 +1926,7 @@
 		<weaponlist>
 			<id-00001>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1894,7 +1953,7 @@
 			</id-00001>
 			<id-00002>
 				<attackbonus type="number">0</attackbonus>
-				<carried type="number">2</carried>
+				<carried type="number">1</carried>
 				<damagelist>
 					<id-00001>
 						<bonus type="number">0</bonus>
@@ -1985,5 +2044,8 @@
 			</id-00005>
 		</weaponlist>
 		<weight type="string">210 lb</weight>
+		<wildshapes>
+			<shifted type="number">0</shifted>
+		</wildshapes>
 	</character>
 </root>

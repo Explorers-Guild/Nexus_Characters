@@ -59,14 +59,23 @@
 			<id-00002>
 				<date type="string">04/25 9pm UTC</date>
 				<dmname type="string">Vorew</dmname>
-				<earngold type="string">910</earngold>
-				<earnxp type="string">3605</earnxp>
+				<earngold type="string">1010</earngold>
+				<earnxp type="string">6045</earnxp>
+				<locked type="number">1</locked>
+				<magicitem type="formattedtext">
+					<linklist>
+						<link class="item" recordname="....inventorylist.id-00018">Shortsword of Celestial Slaying</link>
+						<link class="item" recordname="....inventorylist.id-00021">Fancy Boots</link>
+					</linklist>
+				</magicitem>
 				<name type="string">04/25 9pm UTC The Throne of Bone</name>
 				<startgold type="string">900</startgold>
 				<startxp type="string">14034</startxp>
 				<text type="formattedtext">
-					<p>A man named Grigsby wanted help with some wolves on his farm. We track them north, towards a cave. Further in, we find a door with a riddling dwarven face. Beyond it, a room of armors that attacked us. Another riddle room, adorned with dragons. The final had a hole, which we decended cautiously. Flesh Golems guard the next room. Next, a dragon statue, turned to flesh by gems.</p>
+					<p>A man named Grigsby wanted help with some wolves on his farm. We track them north, towards a cave. Further in, we find a door with a riddling dwarven face. Beyond it, a room of armors that attacked us. Another riddle room, adorned with dragons. The final had a hole, which we decended cautiously. Flesh Golems guard the next room. Next, a dragon statue, turned to flesh by gems. The lowest floor full of skeletal horrors, a songroom with a black-teared maiden.</p>
 				</text>
+				<totalgold type="string">1910</totalgold>
+				<totalxp type="string">20079</totalxp>
 			</id-00002>
 		</adventurelist>
 		<age type="string">40</age>
@@ -94,15 +103,15 @@
 		</classes>
 		<coins>
 			<slot1>
-				<amount type="number">185</amount>
+				<amount type="number">3116</amount>
 				<name type="string">GP</name>
 			</slot1>
 			<slot2>
-				<amount type="number">0</amount>
+				<amount type="number">100</amount>
 				<name type="string">PP</name>
 			</slot2>
 			<slot3>
-				<amount type="number">146</amount>
+				<amount type="number">271</amount>
 				<name type="string">SP</name>
 			</slot3>
 			<slot4>
@@ -132,10 +141,10 @@
 			<encumbered type="number">80</encumbered>
 			<encumberedheavy type="number">160</encumberedheavy>
 			<liftpushdrag type="number">480</liftpushdrag>
-			<load type="number">79.2</load>
+			<load type="number">80.7</load>
 			<max type="number">240</max>
 		</encumbrance>
-		<exp type="number">17639</exp>
+		<exp type="number">20079</exp>
 		<expneeded type="number">23000</expneeded>
 		<featlist>
 			<id-00001>
@@ -296,7 +305,7 @@
 			<deathsavesuccess type="number">0</deathsavesuccess>
 			<temporary type="number">0</temporary>
 			<total type="number">59</total>
-			<wounds type="number">27</wounds>
+			<wounds type="number">0</wounds>
 		</hp>
 		<ideals type="string">Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)</ideals>
 		<initiative>
@@ -628,6 +637,60 @@
 				<type type="string">Weapon</type>
 				<weight type="number">3</weight>
 			</id-00019>
+			<id-00020>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 GP</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Action Coding</h>
+					<linklist>
+						<link class="power" recordname="spell.potionofgreaterhealing@Incarnate-5eExpansion">Potion of Greater Healing</link>
+					</linklist>
+					<h>Description</h>
+					<p>You regain hit points when you drink this potion.</p>
+					<p>The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated.</p>
+					<h>Potions of Healing</h>
+					<table>
+						<tr>
+							<td>Potion of .</td>
+							<td>Rarity</td>
+							<td>HP Regained</td>
+						</tr>
+						<tr>
+							<td>Greater healing</td>
+							<td>Uncommon</td>
+							<td>4d4 + 4</td>
+						</tr>
+					</table>
+				</description>
+				<isidentified type="number">1</isidentified>
+				<locked type="number">1</locked>
+				<name type="string">Greater Potion of Healing</name>
+				<nonid_name type="string">Dim Potion</nonid_name>
+				<nonidentified type="string">The potion's red liquid glimmers when agitated.</nonidentified>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Potion</type>
+				<weight type="number">0.5</weight>
+			</id-00020>
+			<id-00021>
+				<ac type="number">0</ac>
+				<bonus type="number">0</bonus>
+				<carried type="number">1</carried>
+				<cost type="string">100 gp</cost>
+				<count type="number">1</count>
+				<description type="formattedtext">
+					<h>Description</h>
+					<p>These boots are royal blue in color with ornate yellow stitching. They grant the wearer +2 to Performance and they will always be clean and dry.</p>
+				</description>
+				<istemplate type="number">0</istemplate>
+				<locked type="number">1</locked>
+				<name type="string">Fancy Boots</name>
+				<rarity type="string">Uncommon</rarity>
+				<type type="string">Wondrous Item</type>
+				<weight type="number">1</weight>
+			</id-00021>
 		</inventorylist>
 		<languagelist>
 			<id-00001>
@@ -768,7 +831,7 @@
 						<type type="string">effect</type>
 					</id-00001>
 				</actions>
-				<cast type="number">3</cast>
+				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p>
 					<list>
@@ -872,6 +935,7 @@
 				<cast type="number">0</cast>
 				<description type="formattedtext">
 					<linklist>
+						<link class="ref_ability" recordname="....featurelist.id-00007">Frenzy</link>
 						<link class="encounter" recordname="encounter.id-00004@Incarnate-5eExpansion">Exhaustion</link>
 					</linklist>
 				</description>
@@ -1016,6 +1080,7 @@
 			<id-00009>
 				<actions>
 				</actions>
+				<cast type="number">0</cast>
 				<name type="string">Mild Telekenesis</name>
 				<prepared type="number">1</prepared>
 				<usesperiod type="string">enc</usesperiod>
